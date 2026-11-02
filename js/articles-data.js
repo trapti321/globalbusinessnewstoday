@@ -138,8 +138,8 @@ const ARTICLES = [
   },
   {
     id: "commercial-property-hybrid-workspace",
-    title: "Commercial Real Estate Adapts: Office Towers Pivot to Mixed-Use Innovation Hubs",
-    excerpt: "With remote and hybrid work permanently ingrained, commercial landlords in prime CBDs are converting excess office square footage into boutique hospitality, wellness, and research labs.",
+    title: "Office Vacancy Starts to Ease at 19.8% as Conversions Hit Record 90,300 Units",
+    excerpt: "US office vacancy fell to 19.8% in Q3 2026 as office-to-apartment conversions hit a record. Higher rates and maturing loans still pressure owners.",
     category: "Real Estate",
     categorySlug: "property",
     author: {
@@ -153,10 +153,41 @@ const ARTICLES = [
     isLead: false,
     isTrending: false,
     views: 7420,
-    tags: ["Real Estate", "Office Space", "Commercial Property", "Urban Development"],
+    tags: ["Commercial Real Estate", "Office Market", "Adaptive Reuse", "Return to Office", "CMBS"],
     content: `
-      <p class="lead">Prime commercial properties that once relied solely on 10-year corporate leases are reinventing their revenue models.</p>
-      <p>From Sydney to Singapore and London to Chicago, developers are creating multi-tenant spaces that merge grade-A flexible desks with collaborative seminar halls, private event clubs, and tech incubation suites.</p>
+      <p class="lead">The US office market is showing its first sustained signs of stabilization since the pandemic. National vacancy has edged down, tenants are absorbing more space than they give back, and a record pipeline of office-to-apartment conversions is pulling obsolete buildings off the market. The recovery is uneven, though, and higher interest rates are making it harder for owners of weaker buildings to refinance.</p>
+
+      <h2>Vacancy Is Falling, Slowly</h2>
+      <p>US office vacancy stood at 19.8% in the third quarter of 2026, down 30 basis points from a year earlier, according to <a href="https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/us-office-marketbeat-reports" target="_blank" rel="noopener">Cushman &amp; Wakefield's Q3 2026 US Office MarketBeat</a>. Net absorption, the change in occupied space, was only slightly positive in the quarter at about 50,000 square feet, but the four-quarter rolling total reached 15.5 million square feet.</p>
+      <p>The gains are concentrated at the top of the market. Class A vacancy fell 60 basis points year over year, and Class A buildings captured two-thirds of third-quarter leasing volume, according to the same report. Tenants are consolidating into newer, better-located buildings and leaving older stock behind.</p>
+      <p>New supply is no longer flooding the market. Deliveries through the first three quarters of 2026 totaled 7.1 million square feet, while 23 million square feet is under construction, up from a low of 19.1 million in the first quarter. Cushman &amp; Wakefield said the pipeline "appears to have bottomed out."</p>
+
+      <h2>Office Attendance Keeps Climbing</h2>
+      <p>Physical occupancy is improving, though it remains well below pre-pandemic norms. The <a href="https://www.kastle.com/safety-wellness/getting-america-back-to-work" target="_blank" rel="noopener">Kastle Back to Work Barometer</a>, which tracks keycard access across 10 major US metros, recorded a national weekly average of 56.1% for the week ending October 21, 2026, up 1.0 point from the prior week. Tuesday, October 20, was the peak day at 66.1%.</p>
+      <p>The spread between cities is wide. Austin led at 77.3% that week, while Philadelphia was lowest at 42.3%. For landlords, that gap matters as much as the national number: a building's prospects depend heavily on local attendance patterns and the quality of the asset.</p>
+
+      <h2>Conversions Reach a Record Pipeline</h2>
+      <p>Owners of buildings that can no longer compete for office tenants are increasingly turning them into housing. At the start of 2026, 90,300 apartments were in the process of conversion from office space nationwide, up 28% from about 70,600 a year earlier, according to <a href="https://www.rentcafe.com/blog/?p=145429" target="_blank" rel="noopener">RentCafe's analysis of Yardi Matrix data</a>. Office buildings now account for 47% of all future adaptive reuse projects.</p>
+      <ul>
+        <li><strong>New York metro:</strong> 16,358 units in the conversion backlog, the most in the country.</li>
+        <li><strong>Washington, D.C. metro:</strong> 8,479 units.</li>
+        <li><strong>Chicago metro:</strong> 4,360 units.</li>
+      </ul>
+      <p>The figures count planned and in-progress units, not completed apartments. Conversions are expensive and slow, and many office floor plates are too deep for residential layouts without major structural work. Even at record levels, conversions remove only a small share of total office inventory, so they ease vacancy at the margin rather than solve it.</p>
+
+      <h2>Higher Rates Squeeze Refinancing</h2>
+      <p>The financing backdrop has turned tougher this year. The Federal Reserve raised its benchmark rate in September and held it at 3.75% to 4% in October, with policymakers signaling a possible further increase. (See our analysis of <a href="/articles/fed-rate-cuts-global-markets-2026/">what the Fed's decision means for borrowers</a>.)</p>
+      <p>That matters because a large volume of commercial debt is coming due. The Mortgage Bankers Association (MBA) estimates that <a href="https://newslink.mba.org/?p=270033" target="_blank" rel="noopener">$875 billion of commercial and multifamily mortgages</a>, 17% of the $5.0 trillion outstanding, is scheduled to mature in 2026, down 9% from 2025. MBA said 17% of office property loans mature this year.</p>
+      <p>Stress is most visible in securitized office loans. The office delinquency rate on commercial mortgage-backed securities (CMBS) rose 16 basis points to 12.16% in September, according to <a href="https://yieldpro.com/2026/10/multifamily-cmbs-delinquency-rate-leads-overall-rate-higher-in-september/" target="_blank" rel="noopener">Trepp data reported by Yield PRO</a>. Owners of older buildings with falling occupancy and loans written at lower rates face the hardest choices: inject fresh equity, negotiate extensions with lenders, sell at a discount, or hand back the keys.</p>
+
+      <h2>What It Means for Investors and Tenants</h2>
+      <ul>
+        <li><strong>The market is splitting in two.</strong> Prime, well-located buildings are leasing up, while older Class B and C stock continues to lose tenants. Headline vacancy hides that divide.</li>
+        <li><strong>Tenants still have leverage in older buildings.</strong> Businesses leasing outside the top tier can often negotiate concessions, flexible terms or upgrades.</li>
+        <li><strong>Distress creates buying opportunities.</strong> Discounted sales of obsolete offices are feeding the conversion pipeline, particularly in New York, Washington and Chicago.</li>
+        <li><strong>Rates are the swing factor.</strong> If the Fed and other central banks hike again, refinancing gaps widen and more office loans could slip into delinquency.</li>
+      </ul>
+      <p>The next national data points to watch are fourth-quarter vacancy reports in January and the Fed's December 8 to 9 meeting, which will shape borrowing costs for owners heading into 2027.</p>
     `
   },
   {
