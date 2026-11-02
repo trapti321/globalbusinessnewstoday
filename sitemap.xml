@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://globalbusinessnewstoday.com/</loc>
-    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <lastmod>2026-11-02T17:30:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/anthropic-ipo-filing-q3-2026-results/</loc>
+    <lastmod>2026-11-02T17:30:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1559445368-b8a993676d7a?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/articles/fed-rate-cuts-global-markets-2026/</loc>
@@ -46,7 +51,7 @@
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/all/</loc>
-    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <lastmod>2026-11-02T17:30:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/world/</loc>
@@ -54,7 +59,7 @@
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/markets/</loc>
-    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <lastmod>2026-11-02T17:30:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/tech/</loc>

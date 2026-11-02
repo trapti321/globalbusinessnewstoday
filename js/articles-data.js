@@ -1,6 +1,65 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "anthropic-ipo-filing-q3-2026-results",
+    title: "Anthropic IPO Filing: Revenue Hits $33.2 Billion in Nine Months as Net Loss Reaches $104 Billion",
+    excerpt: "Anthropic's amended IPO filing shows Q3 revenue of $17 billion and a $104 billion nine-month net loss, mostly a non-cash charge tied to its rising valuation.",
+    category: "Markets & Economy",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-02T17:30:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1559445368-b8a993676d7a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Nasdaq MarketSite tower in Times Square, New York, displaying the Nasdaq logo on its curved video screen",
+    isLead: true,
+    isTrending: true,
+    views: 0,
+    tags: ["Anthropic", "IPO", "Nasdaq", "Artificial Intelligence", "Earnings"],
+    content: `
+      <p class="lead">Anthropic generated $33.2 billion in revenue in the first nine months of 2026 but recorded a net loss of $104 billion, according to an amended IPO registration statement the AI company filed with the US Securities and Exchange Commission (SEC) on November 2, 2026. Most of that loss is a non-cash accounting charge linked to the company's soaring valuation, not cash spent running the business.</p>
+
+      <p>The filing, <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm" target="_blank" rel="noopener">Amendment No. 1 to Anthropic's Form S-1</a>, adds results for the quarter ended September 30, 2026. It updates the original registration statement filed on October 26. The maker of the Claude AI models plans to list its Class A common stock on the Nasdaq Global Select Market under the ticker "ANT." The share price range and the number of shares on offer have not yet been disclosed.</p>
+
+      <h2>Third-Quarter Revenue Nears $17 Billion</h2>
+      <p>Revenue for the three months ended September 30, 2026 was $16.96 billion, up from $11.56 billion in the second quarter, an increase of about 47%. Compared with $1.38 billion in the same quarter of 2025, revenue rose 1,127% year over year, the filing says.</p>
+      <p>For the nine months to September 30, revenue reached $33.24 billion, compared with $2.55 billion a year earlier. Anthropic attributes the growth to successive model and product releases that drove higher usage, with both consumption-based and subscription revenue contributing.</p>
+      <p>The company also disclosed that price cuts introduced with new model versions, together with contractual discounts, reduced third-quarter revenue by about $600 million compared with the prior quarter.</p>
+
+      <h2>Why Anthropic Swung to an Operating Loss</h2>
+      <p>After posting an operating profit of $974 million in the second quarter, Anthropic reported an operating loss of $567 million in the third quarter. The filing attributes the swing mainly to two items:</p>
+      <ul>
+        <li><strong>$5.0 billion of short-term compute.</strong> Anthropic bought computing capacity under short-term commitments, which the company says "currently costs significantly more than comparable compute procured under our multi-year commitments."</li>
+        <li><strong>$2.0 billion of non-cash charges</strong> related to the company's donation matching program.</li>
+      </ul>
+      <p>Compute and infrastructure costs climbed to $9.86 billion in the quarter, or 58% of revenue, up from 48% in the second quarter. On its own adjusted, non-GAAP measure, Anthropic said adjusted operating income rose to $2.5 billion from $2.2 billion, while adjusted operating margin fell to 15% from 19%. Non-GAAP figures exclude certain costs and are not a substitute for results under US accounting rules (GAAP).</p>
+      <p>For the full nine-month period, the operating loss narrowed to $1.26 billion from $5.22 billion a year earlier.</p>
+
+      <h2>What Is Behind the $104 Billion Net Loss</h2>
+      <p>The headline net loss is far larger than the operating loss because of how Anthropic accounts for financing instruments it issued before going public. The nine-month figures include a $94.3 billion charge from changes in the fair value of convertible notes, derivative liabilities and SAFEs (simple agreements for future equity).</p>
+      <p>According to the filing, these charges were "primarily driven by an increase in the fair value of our outstanding convertible promissory notes resulting from an increase in our enterprise valuation." In plain terms, as the company became more valuable, the instruments it owes to investors were marked up, and that increase is recorded as a loss even though no cash leaves the business.</p>
+      <p>Quarterly, the net loss was $23.29 billion in the third quarter, down from $66.31 billion in the second quarter.</p>
+
+      <h2>A Balance Sheet Built for Heavy Compute Spending</h2>
+      <p>Anthropic reported cash and cash equivalents of $95.6 billion and short-term investments of $36.3 billion as of September 30, 2026, and said it has raised an aggregate of $141.1 billion in capital.</p>
+      <p>Its obligations are on a far larger scale. As of and after September 30, the company had purchase commitments and lease agreements totalling about $895.4 billion, substantially all of it for compute and infrastructure. About $447.5 billion is expected to be incurred before the end of 2030, with most of the rest falling between 2031 and 2045. Around $69.8 billion is due within 12 months of September 30, 2026.</p>
+      <p>Anthropic says it runs workloads across Amazon Web Services Trainium chips, Google TPUs, NVIDIA GPUs and AMD GPUs, and typically buys compute 12 to 18 months before it becomes available. That makes those costs largely fixed in the near term, a point that matters for investors weighing how quickly revenue must grow to cover them. Higher interest rates this year also raise the bar for capital-intensive businesses, as covered in our <a href="/articles/fed-rate-cuts-global-markets-2026/">analysis of the Fed's October rate decision</a>.</p>
+
+      <h2>Enterprise Customers and Concentration Risk</h2>
+      <p>The filing lists more than 11,900 customers generating at least $100,000 in revenue on a trailing 12-month basis as of September 30, 2026, up from about 400 as of March 31, 2025. More than 1,900 customers generated over $1 million, and about 250 generated more than $10 million. Anthropic put its net revenue retention at approximately 900%.</p>
+      <p>The company also flags concentration risk. No single customer accounted for more than 10% of nine-month revenue, but the top five customers represented about 25%. Many top customers, the filing notes, are not on long-term contracts and can reduce spending at any time.</p>
+      <p>The adoption of AI tools by mid-sized businesses is still uneven, as our recent report on <a href="/articles/ai-enterprise-adoption-roi-surge/">enterprise AI adoption and ROI</a> found.</p>
+
+      <h2>What Happens Next</h2>
+      <p>The offering is being led by Goldman Sachs and Morgan Stanley, with J.P. Morgan, Citigroup, Barclays, Wells Fargo Securities, BofA Securities, Deutsche Bank Securities, RBC Capital Markets and UBS Investment Bank among the other underwriters listed. Anthropic, a Delaware public benefit corporation, says it is considered a "controlled company" under Nasdaq governance rules.</p>
+      <p>The registration statement has not yet been declared effective, and the company has not set a price range or offering date. Further amendments to the S-1 would be expected to add those details before shares can be sold.</p>
+      <p><em>This article reports figures from Anthropic's SEC filing and is not investment advice.</em></p>
+    `
+  },
+  {
     id: "fed-rate-cuts-global-markets-2026",
     title: "Fed Holds at 3.75% to 4%, Signals More Hikes: What Higher Rates Mean for SMEs",
     excerpt: "The Fed held rates at 3.75% to 4% after a September hike, and the ECB and BoE lean hawkish as energy lifts inflation. What it means for SME borrowing.",
@@ -16,7 +75,7 @@ const ARTICLES = [
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Candlestick stock chart with moving average lines on a dark trading screen",
     updatedAt: "2026-11-02T17:00:00Z",
-    isLead: true,
+    isLead: false,
     isTrending: true,
     views: 14820,
     tags: ["Federal Reserve", "Interest Rates", "ECB", "Bank of England", "Inflation", "SME Finance"],

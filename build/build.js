@@ -584,7 +584,9 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
         dateModified: modified,
         articleSection: cat.name,
         keywords: (a.tags || []).join(", "),
-        author: [{ "@type": "Person", name: a.author.name, ...(a.author.role ? { jobTitle: a.author.role } : {}) }],
+        author: [a.author.type === "Organization"
+          ? { "@type": "Organization", name: a.author.name, url: `${SITE.url}/` }
+          : { "@type": "Person", name: a.author.name, ...(a.author.role ? { jobTitle: a.author.role } : {}) }],
         publisher: ORGANIZATION
       },
       breadcrumb([{ name: "Home", url: "/" }, { name: cat.name, url: categoryUrl(cat.slug) }, { name: a.title, url: articleUrl(a) }])
