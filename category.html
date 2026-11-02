@@ -7,7 +7,7 @@
   <meta name="description" content="Browse categorized market news, SME reports, technology developments, and press releases.">
   <link rel="canonical" href="https://globalbusinessnewstoday.com/category.html?cat=all">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261102-brand-seo">
 </head>
 <body>
   <!-- Site Header -->
@@ -34,7 +34,7 @@
         </div>
         <div class="masthead-center">
           <a href="index.html">
-            <h1 class="brand-title"><img class="brand-mark" src="assets/brand-mark.svg" alt=""><span class="brand-name">Global Business News <span>Today</span></span></h1>
+            <h1 class="brand-title"><img class="brand-mark" src="assets/brand-mark.svg" width="56" height="56" alt=""><span class="brand-name">Global Business News <span>Today</span></span></h1>
             <p class="brand-tagline">Global Markets • SME Intelligence • Corporate Wire</p>
           </a>
         </div>
@@ -152,18 +152,18 @@
 
       container.innerHTML = filtered.map(article => `
         <article class="news-card">
-          <a href="article.html?id=${encodeURIComponent(article.id)}" class="news-card-thumb">
+          <a href="/articles/${encodeURIComponent(article.id)}/" class="news-card-thumb">
             <span class="card-category-badge">${escapeHtml(article.category)}</span>
             <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.title)}" loading="lazy" />
           </a>
           <div class="news-card-body">
-            <a href="article.html?id=${encodeURIComponent(article.id)}">
+            <a href="/articles/${encodeURIComponent(article.id)}/">
               <h3 class="news-card-title">${escapeHtml(article.title)}</h3>
             </a>
             <p class="news-card-excerpt">${escapeHtml(article.excerpt)}</p>
             <div class="news-card-footer">
               <span>${formatDate(article.publishedAt)} • ${escapeHtml(article.readTime)}</span>
-              <a href="article.html?id=${encodeURIComponent(article.id)}" class="btn-read-quick">Read Story ➔</a>
+              <a href="/articles/${encodeURIComponent(article.id)}/" class="btn-read-quick">Read Story ➔</a>
             </div>
           </div>
         </article>

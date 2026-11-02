@@ -1,0 +1,10 @@
+Options -MultiViews
+RewriteEngine On
+
+# Permanently redirect legacy article query URLs to the clean article path.
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{QUERY_STRING} ^id=([A-Za-z0-9-]+)$
+RewriteRule ^article\.html$ /articles/%1/ [R=301,L,NE]
+
+# Serve the shared static article template at clean, crawlable URLs.
+RewriteRule ^articles/([A-Za-z0-9-]+)/?$ article.html?id=$1 [L,QSA]

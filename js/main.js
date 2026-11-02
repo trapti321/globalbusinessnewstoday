@@ -108,12 +108,12 @@ function initNewsRender() {
   if (leadContainer && leadArticle) {
     leadContainer.innerHTML = `
       <article class="lead-card">
-        <a href="article.html?id=${encodeURIComponent(leadArticle.id)}" class="lead-media-wrap">
+        <a href="/articles/${encodeURIComponent(leadArticle.id)}/" class="lead-media-wrap">
           <span class="card-category-badge">${escapeHtml(leadArticle.category)}</span>
           <img src="${escapeHtml(leadArticle.image)}" alt="${escapeHtml(leadArticle.title)}" loading="eager" />
         </a>
         <div class="lead-content">
-          <a href="article.html?id=${encodeURIComponent(leadArticle.id)}">
+          <a href="/articles/${encodeURIComponent(leadArticle.id)}/">
             <h2 class="lead-title">${escapeHtml(leadArticle.title)}</h2>
           </a>
           <p class="lead-excerpt">${escapeHtml(leadArticle.excerpt)}</p>
@@ -137,12 +137,12 @@ function initNewsRender() {
     const sideArticles = ARTICLES.filter(a => a.id !== leadArticle?.id).slice(0, 3);
     sideContainer.innerHTML = sideArticles.map(article => `
       <article class="side-story-card">
-        <a href="article.html?id=${encodeURIComponent(article.id)}" class="side-thumb">
+        <a href="/articles/${encodeURIComponent(article.id)}/" class="side-thumb">
           <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.title)}" loading="lazy" />
         </a>
         <div class="side-story-content">
           <span class="side-category">${escapeHtml(article.category)}</span>
-          <a href="article.html?id=${encodeURIComponent(article.id)}">
+          <a href="/articles/${encodeURIComponent(article.id)}/">
             <h4 class="side-title">${escapeHtml(article.title)}</h4>
           </a>
           <span class="article-meta" style="font-size: 0.71875rem;">${formatDate(article.publishedAt)}</span>
@@ -159,7 +159,7 @@ function initNewsRender() {
         <span class="trending-num">${idx + 1}</span>
         <div class="trending-content">
           <span class="side-category">${escapeHtml(article.category)}</span>
-          <a href="article.html?id=${encodeURIComponent(article.id)}">
+          <a href="/articles/${encodeURIComponent(article.id)}/">
             <h4 class="trending-title">${escapeHtml(article.title)}</h4>
           </a>
           <span class="article-meta" style="font-size: 0.71875rem;">${escapeHtml(article.readTime)}</span>
@@ -202,12 +202,12 @@ function renderArticlesGrid(category = "all") {
 
   container.innerHTML = filtered.map(article => `
     <article class="news-card">
-      <a href="article.html?id=${encodeURIComponent(article.id)}" class="news-card-thumb">
+      <a href="/articles/${encodeURIComponent(article.id)}/" class="news-card-thumb">
         <span class="card-category-badge">${escapeHtml(article.category)}</span>
         <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.title)}" loading="lazy" />
       </a>
       <div class="news-card-body">
-        <a href="article.html?id=${encodeURIComponent(article.id)}">
+        <a href="/articles/${encodeURIComponent(article.id)}/">
           <h3 class="news-card-title">${escapeHtml(article.title)}</h3>
         </a>
         <p class="news-card-excerpt">${escapeHtml(article.excerpt)}</p>
@@ -279,7 +279,7 @@ function openQuickReadModal(articleId) {
     `;
   }
   if (fullLink) {
-    fullLink.href = `article.html?id=${encodeURIComponent(article.id)}`;
+    fullLink.href = `/articles/${encodeURIComponent(article.id)}/`;
   }
 
   modal.showModal();
@@ -329,7 +329,7 @@ function initSearch() {
       searchResults.innerHTML = matches.map(m => `
         <div style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
           <span style="font-size: 0.6875rem; font-weight: 700; color: var(--brand-accent); text-transform: uppercase;">${escapeHtml(m.category)}</span>
-          <h4 style="font-size: 0.9375rem; margin: 0.25rem 0;"><a href="article.html?id=${encodeURIComponent(m.id)}">${escapeHtml(m.title)}</a></h4>
+          <h4 style="font-size: 0.9375rem; margin: 0.25rem 0;"><a href="/articles/${encodeURIComponent(m.id)}/">${escapeHtml(m.title)}</a></h4>
           <span style="font-size: 0.75rem; color: var(--text-muted);">${formatDate(m.publishedAt)} • ${escapeHtml(m.readTime)}</span>
         </div>
       `).join("");
