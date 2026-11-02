@@ -92,8 +92,8 @@ const ARTICLES = [
   },
   {
     id: "green-energy-manufacturing-incentives",
-    title: "Clean Energy Infrastructure: Global Grants Spark Surge in Sustainable Manufacturing",
-    excerpt: "Tax credits and localized subsidies across Australia, the EU, and North America are prompting industrial manufacturers to electrify plants ahead of 2030 regulatory deadlines.",
+    title: "Clean Manufacturing Incentives in 2026: How US, EU and Australian Support Is Shifting",
+    excerpt: "US credits are narrowing, the EU wants Made in EU rules and Australia funds solar supply chains. What manufacturers need to know as energy costs bite.",
     category: "World Business",
     categorySlug: "world",
     author: {
@@ -107,10 +107,48 @@ const ARTICLES = [
     isLead: false,
     isTrending: false,
     views: 8940,
-    tags: ["Clean Energy", "Manufacturing", "ESG", "Industrial Policy"],
+    tags: ["Clean Energy", "Manufacturing", "Industrial Policy", "Tax Credits", "Energy Prices"],
     content: `
-      <p class="lead">Industrial companies are unlocking unprecedented capital flows by pairing green manufacturing tax credits with on-site solar and micro-grid storage.</p>
-      <p>Commercial electricity rates continue to weigh on margins, but forward-looking manufacturing plants in regions like Queensland, Northern Europe, and the US Sunbelt are achieving near-energy independence through private generation.</p>
+      <p class="lead">Government support for clean manufacturing is not disappearing in 2026, but it is changing shape. The United States has narrowed and shortened several clean energy tax credits, the European Union is moving toward "Made in EU" and low-carbon purchasing rules, and Australia is paying to rebuild parts of its solar supply chain. At the same time, an energy price shock has made electricity costs a more urgent board-level issue for manufacturers in Europe and Asia.</p>
+
+      <p>For manufacturers, the question is no longer whether incentives exist, but which still apply, for how long, and with what strings attached.</p>
+
+      <h2>United States: Credits Narrowed, Investment Uneven</h2>
+      <p>The One Big Beautiful Bill Act, signed on July 4, 2025, rewrote much of the clean energy tax credit framework created by the Inflation Reduction Act. According to a <a href="https://www.kirkland.com/publications/kirkland-alert/2025/08/one-big-beautiful-bill-act-brings-big-changes-to-green-energy-tax-credits" target="_blank" rel="noopener">Kirkland &amp; Ellis analysis of the law</a>, the key changes for industry include:</p>
+      <ul>
+        <li><strong>Wind and solar projects:</strong> to keep the technology-neutral production and investment credits (Sections 45Y and 48E), projects had to begin construction by July 4, 2026, or be placed in service by December 31, 2027. The construction-start deadline has now passed, so projects that did not begin construction in time must be placed in service by the end of 2027 to qualify.</li>
+        <li><strong>Storage and other technologies:</strong> energy storage and fuel cells keep a longer runway, with credits phasing down for projects starting construction in 2034 and 2035 and ending after that.</li>
+        <li><strong>Advanced manufacturing credit (Section 45X):</strong> the credit for wind components ends for components sold after December 31, 2027. The critical minerals credit now phases down from 2031 and ends from 2034. The schedules for solar and storage components were left unchanged.</li>
+        <li><strong>Foreign entity restrictions:</strong> "prohibited foreign entities" can no longer claim most of these credits, and projects starting construction after 2025 can lose eligibility if they receive "material assistance" from such entities.</li>
+      </ul>
+      <p>The investment picture is mixed rather than booming. Rhodium Group's <a href="https://rhg.com/research/clean-investment-monitor-us-q2-2026-update/" target="_blank" rel="noopener">Clean Investment Monitor</a> reported that actual US clean technology manufacturing investment rose 4% from the previous quarter to $8 billion in Q2 2026, ending a six-quarter streak of declines, but was still down 24% from Q2 2025. Electric vehicle supply chains accounted for 88% of that spending. Newly announced manufacturing projects topped $10 billion, the highest quarterly figure in more than two years, with solar making up 77%. Cancellations reached about $1.7 billion.</p>
+
+      <h2>European Union: The Industrial Accelerator Act</h2>
+      <p>On March 4, 2026, the European Commission <a href="https://commission.europa.eu/news-and-media/news/commission-proposes-new-measures-boost-eu-industry-and-jobs-2026-03-04_en" target="_blank" rel="noopener">proposed the Industrial Accelerator Act</a>, a regulation designed to increase demand for low-carbon, European-made products. The proposal would:</p>
+      <ul>
+        <li>Introduce "Made in EU" and low-carbon requirements in public procurement and public support schemes for strategic sectors including steel, cement, aluminium, automotive and net-zero technologies, with a possible later extension to chemicals.</li>
+        <li>Attach conditions to non-EU investments of at least 100 million euros by companies controlling more than 40% of global manufacturing capacity in areas such as EV batteries, solar and critical raw materials, including technology transfer, local content and at least 50% EU employment.</li>
+        <li>Support a goal of raising manufacturing's share of EU GDP from 14.3% in 2024 to 20% by 2035.</li>
+      </ul>
+      <p>The proposal still has to be agreed by the European Parliament and the Council of the EU before it takes effect, so manufacturers should treat its requirements as likely direction rather than settled law.</p>
+
+      <h2>Australia: Paying to Rebuild the Solar Supply Chain</h2>
+      <p>Australia's approach is more direct. The Australian Renewable Energy Agency (ARENA) runs the 1 billion Australian dollar <a href="https://arena.gov.au/news/homegrown-solar-boost-with-second-sunshot-funding-round/" target="_blank" rel="noopener">Solar Sunshot program</a>, part of the government's Future Made in Australia agenda. Round 1A, worth up to 500 million dollars for module manufacturing, has closed. Round 1B, with up to 50 million dollars for feasibility and engineering studies, has been extended until November 2026. Round 2 offers 150 million dollars for other parts of the supply chain such as framing, solar glass and junction boxes.</p>
+      <blockquote>"Australia has the opportunity to build high-quality products across the solar PV supply chain." (Darren Miller, CEO, Australian Renewable Energy Agency)</blockquote>
+      <p>Early awards include 34.5 million dollars to Tindo Solar for domestic PV production and up to 46 million dollars to 5B for manufacturing its Maverick solar deployment system.</p>
+
+      <h2>The Energy Price Shock Changes the Math</h2>
+      <p>Incentives are only half of the business case. The other half is what manufacturers pay for energy, and that has shifted sharply this year. The International Energy Agency's <a href="https://iea.blob.core.windows.net/assets/3c66a000-244c-4efb-aaeb-cda33eb833da/ElectricityMid-YearUpdate2026.pdf" target="_blank" rel="noopener">Electricity Mid-Year Update 2026</a> says the temporary loss of nearly 20% of global LNG supply through the Strait of Hormuz pushed gas prices in Asia and Europe to their highest levels since the 2022 to 2023 energy crisis. Average spot wholesale electricity prices in the European Union and Japan rose more than 30% year over year in the second quarter of 2026, while US wholesale prices were largely unchanged.</p>
+      <p>That divergence matters for site and investment decisions. For European and Japanese plants exposed to gas-linked power prices, on-site solar, storage and efficiency upgrades now pay back faster than they did a year ago. US manufacturers face less immediate price pressure but a tighter window for federal credits. The same energy shock is also feeding inflation and higher interest rates, as covered in our <a href="/articles/fed-rate-cuts-global-markets-2026/">analysis of the Fed's October decision</a>, which raises the cost of financing new equipment.</p>
+
+      <h2>What Manufacturers Should Do Now</h2>
+      <ul>
+        <li><strong>Check credit deadlines project by project.</strong> In the US, confirm whether planned solar or wind assets can be placed in service by the end of 2027, and review supply contracts against the foreign entity rules.</li>
+        <li><strong>Prioritize projects with fast payback.</strong> Where power prices have jumped, efficiency, demand response and on-site generation can justify themselves even without subsidies.</li>
+        <li><strong>Track EU procurement rules early.</strong> Suppliers to public buyers in steel, aluminium, cement or clean tech should start documenting product origin and carbon intensity now.</li>
+        <li><strong>Watch open funding rounds.</strong> In Australia, ARENA's Solar Sunshot rounds remain the main source of direct support for solar supply chain projects.</li>
+      </ul>
+      <p>The overall trend is not a global subsidy surge. It is a shift from broad, open-ended incentives toward narrower, more conditional support tied to domestic production and supply chain security. Manufacturers that plan around those conditions, and around higher energy costs, will be better placed to use what support remains.</p>
     `
   },
   {
