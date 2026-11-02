@@ -1,6 +1,83 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "snapchat-planets-order-meaning",
+    title: "Snapchat Planets Explained: The Order and Meaning of Each Planet in the Friend Solar System",
+    excerpt: "Snapchat planets show where you rank on a friend's Best Friends list, from Mercury (closest) to Neptune. Here is the order, how to turn it on and what it means.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-02T19:40:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1691398496172-a7d8d7bfd0b5?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Hand holding a smartphone that displays the white Snapchat ghost logo on a bright yellow screen",
+    isTrending: true,
+    views: 0,
+    tags: ["Snapchat", "Snapchat+", "Social Media", "Apps", "Explainer"],
+    content: `
+      <p class="lead">Snapchat planets are part of the Friend Solar System, a Snapchat+ feature that shows which position you hold on a friend's Best Friends list. The friend is the Sun, and your planet tells you how close you are to the top: Mercury is the closest position and Neptune is the eighth.</p>
+
+      <p>Snapchat says the feature reflects how often a friend communicates with you, and that no one else can see it. Below is the full Snapchat planets order, how to turn the feature on or off, and what the planets do and do not mean.</p>
+
+      <h2>What Are Snapchat Planets?</h2>
+      <p>Snapchat planets are the eight positions in the <a href="https://help.snapchat.com/hc/en-us/articles/8098318922516-How-do-Friend-Solar-Systems-work" target="_blank" rel="noopener">Friend Solar System</a>, according to Snapchat's Help Center. When a Snapchat+ subscriber opens a friend's Friendship Profile, a gold-ringed Best Friends badge appears if they are on that friend's Best Friends list. Tapping it shows which planet they occupy in the friend's Solar System.</p>
+      <p>Each planet stands for a position on that friend's Best Friends list. Snapchat defines Best Friends as the people you Snap and Chat with the most, and a user can have up to eight of them at a time.</p>
+
+      <h2>Snapchat Planets Order: What Each Planet Means</h2>
+      <p>The Snapchat planets order follows the real solar system, starting with the planet nearest the Sun. Snapchat's Help Center lists them from Mercury to Neptune, so the closer your planet is to the Sun, the higher you sit on your friend's Best Friends list.</p>
+      <table>
+        <thead>
+          <tr><th>Planet</th><th>Position on your friend's Best Friends list</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Mercury</td><td>1st: the friend they communicate with most</td></tr>
+          <tr><td>Venus</td><td>2nd</td></tr>
+          <tr><td>Earth</td><td>3rd</td></tr>
+          <tr><td>Mars</td><td>4th</td></tr>
+          <tr><td>Jupiter</td><td>5th</td></tr>
+          <tr><td>Saturn</td><td>6th</td></tr>
+          <tr><td>Uranus</td><td>7th</td></tr>
+          <tr><td>Neptune</td><td>8th</td></tr>
+        </tbody>
+      </table>
+      <p>If you do not see a planet at all, you are not currently one of that friend's eight Best Friends. Snapchat says Best Friends lists are updated regularly, so planet positions can change as messaging habits change.</p>
+
+      <h2>How to Turn On the Snapchat Solar System</h2>
+      <p>The Snapchat Solar System is off by default for first-time Snapchat+ subscribers, according to Snapchat. To switch it on:</p>
+      <ol>
+        <li>Open Snapchat and tap your profile icon.</li>
+        <li>Tap your Snapchat+ membership card to open the Snapchat+ feature settings.</li>
+        <li>Find Solar System and turn the toggle on.</li>
+        <li>Open a friend's Friendship Profile and tap the Best Friends badge to see your planet.</li>
+      </ol>
+      <p>You can turn the feature off at any time with the same toggle. Menu labels can differ slightly between app versions and between Android and iPhone.</p>
+
+      <h2>Can Other People See Your Snapchat Planet?</h2>
+      <p>No. In an <a href="https://newsroom.snap.com/best-friends-streaks-and-the-solar-system" target="_blank" rel="noopener">April 5, 2024 post</a>, Snap described the Solar System as "an optional, private feature that is only available with a Snapchat+ subscription." The company said it "does not show any other friends, it is not a numerical ranking, and it is not visible to anyone else."</p>
+      <p>Your full Best Friends list is also private. Snapchat says friends can tell whether they are on your list, but no one else can see the whole list.</p>
+
+      <h2>Why Snapchat Turned the Solar System Off by Default</h2>
+      <p>Snap announced in its April 2024 post on Best Friends, Streaks and the Solar System that it would turn the Solar System feature off by default. In the same post, Snap said it had heard that some users felt pressure to reply to keep Snap Streaks going, and that it had made lost Streaks easier to restore.</p>
+      <p>The feature remains available to Snapchat+ subscribers who choose to turn it on.</p>
+
+      <h2>What Snapchat Planets Do Not Tell You</h2>
+      <ul>
+        <li><strong>They measure activity, not affection:</strong> Positions are based on how often you Snap and Chat, so a friend you see every day in person may rank lower than someone you message often.</li>
+        <li><strong>They are one-sided:</strong> Your planet shows your place in a friend's list. Their position in your own list can be different.</li>
+        <li><strong>They change:</strong> Because the Best Friends list updates regularly, a planet can move up or down within days.</li>
+      </ul>
+
+      <h2>Related Snapchat+ Friend Features</h2>
+      <p>Snapchat+ also offers an Extended Best Friends List. According to Snapchat's Help Center, it shows your current eight Best Friends, your next eight upcoming Best Friends and any movement up or down since you last checked. It is switched on or off from the same Snapchat+ membership card.</p>
+      <p>For more explainers on apps and business technology, see our <a href="/category/tech/">Tech &amp; AI coverage</a>.</p>
+      <p><em>Feature details checked against Snapchat's Help Center and Snap Newsroom on November 2, 2026. Snapchat may change features without notice.</em></p>
+    `
+  },
+  {
     id: "social-media-ranking-aelftech-com",
     title: "Social Media Ranking AelfTech.com: What the Phrase Means and What We Could Verify",
     excerpt: "\"Social media ranking aelftech com\" is a heavily searched phrase. We checked what AelfTech.com is, how platform ranking works, and what to ask any agency.",
