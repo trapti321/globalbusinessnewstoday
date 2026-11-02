@@ -769,6 +769,37 @@ ${items.join("\n")}
 `;
 }
 
+// llms.txt: a plain-Markdown map of the site for AI assistants (https://llmstxt.org).
+function buildLlmsTxt() {
+  const section = (title, list) => `## ${title}\n\n${list.join("\n")}\n`;
+  const articleLine = (a) => `- [${a.title}](${SITE.url}${articleUrl(a)}): ${a.excerpt} (Published ${a.publishedAt.slice(0, 10)}${a.updatedAt ? `, updated ${a.updatedAt.slice(0, 10)}` : ""})`;
+  const bySection = CATEGORIES
+    .map(c => ({ c, list: ARTICLES.filter(a => a.categorySlug === c.slug) }))
+    .filter(x => x.list.length)
+    .map(({ c, list }) => section(`${c.name}`, list.map(articleLine)));
+
+  return `# ${SITE.name}
+
+> ${SITE.description}
+
+Global Business News Today is an independent business news website. Articles cite primary sources such as SEC filings, central bank statements, government statistics and company announcements, and link to them inline. Every article page includes NewsArticle structured data with its publication and update dates.
+
+- Editorial contact: ${SITE.email}
+- Sitemap: ${SITE.url}/sitemap.xml
+- RSS feed: ${SITE.url}/feed.xml
+
+${section("Site Sections", [
+  `- [Home](${SITE.url}/): Latest global business news and top stories`,
+  `- [All News](${SITE.url}/category/all/): Every article, newest first`,
+  ...CATEGORIES.filter(c => ARTICLES.some(a => a.categorySlug === c.slug)).map(c => `- [${c.name}](${SITE.url}${categoryUrl(c.slug)}): ${c.description}`)
+])}
+${bySection.join("\n")}
+${section("Optional", [
+  `- [Contact Us](${SITE.url}/contact.html): Newsroom, corrections, advertising and partnership enquiries`,
+  `- [Submit a Press Release](${SITE.url}/submit-pr.html): Corporate announcements for editorial review`
+])}`;
+}
+
 /* --------------------------------------------------------------------------
    Write output
    -------------------------------------------------------------------------- */
@@ -819,5 +850,6 @@ sitemapPages.push({ path: "/contact.html" }, { path: "/submit-pr.html" });
 write("404.html", build404());
 write("sitemap.xml", buildSitemap(sitemapPages));
 write("feed.xml", buildFeed());
+write("llms.txt", buildLlmsTxt());
 
-console.log(`Built ${ARTICLES.length} articles, ${CATEGORIES.length + 1} category pages, home, contact, submit-pr, 404, sitemap.xml and feed.xml (assets v=${VERSION}).`);
+console.log(`Built ${ARTICLES.length} articles, ${CATEGORIES.length + 1} category pages, home, contact, submit-pr, 404, sitemap.xml, feed.xml and llms.txt (assets v=${VERSION}).`);

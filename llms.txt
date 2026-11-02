@@ -1,0 +1,53 @@
+# Global Business News Today
+
+> Business news and analysis on global markets, central banks, SMEs and startups, technology and AI, and commercial real estate.
+
+Global Business News Today is an independent business news website. Articles cite primary sources such as SEC filings, central bank statements, government statistics and company announcements, and link to them inline. Every article page includes NewsArticle structured data with its publication and update dates.
+
+- Editorial contact: info@globalbusinessnewstoday.com
+- Sitemap: https://globalbusinessnewstoday.com/sitemap.xml
+- RSS feed: https://globalbusinessnewstoday.com/feed.xml
+
+## Site Sections
+
+- [Home](https://globalbusinessnewstoday.com/): Latest global business news and top stories
+- [All News](https://globalbusinessnewstoday.com/category/all/): Every article, newest first
+- [World Business](https://globalbusinessnewstoday.com/category/world/): Global economy, trade, energy and industrial policy news for business leaders.
+- [Markets & Finance](https://globalbusinessnewstoday.com/category/markets/): Central bank decisions, interest rates, inflation and financial market analysis.
+- [Tech & AI](https://globalbusinessnewstoday.com/category/tech/): Enterprise AI adoption, cybersecurity and business technology news.
+- [SMEs & Startups](https://globalbusinessnewstoday.com/category/smes/): Small business finance, cash flow, venture capital and startup funding news.
+- [Real Estate](https://globalbusinessnewstoday.com/category/property/): Office markets, commercial property, conversions and real estate finance.
+- [Press Releases](https://globalbusinessnewstoday.com/category/press-releases/): Corporate announcements and press releases distributed by Global Business News Today.
+
+## World Business
+
+- [Clean Manufacturing Incentives in 2026: How US, EU and Australian Support Is Shifting](https://globalbusinessnewstoday.com/articles/green-energy-manufacturing-incentives/): US credits are narrowing, the EU wants Made in EU rules and Australia funds solar supply chains. What manufacturers need to know as energy costs bite. (Published 2026-11-01, updated 2026-11-02)
+
+## Markets & Finance
+
+- [Binance Hack: Exchange Says 95% of $6.3 Billion Theft Now Covered as Withdrawals Resume](https://globalbusinessnewstoday.com/articles/binance-hack-6-3-billion-losses-covered/): Binance says it has replaced about 95% of the crypto stolen in a record $6.3 billion hack the FBI blames on North Korea, as $3.6 billion left the exchange. (Published 2026-11-02)
+- [Anthropic IPO Filing: Revenue Hits $33.2 Billion in Nine Months as Net Loss Reaches $104 Billion](https://globalbusinessnewstoday.com/articles/anthropic-ipo-filing-q3-2026-results/): Anthropic's amended IPO filing shows Q3 revenue of $17 billion and a $104 billion nine-month net loss, mostly a non-cash charge tied to its rising valuation. (Published 2026-11-02)
+- [Fed Holds at 3.75% to 4%, Signals More Hikes: What Higher Rates Mean for SMEs](https://globalbusinessnewstoday.com/articles/fed-rate-cuts-global-markets-2026/): The Fed held rates at 3.75% to 4% after a September hike, and the ECB and BoE lean hawkish as energy lifts inflation. What it means for SME borrowing. (Published 2026-11-02, updated 2026-11-02)
+
+## Tech & AI
+
+- [Mid-Sized Firms Are Adopting AI Faster, but Proving ROI Is Still the Hard Part](https://globalbusinessnewstoday.com/articles/ai-enterprise-adoption-roi-surge/): Census and Eurostat data show AI use climbing fastest at mid-sized and large firms, yet surveys suggest many still struggle to tie AI to financial results. (Published 2026-11-02, updated 2026-11-02)
+- [Cyber Insurance Rates Are Falling, but Underwriters Still Want Proof: A Board Checklist](https://globalbusinessnewstoday.com/articles/cybersecurity-compliance-middle-market/): Marsh says global cyber rates fell 4% in Q3 2026. Cover still depends on proven controls like MFA, EDR and tested backups. What boards should ask. (Published 2026-10-30, updated 2026-11-02)
+
+## SMEs & Startups
+
+- [Late Payments Squeeze SME Cash Flow as Rates Rise: The New Rules and Tools Helping Firms Get Paid](https://globalbusinessnewstoday.com/articles/sme-cash-flow-fintech-revolution/): US small firms were paid 8.5 days late on average in mid-2026. New UK rules, instant payments and invoice tools aim to help as credit costs rise. (Published 2026-11-01, updated 2026-11-02)
+- [Venture Debt Hits Record $82 Billion in 2026, but Fewer Startups Are Getting Loans](https://globalbusinessnewstoday.com/articles/venture-debt-startup-funding-shift/): US venture debt reached a record $81.7B through September, yet deal count fell sharply as lenders favor large AI borrowers. What founders should know. (Published 2026-10-30, updated 2026-11-02)
+
+## Real Estate
+
+- [Office Vacancy Starts to Ease at 19.8% as Conversions Hit Record 90,300 Units](https://globalbusinessnewstoday.com/articles/commercial-property-hybrid-workspace/): US office vacancy fell to 19.8% in Q3 2026 as office-to-apartment conversions hit a record. Higher rates and maturing loans still pressure owners. (Published 2026-10-31, updated 2026-11-02)
+
+## Press Releases
+
+- [Press Release: Nexura Global Logistics Announces $45M Automated Fulfillment Center Expansion](https://globalbusinessnewstoday.com/articles/pr-nexura-global-logistics-expansion/): Nexura Global Logistics breaks ground on a multi-modal distribution facility designed to streamline trans-Pacific cargo freight. (Published 2026-10-31)
+
+## Optional
+
+- [Contact Us](https://globalbusinessnewstoday.com/contact.html): Newsroom, corrections, advertising and partnership enquiries
+- [Submit a Press Release](https://globalbusinessnewstoday.com/submit-pr.html): Corporate announcements for editorial review

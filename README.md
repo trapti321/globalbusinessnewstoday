@@ -28,7 +28,7 @@ A high-performance, modern business news and corporate wire publication platform
 2. `image` must be a large image (Unsplash URLs are resized automatically; self-hosted images also need `imageWidth` of at least 1200 and `imageHeight`) so the story is eligible for Google Discover.
 3. `imageAlt` must describe what the image shows. The build fails if it is missing or just repeats the headline.
 4. `categorySlug` decides the section (world, markets, tech, smes, property, press-releases); the label shown on the site comes from it automatically. The newest `publishedAt` becomes the homepage lead story.
-5. Run `node build/build.js` to regenerate every page, `sitemap.xml` and `feed.xml`, then commit and push. The deploy workflow also runs the build automatically.
+5. Run `node build/build.js` to regenerate every page, `sitemap.xml`, `feed.xml` and `llms.txt`, then commit and push. The deploy workflow also runs the build automatically.
 
 Pages are generated from `build/build.js` (shared head, header and footer) and `build/pages/` (contact and press release forms). Do not edit the generated `index.html`, `articles/`, `category/`, `contact.html` or `submit-pr.html` by hand.
 

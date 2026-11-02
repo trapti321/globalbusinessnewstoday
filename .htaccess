@@ -1,6 +1,7 @@
 Options -MultiViews -Indexes
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
+AddCharset UTF-8 .txt .xml
 RewriteEngine On
 
 # Permanently redirect direct requests for /index.html to the clean homepage URL.
