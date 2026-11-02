@@ -13,8 +13,8 @@
   </script>
   <title>Category News | Global Business News Today</title>
   <meta name="description" content="Browse categorized market news, SME reports, technology developments, and press releases.">
-  <link rel="canonical" href="https://globalbusinessnewstoday.com/category.html?cat=all">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <base href="/">
   <link rel="stylesheet" href="css/styles.css?v=20261102-brand-seo">
 </head>
 <body>
@@ -57,12 +57,12 @@
       <div class="container">
         <ul class="nav-list" id="mainNavList">
           <li><a href="/" class="nav-link">Home</a></li>
-          <li><a href="category.html?cat=world" class="nav-link" id="nav-world">World Business</a></li>
-          <li><a href="category.html?cat=markets" class="nav-link" id="nav-markets">Markets & Finance</a></li>
-          <li><a href="category.html?cat=tech" class="nav-link" id="nav-tech">Tech & AI</a></li>
-          <li><a href="category.html?cat=smes" class="nav-link" id="nav-smes">SMEs & Startups</a></li>
-          <li><a href="category.html?cat=property" class="nav-link" id="nav-property">Real Estate</a></li>
-          <li><a href="category.html?cat=press-releases" class="nav-link" id="nav-press-releases">Press Releases</a></li>
+          <li><a href="/category/world/" class="nav-link" id="nav-world">World Business</a></li>
+          <li><a href="/category/markets/" class="nav-link" id="nav-markets">Markets & Finance</a></li>
+          <li><a href="/category/tech/" class="nav-link" id="nav-tech">Tech & AI</a></li>
+          <li><a href="/category/smes/" class="nav-link" id="nav-smes">SMEs & Startups</a></li>
+          <li><a href="/category/property/" class="nav-link" id="nav-property">Real Estate</a></li>
+          <li><a href="/category/press-releases/" class="nav-link" id="nav-press-releases">Press Releases</a></li>
           <li><a href="contact.html" class="nav-link">Contact Us</a></li>
         </ul>
       </div>
@@ -125,11 +125,8 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
-      const cat = params.get("cat") || "all";
-      const canonicalLink = document.querySelector('link[rel="canonical"]');
-      if (canonicalLink) {
-        canonicalLink.href = `https://globalbusinessnewstoday.com/category.html?cat=${encodeURIComponent(cat)}`;
-      }
+      const pathCat = window.location.pathname.match(/^\/category\/([^/]+)\/?$/)?.[1];
+      const cat = params.get("cat") || (pathCat && decodeURIComponent(pathCat)) || "all";
 
       const categoryTitles = {
         "world": "World Business & Global Economy",
@@ -140,6 +137,18 @@
         "press-releases": "Corporate Wire & Press Releases",
         "all": "All Global Business News"
       };
+
+      if (categoryTitles[cat]) {
+        const canonicalLink = document.createElement("link");
+        canonicalLink.rel = "canonical";
+        canonicalLink.href = `https://globalbusinessnewstoday.com/category/${encodeURIComponent(cat)}/`;
+        document.head.appendChild(canonicalLink);
+      } else {
+        const robotsMeta = document.createElement("meta");
+        robotsMeta.name = "robots";
+        robotsMeta.content = "noindex, follow";
+        document.head.appendChild(robotsMeta);
+      }
 
       const title = categoryTitles[cat] || "Business News";
       document.title = `${title} | Global Business News Today`;
