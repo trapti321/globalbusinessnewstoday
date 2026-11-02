@@ -15,7 +15,7 @@
   <meta name="description" content="Read in-depth market intelligence and business analysis from Global Business News Today.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <base href="/">
-  <link rel="stylesheet" href="css/styles.css?v=20261102-brand-seo">
+  <link rel="stylesheet" href="css/styles.css?v=20261102-fed-update">
   <style>
     .reading-progress-bar {
       position: fixed;
@@ -200,8 +200,8 @@
     </div>
   </footer>
 
-  <script src="js/articles-data.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/articles-data.js?v=20261102-fed-update"></script>
+  <script src="js/main.js?v=20261102-fed-update"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const params = new URLSearchParams(window.location.search);
@@ -215,6 +215,7 @@
         canonicalLink.href = `https://globalbusinessnewstoday.com/articles/${encodeURIComponent(article.id)}/`;
         document.head.appendChild(canonicalLink);
         document.title = `${article.title} | Global Business News Today`;
+        document.querySelector('meta[name="description"]').setAttribute("content", article.excerpt);
         document.getElementById("articleLoading").style.display = "none";
         document.getElementById("articleContentWrap").style.display = "block";
 

@@ -944,6 +944,16 @@ button {
   margin-block: 2rem 1rem;
 }
 
+.article-prose a {
+  color: var(--brand-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-prose a:hover {
+  text-decoration-thickness: 2px;
+}
+
 .article-prose blockquote {
   border-inline-start: 4px solid var(--brand-accent);
   padding-inline-start: 1.25rem;
