@@ -62,6 +62,32 @@ A high-performance, modern business news and corporate wire publication platform
 
 ---
 
+## 🚀 Automated Deployment (CI/CD)
+
+This repository is configured with zero-downtime automated deployment to Hostinger via GitHub Actions (`.github/workflows/deploy.yml`).
+
+### 1. Required Repository Secrets
+Ensure the following 3 secrets are configured in your GitHub repository (**Settings → Secrets and variables → Actions**):
+- `HOSTINGER_FTP_SERVER`: Hostinger FTP hostname or server IP
+- `HOSTINGER_FTP_USERNAME`: Hostinger FTP account username
+- `HOSTINGER_FTP_PASSWORD`: Hostinger FTP account password
+
+### 2. How to Deploy Changes
+Whenever you update code, articles, or styles, push to the `main` branch:
+
+```bash
+git add .
+git commit -m "Update headlines and news content"
+git push origin main
+```
+
+### 3. What Happens in the Background
+1. **GitHub Actions Triggers**: Detects the push to `main` and starts the sync workflow.
+2. **Secure FTPS Sync**: Connects to Hostinger using your encrypted repository secrets.
+3. **Instant Live Update**: Only changed files are transferred into `public_html`, and updates go live on [globalbusinessnewstoday.com](https://globalbusinessnewstoday.com) within 15–30 seconds.
+
+---
+
 ## 📄 License & Attribution
 
 All rights reserved © Global Business News Today.
