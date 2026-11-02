@@ -1,6 +1,62 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "binance-hack-6-3-billion-losses-covered",
+    title: "Binance Hack: Exchange Says 95% of $6.3 Billion Theft Now Covered as Withdrawals Resume",
+    excerpt: "Binance says it has replaced about 95% of the crypto stolen in a record $6.3 billion hack the FBI blames on North Korea, as $3.6 billion left the exchange.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-02T18:40:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1744473331990-0e5024953832?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Hand placing glowing green Bitcoin and Ether coins on a computer keyboard",
+    isLead: false,
+    isTrending: true,
+    views: 0,
+    tags: ["Binance", "Crypto Hack", "North Korea", "Cybersecurity", "Cryptocurrency"],
+    content: `
+      <p class="lead">Binance says it has now replaced about 95% of the cryptocurrency stolen in a roughly $6.3 billion hack of its hot wallets, the largest crypto theft on record, as customers pulled billions of dollars from the exchange after withdrawals reopened on November 1, 2026.</p>
+
+      <p>The FBI has attributed the attack to North Korea. Binance, the world's largest crypto exchange, has said it will cover the losses with company money rather than pass them on to users.</p>
+
+      <h2>What Happened in the Binance Hack</h2>
+      <p>The theft began at 20:05 UTC on October 29, 2026, according to blockchain analytics firm <a href="https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history" target="_blank" rel="noopener">TRM Labs</a>. TRM estimates that about $6.36 billion, valued at the prices at the time of the transfers, was moved out of Binance wallets across ten blockchains, most of it within roughly 20 minutes. That is about four times the $1.5 billion stolen from the Bybit exchange in February 2025.</p>
+      <p>How the attackers got in is still being investigated. Binance first said the breach may have started with a compromised DevOps engineer's laptop. Co-chief executive Richard Teng later said the company had found additional breach points and that the attackers used Ethereum's EIP-7702 account delegation feature to take control of a hot wallet without going through Binance's normal approval process, <a href="https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart" target="_blank" rel="noopener">CoinDesk reported</a>. "This was a complex attack," Teng said.</p>
+      <p>TRM says the attacker prepared 50 pre-signed authorizations in advance, which it believes points to a compromise of Binance's hot wallet signing infrastructure. A hot wallet is an internet-connected wallet an exchange uses to process day-to-day deposits and withdrawals.</p>
+
+      <h2>FBI Blames North Korea's TraderTraitor</h2>
+      <p>On October 31, the <a href="https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack" target="_blank" rel="noopener">FBI said North Korea was responsible</a> for the theft of more than $6 billion in virtual assets from Binance, activity it tracks as "TraderTraitor." The bureau said the stolen funds were being converted primarily into Ether and that it expects further laundering through decentralized finance and instant swap services. It asked exchanges, node operators and analytics firms to block transactions linked to the addresses involved.</p>
+      <p>TRM Labs had separately attributed the attack to TraderTraitor "with high confidence," the same group the FBI blamed for the Bybit theft. TRM says the attacker sold about 325 million USDT to market makers for roughly 122,300 ETH at a discount of more than 10%, borrowed against stablecoins on lending protocols and began splitting stolen Bitcoin across many transactions.</p>
+
+      <h2>How Binance Is Covering the Losses</h2>
+      <p>On October 31, Binance said it had restored backing for up to 90% of the stolen assets, <a href="https://www.cnbc.com/2026/10/31/binance-hack-asset-coverage-withdrawals.html" target="_blank" rel="noopener">CNBC reported</a>. That does not mean 90% of the funds were recovered from the attacker. Binance bought replacement tokens, funded by partly drawing on its Secure Asset Fund for Users (SAFU), part of its futures insurance fund and its corporate treasury.</p>
+      <p>The exchange said its largest assets, including BTC, ETH, USDT, BNB, SOL, USDC and XRP, were "fully backed 100%." In a statement, Binance said it "will absorb the financial impact of these stolen funds, not our users."</p>
+      <p>By November 2, Binance said coverage had reached about 95%, according to <a href="https://www.cnbc.com/2026/11/02/binance-outflow-hack-bitcoin.html" target="_blank" rel="noopener">CNBC</a>. The remaining 5% consists of less liquid tokens that take longer to buy in the quantities needed, and the company says it will keep purchasing them through markets and over-the-counter deals until coverage reaches 100%.</p>
+
+      <h2>Billions Frozen, Billions Still Out of Reach</h2>
+      <p>Stablecoin issuers and other parties have frozen part of the stolen funds. As of TRM's analysis, about $2.7 billion had been frozen, led by roughly 1.77 billion USDT frozen by Tether and about 825 million USDC frozen by Circle, with smaller amounts frozen by Ripple, World Liberty Financial and Arbitrum's Security Council. Circle has since said it froze more than $1.1 billion in USDC linked to the incident.</p>
+      <p>TRM estimated that the attacker still held about $2.4 billion in assets beyond the reach of any issuer. Frozen totals are still changing as the investigation continues.</p>
+
+      <h2>$3.6 Billion Leaves Binance as Withdrawals Reopen</h2>
+      <p>Binance paused withdrawals after the attack and reopened them in phases from 06:00 UTC on November 1, starting with the Bitcoin network. By 12:36 UTC, it said withdrawals were restored across all 15 networks and assets in the first phase.</p>
+      <p>Between 06:00 and 15:30 UTC that day, customers withdrew $4.65 billion and deposited $1.01 billion, a net outflow of $3.64 billion, Binance said. That equals about 2.1% of the $171 billion in total assets shown in its most recent proof-of-reserves data, dated October 28. Binance founder Changpeng Zhao wrote on X that "98% choose to stay!"</p>
+
+      <h2>Questions That Remain</h2>
+      <ul>
+        <li><strong>Root cause:</strong> Binance has not yet published a full account of how the attackers breached its systems. It said it is reviewing cloud systems, employee devices, private key management and transaction signing.</li>
+        <li><strong>Whose funds were hit:</strong> Teng said the attack targeted Binance's own hot wallet rather than customer funds, but a CoinDesk review of Binance's reserve data found the compromised wallets had previously been listed among assets backing customer balances.</li>
+        <li><strong>Recovery:</strong> How much of the roughly $2.4 billion still controlled by the attacker can be traced and frozen will depend on how quickly it moves through bridges, swap services and brokers.</li>
+      </ul>
+      <p>For businesses, the attack is another reminder of why insurers now demand proof of strong access controls before writing cyber cover, as explained in our <a href="/articles/cybersecurity-compliance-middle-market/">board checklist on cyber insurance</a>.</p>
+      <p><em>This article is for information only and is not investment advice. Figures are as reported by the sources cited as of November 2, 2026, and may change.</em></p>
+    `
+  },
+  {
     id: "anthropic-ipo-filing-q3-2026-results",
     title: "Anthropic IPO Filing: Revenue Hits $33.2 Billion in Nine Months as Net Loss Reaches $104 Billion",
     excerpt: "Anthropic's amended IPO filing shows Q3 revenue of $17 billion and a $104 billion nine-month net loss, mostly a non-cash charge tied to its rising valuation.",
