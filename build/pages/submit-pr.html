@@ -1,0 +1,67 @@
+    <div class="narrow-page">
+      <div class="page-intro page-intro-center">
+        <span class="eyebrow">Corporate Wire</span>
+        <h1 class="page-title">Submit Your Press Release</h1>
+        <p class="page-description">Send company announcements, product launches, funding rounds and executive appointments for review by our editorial desk.</p>
+      </div>
+
+      <div class="form-card">
+        <form id="prSubmissionForm" data-form="pr" novalidate>
+          <input type="hidden" name="type" value="pr">
+          {{HONEYPOT}}
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="companyName">Company / Organization Name *</label>
+              <input type="text" id="companyName" name="company" class="form-control" required maxlength="160" autocomplete="organization" placeholder="Your company name">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Media Contact Email *</label>
+              <input type="email" id="contactEmail" name="email" class="form-control" required maxlength="200" autocomplete="email" placeholder="Media contact email address">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prTitle">Press Release Headline *</label>
+            <input type="text" id="prTitle" name="headline" class="form-control" required maxlength="250" placeholder="Your announcement headline">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="prCategory">Industry Category *</label>
+              <select id="prCategory" name="category" class="form-control" required>
+                <option value="">Select industry...</option>
+                <option value="SME & Entrepreneurship">SME & Entrepreneurship</option>
+                <option value="Technology & AI">Technology & AI</option>
+                <option value="Banking & Financial Markets">Banking & Financial Markets</option>
+                <option value="Commercial Real Estate">Commercial Real Estate</option>
+                <option value="Manufacturing & Energy">Manufacturing & Energy</option>
+                <option value="Healthcare & Biotech">Healthcare & Biotech</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="dateline">City / Country Dateline *</label>
+              <input type="text" id="dateline" name="dateline" class="form-control" required maxlength="120" placeholder="e.g. LONDON / NEW YORK">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prSummary">Executive Summary (1 to 2 sentences) *</label>
+            <textarea id="prSummary" name="summary" class="form-control" rows="2" required maxlength="600"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prBody">Full Press Release Body *</label>
+            <textarea id="prBody" name="body" class="form-control" rows="10" required maxlength="20000" placeholder="Paste the complete text of your announcement, quotes and boilerplate..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="mediaUrl">Featured Image URL or Media Kit Link (optional)</label>
+            <input type="url" id="mediaUrl" name="media_url" class="form-control" maxlength="500" placeholder="https://yourcompany.com/press-kit/image.jpg">
+          </div>
+
+          <button type="submit" class="btn-pr-submit btn-block">Submit Press Release for Editorial Review</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Submissions are reviewed by our editorial desk for accuracy before publication. Questions? Email <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>.</p>
+        </form>
+      </div>
+    </div>

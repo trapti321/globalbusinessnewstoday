@@ -1,57 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://globalbusinessnewstoday.com/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/fed-rate-cuts-global-markets-2026/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/ai-enterprise-adoption-roi-surge/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/green-energy-manufacturing-incentives/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/sme-cash-flow-fintech-revolution/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/commercial-property-hybrid-workspace/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/pr-nexura-global-logistics-expansion/</loc>
+    <lastmod>2026-10-31T09:00:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/cybersecurity-compliance-middle-market/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/venture-debt-startup-funding-shift/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
+    <image:image><image:loc>https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1600&amp;h=900&amp;q=80</image:loc></image:image>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/all/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/world/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/markets/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/tech/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/smes/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/property/</loc>
+    <lastmod>2026-11-02T17:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/category/press-releases/</loc>
+    <lastmod>2026-10-31T09:00:00Z</lastmod>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/contact.html</loc>
   </url>
   <url>
     <loc>https://globalbusinessnewstoday.com/submit-pr.html</loc>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/fed-rate-cuts-global-markets-2026/</loc>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/ai-enterprise-adoption-roi-surge/</loc>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/green-energy-manufacturing-incentives/</loc>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/sme-cash-flow-fintech-revolution/</loc>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/commercial-property-hybrid-workspace/</loc>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/pr-nexura-global-logistics-expansion/</loc>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/cybersecurity-compliance-middle-market/</loc>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/venture-debt-startup-funding-shift/</loc>
   </url>
 </urlset>

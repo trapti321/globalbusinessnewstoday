@@ -23,6 +23,19 @@ A high-performance, modern business news and corporate wire publication platform
 
 ---
 
+## ✍️ Publishing a New Article
+
+1. Add an entry to `js/articles-data.js` with `id`, `title`, `excerpt` (max 160 characters, used as the meta description), `category`, `categorySlug`, `author`, `publishedAt`, optional `updatedAt`, `readTime`, `tags`, `content`, `image` and `imageAlt`.
+2. `image` must be a large image (Unsplash URLs are resized automatically; self-hosted images also need `imageWidth` of at least 1200 and `imageHeight`) so the story is eligible for Google Discover.
+3. `imageAlt` must describe what the image shows. The build fails if it is missing or just repeats the headline.
+4. Run `node build/build.js` to regenerate every page, `sitemap.xml` and `feed.xml`, then commit and push. The deploy workflow also runs the build automatically.
+
+Pages are generated from `build/build.js` (shared head, header and footer) and `build/pages/` (contact and press release forms). Do not edit the generated `index.html`, `articles/`, `category/`, `contact.html` or `submit-pr.html` by hand.
+
+Form submissions (newsletter, contact, press release) are handled by `api/submit.php`, which emails them to the site owner and keeps a private backup outside `public_html`.
+
+---
+
 ## 📁 Project Structure
 
 ```text

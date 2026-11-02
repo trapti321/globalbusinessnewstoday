@@ -1,0 +1,56 @@
+    <div class="narrow-page">
+      <div class="page-intro page-intro-center">
+        <h1 class="page-title">Contact Global Business News Today</h1>
+        <p class="page-description">Send us news tips, corrections, advertising enquiries or partnership requests. We read every message.</p>
+      </div>
+
+      <div class="contact-cards">
+        <div class="widget-box">
+          <h2 class="widget-title">Email the Newsroom</h2>
+          <p class="contact-card-text">For editorial, corrections, advertising and partnerships, email us directly:</p>
+          <p class="contact-card-email"><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+        </div>
+
+        <div class="widget-box">
+          <h2 class="widget-title">Press Releases</h2>
+          <p class="contact-card-text">Companies can send announcements for editorial review using our submission form.</p>
+          <p class="contact-card-email"><a href="/submit-pr.html">Submit a press release ➔</a></p>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h2 class="form-card-title">Send a Message</h2>
+        <form id="contactInquiryForm" data-form="contact" novalidate>
+          <input type="hidden" name="type" value="contact">
+          {{HONEYPOT}}
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="senderName">Your Full Name *</label>
+              <input type="text" id="senderName" name="name" class="form-control" required maxlength="120" autocomplete="name" placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="senderEmail">Email Address *</label>
+              <input type="email" id="senderEmail" name="email" class="form-control" required maxlength="200" autocomplete="email" placeholder="Your email address">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inquiryType">Department *</label>
+            <select id="inquiryType" name="department" class="form-control" required>
+              <option value="Editorial News Desk">Editorial News Desk</option>
+              <option value="Corporate Wire & PR Distribution">Corporate Wire & PR Distribution</option>
+              <option value="Sponsorship & Advertising">Sponsorship & Advertising</option>
+              <option value="Corrections & Factual Inquiries">Corrections & Factual Inquiries</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inquiryMessage">Your Message *</label>
+            <textarea id="inquiryMessage" name="message" class="form-control" rows="6" required maxlength="5000" placeholder="How can we help?"></textarea>
+          </div>
+
+          <button type="submit" class="btn-pr-submit btn-block">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>

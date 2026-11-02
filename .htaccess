@@ -1,26 +1,25 @@
-Options -MultiViews
+Options -MultiViews -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
 RewriteEngine On
 
 # Permanently redirect direct requests for /index.html to the clean homepage URL.
 RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
 RewriteRule ^index\.html$ / [R=301,L]
 
-# Permanently redirect legacy article query URLs to the clean article path.
-RewriteCond %{ENV:REDIRECT_STATUS} ^$
+# Permanently redirect legacy article URLs to the clean article path.
 RewriteCond %{QUERY_STRING} ^id=([A-Za-z0-9-]+)$
 RewriteRule ^article\.html$ /articles/%1/ [R=301,L,NE,QSD]
+RewriteRule ^article\.html$ / [R=301,L,QSD]
 
-# Permanently redirect legacy category query URLs to the clean category path.
-RewriteCond %{ENV:REDIRECT_STATUS} ^$
+# Permanently redirect legacy category URLs to the clean category path.
 RewriteCond %{QUERY_STRING} ^cat=([A-Za-z0-9-]+)$
 RewriteRule ^category\.html$ /category/%1/ [R=301,L,NE,QSD]
+RewriteRule ^category\.html$ /category/all/ [R=301,L,QSD]
 
-RewriteCond %{ENV:REDIRECT_STATUS} ^$
-RewriteCond %{QUERY_STRING} ^$
-RewriteRule ^category\.html$ /category/all/ [R=301,L]
+# Keep generated article and category pages on their clean trailing-slash URLs.
+RewriteCond %{THE_REQUEST} \s/+(articles|category)/([A-Za-z0-9-]+)/index\.html[\s?] [NC]
+RewriteRule ^ /%1/%2/ [R=301,L]
 
-# Serve the shared static category template at clean, crawlable URLs.
-RewriteRule ^category/([A-Za-z0-9-]+)/?$ category.html?cat=$1 [L,QSA]
-
-# Serve the shared static article template at clean, crawlable URLs.
-RewriteRule ^articles/([A-Za-z0-9-]+)/?$ article.html?id=$1 [L,QSA]
+# Never serve build tooling or source fragments.
+RewriteRule ^build(/|$) - [F,L]

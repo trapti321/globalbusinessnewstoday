@@ -1,16 +1,22 @@
 /**
  * Global Business News Today — Core Client Scripts
+ *
+ * Pages are pre-rendered by build/build.js; this file only adds interactivity.
  */
+
+const SEARCH_DATA_SRC = document.currentScript && document.currentScript.dataset.searchSrc;
+const FORM_ENDPOINT = "/api/submit.php";
 
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initDateDisplay();
   initMarketTicker();
   initNavigation();
-  initNewsRender();
+  initFilterPills();
   initSearch();
-  initNewsletter();
-  initModals();
+  initForms();
+  initShare();
+  initReadingProgress();
 });
 
 /* --------------------------------------------------------------------------
@@ -18,18 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
    -------------------------------------------------------------------------- */
 function initTheme() {
   const toggleBtn = document.getElementById("themeToggleBtn");
-  const storedTheme = localStorage.getItem("gbnt_theme") || 
+  let storedTheme = null;
+  try {
+    storedTheme = localStorage.getItem("gbnt_theme");
+  } catch (e) {}
+  const theme = storedTheme ||
     (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
-  document.documentElement.setAttribute("data-theme", storedTheme);
-  updateThemeIcon(storedTheme);
+  document.documentElement.setAttribute("data-theme", theme);
+  updateThemeIcon(theme);
 
   if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
       const currentTheme = document.documentElement.getAttribute("data-theme");
       const nextTheme = currentTheme === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", nextTheme);
-      localStorage.setItem("gbnt_theme", nextTheme);
+      try {
+        localStorage.setItem("gbnt_theme", nextTheme);
+      } catch (e) {}
       updateThemeIcon(nextTheme);
       initMarketTicker();
     });
@@ -104,272 +116,222 @@ function initNavigation() {
     menuBtn.addEventListener("click", () => {
       navList.classList.toggle("open");
       const isOpen = navList.classList.contains("open");
-      menuBtn.setAttribute("aria-expanded", isOpen);
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
       menuBtn.textContent = isOpen ? "✕" : "☰";
     });
   }
 }
 
 /* --------------------------------------------------------------------------
-   Article Rendering & Categorization
+   Homepage Category Filter (cards are pre-rendered, so filtering just hides them)
    -------------------------------------------------------------------------- */
-function initNewsRender() {
-  if (typeof ARTICLES === "undefined") return;
+function initFilterPills() {
+  const pills = document.querySelectorAll(".filter-pill");
+  const grid = document.getElementById("mainArticlesGrid");
+  const empty = document.getElementById("gridEmptyState");
+  if (!pills.length || !grid) return;
 
-  const leadContainer = document.getElementById("heroLeadStory");
-  const sideContainer = document.getElementById("heroSideStories");
-  const trendingContainer = document.getElementById("trendingGrid");
-  const mainGridContainer = document.getElementById("mainArticlesGrid");
-
-  // 1. Render Hero Lead Story
-  const leadArticle = ARTICLES.find(a => a.isLead) || ARTICLES[0];
-  if (leadContainer && leadArticle) {
-    leadContainer.innerHTML = `
-      <article class="lead-card">
-        <a href="/articles/${encodeURIComponent(leadArticle.id)}/" class="lead-media-wrap">
-          <span class="card-category-badge">${escapeHtml(leadArticle.category)}</span>
-          <img src="${escapeHtml(leadArticle.image)}" alt="${escapeHtml(leadArticle.title)}" loading="eager" />
-        </a>
-        <div class="lead-content">
-          <a href="/articles/${encodeURIComponent(leadArticle.id)}/">
-            <h2 class="lead-title">${escapeHtml(leadArticle.title)}</h2>
-          </a>
-          <p class="lead-excerpt">${escapeHtml(leadArticle.excerpt)}</p>
-          <div class="article-meta" style="margin-top: 0.75rem;">
-            <div class="author-pill">
-              <img src="${escapeHtml(leadArticle.author.avatar)}" alt="${escapeHtml(leadArticle.author.name)}">
-              <span>${escapeHtml(leadArticle.author.name)}</span>
-            </div>
-            <span class="meta-dot">•</span>
-            <time datetime="${leadArticle.publishedAt}">${formatDate(leadArticle.publishedAt)}</time>
-            <span class="meta-dot">•</span>
-            <span>${escapeHtml(leadArticle.readTime)}</span>
-          </div>
-        </div>
-      </article>
-    `;
-  }
-
-  // 2. Render Side Stories (Editor's Picks)
-  if (sideContainer) {
-    const sideArticles = ARTICLES.filter(a => a.id !== leadArticle?.id).slice(0, 3);
-    sideContainer.innerHTML = sideArticles.map(article => `
-      <article class="side-story-card">
-        <a href="/articles/${encodeURIComponent(article.id)}/" class="side-thumb">
-          <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.title)}" loading="lazy" />
-        </a>
-        <div class="side-story-content">
-          <span class="side-category">${escapeHtml(article.category)}</span>
-          <a href="/articles/${encodeURIComponent(article.id)}/">
-            <h4 class="side-title">${escapeHtml(article.title)}</h4>
-          </a>
-          <span class="article-meta" style="font-size: 0.71875rem;">${formatDate(article.publishedAt)}</span>
-        </div>
-      </article>
-    `).join("");
-  }
-
-  // 3. Render Numbered Trending Stories (1 - 4)
-  if (trendingContainer) {
-    const trendingArticles = ARTICLES.slice(0, 4);
-    trendingContainer.innerHTML = trendingArticles.map((article, idx) => `
-      <div class="trending-item">
-        <span class="trending-num">${idx + 1}</span>
-        <div class="trending-content">
-          <span class="side-category">${escapeHtml(article.category)}</span>
-          <a href="/articles/${encodeURIComponent(article.id)}/">
-            <h4 class="trending-title">${escapeHtml(article.title)}</h4>
-          </a>
-          <span class="article-meta" style="font-size: 0.71875rem;">${escapeHtml(article.readTime)}</span>
-        </div>
-      </div>
-    `).join("");
-  }
-
-  // 4. Render Main Articles Grid with Category Filter
-  renderArticlesGrid("all");
-
-  // Category filter pills click
-  const filterPills = document.querySelectorAll(".filter-pill");
-  filterPills.forEach(pill => {
+  pills.forEach(pill => {
     pill.addEventListener("click", () => {
-      filterPills.forEach(p => p.classList.remove("active"));
-      pill.classList.add("active");
-      const category = pill.getAttribute("data-category");
-      renderArticlesGrid(category);
-    });
-  });
-}
+      const category = pill.dataset.category;
+      pills.forEach(p => {
+        p.classList.toggle("active", p === pill);
+        p.setAttribute("aria-pressed", String(p === pill));
+      });
 
-function renderArticlesGrid(category = "all") {
-  const container = document.getElementById("mainArticlesGrid");
-  if (!container || typeof ARTICLES === "undefined") return;
-
-  const filtered = category === "all" 
-    ? ARTICLES 
-    : ARTICLES.filter(a => a.categorySlug === category);
-
-  if (filtered.length === 0) {
-    container.innerHTML = `
-      <div style="grid-column: 1 / -1; padding: 3rem; text-align: center; color: var(--text-muted);">
-        <p>No stories found in this section right now. Check back shortly or submit a story.</p>
-      </div>
-    `;
-    return;
-  }
-
-  container.innerHTML = filtered.map(article => `
-    <article class="news-card">
-      <a href="/articles/${encodeURIComponent(article.id)}/" class="news-card-thumb">
-        <span class="card-category-badge">${escapeHtml(article.category)}</span>
-        <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.title)}" loading="lazy" />
-      </a>
-      <div class="news-card-body">
-        <a href="/articles/${encodeURIComponent(article.id)}/">
-          <h3 class="news-card-title">${escapeHtml(article.title)}</h3>
-        </a>
-        <p class="news-card-excerpt">${escapeHtml(article.excerpt)}</p>
-        <div class="news-card-footer">
-          <span>${formatDate(article.publishedAt)} • ${escapeHtml(article.readTime)}</span>
-          <button type="button" class="btn-read-quick" data-article-id="${article.id}">
-            Quick Read ➔
-          </button>
-        </div>
-      </div>
-    </article>
-  `).join("");
-
-  // Attach quick read listeners
-  container.querySelectorAll(".btn-read-quick").forEach(btn => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const id = btn.getAttribute("data-article-id");
-      openQuickReadModal(id);
+      let visible = 0;
+      grid.querySelectorAll(".news-card").forEach(card => {
+        const show = category === "all" || card.dataset.category === category;
+        card.hidden = !show;
+        if (show) visible++;
+      });
+      if (empty) empty.hidden = visible > 0;
     });
   });
 }
 
 /* --------------------------------------------------------------------------
-   Quick Read Modal
+   Live Search (article data is loaded on first open)
    -------------------------------------------------------------------------- */
-function initModals() {
-  const modal = document.getElementById("quickReadModal");
-  const closeBtn = document.getElementById("modalCloseBtn");
+let searchDataPromise = null;
 
-  if (closeBtn && modal) {
-    closeBtn.addEventListener("click", () => modal.close());
-  }
-
-  // Click outside to close (light dismiss)
-  if (modal) {
-    modal.addEventListener("click", (e) => {
-      const rect = modal.getBoundingClientRect();
-      const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height
-        && rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-      if (!isInDialog) {
-        modal.close();
-      }
+function loadSearchData() {
+  if (typeof ARTICLES !== "undefined") return Promise.resolve(ARTICLES);
+  if (!searchDataPromise) {
+    searchDataPromise = new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = SEARCH_DATA_SRC || "/js/articles-data.js";
+      s.onload = () => resolve(typeof ARTICLES !== "undefined" ? ARTICLES : []);
+      s.onerror = () => {
+        searchDataPromise = null;
+        reject(new Error("Search data failed to load"));
+      };
+      document.head.appendChild(s);
     });
   }
+  return searchDataPromise;
 }
 
-function openQuickReadModal(articleId) {
-  const modal = document.getElementById("quickReadModal");
-  const titleEl = document.getElementById("modalArticleTitle");
-  const bodyEl = document.getElementById("modalArticleBody");
-  const fullLink = document.getElementById("modalFullStoryLink");
-
-  if (!modal || typeof ARTICLES === "undefined") return;
-
-  const article = ARTICLES.find(a => a.id === articleId);
-  if (!article) return;
-
-  if (titleEl) titleEl.textContent = article.title;
-  if (bodyEl) {
-    bodyEl.innerHTML = `
-      <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.title)}" style="border-radius: var(--radius-sm); margin-bottom: 1.25rem; aspect-ratio: 16/9; object-fit: cover; width: 100%;">
-      <div class="article-meta" style="margin-bottom: 1rem;">
-        <strong>${escapeHtml(article.author.name)}</strong> • ${formatDate(article.publishedAt)} • ${escapeHtml(article.category)}
-      </div>
-      <div class="article-prose" style="font-size: 1rem; line-height: 1.6;">
-        ${article.content}
-      </div>
-    `;
-  }
-  if (fullLink) {
-    fullLink.href = `/articles/${encodeURIComponent(article.id)}/`;
-  }
-
-  modal.showModal();
-}
-
-/* --------------------------------------------------------------------------
-   Live Search
-   -------------------------------------------------------------------------- */
 function initSearch() {
   const searchTrigger = document.getElementById("searchTriggerBtn");
   const searchModal = document.getElementById("searchModal");
   const searchClose = document.getElementById("searchCloseBtn");
   const searchInput = document.getElementById("siteSearchInput");
   const searchResults = document.getElementById("searchResultsWrap");
+  if (!searchTrigger || !searchModal || !searchInput || !searchResults) return;
 
-  if (searchTrigger && searchModal) {
-    searchTrigger.addEventListener("click", () => {
-      searchModal.showModal();
-      if (searchInput) searchInput.focus();
+  const hint = `<p class="search-hint">Type to search business news, markets and press releases...</p>`;
+  searchResults.innerHTML = hint;
+
+  searchTrigger.addEventListener("click", () => {
+    searchModal.showModal();
+    searchInput.focus();
+    loadSearchData().catch(() => {
+      searchResults.innerHTML = `<p class="search-hint">Search is unavailable right now. Please try again.</p>`;
     });
-  }
+  });
 
-  if (searchClose && searchModal) {
+  if (searchClose) {
     searchClose.addEventListener("click", () => searchModal.close());
   }
 
-  if (searchInput && searchResults && typeof ARTICLES !== "undefined") {
-    searchInput.addEventListener("input", (e) => {
-      const q = e.target.value.trim().toLowerCase();
-      if (!q) {
-        searchResults.innerHTML = `<p style="color: var(--text-muted); font-size: 0.875rem;">Type to search global business news, markets, and press releases...</p>`;
-        return;
-      }
+  searchModal.addEventListener("click", (e) => {
+    if (e.target === searchModal) searchModal.close();
+  });
 
-      const matches = ARTICLES.filter(a => 
-        a.title.toLowerCase().includes(q) ||
-        a.excerpt.toLowerCase().includes(q) ||
-        a.category.toLowerCase().includes(q) ||
-        a.tags.some(t => t.toLowerCase().includes(q))
-      );
+  searchInput.addEventListener("input", async () => {
+    const q = searchInput.value.trim().toLowerCase();
+    if (!q) {
+      searchResults.innerHTML = hint;
+      return;
+    }
 
-      if (matches.length === 0) {
-        searchResults.innerHTML = `<p style="color: var(--text-muted); font-size: 0.875rem;">No stories found matching "<strong>${escapeHtml(q)}</strong>".</p>`;
-        return;
-      }
+    let articles;
+    try {
+      articles = await loadSearchData();
+    } catch (e) {
+      return;
+    }
+    if (searchInput.value.trim().toLowerCase() !== q) return;
 
-      searchResults.innerHTML = matches.map(m => `
-        <div style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color);">
-          <span style="font-size: 0.6875rem; font-weight: 700; color: var(--brand-accent); text-transform: uppercase;">${escapeHtml(m.category)}</span>
-          <h4 style="font-size: 0.9375rem; margin: 0.25rem 0;"><a href="/articles/${encodeURIComponent(m.id)}/">${escapeHtml(m.title)}</a></h4>
-          <span style="font-size: 0.75rem; color: var(--text-muted);">${formatDate(m.publishedAt)} • ${escapeHtml(m.readTime)}</span>
-        </div>
-      `).join("");
-    });
-  }
+    const matches = articles.filter(a =>
+      a.title.toLowerCase().includes(q) ||
+      a.excerpt.toLowerCase().includes(q) ||
+      a.category.toLowerCase().includes(q) ||
+      (a.tags || []).some(t => t.toLowerCase().includes(q))
+    );
+
+    if (matches.length === 0) {
+      searchResults.innerHTML = `<p class="search-hint">No stories found matching "<strong>${escapeHtml(q)}</strong>".</p>`;
+      return;
+    }
+
+    searchResults.innerHTML = matches.map(m => `
+      <div class="search-result">
+        <span class="side-category">${escapeHtml(m.category)}</span>
+        <h3 class="search-result-title"><a href="/articles/${encodeURIComponent(m.id)}/">${escapeHtml(m.title)}</a></h3>
+        <span class="side-date">${formatDate(m.publishedAt)} • ${escapeHtml(m.readTime)}</span>
+      </div>
+    `).join("");
+  });
 }
 
 /* --------------------------------------------------------------------------
-   Newsletter Submission
+   Forms (newsletter, contact, press release) — posted to the PHP mailer
    -------------------------------------------------------------------------- */
-function initNewsletter() {
-  const forms = document.querySelectorAll(".newsletter-form");
-  forms.forEach(form => {
-    form.addEventListener("submit", (e) => {
+function initForms() {
+  document.querySelectorAll("form[data-form]").forEach(form => {
+    const status = form.querySelector(".form-status");
+    const button = form.querySelector('button[type="submit"]');
+    const startedAt = Date.now();
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const input = form.querySelector('input[type="email"]');
-      if (input && input.value) {
-        alert(`Thank you for subscribing to Global Business News Today! A confirmation email has been sent to ${input.value}.`);
-        input.value = "";
+
+      if (!form.checkValidity()) {
+        const firstInvalid = form.querySelector(":invalid");
+        setStatus(status, "error", firstInvalid && firstInvalid.type === "email"
+          ? "Please enter a valid email address."
+          : "Please fill in all required fields.");
+        if (firstInvalid) firstInvalid.focus();
+        return;
+      }
+
+      const data = new FormData(form);
+      data.append("elapsed", String(Date.now() - startedAt));
+      data.append("page", window.location.pathname);
+
+      const originalLabel = button ? button.textContent : "";
+      if (button) {
+        button.disabled = true;
+        button.textContent = "Sending...";
+      }
+      setStatus(status, "", "");
+
+      try {
+        const res = await fetch(FORM_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } });
+        const json = await res.json().catch(() => ({}));
+        if (res.ok && json.ok) {
+          setStatus(status, "success", json.message || "Thank you. Your submission has been received.");
+          form.reset();
+        } else {
+          setStatus(status, "error", json.message || "Sorry, something went wrong. Please try again or email info@globalbusinessnewstoday.com.");
+        }
+      } catch (err) {
+        setStatus(status, "error", "Network error. Please check your connection and try again.");
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = originalLabel;
+        }
       }
     });
   });
+}
+
+function setStatus(el, type, message) {
+  if (!el) return;
+  el.textContent = message;
+  el.classList.toggle("is-success", type === "success");
+  el.classList.toggle("is-error", type === "error");
+}
+
+/* --------------------------------------------------------------------------
+   Article Share Buttons & Reading Progress
+   -------------------------------------------------------------------------- */
+function initShare() {
+  document.querySelectorAll("[data-share]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const canonical = document.querySelector('link[rel="canonical"]');
+      const url = canonical ? canonical.href : window.location.href;
+      const title = document.querySelector("h1") ? document.querySelector("h1").textContent : document.title;
+
+      if (btn.dataset.share === "x") {
+        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`, "_blank", "noopener");
+      } else if (btn.dataset.share === "linkedin") {
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, "_blank", "noopener");
+      } else if (btn.dataset.share === "copy" && navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          const label = btn.textContent;
+          btn.textContent = "Link copied";
+          setTimeout(() => { btn.textContent = label; }, 2000);
+        });
+      }
+    });
+  });
+}
+
+function initReadingProgress() {
+  if (!document.querySelector(".article-page")) return;
+  const bar = document.createElement("div");
+  bar.className = "reading-progress-bar";
+  document.body.prepend(bar);
+
+  window.addEventListener("scroll", () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = totalHeight > 0 ? (window.scrollY / totalHeight) * 100 : 0;
+    bar.style.width = `${progress}%`;
+  }, { passive: true });
 }
 
 /* --------------------------------------------------------------------------

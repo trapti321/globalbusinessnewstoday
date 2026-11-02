@@ -1,0 +1,6 @@
+Options -Indexes
+
+# Fallback backup folder (used only if the handler cannot write outside public_html).
+<FilesMatch "\.(jsonl|log)$">
+  Require all denied
+</FilesMatch>
