@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category News | Global Business News Today</title>
+  <meta name="description" content="Browse categorized market news, SME reports, technology developments, and press releases.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span class="live-date" id="liveDate">Loading date...</span>
+          <a href="index.html" style="font-weight: 600; color: var(--brand-accent);">← Home</a>
+        </div>
+        <div class="top-bar-right">
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
+            <span id="themeIcon">🌙</span>
+            <span id="themeLabel">Dark</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-left">
+          <a href="index.html" class="btn-search-trigger" style="text-decoration: none;">Home</a>
+        </div>
+        <div class="masthead-center">
+          <a href="index.html">
+            <h1 class="brand-title">Global Business News <span>Today</span></h1>
+            <p class="brand-tagline">Global Markets • SME Intelligence • Corporate Wire</p>
+          </a>
+        </div>
+        <div class="masthead-right">
+          <a href="submit-pr.html" class="btn-pr-submit">Submit PR</a>
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container">
+        <ul class="nav-list" id="mainNavList">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="category.html?cat=world" class="nav-link" id="nav-world">World Business</a></li>
+          <li><a href="category.html?cat=markets" class="nav-link" id="nav-markets">Markets & Finance</a></li>
+          <li><a href="category.html?cat=tech" class="nav-link" id="nav-tech">Tech & AI</a></li>
+          <li><a href="category.html?cat=smes" class="nav-link" id="nav-smes">SMEs & Startups</a></li>
+          <li><a href="category.html?cat=property" class="nav-link" id="nav-property">Real Estate</a></li>
+          <li><a href="category.html?cat=press-releases" class="nav-link" id="nav-press-releases">Press Releases</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Market Strip -->
+  <section class="market-strip">
+    <div class="container">
+      <div class="market-strip-inner" id="marketTickerInner"></div>
+    </div>
+  </section>
+
+  <main class="container" style="padding-block: 2.5rem;">
+    <div class="section-header-banner" style="margin-bottom: 2rem;">
+      <div>
+        <h1 id="categoryPageTitle" style="font-size: 1.75rem; text-transform: uppercase;">Category Stories</h1>
+        <p id="categoryPageDesc" style="color: var(--text-secondary); font-size: 0.9375rem; margin-top: 0.25rem;">Latest business news and dispatches.</p>
+      </div>
+    </div>
+
+    <div class="content-grid-wrap">
+      <div>
+        <div class="articles-grid" id="categoryArticlesGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <aside>
+        <div class="widget-box widget-newsletter">
+          <h3 class="widget-title">Daily Intelligence</h3>
+          <p>Get verified reports on SME finance, market rates, and tech policy.</p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your business email" required>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="widget-box widget-pr-banner">
+          <h4>Distribute Your Story</h4>
+          <p>Targeted syndication across top search engines, news feeds, and industry journals.</p>
+          <a href="submit-pr.html" class="btn-wire-link">Post Announcement ➔</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Global Business News Today (globalbusinessnewstoday.com). All rights reserved.</div>
+        <div><a href="index.html">Back to Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/articles-data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get("cat") || "all";
+
+      const categoryTitles = {
+        "world": "World Business & Global Economy",
+        "markets": "Financial Markets, Rates & Currencies",
+        "tech": "Technology, Enterprise Software & AI",
+        "smes": "SME Intelligence & Startup Growth",
+        "property": "Commercial Real Estate & Property",
+        "press-releases": "Corporate Wire & Press Releases",
+        "all": "All Global Business News"
+      };
+
+      const title = categoryTitles[cat] || "Business News";
+      document.title = `${title} | Global Business News Today`;
+      document.getElementById("categoryPageTitle").textContent = title;
+
+      // Highlight active nav link
+      const activeNav = document.getElementById(`nav-${cat}`);
+      if (activeNav) activeNav.classList.add("active");
+
+      // Render articles
+      const container = document.getElementById("categoryArticlesGrid");
+      const filtered = (cat === "all") ? ARTICLES : ARTICLES.filter(a => a.categorySlug === cat);
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<p style="grid-column: 1/-1; padding: 3rem; text-align: center; color: var(--text-muted);">No stories available in this category at the moment.</p>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(article => `
+        <article class="news-card">
+          <a href="article.html?id=${encodeURIComponent(article.id)}" class="news-card-thumb">
+            <span class="card-category-badge">${escapeHtml(article.category)}</span>
+            <img src="${escapeHtml(article.image)}" alt="${escapeHtml(article.title)}" loading="lazy" />
+          </a>
+          <div class="news-card-body">
+            <a href="article.html?id=${encodeURIComponent(article.id)}">
+              <h3 class="news-card-title">${escapeHtml(article.title)}</h3>
+            </a>
+            <p class="news-card-excerpt">${escapeHtml(article.excerpt)}</p>
+            <div class="news-card-footer">
+              <span>${formatDate(article.publishedAt)} • ${escapeHtml(article.readTime)}</span>
+              <a href="article.html?id=${encodeURIComponent(article.id)}" class="btn-read-quick">Read Story ➔</a>
+            </div>
+          </div>
+        </article>
+      `).join("");
+    });
+  </script>
+</body>
+</html>

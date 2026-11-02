@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Editorial & Advertising | Global Business News Today</title>
+  <meta name="description" content="Contact the Global Business News Today editorial board, news desk, and commercial advertising team.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <a href="index.html" style="font-weight: 600; color: var(--brand-accent);">← Back to Front Page</a>
+        </div>
+        <div class="top-bar-right">
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn">
+            <span id="themeIcon">🌙</span>
+            <span id="themeLabel">Dark</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-left"><a href="index.html" class="btn-search-trigger">Home</a></div>
+        <div class="masthead-center">
+          <a href="index.html">
+            <h1 class="brand-title">Global Business News <span>Today</span></h1>
+            <p class="brand-tagline">Editorial Inquiries & Commercial Partnerships</p>
+          </a>
+        </div>
+        <div class="masthead-right">
+          <a href="submit-pr.html" class="btn-pr-submit">Submit PR</a>
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-block: 3rem; max-width: 900px;">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <h1 style="font-family: var(--font-serif); font-size: 2.25rem; font-weight: 800;">Contact Global Business News Today</h1>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0;">
+        Reach our editorial newsroom, pitch investigative enterprise stories, or inquire about sponsorship and commercial distribution.
+      </p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+      <div class="widget-box">
+        <h3 class="widget-title">Newsroom & Pitch Desk</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+          For news tips, whistleblower leaks, and editorial pitch proposals:
+        </p>
+        <p style="margin-top: 0.75rem; font-size: 0.9375rem; font-weight: 700;">
+          Email: <a href="mailto:editor@globalbusinessnewstoday.com" style="color: var(--brand-accent);">editor@globalbusinessnewstoday.com</a>
+        </p>
+      </div>
+
+      <div class="widget-box">
+        <h3 class="widget-title">Advertising & Syndication</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+          For brand sponsorships, executive interviews, and targeted PR distribution:
+        </p>
+        <p style="margin-top: 0.75rem; font-size: 0.9375rem; font-weight: 700;">
+          Email: <a href="mailto:partners@globalbusinessnewstoday.com" style="color: var(--brand-accent);">partners@globalbusinessnewstoday.com</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 1.5rem; text-transform: uppercase;">Send an Inquiry</h3>
+      <form id="contactInquiryForm">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+          <div class="form-group">
+            <label class="form-label" for="senderName">Your Full Name *</label>
+            <input type="text" id="senderName" class="form-control" required placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="senderEmail">Email Address *</label>
+            <input type="email" id="senderEmail" class="form-control" required placeholder="jane@example.com">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inquiryType">Department *</label>
+          <select id="inquiryType" class="form-control" required>
+            <option value="editorial">Editorial News Desk</option>
+            <option value="pr">Corporate Wire & PR Distribution</option>
+            <option value="advertising">Sponsorship & Display Advertising</option>
+            <option value="corrections">Corrections & Factual Inquiries</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="inquiryMessage">Your Message *</label>
+          <textarea id="inquiryMessage" class="form-control" rows="5" required placeholder="How can our editorial or commercial team assist you?"></textarea>
+        </div>
+
+        <button type="submit" class="btn-pr-submit" style="width: 100%; justify-content: center; padding: 0.875rem; font-size: 1rem;">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Global Business News Today (globalbusinessnewstoday.com). All rights reserved.</div>
+        <div><a href="index.html">Back to Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("contactInquiryForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you! Your message has been routed to the relevant team at Global Business News Today. We will respond within 1 business day.");
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

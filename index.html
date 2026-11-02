@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Business News Today | World Markets, SME Intelligence & Corporate News</title>
+  <meta name="description" content="Global Business News Today provides comprehensive international business news, market intelligence, SME development, tech innovations, and verified corporate press releases.">
+  <link rel="canonical" href="https://globalbusinessnewstoday.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://globalbusinessnewstoday.com/">
+  <meta property="og:title" content="Global Business News Today | World Markets, SME Intelligence & Corporate News">
+  <meta property="og:description" content="Real-time global business intelligence, small-to-medium enterprise developments, financial markets, and corporate wire announcements.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" content="globalbusinessnewstoday.com">
+  <meta name="twitter:title" content="Global Business News Today">
+  <meta name="twitter:description" content="Global business news, market commentary, SME development, and industry insights.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon / Fonts / Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Global Business News Today",
+    "url": "https://globalbusinessnewstoday.com/",
+    "logo": "https://globalbusinessnewstoday.com/images/logo.png",
+    "sameAs": [
+      "https://twitter.com/GlobalBizNewsToday",
+      "https://linkedin.com/company/global-business-news-today"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ================= Site Header ================= -->
+  <header class="site-header">
+    
+    <!-- Top Utility Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span class="live-date" id="liveDate">Loading date...</span>
+          <div class="breaking-ticker-wrap">
+            <span class="breaking-badge">Breaking</span>
+            <span class="ticker-content">Central banks prepare coordinated liquidity framework for 2026</span>
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
+            <span id="themeIcon">🌙</span>
+            <span id="themeLabel">Dark</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Masthead Brand Section -->
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-left">
+          <button type="button" class="btn-search-trigger" id="searchTriggerBtn" aria-label="Search articles">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span style="font-size: 0.8125rem; font-weight: 600; margin-left: 0.35rem;">Search</span>
+          </button>
+        </div>
+
+        <div class="masthead-center">
+          <a href="index.html">
+            <h1 class="brand-title">Global Business News <span>Today</span></h1>
+            <p class="brand-tagline">Global Markets • SME Intelligence • Corporate Wire • Industry Insights</p>
+          </a>
+        </div>
+
+        <div class="masthead-right">
+          <a href="submit-pr.html" class="btn-pr-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+            <span>Submit PR / News</span>
+          </a>
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">☰</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav" aria-label="Primary Navigation">
+      <div class="container">
+        <ul class="nav-list" id="mainNavList">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="category.html?cat=world" class="nav-link">World Business</a></li>
+          <li><a href="category.html?cat=markets" class="nav-link">Markets & Finance</a></li>
+          <li><a href="category.html?cat=tech" class="nav-link">Tech & AI</a></li>
+          <li><a href="category.html?cat=smes" class="nav-link">SMEs & Startups</a></li>
+          <li><a href="category.html?cat=property" class="nav-link">Real Estate</a></li>
+          <li><a href="category.html?cat=press-releases" class="nav-link">Press Releases</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= Live Market Strip ================= -->
+  <section class="market-strip" aria-label="Live Market Indices">
+    <div class="container">
+      <div class="market-strip-inner" id="marketTickerInner">
+        <!-- Injected via JavaScript from MARKET_DATA -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Category Filter Pills ================= -->
+  <div class="category-filter-bar">
+    <div class="container">
+      <div class="filter-pills" role="tablist">
+        <button class="filter-pill active" data-category="all">All News</button>
+        <button class="filter-pill" data-category="markets">Markets & Economy</button>
+        <button class="filter-pill" data-category="tech">Tech & AI</button>
+        <button class="filter-pill" data-category="smes">SMEs & Startups</button>
+        <button class="filter-pill" data-category="property">Real Estate</button>
+        <button class="filter-pill" data-category="press-releases">Corporate Wire</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Main Content Container ================= -->
+  <main class="container">
+    
+    <!-- Hero News Section (Lead Article + Editor's Picks) -->
+    <section class="main-news-section" aria-label="Top Featured Stories">
+      <div class="hero-news-grid">
+        
+        <!-- Main Lead Story Container -->
+        <div id="heroLeadStory">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Sidebar Editorial Picks -->
+        <aside class="sidebar-col">
+          <div class="section-subhead">
+            <h3>Editor's Picks</h3>
+            <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">UPDATED HOURLY</span>
+          </div>
+          <div id="heroSideStories">
+            <!-- Populated by JS -->
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Trending Strip (Numbered 1-4) -->
+    <section class="trending-strip-section" style="border-radius: var(--radius-md); margin-bottom: 2rem;">
+      <div style="padding: 0 1.5rem;">
+        <div class="section-subhead" style="margin-bottom: 1.25rem;">
+          <h3>Trending Worldwide</h3>
+          <span style="font-size: 0.75rem; color: var(--brand-accent); font-weight: 700;">★ MOST READ</span>
+        </div>
+        <div class="trending-grid" id="trendingGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-Column Feed: News Grid + Sidebar Widgets -->
+    <section class="content-layout-section">
+      <div class="content-grid-wrap">
+        
+        <!-- Left: News Grid -->
+        <div>
+          <div class="section-header-banner">
+            <h2>Latest Dispatches & Analysis</h2>
+            <a href="category.html?cat=all" style="font-size: 0.8125rem; font-weight: 700; color: var(--brand-accent);">View All ➔</a>
+          </div>
+
+          <div class="articles-grid" id="mainArticlesGrid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Right: Sidebar Widgets -->
+        <aside>
+          
+          <!-- Newsletter Subscription Box -->
+          <div class="widget-box widget-newsletter">
+            <h3 class="widget-title">Executive Briefing</h3>
+            <p>Get our daily breakdown of market-moving decisions, enterprise deals, and SME growth strategies delivered to your inbox every morning.</p>
+            <form class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Your corporate email address" required>
+              <button type="submit" class="btn-subscribe">Subscribe Free</button>
+            </form>
+          </div>
+
+          <!-- PR Distribution Banner -->
+          <div class="widget-box widget-pr-banner">
+            <h4>Guaranteed Corporate Distribution</h4>
+            <p>Publish your corporate press release, SME launch, or executive appointment directly across our global syndication network.</p>
+            <a href="submit-pr.html" class="btn-wire-link">Distribute Your Story ➔</a>
+          </div>
+
+          <!-- Market Commentary Widget -->
+          <div class="widget-box">
+            <h3 class="widget-title">Key Central Bank Calendar</h3>
+            <ul style="list-style: none; font-size: 0.8125rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                <strong>US Federal Reserve FOMC</strong>
+                <span style="color: var(--text-muted);">Dec 16, 2026</span>
+              </li>
+              <li style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                <strong>European Central Bank (ECB)</strong>
+                <span style="color: var(--text-muted);">Dec 18, 2026</span>
+              </li>
+              <li style="display: flex; justify-content: space-between;">
+                <strong>Bank of Japan Policy Board</strong>
+                <span style="color: var(--text-muted);">Jan 22, 2027</span>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= Quick Read Modal ================= -->
+  <dialog id="quickReadModal" class="custom-modal">
+    <div class="modal-header">
+      <h3 class="modal-title" id="modalArticleTitle">Story Preview</h3>
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">✕</button>
+    </div>
+    <div class="modal-body" id="modalArticleBody">
+      <!-- Injected by JS -->
+    </div>
+    <div style="padding: 1rem 1.5rem; background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); display: flex; justify-content: flex-end;">
+      <a href="#" id="modalFullStoryLink" class="btn-pr-submit" style="font-size: 0.8125rem;">Read Complete Story ➔</a>
+    </div>
+  </dialog>
+
+  <!-- ================= Live Search Modal ================= -->
+  <dialog id="searchModal" class="custom-modal">
+    <div class="modal-header">
+      <h3 class="modal-title">Search Global Business News Today</h3>
+      <button type="button" class="modal-close-btn" id="searchCloseBtn" aria-label="Close dialog">✕</button>
+    </div>
+    <div class="modal-body">
+      <input type="text" id="siteSearchInput" class="form-control" placeholder="Search by topic, market symbol, company, or keyword..." autofocus>
+      <div id="searchResultsWrap" style="margin-top: 1.25rem;">
+        <p style="color: var(--text-muted); font-size: 0.875rem;">Type to search global business news, markets, and press releases...</p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ================= Site Footer ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <h3>Global Business News Today</h3>
+          <p>Delivering timely, verified international commerce reports, SME guidance, financial market analysis, and syndicated corporate announcements to leaders worldwide.</p>
+          <div style="margin-top: 1rem; font-size: 0.8125rem; color: #94a3b8;">
+            Registered Domain: <strong>globalbusinessnewstoday.com</strong>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Editorial Desks</h4>
+          <ul class="footer-links">
+            <li><a href="category.html?cat=world">World Economy</a></li>
+            <li><a href="category.html?cat=markets">Financial Markets</a></li>
+            <li><a href="category.html?cat=tech">Technology & AI</a></li>
+            <li><a href="category.html?cat=smes">SMEs & Startups</a></li>
+            <li><a href="category.html?cat=property">Commercial Real Estate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Corporate & PR</h4>
+          <ul class="footer-links">
+            <li><a href="submit-pr.html">Submit Press Release</a></li>
+            <li><a href="category.html?cat=press-releases">Corporate Wire</a></li>
+            <li><a href="contact.html">Advertising & Sponsorship</a></li>
+            <li><a href="contact.html">Editorial Standards</a></li>
+            <li><a href="contact.html">Pitch an Op-Ed</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Stay Informed</h4>
+          <p style="font-size: 0.8125rem; color: #94a3b8; margin-bottom: 0.75rem;">Join over 45,000 executives receiving our market intelligence briefing every morning.</p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your business email" required>
+            <button type="submit" class="btn-subscribe" style="margin-top: 0.5rem; width: 100%;">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Global Business News Today. All rights reserved. Similar editorial coverage and corporate syndication model inspired by Business Daily Media.
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Ethics & Corrections</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/articles-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

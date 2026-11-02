@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Press Release | Global Business News Today Wire</title>
+  <meta name="description" content="Submit corporate announcements, SME milestones, and press releases for distribution across Global Business News Today.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <a href="index.html" style="font-weight: 600; color: var(--brand-accent);">← Back to News Front</a>
+        </div>
+        <div class="top-bar-right">
+          <button type="button" class="theme-toggle-btn" id="themeToggleBtn">
+            <span id="themeIcon">🌙</span>
+            <span id="themeLabel">Dark</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="masthead">
+      <div class="container">
+        <div class="masthead-left"><a href="index.html" class="btn-search-trigger">Home</a></div>
+        <div class="masthead-center">
+          <a href="index.html">
+            <h1 class="brand-title">Global Business News <span>Today</span></h1>
+            <p class="brand-tagline">Corporate Wire & Distribution Services</p>
+          </a>
+        </div>
+        <div class="masthead-right">
+          <a href="contact.html" class="btn-pr-submit" style="background: #334155;">Contact Desk</a>
+          <button type="button" class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-block: 3rem; max-width: 900px;">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <span style="background: var(--brand-gold-bg); color: var(--brand-gold); font-size: 0.75rem; font-weight: 800; padding: 0.25rem 0.75rem; border-radius: var(--radius-sm); text-transform: uppercase;">
+        Corporate Distribution Wire
+      </span>
+      <h1 style="font-family: var(--font-serif); font-size: 2.5rem; margin-top: 0.75rem; font-weight: 800;">Submit Your Press Release</h1>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0; font-size: 1.0625rem;">
+        Distribute your company announcements, product launches, funding rounds, and executive updates to financial journalists, SME leaders, and syndication networks.
+      </p>
+    </div>
+
+    <div class="form-card">
+      <form id="prSubmissionForm">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+          <div class="form-group">
+            <label class="form-label" for="companyName">Company / Organization Name *</label>
+            <input type="text" id="companyName" class="form-control" placeholder="e.g. Acme Global Logistics" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contactEmail">Media Contact Email *</label>
+            <input type="email" id="contactEmail" class="form-control" placeholder="pr@yourcompany.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="prTitle">Press Release Headline *</label>
+          <input type="text" id="prTitle" class="form-control" placeholder="e.g. Nexura Partners with TechCorp to Expand Cross-Border Commerce" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+          <div class="form-group">
+            <label class="form-label" for="prCategory">Industry Category *</label>
+            <select id="prCategory" class="form-control" required>
+              <option value="">Select industry...</option>
+              <option value="smes">SME & Entrepreneurship</option>
+              <option value="tech">Technology & AI</option>
+              <option value="finance">Banking & Financial Markets</option>
+              <option value="property">Commercial Real Estate</option>
+              <option value="industrial">Manufacturing & Energy</option>
+              <option value="healthcare">Healthcare & Biotech</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="dateline">City / Country Dateline *</label>
+            <input type="text" id="dateline" class="form-control" placeholder="e.g. LONDON / NEW YORK" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="prSummary">Executive Summary (1-2 sentences) *</label>
+          <textarea id="prSummary" class="form-control" rows="2" placeholder="Brief overview for news ticker and editorial feeds..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="prBody">Full Press Release Body *</label>
+          <textarea id="prBody" class="form-control" rows="8" placeholder="Paste the complete text of your announcement, quotes, and boilerplate..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="mediaUrl">Featured Image URL or Media Kit Link (Optional)</label>
+          <input type="url" id="mediaUrl" class="form-control" placeholder="https://yourcompany.com/press-kit/image.jpg">
+        </div>
+
+        <div style="margin-top: 2rem;">
+          <button type="submit" class="btn-pr-submit" style="width: 100%; padding: 0.875rem; font-size: 1rem; justify-content: center;">
+            Submit Press Release for Editorial Review
+          </button>
+          <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">
+            Submissions are audited by the Global Business News Today editorial desk for factual accuracy and standard editorial guidelines prior to publication.
+          </p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Global Business News Today (globalbusinessnewstoday.com). All rights reserved.</div>
+        <div><a href="index.html">Back to Home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("prSubmissionForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const title = document.getElementById("prTitle").value;
+      const company = document.getElementById("companyName").value;
+      alert(`Thank you! Your press release "${title}" for ${company} has been received. Our editorial desk will review it and notify your media contact upon syndication.`);
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
