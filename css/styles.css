@@ -365,18 +365,6 @@ button {
 }
 
 /* ==========================================================================
-   Financial Market Watch Ticker Strip
-   ========================================================================== */
-.market-strip {
-  background-color: var(--bg-secondary);
-  border-block-end: 1px solid var(--border-color);
-}
-
-.market-strip-inner {
-  min-block-size: 46px;
-}
-
-/* ==========================================================================
    Filter & Category Bar
    ========================================================================== */
 .category-filter-bar {

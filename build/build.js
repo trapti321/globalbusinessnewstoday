@@ -248,13 +248,7 @@ function header({ active, isHome }) {
         </ul>
       </div>
     </nav>
-  </header>
-
-  <section class="market-strip" aria-label="Live market indices">
-    <div class="container">
-      <div class="market-strip-inner" id="marketTickerInner"></div>
-    </div>
-  </section>`;
+  </header>`;
 }
 
 function footer() {

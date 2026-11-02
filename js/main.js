@@ -10,7 +10,6 @@ const FORM_ENDPOINT = "/api/submit.php";
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initDateDisplay();
-  initMarketTicker();
   initNavigation();
   initFilterPills();
   initSearch();
@@ -43,7 +42,6 @@ function initTheme() {
         localStorage.setItem("gbnt_theme", nextTheme);
       } catch (e) {}
       updateThemeIcon(nextTheme);
-      initMarketTicker();
     });
   }
 }
@@ -68,41 +66,6 @@ function initDateDisplay() {
     const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
     dateEl.textContent = new Date().toLocaleDateString("en-US", options);
   }
-}
-
-/* --------------------------------------------------------------------------
-   Market Watch Ticker
-   -------------------------------------------------------------------------- */
-function initMarketTicker() {
-  const tickerWrap = document.getElementById("marketTickerInner");
-  if (!tickerWrap) return;
-
-  const widget = document.createElement("div");
-  widget.className = "tradingview-widget-container__widget";
-
-  const script = document.createElement("script");
-  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js";
-  script.async = true;
-  script.textContent = JSON.stringify({
-    symbols: [
-      { proName: "TVC:SPX", title: "S&P 500" },
-      { proName: "TVC:IXIC", title: "Nasdaq" },
-      { proName: "TVC:DJI", title: "Dow Jones" },
-      { proName: "TVC:UKX", title: "FTSE 100" },
-      { proName: "TVC:NI225", title: "Nikkei 225" },
-      { proName: "BITSTAMP:BTCUSD", title: "Bitcoin" },
-      { proName: "TVC:UKOIL", title: "Brent Crude" },
-      { proName: "TVC:GOLD", title: "Gold" }
-    ],
-    showSymbolLogo: true,
-    isTransparent: true,
-    displayMode: "adaptive",
-    colorTheme: document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light",
-    locale: "en"
-  });
-
-  tickerWrap.className = "market-strip-inner tradingview-widget-container";
-  tickerWrap.replaceChildren(widget, script);
 }
 
 /* --------------------------------------------------------------------------

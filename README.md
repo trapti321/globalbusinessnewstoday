@@ -7,7 +7,6 @@ A high-performance, modern business news and corporate wire publication platform
 ## 🌟 Key Features
 
 - **Editorial Newsroom Layout**: Responsive editorial typography and layout designed for international commerce, markets, and SME growth.
-- **Financial Market Watch Strip**: Live index tracking for major global benchmarks (S&P 500, NASDAQ, Dow Jones, FTSE 100, Nikkei 225, Bitcoin, Crude Oil, and Gold).
 - **Hero & Trending Feed**: Lead story showcase, editor's picks, and ranked trending analysis.
 - **Categorized Editorial Desks**:
   - World Business & Global Economy
