@@ -1577,6 +1577,106 @@ dialog.custom-modal::backdrop {
   font-size: 0.875rem;
 }
 
+/* Homepage intro, sections overview and about block */
+.home-intro {
+  padding-block: 1.75rem 0.25rem;
+}
+
+.home-intro-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.375rem, 2.6vw, 1.875rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.home-intro-text {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  max-inline-size: 820px;
+  margin-block-start: 0.375rem;
+}
+
+.home-intro-updated {
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.home-sections {
+  padding-block: 0.5rem 2.5rem;
+}
+
+.home-sections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.home-section-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.home-section-card h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-block-end: 0.5rem;
+}
+
+.home-section-card h3 a:hover,
+.home-section-latest a:hover {
+  color: var(--brand-accent);
+}
+
+.home-section-card p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.home-section-latest {
+  margin-block-start: 0.75rem;
+  padding-block-start: 0.75rem;
+  border-block-start: 1px solid var(--border-color);
+}
+
+.home-section-latest a {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.home-about {
+  border-block-start: 1px solid var(--border-color);
+  padding-block: 2rem 3rem;
+  max-inline-size: 860px;
+}
+
+.home-about h2 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-block-end: 0.75rem;
+}
+
+.home-about p {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin-block-end: 0.75rem;
+}
+
+.home-about a {
+  color: var(--brand-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* ==========================================================================
    Responsive Media Queries
    ========================================================================== */
@@ -1599,7 +1699,8 @@ dialog.custom-modal::backdrop {
     grid-column: 1 / -1;
   }
 
-  .articles-grid-3 {
+  .articles-grid-3,
+  .home-sections-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1670,6 +1771,7 @@ dialog.custom-modal::backdrop {
 
   .articles-grid,
   .articles-grid-3,
+  .home-sections-grid,
   .contact-cards,
   .form-row {
     grid-template-columns: 1fr;

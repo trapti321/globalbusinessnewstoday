@@ -376,6 +376,7 @@ const ORGANIZATION = {
   name: SITE.name,
   url: `${SITE.url}/`,
   email: SITE.email,
+  description: SITE.description,
   logo: { "@type": "ImageObject", url: abs(SITE.logo.url), width: SITE.logo.width, height: SITE.logo.height }
 };
 
@@ -387,6 +388,8 @@ const breadcrumb = (items) => ({
 
 const defaultOgImage = { url: abs(SITE.ogImage.url), width: SITE.ogImage.width, height: SITE.ogImage.height, alt: SITE.ogImage.alt };
 
+const latest = (list) => list.map(a => a.updatedAt || a.publishedAt).sort().pop();
+
 /* --------------------------------------------------------------------------
    Pages
    -------------------------------------------------------------------------- */
@@ -397,7 +400,15 @@ function buildHome() {
   const today = new Date().toISOString().slice(0, 10);
   const calendar = CALENDAR.filter(e => e.date >= today);
 
+  const updated = latest(ARTICLES);
+  const sections = CATEGORIES.map(c => ({ ...c, top: ARTICLES.find(a => a.categorySlug === c.slug) })).filter(c => c.top);
+
   const main = `
+    <section class="home-intro" aria-labelledby="homeIntroTitle">
+      <h2 id="homeIntroTitle" class="home-intro-title">Today's Global Business News</h2>
+      <p class="home-intro-text">Global Business News Today reports on world markets, central bank decisions, company filings, SME finance, startups, technology and commercial real estate. Every figure is sourced to filings, regulators or official statistics. <span class="home-intro-updated">Updated <time datetime="${updated}">${formatDate(updated)}</time>.</span></p>
+    </section>
+
     <div class="category-filter-bar">
       <div class="filter-pills" role="toolbar" aria-label="Filter latest stories by section">
         <button type="button" class="filter-pill active" data-category="all" aria-pressed="true">All News</button>
@@ -450,7 +461,7 @@ function buildHome() {
       <div class="content-grid-wrap">
         <div>
           <div class="section-header-banner">
-            <h2>Latest News & Analysis</h2>
+            <h2>Latest Global Business News</h2>
             <a href="/category/all/" class="section-link">View All ➔</a>
           </div>
           <div class="articles-grid" id="mainArticlesGrid">
@@ -469,16 +480,35 @@ function buildHome() {
           </div>` : ""}
         </aside>
       </div>
+    </section>
+
+    <section class="home-sections" aria-labelledby="homeSectionsTitle">
+      <div class="section-header-banner">
+        <h2 id="homeSectionsTitle">Business News by Section</h2>
+      </div>
+      <div class="home-sections-grid">
+        ${sections.map(c => `<div class="home-section-card">
+          <h3><a href="${categoryUrl(c.slug)}">${esc(c.name)}</a></h3>
+          <p>${esc(c.description)}</p>
+          <p class="home-section-latest">Latest: <a href="${articleUrl(c.top)}">${esc(c.top.title)}</a></p>
+        </div>`).join("\n        ")}
+      </div>
+    </section>
+
+    <section class="home-about" aria-labelledby="homeAboutTitle">
+      <h2 id="homeAboutTitle">About Global Business News Today</h2>
+      <p>Global Business News Today is an independent business news site for executives, founders, investors and small business owners. We cover the decisions that move markets and company finances: central bank rate moves, inflation data, IPO filings and earnings, venture funding, enterprise technology and commercial property.</p>
+      <p>Our reporting starts with primary sources such as SEC filings, central bank statements and government statistics, and links to them so readers can check the numbers. News tips, corrections and partnership enquiries can be sent through our <a href="/contact.html">contact page</a> or to <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
     </section>`;
 
   return render({
-    title: `${SITE.name} | World Markets, SME Intelligence & Corporate News`,
-    description: SITE.description,
+    title: "Global Business News Today: Markets, Economy & Company News",
+    description: "Global Business News Today: the latest world business news on markets, central banks, company earnings, IPOs, SMEs, startups, AI and real estate.",
     canonical: `${SITE.url}/`,
     robots: ROBOTS_INDEX,
     og: { type: "website", title: SITE.name, image: { url: imageUrl(lead, 1200, 675), width: 1200, height: 675, alt: lead.imageAlt } },
     schema: [
-      { "@context": "https://schema.org", "@type": "WebSite", "@id": `${SITE.url}/#website`, name: SITE.name, url: `${SITE.url}/`, publisher: { "@id": ORGANIZATION["@id"] } },
+      { "@context": "https://schema.org", "@type": "WebSite", "@id": `${SITE.url}/#website`, name: SITE.name, alternateName: ["GBNT", "globalbusinessnewstoday.com"], url: `${SITE.url}/`, description: SITE.description, inLanguage: "en", publisher: { "@id": ORGANIZATION["@id"] } },
       { "@context": "https://schema.org", ...ORGANIZATION }
     ],
     active: "home",
@@ -741,7 +771,6 @@ function write(rel, content) {
 // Remove generated directories so deleted articles/categories disappear.
 for (const dir of ["articles", "category"]) fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
 
-const latest = (list) => list.map(a => a.updatedAt || a.publishedAt).sort().pop();
 const sitemapPages = [{ path: "/", lastmod: latest(ARTICLES) }];
 
 write("index.html", buildHome());
