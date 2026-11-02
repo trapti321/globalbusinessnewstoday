@@ -239,8 +239,8 @@ const ARTICLES = [
   },
   {
     id: "venture-debt-startup-funding-shift",
-    title: "Venture Debt Overtakes Dilutive Equity: Founders Guard Ownership in Cautious Market",
-    excerpt: "Early-stage founders are increasingly turning to structured venture debt and revenue-based facilities to extend operational runway without slashing valuation multiples.",
+    title: "Venture Debt Hits Record $82 Billion in 2026, but Fewer Startups Are Getting Loans",
+    excerpt: "US venture debt reached a record $81.7B through September, yet deal count fell sharply as lenders favor large AI borrowers. What founders should know.",
     category: "SMEs & Startups",
     categorySlug: "smes",
     author: {
@@ -249,15 +249,49 @@ const ARTICLES = [
       avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
     },
     publishedAt: "2026-10-30T11:45:00Z",
-    readTime: "4 min read",
+    readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
     isLead: false,
     isTrending: false,
     views: 9340,
-    tags: ["Startups", "Venture Capital", "Venture Debt", "Entrepreneurship"],
+    tags: ["Venture Debt", "Venture Capital", "Startup Funding", "AI", "Interest Rates"],
     content: `
-      <p class="lead">The balance of power in startup capitalization has stabilized as founders seek alternative growth finance.</p>
-      <p>Instead of taking down-rounds from institutional venture capital, revenue-positive software and B2B service firms are pairing venture debt lines with strict expense management to preserve equity value.</p>
+      <p class="lead">Venture debt is having a record year in dollar terms, but it has not replaced equity, and most startups are not sharing in the boom. VC-backed companies in the US took on $81.7 billion of debt through September 2026, already above any previous full year. Yet the number of loans has fallen sharply, as lenders concentrate on a small group of large, mostly AI-focused borrowers.</p>
+
+      <p>For founders weighing debt against a new equity round, the headline figure is misleading. Access to venture debt is becoming more selective, and rising interest rates are making it more expensive.</p>
+
+      <h2>The Numbers: Record Value, Shrinking Deal Count</h2>
+      <p>According to the <a href="https://nvca.org/wp-content/uploads/2026/10/Q3-2026-PitchBook-NVCA-Venture-Monitor.pdf" target="_blank" rel="noopener">Q3 2026 PitchBook-NVCA Venture Monitor</a>, which covers data through September 30:</p>
+      <ul>
+        <li><strong>$81.7 billion</strong> in venture debt was raised by US VC-backed companies in 2026 so far, up from $69.7 billion in all of 2025 and $62.8 billion in 2024.</li>
+        <li><strong>499 debt deals</strong> closed through September, compared with 1,175 in the whole of 2025. Even allowing for the missing fourth quarter, 2026 is pacing well below last year's count.</li>
+        <li><strong>Technology companies took $76.4 billion</strong> of the total across 446 deals. PitchBook labels its tech debt chart "AI leading to high loan value for tech."</li>
+        <li><strong>Healthcare venture debt fell to $3.7 billion</strong>, down from $7.6 billion in 2025, which PitchBook describes as a return to normal levels.</li>
+      </ul>
+      <p>PitchBook also notes that venture loans "continue to push toward later stages," and attributes the high value of venture-growth loans to frontier AI model developers. In other words, a handful of very large facilities for late-stage AI companies are lifting the total, while the long tail of smaller borrowers is getting fewer loans.</p>
+
+      <h2>Debt Has Not Overtaken Equity</h2>
+      <p>Despite the record, venture debt remains a fraction of equity funding. The same report puts US VC deal value at $515.8 billion through the first three quarters of 2026, the highest total in PitchBook's dataset and roughly 44% above 2021's full-year record. Venture debt is equal to about 16% of that figure.</p>
+      <p>Globally, <a href="https://news.crunchbase.com/venture/q3-2026-global-startup-funding-ai-billion-dollar-rounds-exits-data/" target="_blank" rel="noopener">Crunchbase data</a> shows startups raised $159 billion in equity in Q3 2026 alone, down 25% from Q2 but up 53% from a year earlier. Year-to-date global funding reached $679 billion.</p>
+      <p>Equity is also concentrated. Crunchbase counted a record 27 rounds of $1 billion or more in Q3, and those companies took around a third of all global venture capital raised in the quarter. AI startups received $102 billion, or 64% of the global total. In the US, PitchBook says AI accounted for 82.7% of 2026 deal value, the highest annual share in its dataset.</p>
+
+      <h2>Why Rising Rates Matter for Venture Debt</h2>
+      <p>Many venture loans carry floating interest rates, often set as a spread over the US prime rate, which moves with the Federal Reserve's benchmark. The Fed raised its target range to 3.75% to 4% in September and held it there in October, with most officials projecting another increase by year-end. (See our coverage of <a href="/articles/fed-rate-cuts-global-markets-2026/">the Fed's October decision and what higher rates mean for smaller firms</a>.)</p>
+      <p>Commentary from JPMorgan published in the Venture Monitor points the same way:</p>
+      <blockquote>"It is hard to imagine the yield curve meaningfully coming down in the near term." (JPMorgan commentary, Q3 2026 PitchBook-NVCA Venture Monitor)</blockquote>
+      <p>The same commentary cites record investment-grade bond issuance by hyperscalers, oil-driven inflation linked to the Middle East conflict, and US national debt above $40 trillion as factors pushing rates higher. For a startup, that means a venture loan signed today may cost more over its life than the term sheet suggests, unless the rate is fixed or capped.</p>
+
+      <h2>What This Means for Founders</h2>
+      <ul>
+        <li><strong>Debt works best alongside equity, not instead of it.</strong> Most venture lenders still underwrite based on the strength of a company's equity investors and recent round. A weak equity position usually means weaker debt terms.</li>
+        <li><strong>Expect more scrutiny below the late stage.</strong> With deal counts falling and capital flowing to large AI borrowers, earlier-stage companies should expect tighter covenants, smaller facilities or both.</li>
+        <li><strong>Model the rate risk.</strong> Calculate what another 25 to 50 basis point rise would add to monthly interest, and ask lenders about rate floors, caps and prepayment terms before signing.</li>
+        <li><strong>Watch warrant coverage and covenants.</strong> Venture debt is often described as non-dilutive, but most facilities include warrants that give lenders a small equity stake. Revenue or cash covenants can also restrict how runway is used.</li>
+        <li><strong>Treat debt as runway extension, not rescue financing.</strong> Borrowing to reach a clear milestone, such as profitability or a stronger next round, is a common use. Borrowing to avoid a down round can leave a company with both a debt burden and a valuation problem.</li>
+      </ul>
+
+      <h2>The Bottom Line</h2>
+      <p>2026 is a record year for venture debt by value, but the money is concentrated among a small number of large borrowers, much like the equity market. For most startups and SMEs, venture debt remains a useful complement to equity, available on tighter terms and at higher interest costs than a year ago. Founders who line up debt from a position of strength, shortly after an equity round, are likely to get the best terms.</p>
     `
   }
 ];
