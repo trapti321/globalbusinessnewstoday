@@ -68,8 +68,8 @@ const ARTICLES = [
   },
   {
     id: "ai-enterprise-adoption-roi-surge",
-    title: "From Pilots to Profits: How Enterprise AI is Delivering Real ROI for Mid-Sized Firms",
-    excerpt: "New benchmark reports reveal that companies deploying domain-specific AI agents in customer operations and supply chain management are achieving 22% faster cycle times.",
+    title: "Mid-Sized Firms Are Adopting AI Faster, but Proving ROI Is Still the Hard Part",
+    excerpt: "Census and Eurostat data show AI use climbing fastest at mid-sized and large firms, yet surveys suggest many still struggle to tie AI to financial results.",
     category: "Tech & AI",
     categorySlug: "tech",
     author: {
@@ -78,16 +78,59 @@ const ARTICLES = [
       avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80"
     },
     publishedAt: "2026-11-02T06:15:00Z",
-    readTime: "4 min read",
+    readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
     isLead: false,
     isTrending: true,
     views: 11200,
-    tags: ["Artificial Intelligence", "Enterprise Tech", "Productivity", "Automation"],
+    tags: ["Artificial Intelligence", "Enterprise Tech", "AI Adoption", "Productivity", "SME Strategy"],
     content: `
-      <p class="lead">The era of speculative generative AI hype is giving way to concrete corporate balance-sheet results.</p>
-      <p>Mid-sized enterprises across logistics, legal services, and manufacturing are moving beyond generic chatbot experiments. Instead, organizations are deploying tightly scoped autonomous agents connected directly to enterprise resource planning (ERP) systems.</p>
-      <p>According to the Q4 Global Enterprise Tech Survey, over 64% of companies with revenues between $15M and $150M reported measurable productivity gains exceeding 18% within six months of deployment.</p>
+      <p class="lead">Artificial intelligence is moving from experiment to everyday tool inside mid-sized and large companies, but the gap between using AI and proving it pays off remains wide. Official data from the United States and the European Union shows adoption rising fastest among firms with dozens or hundreds of employees, while the smallest businesses lag behind.</p>
+
+      <p>For executives at mid-sized firms, the question is no longer whether competitors are using AI. It is how to turn scattered pilots into measurable results.</p>
+
+      <h2>How Many Businesses Actually Use AI?</h2>
+      <p>The most reliable US measure comes from the Census Bureau's Business Trends and Outlook Survey (BTOS), which a <a href="https://www.federalreserve.gov/econres/notes/feds-notes/monitoring-ai-adoption-in-the-u-s-economy-20260403.html" target="_blank" rel="noopener">Federal Reserve research note</a> published in April 2026 called "the best source for an estimate of the percentage of U.S. businesses that have adopted AI."</p>
+      <p>According to the <a href="https://www.census.gov/library/stories/2026/05/ai-use-businesses.html" target="_blank" rel="noopener">Census Bureau</a>, the share of US businesses using AI hovered between 17% and 20% from December 2025 to May 2026, reaching 19.8% in the period ending May 3. Between 20% and 23% of businesses said they expected to be using AI within the next six months.</p>
+      <p>Those figures are not directly comparable with older data. In November 2025 the Census Bureau broadened its question from AI use "in producing goods or services" to use "in any business function," which roughly doubled the measured adoption rate.</p>
+
+      <h2>Size Matters: Mid-Sized and Large Firms Lead</h2>
+      <p>The clearest pattern in the data is firm size. In the Census survey period ending May 3, 2026:</p>
+      <ul>
+        <li><strong>37%</strong> of US firms with 250 or more employees reported using AI.</li>
+        <li><strong>32%</strong> of firms with 100 to 249 employees reported using AI.</li>
+        <li>AI use rose among firms with at least 20 employees but did not change significantly among firms with fewer than 20.</li>
+      </ul>
+      <p>Europe shows the same gradient. <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Use_of_artificial_intelligence_in_enterprises" target="_blank" rel="noopener">Eurostat</a> found that in 2025, 17% of small EU enterprises (10 to 49 employees) used AI, compared with 30.36% of medium enterprises (50 to 249 employees) and 55.03% of large ones. Across all EU enterprises with 10 or more employees, the share rose from 13.5% in 2024 to 20.0% in 2025, according to a <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251211-2" target="_blank" rel="noopener">Eurostat release</a>, with Denmark (42.0%), Finland (37.8%) and Sweden (35.0%) leading.</p>
+      <p>Sector differences are just as sharp. Census data shows 39.7% of businesses in the Information sector and 33.9% in Finance and Insurance using AI, against about 14% in Retail Trade.</p>
+
+      <h2>Where AI Is Being Used</h2>
+      <p>Most business use is still practical and narrow. In the EU, the most common application in 2025 was analyzing written language (11.8% of enterprises), followed by creating visual, video or audio content (9.5%), according to Eurostat. In the US, about 15% of firms use AI for sales and marketing, according to an analysis by the <a href="https://www.minneapolisfed.org/article/2026/ai-adoption-in-business-grows-steadily-but-unevenly" target="_blank" rel="noopener">Federal Reserve Bank of Minneapolis</a>.</p>
+      <p>The jobs impact so far is limited. The Minneapolis Fed reported that roughly 96% of AI-using firms saw no change in total employment over the prior six months, although about 10% said AI now performs tasks previously done by employees.</p>
+      <blockquote>"Overall, AI use remains largely experimental, and many businesses remain on the sidelines." (Federal Reserve Bank of Minneapolis, May 2026)</blockquote>
+
+      <h2>The ROI Question</h2>
+      <p>Evidence on returns is more mixed than vendor marketing suggests. Among large US companies, the picture is improving. KPMG's <a href="https://kpmg.com/us/en/media/news/q3-ai-pulse-2026.html" target="_blank" rel="noopener">Q3 2026 AI Quarterly Pulse Survey</a> of 314 leaders at organizations with $1 billion or more in annual revenue, released September 24, found that nearly 6 in 10 report measurable business value from AI. Productivity gains were the most commonly cited benefit (55%), while 37% reported stronger financial performance. The share of organizations building, deploying or developing AI agents rose to 62%, from 53% the previous quarter.</p>
+      <p>Two caveats matter for mid-sized firms. First, the KPMG sample covers billion-dollar companies, which have larger technology budgets and data teams. Second, even in that group, fewer than 4 in 10 report a financial performance benefit, which suggests that productivity gains do not automatically show up in profit.</p>
+
+      <h2>What Holds Firms Back</h2>
+      <p>Eurostat's survey of EU enterprises that considered AI but did not adopt it points to capability, not interest, as the main barrier:</p>
+      <ul>
+        <li><strong>Lack of relevant expertise:</strong> 70.89%</li>
+        <li><strong>Uncertainty about legal implications:</strong> 52.52%</li>
+        <li><strong>Data protection and privacy concerns:</strong> 48.83%</li>
+      </ul>
+      <p>In the US, the Minneapolis Fed found that the most common reason nonadopters give is that AI does not apply to their operations, with about 20% citing safety concerns and a similar share citing a lack of knowledge about AI's capabilities. Data and security concerns also tie into rising scrutiny from insurers, covered in our <a href="/articles/cybersecurity-compliance-middle-market/">security checklist for corporate boards</a>.</p>
+
+      <h2>Practical Steps for Mid-Sized Firms</h2>
+      <ul>
+        <li><strong>Start with a measurable process.</strong> Pick a workflow with a clear baseline, such as invoice processing time or customer response time, so gains can be tracked.</li>
+        <li><strong>Set financial metrics up front.</strong> Productivity is the most commonly reported benefit, but tie each project to cost, revenue or margin targets before scaling it.</li>
+        <li><strong>Close the skills gap.</strong> Lack of expertise is the top barrier in Europe. Training existing staff or hiring a small internal AI lead is often the fastest unlock.</li>
+        <li><strong>Address legal and data risk early.</strong> Clear data-handling rules reduce the legal and privacy uncertainty that stalls many projects.</li>
+        <li><strong>Track operating costs.</strong> Usage-based AI pricing can grow quickly as adoption spreads, so monitor spend alongside results.</li>
+      </ul>
+      <p>The data points to a steady, uneven shift rather than an overnight transformation. Mid-sized firms are now adopting AI at rates closer to large enterprises than to small businesses. The firms that benefit most will be those that measure results from the start.</p>
     `
   },
   {
