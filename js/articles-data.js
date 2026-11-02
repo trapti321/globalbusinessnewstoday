@@ -293,8 +293,8 @@ const ARTICLES = [
   },
   {
     id: "cybersecurity-compliance-middle-market",
-    title: "Cyber Insurance Premiums Surge: The Essential Security Checklist for Corporate Boards",
-    excerpt: "Ransomware underwriters are demanding rigorous proof of multi-factor identity enforcement and zero-trust segmentation before approving commercial liability policies.",
+    title: "Cyber Insurance Rates Are Falling, but Underwriters Still Want Proof: A Board Checklist",
+    excerpt: "Marsh says global cyber rates fell 4% in Q3 2026. Cover still depends on proven controls like MFA, EDR and tested backups. What boards should ask.",
     category: "Tech & AI",
     categorySlug: "tech",
     author: {
@@ -303,15 +303,54 @@ const ARTICLES = [
       avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80"
     },
     publishedAt: "2026-10-30T15:10:00Z",
-    readTime: "5 min read",
+    readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
     isLead: false,
     isTrending: false,
     views: 8190,
-    tags: ["Cybersecurity", "Risk Management", "Corporate Governance", "Insurance"],
+    tags: ["Cyber Insurance", "Cybersecurity", "Ransomware", "Corporate Governance", "SEC", "NIS2"],
     content: `
-      <p class="lead">Corporate risk officers are finding that cybersecurity is no longer merely an IT operational topic, but a board-level fiduciary imperative.</p>
-      <p>With underwriters inspecting telemetry and incident response rehearsals before binding coverage, organizations without automated vulnerability patch cycles are facing 40% premium penalties.</p>
+      <p class="lead">Cyber insurance has become cheaper for most buyers, but not easier to get. Global cyber rates fell 4% in the third quarter of 2026, according to Marsh, while insurers continue to treat a core set of security controls as a condition of cover. For mid-sized companies, the renewal question is less about price and more about whether you can prove your defenses work.</p>
+
+      <h2>Where Cyber Insurance Pricing Stands</h2>
+      <p>The <a href="https://www.marsh.com/en/corp/about/news/global-commercial-insurance-falls-5-percent-q3-2026.html" target="_blank" rel="noopener">Marsh Global Insurance Market Index for Q3 2026</a>, published October 21, reported that "cyber insurance rates declined by 4% globally." In the US, rates were flat "after an extended period of declines," while all other regions continued to see reductions. Across all commercial lines, global rates fell 5% on average.</p>
+      <p>Two caveats matter. First, Marsh measures renewal pricing for its own clients, so an individual firm's experience can differ. Second, a softer market does not mean lighter scrutiny. Marsh describes its <a href="https://www.marsh.com/en/services/cyber-risk/insights/cyber-resilience-twelve-key-controls-to-strengthen-your-security.html" target="_blank" rel="noopener">12 key cybersecurity controls</a> as the measures that are "now a minimum requirement for insurers."</p>
+
+      <h2>What Underwriters Look For</h2>
+      <p>Insurers typically ask applicants to evidence a handful of controls before binding or renewing a policy. Marsh has named five as having the most impact on insurability, mitigation and resilience:</p>
+      <ul>
+        <li><strong>Multifactor authentication (MFA)</strong> on remote access, email and privileged accounts.</li>
+        <li><strong>Endpoint detection and response (EDR)</strong> across workstations and servers.</li>
+        <li><strong>Secured, encrypted and tested backups</strong> that attackers cannot alter or delete.</li>
+        <li><strong>Privileged access management (PAM)</strong> to limit and monitor administrator accounts.</li>
+        <li><strong>Email filtering and web security</strong> to block phishing and malicious downloads.</li>
+      </ul>
+      <p>There is evidence these controls do more than satisfy a questionnaire. A <a href="https://www.marsh.com/en/corp/about/news/groundbreaking-research-from-marsh-mclennan-reveals-direct-link-.html" target="_blank" rel="noopener">2023 Marsh McLennan study</a> found that organizations using automated hardening techniques were nearly six times less likely to have a cyber incident, and that broad MFA coverage made organizations 1.4 times less likely to suffer a successful attack. The same study found that patching high-severity vulnerabilities within seven days was among the most effective controls, yet only 24% of organizations studied did it.</p>
+
+      <h2>The Threat Picture Behind the Questions</h2>
+      <p>The FBI's <a href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" target="_blank" rel="noopener">2025 Internet Crime Report</a> recorded 1,008,597 complaints and $20.877 billion in reported losses, a 26% increase on 2024. Business email compromise alone accounted for more than $3 billion.</p>
+      <p>Ransomware complaints rose to 3,611 in 2025, up from 3,156 in 2024 and 2,825 in 2023, with reported losses above $32 million. The FBI stresses that this loss figure is artificially low, because it usually excludes lost business, downtime and remediation costs, and many victims report no loss amount at all.</p>
+      <p>Mid-market firms are squarely in scope. Of more than 1,400 ransomware complaints from organizations outside critical infrastructure, the most affected industries were legal services (18%), contracting services (17%) and engineering and architectural services (10%).</p>
+      <blockquote>"Timely patching is one of the most efficient and cost-effective steps an organization can take to minimize its exposure to cybersecurity threats." (FBI, 2025 IC3 Annual Report)</blockquote>
+
+      <h2>Why This Is a Board Issue</h2>
+      <p>Regulators now expect directors, not just IT teams, to own cyber risk.</p>
+      <ul>
+        <li><strong>United States:</strong> Under rules adopted by the <a href="https://www.sec.gov/newsroom/press-releases/2023-139" target="_blank" rel="noopener">Securities and Exchange Commission</a>, public companies must disclose a material cybersecurity incident on Form 8-K within four business days of determining that it is material. Annual reports must also describe how the board oversees cybersecurity risk and management's role and expertise in handling it.</li>
+        <li><strong>European Union:</strong> The <a href="https://digital-strategy.ec.europa.eu/en/faqs/directive-measures-high-common-level-cybersecurity-across-union-nis2-directive-faqs" target="_blank" rel="noopener">NIS2 Directive</a> introduces liability for people in senior management positions at in-scope entities. It requires an early warning within 24 hours of becoming aware of a significant incident, a notification within 72 hours and a final report within one month. Maximum fines are at least €10 million or 2% of worldwide annual turnover for essential entities, and at least €7 million or 1.4% for important entities.</li>
+      </ul>
+      <p>Private companies outside these regimes still face the same questions from insurers, lenders and large customers, who increasingly ask for evidence of security controls in contracts and due diligence.</p>
+
+      <h2>A Practical Checklist for Boards</h2>
+      <ul>
+        <li><strong>Ask for evidence, not assurances.</strong> Request MFA enforcement reports, EDR coverage figures and the date of the last successful backup restore test.</li>
+        <li><strong>Check patching speed.</strong> Ask how quickly critical vulnerabilities on internet-facing systems are fixed, and whether the seven-day benchmark is met.</li>
+        <li><strong>Review the incident response plan.</strong> Confirm it names decision-makers, covers ransomware and business email compromise, and has been rehearsed in the past year.</li>
+        <li><strong>Map your reporting deadlines.</strong> Know which rules apply to you, such as SEC Form 8-K, NIS2 or sector regulators, and who decides materiality.</li>
+        <li><strong>Read the policy wording.</strong> Check exclusions, waiting periods for business interruption and any conditions tied to the controls declared on the application. Inaccurate answers can put a claim at risk.</li>
+        <li><strong>Use the soft market.</strong> With rates flat or falling, renewal is a good time to negotiate higher limits or better terms if your controls are strong.</li>
+      </ul>
+      <p>The pricing cycle will turn again at some point. Companies that can document strong controls now are likely to be best placed to keep coverage on reasonable terms when it does.</p>
     `
   },
   {
