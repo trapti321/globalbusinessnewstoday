@@ -128,7 +128,10 @@ function validate(articles) {
 }
 
 validate(RAW_ARTICLES);
-const ARTICLES = [...RAW_ARTICLES].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+// Newest first, and the visible category label always matches the section the article is filed under.
+const ARTICLES = RAW_ARTICLES
+  .map(a => ({ ...a, category: categoryFor(a.categorySlug).name }))
+  .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
 
 /* --------------------------------------------------------------------------
    Asset versioning (cache busting by content hash)
@@ -191,7 +194,7 @@ function head({ title, description, canonical, robots, og, articleMeta, schema }
 }
 
 function header({ active, isHome }) {
-  const lead = ARTICLES.find(a => a.isLead) || ARTICLES[0];
+  const lead = ARTICLES[0]; // newest published article
   const navItem = (href, label, key) => `<li><a href="${href}" class="nav-link${active === key ? " active" : ""}"${active === key ? ` aria-current="page"` : ""}>${esc(label)}</a></li>`;
   const brandTag = isHome ? "h1" : "div";
   return `<a class="skip-link" href="#main">Skip to content</a>
@@ -394,8 +397,8 @@ const latest = (list) => list.map(a => a.updatedAt || a.publishedAt).sort().pop(
    Pages
    -------------------------------------------------------------------------- */
 function buildHome() {
-  const lead = ARTICLES.find(a => a.isLead) || ARTICLES[0];
-  const side = ARTICLES.filter(a => a !== lead).slice(0, 3);
+  const lead = ARTICLES[0]; // newest published article
+  const side = ARTICLES.slice(1, 4);
   const trending = [...ARTICLES].sort((a, b) => (b.isTrending ? 1 : 0) - (a.isTrending ? 1 : 0)).slice(0, 4);
   const today = new Date().toISOString().slice(0, 10);
   const calendar = CALENDAR.filter(e => e.date >= today);
