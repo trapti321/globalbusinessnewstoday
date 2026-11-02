@@ -1,110 +1,67 @@
-# Global Business News Today (globalbusinessnewstoday.com)
+# Global Business News Today
 
-A high-performance, modern business news and corporate wire publication website inspired by Business Daily Media (`businessdailymedia.com`).
+A high-performance, modern business news and corporate wire publication platform delivering real-time financial market intelligence, SME developments, technology insights, and verified corporate press releases.
 
 ---
 
 ## 🌟 Key Features
 
-- **Editorial Masthead & Navigation**: Sleek business media design tailored for international commerce, SME insights, markets, and corporate developments.
-- **Live Financial Market Ticker**: Real-time styled index tracker covering S&P 500, NASDAQ, DOW, FTSE, Nikkei, Bitcoin, Crude Oil, and Gold.
-- **Top Stories & Lead Hero**: Prominent lead breaking news spotlight with editor's picks and numbered trending stories (1–4).
-- **Categorized Sections**: World Business, Markets & Finance, Tech & AI, SMEs & Startups, Commercial Real Estate, and Corporate Press Releases.
-- **Interactive Quick Read & Live Search**: Instant article preview via native HTML5 dialog modals without page reloads, plus real-time client-side search.
-- **Press Release Wire Portal (`submit-pr.html`)**: Submission workflow for companies to distribute corporate announcements (similar to Business Daily Media's core syndication model).
-- **Dark / Light Mode**: Seamless theme switcher with persistent preferences stored in `localStorage`.
-- **Automated GitHub CI/CD**: Ready-to-go `.github/workflows/deploy.yml` for automated push-to-deploy syncing to Hostinger.
+- **Editorial Newsroom Layout**: Responsive editorial typography and layout designed for international commerce, markets, and SME growth.
+- **Financial Market Watch Strip**: Live index tracking for major global benchmarks (S&P 500, NASDAQ, Dow Jones, FTSE 100, Nikkei 225, Bitcoin, Crude Oil, and Gold).
+- **Hero & Trending Feed**: Lead story showcase, editor's picks, and ranked trending analysis.
+- **Categorized Editorial Desks**:
+  - World Business & Global Economy
+  - Financial Markets & Banking
+  - Technology & Enterprise AI
+  - SMEs & Startup Intelligence
+  - Commercial Real Estate
+  - Corporate Wire & Press Releases
+- **Interactive Modals & Instant Search**: In-browser search filtering and native `<dialog>` quick-read modal previews without page reloading.
+- **Corporate Wire Portal (`submit-pr.html`)**: Press release submission and syndication interface for business announcements.
+- **Theme Switcher**: Dark and light mode toggle with client-side persistence.
+- **Automated CI/CD**: Continuous deployment pipeline using GitHub Actions to sync updates to web hosting.
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-globalbusinessnewstoday/
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # GitHub Actions auto-deploy to Hostinger
+│       └── deploy.yml          # Automated CI/CD deployment workflow
 ├── css/
-│   └── styles.css              # Custom editorial stylesheet (CSS Grid, Flexbox, Dark mode)
+│   └── styles.css              # Modern CSS (Grid, Flexbox, logical properties, themes)
 ├── js/
-│   ├── articles-data.js        # Articles database and financial market indexes
-│   └── main.js                 # Theme switcher, ticker, search, quick read, modals
-├── index.html                  # Main news portal front page
-├── article.html                # In-depth single article reading template
-├── category.html               # Filtered category archive view
-├── submit-pr.html              # Corporate press release submission portal
-├── contact.html                # Editorial contact and advertising inquiry page
+│   ├── articles-data.js        # News database and market index models
+│   └── main.js                 # Theme switcher, market ticker, search, dialog modals
+├── index.html                  # Front page portal
+├── article.html                # Single story reading template
+├── category.html               # Category archive view
+├── submit-pr.html              # Press release submission portal
+├── contact.html                # Editorial and advertising contact page
 └── .gitignore
 ```
 
 ---
 
-## 🚀 Deployment Guide: GoDaddy + Hostinger + GitHub
+## 💻 Local Development
 
-### Step 1: Connect GoDaddy Domain to Hostinger
-
-You have registered `globalbusinessnewstoday.com` on GoDaddy and have hosting on Hostinger. To connect them:
-
-#### Option A (Recommended): Update Nameservers in GoDaddy
-1. Log in to your **Hostinger hPanel** -> **Websites** -> Check your domain's assigned nameservers (usually `ns1.dns-parking.com` and `ns2.dns-parking.com`).
-2. Log in to **GoDaddy** -> Go to **Domain Portfolio** -> Click on `globalbusinessnewstoday.com`.
-3. Select **DNS** -> **Nameservers** -> Click **Change Nameservers**.
-4. Choose **"I'll use my own nameservers"** and enter:
-   - `ns1.dns-parking.com`
-   - `ns2.dns-parking.com`
-5. Click **Save** (DNS propagation usually takes 15 minutes to a few hours).
-
-#### Option B: Point via A Record (If keeping GoDaddy Nameservers)
-1. In Hostinger hPanel -> Check your **Hosting IP Address** (e.g. `185.xxx.xxx.xxx`).
-2. In GoDaddy DNS Management:
-   - Edit the **A Record** (`@`): Set value to Hostinger's IP address.
-   - Edit the **CNAME Record** (`www`): Set value to `@` or `globalbusinessnewstoday.com`.
-
----
-
-### Step 2: Push this Project to GitHub
-
-1. Open your terminal in this directory:
+1. **Clone the repository:**
    ```bash
-   cd /Users/kt/.gemini/antigravity/scratch/globalbusinessnewstoday
+   git clone https://github.com/trapti321/globalbusinessnewstoday.git
+   cd globalbusinessnewstoday
    ```
-2. Check your git status and commit all files:
+
+2. **Run locally:**
+   Open `index.html` in any modern web browser or serve via a local static server:
    ```bash
-   git add .
-   git commit -m "Initial release of Global Business News Today portal"
-   ```
-3. Go to [GitHub.com](https://github.com) and create a new repository named `globalbusinessnewstoday` (set it to Public or Private).
-4. Link and push your code:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/<YOUR_GITHUB_USERNAME>/globalbusinessnewstoday.git
-   git push -u origin main
+   npx serve .
+   # or
+   python3 -m http.server 8000
    ```
 
 ---
 
-### Step 3: Configure Automated Deployment to Hostinger
+## 📄 License & Attribution
 
-There are two easy methods to deploy from GitHub to Hostinger:
-
-#### Method 1: Automated GitHub Actions (Pre-configured via `.github/workflows/deploy.yml`)
-1. Log in to **Hostinger hPanel** -> Select your website -> Go to **Files** -> **FTP Accounts**.
-2. Note your FTP details:
-   - **FTP Host / Server** (e.g., `ftp.globalbusinessnewstoday.com` or Hostinger's server IP)
-   - **FTP Username**
-   - **FTP Password**
-3. In your GitHub repository:
-   - Go to **Settings** -> **Secrets and variables** -> **Actions** -> Click **New repository secret**.
-   - Add these 3 secrets:
-     - `HOSTINGER_FTP_SERVER` : Your Hostinger FTP host / server address
-     - `HOSTINGER_FTP_USERNAME` : Your FTP username
-     - `HOSTINGER_FTP_PASSWORD` : Your FTP password
-4. Now, every time you run `git push origin main`, GitHub Actions will automatically transfer and update the files in Hostinger's `public_html` directory within seconds!
-
-#### Method 2: Hostinger Native Git Manager (Alternative)
-1. In Hostinger hPanel -> Go to **Advanced** -> **Git**.
-2. Paste your repository URL: `https://github.com/<YOUR_GITHUB_USERNAME>/globalbusinessnewstoday.git`.
-3. Set **Branch** to `main`.
-4. Set **Install Path** to `/` or `public_html`.
-5. Click **Create** and **Deploy**.
-6. (Optional) Copy the **Webhook URL** provided by Hostinger and paste it into GitHub (`Settings -> Webhooks`) for automatic deployments on push.
+All rights reserved © Global Business News Today.
