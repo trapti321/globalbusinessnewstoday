@@ -362,53 +362,10 @@ button {
 .market-strip {
   background-color: var(--bg-secondary);
   border-block-end: 1px solid var(--border-color);
-  padding-block: 0.5rem;
-  overflow-x: auto;
-  scrollbar-width: thin;
 }
 
 .market-strip-inner {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  min-inline-size: max-content;
-}
-
-.market-item {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  font-size: 0.78125rem;
-}
-
-.market-symbol {
-  font-weight: 700;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-}
-
-.market-value {
-  font-family: var(--font-mono);
-  font-weight: 600;
-  color: var(--text-primary);
-}
-
-.market-change {
-  font-family: var(--font-mono);
-  font-size: 0.71875rem;
-  font-weight: 600;
-  padding: 0.0625rem 0.3125rem;
-  border-radius: var(--radius-sm);
-}
-
-.market-change.positive {
-  color: var(--market-up);
-  background-color: var(--market-up-bg);
-}
-
-.market-change.negative {
-  color: var(--market-down);
-  background-color: var(--market-down-bg);
+  min-block-size: 46px;
 }
 
 /* ==========================================================================

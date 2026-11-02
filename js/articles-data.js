@@ -204,17 +204,6 @@ const ARTICLES = [
   }
 ];
 
-const MARKET_DATA = [
-  { symbol: "S&P 500", value: "5,864.20", change: "+0.62%", positive: true },
-  { symbol: "NASDAQ", value: "18,518.61", change: "+0.85%", positive: true },
-  { symbol: "DOW JONES", value: "42,233.05", change: "-0.14%", positive: false },
-  { symbol: "FTSE 100", value: "8,210.40", change: "+0.34%", positive: true },
-  { symbol: "NIKKEI 225", value: "38,651.97", change: "+1.12%", positive: true },
-  { symbol: "BITCOIN", value: "$71,450.00", change: "+2.40%", positive: true },
-  { symbol: "BRENT CRUDE", value: "$73.10/bbl", change: "-0.80%", positive: false },
-  { symbol: "GOLD", value: "$2,745.80/oz", change: "+0.45%", positive: true }
-];
-
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { ARTICLES, MARKET_DATA };
+  module.exports = { ARTICLES };
 }
