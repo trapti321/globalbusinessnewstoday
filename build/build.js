@@ -38,6 +38,32 @@ const CATEGORIES = [
   { slug: "press-releases", name: "Press Releases", title: "Corporate Wire & Press Releases", description: "Corporate announcements and press releases distributed by Global Business News Today." }
 ];
 
+// Author profiles, keyed by the author.name used in js/articles-data.js. Authors listed here get a
+// dedicated /author/<slug>/ page, a linked byline and a bio in the article author box.
+const AUTHORS = {
+  "GBNT Newsroom": {
+    slug: "gbnt-newsroom",
+    type: "Organization",
+    title: "Editorial Desk",
+    avatar: "/assets/logo-512.png",
+    metaDescription: "GBNT Newsroom is the editorial desk of Global Business News Today. Read its bio, reporting standards and latest fact-checked business and tech news.",
+    shortBio: "GBNT Newsroom is the in-house editorial desk of Global Business News Today. It reports and fact-checks stories on markets, SMEs, technology and the global economy using primary sources, and links to every source inline.",
+    bio: [
+      "GBNT Newsroom is the in-house editorial desk of Global Business News Today. The desk researches, writes and fact-checks business news and explainers for executives, founders, investors and small business owners who need clear answers backed by evidence.",
+      "Stories published under the GBNT Newsroom byline are produced and reviewed by the editorial team as a whole rather than by a single reporter. Each one goes through a source check before publication, and the desk returns to explainers when the facts change, recording the update date on the article."
+    ],
+    standards: [
+      "<strong>Primary sources first.</strong> Figures and claims are taken from regulatory filings, central bank statements, official statistics, court records and company announcements, and linked inline so readers can check them.",
+      "<strong>Clear dates.</strong> Every article shows when it was published and, where relevant, when it was last updated or when its facts were last checked.",
+      "<strong>Separation of news and promotion.</strong> Press releases are published only in the Press Releases section and are labelled as corporate announcements.",
+      `<strong>Corrections.</strong> Errors are corrected promptly. Readers can report a mistake through the <a href="/contact.html">contact page</a> or by emailing <a href="mailto:${SITE.email}">${SITE.email}</a>.`
+    ]
+  }
+};
+
+const authorFor = (a) => AUTHORS[a.author.name];
+const authorUrl = (profile) => `/author/${profile.slug}/`;
+
 // Upcoming policy dates shown in the homepage sidebar (past dates are hidden at build time).
 const CALENDAR = [
   { name: "Bank of England MPC", date: "2026-11-05" },
@@ -277,6 +303,7 @@ function footer() {
           <ul class="footer-links">
             <li><a href="/">Home</a></li>
             <li><a href="/category/all/">All News</a></li>
+            ${Object.entries(AUTHORS).map(([name, p]) => `<li><a href="${authorUrl(p)}">${esc(name)}</a></li>`).join("\n            ")}
             <li><a href="/contact.html">Contact Us</a></li>
           </ul>
         </nav>
@@ -529,6 +556,10 @@ function buildArticle(a) {
   const heroImage = isUnsplash(a.image)
     ? { url: imageUrl(a, 1200, 675), width: 1200, height: 675 }
     : { url: abs(a.image), width: a.imageWidth, height: a.imageHeight };
+  const profile = authorFor(a);
+  const authorName = profile
+    ? `<a href="${authorUrl(profile)}" rel="author">${esc(a.author.name)}</a>`
+    : esc(a.author.name);
 
   const main = `
     <article class="article-page">
@@ -543,7 +574,7 @@ function buildArticle(a) {
         <h1 class="article-main-title">${esc(a.title)}</h1>
         <p class="article-subtitle">${esc(a.excerpt)}</p>
         <div class="article-meta">
-          <span class="author-pill">${avatar(a, 32)}<span><span class="author-name">${esc(a.author.name)}</span>${a.author.role ? `<span class="author-role">${esc(a.author.role)}</span>` : ""}</span></span>
+          <span class="author-pill">${avatar(a, 32)}<span><span class="author-name">${authorName}</span>${a.author.role ? `<span class="author-role">${esc(a.author.role)}</span>` : ""}</span></span>
           <span class="meta-dot">•</span>
           <span>Published <time datetime="${a.publishedAt}">${formatDate(a.publishedAt)}</time></span>
           ${a.updatedAt ? `<span class="meta-dot">•</span><span>Updated <time datetime="${a.updatedAt}">${formatDate(a.updatedAt)}</time></span>` : ""}
@@ -581,8 +612,10 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
           <div class="author-box">
             ${avatar(a, 64)}
             <div>
-              <p class="author-box-name">${esc(a.author.name)}</p>
-              ${a.author.role ? `<p class="author-box-role">${esc(a.author.role)}, ${esc(SITE.name)}</p>` : ""}
+              <p class="author-box-name">${authorName}</p>
+              ${a.author.role || profile ? `<p class="author-box-role">${esc(a.author.role || profile.title)}, ${esc(SITE.name)}</p>` : ""}
+              ${profile ? `<p class="author-box-bio">${esc(profile.shortBio)}</p>
+              <a class="author-box-link" href="${authorUrl(profile)}">More from ${esc(a.author.name)} ➔</a>` : ""}
             </div>
           </div>
         </div>
@@ -624,7 +657,9 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
         dateModified: modified,
         articleSection: cat.name,
         keywords: (a.tags || []).join(", "),
-        author: [a.author.type === "Organization"
+        author: [profile
+          ? { "@type": profile.type, "@id": `${SITE.url}${authorUrl(profile)}#author`, name: a.author.name, url: `${SITE.url}${authorUrl(profile)}` }
+          : a.author.type === "Organization"
           ? { "@type": "Organization", name: a.author.name, url: `${SITE.url}/` }
           : { "@type": "Person", name: a.author.name, ...(a.author.role ? { jobTitle: a.author.role } : {}) }],
         publisher: ORGANIZATION
@@ -690,6 +725,103 @@ function buildCategory(slug) {
   });
 }
 
+function buildAuthor(name, profile) {
+  const list = ARTICLES.filter(a => a.author.name === name);
+  const url = `${SITE.url}${authorUrl(profile)}`;
+  const covers = CATEGORIES.filter(c => list.some(a => a.categorySlug === c.slug));
+  const title = `${name}: ${profile.title} at ${SITE.name}`;
+  const description = profile.metaDescription;
+
+  const main = `
+    <div class="author-profile">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">${esc(name)}</li>
+        </ol>
+      </nav>
+
+      <header class="author-profile-header">
+        <img src="${esc(profile.avatar)}" width="112" height="112" alt="${esc(name)} logo">
+        <div>
+          <h1 class="page-title">${esc(name)}</h1>
+          <p class="author-profile-role">${esc(profile.title)}, ${esc(SITE.name)}</p>
+          <p class="author-profile-stats">${list.length} article${list.length === 1 ? "" : "s"}${list.length ? ` • Latest <time datetime="${list[0].publishedAt}">${formatDate(list[0].publishedAt)}</time>` : ""}</p>
+        </div>
+      </header>
+
+      <div class="author-profile-body">
+        <section aria-labelledby="authorAboutTitle">
+          <h2 id="authorAboutTitle">About ${esc(name)}</h2>
+          ${profile.bio.map(p => `<p>${esc(p)}</p>`).join("\n          ")}
+        </section>
+
+        ${covers.length ? `<section aria-labelledby="authorCoversTitle">
+          <h2 id="authorCoversTitle">Coverage Areas</h2>
+          <ul class="author-topics">
+            ${covers.map(c => `<li><a href="${categoryUrl(c.slug)}">${esc(c.name)}</a></li>`).join("\n            ")}
+          </ul>
+        </section>` : ""}
+
+        <section aria-labelledby="authorStandardsTitle">
+          <h2 id="authorStandardsTitle">How We Report</h2>
+          <ul class="author-standards">
+            ${profile.standards.map(s => `<li>${s}</li>`).join("\n            ")}
+          </ul>
+        </section>
+
+        <section aria-labelledby="authorContactTitle">
+          <h2 id="authorContactTitle">Contact the Desk</h2>
+          <p>Send news tips, questions about a story or correction requests to <a href="mailto:${SITE.email}">${SITE.email}</a>, or use the <a href="/contact.html">contact page</a>.</p>
+        </section>
+      </div>
+    </div>
+
+    <section class="author-articles" aria-labelledby="authorArticlesTitle">
+      <div class="section-header-banner">
+        <h2 id="authorArticlesTitle">Latest Articles by ${esc(name)}</h2>
+      </div>
+      ${list.length ? `<div class="articles-grid articles-grid-3">
+        ${list.map(newsCard).join("\n        ")}
+      </div>` : `<p class="empty-state">No articles yet.</p>`}
+    </section>`;
+
+  return render({
+    title: title.length <= 70 ? title : `${name} | ${SITE.name}`,
+    description,
+    canonical: url,
+    robots: list.length ? ROBOTS_INDEX : ROBOTS_NOINDEX,
+    og: { type: "profile", title: `${name} | ${SITE.name}`, image: { url: abs(profile.avatar), width: 512, height: 512, alt: `${name} logo` } },
+    schema: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        url,
+        name: title,
+        description,
+        dateModified: latest(list),
+        isPartOf: { "@id": `${SITE.url}/#website` },
+        mainEntity: {
+          "@type": profile.type,
+          "@id": `${url}#author`,
+          name,
+          alternateName: "Global Business News Today Newsroom",
+          url,
+          description: profile.shortBio,
+          email: SITE.email,
+          logo: abs(profile.avatar),
+          image: abs(profile.avatar),
+          knowsAbout: covers.map(c => c.title),
+          parentOrganization: { "@id": ORGANIZATION["@id"], "@type": ORGANIZATION["@type"], name: SITE.name, url: `${SITE.url}/` }
+        },
+        hasPart: list.map(a => ({ "@type": "NewsArticle", headline: a.title, url: `${SITE.url}${articleUrl(a)}`, datePublished: a.publishedAt }))
+      },
+      breadcrumb([{ name: "Home", url: "/" }, { name, url: authorUrl(profile) }])
+    ],
+    main
+  });
+}
+
 function buildStatic({ file, fragment, title, description, active, schemaType }) {
   const body = fs.readFileSync(path.join(__dirname, "pages", fragment), "utf8")
     .replace(/\{\{EMAIL\}\}/g, SITE.email)
@@ -736,10 +868,9 @@ function buildSitemap(pages) {
   const urls = pages.map(p => `  <url>
     <loc>${esc(SITE.url + p.path)}</loc>
     ${p.lastmod ? `<lastmod>${p.lastmod}</lastmod>` : ""}
-    ${(p.images || []).map(im => `<image:image><image:loc>${esc(im)}</image:loc></image:image>`).join("")}
   </url>`.replace(/\n\s*\n/g, "\n"));
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.join("\n")}
 </urlset>
 `;
@@ -794,6 +925,7 @@ ${section("Site Sections", [
   ...CATEGORIES.filter(c => ARTICLES.some(a => a.categorySlug === c.slug)).map(c => `- [${c.name}](${SITE.url}${categoryUrl(c.slug)}): ${c.description}`)
 ])}
 ${bySection.join("\n")}
+${section("Authors", Object.entries(AUTHORS).map(([name, p]) => `- [${name}](${SITE.url}${authorUrl(p)}): ${p.shortBio}`))}
 ${section("Optional", [
   `- [Contact Us](${SITE.url}/contact.html): Newsroom, corrections, advertising and partnership enquiries`,
   `- [Submit a Press Release](${SITE.url}/submit-pr.html): Corporate announcements for editorial review`
@@ -810,7 +942,7 @@ function write(rel, content) {
 }
 
 // Remove generated directories so deleted articles/categories disappear.
-for (const dir of ["articles", "category"]) fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
+for (const dir of ["articles", "category", "author"]) fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
 
 const sitemapPages = [{ path: "/", lastmod: latest(ARTICLES) }];
 
@@ -818,7 +950,7 @@ write("index.html", buildHome());
 
 for (const a of ARTICLES) {
   write(`articles/${a.id}/index.html`, buildArticle(a));
-  sitemapPages.push({ path: articleUrl(a), lastmod: a.updatedAt || a.publishedAt, images: [imageUrl(a, 1600, 900)] });
+  sitemapPages.push({ path: articleUrl(a), lastmod: a.updatedAt || a.publishedAt });
 }
 
 write("category/all/index.html", buildCategory("all"));
@@ -827,6 +959,12 @@ for (const c of CATEGORIES) {
   write(`category/${c.slug}/index.html`, buildCategory(c.slug));
   const list = ARTICLES.filter(a => a.categorySlug === c.slug);
   if (list.length) sitemapPages.push({ path: categoryUrl(c.slug), lastmod: latest(list) });
+}
+
+for (const [name, profile] of Object.entries(AUTHORS)) {
+  write(`author/${profile.slug}/index.html`, buildAuthor(name, profile));
+  const list = ARTICLES.filter(a => a.author.name === name);
+  if (list.length) sitemapPages.push({ path: authorUrl(profile), lastmod: latest(list) });
 }
 
 write("contact.html", buildStatic({
@@ -852,4 +990,4 @@ write("sitemap.xml", buildSitemap(sitemapPages));
 write("feed.xml", buildFeed());
 write("llms.txt", buildLlmsTxt());
 
-console.log(`Built ${ARTICLES.length} articles, ${CATEGORIES.length + 1} category pages, home, contact, submit-pr, 404, sitemap.xml, feed.xml and llms.txt (assets v=${VERSION}).`);
+console.log(`Built ${ARTICLES.length} articles, ${CATEGORIES.length + 1} category pages, ${Object.keys(AUTHORS).length} author pages, home, contact, submit-pr, 404, sitemap.xml, feed.xml and llms.txt (assets v=${VERSION}).`);
