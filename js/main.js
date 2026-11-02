@@ -275,9 +275,10 @@ function initShare() {
         window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, "_blank", "noopener");
       } else if (btn.dataset.share === "copy" && navigator.clipboard) {
         navigator.clipboard.writeText(url).then(() => {
-          const label = btn.textContent;
-          btn.textContent = "Link copied";
-          setTimeout(() => { btn.textContent = label; }, 2000);
+          const feedback = btn.parentElement.querySelector(".share-feedback");
+          if (!feedback) return;
+          feedback.textContent = "Link copied";
+          setTimeout(() => { feedback.textContent = ""; }, 2000);
         });
       }
     });

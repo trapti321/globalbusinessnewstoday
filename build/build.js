@@ -559,10 +559,17 @@ function buildArticle(a) {
           </figure>
 
           <div class="share-bar">
-            <span class="share-label">Share:</span>
-            <button type="button" class="share-btn" data-share="x">X / Twitter</button>
-            <button type="button" class="share-btn" data-share="linkedin">LinkedIn</button>
-            <button type="button" class="share-btn" data-share="copy">Copy Link</button>
+            <span class="share-label">Share</span>
+            <button type="button" class="share-btn" data-share="x" aria-label="Share on X" title="Share on X">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77L17.75 3Zm-1.08 16.2h1.7L7.4 4.73H5.58L16.67 19.2Z"/></svg>
+            </button>
+            <button type="button" class="share-btn" data-share="linkedin" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.25H3V9.75Zm6.5 0h3.83v1.54h.06c.53-1.01 1.84-2.08 3.79-2.08 4.05 0 4.8 2.67 4.8 6.13V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.92 1.3-1.92 2.63V21h-4V9.75Z"/></svg>
+            </button>
+            <button type="button" class="share-btn" data-share="copy" aria-label="Copy link" title="Copy link">
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></svg>
+            </button>
+            <span class="share-feedback" role="status" aria-live="polite"></span>
           </div>
 
           <div class="article-prose">
