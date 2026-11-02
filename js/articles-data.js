@@ -115,8 +115,8 @@ const ARTICLES = [
   },
   {
     id: "sme-cash-flow-fintech-revolution",
-    title: "Next-Gen Invoicing and Embedded Banking: The Lifeline Transforming SME Cash Flow",
-    excerpt: "Delayed receivables remain the number one killer of small enterprises. A new wave of real-time embedded payment platforms is settling invoices in minutes, not months.",
+    title: "Late Payments Squeeze SME Cash Flow as Rates Rise: The New Rules and Tools Helping Firms Get Paid",
+    excerpt: "US small firms were paid 8.5 days late on average in mid-2026. New UK rules, instant payments and invoice tools aim to help as credit costs rise.",
     category: "SMEs & Startups",
     categorySlug: "smes",
     author: {
@@ -125,15 +125,54 @@ const ARTICLES = [
       avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
     },
     publishedAt: "2026-11-01T11:20:00Z",
-    readTime: "4 min read",
+    readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1200&q=80",
     isLead: false,
     isTrending: true,
     views: 13450,
-    tags: ["SME News", "Fintech", "Cash Flow", "Payments"],
+    tags: ["SME Finance", "Late Payments", "Cash Flow", "Instant Payments", "FedNow", "Invoicing"],
     content: `
-      <p class="lead">For decades, small contractors, agencies, and suppliers were held hostage by 60-day and 90-day payment terms imposed by multinational corporations.</p>
-      <p>Today, embedded finance mechanisms within cloud accounting software allow vendors to get paid immediately upon approval, using automated dynamic discounting and ledger-backed micro-liquidity.</p>
+      <p class="lead">Late payment is getting more expensive for small businesses. With central banks holding or raising rates in 2026, every extra day an invoice sits unpaid is a day a firm may be funding its customers with costly credit. Governments and payment networks are responding, but the fixes are arriving unevenly.</p>
+
+      <p>US small businesses were paid an average of 8.5 days late in the June quarter of 2026, and waited an average of 29.3 days to be paid, up from 28.6 days in the March quarter, according to <a href="https://www.xero.com/us/guides/late-payment-small-business/" target="_blank" rel="noopener">Xero Small Business Insights</a> data published by the accounting software company in August.</p>
+
+      <h2>Why Late Payment Hurts More in 2026</h2>
+      <p>When customers pay slowly, small firms typically cover the gap with overdrafts, credit cards or revolving credit lines. Those products are usually variable-rate, so their cost has risen with policy rates. The US Federal Reserve raised its target range to 3.75% to 4% in September and has signaled another hike may follow, while the Bank of England and European Central Bank are holding with a tightening bias. Our analysis of <a href="/articles/fed-rate-cuts-global-markets-2026/">what higher rates mean for SMEs</a> covers the outlook in detail.</p>
+      <p>The result is a double squeeze: revenue arrives later, and the credit used to bridge the gap costs more.</p>
+
+      <h2>UK: A 60-Day Cap on Payment Terms Moves Through Parliament</h2>
+      <p>The UK government introduced the Commercial Payments Bill in May 2026. According to the <a href="https://www.gov.uk/government/publications/commercial-payments-bill-factsheets/commercial-payments-bill-overview" target="_blank" rel="noopener">official GOV.UK overview</a>, it would:</p>
+      <ul>
+        <li>Impose maximum payment terms of 60 days, with strictly limited exemptions.</li>
+        <li>Make interest on late payments mandatory at 8% above the Bank of England base rate.</li>
+        <li>Ban retention payments in construction contracts, with timing subject to further consultation.</li>
+        <li>Give the Small Business Commissioner powers to investigate larger businesses suspected of persistent poor payment practices, adjudicate payment disputes between small and larger firms, and take enforcement action over payment reporting breaches.</li>
+      </ul>
+      <p>The government estimates that late payments cost the UK economy £11 billion a year and see 38 UK businesses close every day. Announcing the Bill, Business Secretary Peter Kyle said:</p>
+      <blockquote>"Late payments choke growth, cost jobs, and force too many good businesses to close." (Peter Kyle, UK Business Secretary, via the <a href="https://www.smallbusinesscommissioner.gov.uk/late-payments-bill-with-more-powers-for-small-business-commissioner-introduced-to-parliament/" target="_blank" rel="noopener">Small Business Commissioner</a>)</blockquote>
+      <p>The Bill is still progressing through Parliament, so the new rules are not yet in force. Firms should check its status before relying on the 60-day cap in contract negotiations.</p>
+
+      <h2>EU: The Late Payment Regulation Is Stalled</h2>
+      <p>The European Commission proposed replacing the 2011 Late Payment Directive with a stricter regulation in September 2023, including a 30-day maximum payment term. The European Parliament voted its position in April 2024. But the European Parliament's <a href="https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-late-payments-directive-revision" target="_blank" rel="noopener">Legislative Train tracker</a> now lists the file as "Blocked," noting that "in the Council, after discussions, the file found difficulties to progress." For now, EU businesses remain covered by the existing 2011 directive.</p>
+
+      <h2>US: Instant Payment Rails Are Growing, Slowly</h2>
+      <p>In the United States there is no equivalent federal cap on business payment terms, so the focus is on faster payment infrastructure. The Federal Reserve's FedNow Service, launched in July 2023, had 1,725 participating banks and credit unions as of the first quarter of 2026, according to a <a href="https://www.richmondfed.org/publications/research/economic_brief/2026/eb_26-28" target="_blank" rel="noopener">Richmond Fed economic brief</a>. The Clearing House's RTP network had 1,260 members as of May 2026.</p>
+      <p>Both networks run 24 hours a day, 365 days a year, settle immediately, and raised their transaction limits from $1 million to $10 million in 2025. Usage is still modest: FedNow processed 2.73 million transactions worth $271.25 billion in the first quarter of 2026, compared with 128 million transactions worth $480 billion on RTP. The Richmond Fed authors describe FedNow as being in "an early and cautious adoption phase." For SMEs, the takeaway is that instant settlement is available, but only if both the payer's and the payee's banks support it.</p>
+
+      <h2>Invoice Tools: Making It Easier to Pay on Time</h2>
+      <p>Much of the practical progress is happening inside accounting software. Platforms such as Xero let businesses add a "pay now" option to invoices, connected to payment providers. On its <a href="https://www.xero.com/us/accounting-software/accept-payments/" target="_blank" rel="noopener">US payments page</a>, Xero lists Stripe (cards, Apple Pay, ACH debit and Buy Now, Pay Later through Klarna) and GoCardless (recurring ACH direct debit) as options, and says customers who accept Stripe payments on online invoices get paid up to twice as fast as those who do not. That is the vendor's own figure, based on its customer data, and results will vary by sector and customer base.</p>
+      <p>Faster payment options do not fix customers who choose to pay late. But they remove friction for customers who intend to pay on time, and that can shorten the cash gap.</p>
+
+      <h2>Practical Steps for SME Owners</h2>
+      <ul>
+        <li><strong>Measure your gap.</strong> Track average days to payment and days late by customer, not just overall.</li>
+        <li><strong>Put a payment link on every invoice.</strong> Card, ACH or direct debit options make it easier to pay immediately.</li>
+        <li><strong>Use direct debit for recurring work.</strong> Pulling agreed payments automatically avoids chasing.</li>
+        <li><strong>Know your statutory rights.</strong> UK firms can already claim statutory interest on late commercial payments; the proposed Bill would make interest mandatory.</li>
+        <li><strong>Price your bridging credit.</strong> Calculate what each week of late payment costs you at today's credit-line rate, and use that number when negotiating terms or early payment discounts.</li>
+        <li><strong>Ask your bank about instant payments.</strong> Check whether it receives FedNow or RTP payments, and share those details with larger customers.</li>
+      </ul>
+      <p>Policy relief is coming in the UK, stalled in the EU and largely infrastructure-led in the US. Until those changes take full effect, the firms best protected from higher rates will be the ones that shorten their own payment cycle.</p>
     `
   },
   {
