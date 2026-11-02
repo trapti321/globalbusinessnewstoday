@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Article | Global Business News Today</title>
   <meta name="description" content="Read in-depth market intelligence and business analysis from Global Business News Today.">
+  <link rel="canonical" href="https://globalbusinessnewstoday.com/article.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .reading-progress-bar {
@@ -48,7 +50,7 @@
         </div>
         <div class="masthead-center">
           <a href="index.html">
-            <h1 class="brand-title">Global Business News <span>Today</span></h1>
+            <h1 class="brand-title"><img class="brand-mark" src="assets/brand-mark.svg" alt=""><span class="brand-name">Global Business News <span>Today</span></span></h1>
             <p class="brand-tagline">Global Markets • SME Intelligence • Corporate Wire</p>
           </a>
         </div>
@@ -199,6 +201,10 @@
 
       const article = ARTICLES.find(a => a.id === articleId) || ARTICLES[0];
       if (article) {
+        const canonicalLink = document.querySelector('link[rel="canonical"]');
+        if (canonicalLink) {
+          canonicalLink.href = `https://globalbusinessnewstoday.com/article.html?id=${encodeURIComponent(article.id)}`;
+        }
         document.title = `${article.title} | Global Business News Today`;
         document.getElementById("articleLoading").style.display = "none";
         document.getElementById("articleContentWrap").style.display = "block";
