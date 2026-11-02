@@ -19,7 +19,7 @@ A high-performance, modern business news and corporate wire publication platform
 - **Interactive Modals & Instant Search**: In-browser search filtering and native `<dialog>` quick-read modal previews without page reloading.
 - **Corporate Wire Portal (`submit-pr.html`)**: Press release submission and syndication interface for business announcements.
 - **Theme Switcher**: Dark and light mode toggle with client-side persistence.
-- **Automated CI/CD**: Continuous deployment pipeline using GitHub Actions to sync updates to web hosting.
+- **Automated CI/CD**: Continuous deployment pipeline using GitHub Actions to sync updates directly to live hosting.
 
 ---
 
@@ -44,6 +44,42 @@ A high-performance, modern business news and corporate wire publication platform
 
 ---
 
+## 🚀 Continuous Deployment (CI/CD) Workflow
+
+This project is configured with automated continuous deployment. 
+
+```text
+[Local Code Changes] ──► [git push origin main] ──► [GitHub Actions CI/CD] ──► [Live Production Server]
+```
+
+- Any approved commit pushed to the `main` branch automatically triggers `.github/workflows/deploy.yml`.
+- The workflow securely authenticates with the production hosting environment and synchronizes file changes to `public_html` within 15–30 seconds.
+
+---
+
+## 🔒 Security, Credential Protection & Misuse Prevention
+
+To safeguard the production infrastructure, brand integrity, and hosting environment against misuse, follow these security rules:
+
+### 1. Strict Credential Isolation
+- **NEVER commit sensitive credentials**: Do not hardcode or commit FTP hostnames, server IPs, passwords, private keys, or API tokens into any file, script, commit message, or pull request.
+- **Encrypted Environment Secrets**: Deployment credentials must strictly reside in **GitHub Repository Secrets** (`Settings` → `Secrets and variables` → `Actions`):
+  - `HOSTINGER_FTP_SERVER`
+  - `HOSTINGER_FTP_USERNAME`
+  - `HOSTINGER_FTP_PASSWORD`
+- Secrets are masked in execution logs and never exposed in public build outputs.
+
+### 2. Production Branch Governance
+- Because pushes to `main` go **directly to production**, do not test unverified scripts directly on `main`.
+- For feature updates or collaborative contributions, create a separate branch (`git checkout -b feature/update-news`), test locally, and merge only after verification.
+- It is recommended to enable **Branch Protection Rules** on GitHub (`Settings` → `Branches` → protect `main`) to prevent accidental force pushes (`git push --force`) or unauthorized direct commits.
+
+### 3. Anti-Scraping & Brand Protection
+- The brand identity, design layout, corporate wire syndication trademarks, and editorial reporting of **Global Business News Today** are proprietary.
+- Automated mass scraping, unauthorized content republishing, spoofing the corporate wire distribution system, or deploying replicas without written authorization is strictly prohibited.
+
+---
+
 ## 💻 Local Development
 
 1. **Clone the repository:**
@@ -62,32 +98,7 @@ A high-performance, modern business news and corporate wire publication platform
 
 ---
 
-## 🚀 Automated Deployment (CI/CD)
+## 📄 Terms of Use & Legal Notice
 
-This repository is configured with zero-downtime automated deployment to Hostinger via GitHub Actions (`.github/workflows/deploy.yml`).
-
-### 1. Required Repository Secrets
-Ensure the following 3 secrets are configured in your GitHub repository (**Settings → Secrets and variables → Actions**):
-- `HOSTINGER_FTP_SERVER`: Hostinger FTP hostname or server IP
-- `HOSTINGER_FTP_USERNAME`: Hostinger FTP account username
-- `HOSTINGER_FTP_PASSWORD`: Hostinger FTP account password
-
-### 2. How to Deploy Changes
-Whenever you update code, articles, or styles, push to the `main` branch:
-
-```bash
-git add .
-git commit -m "Update headlines and news content"
-git push origin main
-```
-
-### 3. What Happens in the Background
-1. **GitHub Actions Triggers**: Detects the push to `main` and starts the sync workflow.
-2. **Secure FTPS Sync**: Connects to Hostinger using your encrypted repository secrets.
-3. **Instant Live Update**: Only changed files are transferred into `public_html`, and updates go live on [globalbusinessnewstoday.com](https://globalbusinessnewstoday.com) within 15–30 seconds.
-
----
-
-## 📄 License & Attribution
-
-All rights reserved © Global Business News Today.
+All rights reserved © Global Business News Today (`globalbusinessnewstoday.com`).  
+Unauthorized reproduction, reverse-engineering of deployment secrets, or commercial redistributions without prior written consent is strictly prohibited.
