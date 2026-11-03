@@ -1,6 +1,81 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "asian-shares-mixed-kospi-tech-selloff-oil",
+    title: "Asian Shares Mixed as Kospi Sinks 4% on Chip Sell-Off, Oil Rebounds After US Strikes on Iran",
+    excerpt: "Asian shares were mixed Tuesday as South Korea's Kospi fell 4% on a tech sell-off, oil rose 2% after US strikes on Iran and Australia raised rates to 4.85%.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-03T13:35:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Computer monitor showing a red and green candlestick stock chart against blurred city lights at night",
+    isTrending: true,
+    views: 0,
+    tags: ["Asian Markets", "Kospi", "Oil Prices", "RBA", "Stock Market"],
+    content: `
+      <p class="lead">Asian shares were mixed on Tuesday, November 3, 2026, as a sell-off in technology stocks hit South Korea hardest. The Kospi fell 4%, Shanghai slipped to near a one-year low and Hong Kong edged higher, while oil prices rebounded after the US carried out strikes on Iranian targets, <a href="https://bnnbloomberg.ca/markets/dow-jones/2026/11/03/tech-losses-weigh-on-global-markets-ahead-of-us-midterm-elections-while-oil-prices-rise" target="_blank" rel="noopener">The Associated Press reported</a>.</p>
+
+      <p>Markets in Tokyo were closed for Japan's Culture Day holiday. In Australia, the central bank raised interest rates for the fifth time this year, and US stock futures were little changed as Americans voted in the midterm elections.</p>
+
+      <h2>How Asian Markets Closed on November 3</h2>
+      <table>
+        <thead>
+          <tr><th>Market</th><th>Index</th><th>Close</th><th>Change</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>South Korea</td><td>Kospi</td><td>5,626.08</td><td>-4.0%</td></tr>
+          <tr><td>China</td><td>Shanghai Composite</td><td>3,608.10</td><td>-0.8%</td></tr>
+          <tr><td>Hong Kong</td><td>Hang Seng</td><td>23,525.97</td><td>+0.6%</td></tr>
+          <tr><td>Australia</td><td>S&amp;P/ASX 200</td><td>Not reported</td><td>+0.3%</td></tr>
+          <tr><td>Japan</td><td>Nikkei 225</td><td colspan="2">Closed for holiday</td></tr>
+        </tbody>
+      </table>
+      <p><em>Sources: The Associated Press; ASX 200 move from <a href="https://www.abc.net.au/news/2026-11-03/rba-interest-rates-markets-live-coverage/107338216" target="_blank" rel="noopener">ABC News</a>.</em></p>
+
+      <h2>Why the Kospi Fell 4%: Chipmakers Lead the Sell-Off</h2>
+      <p>South Korea's market is dominated by memory chipmakers, which made it the region's biggest loser as investors pulled back from technology and artificial intelligence (AI) stocks. SK Hynix fell 5.7% and Samsung Electronics dropped 4%, giving back gains from Monday, when the Kospi had risen 2.2%.</p>
+      <p>The pressure came from Wall Street. On Monday, the S&amp;P 500 fell 0.5% after erasing an earlier 1.1% gain, and the Nasdaq composite dropped 1.1%, even though about seven in ten S&amp;P 500 stocks rose and the Dow gained 0.4%, <a href="https://www.dtnext.in/news/business/asian-shares-are-mixed-as-tech-losses-offset-broader-gains-on-wall-street" target="_blank" rel="noopener">according to AP</a>. Nvidia swung from a 2.6% gain to a 1.3% loss, and Alphabet slipped after reporting that it burned more cash and grew its search business more slowly than expected.</p>
+      <p>Behind the selling is a question investors keep returning to: whether the hundreds of billions of dollars Big Tech is spending on AI data centers will produce enough profit to justify the cost. Even strong results have not been enough to lift tech stocks this week. Apple shares fell about 4% before the US open on Tuesday despite record revenue, and Palantir dropped about 8% after a slowdown in US commercial bookings. We cover both reports in our <a href="/articles/apple-palantir-stock-earnings/">Apple and Palantir earnings analysis</a>.</p>
+
+      <h2>Shanghai Near a One-Year Low Despite Support Measures</h2>
+      <p>The Shanghai Composite fell 0.8% to 3,608.10, near its lowest level in more than a year, according to AP. Measures announced on Monday to support the market produced only short-lived gains. Hong Kong's Hang Seng bucked the trend, rising 0.6% to 23,525.97.</p>
+
+      <h2>Oil Rebounds After US Strikes on Iranian Targets</h2>
+      <p>Oil prices bounced back after falling nearly 8% on Monday on hopes for progress in US-Iran diplomacy. Brent crude, the international benchmark, rose almost 2% to $106.50 a barrel early Tuesday, and US benchmark crude rose 2% to $98.49, AP reported.</p>
+      <p>The rebound followed US strikes on Iran's Qeshm Island and what the US described as defensive strikes on Iranian targets in the Strait of Hormuz, a key route for global oil shipments. AP noted that Brent has swung between roughly $70 and $120 a barrel since the war with Iran began, as traders try to judge when it might end.</p>
+      <p>For businesses, those swings matter beyond energy stocks. Fuel is a major cost for airlines, shipping and manufacturing, and it feeds into the inflation figures that central banks are watching.</p>
+
+      <h2>Australia Raises Interest Rates to 4.85%</h2>
+      <p>That link between oil and inflation was clear in Australia. The <a href="https://www.rba.gov.au/media-releases/2026/mr-26-30.html" target="_blank" rel="noopener">Reserve Bank of Australia</a> raised its cash rate by 25 basis points to 4.85%, its fifth increase this year. The board was split 6 to 3, with three members preferring to hold at 4.60%.</p>
+      <p>The RBA said higher fuel prices were feeding into the prices of other goods and services, and that the unresolved conflict in the Middle East was keeping upward pressure on energy costs. It now expects underlying inflation to stay above 3% over the coming year and not to reach the top of its 2% to 3% target range until late 2027.</p>
+      <p>"Inflation is too high, and our forecasts suggest it will stay higher for longer," Governor Michele Bullock said at her press conference, according to ABC News. Asked about the next move, she said: "I don't know what the next move will be." The Australian dollar fell 0.3% to 69.76 US cents after the decision, while the ASX 200 closed 0.3% higher.</p>
+
+      <h2>Currencies, Europe and US Futures</h2>
+      <ul>
+        <li><strong>US dollar:</strong> up 0.2% to 158.28 Japanese yen.</li>
+        <li><strong>Euro:</strong> slightly lower at $1.1179.</li>
+        <li><strong>Europe (early trading):</strong> Germany's DAX fell 0.6% to 25,830.22, London's FTSE 100 lost 0.5% to 10,701.09 and the CAC 40 in Paris slipped 0.2% to 8,035.07.</li>
+        <li><strong>US futures (early Tuesday):</strong> S&amp;P 500 futures were down less than 0.1%, Dow futures fell 0.5% and Nasdaq futures rose 0.25%.</li>
+      </ul>
+
+      <h2>What Investors Are Watching Next</h2>
+      <ul>
+        <li><strong>US midterm elections:</strong> Americans vote on Tuesday for control of Congress and key governors' offices. AP said the result could shape the final two years of President Donald Trump's term.</li>
+        <li><strong>Iran and oil:</strong> Any sign of escalation or a diplomatic breakthrough is likely to move oil prices, and with them inflation expectations.</li>
+        <li><strong>Central banks:</strong> The Bank of England announces its next rate decision on November 5, and the US Federal Reserve meets again on December 9. See our report on <a href="/articles/fed-rate-cuts-global-markets-2026/">the Fed's latest decision and what higher rates mean for businesses</a>.</li>
+        <li><strong>Tokyo reopens:</strong> Japanese stocks return on Wednesday, giving the first read on how the Nikkei absorbs this week's tech sell-off.</li>
+      </ul>
+      <p>Market figures can change quickly. This report is for information only and is not investment advice. For more coverage, see our <a href="/category/markets/">Markets &amp; Finance section</a>.</p>
+      <p><em>Asian closing levels, oil, currency and futures figures as reported by The Associated Press on November 3, 2026; European and US futures figures are from early trading. RBA decision checked against the bank's statement of November 3, 2026.</em></p>
+    `
+  },
+  {
     id: "raonelide-com-review",
     title: "RaoneLide.com Review: Celebrity Bios, Smart Ring Posts and $23 Guest Posts. What We Found",
     excerpt: "We checked RaoneLide.com's domain record, its 57 posts and a $23 guest post listing. Here is what the site is and whether you can trust or pitch it.",
