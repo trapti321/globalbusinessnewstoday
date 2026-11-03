@@ -1,6 +1,81 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "raonelide-com-review",
+    title: "RaoneLide.com Review: Celebrity Bios, Smart Ring Posts and $23 Guest Posts. What We Found",
+    excerpt: "We checked RaoneLide.com's domain record, its 57 posts and a $23 guest post listing. Here is what the site is and whether you can trust or pitch it.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-03T11:45:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Open laptop on a wooden desk next to a cup of coffee, a notepad with a pen and a smartphone",
+    isTrending: true,
+    views: 0,
+    tags: ["RaoneLide", "Guest Posting", "Link Building", "SEO", "Website Review"],
+    content: `
+      <p class="lead">RaoneLide.com calls itself an "Information Point" and publishes everything from Bollywood biographies to Instagram growth tips and smart ring buying advice. The domain is just over a year old, its only author name is "Molter Alan," and a guest post marketplace sells placements on it for $23. We checked the site and its public records on November 3, 2026.</p>
+
+      <p>If you searched "raonelide com," you likely want to know whether its articles are reliable and whether it is worth paying for a post there. Here is what we verified, what we could not, and how to decide.</p>
+
+      <h2>What Is RaoneLide.com?</h2>
+      <p>RaoneLide.com is a WordPress blog with sections for Business, Education, Finance, Health, Lifestyle, Real Estate, Tech, Travel and Celebrities. Through the site's public WordPress data, we counted 57 posts published between November 6, 2025 and August 5, 2026.</p>
+      <p>Publishing comes in bursts rather than on a steady schedule: 17 posts in November 2025, 24 in February 2026, then five on a single day in June 2026, all about Instagram. The newest post, dated August 5, 2026, is about government payments after a doctor's note. We found nothing newer in the three months since.</p>
+
+      <h2>Who Runs RaoneLide.com?</h2>
+      <p>We could not identify an owner. The public registration record, which you can check with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN lookup tool</a>, shows raonelide.com was registered on October 5, 2025 through Namecheap, with the owner's details not shown. The Wayback Machine had no archived copies of the site when we checked.</p>
+      <p>The site has no About page. Its <a href="https://raonelide.com/contact-us/" target="_blank" rel="nofollow noopener">Contact Us page</a> lists a single Gmail address and no phone number, address or contact form.</p>
+      <p>Every post we saw carries the byline "Molter Alan." The author account's web address, however, is built from a different personal Gmail username, which suggests the display name may not be the account holder's real name. No author biography is provided.</p>
+
+      <h2>How Accurate Are RaoneLide's Celebrity Biographies?</h2>
+      <p>Much of the site's early content is celebrity profiles in a "Biography, Age, Height, Husband, Family, Net Worth" format. We checked the <a href="https://raonelide.com/raveena-tandon/" target="_blank" rel="nofollow noopener">Raveena Tandon profile</a>, published November 6, 2025, against <a href="https://en.wikipedia.org/wiki/Raveena_Tandon" target="_blank" rel="noopener">her Wikipedia entry</a> and published interviews.</p>
+      <ul>
+        <li><strong>Mostly right:</strong> her birth date (October 26, 1972), her 2004 marriage to Anil Thadani, her 1991 debut in <em>Patthar Ke Phool</em> and her National Film Award for <em>Daman</em>.</li>
+        <li><strong>Wrong:</strong> the profile describes her as having "2 biological and 2 adopted daughters." She adopted two daughters, Pooja and Chhaya, in 1995, but <a href="https://www.shethepeople.tv/film-theatre/raveena-tandon-adopted-daughters-pooja-chhaya-rasha-ranbir" target="_blank" rel="noopener">her biological children</a> are a daughter, Rasha, and a son, Ranbir.</li>
+        <li><strong>Unsourced:</strong> a net worth of "₹112 Crore ($13.5 Million)," with no source given. The page cites no sources at all.</li>
+      </ul>
+      <p>Net worth and height figures on celebrity profile sites are often estimates copied between sites. Do not rely on them without an original source.</p>
+
+      <h2>Product Links and Sponsored Content</h2>
+      <p>Across the 57 posts we found 39 links to other websites, and none of them carried a <code>rel</code> label telling search engines the link is paid or sponsored. They include links to the smart ring maker RingConn in two July 2026 posts about sleep rings, and links to Instagram growth services such as StreamOZ, SocialWick and SocialGreg in the June posts.</p>
+      <p>We cannot tell whether those companies paid for the coverage, and the site does not say. <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks publishers</a> to mark paid links with <code>rel="sponsored"</code>, and its <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">spam policies</a> treat "buying or selling links for ranking purposes" as link spam. Readers should treat product recommendations on the site as possibly promotional.</p>
+
+      <h2>Does RaoneLide.com Sell Guest Posts?</h2>
+      <p>The site has no Write for Us page, but a <a href="https://www.vefogix.com/website/raonelide.com" target="_blank" rel="nofollow noopener">Vefogix marketplace listing</a> offers a guest post on raonelide.com for $23, with one "DoFollow" link, articles of 1,000 to 2,500 words and publication within a day. The listing says casino, CBD and adult content are not accepted, and that the site's editors may change titles, images or content.</p>
+      <p>The listing contradicts itself in places. It describes the link as "Permanent," while its FAQ says the "listed placement duration is 1 day," and it shows a Domain Rating of both "N/A" and "0." We did not buy a post, so we cannot confirm how orders are handled.</p>
+
+      <h2>How Much Traffic Does RaoneLide.com Get?</h2>
+      <p>Very little, by the marketplace's own figures. The Vefogix listing, last updated May 2, 2026, shows an Ahrefs estimate of "7+" visitors a month and a Semrush estimate of "1.2K+." It also lists a Moz Domain Authority of 41 alongside a Semrush Authority Score of 11, rated "Poor."</p>
+      <p>A high Domain Authority alongside almost no search traffic is a common sign that a site's link metrics have been inflated. Traffic, not authority scores, is what sends readers to your business.</p>
+
+      <h2>Should You Pay for a Guest Post on RaoneLide.com?</h2>
+      <p>For a business that cares about its brand and search reputation, we would not recommend it. Here is how it compares:</p>
+      <table>
+        <thead>
+          <tr><th>Check</th><th>What a credible site shows</th><th>What we found on RaoneLide.com</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Owner and About page</td><td>Named publisher and team</td><td>No About page, owner hidden</td></tr>
+          <tr><td>Authors</td><td>Real names with expertise</td><td>One byline, no bio</td></tr>
+          <tr><td>Topic focus</td><td>A clear audience</td><td>Celebrities, health gadgets, Instagram, finance</td></tr>
+          <tr><td>Paid links</td><td>Labelled as sponsored</td><td>39 outbound links, none labelled</td></tr>
+          <tr><td>Search traffic</td><td>Real, steady audience</td><td>Ahrefs estimate of 7+ visits a month</td></tr>
+          <tr><td>Accuracy</td><td>Sources cited, errors corrected</td><td>No sources; an error in the profile we checked</td></tr>
+        </tbody>
+      </table>
+      <p>At $23, a post is cheap, but a link on a young, unfocused site with almost no measurable traffic is unlikely to bring readers or lasting search value. We used the same checks in our reviews of <a href="/articles/themodeleats-com-review/">TheModelEats.com</a> and <a href="/articles/newsgiga-com-review/">NewsGiga.com</a>. For more on marketing a small business, see our <a href="/category/smes/">SMEs &amp; Startups section</a>.</p>
+
+      <h2>Our Verdict on RaoneLide.com</h2>
+      <p>RaoneLide.com is a year-old blog with no named owner, a single pen-name byline, unsourced celebrity profiles and unlabelled product links, and it has not published since August 2026. Use it, at most, as a starting point, and check any fact that matters against an original source. If you are building links, put your budget into a site with real editors and a real audience.</p>
+      <p><em>We will update this article if RaoneLide.com's owners respond or the site changes. Information checked on November 3, 2026.</em></p>
+    `
+  },
+  {
     id: "themodeleats-com-review",
     title: "TheModelEats.com Review: Why a 2013 Domain Now Hosts One-Byline Guest Posts",
     excerpt: "We checked TheModelEats.com's domain history, archive snapshots and recent posts. Here is what the site is now and whether a guest post there is worth it.",
