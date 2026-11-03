@@ -1,6 +1,85 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "apple-palantir-stock-earnings",
+    title: "Apple and Palantir Stock Fall Despite Earnings Beats",
+    excerpt: "Apple and Palantir stock fell in premarket trading after both beat estimates. Apple's margin outlook and memory costs are weighing on its shares.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-03T10:15:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Laptop, smartwatch and smartphone on a dark desk, each screen showing a stock price chart with buy and sell buttons",
+    isTrending: true,
+    views: 0,
+    tags: ["Apple", "Palantir", "Earnings", "Stocks", "AI"],
+    content: `
+      <p class="lead">Apple and Palantir stock fell in premarket trading on Tuesday, November 3, 2026, even though both companies beat Wall Street's estimates in results released after the bell on Monday. Apple shares were down 4.4% and Palantir shares were down 6%, <a href="https://www.cnbc.com/2026/11/03/apple-palantir-stock-earnings.html" target="_blank" rel="noopener">CNBC reported</a> early Tuesday.</p>
+
+      <p>For Apple, the concern is profit margins as memory chip costs rise. For Palantir, a quarter in which revenue nearly doubled was not enough to stop the shares from falling. Both stocks went into the reports after strong runs this year, which raised the bar for what investors expected.</p>
+
+      <h2>Apple Earnings: Record Revenue, Weaker Margin Forecast</h2>
+      <p>Apple reported revenue of $114.5 billion for its fiscal fourth quarter, which ended September 26, 2026. That was up 12% from a year earlier and a record for a September quarter, according to the company's <a href="https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/" target="_blank" rel="noopener">earnings release</a>. Diluted earnings per share (EPS) rose 14% to $2.10, which included a 5-cent benefit from tariff refunds.</p>
+      <p>Analysts polled by LSEG had expected EPS of $1.99 and revenue of $113.39 billion, <a href="https://www.cnbc.com/2026/11/02/apple-aapl-q4-2026-earnings-live-updates.html" target="_blank" rel="noopener">according to CNBC</a>. It was Apple's first earnings report since John Ternus succeeded Tim Cook as chief executive in September.</p>
+      <p>"Today, Apple is proud to report a September quarter revenue record of $114.5 billion," Ternus said in the release.</p>
+
+      <h3>Apple Fiscal Q4 2026 Revenue by Product</h3>
+      <table>
+        <thead>
+          <tr><th>Category</th><th>Q4 FY2026</th><th>Q4 FY2025</th><th>Change</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>iPhone</td><td>$57.58B</td><td>$49.03B</td><td>+17.5%</td></tr>
+          <tr><td>Services</td><td>$31.57B</td><td>$28.75B</td><td>+9.8%</td></tr>
+          <tr><td>Mac</td><td>$10.79B</td><td>$8.73B</td><td>+23.7%</td></tr>
+          <tr><td>Wearables, Home and Accessories</td><td>$8.30B</td><td>$9.01B</td><td>-7.9%</td></tr>
+          <tr><td>iPad</td><td>$6.23B</td><td>$6.95B</td><td>-10.4%</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>$114.48B</strong></td><td><strong>$102.47B</strong></td><td><strong>+11.7%</strong></td></tr>
+        </tbody>
+      </table>
+      <p><em>Source: Apple Form 8-K, <a href="https://www.sec.gov/Archives/edgar/data/0000320193/000032019326000024/a8-kex991q4202609262026.htm" target="_blank" rel="noopener">Exhibit 99.1</a>. Percentage changes calculated by GBNT.</em></p>
+      <p>iPad and wearables revenue came in below analysts' estimates of $6.70 billion and $9.06 billion, according to CNBC. Greater China revenue rose 21% to $17.54 billion. Full-year fiscal 2026 revenue was a record $478.8 billion, up 15% from $416.2 billion.</p>
+
+      <h2>Why Apple Stock Fell: Memory Costs and the Margin Guide</h2>
+      <p>Apple's gross margin was 47.9% in the quarter, ahead of the 47.5% analysts expected. The company said tariff refunds added about 1 percentage point, and that without them, margin would have fallen about one point from the June quarter, mainly because of higher memory costs.</p>
+      <p>The bigger issue was the outlook. For the December quarter, Apple forecast a gross margin of 45% to 46%, below the 46.3% analysts had expected, CNBC reported. Apple guided to revenue growth of 7% to 10%, above the 6.1% analyst average, and services growth of 8% to 9%.</p>
+      <p>"We saw higher memory costs as compared to the June quarter," Ternus told CNBC. The global shortage of memory chips is also expected to limit Mac and iPad supply because demand has run ahead of Apple's plans, and the company is absorbing the cost of rolling out its Siri AI features. Ternus said Apple had "reluctantly" raised some prices to help offset component costs.</p>
+      <p>"The concern is profitability," Violeta Todorova, senior research analyst at Leverage Shares, told CNBC. She said the stock's premium valuation leaves "little room for disappointment." Apple shares had risen about 25% in 2026 before the report.</p>
+
+      <h2>Palantir Earnings: Revenue Up 96% as U.S. Commercial Passes Government</h2>
+      <p>Palantir Technologies reported third-quarter revenue of $2.31 billion, up 96% from a year earlier and 20% from the previous quarter, according to its <a href="https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm" target="_blank" rel="noopener">results filed with the SEC</a> on November 2. It was the company's first quarter with more than $2 billion in revenue, and ahead of the $2.18 billion analysts had expected, according to <a href="https://fortune.com/2026/11/02/palantir-q3-results-stock-ai-trade-selloff/" target="_blank" rel="noopener">Fortune</a>.</p>
+      <ul>
+        <li><strong>U.S. commercial revenue:</strong> $984 million, up 148% year over year.</li>
+        <li><strong>U.S. government revenue:</strong> $953 million, up 96%.</li>
+        <li><strong>Adjusted EPS:</strong> 44 cents, against analyst estimates of 41 cents.</li>
+        <li><strong>GAAP net income:</strong> $1.13 billion, a 49% margin.</li>
+        <li><strong>Adjusted free cash flow:</strong> $1.22 billion, a 53% margin.</li>
+      </ul>
+      <p>"Our U.S. commercial revenue has surpassed our U.S. government revenue for the first time in our company's history," chief executive Alex Karp said in the release.</p>
+
+      <h3>Palantir Raises Its 2026 Guidance</h3>
+      <p>Palantir raised its full-year 2026 revenue forecast to $8.530 billion to $8.534 billion, or about 91% growth, from a previous range of $8.15 billion to $8.16 billion. It now expects U.S. commercial revenue of more than $3.559 billion, growth of at least 143%, and adjusted free cash flow of $4.8 billion to $5.0 billion. For the fourth quarter, it forecast revenue of $2.649 billion to $2.653 billion.</p>
+
+      <h2>Why Palantir Stock Fell Despite the Beat</h2>
+      <p>Palantir did not report a single obvious weakness, which suggests the selling is more about expectations than results. Two figures in the report grew far more slowly than revenue: total contract value (TCV), the value of new deals closed in the quarter, rose 6% from a year earlier to $2.92 billion, and U.S. commercial TCV rose 11% to $1.46 billion.</p>
+      <p>The shares rose about 1.5% right after the figures came out on Monday before turning to a 3.6% drop in after-hours trading, Fortune reported, and the losses deepened in Tuesday's premarket session. Fortune's headline described investors' patience with the stock as resting "on a hair trigger," a sign of how much growth is already priced in. Investors are also weighing how much companies across the AI trade are spending, a theme that came up in our coverage of <a href="/articles/anthropic-ipo-filing-q3-2026-results/">Anthropic's IPO filing</a> and the <a href="/articles/ai-enterprise-adoption-roi-surge/">struggle to prove AI returns</a>.</p>
+
+      <h2>What Comes Next for Apple and Palantir Shares</h2>
+      <ul>
+        <li><strong>Apple dividend:</strong> Apple declared a dividend of 27 cents per share, payable on November 16, 2026, to shareholders of record on November 12.</li>
+        <li><strong>Memory prices:</strong> Investors will watch whether memory costs ease or keep pushing Apple's margin toward the low end of its 45% to 46% guide.</li>
+        <li><strong>Palantir's fourth quarter:</strong> The next test is whether Palantir hits its $2.65 billion revenue forecast and whether deal bookings pick up.</li>
+      </ul>
+      <p>Premarket prices can change sharply once regular trading opens at 9:30 a.m. ET. This article reports company results and market moves and is not investment advice. Past performance does not guarantee future results. For more market coverage, see our <a href="/category/markets/">Markets &amp; Finance section</a>.</p>
+      <p><em>Figures checked against Apple's and Palantir's November 2, 2026 SEC filings. Premarket share moves as reported by CNBC at 4:21 a.m. ET on November 3, 2026.</em></p>
+    `
+  },
+  {
     id: "snapchat-planets-order-meaning",
     title: "Snapchat Planets Explained: The Order and Meaning of Each Planet in the Friend Solar System",
     excerpt: "Snapchat planets show where you rank on a friend's Best Friends list, from Mercury (closest) to Neptune. Here is the order, how to turn it on and what it means.",
