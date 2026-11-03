@@ -1,6 +1,78 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "themodeleats-com-review",
+    title: "TheModelEats.com Review: Why a 2013 Domain Now Hosts One-Byline Guest Posts",
+    excerpt: "We checked TheModelEats.com's domain history, archive snapshots and recent posts. Here is what the site is now and whether a guest post there is worth it.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-03T11:20:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Close-up of a stack of folded newspapers with a World Business section heading in focus",
+    isTrending: true,
+    views: 0,
+    tags: ["TheModelEats", "Guest Posting", "Expired Domains", "SEO", "Website Review"],
+    content: `
+      <p class="lead">TheModelEats.com has a name that suggests food or modelling, but the site now publishes articles on employment law, behavioral health, education and home improvement, all under one byline: "Adoosylinks." We checked its domain record, its archive history and its own sitemap on November 3, 2026 to find out what changed.</p>
+
+      <p>The short version: the domain has existed since at least 2013, appears to have lapsed, and was registered again in May 2024. Since then it has published 41 posts and carries a banner advertising a guest post marketplace. Here is what we verified and what that means if you are thinking of reading it or buying a post there.</p>
+
+      <h2>What Is TheModelEats.com Today?</h2>
+      <p>TheModelEats.com is a WordPress site built on a free news theme. Its menu lists Business, Education, Finance, Health, Home Improvement, Law, Lifestyle and Technology. The homepage has no About, Contact or Write for Us page, and the only contact option is an email link hidden behind Cloudflare's email protection.</p>
+      <p>Recent headlines include "Unlocking California's Ban: Why Your Non-Compete is Likely Null and Void Under Code 16600" and "Charting a Course Through Life's Disruptions: Understanding Exodus Behavioral Health." Many name a specific company, clinic or school, a pattern common on sites that sell sponsored posts.</p>
+
+      <h2>Who Writes for TheModelEats.com?</h2>
+      <p>Every post we saw is credited to "Adoosylinks," and the site's own user sitemap lists that as its only author. The <a href="https://www.themodeleats.com/author/adoosylinks/" target="_blank" rel="nofollow noopener">author page</a> has no biography. The name closely resembles Adoovy, the guest post marketplace advertised in the site's sidebar.</p>
+      <p>For readers, that means no named writer stands behind articles on topics such as employment law and mental health, where expert input matters most.</p>
+
+      <h2>Is TheModelEats.com Still Publishing?</h2>
+      <p>Not much. The newest post on the homepage and author page is dated June 29, 2025, and the one before it April 21, 2025. The site's sitemap lists 41 posts in total. Several were last modified in January 2026, but we found nothing new published in the 16 months since June 2025.</p>
+
+      <h2>The Domain's History: From 2013 to a 2024 Re-Registration</h2>
+      <p>The <a href="https://web.archive.org/web/2015*/themodeleats.com" target="_blank" rel="noopener">Wayback Machine</a> has snapshots of themodeleats.com going back to March 2013. The 2015, 2017 and 2019 snapshots we opened all show the same placeholder: "Our website is currently down for maintenance but we will be back with a beautiful new site soon," with an email address beginning "iza@."</p>
+      <p>The archive has no captures between May 2022 and May 2024. The current public registration record, which you can check with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN lookup tool</a>, shows a registration date of May 19, 2024 through Wild West Domains, running to 2029. A fresh registration date on a domain with years of earlier history usually means it expired and was registered again by a new owner.</p>
+      <p>A <a href="https://marketinglad.io/themodeleats-com/" target="_blank" rel="nofollow noopener">Marketing Lad review</a> links the original domain to Izabella Rekiel, a model and content creator. We could not confirm that from public records, and nothing on the current site connects her to its content.</p>
+
+      <h2>Why Expired Domains Get Reused for Guest Posts</h2>
+      <p>An older domain keeps the backlinks it earned before it expired. Some buyers re-register such domains, add new content and sell posts on them, hoping the old links make the new pages rank faster.</p>
+      <p><a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">Google's spam policies</a> define "expired domain abuse" as a case where "an expired domain name is purchased and repurposed primarily to manipulate search rankings by hosting content that provides little to no value to users." Whether a particular site crosses that line is Google's call, but the pattern on TheModelEats.com is the one the policy describes.</p>
+
+      <h2>Does TheModelEats.com Sell Guest Posts?</h2>
+      <p>The site itself has no guest post page. Its sidebar shows a "Guest Post Marketplace 2026" banner that redirects to Adoovy, which describes itself as a "Digital PR &amp; Blog Posting Service." That banner link carries no <code>rel="sponsored"</code> label, which <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites to use</a> for paid or advertising links.</p>
+      <p>Marketing Lad reported that TheModelEats.com was listed on Adoovy for $40 per post, with a permanent "do-follow" link and a 24 to 48 hour turnaround. Adoovy's homepage did not mention the site when we checked, so we could not verify the listing or the price.</p>
+
+      <h2>How Much Traffic Does TheModelEats.com Get?</h2>
+      <p>We have no first-hand traffic data. Marketing Lad said an Ahrefs check found zero estimated organic traffic and zero ranking keywords, with backlinks down 79% from their peak. Those are third-party tool estimates reported by a link-building agency, so treat them as indicative, not exact.</p>
+      <p>Marketing Lad and an earlier Ranktracker review also reported that the site returned a "403 Forbidden" error to their checks. In our test on November 3, 2026, the homepage loaded normally with a 200 response.</p>
+
+      <h2>Should You Buy a Guest Post on TheModelEats.com?</h2>
+      <p>We would not recommend it for a business that cares about its search reputation. Here is how the site measures up:</p>
+      <table>
+        <thead>
+          <tr><th>Check</th><th>What a credible site shows</th><th>What we found on TheModelEats.com</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Named writers</td><td>Real names and expertise</td><td>One byline, "Adoosylinks," no bio</td></tr>
+          <tr><td>Contact and About pages</td><td>Clear owner and contact</td><td>None linked</td></tr>
+          <tr><td>Topic focus</td><td>Matches the site's name and audience</td><td>Law, health, education, home improvement on a "model eats" domain</td></tr>
+          <tr><td>Publishing activity</td><td>Regular new content</td><td>No new posts since June 2025</td></tr>
+          <tr><td>Paid links</td><td>Labelled as sponsored</td><td>Marketplace banner not labelled</td></tr>
+        </tbody>
+      </table>
+      <p>A link from a re-used domain with no clear owner or audience is unlikely to send readers or build lasting trust in your brand. We used the same checks in our reviews of <a href="/articles/newsgiga-com-review/">NewsGiga.com</a> and <a href="/articles/uploadblog-com-review-online-posting/">UploadBlog.com</a>. For more on marketing a small business, see our <a href="/category/smes/">SMEs &amp; Startups section</a>.</p>
+
+      <h2>Our Verdict on TheModelEats.com</h2>
+      <p>TheModelEats.com is an older domain, re-registered in 2024, that now hosts unrelated articles under a single marketplace-style byline and has not published since mid-2025. It is not a source we would rely on for legal, health or financial information, and we do not see a good case for paying to publish on it.</p>
+      <p><em>We will update this article if TheModelEats.com's owners respond or the site changes. Information checked on November 3, 2026.</em></p>
+    `
+  },
+  {
     id: "newsgiga-com-review",
     title: "NewsGiga.com Review: Gambling Links, a Gmail Inbox and No Named Editors. What We Found",
     excerpt: "We checked NewsGiga.com's domain record, contact pages and outbound links. Here is what we verified before you trust the site or pitch it a guest post.",
