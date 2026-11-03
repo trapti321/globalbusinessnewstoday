@@ -1,6 +1,85 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "newsgiga-com-review",
+    title: "NewsGiga.com Review: Gambling Links, a Gmail Inbox and No Named Editors. What We Found",
+    excerpt: "We checked NewsGiga.com's domain record, contact pages and outbound links. Here is what we verified before you trust the site or pitch it a guest post.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-03T10:40:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Vintage Olympia typewriter with a sheet of paper that reads News",
+    isTrending: true,
+    views: 0,
+    tags: ["NewsGiga", "Guest Posting", "Link Building", "SEO", "Website Review"],
+    content: `
+      <p class="lead">NewsGiga.com presents itself as a source of the "Latest News &amp; Trending Stories," but it names no editors, lists a Gmail address as its only email contact and carries dozens of links to betting sites on its homepage. We checked its public domain record and its own About, Contact, Write for Us and Disclaimer pages on November 3, 2026.</p>
+
+      <p>If you landed here searching "newsgiga com," you probably want to know two things: can you trust what it publishes, and is it worth pitching for a guest post? Below is what we could verify, what we could not, and how to check a site like this yourself.</p>
+
+      <h2>What Is NewsGiga.com?</h2>
+      <p>NewsGiga.com is a WordPress site that publishes articles under Tech, News, Business, Education, Home Improvement and Blog sections. Recent posts range from startup costs and the CFA exam to online Quran classes and women's training shoes, with dates going back to 2025. The only byline we saw on the homepage was "Alfa Team."</p>
+      <p>Its <a href="https://newsgiga.com/about-us/" target="_blank" rel="nofollow noopener">About Us page</a> says its mission is "to deliver big news in clear, compact formats." The page does not name an owner, publisher or editorial team, and does not describe a fact-checking or corrections process.</p>
+
+      <h2>Who Owns NewsGiga.com?</h2>
+      <p>We could not identify the owner. The public registration record, which you can check with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN lookup tool</a>, shows that newsgiga.com was:</p>
+      <ul>
+        <li><strong>Registered:</strong> May 1, 2025, through Namecheap.</li>
+        <li><strong>Set to expire:</strong> May 1, 2027.</li>
+        <li><strong>Owner:</strong> not shown in the public record.</li>
+      </ul>
+      <p>Hidden registration details are common and not a problem on their own. But with no named team on the site either, readers have no way to see who is responsible for what it publishes.</p>
+
+      <h2>What NewsGiga's Contact Details Show</h2>
+      <p>NewsGiga's <a href="https://newsgiga.com/contact-us/" target="_blank" rel="nofollow noopener">Contact Us page</a> lists one email address, a Gmail account, plus a Finnish (+358) phone number linked to WhatsApp and a street address in Norton, Virginia. We could not find any public business or property listing for that address. Most of the page's social media icons link nowhere.</p>
+      <p>Contact details also seem to change. A <a href="https://marketinglad.io/newsgiga-com/" target="_blank" rel="nofollow noopener">Marketing Lad review</a> updated in October 2026 reported a Pakistani (+92) phone number and three different Gmail addresses. A site whose contact details don't match from one month to the next is harder to hold to account.</p>
+
+      <h2>The Betting Links on NewsGiga's Homepage</h2>
+      <p>This is the clearest warning sign. When we downloaded the NewsGiga homepage on November 3, 2026, it contained 79 links to other websites. Nineteen pointed to gambling sites, with anchor text such as "slot gacor" and "ufabet," mostly in footer and sidebar blocks that have nothing to do with the articles.</p>
+      <p>Only one of those 79 outbound links carried a <code>rel</code> attribute, the label that tells search engines a link is paid or should not pass ranking credit. <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">Google's spam policies</a> list "buying or selling links for ranking purposes" as link spam, and its <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">guidance on outbound links</a> asks sites to mark paid links with <code>rel="sponsored"</code>.</p>
+      <p>We cannot see whether NewsGiga was paid for these links. But blocks of unlabelled casino links on a news homepage match the pattern Google describes, and sites that follow that pattern are at risk of losing search visibility.</p>
+
+      <h2>Does NewsGiga Accept Guest Posts?</h2>
+      <p>Yes. Its <a href="https://newsgiga.com/write-for-us/" target="_blank" rel="nofollow noopener">Write for Us page</a> asks writers to pitch an idea first, then send a finished article of 500 to 1,500 words to the same Gmail address. It says claims need sources and that the site may "edit your submission for clarity, grammar, and length."</p>
+      <p>The page does not say whether links in guest posts are followed, labelled as sponsored or removed, and it does not mention any fees. Marketing Lad reported placements on NewsGiga being sold through third-party marketplaces for $9 to $42. We did not verify those listings.</p>
+
+      <h2>How Much Traffic Does NewsGiga Get?</h2>
+      <p>Nobody outside the site knows for sure. A <a href="https://www.ranktracker.com/blog/newsgiga-com/" target="_blank" rel="noopener">Ranktracker review</a> published September 2, 2026 estimated about 197,500 organic visits a month, 98% of them from India, but labelled the figures as estimates that "should not be treated as verified." Marketing Lad cited another tool estimating about 2,500 visits a month, nearly 80 times less.</p>
+      <p>When SEO tools disagree this widely, treat any traffic number for the site as a rough guess. Ask for an analytics screenshot before paying for a placement based on audience size.</p>
+
+      <h2>Can You Trust News You Read on NewsGiga?</h2>
+      <p>Treat it as unverified. NewsGiga's <a href="https://newsgiga.com/disclaimer/" target="_blank" rel="nofollow noopener">Disclaimer</a> says it makes "no guarantees of any kind about the completeness, reliability, or accuracy of the information presented," and that some content may include affiliate links. It does not mention guest or sponsored posts, so readers cannot tell which articles were paid for.</p>
+      <p>For news that affects money, health or business decisions, check the original source: a company announcement, a regulator, a court record or an established news outlet that names its reporters and corrects its mistakes.</p>
+
+      <h2>Should You Pitch NewsGiga for a Guest Post?</h2>
+      <p>For a business that cares about its search reputation, we would not recommend it. Here is how NewsGiga compares with what to look for in a guest post site:</p>
+      <table>
+        <thead>
+          <tr><th>Check</th><th>What a credible site shows</th><th>What we found on NewsGiga</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Named editors</td><td>Real names and roles</td><td>None; byline "Alfa Team"</td></tr>
+          <tr><td>Contact</td><td>Company email domain</td><td>Gmail address</td></tr>
+          <tr><td>Link policy</td><td>States how links are labelled</td><td>Not stated</td></tr>
+          <tr><td>Outbound links</td><td>Relevant and labelled when paid</td><td>19 betting links, almost none labelled</td></tr>
+          <tr><td>Corrections</td><td>Published corrections policy</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>A link from a site that sells unlabelled links is unlikely to help your rankings and can tie your brand to gambling spam. Time spent on a NewsGiga article is usually better spent pitching an industry publication, a local business outlet or a partner's blog with a real editorial team.</p>
+      <p>We applied the same checks to other guest post sites in our <a href="/articles/uploadblog-com-review-online-posting/">UploadBlog.com review</a> and our look at <a href="/articles/social-media-ranking-aelftech-com/">the AelfTech.com social media ranking</a>. For more on growing a small business online, see our <a href="/category/smes/">SMEs &amp; Startups section</a>.</p>
+
+      <h2>Our Verdict on NewsGiga.com</h2>
+      <p>NewsGiga.com is a live, active site that publishes regularly and accepts guest posts. We found no named editorial team, a free email account as its only email contact, contact details that have changed over time, and a homepage carrying unlabelled gambling links. Read its articles with caution and confirm anything important elsewhere. If you are building links, look for a site that names its editors and tells you how it handles links.</p>
+      <p><em>NewsGiga.com did not publish an editorial policy we could review. We will update this article if the site responds or changes its pages. Information checked on November 3, 2026.</em></p>
+    `
+  },
+  {
     id: "apple-palantir-stock-earnings",
     title: "Apple and Palantir Stock Fall Despite Earnings Beats",
     excerpt: "Apple and Palantir stock fell in premarket trading after both beat estimates. Apple's margin outlook and memory costs are weighing on its shares.",
