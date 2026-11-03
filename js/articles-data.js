@@ -1,6 +1,125 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "celebrities-eating-disorders",
+    title: "Celebrities and Eating Disorders: What Famous Disclosures Reveal About a $64.7 Billion Problem",
+    excerpt: "From Karen Carpenter to Taylor Swift, celebrity eating disorder disclosures shape awareness. Here is what the research, courts and a $64.7B cost study show.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-03T14:10:00Z",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Vintage film projector casting a bright beam of light through haze in a dark room",
+    isTrending: true,
+    views: 0,
+    tags: ["Eating Disorders", "Celebrities", "Mental Health", "Social Media", "Explainer"],
+    content: `
+      <blockquote>
+        <p><strong>Content note:</strong> This article discusses eating disorders. If you or someone you know needs support in the US, call the <a href="https://anad.org/get-help/eating-disorders-helpline/" target="_blank" rel="noopener">ANAD Eating Disorders Helpline</a> toll-free at 1-888-375-7767. In a crisis, call or text <a href="https://988lifeline.org/" target="_blank" rel="noopener">988</a> to reach the 988 Suicide &amp; Crisis Lifeline. If someone is in immediate danger, call 911.</p>
+      </blockquote>
+
+      <p class="lead">Celebrities and eating disorders have been linked in public conversation since Karen Carpenter's death in 1983. In 2026 the subject has moved from entertainment pages into courtrooms and drug policy.</p>
+
+      <p>On October 30, 2026, <a href="https://www.claimsjournal.com/news/national/2026/10/30/341030.htm" target="_blank" rel="noopener">Reuters reported</a> that Meta had settled with two teenagers in a Los Angeles trial. The teens had claimed that Instagram and Facebook were designed to be addictive and caused mental health problems and disordered eating. On November 2, <a href="https://www.nbcnews.com/tech/tech-news/snap-settles-teens-social-media-addiction-trial-los-angeles-rcna607093" target="_blank" rel="noopener">Snap also settled with them</a> during the trial, Reuters reported, ending the case before a verdict. The companies reject claims that their platforms were designed to addict young people.</p>
+
+      <p>The same week, a <a href="https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/" target="_blank" rel="noopener">JAMA Psychiatry study reported by MIT Technology Review</a> estimated that new cases of anorexia nervosa and bulimia nervosa rose 71% worldwide between 1990 and 2023.</p>
+
+      <p>Famous people are not the cause of that trend, and their stories are not a diagnosis tool. But when a household name speaks openly about an eating disorder, it changes who seeks help and how the public understands the illness. It also raises the stakes for the platforms and drugmakers whose products shape body image.</p>
+
+      <h2>Why This Is a Business Story</h2>
+      <p>Eating disorders carry a large economic cost. A <a href="https://www.deloitte.com/au/en/services/economics/perspectives/social-economic-cost-eating-disorders-united-states.html" target="_blank" rel="noopener">Deloitte Access Economics report</a> was commissioned by Harvard's STRIPED program and the Academy for Eating Disorders. It estimated the financial cost of eating disorders in the US at $64.7 billion in the 2018-19 fiscal year, most of it lost productivity.</p>
+      <p>The same report estimates that more than 28.8 million Americans alive today will have an eating disorder at some point in their lives. It links about 10,200 US deaths a year to eating disorders.</p>
+
+      <h2>Celebrities Who Have Spoken About Eating Disorders</h2>
+      <p>The public record runs from one star's death to a series of first-person disclosures. The table lists the cases below with what each person said or what was reported, newest first. It is limited to accounts that can be traced to the person's own words or to an official cause of death.</p>
+      <table>
+        <thead>
+          <tr><th>Year</th><th>Person</th><th>What was disclosed</th><th>Source</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2020</td><td>Taylor Swift</td><td>In the Netflix documentary <em>Miss Americana</em> and an interview with Variety, she described a past eating disorder. She told Variety: "I think I've never really wanted to talk about that before, and I'm pretty uncomfortable talking about it now."</td><td><a href="https://www.nbcnews.com/pop-culture/celebrity/taylor-swift-opens-about-eating-disorder-photos-myself-were-trigger-n1121886" target="_blank" rel="noopener">NBC News</a></td></tr>
+          <tr><td>2016</td><td>Zayn Malik</td><td>His memoir <em>Zayn</em> called a period in One Direction an "eating disorder." In an Associated Press interview the same week he said: "I was never diagnosed with one of them."</td><td><a href="https://www.thejakartapost.com/life/2016/11/01/in-book-zayn-opens-up-about-eating-disorder-1d-anxiety-.html" target="_blank" rel="noopener">Associated Press via The Jakarta Post</a></td></tr>
+          <tr><td>2012</td><td>Lady Gaga</td><td>On September 25, 2012, she posted on her Little Monsters fan site: "bulimia and anorexia since I was 15."</td><td><a href="https://www.nbcnews.com/news/lady-gaga-poses-underwear-says-shes-battled-bulimia-anorexia-age-1B6099183" target="_blank" rel="noopener">NBC News</a></td></tr>
+          <tr><td>1995</td><td>Diana, Princess of Wales</td><td>In a November 1995 BBC <em>Panorama</em> interview she said: "I had bulimia for a number of years. And that's like a secret disease." She called it "a symptom of what was going on in my marriage."</td><td><a href="https://www.newsweek.com/princess-diana-interview-panorama-bbc-1995-meghan-markle-prince-harry-oprah-1574437" target="_blank" rel="noopener">Newsweek</a></td></tr>
+          <tr><td>1983</td><td>Karen Carpenter</td><td>The singer died on February 4, 1983, at 32, of heart failure related to a years-long struggle with anorexia. Her death "raised awareness of the dangers of eating disorders."</td><td><a href="https://time.com/3685894/karen-carpenter-anorexia-death" target="_blank" rel="noopener">Time</a></td></tr>
+        </tbody>
+      </table>
+      <p>Two patterns stand out. First, most disclosures came years after the illness began. Gaga and Swift both spoke after public scrutiny of their bodies. Second, the language varies. Malik's two accounts show how hard it can be, even for the person involved, to put a name on disordered eating without a diagnosis.</p>
+
+      <h2>What the Research Says About the "Diana Effect"</h2>
+      <p>The best-known attempt to measure a celebrity's influence is a 2005 study in the <a href="https://www.cambridge.org/core/journals/the-british-journal-of-psychiatry/article/time-trends-in-eating-disorder-incidence/13DCB26A064CB2634CA4EF8CD8367A4D" target="_blank" rel="noopener">British Journal of Psychiatry</a>. Researchers screened the UK General Practice Research Database for new diagnoses among women aged 10 to 39 between 1994 and 2000.</p>
+      <p>They found that new cases of anorexia stayed "remarkably consistent." Bulimia rose overall but declined after a peak in 1996. In their discussion, the authors noted that the first reports of Diana's bulimia appeared in Andrew Morton's 1992 book. They added that her death in 1997 "coincided with the beginning of the decline in bulimia incidence."</p>
+      <p>That finding is often summarized as the "Diana effect." The study shows timing, not cause. The authors' own conclusion points to "decreased symptom recognition and changes in service use" as possible contributors. The careful reading is that a famous disclosure may have helped some people come forward, but the data cannot prove it.</p>
+
+      <h2>Social Media Is Now on Trial</h2>
+      <p>Celebrity culture now reaches people mostly through social feeds, and that is where legal pressure is building.</p>
+      <p>On March 25, 2026, a Los Angeles County Superior Court jury found <a href="https://www.nbcnews.com/tech/tech-news/verdict-reached-landmark-social-media-addiction-trial-rcna263421" target="_blank" rel="noopener">Meta and YouTube negligent</a> in the first bellwether trial over youth social media harm. The plaintiff, identified as K.G.M., testified that heavy use contributed to depression, anxiety and body dysmorphia. <a href="https://www.cnbc.com/2026/03/25/meta-youtube-los-angeles-california-verdict.html" target="_blank" rel="noopener">CNBC reported</a> $3 million in compensatory and $3 million in punitive damages, split 70% to Meta and 30% to YouTube.</p>
+      <p>Both companies said they would appeal. A Meta spokesperson told NBC News that "teen mental health is profoundly complex and cannot be linked to a single app."</p>
+      <p>The second Los Angeles trial focused more directly on disordered eating. The two teen plaintiffs had already settled with TikTok and YouTube, then settled with Meta, as Reuters reported on October 30, and with Snap on November 2, so the case never reached a verdict. Settlement terms were not disclosed. A Snap spokesperson said the company remains committed to "continually strengthening the safety, privacy, and well-being of our community." Thousands of similar suits are pending in state and federal courts.</p>
+
+      <h2>GLP-1 Drugs Add a New Risk</h2>
+      <p>The boom in GLP-1 weight-loss drugs has added a new concern for clinicians. A small study led by University of Louisville psychologist Cheri Levinson, published in JAMA Psychiatry in 2026, found that 30% of people with eating disorders had used GLP-1 drugs. About 10% appeared to have misused them, <a href="https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/" target="_blank" rel="noopener">MIT Technology Review reported</a>.</p>
+      <p>Clinical guidelines published in early October 2026 recommend that doctors screen for eating disorders before prescribing these drugs and monitor patients more closely.</p>
+      <p>Online speculation about which stars may be using these drugs is common. This article does not repeat it. Guessing about a person's health from photos is unreliable, as the next section explains.</p>
+
+      <h2>Four Myths Celebrity Stories Help Correct</h2>
+      <p>Celebrity disclosures are most useful when they line up with the science. The <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5711426/" target="_blank" rel="noopener">Academy for Eating Disorders' "Nine Truths,"</a> reviewed in a 2017 paper in European Eating Disorders Review, and the <a href="https://www.nimh.nih.gov/health/publications/eating-disorders" target="_blank" rel="noopener">National Institute of Mental Health</a> address the most common misconceptions.</p>
+      <p><strong>Myth 1: You can tell by looking.</strong> NIMH states: "Even people who appear healthy can have eating disorders and be extremely ill." It adds that people with eating disorders "can be underweight, average weight, or overweight." That is why commentary on a celebrity's body says nothing reliable about their health.</p>
+      <p><strong>Myth 2: It only affects young women.</strong> The AED's fifth truth says eating disorders "affect people of all genders, ages, races, ethnicities, body shapes and weights, sexual orientations, and socioeconomic statuses." Malik's account is a reminder that men are affected too.</p>
+      <p><strong>Myth 3: It is a choice or a diet gone too far.</strong> The AED states that eating disorders "are not choices, but serious biologically influenced illnesses," and that genes and environment both play a role.</p>
+      <p><strong>Myth 4: Recovery is not realistic.</strong> NIMH says "Eating disorders can be treated successfully," and the AED says full recovery is possible, with early detection and intervention important.</p>
+
+      <h2>Warning Signs and How to Get Help</h2>
+      <p>NIMH says that when people "become fixated or obsessed with weight loss, body weight or shape, and controlling their food intake," these "may be signs of an eating disorder." Its examples include "extremely restricted eating" and "eating alone or in secret to avoid embarrassment."</p>
+      <p>NIMH also stresses that "early detection and treatment are important for recovery." If you are worried about yourself or someone close to you:</p>
+      <ul>
+        <li><strong>Talk to a doctor or licensed mental health professional.</strong> They can assess physical and mental health and refer to specialist care.</li>
+        <li><strong>Call the ANAD helpline</strong> at 1-888-375-7767 for support and treatment referrals.</li>
+        <li><strong>In a crisis, call or text 988.</strong> If someone is in immediate danger, call 911.</li>
+      </ul>
+
+      <h2>What Happens Next</h2>
+      <p>Meta and YouTube have said they will appeal the March verdict. With the second Los Angeles case settled, the next bellwether trials are scheduled to begin in March, and thousands of related cases remain pending.</p>
+      <p>For GLP-1 prescribers, the October guidance calls for screening before treatment and closer monitoring during it. For readers, the lesson from four decades of celebrity disclosures is simpler: these illnesses are common, often hidden and treatable, and a person's appearance is not a reliable sign of their health.</p>
+
+      <h2>Frequently Asked Questions</h2>
+      <h3>Which celebrities have talked about having an eating disorder?</h3>
+      <p>Taylor Swift, Lady Gaga and Diana, Princess of Wales have described eating disorders in their own words. Zayn Malik described one in his 2016 memoir and later said he was never diagnosed. Karen Carpenter died in 1983 of heart failure related to anorexia.</p>
+      <h3>What is the "Diana effect"?</h3>
+      <p>It is shorthand for the idea that Diana's public bulimia disclosure encouraged people to seek help. A 2005 UK study found that new bulimia diagnoses peaked in 1996, and its authors noted that the decline began around the time of her death in 1997. The study shows timing, not cause.</p>
+      <h3>Are social media companies being sued over eating disorders?</h3>
+      <p>Yes. Thousands of youth harm cases are pending. Meta and Snap settled with two teens in an October-November 2026 Los Angeles trial that included disordered eating claims. Terms were not disclosed, and the companies reject claims that their platforms were designed to addict young people.</p>
+      <h3>Do GLP-1 weight-loss drugs cause eating disorders?</h3>
+      <p>That has not been established. A 2026 JAMA Psychiatry study found that 30% of people with eating disorders had used GLP-1 drugs and about 10% appeared to have misused them. New guidelines advise screening before prescribing.</p>
+      <h3>How much do eating disorders cost the US economy?</h3>
+      <p>Deloitte Access Economics estimated $64.7 billion in the 2018-19 fiscal year, mostly lost productivity, plus about 10,200 deaths a year linked to eating disorders.</p>
+
+      <h2>Sources</h2>
+      <ul>
+        <li><a href="https://www.claimsjournal.com/news/national/2026/10/30/341030.htm" target="_blank" rel="noopener">Reuters via Claims Journal: Meta settles with teen during trial testing claims social media caused depression, eating disorders</a> (October 30, 2026)</li>
+        <li><a href="https://www.nbcnews.com/tech/tech-news/snap-settles-teens-social-media-addiction-trial-los-angeles-rcna607093" target="_blank" rel="noopener">Reuters via NBC News: Snap settles with two teens during trial testing claims social media caused depression, eating disorders</a> (November 2, 2026)</li>
+        <li><a href="https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/" target="_blank" rel="noopener">MIT Technology Review: Eating disorders are on the rise. GLP-1s could make things worse.</a> (October 30, 2026)</li>
+        <li><a href="https://www.nbcnews.com/tech/tech-news/verdict-reached-landmark-social-media-addiction-trial-rcna263421" target="_blank" rel="noopener">NBC News: Jury finds Meta and YouTube negligent in landmark lawsuit</a> (March 25, 2026)</li>
+        <li><a href="https://www.cnbc.com/2026/03/25/meta-youtube-los-angeles-california-verdict.html" target="_blank" rel="noopener">CNBC: Los Angeles jury finds Meta, YouTube negligent</a> (March 25, 2026)</li>
+        <li><a href="https://www.deloitte.com/au/en/services/economics/perspectives/social-economic-cost-eating-disorders-united-states.html" target="_blank" rel="noopener">Deloitte Access Economics: The social and economic cost of eating disorders in the United States</a></li>
+        <li><a href="https://www.cambridge.org/core/journals/the-british-journal-of-psychiatry/article/time-trends-in-eating-disorder-incidence/13DCB26A064CB2634CA4EF8CD8367A4D" target="_blank" rel="noopener">Currin et al., British Journal of Psychiatry: Time trends in eating disorder incidence</a> (2005)</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5711426/" target="_blank" rel="noopener">Schaumberg et al.: The science behind the Academy for Eating Disorders' Nine Truths</a> (2017)</li>
+        <li><a href="https://www.nimh.nih.gov/health/publications/eating-disorders" target="_blank" rel="noopener">NIMH: Eating Disorders publication</a></li>
+        <li><a href="https://www.nbcnews.com/pop-culture/celebrity/taylor-swift-opens-about-eating-disorder-photos-myself-were-trigger-n1121886" target="_blank" rel="noopener">NBC News: Taylor Swift opens up about eating disorder</a> (January 24, 2020)</li>
+        <li><a href="https://www.thejakartapost.com/life/2016/11/01/in-book-zayn-opens-up-about-eating-disorder-1d-anxiety-.html" target="_blank" rel="noopener">Associated Press via The Jakarta Post: In book, Zayn opens up about eating disorder</a> (November 1, 2016)</li>
+        <li><a href="https://www.nbcnews.com/news/lady-gaga-poses-underwear-says-shes-battled-bulimia-anorexia-age-1B6099183" target="_blank" rel="noopener">NBC News: Lady Gaga says she's battled bulimia and anorexia since age 15</a> (September 25, 2012)</li>
+        <li><a href="https://www.newsweek.com/princess-diana-interview-panorama-bbc-1995-meghan-markle-prince-harry-oprah-1574437" target="_blank" rel="noopener">Newsweek: Princess Diana's Panorama interview</a></li>
+        <li><a href="https://time.com/3685894/karen-carpenter-anorexia-death" target="_blank" rel="noopener">Time: Karen Carpenter's death and anorexia awareness</a></li>
+      </ul>
+      <p><em>Explainer. Court developments checked on November 3, 2026, including Snap's November 2 settlement. This article is for information only and is not medical advice.</em></p>
+    `
+  },
+  {
     id: "asian-shares-mixed-kospi-tech-selloff-oil",
     title: "Asian Shares Mixed as Kospi Sinks 4% on Chip Sell-Off, Oil Rebounds After US Strikes on Iran",
     excerpt: "Asian shares were mixed Tuesday as South Korea's Kospi fell 4% on a tech sell-off, oil rose 2% after US strikes on Iran and Australia raised rates to 4.85%.",
