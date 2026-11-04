@@ -25,3 +25,4 @@ Allow: /
 Disallow: /api/
 
 Sitemap: https://globalbusinessnewstoday.com/sitemap.xml
+Sitemap: https://globalbusinessnewstoday.com/news-sitemap.xml

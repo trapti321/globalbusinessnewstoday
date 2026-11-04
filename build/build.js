@@ -38,6 +38,15 @@ const CATEGORIES = [
   { slug: "press-releases", name: "Press Releases", title: "Corporate Wire & Press Releases", description: "Corporate announcements and press releases distributed by Global Business News Today." }
 ];
 
+// Shown on /editorial-standards/ and on the newsroom author page; also linked from the publisher schema.
+const STANDARDS_URL = "/editorial-standards/";
+const STANDARDS = [
+  "<strong>Primary sources first.</strong> Figures and claims are taken from regulatory filings, central bank statements, official statistics, court records and company announcements, and linked inline so readers can check them.",
+  "<strong>Clear dates.</strong> Every article shows when it was published and, where relevant, when it was last updated or when its facts were last checked.",
+  "<strong>Separation of news and promotion.</strong> Press releases are published only in the Press Releases section and are labelled as corporate announcements.",
+  `<strong>Corrections.</strong> Errors are corrected promptly. Readers can report a mistake through the <a href="/contact.html">contact page</a> or by emailing <a href="mailto:${SITE.email}">${SITE.email}</a>.`
+];
+
 // Author profiles, keyed by the author.name used in js/articles-data.js. Authors listed here get a
 // dedicated /author/<slug>/ page, a linked byline and a bio in the article author box.
 const AUTHORS = {
@@ -52,12 +61,7 @@ const AUTHORS = {
       "GBNT Newsroom is the in-house editorial desk of Global Business News Today. The desk researches, writes and fact-checks business news and explainers for executives, founders, investors and small business owners who need clear answers backed by evidence.",
       "Stories published under the GBNT Newsroom byline are produced and reviewed by the editorial team as a whole rather than by a single reporter. Each one goes through a source check before publication, and the desk returns to explainers when the facts change, recording the update date on the article."
     ],
-    standards: [
-      "<strong>Primary sources first.</strong> Figures and claims are taken from regulatory filings, central bank statements, official statistics, court records and company announcements, and linked inline so readers can check them.",
-      "<strong>Clear dates.</strong> Every article shows when it was published and, where relevant, when it was last updated or when its facts were last checked.",
-      "<strong>Separation of news and promotion.</strong> Press releases are published only in the Press Releases section and are labelled as corporate announcements.",
-      `<strong>Corrections.</strong> Errors are corrected promptly. Readers can report a mistake through the <a href="/contact.html">contact page</a> or by emailing <a href="mailto:${SITE.email}">${SITE.email}</a>.`
-    ]
+    standards: STANDARDS
   }
 };
 
@@ -146,6 +150,8 @@ function validate(articles) {
       errors.push(`${where}: self-hosted images need imageWidth >= ${MIN_IMAGE_WIDTH} (and imageHeight) for Google Discover`);
     }
     if (a.content && /<img(?![^>]*\balt=)/i.test(a.content)) errors.push(`${where}: an <img> in the content has no alt attribute`);
+    // Google truncates long headlines in Top Stories and Discover; warn rather than fail.
+    if (a.title && a.title.length > 110) console.warn(`Warning: ${where}: headline is ${a.title.length} characters (aim for 110 or fewer)`);
   }
   if (errors.length) {
     console.error("Build failed:\n  " + errors.join("\n  "));
@@ -304,6 +310,7 @@ function footer() {
             <li><a href="/">Home</a></li>
             <li><a href="/category/all/">All News</a></li>
             ${Object.entries(AUTHORS).map(([name, p]) => `<li><a href="${authorUrl(p)}">${esc(name)}</a></li>`).join("\n            ")}
+            <li><a href="${STANDARDS_URL}">Editorial Standards</a></li>
             <li><a href="/contact.html">Contact Us</a></li>
           </ul>
         </nav>
@@ -407,8 +414,17 @@ const ORGANIZATION = {
   url: `${SITE.url}/`,
   email: SITE.email,
   description: SITE.description,
-  logo: { "@type": "ImageObject", url: abs(SITE.logo.url), width: SITE.logo.width, height: SITE.logo.height }
+  logo: { "@type": "ImageObject", url: abs(SITE.logo.url), width: SITE.logo.width, height: SITE.logo.height },
+  image: abs(SITE.ogImage.url),
+  contactPoint: [{ "@type": "ContactPoint", contactType: "editorial", email: SITE.email, url: `${SITE.url}/contact.html`, availableLanguage: "English" }],
+  knowsAbout: CATEGORIES.filter(c => c.slug !== "press-releases").map(c => c.title),
+  publishingPrinciples: `${SITE.url}${STANDARDS_URL}`,
+  ethicsPolicy: `${SITE.url}${STANDARDS_URL}`,
+  correctionsPolicy: `${SITE.url}${STANDARDS_URL}#corrections`,
+  actionableFeedbackPolicy: `${SITE.url}${STANDARDS_URL}#feedback`
 };
+
+const WEBSITE_REF = { "@type": "WebSite", "@id": `${SITE.url}/#website`, name: SITE.name, url: `${SITE.url}/` };
 
 const breadcrumb = (items) => ({
   "@context": "https://schema.org",
@@ -537,10 +553,33 @@ function buildHome() {
     canonical: `${SITE.url}/`,
     robots: ROBOTS_INDEX,
     og: { type: "website", title: SITE.name, image: { url: imageUrl(lead, 1200, 675), width: 1200, height: 675, alt: lead.imageAlt } },
-    schema: [
-      { "@context": "https://schema.org", "@type": "WebSite", "@id": `${SITE.url}/#website`, name: SITE.name, alternateName: ["GBNT", "globalbusinessnewstoday.com"], url: `${SITE.url}/`, description: SITE.description, inLanguage: "en", publisher: { "@id": ORGANIZATION["@id"] } },
-      { "@context": "https://schema.org", ...ORGANIZATION }
-    ],
+    schema: [{
+      "@context": "https://schema.org",
+      "@graph": [
+        { ...WEBSITE_REF, alternateName: ["GBNT", "globalbusinessnewstoday.com"], description: SITE.description, inLanguage: "en", publisher: { "@id": ORGANIZATION["@id"] } },
+        ORGANIZATION,
+        {
+          "@type": "CollectionPage",
+          "@id": `${SITE.url}/#webpage`,
+          url: `${SITE.url}/`,
+          name: "Global Business News Today: Markets, Economy & Company News",
+          description: SITE.description,
+          inLanguage: "en",
+          isPartOf: { "@id": WEBSITE_REF["@id"] },
+          about: { "@id": ORGANIZATION["@id"] },
+          publisher: { "@id": ORGANIZATION["@id"] },
+          dateModified: updated,
+          primaryImageOfPage: { "@type": "ImageObject", url: imageUrl(lead, 1200, 675), width: 1200, height: 675 },
+          mainEntity: {
+            "@type": "ItemList",
+            name: "Latest Global Business News",
+            itemListOrder: "https://schema.org/ItemListOrderDescending",
+            numberOfItems: Math.min(ARTICLES.length, 10),
+            itemListElement: ARTICLES.slice(0, 10).map((a, i) => ({ "@type": "ListItem", position: i + 1, url: `${SITE.url}${articleUrl(a)}`, name: a.title }))
+          }
+        }
+      ]
+    }],
     active: "home",
     isHome: true,
     main
@@ -641,15 +680,24 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
       `<meta property="article:published_time" content="${a.publishedAt}">`,
       `<meta property="article:modified_time" content="${modified}">`,
       `<meta property="article:section" content="${esc(cat.name)}">`,
+      `<meta property="article:author" content="${profile ? SITE.url + authorUrl(profile) : esc(a.author.name)}">`,
+      `<meta name="author" content="${esc(a.author.name)}">`,
       ...(a.tags || []).map(t => `<meta property="article:tag" content="${esc(t)}">`)
     ].join("\n  "),
     schema: [
       {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
+        "@id": `${url}#article`,
+        url,
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
+        isPartOf: WEBSITE_REF,
         headline: a.title,
         description: a.excerpt,
+        inLanguage: "en",
+        isAccessibleForFree: true,
+        wordCount: a.content.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length,
+        thumbnailUrl: heroImage.url,
         image: isUnsplash(a.image)
           ? [imageUrl(a, 1600, 900), imageUrl(a, 1600, 1200), imageUrl(a, 1200, 1200)]
           : [abs(a.image)],
@@ -768,6 +816,7 @@ function buildAuthor(name, profile) {
           <ul class="author-standards">
             ${profile.standards.map(s => `<li>${s}</li>`).join("\n            ")}
           </ul>
+          <p>Read our full <a href="${STANDARDS_URL}">editorial standards and corrections policy</a>.</p>
         </section>
 
         <section aria-labelledby="authorContactTitle">
@@ -820,6 +869,88 @@ function buildAuthor(name, profile) {
     ],
     main
   });
+}
+
+function buildStandards() {
+  const url = `${SITE.url}${STANDARDS_URL}`;
+  const title = "Editorial Standards and Corrections Policy";
+  const description = "How Global Business News Today sources, dates and corrects its reporting, separates news from press releases, and handles reader feedback.";
+  const newsroom = Object.entries(AUTHORS)[0];
+
+  const main = `
+    <div class="author-profile">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Editorial Standards</li>
+        </ol>
+      </nav>
+      <h1 class="page-title">${esc(title)}</h1>
+      <p class="page-description">${esc(description)}</p>
+
+      <div class="author-profile-body">
+        <section aria-labelledby="whoTitle">
+          <h2 id="whoTitle">Who We Are</h2>
+          <p>${esc(SITE.name)} is an independent business news site for executives, founders, investors and small business owners. Our coverage spans ${CATEGORIES.filter(c => c.slug !== "press-releases").map(c => c.name).join(", ")}.${newsroom ? ` Most stories are published by our editorial desk, <a href="${authorUrl(newsroom[1])}">${esc(newsroom[0])}</a>.` : ""}</p>
+        </section>
+
+        <section aria-labelledby="standardsTitle">
+          <h2 id="standardsTitle">How We Report</h2>
+          <ul class="author-standards">
+            ${STANDARDS.map(s => `<li>${s}</li>`).join("\n            ")}
+          </ul>
+        </section>
+
+        <section id="corrections" aria-labelledby="correctionsTitle">
+          <h2 id="correctionsTitle">Corrections Policy</h2>
+          <p>If we get a fact wrong, we fix it in the article and show the date it was updated. To report an error, email <a href="mailto:${SITE.email}">${SITE.email}</a> or use our <a href="/contact.html">contact page</a>, and include the article link and what needs correcting.</p>
+        </section>
+
+        <section aria-labelledby="adviceTitle">
+          <h2 id="adviceTitle">Financial and Health Information</h2>
+          <p>Our reporting on markets, companies and health is for information only. It is not investment, financial, legal or medical advice.</p>
+        </section>
+
+        <section id="feedback" aria-labelledby="feedbackTitle">
+          <h2 id="feedbackTitle">Reader Feedback</h2>
+          <p>We welcome news tips, questions about a story and suggestions. Contact the newsroom at <a href="mailto:${SITE.email}">${SITE.email}</a> or through the <a href="/contact.html">contact page</a>. Companies can send announcements through our <a href="/submit-pr.html">press release form</a>.</p>
+        </section>
+      </div>
+    </div>`;
+
+  return render({
+    title: `${title} | ${SITE.name}`.length <= 70 ? `${title} | ${SITE.name}` : title,
+    description,
+    canonical: url,
+    robots: ROBOTS_INDEX,
+    og: { type: "website", title, image: defaultOgImage },
+    schema: [
+      { "@context": "https://schema.org", "@type": "WebPage", "@id": `${url}#webpage`, name: title, url, description, inLanguage: "en", isPartOf: WEBSITE_REF, about: { "@id": ORGANIZATION["@id"] }, publisher: ORGANIZATION },
+      breadcrumb([{ name: "Home", url: "/" }, { name: "Editorial Standards", url: STANDARDS_URL }])
+    ],
+    main
+  });
+}
+
+// Google News sitemap: only articles from the last two days are eligible.
+function buildNewsSitemap() {
+  const cutoff = Date.now() - 2 * 24 * 60 * 60 * 1000;
+  const urls = ARTICLES.filter(a => Date.parse(a.publishedAt) >= cutoff).map(a => `  <url>
+    <loc>${SITE.url}${articleUrl(a)}</loc>
+    <news:news>
+      <news:publication>
+        <news:name>${esc(SITE.name)}</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>${a.publishedAt}</news:publication_date>
+      <news:title>${esc(a.title)}</news:title>
+    </news:news>
+  </url>`);
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+${urls.join("\n")}
+</urlset>
+`;
 }
 
 function buildStatic({ file, fragment, title, description, active, schemaType }) {
@@ -926,6 +1057,7 @@ ${section("Site Sections", [
 ])}
 ${bySection.join("\n")}
 ${section("Authors", Object.entries(AUTHORS).map(([name, p]) => `- [${name}](${SITE.url}${authorUrl(p)}): ${p.shortBio}`))}
+${section("Editorial Policies", [`- [Editorial Standards and Corrections Policy](${SITE.url}${STANDARDS_URL}): How we source, date and correct our reporting`])}
 ${section("Optional", [
   `- [Contact Us](${SITE.url}/contact.html): Newsroom, corrections, advertising and partnership enquiries`,
   `- [Submit a Press Release](${SITE.url}/submit-pr.html): Corporate announcements for editorial review`
@@ -983,10 +1115,12 @@ write("submit-pr.html", buildStatic({
   active: "",
   schemaType: "WebPage"
 }));
-sitemapPages.push({ path: "/contact.html" }, { path: "/submit-pr.html" });
+write("editorial-standards/index.html", buildStandards());
+sitemapPages.push({ path: "/contact.html" }, { path: "/submit-pr.html" }, { path: STANDARDS_URL });
 
 write("404.html", build404());
 write("sitemap.xml", buildSitemap(sitemapPages));
+write("news-sitemap.xml", buildNewsSitemap());
 write("feed.xml", buildFeed());
 write("llms.txt", buildLlmsTxt());
 
