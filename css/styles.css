@@ -1344,27 +1344,22 @@ dialog.custom-modal::backdrop {
   padding-block-end: 3rem;
 }
 
-.contact-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+.narrow-page.contact-simple {
+  max-inline-size: 640px;
 }
 
-.contact-card-text {
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.contact-card-email {
-  margin-block-start: 0.75rem;
+.contact-alt {
+  margin-block-start: 1.5rem;
+  text-align: center;
   font-size: 0.9375rem;
-  font-weight: 700;
+  color: var(--text-secondary);
+  line-height: 1.8;
   overflow-wrap: anywhere;
 }
 
-.contact-card-email a {
+.contact-alt a {
   color: var(--brand-accent);
+  font-weight: 700;
 }
 
 .form-card-title {
@@ -1896,13 +1891,8 @@ dialog.custom-modal::backdrop {
   .articles-grid,
   .articles-grid-3,
   .home-sections-grid,
-  .contact-cards,
   .form-row {
     grid-template-columns: 1fr;
-  }
-
-  .contact-cards {
-    gap: 0;
   }
 
   .form-row {

@@ -33,7 +33,7 @@
   <meta name="twitter:image:alt" content="Global Business News Today logo on a navy background">
 
   <script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("gbnt_theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"))}catch(e){}</script>
-  <link rel="stylesheet" href="/css/styles.css?v=19fe8c7377">
+  <link rel="stylesheet" href="/css/styles.css?v=58bcc4b643">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Us","url":"https://globalbusinessnewstoday.com/contact.html","description":"Contact the Global Business News Today newsroom for news tips, corrections, advertising and press release distribution.","publisher":{"@type":"NewsMediaOrganization","@id":"https://globalbusinessnewstoday.com/#organization","name":"Global Business News Today","url":"https://globalbusinessnewstoday.com/","email":"info@globalbusinessnewstoday.com","description":"Business news and analysis on global markets, central banks, SMEs and startups, technology and AI, and commercial real estate.","logo":{"@type":"ImageObject","url":"https://globalbusinessnewstoday.com/assets/logo-512.png","width":512,"height":512},"image":"https://globalbusinessnewstoday.com/assets/og-default.jpg","contactPoint":[{"@type":"ContactPoint","contactType":"editorial","email":"info@globalbusinessnewstoday.com","url":"https://globalbusinessnewstoday.com/contact.html","availableLanguage":"English"}],"knowsAbout":["World Business & Global Economy","Financial Markets, Rates & Currencies","Technology, Enterprise Software & AI","SME Intelligence & Startup Growth","Commercial Real Estate & Property"],"publishingPrinciples":"https://globalbusinessnewstoday.com/editorial-standards/","ethicsPolicy":"https://globalbusinessnewstoday.com/editorial-standards/","correctionsPolicy":"https://globalbusinessnewstoday.com/editorial-standards/#corrections","actionableFeedbackPolicy":"https://globalbusinessnewstoday.com/editorial-standards/#feedback"}}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://globalbusinessnewstoday.com/"},{"@type":"ListItem","position":2,"name":"Contact Us","item":"https://globalbusinessnewstoday.com/contact.html"}]}</script>
 
@@ -109,24 +109,10 @@
   </header>
 
   <main id="main" class="container">
-    <div class="narrow-page">
+    <div class="narrow-page contact-simple">
       <div class="page-intro page-intro-center">
-        <h1 class="page-title">Contact Global Business News Today</h1>
-        <p class="page-description">Send us news tips, corrections, advertising enquiries or partnership requests. We read every message.</p>
-      </div>
-
-      <div class="contact-cards">
-        <div class="widget-box">
-          <h2 class="widget-title">Email the Newsroom</h2>
-          <p class="contact-card-text">For editorial, corrections, advertising and partnerships, email us directly:</p>
-          <p class="contact-card-email"><a href="mailto:info@globalbusinessnewstoday.com">info@globalbusinessnewstoday.com</a></p>
-        </div>
-
-        <div class="widget-box">
-          <h2 class="widget-title">Press Releases</h2>
-          <p class="contact-card-text">Companies can send announcements for editorial review using our submission form.</p>
-          <p class="contact-card-email"><a href="/submit-pr.html">Submit a press release ➔</a></p>
-        </div>
+        <h1 class="page-title">Get in Touch</h1>
+        <p class="page-description">Send us a news tip, a correction, an advertising enquiry or a partnership request. We read every message.</p>
       </div>
 
       <div class="form-card">
@@ -134,35 +120,29 @@
         <form id="contactInquiryForm" data-form="contact" novalidate>
           <input type="hidden" name="type" value="contact">
           <div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-          <div class="form-row">
-            <div class="form-group">
-              <label class="form-label" for="senderName">Your Full Name *</label>
-              <input type="text" id="senderName" name="name" class="form-control" required maxlength="120" autocomplete="name" placeholder="Jane Doe">
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="senderEmail">Email Address *</label>
-              <input type="email" id="senderEmail" name="email" class="form-control" required maxlength="200" autocomplete="email" placeholder="Your email address">
-            </div>
+          <div class="form-group">
+            <label class="form-label" for="senderName">Name *</label>
+            <input type="text" id="senderName" name="name" class="form-control" required maxlength="120" autocomplete="name" placeholder="Your name">
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="inquiryType">Department *</label>
-            <select id="inquiryType" name="department" class="form-control" required>
-              <option value="Editorial News Desk">Editorial News Desk</option>
-              <option value="Corporate Wire & PR Distribution">Corporate Wire & PR Distribution</option>
-              <option value="Sponsorship & Advertising">Sponsorship & Advertising</option>
-              <option value="Corrections & Factual Inquiries">Corrections & Factual Inquiries</option>
-            </select>
+            <label class="form-label" for="senderEmail">Email *</label>
+            <input type="email" id="senderEmail" name="email" class="form-control" required maxlength="200" autocomplete="email" placeholder="you@company.com">
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="inquiryMessage">Your Message *</label>
+            <label class="form-label" for="inquiryMessage">Message *</label>
             <textarea id="inquiryMessage" name="message" class="form-control" rows="6" required maxlength="5000" placeholder="How can we help?"></textarea>
           </div>
 
           <button type="submit" class="btn-pr-submit btn-block">Send Message</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
+      </div>
+
+      <div class="contact-alt">
+        <p>Prefer email? Write to <a href="mailto:info@globalbusinessnewstoday.com">info@globalbusinessnewstoday.com</a></p>
+        <p>Have a company announcement? <a href="/submit-pr.html">Submit a press release ➔</a></p>
       </div>
     </div>
 
@@ -220,6 +200,6 @@
     </div>
   </dialog>
 
-  <script src="/js/main.js?v=19fe8c7377" defer data-search-src="/js/articles-data.js?v=19fe8c7377"></script>
+  <script src="/js/main.js?v=58bcc4b643" defer data-search-src="/js/articles-data.js?v=58bcc4b643"></script>
 </body>
 </html>

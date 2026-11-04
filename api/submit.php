@@ -54,7 +54,6 @@ $forms = [
         'fields' => [
             'name' => ['Name', 120, true],
             'email' => ['Email', 200, true],
-            'department' => ['Department', 120, true],
             'message' => ['Message', 5000, true],
         ],
         'success' => 'Thank you. Your message has been sent and we will reply by email.',
