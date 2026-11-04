@@ -4,7 +4,7 @@ const ARTICLES = [
     id: "companies-to-hire-remote-developers",
     title: "Best Companies to Hire Remote Developers in 2026: 8 Options Compared",
     excerpt: "Toptal, Arc, Andela, Upwork, Deel and more: how 8 ways to hire remote developers compare on vetting, speed, cost and who carries the risk.",
-    category: "Technology",
+    category: "Tech & AI",
     categorySlug: "tech",
     author: {
       name: "GBNT Newsroom",
