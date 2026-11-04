@@ -1,6 +1,89 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "uk-outsourcing-examples",
+    title: "UK Outsourcing Examples: 8 British Companies and What They Sent Offshore",
+    excerpt: "HSBC, Lloyds, JLR, M&S, Dyson and more: 8 verified UK outsourcing examples, what each company handed off, where the work went and what it cost.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-04T10:30:00Z",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Aerial view of the River Thames winding past Tower Bridge towards the Canary Wharf towers at dusk",
+    isTrending: true,
+    views: 0,
+    tags: ["Outsourcing", "Offshoring", "UK Business", "Shared Services", "TCS"],
+    content: `
+      <p class="lead">UK outsourcing examples are easy to find in any company directory, but most lists stop at a name and a country. This guide looks at eight British companies whose arrangements can be checked against company statements and dated reporting, and explains what each one actually handed off.</p>
+
+      <p>The examples cover banks, an insurer, a carmaker, a retailer, a consumer goods group, an appliance maker and an energy major. Some pay an outside supplier to run a service. Others have built their own centres abroad. That difference matters for cost, control and risk, so it is worth settling first.</p>
+
+      <h2>Outsourcing, offshoring and captive centres: the difference</h2>
+      <ul>
+        <li><strong>Outsourcing</strong> means a third party runs a function under contract, such as Tata Consultancy Services (TCS) running an IT estate or Accenture running payroll.</li>
+        <li><strong>Offshoring</strong> means the work moves to another country. It can be outsourced or kept in-house.</li>
+        <li><strong>Captive or global capability centres</strong> are offices a company owns abroad and staffs with its own employees. Banks increasingly prefer this model for technology and operations.</li>
+      </ul>
+      <p>Several of the companies below use more than one model at the same time.</p>
+
+      <h2>1. Jaguar Land Rover: IT estate to TCS</h2>
+      <p>On 6 September 2023, <a href="https://www.jlr.com/news/2023/09/jlr-expands-partnership-tata-consultancy-services-tcs-accelerate-digital" target="_blank" rel="noopener">JLR announced</a> a five-year deal with TCS worth more than £800 million. TCS took on application development and maintenance, enterprise infrastructure management, cloud migration, cybersecurity and data services. Both companies are part of the Tata group.</p>
+      <p>The deal is a classic example of a manufacturer outsourcing most of its IT to one supplier. In September 2025 JLR was hit by a cyberattack that halted production for several weeks. The UK government <a href="https://www.bleepingcomputer.com/news/security/jaguar-land-rover-cyberattack-cost-the-company-over-220-million/" target="_blank" rel="noopener">backed a £1.5 billion loan guarantee</a>, and JLR put the direct cost at £196 million in its July to September quarter. No public finding has blamed TCS for the attack. Still, the episode showed how much of a business can depend on a single digital estate.</p>
+
+      <h2>2. Marks &amp; Spencer: IT service desk re-tendered</h2>
+      <p>M&amp;S also uses TCS for "a number of technology and IT services". In October 2025, <a href="https://www.retailgazette.co.uk/blog/2025/10/ms-terminates-it-contract/" target="_blank" rel="noopener">Retail Gazette reported</a> that M&amp;S had appointed a new provider for its IT service desk after a tender that began in January 2025. The retailer had suffered a cyberattack in April 2025 that was thought to have cost around £300 million.</p>
+      <p>Both companies said the two events were unrelated. TCS said it "does not provide cyber security services to M&amp;S" and that its review found the vulnerabilities had not originated from its networks. M&amp;S said the change had "no bearing on our wider TCS relationship."</p>
+
+      <h2>3. Phoenix Group: life and pensions administration</h2>
+      <p>Phoenix, which describes itself as the UK's largest long-term savings and retirement business, outsources the day-to-day administration of millions of policies. Its relationship with TCS subsidiary Diligenta goes back to a 2006 deal with what was then Pearl Group. In <a href="https://www.businesswire.com/news/home/20230207005945/en/Phoenix-Group-Expands-Strategic-Partnership-with-TCS-to-Transform-Customer-Experience" target="_blank" rel="noopener">February 2023 the partnership was extended</a> to cover the servicing of about 3 million ReAssure policies.</p>
+      <p>In March 2025 Phoenix changed course for ReAssure. It signed a <a href="https://www.insurancebusinessmag.com/uk/news/life-insurance/phoenix-enters-strategic-partnership-for-500-million-deal-530179.aspx" target="_blank" rel="noopener">10-year, £500 million deal with Wipro</a> to administer the business on its existing ALPHA platform, which avoided a costly customer migration. Diligenta remains a strategic partner, and Phoenix expects more than 8 million policies to sit on the TCS BaNCS platform. Using two suppliers side by side like this is common in large insurance back offices.</p>
+
+      <h2>4. Unilever: HR services to Accenture</h2>
+      <p>Unilever was an early mover in outsourcing human resources. It first signed a seven-year global HR deal with Accenture in the mid-2000s. In January 2013 <a href="https://www.consultancy.uk/news/171/accenture-wins-global-hr-bpo-assignment-unilever" target="_blank" rel="noopener">Accenture won a five-year renewal</a> covering more than 130,000 employees in 100 countries. The scope included recruitment, HR administration, payroll administration, and training and development.</p>
+      <p>The example shows that outsourcing is not limited to IT and call centres. Rules-based, high-volume HR work across many countries is a natural fit for a specialist provider.</p>
+
+      <h2>5. HSBC: global capability centres in eight countries</h2>
+      <p>HSBC keeps much of its operations work in-house but moves it offshore. <a href="https://www.hsbc.com/careers/our-business-areas-and-teams/digital-business-services/careers-in-global-operations" target="_blank" rel="noopener">The bank says</a> its Global Capability Centres are in India, China, Malaysia, the Philippines, Sri Lanka, Egypt, Poland and Mexico. They process loan, card, mortgage and account applications, and handle trade and payment work for commercial clients.</p>
+      <p>India is the largest hub. <a href="https://www.hsbc.com/careers/where-we-hire/india" target="_blank" rel="noopener">HSBC says it employs about 47,000 people there</a>, with technology teams in Pune, Hyderabad and Bengaluru.</p>
+
+      <h2>6. Lloyds Banking Group: a technology centre in Hyderabad</h2>
+      <p>Lloyds opened the Lloyds Technology Centre in Hyderabad in late 2023. It planned to recruit about 600 technology, data and cyber specialists for engineering work, not customer-facing banking. In March 2025 the Financial Times reported that the bank planned to hire about 4,000 permanent tech and data staff in India by the end of that year. The report was <a href="https://www.theweek.in/news/biz-tech/2025/03/07/is-britain-first-banker-lloyds-moving-its-base-new-report-reveals-it-hiring-in-india.html" target="_blank" rel="noopener">summarised by The Week</a>. It came after about 6,000 UK IT staff were told their roles were at risk.</p>
+      <p>Lloyds shows the political side of offshoring. Captive centres give a bank more control than an outside supplier, but UK job losses still draw scrutiny.</p>
+
+      <h2>7. Dyson: motors and software in the Philippines</h2>
+      <p>Dyson's work in the Philippines is offshoring, not outsourcing, because Dyson runs the sites itself. Its plant in Calamba, Laguna, opened in 2016. In 2020 <a href="https://www.gmanetwork.com/news/money/companies/765859/uk-s-dyson-to-open-software-lab-in-philippines-create-400-jobs/story" target="_blank" rel="noopener">GMA News reported</a> that the plant employed 600 people and made 13 million Dyson Hyperdymium motors a year.</p>
+      <p>In November 2020 Dyson announced a software lab in Alabang, Metro Manila, with 400 engineering jobs planned over three years. Chief operating officer Scott Maguire said the Philippines was "home to bright, young engineers who share Dyson's ambition to develop technologies for the future."</p>
+
+      <h2>8. Shell: shared business operations in Manila</h2>
+      <p>Shell runs its own Shell Business Operations centres in cities including Manila, Kuala Lumpur and Krakow. They handle finance, HR, procurement and customer service for Shell companies worldwide. The Manila centre <a href="https://www.manilatimes.net/2024/09/06/business/shell-business-operations-manila-celebrates-20-years-of-world-class-service/1969721" target="_blank" rel="noopener">opened in 2004 with fewer than 50 staff</a>. The Manila Times reported that it had grown to more than 4,500 employees by its 20th anniversary in 2024 and provides round-the-clock support.</p>
+
+      <h2>What these UK outsourcing examples have in common</h2>
+      <ul>
+        <li><strong>The work is repeatable.</strong> IT support, policy administration, payroll and transaction processing all follow clear rules, which makes them easier to hand off or relocate.</li>
+        <li><strong>Banks build, others buy.</strong> HSBC and Lloyds prefer captive centres for control and regulatory comfort. JLR, M&amp;S, Phoenix and Unilever contract specialist suppliers.</li>
+        <li><strong>India and the Philippines dominate.</strong> India leads on technology and engineering, and the Philippines on customer and shared services. Poland and Malaysia are strong second-tier hubs.</li>
+        <li><strong>Concentration is the risk.</strong> The JLR and M&amp;S cyber incidents show why boards now look closely at how much of the business sits with one provider or one platform. Our guide to <a href="/articles/cybersecurity-compliance-middle-market/">cybersecurity compliance for mid-sized companies</a> covers supplier oversight in more detail.</li>
+      </ul>
+
+      <h2>Lessons for smaller UK businesses</h2>
+      <p>Most SMEs will never sign an £800 million IT contract, but the same logic applies at a smaller scale.</p>
+      <ul>
+        <li>Start with tasks that are well documented and easy to measure, such as bookkeeping, first-line support or data entry.</li>
+        <li>Keep ownership of anything that defines your customer relationship.</li>
+        <li>Write security duties into the contract, and know who holds admin access to your systems.</li>
+        <li>Avoid relying on a single supplier for everything if an outage would stop trading.</li>
+      </ul>
+      <p>For financing that kind of growth, see our coverage of <a href="/articles/sme-cash-flow-fintech-revolution/">how fintech is changing SME cash flow</a>.</p>
+
+      <p><em>Company details were checked against company statements and the linked reporting on November 4, 2026. Contract values are as announced at signing and may have changed since. This article is for information only and is not business or investment advice.</em></p>
+    `
+  },
+  {
     id: "celebrities-eating-disorders",
     title: "Celebrities and Eating Disorders: What Famous Disclosures Reveal About a $64.7 Billion Problem",
     excerpt: "From Karen Carpenter to Taylor Swift, celebrity eating disorder disclosures shape awareness. Here is what the research, courts and a $64.7B cost study show.",
