@@ -695,7 +695,6 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
         headline: a.title,
         description: a.excerpt,
         inLanguage: "en",
-        isAccessibleForFree: true,
         wordCount: a.content.replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length,
         thumbnailUrl: heroImage.url,
         image: isUnsplash(a.image)
