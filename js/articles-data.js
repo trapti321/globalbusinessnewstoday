@@ -1,6 +1,78 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "global-stocks-ai-selloff-nikkei-ftse",
+    title: "Global Stocks Slide as AI Sell-Off Spreads: Nikkei Hits Bear Market, FTSE Falls 2%",
+    excerpt: "Wall Street's AI rout spread to Asia and Europe on Nov 6. The Nikkei and Kospi fell about 6%, the FTSE 100 dropped over 2% and sterling slipped.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-06T18:00:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Tokyo skyline at dusk under heavy grey cloud, with the illuminated orange Tokyo Tower among dense high-rise buildings",
+    isTrending: true,
+    views: 0,
+    tags: ["Global Markets", "Nikkei", "FTSE 100", "AI Stocks", "Bank of England"],
+    content: `
+      <p class="lead">Global stocks fell sharply on Friday, November 6, 2026, as a sell-off in artificial intelligence (AI) shares that began on Wall Street swept through Asia and Europe. Japan's Nikkei 225 entered a bear market, South Korea's Kospi triggered a trading halt and London's FTSE 100 fell more than 2% at midday.</p>
+
+      <p>The trigger was the US midterm elections. Democrats won control of Congress on November 3, and investors are worried that tighter rules on data centers could slow the AI spending boom that has powered markets this year. On Thursday the Nasdaq Composite fell 5.5% into correction, its worst day since April 2025. Our <a href="/articles/nasdaq-rebounds-after-correction-jobs-report/">Wall Street report</a> covers that session and Friday's US jobs data.</p>
+
+      <h2>Asia: Nikkei enters a bear market, Kospi halts trading</h2>
+      <p>Asian markets most exposed to AI hardware took the biggest hits on Friday:</p>
+      <ul>
+        <li><strong>Japan:</strong> the Nikkei 225 closed down about 6%. That left it more than 20% below its June peak, which meets the usual definition of a bear market. <a href="https://www.nbcnews.com/business/markets/global-markets-tech-stocks-ai-midterms-democrats-asia-europe-rcna607794" target="_blank" rel="noopener">NBC News</a> said it was the index's worst week since 2020.</li>
+        <li><strong>South Korea:</strong> the Kospi fell more than 8% in the morning, setting off a 20-minute market-wide trading halt. It recovered some ground and closed about 6% lower. Chip giants Samsung Electronics and SK Hynix fell more than 10% early on.</li>
+        <li><strong>Taiwan:</strong> the Taiex dropped as much as 9% during the session.</li>
+        <li><strong>China:</strong> the tech-focused STAR 50 index fell as much as 5% before recovering some losses.</li>
+      </ul>
+      <p>"Markets are being punished according to their dependence on the U.S. AI infrastructure cycle," Charu Chanana of Saxo Markets told NBC News.</p>
+      <p>The falls come after a strong run. NBC noted that even after Friday the Kospi was still up 25% from a year earlier and the Nikkei up 13%.</p>
+
+      <h2>Europe: FTSE 100, DAX and CAC fall</h2>
+      <p>Europe opened lower and losses deepened through the morning. By midday in London, <a href="https://www.marketscreener.com/news/ftse-100-plunges-amid-global-tech-sell-off-ce785fd2d98df320" target="_blank" rel="noopener">Alliance News reported</a> the following moves:</p>
+      <ul>
+        <li>The <strong>FTSE 100</strong> was down 242.58 points, or 2.3%, at 10,542.10.</li>
+        <li>Germany's <strong>DAX</strong> fell 2.3% and France's <strong>CAC 40</strong> fell 1.8%.</li>
+        <li><strong>BT Group</strong> and <strong>Airtel Africa</strong> led London's fallers, each down 4.6%.</li>
+        <li><strong>IAG</strong>, the British Airways owner, rose 1% even though its third-quarter operating profit fell 16%.</li>
+      </ul>
+      <p>London has less AI exposure than New York, Tokyo or Seoul, which helped limit its losses. The FTSE 100 is weighted towards banks, miners, energy and consumer staples rather than chipmakers.</p>
+      <p>Weak data added to the gloom. Eurozone retail sales fell 0.7% month on month in September, worse than expected.</p>
+
+      <h2>Sterling, gold and oil</h2>
+      <ul>
+        <li><strong>Sterling</strong> fell about 0.5% to around $1.34, according to <a href="https://uk.finance.yahoo.com/news/ftse-100-today-stocks-slump-085557079.html" target="_blank" rel="noopener">Yahoo Finance UK</a>.</li>
+        <li><strong>Gold</strong> also slipped, trading near $4,070 an ounce.</li>
+        <li><strong>Brent crude</strong> traded around $98 to $99 a barrel. Oil was supported by tension between the US and Iran: Iran's army spokesman said Tehran would hit US assets "without considering geographical limitations" if attacked.</li>
+      </ul>
+
+      <h2>UK backdrop: a rate hike and falling house prices</h2>
+      <p>UK investors were already dealing with tighter monetary policy. On November 5 the <a href="https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026" target="_blank" rel="noopener">Bank of England raised Bank Rate</a> by 0.25 percentage points to 4%. The Monetary Policy Committee voted 8-1, with Catherine L Mann preferring a larger half-point rise. The Bank expects consumer price inflation, which was 3.5% in September, to rise to around 5% by mid-2027 before easing.</p>
+      <p>Housing is softening too. UK house prices fell 0.6% in October, Yahoo Finance UK reported, though Lloyds said it expects subdued conditions rather than a sustained decline. Rightmove narrowed its 2026 revenue growth guidance to 6% to 7%, and housebuilder MJ Gleeson warned of a weaker first half.</p>
+
+      <h2>Why AI stocks are so sensitive to Washington</h2>
+      <p>Much of this year's market gain has come from companies building or supplying AI data centers. That includes chip designers such as Nvidia, memory makers such as SK Hynix and Samsung, and contract manufacturers in Taiwan. If new rules delay data center construction or raise its cost, investors fear that spending could slow.</p>
+      <p>NBC News reported that the midterms put several data center critics into office. Among them is Texas Governor-elect Gina Hinojosa, who has called for a pause on new data centers until stronger protections are in place.</p>
+      <p>Not every strategist sees lasting damage. Market strategist Ed Yardeni called the recent declines "just speed bumps." J.P. Morgan's Tai Hui said the Asian sell-off reflected its exposure to the AI spending cycle and was not surprising after the US correction.</p>
+
+      <h2>What to watch next</h2>
+      <ul>
+        <li><strong>Wall Street's direction:</strong> US tech shares bounced on Friday morning after the Nasdaq's correction. A sustained recovery could steady Asian markets on Monday.</li>
+        <li><strong>Data center policy:</strong> concrete proposals from the new Congress or state governments will matter more than campaign statements.</li>
+        <li><strong>Central banks:</strong> the US Federal Reserve meets on December 8-9, and markets are pricing a high chance of a rate rise. Our earlier <a href="/articles/asian-shares-mixed-kospi-tech-selloff-oil/">Asian markets wrap</a> covers how the Kospi's tech weighting has amplified recent moves.</li>
+      </ul>
+      <p>Bear markets and corrections do not predict what happens next, and past performance does not guarantee future results.</p>
+
+      <p><em>Asian figures are closing levels for November 6, 2026. European, currency and commodity figures are intraday as of the London morning and midday, as reported by Alliance News and Yahoo Finance UK, and closing levels may differ. Checked against the Bank of England, NBC News, Alliance News and Yahoo Finance UK. This article is for information only and is not investment advice.</em></p>
+    `
+  },
+  {
     id: "nasdaq-rebounds-after-correction-jobs-report",
     title: "Nasdaq Rebounds After Its Worst Day Since April 2025 as Jobs Report Beats",
     excerpt: "Chip stocks bounced on November 6 after a midterm-driven AI rout pushed the Nasdaq into correction. Payrolls rose 165,000, raising Fed hike bets.",
