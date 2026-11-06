@@ -1,6 +1,86 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "nasdaq-rebounds-after-correction-jobs-report",
+    title: "Nasdaq Rebounds After Its Worst Day Since April 2025 as Jobs Report Beats",
+    excerpt: "Chip stocks bounced on November 6 after a midterm-driven AI rout pushed the Nasdaq into correction. Payrolls rose 165,000, raising Fed hike bets.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-06T16:30:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Trading screen showing a red and green candlestick price chart with buy and sell panels on a dark background",
+    isTrending: true,
+    views: 0,
+    tags: ["Stock Market", "Nasdaq", "Nvidia", "Jobs Report", "Federal Reserve"],
+    content: `
+      <p class="lead">US tech stocks bounced on Friday, November 6, 2026, a day after a sell-off in artificial intelligence (AI) and chip shares pushed the Nasdaq Composite into correction. A stronger-than-expected October jobs report steadied nerves about the economy, but it also raised bets on a Federal Reserve rate hike next month.</p>
+
+      <p>By mid-morning in New York, the Nasdaq was up about 1.9% and the S&amp;P 500 about 1%. The Dow Jones Industrial Average swung between small gains and losses, according to <a href="https://www.cbsnews.com/news/stocks-tech-sell-off-nasdaq-correction-dow/" target="_blank" rel="noopener">CBS News</a> and <a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html" target="_blank" rel="noopener">Yahoo Finance</a>. These are intraday figures, not closing levels.</p>
+
+      <h2>Thursday's sell-off: what happened</h2>
+      <p>On Thursday, November 5, the Nasdaq fell 5.5% to 24,315. That left it more than 10% below its October 29 record close, the usual definition of a correction. The S&amp;P 500 lost 4.4% to 7,353.73, and the Dow fell more than 1,800 points, or 3.4%, to 51,523.06. For all three indexes it was the worst day since April 2025.</p>
+      <p>Chipmakers took the heaviest losses. Nvidia fell about 9%, Advanced Micro Devices about 17% and Micron about 17%. The PHLX Semiconductor Index dropped about 12%. CNBC reported that the "Magnificent Seven" megacaps lost more than $1 trillion in combined market value in a single session.</p>
+
+      <h2>Why the midterms hit AI stocks</h2>
+      <p>The trigger was politics, not earnings. Democrats won both chambers of Congress in the November 3 midterms, and investors began pricing in tighter rules on the data centers behind the AI build-out.</p>
+      <p>In Texas, Governor-elect Gina Hinojosa said, as quoted by CNBC, that "we need to stop what we are doing with data centers until we have those protections." Voters in a number of local ballot measures also backed restrictions or bans on new data centers.</p>
+      <p>President Trump said he fully supports the AI build-out, calling the technology "GOLD" in a Truth Social post.</p>
+      <p>Stuart Clark of investment manager Quilter told CNBC the episode showed concentration risk. When a small group of tech and chip stocks dominates the index, weakness in those names drives big moves in the whole market.</p>
+
+      <h2>Friday's rebound: chips lead</h2>
+      <p>Bargain hunters returned to the worst-hit names on Friday morning, according to Yahoo Finance and CBS News:</p>
+      <ul>
+        <li><strong>Nvidia</strong> rose about 6% to 6.6% in early trade.</li>
+        <li><strong>AMD</strong> gained about 8%.</li>
+        <li><strong>Micron</strong> rose between about 7% and 10%.</li>
+        <li><strong>Intel</strong> climbed nearly 6% after a 10% slide on Thursday.</li>
+        <li>The <strong>PHLX Semiconductor Index</strong> was up about 4%.</li>
+      </ul>
+      <p>The Cboe Volatility Index (VIX), Wall Street's "fear gauge", fell about 15% to around 24.</p>
+
+      <h2>October jobs report beats forecasts</h2>
+      <p>The <a href="https://www.bls.gov/news.release/archives/empsit_11062026.htm" target="_blank" rel="noopener">Bureau of Labor Statistics said</a> nonfarm payrolls rose by 165,000 in October, against a Dow Jones consensus of 59,000. That was more than three times the 48,000 average monthly gain of the prior 12 months. The unemployment rate was 4.1%, below the 4.2% forecast.</p>
+      <ul>
+        <li><strong>Leading sectors:</strong> professional and business services (+70,000), health care (+42,000), transportation and warehousing (+25,000) and manufacturing (+19,000).</li>
+        <li><strong>Wages:</strong> average hourly earnings rose 0.4% on the month to $38.00, and 3.1% from a year earlier.</li>
+        <li><strong>Revisions:</strong> August and September were revised up by a combined 84,000 jobs.</li>
+      </ul>
+      <p>"Today's jobs report is a strong rebuttal to fears that the economy is heading into a meaningful slowdown," Seema Shah, chief global strategist at Principal Asset Management, <a href="https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html" target="_blank" rel="noopener">told CNBC</a>.</p>
+
+      <h2>Fed hike odds rise and yields climb</h2>
+      <p>The strong data cuts both ways for stocks. Treasury yields rose after the release, and the 10-year yield traded near 4.87%. After the report, CME FedWatch showed traders putting the probability of a quarter-point rate hike at the Fed's December 8-9 meeting at about 77%, according to CNBC. For background on how rate expectations have shifted this year, see our earlier report on <a href="/articles/fed-rate-cuts-global-markets-2026/">the Fed and global markets</a>.</p>
+      <p>The University of Michigan's preliminary November consumer sentiment index came in at 51.0, above the 47.5 consensus. One-year inflation expectations eased to 4.3%.</p>
+
+      <h2>Earnings movers</h2>
+      <ul>
+        <li><strong>Airbnb</strong> jumped about 11% after hours on Thursday. Earnings of $3.16 a share and revenue of $4.87 billion beat estimates of $2.85 and $4.75 billion.</li>
+        <li><strong>DraftKings</strong> fell about 24% after reporting a third-quarter loss of 94 cents a share, wider than the 39-cent loss expected.</li>
+        <li><strong>Moderna</strong> rose nearly 10% before the open after beating estimates and raising its 2026 revenue growth outlook to 15% to 25%.</li>
+        <li><strong>Lam Research</strong> gained nearly 11% before the open after announcing a $25 billion share buyback.</li>
+      </ul>
+
+      <h2>Global markets and oil</h2>
+      <p>The tech rout spread overseas. CNBC reported that Japan's Nikkei 225 and Taiwan's Taiex both entered bear markets, down 20% or more from their peaks. South Korea's Kospi fell more than 8%, triggering circuit breakers. Our <a href="/articles/asian-shares-mixed-kospi-tech-selloff-oil/">earlier Asian markets wrap</a> covers the run-up to this week's moves.</p>
+      <p>Brent crude traded near $98.65 a barrel and US benchmark WTI near $91, as traders weighed the risk of renewed US military action against Iran.</p>
+
+      <h2>What to watch next</h2>
+      <ul>
+        <li><strong>The weekly finish:</strong> before Friday's session, the Nasdaq was down about 3% for the week, the S&amp;P 500 about 2% and the Dow about 1%.</li>
+        <li><strong>Data center policy:</strong> any concrete proposals from incoming Democratic lawmakers or the new Texas administration.</li>
+        <li><strong>The Fed:</strong> its December 8-9 meeting, and whether inflation data due before then confirms hike expectations.</li>
+      </ul>
+      <p>Corrections have often been followed by recoveries within months, but past performance does not guarantee future results.</p>
+
+      <p><em>Market figures are intraday as of mid-morning ET on November 6, 2026, and Thursday's are closing levels. Data was checked against the BLS release, CNBC, CBS News and Yahoo Finance. This article is for information only and is not investment advice.</em></p>
+    `
+  },
+  {
     id: "companies-to-hire-remote-developers",
     title: "Best Companies to Hire Remote Developers in 2026: 8 Options Compared",
     excerpt: "Toptal, Arc, Andela, Upwork, Deel and more: how 8 ways to hire remote developers compare on vetting, speed, cost and who carries the risk.",
