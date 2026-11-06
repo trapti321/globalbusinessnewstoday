@@ -1,6 +1,129 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "uscis-form-i-485-guide",
+    title: "USCIS Form I-485 in 2026: Fees, New Edition and Rules That Get Applications Rejected",
+    excerpt: "Form I-485 costs $1,440 on paper or $1,390 online in 2026. Here is who can file, the new 09/18/26 edition, required documents and costly mistakes.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-06T21:00:00Z",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1508433957232-3107f5fd5995?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "American flag flying from a pole on a brick building, framed against glass office towers and a cloudy sky",
+    isTrending: false,
+    views: 0,
+    tags: ["USCIS", "Form I-485", "Green Card", "Adjustment of Status", "Immigration"],
+    content: `
+      <p class="lead">USCIS Form I-485, the Application to Register Permanent Residence or Adjust Status, is how most people already in the United States apply for a green card without leaving the country. In 2026 the form costs $1,440 to file on paper or $1,390 online for applicants aged 14 and over. USCIS now accepts only the 09/18/26 edition.</p>
+
+      <p>Several rules changed this year. A new public charge regulation took effect, the form was revised with no grace period, and some filing addresses moved. This guide covers who can file, what it costs, what to include and the mistakes most likely to get a package rejected. Every fee and rule below was checked against U.S. Citizenship and Immigration Services (USCIS) pages on November 6, 2026.</p>
+
+      <h2>What Form I-485 does</h2>
+      <p>Form I-485 asks USCIS to change your status to lawful permanent resident (LPR), the status shown on a green card, while you remain in the US. This route is called <strong>adjustment of status</strong>. People outside the US go through <strong>consular processing</strong> at a US embassy or consulate instead.</p>
+      <p>In most cases the I-485 is the second step. A family member or employer first files an immigrant petition for you, such as Form I-130 for relatives or Form I-140 for workers. The I-485 then asks USCIS to grant the green card based on that petition. Some categories, such as the Cuban Adjustment Act, need no petition at all, according to <a href="https://www.uscis.gov/green-card/green-card-processes-and-procedures/adjustment-of-status" target="_blank" rel="noopener">USCIS's adjustment of status page</a>.</p>
+
+      <h2>Who can file Form I-485</h2>
+      <p>Eligibility depends on your immigrant category, but three conditions apply broadly:</p>
+      <ul>
+        <li><strong>You are physically in the United States</strong> when you file.</li>
+        <li><strong>You have a basis to immigrate.</strong> This is usually a pending or approved petition in a family, employment, humanitarian or special immigrant category.</li>
+        <li><strong>An immigrant visa is available to you.</strong> Immediate relatives of US citizens (spouses, unmarried children under 21 and parents of adult citizens) do not wait for a visa number. Applicants in preference categories must wait until their priority date is current.</li>
+      </ul>
+      <p>Some categories, notably immediate relatives, can file the I-485 together with the underlying petition. This is called concurrent filing.</p>
+
+      <h3>How to check whether you can file now</h3>
+      <p>Preference applicants use the State Department's monthly Visa Bulletin, which has two charts: Dates for Filing and Final Action Dates. USCIS decides each month which chart applies. For November 2026, <a href="https://www.uscis.gov/green-card/green-card-processes-and-procedures/visa-availability-priority-dates/adjustment-of-status-filing-charts-from-the-visa-bulletin" target="_blank" rel="noopener">USCIS says</a> both family-sponsored and employment-based applicants must use the <strong>Dates for Filing</strong> chart. If your priority date is earlier than the date listed for your category and country, you can file.</p>
+
+      <h2>Form I-485 fees in 2026</h2>
+      <p>These amounts come from the current <a href="https://www.uscis.gov/g-1055" target="_blank" rel="noopener">USCIS Fee Schedule (Form G-1055, edition 10/26/26)</a>. The biometrics appointment no longer carries a separate fee for these forms.</p>
+      <ul>
+        <li><strong>Form I-485, age 14 or older:</strong> $1,440 on paper, or $1,390 online.</li>
+        <li><strong>Form I-485, under 14 and filed with a parent's I-485:</strong> $950 on paper, or $900 online.</li>
+        <li><strong>Refugees and certain other groups:</strong> $0. This includes refugees, some members of the US armed forces, and some humanitarian categories.</li>
+        <li><strong>Form I-765 (work permit) with a pending I-485 filed on or after April 1, 2024:</strong> $260.</li>
+        <li><strong>Form I-131 (advance parole travel document) with a pending I-485:</strong> $630 on paper, or $580 online.</li>
+        <li><strong>Supplement A (INA 245(i)):</strong> $1,000, if you need it.</li>
+        <li><strong>Supplement J (employment job confirmation or portability):</strong> $0.</li>
+      </ul>
+      <p>For an adult filing the I-485, work permit and travel document together on paper, the total is $2,330. Since April 2024 the work permit and travel document have no longer been bundled free with the I-485, so each one needs its own fee. USCIS does not accept cash. Mailed payments can be made by check, money order, card (Form G-1450) or bank account (Form G-1650).</p>
+      <p>A separate set of fees was created by 2025 legislation (Public Law 119-21), including fees for parole and asylum applications. These apply only to specific groups, cannot be waived and adjust every year. Check the fee schedule if you are a parolee or asylum applicant.</p>
+
+      <h2>What changed in 2026</h2>
+      <h3>Only the 09/18/26 edition is accepted</h3>
+      <p>On September 18, 2026, USCIS released a new edition of the form tied to its new public charge rule. <a href="https://www.uscis.gov/i-485" target="_blank" rel="noopener">The I-485 page</a> says there is <strong>no grace period</strong>. Packages using the 01/20/25 or 09/04/26 editions submitted on or after that date are rejected. The edition date is printed at the bottom of each page.</p>
+
+      <h3>A new public charge rule</h3>
+      <p>"Public charge" is the test of whether an applicant is likely to depend on certain government support. The Department of Homeland Security's final rule, published in July 2026, rescinded the 2022 public charge regulation and took effect on September 18, 2026. Analysts at the health policy research group <a href="https://www.kff.org/immigrant-health/new-public-charge-guidance-leaves-key-questions-unanswered-likely-deepening-chilling-effects-among-immigrant-families/" target="_blank" rel="noopener">KFF</a> note that it gives officers broader discretion. Practitioners report that applications filed before September 18 are judged under the earlier framework. The rule is being challenged in court, so applicants affected by public charge should get current legal advice.</p>
+
+      <h3>Some mailing addresses moved</h3>
+      <p>On October 7, 2026, USCIS changed the filing location for some I-485 categories. Packages postmarked on or before November 9, 2026 and sent to the old address are still accepted under a 30-day grace period. After that date, use the current <strong>Direct Filing Addresses for Form I-485</strong> page for your category.</p>
+
+      <h3>Online filing for some applicants</h3>
+      <p>Certain applicants can now file the I-485 through a USCIS online account, which saves $50 on the main form. If you file online, you open the civil surgeon's sealed envelope, upload the medical form, and keep the original until your case is decided.</p>
+
+      <h2>Documents to include</h2>
+      <p>Exact requirements depend on your category and are set out in the form instructions. Most packages include:</p>
+      <ul>
+        <li><strong>Identity and photos:</strong> two passport-style photos, plus a copy of a government photo ID or passport.</li>
+        <li><strong>Birth certificate</strong>, with a certified English translation if it is in another language.</li>
+        <li><strong>Proof of lawful entry or parole and your I-94 record</strong>, where your category requires it.</li>
+        <li><strong>Petition evidence:</strong> the receipt or approval notice for the underlying petition (Form I-130, I-140, I-360 and so on), unless you are filing concurrently.</li>
+        <li><strong>Form I-693 medical exam:</strong> completed by a USCIS-designated civil surgeon. Since December 2, 2024, <a href="https://www.uscis.gov/i-693" target="_blank" rel="noopener">USCIS requires it with the I-485</a> or the application may be rejected. Mailed filings must include it in the civil surgeon's sealed envelope.</li>
+        <li><strong>Form I-864, Affidavit of Support:</strong> required for most family-based applicants and some employment-based cases.</li>
+        <li><strong>Supplement J</strong> if you are filing based on a previously filed I-140, or using job portability.</li>
+        <li><strong>Court and arrest records</strong>, if you have any criminal history.</li>
+        <li><strong>Form G-1145</strong>, optional, to get an email or text message when USCIS accepts the package.</li>
+      </ul>
+
+      <h2>What happens after you file</h2>
+      <p>USCIS sets out the process on its adjustment of status page:</p>
+      <ol>
+        <li><strong>Receipt notice.</strong> USCIS confirms it has accepted the package.</li>
+        <li><strong>Biometrics appointment.</strong> You go to an Application Support Center for fingerprints, a photo and a signature. Missing it without rescheduling can lead to denial.</li>
+        <li><strong>Requests for evidence.</strong> USCIS may ask for more documents. Answer by the deadline.</li>
+        <li><strong>Interview.</strong> USCIS decides whether one is needed. If it is, bring the originals of everything you submitted, including all passports and I-94 records.</li>
+        <li><strong>Decision.</strong> An approval notice usually arrives before the green card. A denial notice explains the reasons.</li>
+      </ol>
+      <p>Processing times vary by category and office. Check the current estimate on USCIS's case processing times tool rather than relying on figures quoted elsewhere. If you move, tell USCIS within 10 days.</p>
+
+      <h2>Working and travelling while your I-485 is pending</h2>
+      <p>With a pending I-485 you can apply for a work permit (Form I-765) and an advance parole travel document (Form I-131). Travel is where many applicants make a costly mistake. <a href="https://www.uscis.gov/green-card/green-card-processes-and-procedures/travel-documents" target="_blank" rel="noopener">USCIS warns</a> that if you leave the US while your I-485 is pending without first getting advance parole, it will deny your case. The only exception is a narrow one for people in certain nonimmigrant statuses. You may also be refused re-entry.</p>
+
+      <h2>Mistakes that get Form I-485 rejected or denied</h2>
+      <ul>
+        <li><strong>Using an old edition.</strong> Anything other than the 09/18/26 edition is rejected.</li>
+        <li><strong>Wrong or combined fees.</strong> Each form needs the correct amount for its filing method.</li>
+        <li><strong>Missing medical exam.</strong> An I-485 without Form I-693, or with an opened envelope on a paper filing, risks rejection.</li>
+        <li><strong>No signature.</strong> USCIS rejects unsigned forms.</li>
+        <li><strong>Filing too early.</strong> Check that your priority date is current on the chart USCIS has chosen for that month.</li>
+        <li><strong>Sending it to the wrong address.</strong> Check the current filing address for your category, especially after the October 2026 change.</li>
+        <li><strong>Leaving the country without advance parole.</strong> Your application can be treated as abandoned.</li>
+      </ul>
+
+      <h2>If USCIS denies the application</h2>
+      <p>Most adjustment of status denials cannot be appealed. You may be able to file a motion to reopen or reconsider on Form I-290B, and the denial notice explains your options. Some applicants can raise the issue again in immigration court. An immigration attorney or a Department of Justice–accredited representative can assess your options.</p>
+
+      <h2>Form I-485 FAQs</h2>
+      <h3>How much does Form I-485 cost in 2026?</h3>
+      <p>$1,440 on paper or $1,390 online for applicants aged 14 and over. Children under 14 filing with a parent pay $950 on paper or $900 online. A work permit adds $260, and advance parole adds $630 on paper or $580 online.</p>
+      <h3>Can I file Form I-485 online?</h3>
+      <p>Only certain applicants can. USCIS lists the eligible categories on its "Forms Available to File Online" page. Everyone else files by mail.</p>
+      <h3>Do I have to submit the medical exam with Form I-485?</h3>
+      <p>Yes. Since December 2, 2024, USCIS requires Form I-693 with the I-485 and may reject applications filed without it.</p>
+      <h3>Can I travel while my green card application is pending?</h3>
+      <p>Only with advance parole, apart from a narrow exception for some nonimmigrant statuses. Leaving without it can lead to denial.</p>
+
+      <p>For more on how US policy and the labour market are shaping business decisions, see our report on <a href="/articles/companies-to-hire-remote-developers/">hiring remote developers</a>, an option many employers weigh against sponsoring workers for green cards.</p>
+
+      <p><em>Fees, form editions and rules were checked against USCIS pages, including the G-1055 fee schedule (edition 10/26/26), on November 6, 2026. Immigration rules change often. This article is general information, not legal advice. Check uscis.gov or consult a licensed immigration attorney before you file.</em></p>
+    `
+  },
+  {
     id: "global-stocks-ai-selloff-nikkei-ftse",
     title: "Global Stocks Slide as AI Sell-Off Spreads: Nikkei Hits Bear Market, FTSE Falls 2%",
     excerpt: "Wall Street's AI rout spread to Asia and Europe on Nov 6. The Nikkei and Kospi fell about 6%, the FTSE 100 dropped over 2% and sterling slipped.",
