@@ -1,6 +1,350 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "iykyk-meaning",
+    title: "IYKYK Meaning: What \"If You Know, You Know\" Means and How to Use It",
+    excerpt: "IYKYK means \"if you know, you know.\" Here is where the slang came from, how to use iykyk in texts and on TikTok, how to reply, and when to avoid it.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T21:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Close-up of a smartphone home screen showing Messages, Instagram, Facebook and other app icons",
+    isTrending: true,
+    views: 0,
+    tags: ["IYKYK", "Internet Slang", "Texting", "Social Media", "Explainer"],
+    content: `
+      <p class="lead">IYKYK means "if you know, you know." People add it to a post or message to signal an inside joke, a shared experience or a reference that only certain people will understand. If you don't get it, that is the point: the writer is deliberately leaving out the context.</p>
+
+      <blockquote>
+        <p><strong>IYKYK meaning, quick answer:</strong> IYKYK stands for "if you know, you know." It is informal internet slang that hints at something only an in-group will recognise, such as a shared memory, a niche product or an inside joke. It is usually written in lowercase (iykyk) or as a hashtag (#iykyk).</p>
+      </blockquote>
+
+      <h2>What Does IYKYK Stand For?</h2>
+      <p><a href="https://en.wiktionary.org/wiki/IYKYK" target="_blank" rel="noopener">Wiktionary</a> defines IYKYK as an informal, humorous initialism of "if you know, you know," with the alternative forms "iykyk" and "ifykyk". It cites a 2023 example from <em>The Atlantic</em>, where writer Amanda Mull describes clothing "for people without anything to prove" before adding "IYKYK."</p>
+      <p>In other words, IYKYK says: "I'm not going to explain this. People who were there, or who are part of this group, already understand."</p>
+
+      <h2>Where Did IYKYK Come From?</h2>
+      <p>The phrase "if you know, you know" is older than the acronym, but the abbreviation took off on social media. According to <a href="https://knowyourmeme.com/memes/iykyk" target="_blank" rel="noopener">Know Your Meme</a>:</p>
+      <ul>
+        <li><strong>December 4, 2016:</strong> an Urban Dictionary entry defined it as "If You Know You Know," with the example "Last nights party was crazy #iykyk."</li>
+        <li><strong>2019:</strong> it spread widely as a hashtag on Twitter, TikTok and Instagram.</li>
+        <li><strong>March 2020:</strong> the hashtag had been used more than 837,200 times on Instagram.</li>
+      </ul>
+      <p>Since then it has become everyday slang in texts, captions and comments, and it even appears in mainstream journalism.</p>
+
+      <h2>How to Use IYKYK: Examples</h2>
+      <p>IYKYK usually comes at the end of a message or caption, after a vague reference:</p>
+      <ul>
+        <li><strong>Shared memories:</strong> "Room 214, never forget. IYKYK."</li>
+        <li><strong>Niche tastes:</strong> "The best taco truck in town has no sign. iykyk."</li>
+        <li><strong>Fandoms and hobbies:</strong> "That ending scene... IYKYK."</li>
+        <li><strong>Brand marketing:</strong> companies use #iykyk to make a product feel like an insider's choice.</li>
+      </ul>
+      <p>The tone is playful and a little exclusive. It works best with friends or audiences who share the reference.</p>
+
+      <h2>How to Respond When Someone Says IYKYK</h2>
+      <ul>
+        <li><strong>If you know:</strong> play along with a laughing emoji, "lol so true" or your own detail.</li>
+        <li><strong>If you don't know:</strong> it is fine to ask. "OK, I don't know, what happened?" is a normal reply between friends.</li>
+        <li><strong>At work:</strong> avoid IYKYK in professional emails or customer messages. Leaving people out of a reference can read as unclear or cliquey.</li>
+      </ul>
+
+      <h2>Is IYKYK Rude?</h2>
+      <p>Usually not. It is mostly lighthearted. But because it deliberately excludes people who don't share the context, it can feel unfriendly in group chats where some members are newcomers. Like most slang, it depends on who you are talking to.</p>
+
+      <h2>Similar Slang to IYKYK</h2>
+      <table>
+        <thead><tr><th>Slang</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>IYKYK / ifykyk</td><td>If you know, you know</td></tr>
+          <tr><td>IJBOL</td><td>I just burst out laughing</td></tr>
+          <tr><td>NGL</td><td>Not gonna lie</td></tr>
+          <tr><td>FR</td><td>For real</td></tr>
+          <tr><td>WTV</td><td>Whatever (see our guide to <a href="/articles/what-does-wtv-mean/">what WTV means</a>)</td></tr>
+        </tbody>
+      </table>
+      <p>Slang and platform features change quickly. Our explainer on <a href="/articles/snapchat-planets-order-meaning/">Snapchat planets</a> covers another feature people often look up.</p>
+
+      <h2>IYKYK FAQs</h2>
+      <h3>What does IYKYK mean in text?</h3>
+      <p>"If you know, you know." It marks an inside joke or reference that only some people will understand.</p>
+      <h3>What does IYKYK mean on TikTok and Instagram?</h3>
+      <p>The same thing. It is often used as the hashtag #iykyk on videos and posts that reference a shared experience or niche interest.</p>
+      <h3>Is it IYKYK or iykyk?</h3>
+      <p>Both are used. Lowercase "iykyk" is more common in casual texts and captions.</p>
+
+      <p><em>Definitions and history were checked against Wiktionary and Know Your Meme on November 8, 2026. Slang meanings can shift over time.</em></p>
+    `
+  },
+  {
+    id: "what-does-wtv-mean",
+    title: "What Does WTV Mean? The Text Slang Explained, With Examples",
+    excerpt: "WTV means \"whatever\" in texts. See the three ways people use it, when it sounds friendly or rude, how to reply, and other meanings of WTV.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T21:05:00Z",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Smartphone with a colourful home screen appearing to float above an outstretched hand beside a river",
+    isTrending: true,
+    views: 0,
+    tags: ["WTV", "Internet Slang", "Texting", "Abbreviations", "Explainer"],
+    content: `
+      <p class="lead">WTV means "whatever." It is a short form people use in texts, chats and social media posts, either to say they don't mind ("pick wtv you want") or to brush something off ("ok wtv"). The exact tone depends on the conversation, so the same three letters can sound relaxed or dismissive.</p>
+
+      <blockquote>
+        <p><strong>What does WTV mean, quick answer:</strong> WTV is internet slang and a text-messaging abbreviation for "whatever." Use it casually with friends. It is too informal for work messages, and in a disagreement it can come across as dismissive.</p>
+      </blockquote>
+
+      <h2>What Does WTV Mean in Text?</h2>
+      <p><a href="https://en.wiktionary.org/wiki/wtv" target="_blank" rel="noopener">Wiktionary</a> lists "wtv" as internet slang and a text-messaging abbreviation of "whatever," used both as an interjection and as a pronoun. A related spelling is "wtvr". Wiktionary's usage example comes from a January 2024 <em>Billboard</em> article quoting a social media post by rapper GloRilla.</p>
+      <p>Because "whatever" itself has several senses, WTV does too. Here are its common uses.</p>
+
+      <h2>The Three Ways People Use WTV</h2>
+      <h3>1. "I don't mind": flexible and friendly</h3>
+      <ul>
+        <li>"What do you want for dinner?" "wtv you feel like"</li>
+        <li>"Wear wtv, it's casual."</li>
+      </ul>
+      <h3>2. "And so on": filling in the rest of a list</h3>
+      <ul>
+        <li>"Bring snacks, drinks, wtv."</li>
+      </ul>
+      <h3>3. "I don't care": dismissive or annoyed</h3>
+      <ul>
+        <li>"You were late again." "ok wtv"</li>
+      </ul>
+      <p>The third use is where misunderstandings happen. In an argument, a reply of only "wtv" can sound like the sender is ending the conversation or doesn't care. Adding context, or an emoji such as 😂 or 🤷, makes a relaxed tone clearer.</p>
+
+      <h2>Other Meanings of WTV</h2>
+      <p>Outside texting, WTV can stand for other things, such as company names, TV stations or file formats. The <a href="https://learn.microsoft.com/en-us/previous-versions/windows/desktop/windows-media-center-sdk/bb188788(v=msdn.10)" target="_blank" rel="noopener">.wtv file extension</a>, for example, is the format Windows Media Center used to save recorded TV shows. If you see WTV in a casual message, it almost always means "whatever."</p>
+
+      <h2>Should You Use WTV?</h2>
+      <table>
+        <thead><tr><th>Situation</th><th>Use WTV?</th></tr></thead>
+        <tbody>
+          <tr><td>Texting friends</td><td>Yes</td></tr>
+          <tr><td>Group chats and social media</td><td>Yes</td></tr>
+          <tr><td>Disagreements or sensitive topics</td><td>Better to write a full reply</td></tr>
+          <tr><td>Work email, Slack with clients, customer service</td><td>No</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Similar Slang</h2>
+      <ul>
+        <li><strong>IDC:</strong> I don't care</li>
+        <li><strong>IDK:</strong> I don't know</li>
+        <li><strong>IYKYK:</strong> if you know, you know (see our full guide to the <a href="/articles/iykyk-meaning/">IYKYK meaning</a>)</li>
+        <li><strong>NVM:</strong> never mind</li>
+      </ul>
+      <p>For more explainers on apps and online culture, see our <a href="/category/tech/">Tech &amp; AI coverage</a>.</p>
+
+      <h2>WTV FAQs</h2>
+      <h3>What does WTV mean from a girl or a guy?</h3>
+      <p>The meaning is the same for anyone: "whatever." Read the tone from the rest of the conversation, not from who sent it.</p>
+      <h3>Is WTV rude?</h3>
+      <p>Not by itself. "wtv works for me" is friendly. A one-word "wtv" reply during an argument can come across as rude.</p>
+      <h3>How do you reply to WTV?</h3>
+      <p>If it is friendly, just make the choice. If it seems annoyed, ask a direct question such as "Are you upset?" instead of matching the tone.</p>
+
+      <p><em>Checked against Wiktionary and Microsoft documentation on November 8, 2026. Slang meanings can shift over time.</em></p>
+    `
+  },
+  {
+    id: "temporary-identity-certificate",
+    title: "Temporary Identity Certificate (TIC): How to Get One in South Africa and India",
+    excerpt: "What a temporary identity certificate is, how to get a TIC from Home Affairs in South Africa (R70) and how India's ESIC TIC became the e-Pehchan card.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T21:10:00Z",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Clipboard holding a printed form beside a white pen and an open laptop on a marble desk",
+    isTrending: true,
+    views: 0,
+    tags: ["Temporary Identity Certificate", "Home Affairs", "ESIC", "Identity Documents", "Guide"],
+    content: `
+      <p class="lead">A temporary identity certificate (TIC) is a short-term identity document issued while you wait for a permanent ID card. The term means different things in different countries. In South Africa it is a Home Affairs document for people who have lost their ID. In India it was the first identity document issued to workers covered by the ESIC health insurance scheme. Here is how each one works, what it costs and how to get one.</p>
+
+      <blockquote>
+        <p><strong>Temporary identity certificate, quick answer:</strong></p>
+        <ul>
+          <li><strong>South Africa:</strong> issued by the Department of Home Affairs if your ID is lost, stolen or damaged. The regulated fee is R70. It is valid only for a short period and is accepted for voting.</li>
+          <li><strong>India (ESIC):</strong> an employee's first identity document under the ESIC scheme, now called the e-Pehchan card. It is downloaded online rather than collected from an office.</li>
+          <li><strong>Elsewhere:</strong> some agencies, such as US state motor vehicle departments, issue temporary paper ID certificates while a card is printed.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is a Temporary Identity Certificate?</h2>
+      <p>A TIC proves who you are for a limited time, usually while an official card is being produced or replaced. It is not a passport and generally cannot be used for international travel. Because it is temporary, banks, employers and other organisations decide for themselves whether to accept it, so carry supporting documents where you can.</p>
+
+      <h2>Temporary Identity Certificate in South Africa</h2>
+      <h3>Who issues it and what the law says</h3>
+      <p>South Africa's Department of Home Affairs issues TICs under section 16 of the <a href="https://source.acts.co.za/identification-act-1997/16__temporary_identity_certifi.php" target="_blank" rel="noopener">Identification Act, 1997</a>. The law allows the Director-General to issue a temporary identity certificate to a person on the population register. For the period and on the conditions stated on the certificate, it counts as the holder's identity card.</p>
+
+      <h3>When you need one</h3>
+      <ul>
+        <li>Your green ID book or smart ID card is lost, stolen or damaged.</li>
+        <li>You need to prove your identity urgently, for example to vote, while a replacement is being made.</li>
+      </ul>
+      <p>Since a 2011 ministerial directive, you can <a href="https://www.gov.za/news/media-statements/minister-dlamini-zuma-directs-delinking-temporary-identity-certificates" target="_blank" rel="noopener">apply for a TIC on its own</a> without also applying for a new ID at the same time. The Electoral Commission has accepted TICs for voting.</p>
+
+      <h3>How to get a temporary ID certificate in South Africa</h3>
+      <ol>
+        <li>Visit any Department of Home Affairs office. Phone ahead to confirm the office offers the service.</li>
+        <li>Bring two identical colour ID photos. The <a href="https://westerncape.gov.za/service/applying-identity-document" target="_blank" rel="noopener">Western Cape Government's guidance</a> says colour photos are needed for temporary IDs even at smart card offices.</li>
+        <li>Have your fingerprints verified. Issuing a TIC is subject to fingerprint verification.</li>
+        <li>Pay the fee. Regulation 15 of the Identification Act regulations sets the <a href="https://www.acts.co.za/identification-act-1997/r978_15__fees" target="_blank" rel="noopener">fee for a temporary identity certificate at R70</a>.</li>
+      </ol>
+      <p>If you have no ID details on record, Home Affairs may ask for more documents, such as a certified copy of your birth certificate, according to a <a href="https://groundup.news/qanda/271/" target="_blank" rel="noopener">GroundUp answer</a> on the process.</p>
+
+      <h3>How long is a South African TIC valid?</h3>
+      <p>Official guidance says a TIC is valid only for a short period, and the validity date is printed on the certificate. Older figures online, including a fee of R140 from 2011, are out of date. Always check the date on your own certificate and apply for your permanent ID straight away.</p>
+
+      <h2>Temporary Identity Certificate in India (ESIC)</h2>
+      <h3>What it is</h3>
+      <p>Under India's Employees' State Insurance (ESI) scheme, run by the <a href="https://www.esic.gov.in/" target="_blank" rel="noopener">Employees' State Insurance Corporation (ESIC)</a>, newly registered workers and their families used to receive a Temporary Identity Certificate. It let them use ESI medical benefits until they enrolled for a permanent biometric Pehchan card.</p>
+      <h3>The change to e-Pehchan</h3>
+      <p>An ESIC circular to employers explains that the TIC was originally valid for 30 days. It says the TIC "has been renamed as e-Pehchan Card." If the worker's Aadhaar number is entered in the ESIC database, the e-Pehchan card serves as a permanent identity card, with no need for biometric enrolment. Without Aadhaar, it remains temporary, and the worker and family are not entitled to treatment beyond 30 days of registration.</p>
+      <p>Some employer and payroll guides describe a three-month validity instead. Rules have changed over time, so check the current position on the ESIC portal or with your employer.</p>
+      <h3>How to get your ESIC TIC or e-Pehchan card</h3>
+      <ol>
+        <li>Your employer registers you with ESIC, which generates your 10-digit Insurance Number (IP number).</li>
+        <li>Make sure your and your family members' Aadhaar numbers are linked to that Insurance Number.</li>
+        <li>Download and print the e-Pehchan card from the ESIC insured person portal, or ask your employer for a copy.</li>
+      </ol>
+
+      <h2>Temporary Identity Certificates in Other Countries</h2>
+      <ul>
+        <li><strong>United States:</strong> some state motor vehicle departments issue a temporary paper ID certificate while a card is printed and mailed. Whether a business accepts it is up to that business.</li>
+        <li><strong>Poland:</strong> the Office for Foreigners issues a <a href="https://www.gov.pl/web/udsc-en/application-for-issuance--replacement-of-the-temporary-foreigner-identity-certificate" target="_blank" rel="noopener">temporary foreigner identity certificate</a> to certain foreign nationals.</li>
+        <li><strong>United Arab Emirates:</strong> in some free zones, labourers employed through approved manpower companies receive a temporary identity card.</li>
+      </ul>
+
+      <h2>Tips for Using a Temporary ID Certificate</h2>
+      <ul>
+        <li>Keep it flat and clean. Damaged paper certificates may be rejected.</li>
+        <li>Carry a second document, such as a birth certificate, driving licence or bank card, when you use it.</li>
+        <li>Note the expiry date and follow up on your permanent ID before it lapses.</li>
+        <li>Never pay an agent who promises a "fast-track" TIC. Apply directly with the issuing authority.</li>
+      </ul>
+      <p>If your ID was lost because of a scam or theft, our guides to spotting fraud, such as our <a href="/articles/puzutask-com-review/">warning about "pay to unlock" task scams</a>, cover common tactics to watch for.</p>
+
+      <h2>Temporary Identity Certificate FAQs</h2>
+      <h3>What is a temporary identity certificate used for?</h3>
+      <p>To prove your identity for a short time while a permanent ID is issued or replaced, for example for voting in South Africa or for ESI medical benefits in India.</p>
+      <h3>How much does a temporary identity certificate cost in South Africa?</h3>
+      <p>R70, according to the current Identification Act regulations.</p>
+      <h3>Can I travel abroad with a temporary identity certificate?</h3>
+      <p>Generally no. A TIC is not a travel document. You need a passport, or an emergency travel document from the passport authority.</p>
+      <h3>Is the ESIC TIC the same as the e-Pehchan card?</h3>
+      <p>Yes. ESIC renamed the TIC as the e-Pehchan card. It becomes permanent once your Aadhaar number is linked.</p>
+
+      <p><em>Checked on November 8, 2026, against South Africa's Identification Act and regulations, government statements, Western Cape Government guidance and an ESIC employer circular. Requirements can change, so confirm with the issuing authority before you apply.</em></p>
+    `
+  },
+  {
+    id: "fundfireinsight-com-review",
+    title: "FundFireInsight.com Review: Who Runs It and Can You Trust Its Finance Content?",
+    excerpt: "What is fundfireinsight.com? We checked its 2023 domain, 2026 relaunch, Adoosylinks byline and sponsored-post offer. Here is what the site really is.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T21:15:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Laptop on a grey sofa displaying a dashboard of charts, a world map and a blue donut graph",
+    isTrending: true,
+    views: 0,
+    tags: ["FundFireInsight", "Website Review", "Guest Posting", "Personal Finance", "SEO"],
+    content: `
+      <p class="lead">FundFireInsight.com (searched as "fundfireinsight.com" or "fundfireinsight com") is a finance blog that presents itself as an independent "digital finance media publication". Its articles are credited to the same "Adoosylinks" byline we found on TheModelEats.com, and its advertising page offers sponsored articles and guest posts. We checked the site, its domain history and its authors on November 8, 2026.</p>
+
+      <blockquote>
+        <p><strong>FundFireInsight.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a WordPress finance blog with 31 posts, the oldest dated February 18, 2026.</li>
+          <li><strong>Domain:</strong> registered August 18, 2023, and online since at least 2024.</li>
+          <li><strong>Authors:</strong> "Adoosylinks" and "mansi", with no bios or financial credentials.</li>
+          <li><strong>Commercial content:</strong> sponsored articles, guest posts and affiliate partnerships are offered, and the site shows a guest post marketplace banner.</li>
+          <li><strong>Verdict:</strong> not a substitute for regulated financial advice or established financial news.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is FundFireInsight.com?</h2>
+      <p>The site's title is "FundFireInsight | Finance &amp; Market Insights". Its <a href="https://www.fundfireinsight.com/about-fundfireinsight-com/" target="_blank" rel="nofollow noopener">About page</a> calls it "an independent digital publication focused on financial and economic coverage" covering markets, investing, companies, money and the economy. It has published editorial, corrections and disclaimer policies, which is more than many similar blogs offer.</p>
+      <p>But the policies describe standards, not people. The site names no editor, owner, company or qualified finance writers.</p>
+
+      <h2>Domain History</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows fundfireinsight.com was registered on August 18, 2023, through Wild West Domains, and runs to 2031. You can check it with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>.</li>
+        <li><strong>2025:</strong> an August 2025 <a href="https://web.archive.org/web/20250805011428/https://www.fundfireinsight.com/" target="_blank" rel="noopener">Wayback Machine snapshot</a> shows the site titled "Fund Fire Insight – Save what you can afford to lose." Its homepage mixed finance posts with an unrelated celebrity clickbait headline.</li>
+        <li><strong>2026:</strong> the site was relaunched as a more polished finance publication. Its 31 current posts are dated from February 18 to September 9, 2026.</li>
+      </ul>
+
+      <h2>Who Writes for FundFireInsight.com?</h2>
+      <p>The site's WordPress data lists two authors: "Adoosylinks" and "mansi". Neither has a biography. The "Adoosylinks" byline also appears on every post on <a href="/articles/themodeleats-com-review/">TheModelEats.com</a>, and its name closely resembles Adoovy, a guest post marketplace whose banner appears on FundFireInsight.com's homepage. The name "mansi" also appears as an author on <a href="/articles/cnlawblog-review/">CNLawBlog</a> and <a href="/articles/puzutask-com-review/">Puzutask.com</a>. These shared details suggest the sites belong to the same guest-posting network, although we could not confirm ownership.</p>
+
+      <h2>What Does FundFireInsight.com Publish?</h2>
+      <p>Recent headlines include:</p>
+      <ul>
+        <li>"Where FundFireInsight.com Finds the Biggest Shifts in Institutional Capital" (September 9, 2026)</li>
+        <li>"5 Money Mistakes Travelers Make Before Moving Abroad" (September 9, 2026)</li>
+        <li>"Fintechzoom Car Insurance: Compare, Save, and Drive with Confidence" (August 19, 2026)</li>
+        <li>"Why More Borrowers Are Comparing Payday Loans to Alternatives" (March 4, 2026)</li>
+        <li>"Why Prop Trading Is the Smart Choice for Ambitious Traders in 2024" (dated February 25, 2026)</li>
+      </ul>
+      <p>Several posts target other websites' names, such as Fintechzoom, or cover high-risk products such as payday loans and proprietary trading, which are common topics for paid placements. A post dated 2026 that calls prop trading "the smart choice" for 2024 suggests recycled content.</p>
+
+      <h2>Does FundFireInsight.com Sell Sponsored Posts?</h2>
+      <p>Yes. Its <a href="https://www.fundfireinsight.com/advertising-partnerships/" target="_blank" rel="nofollow noopener">Advertising &amp; Partnerships page</a> lists "sponsored articles and branded content", "guest and contributed articles", "affiliate partnerships" and "product or service features" among the formats it offers. No prices are published. Google's <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">link guidelines</a> ask sites to mark paid links with <code>rel="sponsored"</code>. Readers should treat finance articles on sites that sell placements as potentially promotional.</p>
+
+      <h2>Is FundFireInsight.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Clear ownership</td><td>No named owner, editor or company</td></tr>
+          <tr><td>Qualified writers</td><td>Two bylines with no bios or credentials</td></tr>
+          <tr><td>Policies</td><td>Editorial, corrections and disclaimer pages published</td></tr>
+          <tr><td>Commercial content</td><td>Sponsored posts, guest posts and affiliate deals offered</td></tr>
+          <tr><td>History</td><td>2023 domain, relaunched in 2026 after an earlier, lower-quality version</td></tr>
+          <tr><td>Scam reports</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>FundFireInsight.com does not ask readers for money, and we found no scam warnings. It is best read as a commercial content site. Before acting on any investment, loan or trading information, check the firm with a regulator such as the <a href="https://register.fca.org.uk/" target="_blank" rel="noopener">UK's FCA register</a> or <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener">FINRA BrokerCheck</a> in the US. For reliable market coverage, see our <a href="/category/markets/">Markets &amp; Finance section</a>.</p>
+
+      <h2>FundFireInsight.com FAQs</h2>
+      <h3>What is fundfireinsight.com?</h3>
+      <p>A WordPress finance blog, registered in 2023 and relaunched in 2026, that publishes general finance articles and sells sponsored and guest posts.</p>
+      <h3>Who runs FundFireInsight.com?</h3>
+      <p>The site does not name an owner. Its main byline, "Adoosylinks", also appears on TheModelEats.com.</p>
+      <h3>Can I trust FundFireInsight.com for investment advice?</h3>
+      <p>No. Its writers have no listed credentials, and some content may be sponsored. Use regulated advisers and established financial news.</p>
+
+      <p><em>Checked on November 8, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages and WordPress data. We will update this review if FundFireInsight.com responds or changes.</em></p>
+    `
+  },
+  {
     id: "meta-midterms-data-centers-harder",
     title: "Meta Says Midterm Results Will Make AI Data Centers Harder to Build",
     excerpt: "Meta's president says building US AI data centers will get harder after the 2026 midterms, as voters backed limits in 40 of 41 local ballot measures.",
@@ -2091,7 +2435,7 @@ const ARTICLES = [
       <p>Recent headlines include "Unlocking California's Ban: Why Your Non-Compete is Likely Null and Void Under Code 16600" and "Charting a Course Through Life's Disruptions: Understanding Exodus Behavioral Health." Many name a specific company, clinic or school, a pattern common on sites that sell sponsored posts.</p>
 
       <h2>Who Writes for TheModelEats.com?</h2>
-      <p>Every post we saw is credited to "Adoosylinks," and the site's own user sitemap lists that as its only author. The <a href="https://www.themodeleats.com/author/adoosylinks/" target="_blank" rel="nofollow noopener">author page</a> has no biography. The name closely resembles Adoovy, the guest post marketplace advertised in the site's sidebar.</p>
+      <p>Every post we saw is credited to "Adoosylinks," and the site's own user sitemap lists that as its only author. The <a href="https://www.themodeleats.com/author/adoosylinks/" target="_blank" rel="nofollow noopener">author page</a> has no biography. The name closely resembles Adoovy, the guest post marketplace advertised in the site's sidebar. The same byline appears on <a href="/articles/fundfireinsight-com-review/">FundFireInsight.com</a>.</p>
       <p>For readers, that means no named writer stands behind articles on topics such as employment law and mental health, where expert input matters most.</p>
 
       <h2>Is TheModelEats.com Still Publishing?</h2>
