@@ -1,6 +1,499 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "mygreenbucks-net-kenneth-jones",
+    title: "MyGreenBucks Net Jones: Who Is Kenneth Jones and Is MyGreenBucks.net Real?",
+    excerpt: "Who is Kenneth Jones of MyGreenBucks.net? We checked the byline, the site's conflicting claims, its 1,497 posts and domain history. Here is what is true.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T16:00:00Z",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Small green plant sprouting from a pile of copper and silver coins against a grey background",
+    isTrending: true,
+    views: 0,
+    tags: ["MyGreenBucks", "Kenneth Jones", "Website Review", "Personal Finance", "Scam Check"],
+    content: `
+      <p class="lead">People searching "mygreenbucks net jones" or "Kenneth MyGreenBucks .net" usually want to know who Kenneth Jones is and whether MyGreenBucks.net is a real finance platform. Here is what we found. MyGreenBucks.net is a WordPress content site, not an investment or rewards platform, and "Kenneth Jones" is a byline on that site with no verifiable real-world identity. We checked the domain record, its archive history and the site's own pages on November 8, 2026.</p>
+
+      <blockquote>
+        <p><strong>MyGreenBucks.net and Kenneth Jones, at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a blog with about 1,497 posts on finance, crypto, business, casinos, betting and loans.</li>
+          <li><strong>Who Kenneth Jones is:</strong> the display name on one of six author accounts on the site. The site's own articles about him contradict each other.</li>
+          <li><strong>Domain:</strong> the name was used as early as 2009. The current registration dates from August 19, 2021.</li>
+          <li><strong>Money:</strong> we found no sign-up, investment, rewards or payout feature. Do not send money to anyone claiming to represent it.</li>
+          <li><strong>Verdict:</strong> an SEO content site. Its finance, crypto and gambling articles should not guide money decisions.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Who Is Kenneth Jones at MyGreenBucks.net?</h2>
+      <p>On the site, "Kenneth Jones" is the name shown on posts from the author account whose web address ends in /author/james/. That account's posts range from finance tips to gambling and adult content. Archived copies show the "By Kenneth Jones" byline in use by November 2022. In September 2021, the same site credited posts to "James Gussie".</p>
+      <p>MyGreenBucks.net has also published several articles <em>about</em> Kenneth Jones, mostly under other house bylines such as "Xanthira Marzavina". Their claims conflict:</p>
+      <ul>
+        <li>A December 2024 post is titled "Mygreenbucks Kenneth Jones: How Kenneth Jones Built a $2.5B Fintech Empire".</li>
+        <li>A post on the same day is titled "Kenneth MyGreenBucks .net Review: Shocking Truth About This Investment Platform Exposed". It presents the site as a possible scam.</li>
+        <li>An August 2026 "profile" says he joined MyGreenBucks in 2019. The current domain registration began in August 2021. The same profile opens by describing a different author, Xanthira Marzavina.</li>
+      </ul>
+      <p>We found no independent record, professional profile or news coverage that confirms a real person behind the name, or any of the credentials attributed to him. A <a href="https://www.tycoonstory.com/mygreenbucks-net-jones/" target="_blank" rel="nofollow noopener">TycoonStory review</a> also flagged claims linked to the name, including Goldman Sachs and JPMorgan experience, "500,000+ users" and Forbes 30 Under 30, and marked them all unverified. The safest reading is that Kenneth Jones is a byline, not a verified finance expert.</p>
+
+      <h2>What Is MyGreenBucks.net?</h2>
+      <p>The homepage describes the site as a place to "Master your money with free finance tips, budgeting guides, and crypto insights". Its menu lists Finance For Life, Managing Money, Cryptocurrency, Business Time, About Us and Contact. The About page, published in August 2022, describes a site "dedicated to helping you make and manage your money" but names no owner, company or founder. The only contact is a form and a generic email address.</p>
+      <p>Some websites describe MyGreenBucks.net as a rewards app, gift-card earning platform or "eco finance" service. We found no such feature: no sign-up flow, wallet, payouts or investment product in the site's navigation.</p>
+
+      <h2>What Does MyGreenBucks.net Publish?</h2>
+      <p>The site's sitemaps list about 1,497 posts, from September 2022 to November 6, 2026. In the post web addresses, "casino" appears 102 times, "slot" 79, "crypto" 70, "betting" 35 and "loan" 33. Examples include:</p>
+      <ul>
+        <li>"Roobet Referral Code 2026: Rewards, Bonuses and How It Works"</li>
+        <li>Posts about betting sites outside GamStop, the UK's gambling self-exclusion scheme</li>
+        <li>Nonsense-titled posts such as "Bucksmygrene Neutrino Waffle IPO: What Investors Need To Know In 2026"</li>
+        <li>Many posts that target misspellings of the site's own name</li>
+      </ul>
+      <p>External links in the posts we checked, including links to a lender, a tax-relief firm and a betting-site list, carried no <code>sponsored</code> or <code>nofollow</code> label. <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites</a> to label paid links that way.</p>
+
+      <h2>Domain History</h2>
+      <ul>
+        <li><strong>2009:</strong> the Wayback Machine shows mygreenbucks.net as a blog titled "Mygreenbucks.net| Autopilotincome101.com|Blogging 5.0", with movie and celebrity posts.</li>
+        <li><strong>2021:</strong> the official Verisign registry record shows the current registration began on August 19, 2021, through GoDaddy. The first snapshot after that shows personal finance posts.</li>
+        <li><strong>2022 onwards:</strong> the "Kenneth Jones" byline appears, and publishing grows to well over a thousand posts.</li>
+      </ul>
+
+      <h2>Does MyGreenBucks.net Sell Guest Posts?</h2>
+      <p>The site has no Write for Us page. However, a PeoplePerHour listing offered a "Finance Guest Post Backlink on mygreenbucks.net" for $100, with a "dofollow" link. The listing is now marked inactive and had a buyer review dated May 2025. Its seller is a third party, and we could not confirm a link to the site's owner.</p>
+
+      <h2>Is MyGreenBucks.net Legit or a Scam?</h2>
+      <p>We found no regulator warning or credible scam report. The site does not appear to take money from readers. It is not a legitimate source of financial guidance either:</p>
+      <ul>
+        <li>No named owner or editor, and no verifiable author credentials.</li>
+        <li>Conflicting, unverifiable claims about its "founder".</li>
+        <li>Large volumes of casino, betting and loan content, with no labels on commercial links.</li>
+      </ul>
+      <p>If anyone contacts you claiming to be Kenneth Jones from MyGreenBucks and offers investment returns or payouts, treat it as a red flag. You can check investment firms through the <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener">FINRA BrokerCheck</a> tool in the US or the <a href="https://register.fca.org.uk/" target="_blank" rel="noopener">FCA register</a> in the UK.</p>
+      <p>For how we assess sites like this, see our reviews of <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a> and <a href="/articles/themodeleats-com-review/">TheModelEats.com</a>.</p>
+
+      <h2>MyGreenBucks Net Jones FAQs</h2>
+      <h3>Who is Kenneth Jones from MyGreenBucks.net?</h3>
+      <p>A byline on MyGreenBucks.net. The site publishes conflicting claims about him, and we found no independent evidence of his identity or credentials.</p>
+      <h3>Is MyGreenBucks.net an investment platform?</h3>
+      <p>No. It is a blog. We found no investment, rewards or payout features.</p>
+      <h3>Is MyGreenBucks.net safe?</h3>
+      <p>Reading it is low-risk, but do not act on its finance, crypto, gambling or loan content without independent advice, and never send money to anyone using its name.</p>
+      <h3>When was MyGreenBucks.net created?</h3>
+      <p>The name was in use by 2009. The current registration dates from August 19, 2021.</p>
+
+      <p><em>Information was checked on November 8, 2026, using the Verisign registry record, the Wayback Machine, the site's own pages and sitemaps, and the third-party listings linked above. We will update this review if MyGreenBucks.net responds or provides verifiable details.</em></p>
+    `
+  },
+  {
+    id: "webitbgroup-com",
+    title: "Webitbgroup.com: Why the Site Is Offline and What Web ITB Group Was",
+    excerpt: "Webitbgroup.com is offline as of Nov 8, 2026. We traced it from a 2011 Indian SEO agency to a guest-post site and checked what its DNS failure means.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T16:05:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Overhead view of a shared desk with several laptops, phones, headphones and notebooks as people work",
+    isTrending: false,
+    views: 0,
+    tags: ["Webitbgroup", "Guest Posting", "Website Review", "Domains", "SEO"],
+    content: `
+      <p class="lead">Webitbgroup.com is offline. As of November 8, 2026, the domain does not resolve: its nameservers refuse to answer, so browsers cannot find the site. Until 2025 it ran a guest-blogging site called "Web ITB Group". Before that, from 2011, it was an Indian web design and SEO agency. Here is what we could verify about webitbgroup.com and what its outage means.</p>
+
+      <blockquote>
+        <p><strong>Webitbgroup.com at a glance:</strong></p>
+        <ul>
+          <li><strong>Status:</strong> unreachable. DNS lookups fail as of November 8, 2026.</li>
+          <li><strong>Domain:</strong> registered January 16, 2011, and renewed to January 2033.</li>
+          <li><strong>Last seen online:</strong> the Wayback Machine's last working capture is August 15, 2025.</li>
+          <li><strong>What it was:</strong> a "News Articles And Guest Blogging" site taking guest posts on mixed topics.</li>
+          <li><strong>Verdict:</strong> do not pay for a guest post on it, and do not rely on links pointing to it.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Is Webitbgroup.com Down?</h2>
+      <p>Yes. On November 8, 2026, requests to webitbgroup.com and www.webitbgroup.com failed with a DNS error. A lookup through Google's public DNS returned SERVFAIL, because the domain's nameservers refused to answer for it. The domain is still registered, but the site cannot be reached until its DNS is fixed.</p>
+      <p>We cannot say why the DNS broke. Common reasons include an expired hosting account, nameservers being changed or the site being abandoned.</p>
+
+      <h2>Domain History: From SEO Agency to Guest Post Site</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows webitbgroup.com was registered on January 16, 2011, through Wild West Domains, and renewed to January 16, 2033.</li>
+        <li><strong>2011:</strong> the earliest <a href="https://web.archive.org/web/20110214015849/http://webitbgroup.com/" target="_blank" rel="noopener">Wayback Machine capture</a> shows an Indian agency site titled "Seo services, web designing, web development, web hosting, website promotion", with packages and careers pages.</li>
+        <li><strong>2025:</strong> the last working <a href="https://web.archive.org/web/20250815132757/https://www.webitbgroup.com/" target="_blank" rel="noopener">capture, from August 15, 2025</a>, shows "Web ITB Group | News Articles And Guest Blogging - Best Blog post site, Article, News, Write For US". It ran on WordPress with a plugin named "seo-automated-link-building".</li>
+      </ul>
+
+      <h2>What Did Webitbgroup.com Publish?</h2>
+      <p>Archived posts, bylined "webitbgroup", were dated from 2018 to 2025 and covered unrelated topics. Examples include:</p>
+      <ul>
+        <li>"The Most Magical Castles to Visit in the Loire Valley" (May 1, 2025)</li>
+        <li>"Understanding the Stages of Grief After a Loss" (June 4, 2025)</li>
+        <li>"How to Find the Right Lawyer for Your Academic Dismissal Appeal" (April 12, 2023)</li>
+        <li>"How to Resolve and Fix QuickBooKs Error 6175"</li>
+      </ul>
+      <p>Outbound links in archived posts, such as links to a law firm and a funeral home, carried no <code>nofollow</code> or <code>sponsored</code> label.</p>
+
+      <h2>Did Webitbgroup.com Accept Guest Posts?</h2>
+      <p>Yes. Its <a href="https://web.archive.org/web/20250620051839/https://www.webitbgroup.com/write-for-us/" target="_blank" rel="noopener">archived Write for Us page</a> said the site was "specially made for guest bloggers". It asked for at least 800 words, an author bio and no more than three outbound links. It banned adult and casino content and affiliate links. No price was published.</p>
+
+      <h2>What the Outage Means</h2>
+      <ul>
+        <li><strong>If you bought a post there:</strong> your article and its link are no longer reachable. Search engines will eventually drop links from pages that stay unreachable.</li>
+        <li><strong>If someone offers you a post on it now:</strong> do not pay. The site is offline.</li>
+        <li><strong>If you are researching the name:</strong> some search results may still show cached pages from before the outage.</li>
+      </ul>
+      <p>This is a wider risk of buying links on small guest-post sites: they can disappear without notice. For other sites we have checked, see our reviews of <a href="/articles/journalword-com-review/">JournalWord.com</a> and <a href="/articles/uploadblog-com-review-online-posting/">UploadBlog.com</a>.</p>
+
+      <h2>Webitbgroup.com FAQs</h2>
+      <h3>Is webitbgroup.com working?</h3>
+      <p>No. As of November 8, 2026, the domain's DNS fails and the site cannot be loaded.</p>
+      <h3>What was webitbgroup.com?</h3>
+      <p>Originally an Indian web design and SEO agency site (2011), and later a guest-blogging site called Web ITB Group.</p>
+      <h3>Is webitbgroup.com still registered?</h3>
+      <p>Yes. According to the Verisign registry, the registration runs to January 16, 2033.</p>
+
+      <p><em>Information was checked on November 8, 2026, using the Verisign registry record, DNS lookups and Wayback Machine captures. We will update this article if webitbgroup.com comes back online.</em></p>
+    `
+  },
+  {
+    id: "yonosamachar-com-review",
+    title: "Yonosamachar.com Review: What Yono Samachar Is and Why It Isn't SBI YONO",
+    excerpt: "Is yonosamachar com linked to SBI YONO or Yono games? No. We checked its 2023 domain, 86 posts, loan and betting content and missing policy pages.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T16:10:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Glossy 3D app icons for social and media apps arranged on dark blocks against a black background",
+    isTrending: true,
+    views: 0,
+    tags: ["Yonosamachar", "Website Review", "Loan Apps", "India", "Guest Posting"],
+    content: `
+      <p class="lead">Yonosamachar.com (often searched as "yonosamachar com") is a small WordPress blog with mixed posts on loan apps, movie download sites, sports betting and general topics. Despite the name, it has no connection to SBI's YONO banking app or to "Yono" gaming apps, and it has not published anything new since August 2025. We checked the domain, its posts and its policies on November 8, 2026.</p>
+
+      <blockquote>
+        <p><strong>Yonosamachar.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a multi-topic WordPress blog with 86 posts.</li>
+          <li><strong>Domain:</strong> registered March 18, 2023, though some posts are dated as early as 2015.</li>
+          <li><strong>Author:</strong> one byline, "Roland".</li>
+          <li><strong>Pages:</strong> no About, Contact, Privacy Policy or Disclaimer page.</li>
+          <li><strong>Last post:</strong> August 29, 2025.</li>
+          <li><strong>Verdict:</strong> not a news source. Treat its loan and betting content with caution.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Yonosamachar.com?</h2>
+      <p>"Samachar" means "news" in Hindi, but Yono Samachar is not a news outlet. It is a WordPress blog with categories for Automotive, Business, Education, Entertainment, Fashion, Finance, Health, Lifestyle, Technology and Travel. The homepage has no description and the site has no WordPress pages at all: requests for About, Contact, Privacy Policy and Write for Us pages return "page not found".</p>
+      <p>The only contact is a Gmail address in the footer. It is the same address listed on <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a>, which suggests the two sites share an operator or manager.</p>
+
+      <h2>Is Yonosamachar.com Related to SBI YONO or Yono Games?</h2>
+      <p>No. We searched the site's posts and sitemap. "Yono" appears only as part of the site's name. There is no content about State Bank of India's YONO app, and no Yono rummy, teen patti or APK download content. Anyone looking for the SBI YONO app should use the official app stores or <a href="https://sbi.co.in/" target="_blank" rel="noopener">SBI's website</a>, not third-party sites.</p>
+
+      <h2>Domain History and Post Dates</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows yonosamachar.com was registered on March 18, 2023, through Wild West Domains.</li>
+        <li><strong>Backdated posts:</strong> the oldest posts are dated December 2015, such as "10 secrets about hot songs the government is hiding". That is more than seven years before the domain was registered, so these appear to be placeholder or demo posts with old dates.</li>
+        <li><strong>Activity:</strong> real publishing ran mainly from 2023 to August 29, 2025. Nothing new has appeared in over 14 months.</li>
+      </ul>
+
+      <h2>What Does Yonosamachar.com Publish?</h2>
+      <p>The site's 86 posts are all credited to "Roland", and the author's web address uses a different name. Topics include:</p>
+      <ul>
+        <li><strong>Loan apps:</strong> "RBI Approved Loan Apps: Your Ultimate List" and posts on credit (CIBIL) scores.</li>
+        <li><strong>Movie download sites:</strong> "Netninja: A Movie Downloader for Android – Your Gateway to Free Entertainment" and FzTvSeries.</li>
+        <li><strong>Sports betting:</strong> guides to betting platforms in Zambia, such as "Sports Betting in Zambia: A Comprehensive Guide to Online Football Betting with Castlebet".</li>
+        <li><strong>Trading:</strong> "What's New in MT5? Top Features and Updates", which links to a forex broker without a sponsored label.</li>
+      </ul>
+      <p>Only one betting post carries a responsible-gambling disclaimer. The site has no age warning or privacy policy, and its loan-app posts have no financial disclaimers. Sites that promote free movie downloads may also point readers to pirated content, which can carry legal and malware risks.</p>
+
+      <h2>Does Yonosamachar.com Sell Guest Posts?</h2>
+      <p>The site has no guest post page, but every page shows a "Guest Post Marketplace 2026" banner linking to Adoovy. That is the same marketplace advertised on <a href="/articles/themodeleats-com-review/">TheModelEats.com</a>. We found no published price for a post on Yonosamachar.com.</p>
+
+      <h2>Is Yonosamachar.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What a credible site shows</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Owner and contact</td><td>Named publisher, contact page</td><td>Gmail address only, shared with another blog</td></tr>
+          <tr><td>Policies</td><td>Privacy policy, disclaimers</td><td>None</td></tr>
+          <tr><td>Authors</td><td>Named writers with bios</td><td>One byline, no bio</td></tr>
+          <tr><td>Accurate dates</td><td>Posts dated after the site launched</td><td>Posts dated 2015 on a 2023 domain</td></tr>
+          <tr><td>Activity</td><td>Regular publishing</td><td>No posts since August 2025</td></tr>
+        </tbody>
+      </table>
+      <p>We found no scam warnings, and the site does not ask readers for money. It is a low-quality content blog rather than a news or finance service. Do not use it to choose a loan app or betting site. In India, check that lenders are regulated through the <a href="https://www.rbi.org.in/" target="_blank" rel="noopener">Reserve Bank of India</a>.</p>
+
+      <h2>Yonosamachar.com FAQs</h2>
+      <h3>What is yonosamachar com?</h3>
+      <p>A multi-topic WordPress blog registered in 2023. Despite its name, it is not a news site and is not connected to SBI YONO.</p>
+      <h3>Is Yonosamachar.com still active?</h3>
+      <p>The site is online, but its newest post is dated August 29, 2025.</p>
+      <h3>Who runs Yonosamachar.com?</h3>
+      <p>The site does not say. It lists only a Gmail contact address, which also appears on SparkPressFusion.com.</p>
+
+      <p><em>Information was checked on November 8, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages and WordPress data. We will update this review if Yonosamachar.com responds or changes.</em></p>
+    `
+  },
+  {
+    id: "dreammeaniing-com-review",
+    title: "Dreammeaniing.com Review: The Dream Meaning Site Behind the Double-I Spelling",
+    excerpt: "What is dreammeaniing com? We checked the 2025 dream site, how it differs from dreammeaning.com, its authors and its shift to unrelated commercial posts.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T16:15:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Swirls of bright blue and orange ink spreading through dark water like coloured smoke",
+    isTrending: true,
+    views: 0,
+    tags: ["Dreammeaniing", "Dream Meaning", "Website Review", "Typosquatting", "SEO"],
+    content: `
+      <p class="lead">Dreammeaniing.com (spelled with a double "i", and often searched as "dreammeaniing com") is a young WordPress site that started as a dream-interpretation blog. Since late 2026 it has published more and more unrelated commercial posts. It is not the long-running dreammeaning.com, which has a different owner history and currently does not load. We checked both domains on November 8, 2026.</p>
+
+      <blockquote>
+        <p><strong>Dreammeaniing.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a dream-meaning blog with 276 posts. About 218 are dream interpretations.</li>
+          <li><strong>Domain:</strong> registered November 24, 2025. Its first post is dated the same day.</li>
+          <li><strong>Recent shift:</strong> since around September 2026, many new posts cover floor cleaners, vapes, peptides and car scrappage.</li>
+          <li><strong>Contact:</strong> an email address on a different company's domain.</li>
+          <li><strong>Verdict:</strong> fine for light reading about dreams. It is not a source for health or mental-health advice.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Dreammeaniing.com?</h2>
+      <p>The site's title is "Dream meaniing - dreammeaniing.com". Its About page says it "exists for one purpose: to explain dreams in clear, simple language. No mystical nonsense." Its pages include an "Unlock Your Dream Meaning" AI chat widget and Google AdSense ads. The Disclaimer page says the content is "for educational and entertainment purposes only."</p>
+      <p>The menu has Dream Meanings, About, Contact, Disclaimer and Privacy Policy pages. There is no Write for Us or advertising page.</p>
+
+      <h2>Dreammeaniing.com vs Dreammeaning.com</h2>
+      <p>The misspelled name matters. According to the Verisign .com registry, the correctly spelled <strong>dreammeaning.com</strong> was registered in December 2003. In 2008 the Wayback Machine shows it as "The Leading Hypnotherapy Site on the Net", and in our test on November 8, 2026 it did not load.</p>
+      <p><strong>Dreammeaniing.com</strong> was registered on November 24, 2025, through Hostinger, uses different nameservers and has no archive history before April 2026. We found no ownership link between the two. A third lookalike, dreameaninng.com, was registered in November 2025 and is linked from dreammeaniing.com's comment section.</p>
+      <p>Registering a near-identical misspelling of an established domain name is a common way to capture search traffic. Readers looking for the original site should check the spelling carefully.</p>
+
+      <h2>Who Writes for Dreammeaniing.com?</h2>
+      <p>The site lists two author accounts. One, named "Admin", has a bio describing "Henry" as "a passionate dream analyst and writer". The other, "Armani Sharp", has no bio. No qualifications in psychology or sleep science are listed. The only contact address is on trustautomations.com, a separate domain, and the site names no owner.</p>
+
+      <h2>What Does Dreammeaniing.com Publish?</h2>
+      <p>The site's 276 posts run from November 24, 2025, to November 2, 2026. Most of the early posts are dream interpretations, for example "Fever Dream Meaning: Guilt, Grief, or Mental Overload?" and "Dreaming About Being Arrested? What It Means, and What to Do If It Actually Happens".</p>
+      <p>From around September 2026, much of the new content has nothing to do with dreams:</p>
+      <ul>
+        <li>"Best Hard Floor Cleaners for Black Friday Shoppers in Australia" (October 29, 2026)</li>
+        <li>"Tirzepatide Research Peptides: Understanding Purity, Storage, and Handling" (September 4, 2026)</li>
+        <li>"What Is the Best Vape Flavor and Device for You?" (September 9, 2026)</li>
+        <li>Posts on car scrappage, proprietary trading firms and hospital claims</li>
+      </ul>
+      <p>A post on hospital claims links to a claims company without a <code>sponsored</code> label. <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites</a> to use that label for paid links. A dream site that starts publishing unrelated product and service articles is a typical sign that it is selling placements.</p>
+
+      <h2>Can You Trust Dream Interpretations Online?</h2>
+      <p>Dream interpretation is not an exact science, and the meaning of a dream is personal. The <a href="https://www.sleepfoundation.org/dreams" target="_blank" rel="noopener">Sleep Foundation</a> notes that researchers still debate why we dream. Treat any site's interpretations as entertainment. If dreams are distressing, frequent nightmares disturb your sleep, or a post about "guilt, grief, or mental overload" sounds familiar, speak to a doctor or licensed therapist.</p>
+
+      <h2>Is Dreammeaniing.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Age</td><td>Under a year old (registered November 2025)</td></tr>
+          <tr><td>Name</td><td>A misspelling of an older domain, dreammeaning.com</td></tr>
+          <tr><td>Authors</td><td>Two bylines, no professional credentials</td></tr>
+          <tr><td>Topic focus</td><td>Shifted from dreams to unrelated commercial posts</td></tr>
+          <tr><td>Disclaimers</td><td>Present: "educational and entertainment purposes only"</td></tr>
+          <tr><td>Scam reports</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>For other sites we have checked, see our reviews of <a href="/articles/journalword-com-review/">JournalWord.com</a> and <a href="/articles/puzutask-com-review/">Puzutask.com</a>.</p>
+
+      <h2>Dreammeaniing.com FAQs</h2>
+      <h3>What is dreammeaniing com?</h3>
+      <p>A dream-interpretation blog registered in November 2025, now also publishing unrelated commercial articles.</p>
+      <h3>Is dreammeaniing.com the same as dreammeaning.com?</h3>
+      <p>No. They are different domains with different registration histories, and we found no link between them.</p>
+      <h3>Who runs dreammeaniing.com?</h3>
+      <p>The site does not name an owner. Its contact email is on a separate company's domain.</p>
+
+      <p><em>Information was checked on November 8, 2026, using Verisign registry records, the Wayback Machine and the site's own pages and WordPress data. This article is not medical advice. We will update it if dreammeaniing.com responds or changes.</em></p>
+    `
+  },
+  {
+    id: "cnlawblog-review",
+    title: "CNLawBlog Review: Is Cnlawblog.com a Real Law Blog or a Guest Post Site?",
+    excerpt: "Is cnlawblog a real law blog? We checked cnlawblog.com's empty law sections, dofollow guest post offer, authors, history and its China Law Blog confusion.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T16:20:00Z",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Open notebook with the word Notes written on the first page, a fountain pen and black glasses on a desk",
+    isTrending: true,
+    views: 0,
+    tags: ["CNLawBlog", "Guest Posting", "Website Review", "Legal Blogs", "SEO"],
+    content: `
+      <p class="lead">CNLawBlog (cnlawblog.com) sounds like a law blog, but most of what it publishes is general business, tech, finance and local-service content, and its Guest Post page advertises "dofollow backlinks". It is not the well-known China Law Blog from the law firm Harris Sliwoski. We checked cnlawblog.com's domain history, authors, links and pages on November 8, 2026.</p>
+
+      <blockquote>
+        <p><strong>CNLawBlog.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a multi-topic WordPress blog that calls itself a "Legal, Business, Finance &amp; Tech Blog", with 203 posts.</li>
+          <li><strong>Since:</strong> current site founded August 2018, though the domain had earlier owners.</li>
+          <li><strong>Law content:</strong> 19 posts in the Law category. Every law sub-category (Criminal, Family, Corporate and so on) is empty.</li>
+          <li><strong>Guest posts:</strong> accepted, with "1–2 dofollow backlinks". Price on request.</li>
+          <li><strong>Verdict:</strong> not a legal resource. Do not rely on it for legal advice.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is CNLawBlog?</h2>
+      <p>The site's title is "CNLawBlog.com: Legal, Business, Finance &amp; Tech Blog". Its menu lists Technology, Finance, Business, Education, Health, Lifestyle, Real Estate and Law. Law has sub-categories for Accident, Civil, Corporate, Criminal, Family and Personal Injury, plus Travel, Automotive, Fashion, Politics and Sports. Its About page says it was founded in August 2018.</p>
+      <p>Despite the name, law is a minor topic. The largest categories are Business (32 posts), General (31) and Technology (25), against 19 for Law. Every law sub-category is empty.</p>
+
+      <h2>Is CNLawBlog the Same as China Law Blog?</h2>
+      <p>No. <a href="https://harris-sliwoski.com/chinalawblog/" target="_blank" rel="noopener">China Law Blog</a> is published by the US law firm Harris Sliwoski LLP and covers legal issues for companies doing business in China. Cnlawblog.com has no connection to it, and its homepage and About page never mention China. Cnlawblog.com's own FAQ says it "is not affiliated with similarly named websites." Lookalike domains such as cnlawblog.it.com also exist.</p>
+
+      <h2>Domain History</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows the current registration began on August 11, 2018, through NameCheap, and runs to 2033.</li>
+        <li><strong>Earlier use:</strong> the Wayback Machine has captures from 2005. A 2016 snapshot shows a generic legal-services blog.</li>
+        <li><strong>2019:</strong> by February 2019 the site's title read "Cnlawblog.com | Guest Blog | Submit Guest blog – Write For US".</li>
+      </ul>
+      <p>The site's first post, dated August 13, 2018, is "URDU CALLIGRAPHY ON YOUR WALLS". Its newest is dated August 25, 2026.</p>
+
+      <h2>Does CNLawBlog Sell Guest Posts?</h2>
+      <p>Its <a href="https://www.cnlawblog.com/guest-post-on-cnlawblog/" target="_blank" rel="nofollow noopener">Guest Post page</a> promises contributors "high-quality dofollow backlinks" that "improve your website's SEO and domain authority". It allows "1–2 dofollow backlinks". On price, it answers "Is guest posting on CNLawBlog free?" with "It depends… Contact us for details." Google's <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">spam policies</a> treat links bought to manipulate rankings as link spam.</p>
+      <p>Commercial links we checked, to a home remodeler, a lending app and a business lender, were plain followed links with no <code>sponsored</code> label. Many posts dated February 9, 2026 target local services in US towns, such as roofing in Libertyville, flooring in Mount Prospect and pest control in Lansdale.</p>
+
+      <h2>Who Runs CNLawBlog?</h2>
+      <p>The site names no owner or editor. Its four author accounts, "Jamie", "mansi", "Ompal Rao" and "Roland", have no biographies or legal credentials. Guest-post submissions go to a Gmail address. That same address appears on <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a> and <a href="/articles/yonosamachar-com-review/">Yonosamachar.com</a>. Three of the author names also appear on <a href="/articles/puzutask-com-review/">Puzutask.com</a>, and both sites show the same banner links. These shared details suggest a common publishing network, though we could not confirm ownership.</p>
+      <p>Cnlawblog.com also publishes reviews of itself, such as "CNLawBlog Review: Features, Content Quality, and Is It Worth Using?" (March 20, 2026).</p>
+
+      <h2>What Others Say</h2>
+      <p>A <a href="https://www.startupeditor.com/cnlawblog/" target="_blank" rel="nofollow noopener">StartupEditor review</a> gave cnlawblog.com a "45/100, use with caution" trust score. It noted that no named operator is identified, and found no evidence that the site is a government, court, bar or law firm site. <a href="https://startuprise.co.uk/cnlawblog-reliable-legal-resource-or-potentially-misleading-platform/" target="_blank" rel="nofollow noopener">StartupRise</a> called it "an independent blog, not an official or government-run platform" and found no major scam complaints.</p>
+
+      <h2>Is CNLawBlog Legit?</h2>
+      <p>It is a real, active blog and we found no scam reports. But it is not a legal resource: its writers have no listed qualifications, its law sections are empty, and it openly sells dofollow links. For legal questions, use a licensed lawyer, your local bar association's referral service, or official court and government websites.</p>
+
+      <h2>CNLawBlog FAQs</h2>
+      <h3>What is cnlawblog?</h3>
+      <p>A multi-topic WordPress blog at cnlawblog.com, founded in 2018, covering business, tech, finance and some legal topics, and accepting guest posts.</p>
+      <h3>Is cnlawblog run by lawyers?</h3>
+      <p>Not as far as we can tell. No author lists legal qualifications, and the site names no law firm.</p>
+      <h3>Is cnlawblog connected to China Law Blog?</h3>
+      <p>No. China Law Blog is published by Harris Sliwoski LLP at harris-sliwoski.com.</p>
+
+      <p><em>Information was checked on November 8, 2026, using the Verisign registry record, the Wayback Machine, the site's own pages and WordPress data, and the third-party reviews linked above. This article is not legal advice. We will update it if CNLawBlog responds or changes.</em></p>
+    `
+  },
+  {
+    id: "puzutask-com-review",
+    title: "Puzutask.com Review: It Is Not a Task or Earning Platform. Here Is What It Is",
+    excerpt: "Can you earn money on puzutask.com? No. We checked the site: a 2021 WordPress blog with casino posts, disabled sign-ups and no tasks or payouts.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T16:25:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Person at a cafe table holding a smartphone while a laptop shows a chat app",
+    isTrending: true,
+    views: 0,
+    tags: ["Puzutask", "Task Scams", "Website Review", "Online Earning", "Guest Posting"],
+    content: `
+      <p class="lead">Puzutask.com is not a task-management app or an online earning platform, despite how several websites describe it. It is a multi-topic WordPress blog that publishes technology, finance, health and lifestyle posts, along with casino and sports betting content. We checked the site, its domain history and its features on November 8, 2026.</p>
+
+      <blockquote>
+        <p><strong>Puzutask.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a WordPress blog with 364 posts, the newest dated October 19, 2026.</li>
+          <li><strong>Tasks or earnings:</strong> none. There are no task, wallet, deposit or payout features, and public sign-up is disabled.</li>
+          <li><strong>Domain:</strong> registered March 15, 2021.</li>
+          <li><strong>Authors:</strong> eight bylines with no bios.</li>
+          <li><strong>Verdict:</strong> a general content blog. Ignore any site or message that presents Puzutask as a way to earn money.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Puzutask.com?</h2>
+      <p>The site's title is "Puzutask.com | Digital Publication Covering Tech, AI, Finance &amp; More". Its About page calls it "a multi-category digital publication" covering technology, artificial intelligence, finance, business, cryptocurrency and trading. The menu lists Health, Technology, Finance, Fashion, Education, General and Lifestyle.</p>
+      <p>The homepage's meta description reads: "If you searched for Puzutask com, you have reached the right place." This wording targets people searching for the site's name.</p>
+
+      <h2>Is Puzutask.com a Task or Earning Platform?</h2>
+      <p>No. Some websites describe Puzutask.com as "a digital task management platform" with "customizable dashboards", or hint that users can earn from tasks. We found none of that on the live site:</p>
+      <ul>
+        <li>The "Register" menu item points to the WordPress admin login, and public registration is switched off.</li>
+        <li>There are no task lists, dashboards, wallets, deposits or payouts.</li>
+        <li>The site has no Contact or Write for Us page, and it does not ask visitors for money or personal details.</li>
+      </ul>
+      <p>Puzutask's own September 2026 self-review agrees. It says the name may make people think of "an online earning platform" but that the site is "a multi-topic content and publishing website". If anyone asks you to pay a fee or deposit to "unlock tasks" on Puzutask, treat it as a scam. Task scams of this kind are a known fraud pattern, as the <a href="https://consumer.ftc.gov/consumer-alerts/2025/08/how-spot-avoid-task-scams" target="_blank" rel="noopener">US Federal Trade Commission warns</a>.</p>
+
+      <h2>Domain History</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows puzutask.com was registered on March 15, 2021, through Wild West Domains.</li>
+        <li><strong>2021:</strong> the first Wayback Machine snapshot, from September 2021, shows "Puzu Task – Saving the world", already a multi-topic blog.</li>
+        <li><strong>2023:</strong> by December 2023 the title was "All things are possible With Puzutask", and the site called itself "a leading News Portal".</li>
+      </ul>
+
+      <h2>What Does Puzutask.com Publish?</h2>
+      <p>Its 364 posts run from May 2021 to October 2026. The largest categories are "Top Ranked" (175 posts) and "Top Post" (46). Recent headlines include:</p>
+      <ul>
+        <li>"How Offshore Staffing Helps Small Businesses Scale in a Competitive Global Market" (October 19, 2026)</li>
+        <li>"Building a Strong Digital Brand Presence for Online Casinos" (September 4, 2026)</li>
+        <li>"How Sports Betting Platforms Became Full Entertainment Ecosystems" (August 5, 2026)</li>
+        <li>"Summer Nail Designs 2026: Cute, Colorful &amp; Stylish Ideas" (September 3, 2026)</li>
+      </ul>
+      <p>Gambling posts link to betting sites with plain followed links, for example a casino slots page with the anchor "casino slots". The sidebar promotes hemp wraps. We saw no <code>sponsored</code> labels on commercial links.</p>
+
+      <h2>Who Runs Puzutask.com?</h2>
+      <p>The site names no owner. Its About page lists a Gmail address, and its eight author accounts have no bios. Three of those names, "mansi", "Ompal Rao" and "Roland", also write for <a href="/articles/cnlawblog-review/">CNLawBlog.com</a>, and both sites carry the same banner links. That points to a shared publishing network, but we could not confirm who owns it.</p>
+
+      <h2>Is Puzutask.com Legit?</h2>
+      <table>
+        <thead><tr><th>Question</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>Is it a real website?</td><td>Yes, an active WordPress blog since 2021</td></tr>
+          <tr><td>Can you earn money on it?</td><td>No. There is no earning or task feature</td></tr>
+          <tr><td>Does it ask for payment?</td><td>No</td></tr>
+          <tr><td>Are its writers identified?</td><td>Bylines only, no bios or credentials</td></tr>
+          <tr><td>Does it publish gambling content?</td><td>Yes, including casino and betting posts</td></tr>
+          <tr><td>Scam reports?</td><td>None found about the site itself</td></tr>
+        </tbody>
+      </table>
+      <p>See also our reviews of <a href="/articles/cnlawblog-review/">CNLawBlog</a> and <a href="/articles/dreammeaniing-com-review/">Dreammeaniing.com</a>.</p>
+
+      <h2>Puzutask.com FAQs</h2>
+      <h3>What is puzutask.com?</h3>
+      <p>A multi-topic WordPress blog registered in 2021. It is not a task app or earning platform.</p>
+      <h3>Can I make money on Puzutask.com?</h3>
+      <p>No. The site has no tasks, wallets or payouts. Be wary of anyone who says otherwise.</p>
+      <h3>How do I sign up for Puzutask?</h3>
+      <p>You can't. Public registration is disabled, and the "Register" link leads to the site's admin login.</p>
+
+      <p><em>Information was checked on November 8, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages and WordPress data. We will update this review if Puzutask.com responds or changes.</em></p>
+    `
+  },
+  {
     id: "texans-vs-pittsburgh-steelers-match-player-stats",
     title: "Texans vs Pittsburgh Steelers Match Player Stats: Full Box Score From Houston's 30-6 Wild Card Win",
     excerpt: "Texans vs Steelers match player stats from the 30-6 AFC Wild Card on Jan 12, 2026: Stroud, Rodgers, Kirk, Marks, sacks, scoring plays and team totals.",
@@ -478,6 +971,7 @@ const ARTICLES = [
 
       <h2>Who Writes for SparkPressFusion.com?</h2>
       <p>The site's WordPress data lists two authors: "Suman" with 45 posts and "Sandy Walker" with 32. Neither has a biography or credentials, including on posts about law, health and finance. The site names no editor or owner. Its structured data lists an office in Sector 62, Noida, India, which we could not verify.</p>
+      <p>The site's contact Gmail address also appears on <a href="/articles/yonosamachar-com-review/">Yonosamachar.com</a> and as the guest post submission address on <a href="/articles/cnlawblog-review/">CNLawBlog</a>. That suggests the sites share an operator or manager, though we could not confirm ownership.</p>
 
       <h2>What Does SparkPressFusion.com Publish?</h2>
       <p>The publishing pattern is uneven. The site has 77 posts, and 44 of them carry the same date, March 24, 2026. The newest is dated July 15, 2026. Recent headlines include:</p>
@@ -1529,7 +2023,7 @@ const ARTICLES = [
 
       <h2>Does TheModelEats.com Sell Guest Posts?</h2>
       <p>The site itself has no guest post page. Its sidebar shows a "Guest Post Marketplace 2026" banner that redirects to Adoovy, which describes itself as a "Digital PR &amp; Blog Posting Service." That banner link carries no <code>rel="sponsored"</code> label, which <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites to use</a> for paid or advertising links.</p>
-      <p>Marketing Lad reported that TheModelEats.com was listed on Adoovy for $40 per post, with a permanent "do-follow" link and a 24 to 48 hour turnaround. Adoovy's homepage did not mention the site when we checked, so we could not verify the listing or the price.</p>
+      <p>Marketing Lad reported that TheModelEats.com was listed on Adoovy for $40 per post, with a permanent "do-follow" link and a 24 to 48 hour turnaround. Adoovy's homepage did not mention the site when we checked, so we could not verify the listing or the price. The same Adoovy banner appears on <a href="/articles/yonosamachar-com-review/">Yonosamachar.com</a>.</p>
 
       <h2>How Much Traffic Does TheModelEats.com Get?</h2>
       <p>We have no first-hand traffic data. Marketing Lad said an Ahrefs check found zero estimated organic traffic and zero ranking keywords, with backlinks down 79% from their peak. Those are third-party tool estimates reported by a link-building agency, so treat them as indicative, not exact.</p>
