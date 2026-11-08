@@ -721,7 +721,7 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
 
 function buildCategory(slug) {
   const cat = slug === "all"
-    ? { slug: "all", name: "All News", title: "All Global Business News", description: "Every story from Global Business News Today: markets, SMEs, technology, real estate and corporate news." }
+    ? { slug: "all", name: "All News", title: "Global Business Articles and News", description: "Browse every global business article from Global Business News Today: markets, SMEs, technology, real estate, world business and corporate news." }
     : categoryFor(slug);
   const list = slug === "all" ? ARTICLES : ARTICLES.filter(a => a.categorySlug === slug);
   const url = `${SITE.url}${categoryUrl(slug)}`;
