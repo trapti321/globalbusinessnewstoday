@@ -187,6 +187,7 @@ function head({ title, description, canonical, robots, og, articleMeta, schema }
   <meta name="robots" content="${esc(robots)}">
   <meta name="google-site-verification" content="${SITE.gscVerification}">
   <meta name="theme-color" content="#0a2540">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
