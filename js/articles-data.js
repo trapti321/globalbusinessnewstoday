@@ -1,6 +1,133 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "in-house-financing",
+    title: "What Is In-House Financing? Meaning, Real Costs and How Businesses Offer It",
+    excerpt: "In-house financing means the seller is also your lender. What it is, how buy here pay here works, what CFPB data shows on cost, and how to offer it.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T11:00:00Z",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Driver's hand on a car steering wheel at dusk, with blurred city lights through the windscreen",
+    isTrending: false,
+    views: 0,
+    tags: ["In-House Financing", "Buy Here Pay Here", "Consumer Credit", "Auto Loans", "Small Business"],
+    content: `
+      <p class="lead">In-house financing means the business selling you something also lends you the money to pay for it. You make your payments to the seller rather than to a bank, credit union or card company. It is most common at used car dealerships known as "buy here pay here" lots, but furniture stores, dentists, contractors, schools and some home sellers also offer it.</p>
+
+      <p>This guide explains what in-house financing means, how it compares with ordinary dealer financing, and what federal data shows about its cost. It also covers how businesses can offer in-house financing to their customers responsibly.</p>
+
+      <h2>In-house financing meaning, in plain terms</h2>
+      <p>In a normal purchase on credit, three parties are involved: you, the seller and a separate lender. With in-house financing there are only two. The seller sets the terms, collects the payments and carries the risk if you stop paying. The seller may keep the loan for its full term or sell it on later, but the debt is first owed to the seller.</p>
+      <p>That arrangement shows up in many forms:</p>
+      <ul>
+        <li><strong>Buy here pay here (BHPH) car dealers:</strong> the dealer sells the car and holds the loan. Some take payments weekly or every two weeks to match paydays.</li>
+        <li><strong>Furniture, appliance and electronics stores:</strong> store instalment plans, sometimes with promotional "no interest" periods.</li>
+        <li><strong>Medical and dental practices:</strong> payment plans for treatment.</li>
+        <li><strong>Contractors:</strong> roofing, HVAC or solar installers that finance the job themselves.</li>
+        <li><strong>Schools and training providers:</strong> tuition payment plans.</li>
+        <li><strong>Seller or owner financing for property:</strong> the seller acts as the mortgage lender.</li>
+      </ul>
+
+      <h2>What's in-house financing vs dealer financing?</h2>
+      <p>The two terms are often confused, especially at car dealerships.</p>
+      <ul>
+        <li><strong>Dealer-arranged financing:</strong> the dealer sends your application to outside banks, credit unions or finance companies. One of them buys the contract, and you repay that lender.</li>
+        <li><strong>In-house financing:</strong> the dealer itself is the lender, and you repay the dealer.</li>
+        <li><strong>Direct lending:</strong> you get approved by a bank or credit union before you shop, then use that loan at the dealer.</li>
+      </ul>
+      <p>The difference matters because a dealer that holds the loan also decides who gets approved, what rate to charge, and what happens if a payment is late.</p>
+
+      <h2>Why people use in-house financing</h2>
+      <p>The main reason is access. Sellers that lend their own money can approve buyers that banks would turn down, such as people with low credit scores, thin credit files or past bankruptcies.</p>
+      <ul>
+        <li><strong>Approval when other lenders say no.</strong> The seller can weigh income, job history and down payment alongside credit history.</li>
+        <li><strong>One-stop purchase.</strong> You choose the item and arrange payment in the same place, often on the same day.</li>
+        <li><strong>Flexible payment schedules.</strong> Some sellers set weekly or fortnightly payments to fit your pay cycle.</li>
+      </ul>
+
+      <h2>What in-house financing really costs</h2>
+      <p>The best public evidence on cost comes from car lending. The Consumer Financial Protection Bureau (CFPB) studied subprime auto loans in its 2021 report <a href="https://files.consumerfinance.gov/f/documents/cfpb_subprime-auto_data-point_2021-09.pdf" target="_blank" rel="noopener">"Subprime Auto Loan Outcomes by Lender Type"</a> and found:</p>
+      <ul>
+        <li><strong>Higher rates.</strong> Average interest rates on subprime loans were about 10% at banks, compared with 15% to 20% at finance companies and buy here pay here dealerships.</li>
+        <li><strong>Same risk, different price.</strong> For a borrower with a credit score of 560 or higher, the CFPB estimated the same default risk whether the loan came from a bank or a small BHPH lender. Yet the estimated rate was 13% from the small BHPH lender and 9% from the bank.</li>
+        <li><strong>Credit reporting is not guaranteed.</strong> The report cites an industry survey in which 64% of BHPH dealerships said they reported their loans to the national credit bureaus. If your dealer does not report, on-time payments will not build your credit score.</li>
+      </ul>
+      <p>More recent Federal Reserve research shows the market has grown. In a <a href="https://www.federalreserve.gov/econres/notes/feds-notes/subprime-auto-lending-trends-in-buy-here-pay-here-auto-lending-accessible-20260508.htm" target="_blank" rel="noopener">May 2026 FEDS Note</a>, the Federal Reserve Board estimated that BHPH dealer loan balances grew from about $10 billion in early 2018 to about $32 billion in the third quarter of 2025. In that quarter, compared with traditional auto lenders, BHPH loans were:</p>
+      <ul>
+        <li>2.65 times more likely to be 30 or more days delinquent;</li>
+        <li>1.88 times more likely to be in default;</li>
+        <li>16.63 times more likely to be in active repossession.</li>
+      </ul>
+      <p>The share of deep subprime borrowers (Equifax Risk Score below 580) fell over the period, from about 70% of BHPH volume in 2018 to around 50% in 2025.</p>
+
+      <h3>The "no interest" trap at retail stores</h3>
+      <p>Store financing often advertises "no interest if paid in full in 12 months." The <a href="https://www.consumerfinance.gov/ask-cfpb/what-is-a-deferred-interest-promotion-en-40/" target="_blank" rel="noopener">CFPB explains</a> that this is usually <strong>deferred interest</strong>, not true 0% financing. If any balance remains when the promotion ends, you may owe all the interest back to the purchase date. Making only the minimum payments will often not clear the balance in time.</p>
+
+      <h2>Pros and cons of in-house financing</h2>
+      <h3>Advantages</h3>
+      <ul>
+        <li>Easier approval for buyers with weak or limited credit.</li>
+        <li>A faster, simpler process with fewer parties involved.</li>
+        <li>Payment schedules that can match your paydays.</li>
+        <li>A chance to rebuild credit, if the seller reports payments to the credit bureaus.</li>
+      </ul>
+      <h3>Disadvantages</h3>
+      <ul>
+        <li>Higher interest rates than banks or credit unions for comparable borrowers, according to the CFPB.</li>
+        <li>Choice limited to whatever the seller has in stock.</li>
+        <li>Higher delinquency and repossession rates for BHPH car loans, according to the Federal Reserve.</li>
+        <li>Possible add-ons, such as service contracts, GPS trackers or starter-interrupt devices, that raise the cost or restrict use.</li>
+        <li>No credit benefit if payments are not reported.</li>
+      </ul>
+
+      <h2>Questions to ask before you sign</h2>
+      <ol>
+        <li><strong>What is the APR and the total cost?</strong> Federal Truth in Lending rules require these disclosures. Compare the total of payments, not only the monthly amount.</li>
+        <li><strong>Do you report payments to all three credit bureaus?</strong> Ask for the answer in writing.</li>
+        <li><strong>Is this deferred interest or true 0%?</strong> Find out what happens if a balance remains when the promotion ends.</li>
+        <li><strong>What happens if I am late?</strong> Ask about the grace period, late fees, tracking devices and repossession policy.</li>
+        <li><strong>Is there a prepayment penalty?</strong> You want to be free to refinance once your credit improves.</li>
+        <li><strong>Which add-ons are optional?</strong> Decline anything you do not need.</li>
+      </ol>
+      <p>Before visiting the seller, try for a quote from a credit union or bank. Even one outside offer gives you a benchmark.</p>
+
+      <h2>In-house financing for customers: how businesses offer it</h2>
+      <p>For a small business, offering in-house financing can win sales that would otherwise be lost, especially on big-ticket items. But it turns the business into a lender, with the cash flow strain, credit risk and legal duties that come with it.</p>
+
+      <h3>Know when lending rules apply</h3>
+      <p>Under the federal Truth in Lending Act's Regulation Z, a business is generally a <strong>"creditor"</strong> if it regularly extends consumer credit that has a finance charge or is payable in more than four instalments, not counting a down payment. Under <a href="https://www.consumerfinance.gov/rules-policy/regulations/1026/2/" target="_blank" rel="noopener">12 CFR 1026.2(a)(17)</a>, "regularly" means more than 25 times in the preceding calendar year, or more than 5 times for credit secured by a home. Creditors must give standard disclosures such as the APR, finance charge and total of payments. State licensing, interest rate caps and debt collection rules may also apply. Seller-financed home sales follow separate mortgage rules, so get legal advice before offering them.</p>
+
+      <h3>Build it like a lending business</h3>
+      <ul>
+        <li><strong>Fund it properly.</strong> Every financed sale is cash you will not see for months. Our guide to <a href="/articles/sme-cash-flow-fintech-revolution/">SME cash flow and fintech</a> covers tools that can help bridge that gap.</li>
+        <li><strong>Set clear credit criteria</strong> and apply them consistently. Fair lending laws prohibit discrimination.</li>
+        <li><strong>Use written contracts</strong> with all required disclosures, and keep records.</li>
+        <li><strong>Report to the credit bureaus</strong> if you want to attract customers who are rebuilding their credit.</li>
+        <li><strong>Consider a third-party partner.</strong> Point-of-sale lenders and buy now, pay later providers can offer customer financing while taking on the credit risk and compliance work, usually in return for a merchant fee.</li>
+      </ul>
+      <p>Borrowing costs also matter. When interest rates rise, so does the cost of funding the loans you make. See our coverage of <a href="/articles/fed-rate-cuts-global-markets-2026/">the Fed and interest rates</a> for the wider backdrop.</p>
+
+      <h2>In-house financing FAQs</h2>
+      <h3>Does in-house financing check your credit?</h3>
+      <p>Some sellers pull your full credit report, some do a soft check, and some focus mainly on income and down payment. Ask before you apply, because a hard inquiry can lower your score slightly.</p>
+      <h3>Is in-house financing a good idea?</h3>
+      <p>It can be useful if you cannot get approved elsewhere and you need the item. CFPB data shows it often costs more than bank lending for similar borrowers, so compare at least one outside offer first.</p>
+      <h3>Does in-house financing build credit?</h3>
+      <p>Only if the seller reports your payments to the credit bureaus. In one industry survey cited by the CFPB, 64% of BHPH dealers said they did.</p>
+      <h3>Can you refinance an in-house loan?</h3>
+      <p>Usually yes, if there is no prepayment penalty. Once your credit improves, a bank or credit union may offer a lower rate.</p>
+
+      <p><em>Data and rules were checked against CFPB and Federal Reserve publications and Regulation Z on November 8, 2026. This article is general information, not financial or legal advice.</em></p>
+    `
+  },
+  {
     id: "uscis-form-i-485-guide",
     title: "USCIS Form I-485 in 2026: Fees, New Edition and Rules That Get Applications Rejected",
     excerpt: "Form I-485 costs $1,440 on paper or $1,390 online in 2026. Here is who can file, the new 09/18/26 edition, required documents and costly mistakes.",
