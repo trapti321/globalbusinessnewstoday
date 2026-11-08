@@ -19,7 +19,7 @@ const ARTICLES = [
     views: 0,
     tags: ["MyGreenBucks", "Kenneth Jones", "Website Review", "Personal Finance", "Scam Check"],
     content: `
-      <p class="lead">People searching "mygreenbucks net jones" or "Kenneth MyGreenBucks .net" usually want to know who Kenneth Jones is and whether MyGreenBucks.net is a real finance platform. Here is what we found. MyGreenBucks.net is a WordPress content site, not an investment or rewards platform, and "Kenneth Jones" is a byline on that site with no verifiable real-world identity. We checked the domain record, its archive history and the site's own pages on November 8, 2026.</p>
+      <p class="lead">People searching "mygreenbucks net jones" or "Kenneth MyGreenBucks .net" usually want to know who Kenneth Jones is and whether MyGreenBucks.net is a real finance platform. Here is what we found. MyGreenBucks.net is a WordPress content site, not an investment or rewards platform, and "Kenneth Jones" is a byline on that site with no verifiable real-world identity. We checked the domain record, its archive history and <a href="https://mygreenbucks.net/" target="_blank" rel="nofollow noopener">the site's own pages</a> on November 8, 2026. For how we review sites like this, see our <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com review</a>.</p>
 
       <blockquote>
         <p><strong>MyGreenBucks.net and Kenneth Jones, at a glance:</strong></p>
@@ -33,7 +33,7 @@ const ARTICLES = [
       </blockquote>
 
       <h2>Who Is Kenneth Jones at MyGreenBucks.net?</h2>
-      <p>On the site, "Kenneth Jones" is the name shown on posts from the author account whose web address ends in /author/james/. That account's posts range from finance tips to gambling and adult content. Archived copies show the "By Kenneth Jones" byline in use by November 2022. In September 2021, the same site credited posts to "James Gussie".</p>
+      <p>On the site, "Kenneth Jones" is the name shown on posts from the <a href="https://mygreenbucks.net/author/james/" target="_blank" rel="nofollow noopener">author account whose web address ends in /author/james/</a>. That account's posts range from finance tips to gambling and adult content. Archived copies show the "By Kenneth Jones" byline in use by November 2022. In September 2021, the same site credited posts to "James Gussie".</p>
       <p>MyGreenBucks.net has also published several articles <em>about</em> Kenneth Jones, mostly under other house bylines such as "Xanthira Marzavina". Their claims conflict:</p>
       <ul>
         <li>A December 2024 post is titled "Mygreenbucks Kenneth Jones: How Kenneth Jones Built a $2.5B Fintech Empire".</li>
@@ -58,13 +58,13 @@ const ARTICLES = [
 
       <h2>Domain History</h2>
       <ul>
-        <li><strong>2009:</strong> the Wayback Machine shows mygreenbucks.net as a blog titled "Mygreenbucks.net| Autopilotincome101.com|Blogging 5.0", with movie and celebrity posts.</li>
+        <li><strong>2009:</strong> the <a href="https://web.archive.org/web/20090330211712/http://mygreenbucks.net/" target="_blank" rel="noopener">Wayback Machine</a> shows mygreenbucks.net as a blog titled "Mygreenbucks.net| Autopilotincome101.com|Blogging 5.0", with movie and celebrity posts.</li>
         <li><strong>2021:</strong> the official Verisign registry record shows the current registration began on August 19, 2021, through GoDaddy. The first snapshot after that shows personal finance posts.</li>
         <li><strong>2022 onwards:</strong> the "Kenneth Jones" byline appears, and publishing grows to well over a thousand posts.</li>
       </ul>
 
       <h2>Does MyGreenBucks.net Sell Guest Posts?</h2>
-      <p>The site has no Write for Us page. However, a PeoplePerHour listing offered a "Finance Guest Post Backlink on mygreenbucks.net" for $100, with a "dofollow" link. The listing is now marked inactive and had a buyer review dated May 2025. Its seller is a third party, and we could not confirm a link to the site's owner.</p>
+      <p>The site has no Write for Us page. However, a <a href="https://www.peopleperhour.com/hourlie/da57-dr60-finance-guest-post-backlink-on-mygreenbucks-net/1054357" target="_blank" rel="nofollow noopener">PeoplePerHour listing</a> offered a "Finance Guest Post Backlink on mygreenbucks.net" for $100, with a "dofollow" link. The listing is now marked inactive and had a buyer review dated May 2025. Its seller is a third party, and we could not confirm a link to the site's owner.</p>
 
       <h2>Is MyGreenBucks.net Legit or a Scam?</h2>
       <p>We found no regulator warning or credible scam report. The site does not appear to take money from readers. It is not a legitimate source of financial guidance either:</p>
@@ -108,7 +108,7 @@ const ARTICLES = [
     views: 0,
     tags: ["Webitbgroup", "Guest Posting", "Website Review", "Domains", "SEO"],
     content: `
-      <p class="lead">Webitbgroup.com is offline. As of November 8, 2026, the domain does not resolve: its nameservers refuse to answer, so browsers cannot find the site. Until 2025 it ran a guest-blogging site called "Web ITB Group". Before that, from 2011, it was an Indian web design and SEO agency. Here is what we could verify about webitbgroup.com and what its outage means.</p>
+      <p class="lead">Webitbgroup.com is offline. As of November 8, 2026, the domain does not resolve: its nameservers refuse to answer, so browsers cannot find the site. Until 2025 it ran a guest-blogging site called "Web ITB Group". Before that, from 2011, it was an Indian web design and SEO agency. Here is what we could verify about webitbgroup.com and what its outage means. It is one of several small guest post sites we have checked, alongside <a href="/articles/journalword-com-review/">JournalWord.com</a> and <a href="/articles/cnlawblog-review/">CNLawBlog</a>.</p>
 
       <blockquote>
         <p><strong>Webitbgroup.com at a glance:</strong></p>
@@ -122,12 +122,12 @@ const ARTICLES = [
       </blockquote>
 
       <h2>Is Webitbgroup.com Down?</h2>
-      <p>Yes. On November 8, 2026, requests to webitbgroup.com and www.webitbgroup.com failed with a DNS error. A lookup through Google's public DNS returned SERVFAIL, because the domain's nameservers refused to answer for it. The domain is still registered, but the site cannot be reached until its DNS is fixed.</p>
+      <p>Yes. On November 8, 2026, requests to webitbgroup.com and www.webitbgroup.com failed with a DNS error. A lookup through <a href="https://dns.google/query?name=webitbgroup.com" target="_blank" rel="noopener">Google Public DNS</a> returned SERVFAIL, because the domain's nameservers refused to answer for it. The domain is still registered, but the site cannot be reached until its DNS is fixed.</p>
       <p>We cannot say why the DNS broke. Common reasons include an expired hosting account, nameservers being changed or the site being abandoned.</p>
 
       <h2>Domain History: From SEO Agency to Guest Post Site</h2>
       <ul>
-        <li><strong>Registration:</strong> the official Verisign registry record shows webitbgroup.com was registered on January 16, 2011, through Wild West Domains, and renewed to January 16, 2033.</li>
+        <li><strong>Registration:</strong> the official Verisign registry record, viewable through the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>, shows webitbgroup.com was registered on January 16, 2011, through Wild West Domains, and renewed to January 16, 2033.</li>
         <li><strong>2011:</strong> the earliest <a href="https://web.archive.org/web/20110214015849/http://webitbgroup.com/" target="_blank" rel="noopener">Wayback Machine capture</a> shows an Indian agency site titled "Seo services, web designing, web development, web hosting, website promotion", with packages and careers pages.</li>
         <li><strong>2025:</strong> the last working <a href="https://web.archive.org/web/20250815132757/https://www.webitbgroup.com/" target="_blank" rel="noopener">capture, from August 15, 2025</a>, shows "Web ITB Group | News Articles And Guest Blogging - Best Blog post site, Article, News, Write For US". It ran on WordPress with a plugin named "seo-automated-link-building".</li>
       </ul>
@@ -183,7 +183,7 @@ const ARTICLES = [
     views: 0,
     tags: ["Yonosamachar", "Website Review", "Loan Apps", "India", "Guest Posting"],
     content: `
-      <p class="lead">Yonosamachar.com (often searched as "yonosamachar com") is a small WordPress blog with mixed posts on loan apps, movie download sites, sports betting and general topics. Despite the name, it has no connection to SBI's YONO banking app or to "Yono" gaming apps, and it has not published anything new since August 2025. We checked the domain, its posts and its policies on November 8, 2026.</p>
+      <p class="lead">Yonosamachar.com (often searched as "yonosamachar com") is a small WordPress blog with mixed posts on loan apps, movie download sites, sports betting and general topics. Despite the name, it has no connection to SBI's YONO banking app or to "Yono" gaming apps, and it has not published anything new since August 2025. We checked <a href="https://www.yonosamachar.com/" target="_blank" rel="nofollow noopener">the site</a>, its domain, posts and policies on November 8, 2026. It shares several traits with <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a>, which we reviewed the same day.</p>
 
       <blockquote>
         <p><strong>Yonosamachar.com at a glance:</strong></p>
@@ -206,7 +206,7 @@ const ARTICLES = [
 
       <h2>Domain History and Post Dates</h2>
       <ul>
-        <li><strong>Registration:</strong> the official Verisign registry record shows yonosamachar.com was registered on March 18, 2023, through Wild West Domains.</li>
+        <li><strong>Registration:</strong> the official Verisign registry record shows yonosamachar.com was registered on March 18, 2023, through Wild West Domains. You can confirm it with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>.</li>
         <li><strong>Backdated posts:</strong> the oldest posts are dated December 2015, such as "10 secrets about hot songs the government is hiding". That is more than seven years before the domain was registered, so these appear to be placeholder or demo posts with old dates.</li>
         <li><strong>Activity:</strong> real publishing ran mainly from 2023 to August 29, 2025. Nothing new has appeared in over 14 months.</li>
       </ul>
@@ -216,7 +216,7 @@ const ARTICLES = [
       <ul>
         <li><strong>Loan apps:</strong> "RBI Approved Loan Apps: Your Ultimate List" and posts on credit (CIBIL) scores.</li>
         <li><strong>Movie download sites:</strong> "Netninja: A Movie Downloader for Android – Your Gateway to Free Entertainment" and FzTvSeries.</li>
-        <li><strong>Sports betting:</strong> guides to betting platforms in Zambia, such as "Sports Betting in Zambia: A Comprehensive Guide to Online Football Betting with Castlebet".</li>
+        <li><strong>Sports betting:</strong> guides to betting platforms in Zambia, such as <a href="https://www.yonosamachar.com/sports-betting-in-zambia-a-comprehensive-guide-to-online-football-betting-with-castlebet/" target="_blank" rel="nofollow noopener">a Castlebet guide</a> titled "Sports Betting in Zambia: A Comprehensive Guide to Online Football Betting with Castlebet".</li>
         <li><strong>Trading:</strong> "What's New in MT5? Top Features and Updates", which links to a forex broker without a sponsored label.</li>
       </ul>
       <p>Only one betting post carries a responsible-gambling disclaimer. The site has no age warning or privacy policy, and its loan-app posts have no financial disclaimers. Sites that promote free movie downloads may also point readers to pirated content, which can carry legal and malware risks.</p>
@@ -267,7 +267,7 @@ const ARTICLES = [
     views: 0,
     tags: ["Dreammeaniing", "Dream Meaning", "Website Review", "Typosquatting", "SEO"],
     content: `
-      <p class="lead">Dreammeaniing.com (spelled with a double "i", and often searched as "dreammeaniing com") is a young WordPress site that started as a dream-interpretation blog. Since late 2026 it has published more and more unrelated commercial posts. It is not the long-running dreammeaning.com, which has a different owner history and currently does not load. We checked both domains on November 8, 2026.</p>
+      <p class="lead">Dreammeaniing.com (spelled with a double "i", and often searched as "dreammeaniing com") is a young WordPress site that started as a dream-interpretation blog. Since late 2026 it has published more and more unrelated commercial posts. It is not the long-running dreammeaning.com, which has a different owner history and currently does not load. We checked both domains on November 8, 2026, along with <a href="https://dreammeaniing.com/" target="_blank" rel="nofollow noopener">dreammeaniing.com's own pages</a>. The switch from a single topic to paid-looking posts mirrors what we found in our <a href="/articles/themodeleats-com-review/">TheModelEats.com review</a>.</p>
 
       <blockquote>
         <p><strong>Dreammeaniing.com at a glance:</strong></p>
@@ -281,12 +281,12 @@ const ARTICLES = [
       </blockquote>
 
       <h2>What Is Dreammeaniing.com?</h2>
-      <p>The site's title is "Dream meaniing - dreammeaniing.com". Its About page says it "exists for one purpose: to explain dreams in clear, simple language. No mystical nonsense." Its pages include an "Unlock Your Dream Meaning" AI chat widget and Google AdSense ads. The Disclaimer page says the content is "for educational and entertainment purposes only."</p>
+      <p>The site's title is "Dream meaniing - dreammeaniing.com". Its <a href="https://dreammeaniing.com/about/" target="_blank" rel="nofollow noopener">About page</a> says it "exists for one purpose: to explain dreams in clear, simple language. No mystical nonsense." Its pages include an "Unlock Your Dream Meaning" AI chat widget and Google AdSense ads. The Disclaimer page says the content is "for educational and entertainment purposes only."</p>
       <p>The menu has Dream Meanings, About, Contact, Disclaimer and Privacy Policy pages. There is no Write for Us or advertising page.</p>
 
       <h2>Dreammeaniing.com vs Dreammeaning.com</h2>
-      <p>The misspelled name matters. According to the Verisign .com registry, the correctly spelled <strong>dreammeaning.com</strong> was registered in December 2003. In 2008 the Wayback Machine shows it as "The Leading Hypnotherapy Site on the Net", and in our test on November 8, 2026 it did not load.</p>
-      <p><strong>Dreammeaniing.com</strong> was registered on November 24, 2025, through Hostinger, uses different nameservers and has no archive history before April 2026. We found no ownership link between the two. A third lookalike, dreameaninng.com, was registered in November 2025 and is linked from dreammeaniing.com's comment section.</p>
+      <p>The misspelled name matters. According to the Verisign .com registry, the correctly spelled <strong>dreammeaning.com</strong> was registered in December 2003. In 2008 the <a href="https://web.archive.org/web/2008*/dreammeaning.com" target="_blank" rel="noopener">Wayback Machine</a> shows it as "The Leading Hypnotherapy Site on the Net", and in our test on November 8, 2026 it did not load.</p>
+      <p><strong>Dreammeaniing.com</strong> was registered on November 24, 2025, through Hostinger, according to the registry record (see the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>), uses different nameservers and has no archive history before April 2026. We found no ownership link between the two. A third lookalike, dreameaninng.com, was registered in November 2025 and is linked from dreammeaniing.com's comment section.</p>
       <p>Registering a near-identical misspelling of an established domain name is a common way to capture search traffic. Readers looking for the original site should check the spelling carefully.</p>
 
       <h2>Who Writes for Dreammeaniing.com?</h2>
@@ -350,7 +350,7 @@ const ARTICLES = [
     views: 0,
     tags: ["CNLawBlog", "Guest Posting", "Website Review", "Legal Blogs", "SEO"],
     content: `
-      <p class="lead">CNLawBlog (cnlawblog.com) sounds like a law blog, but most of what it publishes is general business, tech, finance and local-service content, and its Guest Post page advertises "dofollow backlinks". It is not the well-known China Law Blog from the law firm Harris Sliwoski. We checked cnlawblog.com's domain history, authors, links and pages on November 8, 2026.</p>
+      <p class="lead">CNLawBlog (cnlawblog.com) sounds like a law blog, but most of what it publishes is general business, tech, finance and local-service content, and its Guest Post page advertises "dofollow backlinks". It is not the well-known China Law Blog from the law firm Harris Sliwoski. We checked <a href="https://www.cnlawblog.com/" target="_blank" rel="nofollow noopener">cnlawblog.com</a>'s domain history, authors, links and pages on November 8, 2026. It belongs to a group of sites we reviewed that share contacts and bylines, including <a href="/articles/puzutask-com-review/">Puzutask.com</a>.</p>
 
       <blockquote>
         <p><strong>CNLawBlog.com at a glance:</strong></p>
@@ -372,8 +372,8 @@ const ARTICLES = [
 
       <h2>Domain History</h2>
       <ul>
-        <li><strong>Registration:</strong> the official Verisign registry record shows the current registration began on August 11, 2018, through NameCheap, and runs to 2033.</li>
-        <li><strong>Earlier use:</strong> the Wayback Machine has captures from 2005. A 2016 snapshot shows a generic legal-services blog.</li>
+        <li><strong>Registration:</strong> the official Verisign registry record shows the current registration began on August 11, 2018, through NameCheap, and runs to 2033. You can check it with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>.</li>
+        <li><strong>Earlier use:</strong> the <a href="https://web.archive.org/web/2025*/cnlawblog.com" target="_blank" rel="noopener">Wayback Machine</a> has captures from 2005. A 2016 snapshot shows a generic legal-services blog.</li>
         <li><strong>2019:</strong> by February 2019 the site's title read "Cnlawblog.com | Guest Blog | Submit Guest blog – Write For US".</li>
       </ul>
       <p>The site's first post, dated August 13, 2018, is "URDU CALLIGRAPHY ON YOUR WALLS". Its newest is dated August 25, 2026.</p>
@@ -422,7 +422,7 @@ const ARTICLES = [
     views: 0,
     tags: ["Puzutask", "Task Scams", "Website Review", "Online Earning", "Guest Posting"],
     content: `
-      <p class="lead">Puzutask.com is not a task-management app or an online earning platform, despite how several websites describe it. It is a multi-topic WordPress blog that publishes technology, finance, health and lifestyle posts, along with casino and sports betting content. We checked the site, its domain history and its features on November 8, 2026.</p>
+      <p class="lead">Puzutask.com is not a task-management app or an online earning platform, despite how several websites describe it. It is a multi-topic WordPress blog that publishes technology, finance, health and lifestyle posts, along with casino and sports betting content. We checked <a href="https://www.puzutask.com/" target="_blank" rel="nofollow noopener">the site</a>, its domain history and its features on November 8, 2026. It shares authors and banners with <a href="/articles/cnlawblog-review/">CNLawBlog</a>, which we reviewed the same day.</p>
 
       <blockquote>
         <p><strong>Puzutask.com at a glance:</strong></p>
@@ -440,18 +440,18 @@ const ARTICLES = [
       <p>The homepage's meta description reads: "If you searched for Puzutask com, you have reached the right place." This wording targets people searching for the site's name.</p>
 
       <h2>Is Puzutask.com a Task or Earning Platform?</h2>
-      <p>No. Some websites describe Puzutask.com as "a digital task management platform" with "customizable dashboards", or hint that users can earn from tasks. We found none of that on the live site:</p>
+      <p>No. Some websites, such as <a href="https://startuprise.co.uk/puzutask-com-simplify-your-tasks-and-increase-productivity-with-this-smart-platform/" target="_blank" rel="nofollow noopener">StartupRise</a>, describe Puzutask.com as "a digital task management platform" with "customizable dashboards", or hint that users can earn from tasks. We found none of that on the live site:</p>
       <ul>
         <li>The "Register" menu item points to the WordPress admin login, and public registration is switched off.</li>
         <li>There are no task lists, dashboards, wallets, deposits or payouts.</li>
         <li>The site has no Contact or Write for Us page, and it does not ask visitors for money or personal details.</li>
       </ul>
-      <p>Puzutask's own September 2026 self-review agrees. It says the name may make people think of "an online earning platform" but that the site is "a multi-topic content and publishing website". If anyone asks you to pay a fee or deposit to "unlock tasks" on Puzutask, treat it as a scam. Task scams of this kind are a known fraud pattern, as the <a href="https://consumer.ftc.gov/consumer-alerts/2025/08/how-spot-avoid-task-scams" target="_blank" rel="noopener">US Federal Trade Commission warns</a>.</p>
+      <p>Puzutask's own <a href="https://www.puzutask.com/puzutask-com-review-what-is-it-what-does-it-cover-and-what-you-should-know/" target="_blank" rel="nofollow noopener">September 2026 self-review</a> agrees. It says the name may make people think of "an online earning platform" but that the site is "a multi-topic content and publishing website". If anyone asks you to pay a fee or deposit to "unlock tasks" on Puzutask, treat it as a scam. Task scams of this kind are a known fraud pattern, as the <a href="https://consumer.ftc.gov/consumer-alerts/2025/08/how-spot-avoid-task-scams" target="_blank" rel="noopener">US Federal Trade Commission warns</a>.</p>
 
       <h2>Domain History</h2>
       <ul>
-        <li><strong>Registration:</strong> the official Verisign registry record shows puzutask.com was registered on March 15, 2021, through Wild West Domains.</li>
-        <li><strong>2021:</strong> the first Wayback Machine snapshot, from September 2021, shows "Puzu Task – Saving the world", already a multi-topic blog.</li>
+        <li><strong>Registration:</strong> the official Verisign registry record shows puzutask.com was registered on March 15, 2021, through Wild West Domains. You can check it with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>.</li>
+        <li><strong>2021:</strong> the first <a href="https://web.archive.org/web/2021*/puzutask.com" target="_blank" rel="noopener">Wayback Machine</a> snapshot, from September 2021, shows "Puzu Task – Saving the world", already a multi-topic blog.</li>
         <li><strong>2023:</strong> by December 2023 the title was "All things are possible With Puzutask", and the site called itself "a leading News Portal".</li>
       </ul>
 
@@ -512,13 +512,13 @@ const ARTICLES = [
     views: 0,
     tags: ["NFL", "Houston Texans", "Pittsburgh Steelers", "Player Stats", "Box Score"],
     content: `
-      <p class="lead">The Houston Texans beat the Pittsburgh Steelers 30-6 in the AFC Wild Card round on Monday, January 12, 2026, at Acrisure Stadium in Pittsburgh. It was the most recent Texans vs Steelers game. Below are the full match player stats: passing, rushing, receiving and defence, checked against the official box score.</p>
+      <p class="lead">The Houston Texans beat the Pittsburgh Steelers 30-6 in the AFC Wild Card round on Monday, January 12, 2026, at Acrisure Stadium in Pittsburgh. It was the most recent Texans vs Steelers game. Below are the full match player stats: passing, rushing, receiving and defence, checked against the <a href="https://www.espn.com/nfl/recap?gameId=401772976" target="_blank" rel="noopener">ESPN box score</a> and the <a href="https://www.steelers.com/game-day/2025/postseason-wild-card/texans-at-steelers" target="_blank" rel="noopener">Steelers' official game page</a>.</p>
 
       <blockquote>
         <p><strong>Texans vs Steelers at a glance:</strong> Texans 30, Steelers 6 · AFC Wild Card · January 12, 2026 · Acrisure Stadium, Pittsburgh · Attendance 67,297. Top performers: Christian Kirk (8 catches, 144 yards, 1 TD), Woody Marks (112 rushing yards, 1 TD), Sheldon Rankins (1.5 sacks and a fumble-return TD).</p>
       </blockquote>
 
-      <p>Houston scored 23 unanswered points in the fourth quarter, including two defensive touchdowns. It was the first road playoff win in Texans franchise history and the Steelers' seventh straight playoff loss under head coach Mike Tomlin. The teams meet again on December 6, 2026, at Acrisure Stadium.</p>
+      <p>Houston scored 23 unanswered points in the fourth quarter, including two defensive touchdowns. It was the first road playoff win in Texans franchise history and the Steelers' seventh straight playoff loss under head coach Mike Tomlin. The teams meet again on December 6, 2026, at Acrisure Stadium. For other recent playoff box scores, see our <a href="/articles/detroit-pistons-vs-orlando-magic-match-player-stats/">Pistons vs Magic Game 7 player stats</a>.</p>
 
       <h2>Texans vs Steelers Score by Quarter</h2>
       <table>
@@ -549,7 +549,7 @@ const ARTICLES = [
           <tr><td>Mason Rudolph (PIT)</td><td>1/1</td><td>2</td><td>0</td><td>0</td><td>0</td><td>79.2</td></tr>
         </tbody>
       </table>
-      <p>Stroud threw for 250 yards but also had five fumbles, losing two. Those two lost fumbles plus his interception are the three Houston turnovers in the team stats.</p>
+      <p>Stroud threw for 250 yards, according to <a href="https://www.foxsports.com/nfl/afc-wild-card-playoffs-houston-texans-vs-pittsburgh-steelers-jan-12-2026-game-boxscore-11029" target="_blank" rel="noopener">Fox Sports' box score</a>, but also had five fumbles, losing two. Those two lost fumbles plus his interception are the three Houston turnovers in the team stats.</p>
 
       <h2>Rushing Stats</h2>
       <table>
@@ -642,7 +642,7 @@ const ARTICLES = [
     views: 0,
     tags: ["NBA", "Boston Celtics", "Cleveland Cavaliers", "Player Stats", "Box Score"],
     content: `
-      <p class="lead">The Boston Celtics beat the Cleveland Cavaliers 109-98 on Sunday, March 8, 2026, at Rocket Arena in Cleveland. It was the most recent regular-season Celtics vs Cavaliers game, and it completed Boston's 3-0 season sweep. Below are the full match player stats and team totals from the official box score.</p>
+      <p class="lead">The Boston Celtics beat the Cleveland Cavaliers 109-98 on Sunday, March 8, 2026, at Rocket Arena in Cleveland. It was the most recent regular-season Celtics vs Cavaliers game, and it completed Boston's 3-0 season sweep. Below are the full match player stats and team totals from the <a href="https://www.espn.com/nba/boxscore/_/gameId/401810776" target="_blank" rel="noopener">ESPN box score</a>.</p>
 
       <blockquote>
         <p><strong>Celtics vs Cavaliers at a glance:</strong> Celtics 109, Cavaliers 98 · March 8, 2026 · Rocket Arena, Cleveland · Attendance 19,432. Top scorers: Donovan Mitchell 30 (CLE), Evan Mobley 24 (CLE), Jaylen Brown 23 (BOS), Jayson Tatum 20 (BOS).</p>
@@ -671,7 +671,7 @@ const ARTICLES = [
           <tr><td>Neemias Queta</td><td>36</td><td>4</td><td>11</td><td>1</td></tr>
         </tbody>
       </table>
-      <p>Sam Hauser made all five of his field goals from three-point range (5 of 10). Baylor Scheierman added a double-double with 16 points and 10 rebounds.</p>
+      <p>Sam Hauser made all five of his field goals from three-point range (5 of 10), matching the line on <a href="https://plaintextsports.com/nba/2026-03-08/bos-cle" target="_blank" rel="noopener">PlainTextSports</a>. Baylor Scheierman added a double-double with 16 points and 10 rebounds.</p>
 
       <h2>Cavaliers Player Stats</h2>
       <table>
@@ -698,7 +698,7 @@ const ARTICLES = [
 
       <h2>What the Stats Show</h2>
       <p>The game turned in the second quarter, when Boston held Cleveland to 10 points. The Cavaliers outscored the Celtics 62-53 after halftime, but went 13 of 45 from three and could not close the gap. Boston's 20 of 22 free throws and seven-rebound edge also helped.</p>
-      <p>The win moved Boston to 43-21, within three games of the East-leading Detroit Pistons, and dropped Cleveland to 39-25. It also ended the Cavaliers' seven-game home winning streak.</p>
+      <p>The win moved Boston to 43-21, within three games of the East-leading Detroit Pistons (see our <a href="/articles/detroit-pistons-vs-orlando-magic-match-player-stats/">Pistons vs Magic player stats</a>), and dropped Cleveland to 39-25. It also ended the Cavaliers' seven-game home winning streak.</p>
 
       <h2>All Recent Celtics vs Cavaliers Games</h2>
       <table>
@@ -744,7 +744,7 @@ const ARTICLES = [
     views: 0,
     tags: ["NBA", "Detroit Pistons", "Orlando Magic", "NBA Playoffs", "Player Stats"],
     content: `
-      <p class="lead">The Detroit Pistons beat the Orlando Magic 116-94 in Game 7 of their first-round playoff series on Sunday, May 3, 2026, at Little Caesars Arena. Detroit came back from 3-1 down to win the series 4-3. It was the most recent Pistons vs Magic game. Below are the full match player stats from the official box score.</p>
+      <p class="lead">The Detroit Pistons beat the Orlando Magic 116-94 in Game 7 of their first-round playoff series on Sunday, May 3, 2026, at Little Caesars Arena. Detroit came back from 3-1 down to win the series 4-3. It was the most recent Pistons vs Magic game. Below are the full match player stats from the <a href="https://www.espn.com/nba/boxscore/_/gameId/401869418" target="_blank" rel="noopener">ESPN box score</a>.</p>
 
       <blockquote>
         <p><strong>Pistons vs Magic at a glance:</strong> Pistons 116, Magic 94 · Game 7, East first round · May 3, 2026 · Little Caesars Arena, Detroit · Attendance 20,062. Top scorers: Paolo Banchero 38 (ORL), Cade Cunningham 32 and 12 assists (DET), Tobias Harris 30 (DET).</p>
@@ -802,7 +802,7 @@ const ARTICLES = [
       <h2>What the Stats Show</h2>
       <p>Detroit won the game in the second quarter, scoring 40 points to turn a two-point deficit into a 60-49 halftime lead. The Pistons then held Orlando to 15 points in the third. Detroit's 30 assists to Orlando's 18 show how much more freely its offence moved.</p>
       <p>"We were pushed to the limit," Cunningham said, according to the AP. "And it got us back to playing the basketball that we knew we were capable of." Pistons coach J.B. Bickerstaff said, "This is a special group. And you can't count us out." Magic coach Jamahl Mosley said, "We just couldn't find the basket."</p>
-      <p>Cunningham averaged 32.4 points across the seven-game series, according to the AP.</p>
+      <p>Cunningham averaged 32.4 points across the seven-game series, according to the AP. Detroit then advanced to face the winner of the Cleveland Cavaliers' series with Toronto; for Cleveland's regular-season numbers against Boston, see our <a href="/articles/celtics-vs-cleveland-cavaliers-match-player-stats/">Celtics vs Cavaliers player stats</a>. Every line above matches <a href="https://plaintextsports.com/nba/2026-05-03/orl-det" target="_blank" rel="noopener">PlainTextSports</a>.</p>
 
       <h2>Pistons vs Magic 2026 Playoff Series Results</h2>
       <table>
@@ -851,13 +851,13 @@ const ARTICLES = [
     views: 0,
     tags: ["MLB", "Washington Nationals", "Chicago Cubs", "Player Stats", "Box Score"],
     content: `
-      <p class="lead">The Washington Nationals beat the Chicago Cubs 7-0 on Thursday, August 13, 2026, at Nationals Park, as Cade Cavalli took a no-hitter into the seventh inning. It was the most recent Nationals vs Cubs game. Below are the full match player stats for pitchers and hitters from the official MLB box score.</p>
+      <p class="lead">The Washington Nationals beat the Chicago Cubs 7-0 on Thursday, August 13, 2026, at Nationals Park, as Cade Cavalli took a no-hitter into the seventh inning. It was the most recent Nationals vs Cubs game. Below are the full match player stats for pitchers and hitters from the <a href="https://www.espn.com/mlb/boxscore/_/gameId/401816510" target="_blank" rel="noopener">ESPN box score</a>, checked against the <a href="https://statsapi.mlb.com/api/v1/game/822696/boxscore" target="_blank" rel="noopener">official MLB Stats API</a>.</p>
 
       <blockquote>
         <p><strong>Nationals vs Cubs at a glance:</strong> Nationals 7, Cubs 0 · August 13, 2026 · Nationals Park, Washington · Attendance 21,463 · Time 2:20. Winning pitcher: Cade Cavalli (8 IP, 1 H, 10 K). Losing pitcher: Kevin Gausman. Key hitter: Abimelec Ortiz (2-for-4, three-run home run).</p>
       </blockquote>
 
-      <p>Cavalli retired the first 15 batters he faced. Chicago's only hit came from Michael Busch with two outs in the seventh inning. The win let Washington avoid a three-game sweep, though Chicago took the series 2-1.</p>
+      <p>Cavalli retired the first 15 batters he faced. Chicago's only hit came from Michael Busch with two outs in the seventh inning. The win let Washington avoid a three-game sweep, though Chicago took the series 2-1. It is part of our match player stats series, alongside <a href="/articles/texans-vs-pittsburgh-steelers-match-player-stats/">Texans vs Steelers</a> and <a href="/articles/celtics-vs-cleveland-cavaliers-match-player-stats/">Celtics vs Cavaliers</a>.</p>
 
       <h2>Nationals vs Cubs Linescore</h2>
       <table>
@@ -945,7 +945,7 @@ const ARTICLES = [
     views: 0,
     tags: ["SparkPressFusion", "Guest Posting", "Website Review", "SEO", "Link Building"],
     content: `
-      <p class="lead">SparkPressFusion.com (often searched as "sparkpressfusion com") is a multi-topic WordPress blog that publishes general articles on technology, finance, business, health, law and travel. Its own guidelines describe every guest post as a paid placement. We checked its domain record, archive history, authors, links and policies on November 8, 2026.</p>
+      <p class="lead">SparkPressFusion.com (often searched as "sparkpressfusion com") is a multi-topic WordPress blog that publishes general articles on technology, finance, business, health, law and travel. Its own guidelines describe every guest post as a paid placement. We checked <a href="https://www.sparkpressfusion.com/" target="_blank" rel="nofollow noopener">the site</a>, its domain record, archive history, authors, links and policies on November 8, 2026, using the same method as our <a href="/articles/themodeleats-com-review/">TheModelEats.com review</a>.</p>
 
       <blockquote>
         <p><strong>SparkPressFusion.com at a glance:</strong></p>
@@ -964,8 +964,8 @@ const ARTICLES = [
 
       <h2>Domain History: When Was SparkPressFusion.com Created?</h2>
       <ul>
-        <li><strong>Registration:</strong> the official .com registry record from Verisign shows sparkpressfusion.com was registered on August 23, 2023, through Wild West Domains, and runs to August 2028.</li>
-        <li><strong>Archive:</strong> the Wayback Machine's first capture is from May 2024. Snapshots from 2025 show the same site with an older design and the tagline "Fusing Creativity and Knowledge to Ignite Your Spark."</li>
+        <li><strong>Registration:</strong> the official .com registry record from Verisign shows sparkpressfusion.com was registered on August 23, 2023, through Wild West Domains, and runs to August 2028. You can check this with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>.</li>
+        <li><strong>Archive:</strong> the <a href="https://web.archive.org/web/2025*/sparkpressfusion.com" target="_blank" rel="noopener">Wayback Machine</a>'s first capture is from May 2024. Snapshots from 2025 show the same site with an older design and the tagline "Fusing Creativity and Knowledge to Ignite Your Spark."</li>
         <li><strong>Gaps:</strong> no posts were published from about January 2024 to April 2025, apart from one.</li>
       </ul>
 
@@ -984,7 +984,7 @@ const ARTICLES = [
       <p>Older posts from 2023 target login and app searches, such as a government login portal, bank customer ID numbers and "Unlocking Omegle: Easy and Secure Ways to Get Unbanned in 2024". Their tags include long lists of search-phrase variations.</p>
 
       <h2>Does SparkPressFusion.com Sell Guest Posts?</h2>
-      <p>Yes. Its Write for Us page says: "all guest post submissions are treated as part of our paid publishing model. We do not accept free guest posts. Every submission is considered a paid placement." The page asks for at least 800 words, promises processing "within 24 hours", and says to contact the site for pricing. It names "digital marketing agencies and SEO professionals" among its contributors.</p>
+      <p>Yes. Its <a href="https://www.sparkpressfusion.com/write-for-sparkpressfusion-com-guest-post-guidelines/" target="_blank" rel="nofollow noopener">Write for Us page</a> says: "all guest post submissions are treated as part of our paid publishing model. We do not accept free guest posts. Every submission is considered a paid placement." The page asks for at least 800 words, promises processing "within 24 hours", and says to contact the site for pricing. It names "digital marketing agencies and SEO professionals" among its contributors.</p>
       <p>Several posts link to commercial sites in regulated or high-risk areas, including a cannabis dispensary, a forex broker and a lawsuit-funding company. Those links carry no <code>rel="sponsored"</code> or <code>nofollow</code> label. <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites to use</a> those labels for paid links. Every post also has banner links to web hosting affiliate offers.</p>
 
       <h2>The "Official Website" Notice</h2>
@@ -1036,7 +1036,7 @@ const ARTICLES = [
     views: 0,
     tags: ["JournalWord", "Website Review", "Backlinks", "SEO", "Guest Posting"],
     content: `
-      <p class="lead">JournalWord.com (often searched as "journalword com") is a WordPress blog whose posts are largely reviews and guides about other websites, plus general business, health and crypto articles. Some web pages describe it as a journaling app, but it is not one. We checked its domain history, authors, link pages and recent posts on November 8, 2026.</p>
+      <p class="lead">JournalWord.com (often searched as "journalword com") is a WordPress blog whose posts are largely reviews and guides about other websites, plus general business, health and crypto articles. Some web pages describe it as a journaling app, but it is not one. We checked <a href="https://journalword.com/" target="_blank" rel="nofollow noopener">the site</a>, its domain history, authors, link pages and recent posts on November 8, 2026. It follows a pattern we found in our <a href="/articles/newsgiga-com-review/">NewsGiga.com review</a>: a general blog that targets searches for other websites' names.</p>
 
       <blockquote>
         <p><strong>JournalWord.com at a glance:</strong></p>
@@ -1055,9 +1055,9 @@ const ARTICLES = [
 
       <h2>Domain History: 2010 Splash Page, 2013 Indonesian Blog, 2023 Re-Registration</h2>
       <ul>
-        <li><strong>2010 to 2016:</strong> the Wayback Machine shows a "Click here to enter" splash page in 2010. In 2013 the domain hosted an Indonesian-language business blog, "Journal Word – Inspirasi Untuk Usaha". By 2016 it showed a "Click here to proceed" page.</li>
+        <li><strong>2010 to 2016:</strong> the <a href="https://web.archive.org/web/20130206071740/journalword.com" target="_blank" rel="noopener">Wayback Machine</a> shows a "Click here to enter" splash page in 2010. In 2013 the domain hosted an Indonesian-language business blog, "Journal Word – Inspirasi Untuk Usaha". By 2016 it showed a "Click here to proceed" page.</li>
         <li><strong>2016 to 2023:</strong> there are no archive captures.</li>
-        <li><strong>2023:</strong> the official Verisign registry record shows the current registration began on March 5, 2023, through NameCheap. The first post on the current site is dated March 30, 2023.</li>
+        <li><strong>2023:</strong> the official Verisign registry record, which you can check with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>, shows the current registration began on March 5, 2023, through NameCheap. The first post on the current site is dated March 30, 2023.</li>
       </ul>
       <p>A new registration date on a domain with earlier history usually means the name lapsed and was registered again by a new owner. We found nothing linking the 2013 blog to the current site.</p>
 
@@ -1075,7 +1075,7 @@ const ARTICLES = [
       <p>Publishing has slowed: there was a burst of 26 posts in January 2024, but only five in 2026.</p>
 
       <h2>JournalWord.com's Link Pages</h2>
-      <p>Two pages stand out. A page at /backlinks/ is little more than about 317 links, each with the anchor text "Link", pointing to other blogs and none labelled nofollow. A page at /websites/ lists 470 more outbound links. Several sites that JournalWord.com writes "reviews" about also appear in its /backlinks/ list.</p>
+      <p>Two pages stand out. A <a href="https://journalword.com/backlinks/" target="_blank" rel="nofollow noopener">page at /backlinks/</a> is little more than about 317 links, each with the anchor text "Link", pointing to other blogs and none labelled nofollow. A page at /websites/ lists 470 more outbound links. Several sites that JournalWord.com writes "reviews" about also appear in its /backlinks/ list.</p>
       <p>Pages that exist mainly to pass links between sites are what <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">Google's spam policies</a> describe as link schemes. Google decides how to treat any particular site.</p>
 
       <h2>Does JournalWord.com Accept Guest Posts?</h2>
