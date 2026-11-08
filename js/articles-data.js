@@ -1,6 +1,91 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "meta-midterms-data-centers-harder",
+    title: "Meta Says Midterm Results Will Make AI Data Centers Harder to Build",
+    excerpt: "Meta's president says building US AI data centers will get harder after the 2026 midterms, as voters backed limits in 40 of 41 local ballot measures.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T19:30:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Rows of data center server racks with dense orange and blue network cables and small green status lights",
+    isTrending: true,
+    views: 0,
+    tags: ["Meta", "Data Centers", "AI Infrastructure", "Midterm Elections", "Capex"],
+    content: `
+      <p class="lead">Meta says building AI data centers in the United States will get harder after the November 3, 2026 midterm elections. Speaking at the WSJ Tech conference on November 4, Meta President Dina Powell McCormick said, "I think it's going to be harder," after Democrats won control of Congress and voters in dozens of towns backed limits on new data centers.</p>
+
+      <blockquote>
+        <p><strong>Key points:</strong></p>
+        <ul>
+          <li><strong>Meta's warning:</strong> its president expects every future data center project to face more scrutiny after the midterms.</li>
+          <li><strong>Ballot results:</strong> voters sided against data center development in 40 of 41 local ballot measures on November 3, according to Scientific American's tally.</li>
+          <li><strong>Spending at stake:</strong> Meta expects to spend $135 billion to $145 billion on capital expenditure in 2026.</li>
+          <li><strong>Markets:</strong> the Nasdaq fell 5.5% into correction on November 5 as AI and chip stocks sold off.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Meta Said About Data Centers After the Midterms</h2>
+      <p>Powell McCormick linked the backlash to wider unease about artificial intelligence. "The visible sort of manifestation of AI is a data center," she said, according to <a href="https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/" target="_blank" rel="noopener">TechCrunch</a>. "I think there's an underlying bigger issue, which is how people feel about AI in general."</p>
+      <p>She also conceded that the industry has "not done as good a job as we needed to explain the benefits of these investments."</p>
+      <p>She did not say Meta had cancelled or moved any project. She said states are learning "what models work". Meta's approach, as <a href="https://www.artificialintelligence-news.com/news/meta-midterm-election-results-could-stall-ai-expansion/" target="_blank" rel="noopener">AI News reported</a>, is to pay for its own electricity, keep the construction workforce local, and seek bipartisan support before building.</p>
+
+      <h2>How Big Is Meta's Data Center Build-Out?</h2>
+      <p>Meta runs data centers in 23 US states. Five planned projects, including one in Texas, are designed to draw at least one gigawatt of power each, about the output of a large power plant.</p>
+      <p>The spending is substantial. In its <a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx" target="_blank" rel="noopener">third-quarter 2026 results</a> on October 21, Meta reported capital expenditure of $34.91 billion for the quarter, including finance lease principal payments. It narrowed its 2026 capital expenditure outlook to between $135 billion and $145 billion. Most of that goes on servers, data centers and network infrastructure for AI.</p>
+      <p>Demand for that capacity is strong, she said: "We're getting calls every day to lease that compute."</p>
+
+      <h2>What Voters Decided on Data Centers</h2>
+      <p>Data centers were on local ballots across the country. <a href="https://news.ballotpedia.org/2026/11/03/voters-in-ten-states-will-vote-on-data-center-related-ballot-measures-november-3/" target="_blank" rel="noopener">Ballotpedia</a> tracked 41 local measures in 10 states on November 3: 28 that would limit development and 13 that would make it easier. Ohio had 21 of them.</p>
+      <p>With most results in, <a href="https://www.scientificamerican.com/article/2026-election-results-show-widespread-opposition-to-ai-data-centers/" target="_blank" rel="noopener">Scientific American</a> reported that voters sided against data center development in 40 of the 41 contests. Examples include:</p>
+      <ul>
+        <li><strong>Wells, Maine:</strong> more than 80% of voters approved a retroactive 180-day moratorium.</li>
+        <li><strong>Emporia, Kansas:</strong> voters approved a ban on data center construction.</li>
+        <li><strong>Harwood, North Dakota:</strong> the only win for the industry. Voters rejected extra review for industrial projects, including data centers, by about three to one.</li>
+      </ul>
+      <p>Earlier in 2026, voters had already approved a ban in Monterey Park, California (88.3% in favour) and a one-year permitting moratorium in Nottingham, New Hampshire (90.3%), according to Ballotpedia. These results are unofficial until certified.</p>
+
+      <h2>Why the Governors' Races Matter</h2>
+      <p>Statehouses decide much of what affects data centers, including power prices, water use, tax incentives and zoning. Three Democratic governors-elect, Gina Hinojosa in Texas, Keisha Lance Bottoms in Georgia and Amy Acton in Ohio, made data center regulation a campaign issue, Scientific American reported.</p>
+      <p>Texas matters most. It accounts for roughly a quarter of US data center capacity in development, according to an analysis cited by Scientific American. Hinojosa has called for pausing new data centers until stronger protections are in place.</p>
+
+      <h2>How Markets Reacted</h2>
+      <p>Investors moved fast. On November 5 the Nasdaq Composite fell 5.5% into correction, its worst day since April 2025, and Nvidia dropped about 9%. The sell-off spread to Asia and Europe the next day, pushing Japan's Nikkei 225 into a bear market and triggering a circuit breaker in South Korea.</p>
+      <p>Our coverage has the details: <a href="/articles/nasdaq-rebounds-after-correction-jobs-report/">the Nasdaq's correction and rebound</a>, and <a href="/articles/global-stocks-ai-selloff-nikkei-ftse/">how the AI sell-off hit the Nikkei, Kospi and FTSE</a>.</p>
+
+      <h2>What This Means for Businesses</h2>
+      <ul>
+        <li><strong>Slower, costlier projects:</strong> expect longer approval timelines, more community agreements and more pressure on data center operators to pay their own way on power and water.</li>
+        <li><strong>Location shifts:</strong> developers may favour states and towns with clear rules and local support, or look abroad. Powell McCormick said "the states want those models that work."</li>
+        <li><strong>Compute prices:</strong> if new capacity slows while demand keeps rising, companies that rent AI computing power could face tighter supply. That is a possibility, not a certainty. For how businesses are adopting AI, see our report on <a href="/articles/ai-enterprise-adoption-roi-surge/">enterprise AI adoption and ROI</a>.</li>
+        <li><strong>Energy and supply chains:</strong> power equipment, utilities and construction firms tied to data center demand now face more political risk. Our report on <a href="/articles/green-energy-manufacturing-incentives/">energy manufacturing incentives</a> covers related policy.</li>
+      </ul>
+
+      <h2>What to Watch Next</h2>
+      <ul>
+        <li><strong>New legislation:</strong> any federal or state bills from the incoming Congress and governors on data center power use, water and permitting.</li>
+        <li><strong>More local votes:</strong> Ballotpedia lists further data center measures in Clarksville, Arkansas, on December 1 and Mandan, North Dakota, on December 15.</li>
+        <li><strong>Company guidance:</strong> whether Meta and other cloud and AI companies change their 2027 spending plans. Meta has said only that it expects to "sustain strong overall revenue growth throughout 2027".</li>
+      </ul>
+
+      <h2>FAQs</h2>
+      <h3>Why does Meta say data centers will be harder to build?</h3>
+      <p>Its president expects more scrutiny of every project after Democrats won Congress and voters backed local limits on data centers in the November 3, 2026 elections.</p>
+      <h3>Has Meta cancelled any data center projects?</h3>
+      <p>No cancellations were announced. Powell McCormick said future projects will face more review.</p>
+      <h3>How much is Meta spending on AI infrastructure?</h3>
+      <p>Meta expects 2026 capital expenditure of $135 billion to $145 billion, according to its third-quarter 2026 results.</p>
+
+      <p><em>Checked on November 8, 2026, against Meta's investor release, TechCrunch's report from the WSJ Tech conference, Ballotpedia and Scientific American. Local ballot results are unofficial until certified. This article is for information only and is not investment advice.</em></p>
+    `
+  },
+  {
     id: "mygreenbucks-net-kenneth-jones",
     title: "MyGreenBucks Net Jones: Who Is Kenneth Jones and Is MyGreenBucks.net Real?",
     excerpt: "Who is Kenneth Jones of MyGreenBucks.net? We checked the byline, the site's conflicting claims, its 1,497 posts and domain history. Here is what is true.",

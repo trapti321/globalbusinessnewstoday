@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/meta-midterms-data-centers-harder/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-08T19:30:00Z</news:publication_date>
+      <news:title>Meta Says Midterm Results Will Make AI Data Centers Harder to Build</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/puzutask-com-review/</loc>
     <news:news>
       <news:publication>
@@ -163,17 +174,6 @@
       </news:publication>
       <news:publication_date>2026-11-06T18:00:00Z</news:publication_date>
       <news:title>Global Stocks Slide as AI Sell-Off Spreads: Nikkei Hits Bear Market, FTSE Falls 2%</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/nasdaq-rebounds-after-correction-jobs-report/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-06T16:30:00Z</news:publication_date>
-      <news:title>Nasdaq Rebounds After Its Worst Day Since April 2025 as Jobs Report Beats</news:title>
     </news:news>
   </url>
 </urlset>
