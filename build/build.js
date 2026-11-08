@@ -40,6 +40,9 @@ const CATEGORIES = [
 
 // Shown on /editorial-standards/ and on the newsroom author page; also linked from the publisher schema.
 const STANDARDS_URL = "/editorial-standards/";
+const ABOUT_URL = "/about/";
+const PRIVACY_URL = "/privacy-policy/";
+const TERMS_URL = "/terms/";
 const STANDARDS = [
   "<strong>Primary sources first.</strong> Figures and claims are taken from regulatory filings, central bank statements, official statistics, court records and company announcements, and linked inline so readers can check them.",
   "<strong>Clear dates.</strong> Every article shows when it was published and, where relevant, when it was last updated or when its facts were last checked.",
@@ -311,14 +314,18 @@ function footer() {
             <li><a href="/">Home</a></li>
             <li><a href="/category/all/">All News</a></li>
             ${Object.entries(AUTHORS).map(([name, p]) => `<li><a href="${authorUrl(p)}">${esc(name)}</a></li>`).join("\n            ")}
+            <li><a href="${ABOUT_URL}">About Us</a></li>
             <li><a href="${STANDARDS_URL}">Editorial Standards</a></li>
             <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="${PRIVACY_URL}">Privacy Policy</a></li>
+            <li><a href="${TERMS_URL}">Terms of Use</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="footer-bottom">
         <p>© ${year} ${esc(SITE.name)}. All rights reserved.</p>
+        <p class="footer-legal"><a href="${ABOUT_URL}">About</a> · <a href="${PRIVACY_URL}">Privacy</a> · <a href="${TERMS_URL}">Terms</a> · <a href="${STANDARDS_URL}#corrections">Corrections</a></p>
         <p>Email: <a href="mailto:${SITE.email}">${SITE.email}</a></p>
       </div>
     </div>
@@ -374,6 +381,7 @@ function contactBox() {
               <textarea id="side-message" name="message" class="form-control" rows="4" required maxlength="5000" placeholder="How can we help?"></textarea>
               <button type="submit" class="btn-pr-submit btn-block">Send Message</button>
               <p class="form-status" role="status" aria-live="polite"></p>
+              <p class="form-privacy">We use your details only to reply. See our <a href="${PRIVACY_URL}">privacy policy</a>.</p>
             </form>
           </div>`;
 }
@@ -442,7 +450,8 @@ const ORGANIZATION = {
   publishingPrinciples: `${SITE.url}${STANDARDS_URL}`,
   ethicsPolicy: `${SITE.url}${STANDARDS_URL}`,
   correctionsPolicy: `${SITE.url}${STANDARDS_URL}#corrections`,
-  actionableFeedbackPolicy: `${SITE.url}${STANDARDS_URL}#feedback`
+  actionableFeedbackPolicy: `${SITE.url}${STANDARDS_URL}#feedback`,
+  ownershipFundingInfo: `${SITE.url}${ABOUT_URL}#ownership`
 };
 
 const WEBSITE_REF = { "@type": "WebSite", "@id": `${SITE.url}/#website`, name: SITE.name, url: `${SITE.url}/` };
@@ -663,6 +672,7 @@ function buildArticle(a) {
             <span class="share-feedback" role="status" aria-live="polite"></span>
           </div>
 
+          ${a.categorySlug === "press-releases" ? `<p class="content-disclosure"><strong>Press release:</strong> this announcement was supplied by the organisation named in it and is published as submitted. It was not written or independently verified by ${esc(SITE.name)}. Read our <a href="${STANDARDS_URL}#sponsored">sponsored content and press release policy</a>.</p>` : ""}
           <div class="article-prose">
 ${a.content.replace(/^\n+|\s+$/g, "")}
           </div>
@@ -929,6 +939,11 @@ function buildStandards() {
           <p>If we get a fact wrong, we fix it in the article and show the date it was updated. To report an error, email <a href="mailto:${SITE.email}">${SITE.email}</a> or use our <a href="/contact.html">contact page</a>, and include the article link and what needs correcting.</p>
         </section>
 
+        <section id="sponsored" aria-labelledby="sponsoredTitle">
+          <h2 id="sponsoredTitle">Sponsored Content and Press Releases</h2>
+          <p>Our news and analysis are written by our editorial desk and are never paid for by the companies or websites we cover. Press releases appear only in our <a href="${categoryUrl("press-releases")}">Press Releases</a> section, carry a "Press release" label, and are published as supplied by the organisation named in them, without independent verification. We do not present promotional material as independent reporting. If we ever publish sponsored or affiliate content, it will be clearly labelled as such at the top of the page.</p>
+        </section>
+
         <section aria-labelledby="adviceTitle">
           <h2 id="adviceTitle">Financial and Health Information</h2>
           <p>Our reporting on markets, companies and health is for information only. It is not investment, financial, legal or medical advice.</p>
@@ -952,6 +967,199 @@ function buildStandards() {
       breadcrumb([{ name: "Home", url: "/" }, { name: "Editorial Standards", url: STANDARDS_URL }])
     ],
     main
+  });
+}
+
+// Shared layout for trust and legal pages (About, Privacy Policy, Terms of Use).
+function buildInfoPage({ path, crumb, title, description, updated, schemaType = "WebPage", body }) {
+  const url = `${SITE.url}${path}`;
+  const main = `
+    <div class="author-profile">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">${esc(crumb)}</li>
+        </ol>
+      </nav>
+      <h1 class="page-title">${esc(title)}</h1>
+      <p class="page-description">${esc(description)}</p>
+      ${updated ? `<p class="page-updated">Last updated: <time datetime="${updated}">${formatDate(updated)}</time></p>` : ""}
+
+      <div class="author-profile-body">
+${body}
+      </div>
+    </div>`;
+
+  return render({
+    title: `${title} | ${SITE.name}`.length <= 70 ? `${title} | ${SITE.name}` : title,
+    description,
+    canonical: url,
+    robots: ROBOTS_INDEX,
+    og: { type: "website", title, image: defaultOgImage },
+    schema: [
+      { "@context": "https://schema.org", "@type": schemaType, "@id": `${url}#webpage`, name: title, url, description, inLanguage: "en", isPartOf: WEBSITE_REF, about: { "@id": ORGANIZATION["@id"] }, publisher: ORGANIZATION, ...(updated ? { dateModified: updated } : {}) },
+      breadcrumb([{ name: "Home", url: "/" }, { name: crumb, url: path }])
+    ],
+    main
+  });
+}
+
+const POLICY_UPDATED = "2026-11-08";
+
+function buildAbout() {
+  const newsroom = Object.entries(AUTHORS)[0];
+  const desks = CATEGORIES.filter(c => c.slug !== "press-releases");
+  return buildInfoPage({
+    path: ABOUT_URL,
+    crumb: "About Us",
+    title: "About Global Business News Today",
+    description: "Who we are, what we cover, how our newsroom works, who is behind the site and how to contact Global Business News Today.",
+    schemaType: "AboutPage",
+    body: `
+        <section aria-labelledby="whoTitle">
+          <h2 id="whoTitle">Who We Are</h2>
+          <p>${esc(SITE.name)} is an independent, English-language business news publication at <a href="/">globalbusinessnewstoday.com</a>. We publish news, explainers and analysis for executives, founders, investors and small business owners, with a focus on facts readers can check for themselves.</p>
+        </section>
+
+        <section aria-labelledby="coverTitle">
+          <h2 id="coverTitle">What We Cover</h2>
+          <ul class="author-standards">
+            ${desks.map(c => `<li><a href="${categoryUrl(c.slug)}"><strong>${esc(c.name)}</strong></a>: ${esc(c.description)}</li>`).join("\n            ")}
+          </ul>
+          <p>We also review websites that many people search for by name, checking domain records, archive history and published claims so readers can decide whether a site is trustworthy.</p>
+        </section>
+
+        <section aria-labelledby="newsroomTitle">
+          <h2 id="newsroomTitle">Our Newsroom</h2>
+          <p>${newsroom ? `Stories are researched, written and fact-checked by our editorial desk, <a href="${authorUrl(newsroom[1])}">${esc(newsroom[0])}</a>. ` : ""}Every article shows its byline, publication date and, when it changes, the date it was updated. We link to primary sources such as company filings, government data and official statements next to the facts they support.</p>
+          <p>Read our full <a href="${STANDARDS_URL}">editorial standards</a>, including our <a href="${STANDARDS_URL}#corrections">corrections policy</a> and our <a href="${STANDARDS_URL}#sponsored">policy on sponsored content and press releases</a>.</p>
+        </section>
+
+        <section id="ownership" aria-labelledby="ownershipTitle">
+          <h2 id="ownershipTitle">Ownership and Funding</h2>
+          <p>${esc(SITE.name)} is independently owned and operated. It is not owned by, or affiliated with, any of the companies or websites it reports on. Companies cannot pay to change our news coverage or reviews. Press releases submitted by organisations are published separately in our <a href="${categoryUrl("press-releases")}">Press Releases</a> section and labelled as such.</p>
+        </section>
+
+        <section aria-labelledby="contactTitle">
+          <h2 id="contactTitle">Contact Us</h2>
+          <p>Email <a href="mailto:${SITE.email}">${SITE.email}</a> or use our <a href="/contact.html">contact page</a> for news tips, corrections, partnerships and general questions. Companies can send announcements through our <a href="/submit-pr.html">press release form</a>.</p>
+        </section>`
+  });
+}
+
+function buildPrivacy() {
+  return buildInfoPage({
+    path: PRIVACY_URL,
+    crumb: "Privacy Policy",
+    title: "Privacy Policy",
+    description: "What information Global Business News Today collects, how we use it, the services involved, and how to ask us to access or delete your data.",
+    updated: POLICY_UPDATED,
+    body: `
+        <section aria-labelledby="p1">
+          <h2 id="p1">Who We Are</h2>
+          <p>This policy explains how ${esc(SITE.name)} ("we", "us") handles personal information when you visit <a href="/">globalbusinessnewstoday.com</a> or contact us. Questions about this policy can be sent to <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
+        </section>
+
+        <section aria-labelledby="p2">
+          <h2 id="p2">Information You Give Us</h2>
+          <ul class="author-standards">
+            <li><strong>Contact forms:</strong> your name, email address and message.</li>
+            <li><strong>Newsletter sign-up:</strong> your email address.</li>
+            <li><strong>Press release submissions:</strong> company name, media contact email, the release text and any links you include.</li>
+          </ul>
+          <p>When you submit a form, we also record the page you sent it from, the time and your IP address. We use these to reply to you, to prevent spam and abuse (for example, by limiting repeated submissions), and to keep a private backup copy of submissions on our hosting server.</p>
+        </section>
+
+        <section aria-labelledby="p3">
+          <h2 id="p3">How We Use Your Information</h2>
+          <ul class="author-standards">
+            <li>To reply to messages, tips and correction requests.</li>
+            <li>To send the newsletter you signed up for. You can unsubscribe at any time by emailing us.</li>
+            <li>To review press releases for publication.</li>
+            <li>To protect the site against spam and misuse.</li>
+          </ul>
+          <p>We do not sell your personal information.</p>
+        </section>
+
+        <section aria-labelledby="p4">
+          <h2 id="p4">Analytics and Cookies</h2>
+          <p>We use Google Analytics to understand how many people visit the site and which pages they read. Google Analytics uses cookies and collects information such as your device, browser, approximate location and the pages you view. Google explains how it uses this data at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites that use its services</a>. You can opt out with the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out browser add-on</a> or by blocking cookies in your browser.</p>
+          <p>We also save your light or dark theme choice in your browser's local storage. It stays on your device and is not sent to us.</p>
+        </section>
+
+        <section aria-labelledby="p5">
+          <h2 id="p5">Third-Party Services</h2>
+          <ul class="author-standards">
+            <li><strong>Hosting and email:</strong> the site and its form mailer run on our web hosting provider's servers, and form submissions are delivered to our email inbox.</li>
+            <li><strong>Images:</strong> many article images are loaded from Unsplash, which receives your IP address when your browser loads an image.</li>
+            <li><strong>External links:</strong> we link to other websites. Their privacy practices are their own.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="p6">
+          <h2 id="p6">How Long We Keep Information</h2>
+          <p>We keep form submissions only as long as we need them to respond, review a submission or protect the site, and we delete them on request.</p>
+        </section>
+
+        <section aria-labelledby="p7">
+          <h2 id="p7">Your Choices and Rights</h2>
+          <p>You can ask us to tell you what information we hold about you, correct it or delete it by emailing <a href="mailto:${SITE.email}">${SITE.email}</a>. Depending on where you live, you may have further rights under local data protection law, including the right to complain to your data protection authority.</p>
+        </section>
+
+        <section aria-labelledby="p8">
+          <h2 id="p8">Children</h2>
+          <p>This site is intended for adults and is not directed at children under 13. We do not knowingly collect information from children.</p>
+        </section>
+
+        <section aria-labelledby="p9">
+          <h2 id="p9">Changes to This Policy</h2>
+          <p>If we change this policy, we will update the date at the top of this page.</p>
+        </section>`
+  });
+}
+
+function buildTerms() {
+  return buildInfoPage({
+    path: TERMS_URL,
+    crumb: "Terms of Use",
+    title: "Terms of Use",
+    description: "The terms for using Global Business News Today, including how you may share our content, submissions, external links and our information-only disclaimer.",
+    updated: POLICY_UPDATED,
+    body: `
+        <section aria-labelledby="t1">
+          <h2 id="t1">Using This Site</h2>
+          <p>By using <a href="/">globalbusinessnewstoday.com</a>, you agree to these terms. If you do not agree, please do not use the site.</p>
+        </section>
+
+        <section aria-labelledby="t2">
+          <h2 id="t2">Information, Not Advice</h2>
+          <p>Our articles are for general information only. They are not investment, financial, legal, tax or medical advice, and they do not recommend buying or selling any security. Markets and rules change, so check important facts with the original source or a qualified professional before acting on them. See our <a href="${STANDARDS_URL}">editorial standards</a> for how we report.</p>
+        </section>
+
+        <section aria-labelledby="t3">
+          <h2 id="t3">Our Content</h2>
+          <p>Articles, graphics and site design are owned by ${esc(SITE.name)} or used under licence. You may share links to our articles and quote short passages with a credit and a link to the original page. Please do not republish full articles without written permission. Photographs belong to their creators and are used under their licences.</p>
+        </section>
+
+        <section aria-labelledby="t4">
+          <h2 id="t4">Submissions</h2>
+          <p>When you send us a press release, tip or other material, you confirm that you have the right to share it and that it is accurate. You allow us to edit, publish or decline it. Press releases are published as supplied and labelled as such, as explained in our <a href="${STANDARDS_URL}#sponsored">press release policy</a>.</p>
+        </section>
+
+        <section aria-labelledby="t5">
+          <h2 id="t5">External Links</h2>
+          <p>We link to other websites to support our reporting. We are not responsible for their content, availability or practices, and a link is not an endorsement.</p>
+        </section>
+
+        <section aria-labelledby="t6">
+          <h2 id="t6">Corrections and Liability</h2>
+          <p>We work to keep our reporting accurate and correct errors promptly under our <a href="${STANDARDS_URL}#corrections">corrections policy</a>. The site is provided "as is", and to the extent allowed by law we are not liable for losses arising from reliance on its content.</p>
+        </section>
+
+        <section aria-labelledby="t7">
+          <h2 id="t7">Privacy and Contact</h2>
+          <p>Our <a href="${PRIVACY_URL}">privacy policy</a> explains how we handle personal information. Questions about these terms can be sent to <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
+        </section>`
   });
 }
 
@@ -1080,7 +1288,7 @@ ${section("Site Sections", [
 ])}
 ${bySection.join("\n")}
 ${section("Authors", Object.entries(AUTHORS).map(([name, p]) => `- [${name}](${SITE.url}${authorUrl(p)}): ${p.shortBio}`))}
-${section("Editorial Policies", [`- [Editorial Standards and Corrections Policy](${SITE.url}${STANDARDS_URL}): How we source, date and correct our reporting`])}
+${section("Editorial Policies", [`- [Editorial Standards and Corrections Policy](${SITE.url}${STANDARDS_URL}): How we source, date and correct our reporting`, `- [About Us](${SITE.url}${ABOUT_URL}): Who we are, our newsroom, ownership and contact details`, `- [Privacy Policy](${SITE.url}${PRIVACY_URL}): What data we collect and how to request deletion`, `- [Terms of Use](${SITE.url}${TERMS_URL}): Terms for using and sharing our content`])}
 ${section("Optional", [
   `- [Contact Us](${SITE.url}/contact.html): Newsroom, corrections, advertising and partnership enquiries`,
   `- [Submit a Press Release](${SITE.url}/submit-pr.html): Corporate announcements for editorial review`
@@ -1139,7 +1347,10 @@ write("submit-pr.html", buildStatic({
   schemaType: "WebPage"
 }));
 write("editorial-standards/index.html", buildStandards());
-sitemapPages.push({ path: "/contact.html" }, { path: "/submit-pr.html" }, { path: STANDARDS_URL });
+write("about/index.html", buildAbout());
+write("privacy-policy/index.html", buildPrivacy());
+write("terms/index.html", buildTerms());
+sitemapPages.push({ path: "/contact.html" }, { path: "/submit-pr.html" }, { path: STANDARDS_URL }, { path: ABOUT_URL }, { path: PRIVACY_URL, lastmod: POLICY_UPDATED }, { path: TERMS_URL, lastmod: POLICY_UPDATED });
 
 write("404.html", build404());
 write("sitemap.xml", buildSitemap(sitemapPages));

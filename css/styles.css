@@ -2017,3 +2017,73 @@ dialog.custom-modal::backdrop {
     margin-block-end: 0;
   }
 }
+
+/* ==========================================================================
+   Transparency: disclosures, policy dates, privacy notes, contact info
+   ========================================================================== */
+.content-disclosure {
+  background-color: var(--bg-secondary);
+  border-inline-start: 4px solid var(--brand-accent);
+  border-radius: var(--radius-sm);
+  padding: 0.875rem 1rem;
+  margin-block-end: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.content-disclosure a,
+.form-privacy a,
+.contact-info-grid a,
+.footer-legal a {
+  color: var(--brand-accent);
+}
+
+.page-updated {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-block: -0.5rem 1.5rem;
+}
+
+.form-privacy {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-block-start: 0.75rem;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-block-start: 2rem;
+}
+
+.contact-info-grid section {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.contact-info-grid h2 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-block-end: 0.5rem;
+}
+
+.contact-info-grid p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.footer-legal {
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

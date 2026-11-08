@@ -86,6 +86,9 @@ Global Business News Today is an independent business news website. Articles cit
 ## Editorial Policies
 
 - [Editorial Standards and Corrections Policy](https://globalbusinessnewstoday.com/editorial-standards/): How we source, date and correct our reporting
+- [About Us](https://globalbusinessnewstoday.com/about/): Who we are, our newsroom, ownership and contact details
+- [Privacy Policy](https://globalbusinessnewstoday.com/privacy-policy/): What data we collect and how to request deletion
+- [Terms of Use](https://globalbusinessnewstoday.com/terms/): Terms for using and sharing our content
 
 ## Optional
 
