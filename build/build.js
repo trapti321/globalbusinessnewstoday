@@ -358,6 +358,26 @@ function newsletterBox(title, text, placeholder = "Your business email") {
           </div>`;
 }
 
+// Compact contact form for the article sidebar; posts to the same mailer as the contact page.
+function contactBox() {
+  return `<div class="widget-box widget-contact">
+            <h2 class="widget-title">Contact the Desk</h2>
+            <p>Have a tip, a correction or a question about this story? Send it to our editors.</p>
+            <form class="contact-side-form" data-form="contact" novalidate>
+              <input type="hidden" name="type" value="contact">
+              ${honeypot()}
+              <label class="form-label" for="side-name">Name</label>
+              <input type="text" id="side-name" name="name" class="form-control" required maxlength="120" autocomplete="name" placeholder="Your name">
+              <label class="form-label" for="side-email">Email</label>
+              <input type="email" id="side-email" name="email" class="form-control" required maxlength="200" autocomplete="email" placeholder="you@company.com">
+              <label class="form-label" for="side-message">Message</label>
+              <textarea id="side-message" name="message" class="form-control" rows="4" required maxlength="5000" placeholder="How can we help?"></textarea>
+              <button type="submit" class="btn-pr-submit btn-block">Send Message</button>
+              <p class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>`;
+}
+
 function newsCard(a) {
   return `<article class="news-card" data-category="${a.categorySlug}">
             <a href="${articleUrl(a)}" class="news-card-thumb" tabindex="-1" aria-hidden="true">
@@ -660,12 +680,15 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
           </div>
         </div>
 
-        <aside class="article-sidebar" aria-label="Related stories and newsletter">
+        <aside class="article-sidebar" aria-label="Related stories, newsletter and contact">
           <div class="widget-box">
             <h2 class="widget-title">Related Stories</h2>
             ${related.map(r => sideCard(r, "h3")).join("\n            ")}
           </div>
-          ${newsletterBox("Stay Ahead", "Subscribe for our market and SME briefing.")}
+          <div class="sidebar-sticky">
+            ${newsletterBox("Stay Ahead", "Subscribe for our market and SME briefing.")}
+            ${contactBox()}
+          </div>
         </aside>
       </div>
     </article>`;
