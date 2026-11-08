@@ -1,6 +1,620 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "texans-vs-pittsburgh-steelers-match-player-stats",
+    title: "Texans vs Pittsburgh Steelers Match Player Stats: Full Box Score From Houston's 30-6 Wild Card Win",
+    excerpt: "Texans vs Steelers match player stats from the 30-6 AFC Wild Card on Jan 12, 2026: Stroud, Rodgers, Kirk, Marks, sacks, scoring plays and team totals.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T15:00:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Brown leather American football resting on the grass of a field between white yard-line markings",
+    isTrending: true,
+    views: 0,
+    tags: ["NFL", "Houston Texans", "Pittsburgh Steelers", "Player Stats", "Box Score"],
+    content: `
+      <p class="lead">The Houston Texans beat the Pittsburgh Steelers 30-6 in the AFC Wild Card round on Monday, January 12, 2026, at Acrisure Stadium in Pittsburgh. It was the most recent Texans vs Steelers game. Below are the full match player stats: passing, rushing, receiving and defence, checked against the official box score.</p>
+
+      <blockquote>
+        <p><strong>Texans vs Steelers at a glance:</strong> Texans 30, Steelers 6 · AFC Wild Card · January 12, 2026 · Acrisure Stadium, Pittsburgh · Attendance 67,297. Top performers: Christian Kirk (8 catches, 144 yards, 1 TD), Woody Marks (112 rushing yards, 1 TD), Sheldon Rankins (1.5 sacks and a fumble-return TD).</p>
+      </blockquote>
+
+      <p>Houston scored 23 unanswered points in the fourth quarter, including two defensive touchdowns. It was the first road playoff win in Texans franchise history and the Steelers' seventh straight playoff loss under head coach Mike Tomlin. The teams meet again on December 6, 2026, at Acrisure Stadium.</p>
+
+      <h2>Texans vs Steelers Score by Quarter</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>Houston Texans</td><td>0</td><td>7</td><td>0</td><td>23</td><td>30</td></tr>
+          <tr><td>Pittsburgh Steelers</td><td>3</td><td>3</td><td>0</td><td>0</td><td>6</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scoring plays</h3>
+      <ul>
+        <li><strong>Q1, 6:02:</strong> Chris Boswell 32-yard field goal (PIT)</li>
+        <li><strong>Q2, 8:28:</strong> Christian Kirk 6-yard touchdown pass from C.J. Stroud (HOU)</li>
+        <li><strong>Q2, 1:57:</strong> Boswell 35-yard field goal (PIT)</li>
+        <li><strong>Q4, 13:07:</strong> Ka'imi Fairbairn 51-yard field goal (HOU)</li>
+        <li><strong>Q4, 11:23:</strong> Sheldon Rankins 33-yard fumble return touchdown (HOU)</li>
+        <li><strong>Q4, 3:38:</strong> Woody Marks 13-yard touchdown run (HOU)</li>
+        <li><strong>Q4, 2:39:</strong> Calen Bullock 50-yard interception return touchdown, extra point failed (HOU)</li>
+      </ul>
+
+      <h2>Passing Stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>C/ATT</th><th>Yards</th><th>TD</th><th>INT</th><th>Sacked</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>C.J. Stroud (HOU)</td><td>21/32</td><td>250</td><td>1</td><td>1</td><td>3 for 6 yds</td><td>86.7</td></tr>
+          <tr><td>Aaron Rodgers (PIT)</td><td>17/33</td><td>146</td><td>0</td><td>1</td><td>4 for 36 yds</td><td>50.8</td></tr>
+          <tr><td>Mason Rudolph (PIT)</td><td>1/1</td><td>2</td><td>0</td><td>0</td><td>0</td><td>79.2</td></tr>
+        </tbody>
+      </table>
+      <p>Stroud threw for 250 yards but also had five fumbles, losing two. Those two lost fumbles plus his interception are the three Houston turnovers in the team stats.</p>
+
+      <h2>Rushing Stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Carries</th><th>Yards</th><th>TD</th><th>Long</th></tr></thead>
+        <tbody>
+          <tr><td>Woody Marks (HOU)</td><td>19</td><td>112</td><td>1</td><td>20</td></tr>
+          <tr><td>Nick Chubb (HOU)</td><td>10</td><td>48</td><td>0</td><td>9</td></tr>
+          <tr><td>Jaylen Warren (PIT)</td><td>12</td><td>43</td><td>0</td><td>12</td></tr>
+          <tr><td>Kenny Gainwell (PIT)</td><td>6</td><td>20</td><td>0</td><td>14</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Receiving Stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Receptions</th><th>Yards</th><th>TD</th></tr></thead>
+        <tbody>
+          <tr><td>Christian Kirk (HOU)</td><td>8</td><td>144</td><td>1</td></tr>
+          <tr><td>Jayden Higgins (HOU)</td><td>3</td><td>39</td><td>0</td></tr>
+          <tr><td>Nico Collins (HOU)</td><td>3</td><td>21</td><td>0</td></tr>
+          <tr><td>DK Metcalf (PIT)</td><td>2</td><td>42</td><td>0</td></tr>
+          <tr><td>Kenny Gainwell (PIT)</td><td>4</td><td>26</td><td>0</td></tr>
+          <tr><td>Marquez Valdes-Scantling (PIT)</td><td>3</td><td>26</td><td>0</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Defensive Stats</h2>
+      <ul>
+        <li><strong>Texans sacks (4):</strong> Sheldon Rankins 1.5, Danielle Hunter 1, and half a sack each for Will Anderson Jr., Denico Autry and Derek Barnett.</li>
+        <li><strong>Texans takeaways:</strong> Calen Bullock interception, returned 50 yards for a touchdown. Rankins recovered a fumble and returned it 33 yards for a touchdown.</li>
+        <li><strong>Texans tackle leaders:</strong> Jalen Pitre and Henry To'oTo'o, 7 each.</li>
+        <li><strong>Steelers sacks (3):</strong> Derrick Harmon, Keeanu Benton and Jack Sawyer, 1 each.</li>
+        <li><strong>Steelers takeaways:</strong> Brandin Echols intercepted Stroud. T.J. Watt, Mason McCormick and Yahya Black each recovered a fumble.</li>
+        <li><strong>Steelers tackle leader:</strong> Patrick Queen, 10.</li>
+      </ul>
+
+      <h2>Team Stats</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Texans</th><th>Steelers</th></tr></thead>
+        <tbody>
+          <tr><td>Total yards</td><td>408</td><td>175</td></tr>
+          <tr><td>Passing yards (net)</td><td>244</td><td>112</td></tr>
+          <tr><td>Rushing yards</td><td>164</td><td>63</td></tr>
+          <tr><td>Third-down conversions</td><td>10 of 15</td><td>2 of 14</td></tr>
+          <tr><td>Turnovers</td><td>3</td><td>2</td></tr>
+          <tr><td>Time of possession</td><td>32:22</td><td>27:38</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What the Stats Show</h2>
+      <p>The game was close for three quarters: Houston led only 7-6 entering the fourth. The difference was Pittsburgh's offence, which managed 175 total yards and converted 2 of 14 third downs. Houston's defence then turned the game with two touchdowns in under nine minutes.</p>
+      <p>"We're here for it all," Rankins said after the game, according to the Associated Press. "We're here for the whole thing." Tomlin said, "It's the here and now, and certainly it's difficult. But that's what we sign up for." Rodgers, asked about his future, said: "I'm not going to make any emotional decisions. I'm disappointed."</p>
+      <p>The win improved Houston to 13-5 and extended its winning streak to 10 games, sending the Texans to New England for the Divisional Round on January 18. Pittsburgh, the AFC North champion, finished 10-8.</p>
+
+      <h2>Recent Texans vs Steelers Games</h2>
+      <ul>
+        <li><strong>January 12, 2026 (AFC Wild Card):</strong> Texans 30, Steelers 6, at Acrisure Stadium</li>
+        <li><strong>December 6, 2026 (scheduled):</strong> Texans at Steelers, Sunday night, Acrisure Stadium</li>
+      </ul>
+      <p>The teams did not meet in the 2025 regular season.</p>
+
+      <h2>Texans vs Steelers FAQs</h2>
+      <h3>Who won the last Texans vs Steelers game?</h3>
+      <p>The Texans won 30-6 in the AFC Wild Card round on January 12, 2026.</p>
+      <h3>Who was the top player in Texans vs Steelers?</h3>
+      <p>Christian Kirk led all receivers with 8 catches for 144 yards and a touchdown. Woody Marks ran for 112 yards and a touchdown, and Sheldon Rankins had 1.5 sacks and a fumble-return touchdown.</p>
+      <h3>When do the Texans and Steelers play next?</h3>
+      <p>Sunday night, December 6, 2026, at Acrisure Stadium in Pittsburgh.</p>
+
+      <p>More match player stats: <a href="/articles/celtics-vs-cleveland-cavaliers-match-player-stats/">Celtics vs Cavaliers</a>, <a href="/articles/detroit-pistons-vs-orlando-magic-match-player-stats/">Pistons vs Magic</a> and <a href="/articles/washington-nationals-vs-chicago-cubs-match-player-stats/">Nationals vs Cubs</a>.</p>
+
+      <p><em>Stats were checked against the <a href="https://www.espn.com/nfl/recap?gameId=401772976" target="_blank" rel="noopener">ESPN box score and AP recap</a>, the <a href="https://www.steelers.com/game-day/2025/postseason-wild-card/texans-at-steelers" target="_blank" rel="noopener">Steelers' official game page</a> and the <a href="https://www.foxsports.com/nfl/afc-wild-card-playoffs-houston-texans-vs-pittsburgh-steelers-jan-12-2026-game-boxscore-11029" target="_blank" rel="noopener">Fox Sports box score</a> on November 8, 2026. All times are Eastern.</em></p>
+    `
+  },
+  {
+    id: "celtics-vs-cleveland-cavaliers-match-player-stats",
+    title: "Celtics vs Cleveland Cavaliers Match Player Stats: Box Score From Boston's 109-98 Win",
+    excerpt: "Celtics vs Cavaliers match player stats from Boston's 109-98 win on March 8, 2026: Mitchell 30, Mobley 24, Brown 23, Tatum 20, plus every recent result.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T15:05:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Orange basketball dropping beneath a hoop and net in front of a dark, blurred arena crowd",
+    isTrending: true,
+    views: 0,
+    tags: ["NBA", "Boston Celtics", "Cleveland Cavaliers", "Player Stats", "Box Score"],
+    content: `
+      <p class="lead">The Boston Celtics beat the Cleveland Cavaliers 109-98 on Sunday, March 8, 2026, at Rocket Arena in Cleveland. It was the most recent regular-season Celtics vs Cavaliers game, and it completed Boston's 3-0 season sweep. Below are the full match player stats and team totals from the official box score.</p>
+
+      <blockquote>
+        <p><strong>Celtics vs Cavaliers at a glance:</strong> Celtics 109, Cavaliers 98 · March 8, 2026 · Rocket Arena, Cleveland · Attendance 19,432. Top scorers: Donovan Mitchell 30 (CLE), Evan Mobley 24 (CLE), Jaylen Brown 23 (BOS), Jayson Tatum 20 (BOS).</p>
+      </blockquote>
+
+      <p>It was Jayson Tatum's second game back from a torn right Achilles tendon. Boston built a 56-36 halftime lead and held off a Cleveland comeback in the second half.</p>
+
+      <h2>Celtics vs Cavaliers Score by Quarter</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>Boston Celtics</td><td>35</td><td>21</td><td>30</td><td>23</td><td>109</td></tr>
+          <tr><td>Cleveland Cavaliers</td><td>26</td><td>10</td><td>33</td><td>29</td><td>98</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Celtics Player Stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th></tr></thead>
+        <tbody>
+          <tr><td>Jaylen Brown</td><td>38</td><td>23</td><td>9</td><td>8</td></tr>
+          <tr><td>Jayson Tatum</td><td>27</td><td>20</td><td>3</td><td>2</td></tr>
+          <tr><td>Payton Pritchard</td><td>35</td><td>18</td><td>3</td><td>7</td></tr>
+          <tr><td>Baylor Scheierman</td><td>26</td><td>16</td><td>10</td><td>0</td></tr>
+          <tr><td>Sam Hauser</td><td>24</td><td>15</td><td>4</td><td>0</td></tr>
+          <tr><td>Neemias Queta</td><td>36</td><td>4</td><td>11</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <p>Sam Hauser made all five of his field goals from three-point range (5 of 10). Baylor Scheierman added a double-double with 16 points and 10 rebounds.</p>
+
+      <h2>Cavaliers Player Stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th></tr></thead>
+        <tbody>
+          <tr><td>Donovan Mitchell</td><td>33</td><td>30</td><td>7</td><td>5</td></tr>
+          <tr><td>Evan Mobley</td><td>31</td><td>24</td><td>8</td><td>1</td></tr>
+          <tr><td>James Harden</td><td>38</td><td>19</td><td>4</td><td>10</td></tr>
+        </tbody>
+      </table>
+      <p>Cleveland played without center Jarrett Allen, who was out with a right knee injury. Coach Kenny Atkinson said Allen was "trending better," according to the Associated Press.</p>
+
+      <h2>Team Stats</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Celtics</th><th>Cavaliers</th></tr></thead>
+        <tbody>
+          <tr><td>Field goals</td><td>37-84 (44.0%)</td><td>35-86 (40.7%)</td></tr>
+          <tr><td>Three-pointers</td><td>15-38</td><td>13-45</td></tr>
+          <tr><td>Free throws</td><td>20-22</td><td>15-21</td></tr>
+          <tr><td>Rebounds</td><td>49</td><td>42</td></tr>
+          <tr><td>Turnovers</td><td>10</td><td>7</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What the Stats Show</h2>
+      <p>The game turned in the second quarter, when Boston held Cleveland to 10 points. The Cavaliers outscored the Celtics 62-53 after halftime, but went 13 of 45 from three and could not close the gap. Boston's 20 of 22 free throws and seven-rebound edge also helped.</p>
+      <p>The win moved Boston to 43-21, within three games of the East-leading Detroit Pistons, and dropped Cleveland to 39-25. It also ended the Cavaliers' seven-game home winning streak.</p>
+
+      <h2>All Recent Celtics vs Cavaliers Games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>October 29, 2025</td><td>Celtics 125, Cavaliers 105</td><td>TD Garden</td></tr>
+          <tr><td>November 30, 2025</td><td>Celtics 117, Cavaliers 115</td><td>Rocket Arena</td></tr>
+          <tr><td>March 8, 2026</td><td>Celtics 109, Cavaliers 98</td><td>Rocket Arena</td></tr>
+          <tr><td>October 8, 2026 (preseason)</td><td>Celtics 124, Cavaliers 113</td><td>Rocket Arena</td></tr>
+        </tbody>
+      </table>
+      <p>The teams did not meet in the 2026 playoffs. Their next regular-season game is scheduled for December 28, 2026, at TD Garden in Boston.</p>
+
+      <h2>Celtics vs Cavaliers FAQs</h2>
+      <h3>Who won the last Celtics vs Cavaliers game?</h3>
+      <p>Boston won the last regular-season meeting 109-98 on March 8, 2026. The Celtics also won a preseason game 124-113 on October 8, 2026.</p>
+      <h3>Who scored the most points in Celtics vs Cavaliers?</h3>
+      <p>Donovan Mitchell scored a game-high 30 points for Cleveland. Jaylen Brown led Boston with 23 points, 9 rebounds and 8 assists.</p>
+      <h3>When do the Celtics and Cavaliers play next?</h3>
+      <p>December 28, 2026, at TD Garden.</p>
+
+      <p>More match player stats: <a href="/articles/detroit-pistons-vs-orlando-magic-match-player-stats/">Pistons vs Magic</a>, <a href="/articles/texans-vs-pittsburgh-steelers-match-player-stats/">Texans vs Steelers</a> and <a href="/articles/washington-nationals-vs-chicago-cubs-match-player-stats/">Nationals vs Cubs</a>.</p>
+
+      <p><em>Stats were checked against the <a href="https://www.espn.com/nba/boxscore/_/gameId/401810776" target="_blank" rel="noopener">ESPN box score</a> and <a href="https://plaintextsports.com/nba/2026-03-08/bos-cle" target="_blank" rel="noopener">PlainTextSports</a> on November 8, 2026. Minutes are rounded to the nearest whole minute.</em></p>
+    `
+  },
+  {
+    id: "detroit-pistons-vs-orlando-magic-match-player-stats",
+    title: "Detroit Pistons vs Orlando Magic Match Player Stats: Game 7 Box Score and Full Series",
+    excerpt: "Pistons vs Magic match player stats from Detroit's 116-94 Game 7 win on May 3, 2026: Banchero 38, Cunningham 32 and 12 assists, Harris 30, all 7 results.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T15:10:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Wide view of a packed indoor arena lit in pink and purple, with fans filling the stands around the floor",
+    isTrending: true,
+    views: 0,
+    tags: ["NBA", "Detroit Pistons", "Orlando Magic", "NBA Playoffs", "Player Stats"],
+    content: `
+      <p class="lead">The Detroit Pistons beat the Orlando Magic 116-94 in Game 7 of their first-round playoff series on Sunday, May 3, 2026, at Little Caesars Arena. Detroit came back from 3-1 down to win the series 4-3. It was the most recent Pistons vs Magic game. Below are the full match player stats from the official box score.</p>
+
+      <blockquote>
+        <p><strong>Pistons vs Magic at a glance:</strong> Pistons 116, Magic 94 · Game 7, East first round · May 3, 2026 · Little Caesars Arena, Detroit · Attendance 20,062. Top scorers: Paolo Banchero 38 (ORL), Cade Cunningham 32 and 12 assists (DET), Tobias Harris 30 (DET).</p>
+      </blockquote>
+
+      <p>Top-seeded Detroit (60-22) became the 15th team in NBA history to come back from a 3-1 series deficit, and won its first playoff series since 2008. Cunningham and Harris were the first Pistons pair to both score 30 points in a playoff game since 1977, according to the Associated Press.</p>
+
+      <h2>Pistons vs Magic Score by Quarter</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>Orlando Magic</td><td>22</td><td>27</td><td>15</td><td>30</td><td>94</td></tr>
+          <tr><td>Detroit Pistons</td><td>20</td><td>40</td><td>23</td><td>33</td><td>116</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Pistons Player Stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th></tr></thead>
+        <tbody>
+          <tr><td>Cade Cunningham</td><td>39</td><td>32</td><td>1</td><td>12</td></tr>
+          <tr><td>Tobias Harris</td><td>36</td><td>30</td><td>9</td><td>2</td></tr>
+          <tr><td>Daniss Jenkins</td><td>29</td><td>16</td><td>3</td><td>5</td></tr>
+          <tr><td>Jalen Duren</td><td>37</td><td>15</td><td>15</td><td>3</td></tr>
+          <tr><td>Duncan Robinson</td><td>36</td><td>10</td><td>6</td><td>3</td></tr>
+        </tbody>
+      </table>
+      <p>Harris shot 11 of 18 from the field and 5 of 7 from three. Duren had a 15-point, 15-rebound double-double.</p>
+
+      <h2>Magic Player Stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th></tr></thead>
+        <tbody>
+          <tr><td>Paolo Banchero</td><td>42</td><td>38</td><td>9</td><td>6</td></tr>
+          <tr><td>Desmond Bane</td><td>38</td><td>16</td><td>3</td><td>3</td></tr>
+          <tr><td>Wendell Carter Jr.</td><td>38</td><td>13</td><td>5</td><td>2</td></tr>
+          <tr><td>Anthony Black</td><td>33</td><td>11</td><td>5</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <p>Banchero scored a game-high 38 points on 14 of 25 shooting, but no other Orlando player scored more than 16.</p>
+
+      <h2>Team Stats</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Pistons</th><th>Magic</th></tr></thead>
+        <tbody>
+          <tr><td>Field goals</td><td>41-80 (51.3%)</td><td>31-75 (41.3%)</td></tr>
+          <tr><td>Three-pointers</td><td>16-33</td><td>10-30</td></tr>
+          <tr><td>Free throws</td><td>18-22</td><td>22-30</td></tr>
+          <tr><td>Rebounds</td><td>41</td><td>33</td></tr>
+          <tr><td>Assists</td><td>30</td><td>18</td></tr>
+          <tr><td>Turnovers</td><td>13</td><td>13</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What the Stats Show</h2>
+      <p>Detroit won the game in the second quarter, scoring 40 points to turn a two-point deficit into a 60-49 halftime lead. The Pistons then held Orlando to 15 points in the third. Detroit's 30 assists to Orlando's 18 show how much more freely its offence moved.</p>
+      <p>"We were pushed to the limit," Cunningham said, according to the AP. "And it got us back to playing the basketball that we knew we were capable of." Pistons coach J.B. Bickerstaff said, "This is a special group. And you can't count us out." Magic coach Jamahl Mosley said, "We just couldn't find the basket."</p>
+      <p>Cunningham averaged 32.4 points across the seven-game series, according to the AP.</p>
+
+      <h2>Pistons vs Magic 2026 Playoff Series Results</h2>
+      <table>
+        <thead><tr><th>Game</th><th>Date</th><th>Result</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>April 19</td><td>Magic 112, Pistons 101</td><td>Little Caesars Arena</td></tr>
+          <tr><td>2</td><td>April 22</td><td>Pistons 98, Magic 83</td><td>Little Caesars Arena</td></tr>
+          <tr><td>3</td><td>April 25</td><td>Magic 113, Pistons 105</td><td>Kia Center</td></tr>
+          <tr><td>4</td><td>April 27</td><td>Magic 94, Pistons 88</td><td>Kia Center</td></tr>
+          <tr><td>5</td><td>April 29</td><td>Pistons 116, Magic 109</td><td>Little Caesars Arena</td></tr>
+          <tr><td>6</td><td>May 1</td><td>Pistons 93, Magic 79</td><td>Kia Center</td></tr>
+          <tr><td>7</td><td>May 3</td><td>Pistons 116, Magic 94</td><td>Little Caesars Arena</td></tr>
+        </tbody>
+      </table>
+      <p>The teams split their four 2025-26 regular-season games 2-2. Their first meeting of the 2026-27 season is scheduled for November 24, 2026, at the Kia Center in Orlando.</p>
+
+      <h2>Pistons vs Magic FAQs</h2>
+      <h3>Who won the last Pistons vs Magic game?</h3>
+      <p>Detroit won Game 7 of their 2026 first-round series 116-94 on May 3, 2026, taking the series 4-3.</p>
+      <h3>Who scored the most points in Pistons vs Magic Game 7?</h3>
+      <p>Paolo Banchero scored 38 for Orlando. Cade Cunningham led Detroit with 32 points and 12 assists, and Tobias Harris added 30.</p>
+      <h3>When do the Pistons and Magic play next?</h3>
+      <p>November 24, 2026, in Orlando.</p>
+
+      <p>More match player stats: <a href="/articles/celtics-vs-cleveland-cavaliers-match-player-stats/">Celtics vs Cavaliers</a>, <a href="/articles/texans-vs-pittsburgh-steelers-match-player-stats/">Texans vs Steelers</a> and <a href="/articles/washington-nationals-vs-chicago-cubs-match-player-stats/">Nationals vs Cubs</a>.</p>
+
+      <p><em>Stats were checked against the <a href="https://www.espn.com/nba/boxscore/_/gameId/401869418" target="_blank" rel="noopener">ESPN box score and AP recap</a> and <a href="https://plaintextsports.com/nba/2026-05-03/orl-det" target="_blank" rel="noopener">PlainTextSports</a> on November 8, 2026. Minutes are rounded to the nearest whole minute.</em></p>
+    `
+  },
+  {
+    id: "washington-nationals-vs-chicago-cubs-match-player-stats",
+    title: "Washington Nationals vs Chicago Cubs Match Player Stats: Cavalli's One-Hitter in a 7-0 Win",
+    excerpt: "Nationals vs Cubs match player stats from Washington's 7-0 win on Aug 13, 2026: Cavalli's 8 one-hit innings, Ortiz's 3-run homer and the 2026 series.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T15:15:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1471295253337-3ceaaedca402?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Aerial view of a baseball stadium with a green diamond and red infield surrounded by packed stands",
+    isTrending: true,
+    views: 0,
+    tags: ["MLB", "Washington Nationals", "Chicago Cubs", "Player Stats", "Box Score"],
+    content: `
+      <p class="lead">The Washington Nationals beat the Chicago Cubs 7-0 on Thursday, August 13, 2026, at Nationals Park, as Cade Cavalli took a no-hitter into the seventh inning. It was the most recent Nationals vs Cubs game. Below are the full match player stats for pitchers and hitters from the official MLB box score.</p>
+
+      <blockquote>
+        <p><strong>Nationals vs Cubs at a glance:</strong> Nationals 7, Cubs 0 · August 13, 2026 · Nationals Park, Washington · Attendance 21,463 · Time 2:20. Winning pitcher: Cade Cavalli (8 IP, 1 H, 10 K). Losing pitcher: Kevin Gausman. Key hitter: Abimelec Ortiz (2-for-4, three-run home run).</p>
+      </blockquote>
+
+      <p>Cavalli retired the first 15 batters he faced. Chicago's only hit came from Michael Busch with two outs in the seventh inning. The win let Washington avoid a three-game sweep, though Chicago took the series 2-1.</p>
+
+      <h2>Nationals vs Cubs Linescore</h2>
+      <table>
+        <thead><tr><th>Team</th><th>R</th><th>H</th><th>E</th></tr></thead>
+        <tbody>
+          <tr><td>Chicago Cubs</td><td>0</td><td>1</td><td>0</td></tr>
+          <tr><td>Washington Nationals</td><td>7</td><td>10</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <p>Washington scored one run in the fourth inning, five in the fifth and one in the eighth.</p>
+
+      <h2>Pitching Stats</h2>
+      <table>
+        <thead><tr><th>Pitcher</th><th>IP</th><th>H</th><th>R</th><th>ER</th><th>BB</th><th>K</th><th>Pitches</th><th>Decision</th></tr></thead>
+        <tbody>
+          <tr><td>Cade Cavalli (WSH)</td><td>8.0</td><td>1</td><td>0</td><td>0</td><td>2</td><td>10</td><td>103</td><td>W (10-5)</td></tr>
+          <tr><td>Clayton Beeter (WSH)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>11</td><td>—</td></tr>
+          <tr><td>Kevin Gausman (CHC)</td><td>4.2</td><td>7</td><td>6</td><td>6</td><td>1</td><td>7</td><td>93</td><td>L (6-11)</td></tr>
+          <tr><td>Aaron Civale (CHC)</td><td>3.1</td><td>3</td><td>1</td><td>1</td><td>0</td><td>1</td><td>37</td><td>—</td></tr>
+        </tbody>
+      </table>
+      <p>Cavalli set career highs with eight innings and 103 pitches. It was Gausman's second start for the Cubs since a trade-deadline deal with Toronto. No save was recorded.</p>
+
+      <h2>Batting Stats</h2>
+      <table>
+        <thead><tr><th>Hitter</th><th>H-AB</th><th>R</th><th>RBI</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Abimelec Ortiz (WSH)</td><td>2-4</td><td>2</td><td>3</td><td>Three-run home run in the 5th</td></tr>
+          <tr><td>Dylan Crews (WSH)</td><td>2-4</td><td>1</td><td>1</td><td>RBI double in the 4th</td></tr>
+          <tr><td>Daylen Lile (WSH)</td><td>2-4</td><td>—</td><td>1</td><td></td></tr>
+          <tr><td>Jorbit Vivas (WSH)</td><td>1-3</td><td>—</td><td>1</td><td>1 walk</td></tr>
+          <tr><td>Andrew Pinckney (WSH)</td><td>0-2</td><td>—</td><td>1</td><td>Sacrifice fly</td></tr>
+          <tr><td>Michael Busch (CHC)</td><td>1-3</td><td>0</td><td>0</td><td>Cubs' only hit</td></tr>
+        </tbody>
+      </table>
+      <p>Cubs hitters struck out 11 times and drew two walks, both by Dansby Swanson.</p>
+
+      <h2>What the Stats Show</h2>
+      <p>The game was decided in the fifth inning, when Washington scored five runs off Gausman, capped by Ortiz's three-run homer to center field. Cavalli's 10 strikeouts and one hit allowed made his start one of the most dominant against the Cubs this season.</p>
+      <p>After the game, Chicago was 71-51 and Washington 60-63.</p>
+
+      <h2>All 2026 Nationals vs Cubs Games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>March 26</td><td>Nationals 10, Cubs 4</td><td>Wrigley Field</td></tr>
+          <tr><td>March 28</td><td>Cubs 10, Nationals 2</td><td>Wrigley Field</td></tr>
+          <tr><td>March 29</td><td>Nationals 6, Cubs 3</td><td>Wrigley Field</td></tr>
+          <tr><td>August 11</td><td>Cubs 8, Nationals 6</td><td>Nationals Park</td></tr>
+          <tr><td>August 12</td><td>Cubs 12, Nationals 6</td><td>Nationals Park</td></tr>
+          <tr><td>August 13</td><td>Nationals 7, Cubs 0</td><td>Nationals Park</td></tr>
+        </tbody>
+      </table>
+      <p>The 2026 season series finished 3-3. The teams did not meet in the postseason.</p>
+
+      <h2>Nationals vs Cubs FAQs</h2>
+      <h3>Who won the last Nationals vs Cubs game?</h3>
+      <p>Washington won 7-0 on August 13, 2026, at Nationals Park.</p>
+      <h3>Who pitched for the Nationals against the Cubs?</h3>
+      <p>Cade Cavalli started and earned the win, allowing one hit over eight scoreless innings with 10 strikeouts. Clayton Beeter pitched a scoreless ninth.</p>
+      <h3>What was the Nationals vs Cubs season series in 2026?</h3>
+      <p>The teams split six games, 3-3.</p>
+
+      <p>More match player stats: <a href="/articles/texans-vs-pittsburgh-steelers-match-player-stats/">Texans vs Steelers</a>, <a href="/articles/celtics-vs-cleveland-cavaliers-match-player-stats/">Celtics vs Cavaliers</a> and <a href="/articles/detroit-pistons-vs-orlando-magic-match-player-stats/">Pistons vs Magic</a>.</p>
+
+      <p><em>Stats were checked against the <a href="https://www.espn.com/mlb/boxscore/_/gameId/401816510" target="_blank" rel="noopener">ESPN box score</a> and the <a href="https://statsapi.mlb.com/api/v1/game/822696/boxscore" target="_blank" rel="noopener">official MLB Stats API box score</a> on November 8, 2026. All times are Eastern.</em></p>
+    `
+  },
+  {
+    id: "sparkpressfusion-com-review",
+    title: "SparkPressFusion.com Review: What Sparkpressfusion Com Is and Why Every Guest Post Is Paid",
+    excerpt: "What is sparkpressfusion com? We checked its 2023 domain record, two bylines, 77 posts and paid-only guest post policy. Here is what the site really is.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T15:20:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Vintage mint-green typewriter on a wooden table beside an open notebook, glasses and a pine cone",
+    isTrending: true,
+    views: 0,
+    tags: ["SparkPressFusion", "Guest Posting", "Website Review", "SEO", "Link Building"],
+    content: `
+      <p class="lead">SparkPressFusion.com (often searched as "sparkpressfusion com") is a multi-topic WordPress blog that publishes general articles on technology, finance, business, health, law and travel. Its own guidelines describe every guest post as a paid placement. We checked its domain record, archive history, authors, links and policies on November 8, 2026.</p>
+
+      <blockquote>
+        <p><strong>SparkPressFusion.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a general WordPress blog, registered in August 2023.</li>
+          <li><strong>Posts:</strong> 77 in total. 44 of them are dated March 24, 2026, and the newest is July 15, 2026.</li>
+          <li><strong>Authors:</strong> two bylines, "Suman" and "Sandy Walker", with no biographies.</li>
+          <li><strong>Guest posts:</strong> paid only, according to its Write for Us page. Prices are on request.</li>
+          <li><strong>Verdict:</strong> a link-selling blog rather than an independent publication. Use it with caution as a source, and expect little lasting value from a paid post.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is SparkPressFusion.com?</h2>
+      <p>The site calls itself "a modern digital media platform delivering expert insights, trending stories, and in-depth coverage". Its menu lists Technology, Finance, Business, Health, Education, Lifestyle, Travel, Home Improvement, Real Estate and Law. It runs on WordPress with a free news theme, sits behind Cloudflare, and its About page describes it as "an independent multi-niche digital publication."</p>
+      <p>The homepage title and meta description repeat the phrase "sparkpressfusion com". A separate page on the site at /sparkpressfusion-com/ mirrors the homepage and is dated February 5, 2020, more than three years before the domain was registered. Repeating the brand name like this targets people who search for the site by name.</p>
+
+      <h2>Domain History: When Was SparkPressFusion.com Created?</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official .com registry record from Verisign shows sparkpressfusion.com was registered on August 23, 2023, through Wild West Domains, and runs to August 2028.</li>
+        <li><strong>Archive:</strong> the Wayback Machine's first capture is from May 2024. Snapshots from 2025 show the same site with an older design and the tagline "Fusing Creativity and Knowledge to Ignite Your Spark."</li>
+        <li><strong>Gaps:</strong> no posts were published from about January 2024 to April 2025, apart from one.</li>
+      </ul>
+
+      <h2>Who Writes for SparkPressFusion.com?</h2>
+      <p>The site's WordPress data lists two authors: "Suman" with 45 posts and "Sandy Walker" with 32. Neither has a biography or credentials, including on posts about law, health and finance. The site names no editor or owner. Its structured data lists an office in Sector 62, Noida, India, which we could not verify.</p>
+
+      <h2>What Does SparkPressFusion.com Publish?</h2>
+      <p>The publishing pattern is uneven. The site has 77 posts, and 44 of them carry the same date, March 24, 2026. The newest is dated July 15, 2026. Recent headlines include:</p>
+      <ul>
+        <li>"Could a Digital Twin Help Detect Health Risks Before Symptoms Appear?" (July 15, 2026)</li>
+        <li>"DXC Technology Launches AI-First Hub in Bengaluru for Enterprise AI" (July 8, 2026)</li>
+        <li>"How to Find a Reputable Cannabis Dispensary" (November 19, 2025)</li>
+        <li>"4 Key Differences Between Lawsuit Loans and Pre-Settlement Funding" (October 25, 2025)</li>
+      </ul>
+      <p>Older posts from 2023 target login and app searches, such as a government login portal, bank customer ID numbers and "Unlocking Omegle: Easy and Secure Ways to Get Unbanned in 2024". Their tags include long lists of search-phrase variations.</p>
+
+      <h2>Does SparkPressFusion.com Sell Guest Posts?</h2>
+      <p>Yes. Its Write for Us page says: "all guest post submissions are treated as part of our paid publishing model. We do not accept free guest posts. Every submission is considered a paid placement." The page asks for at least 800 words, promises processing "within 24 hours", and says to contact the site for pricing. It names "digital marketing agencies and SEO professionals" among its contributors.</p>
+      <p>Several posts link to commercial sites in regulated or high-risk areas, including a cannabis dispensary, a forex broker and a lawsuit-funding company. Those links carry no <code>rel="sponsored"</code> or <code>nofollow</code> label. <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites to use</a> those labels for paid links. Every post also has banner links to web hosting affiliate offers.</p>
+
+      <h2>The "Official Website" Notice</h2>
+      <p>In July 2026 the site published a page warning readers about similar domain names, such as sparkpresssfusion.com and sparkpressfusion.net, and said they are not affiliated with it. We did not check those other domains. The notice confirms that the site is aware people search for it by name.</p>
+
+      <h2>Is SparkPressFusion.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What a credible publication shows</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Named, qualified writers</td><td>Real names, bios, expertise</td><td>Two bylines, no bios</td></tr>
+          <tr><td>Clear ownership</td><td>Company name and editor</td><td>Gmail contact only; the address in its structured data is unverified</td></tr>
+          <tr><td>Consistent publishing</td><td>Regular new reporting</td><td>44 posts on one date; nothing since July 2026</td></tr>
+          <tr><td>Paid links labelled</td><td>Sponsored or nofollow tags</td><td>Paid model stated, links unlabelled</td></tr>
+          <tr><td>Independent coverage</td><td>Reviews or citations elsewhere</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>We found no scam reports about SparkPressFusion.com, and it does not ask readers for money. It is best understood as a paid-placement blog. Treat its articles, especially on health, law and finance, as unverified.</p>
+      <p>We used the same checks in our reviews of <a href="/articles/journalword-com-review/">JournalWord.com</a>, <a href="/articles/themodeleats-com-review/">TheModelEats.com</a> and <a href="/articles/newsgiga-com-review/">NewsGiga.com</a>.</p>
+
+      <h2>SparkPressFusion.com FAQs</h2>
+      <h3>What is sparkpressfusion com?</h3>
+      <p>A multi-topic WordPress blog, registered in 2023, that publishes general articles and sells guest posts.</p>
+      <h3>Who owns SparkPressFusion.com?</h3>
+      <p>The site does not name an owner or company. Its two authors have no biographies.</p>
+      <h3>Does SparkPressFusion.com accept free guest posts?</h3>
+      <p>No. Its guidelines say every guest post is a paid placement.</p>
+      <h3>Is it worth buying a guest post on SparkPressFusion.com?</h3>
+      <p>For most businesses, no. A paid link on a young, unfocused blog that does not label sponsored links is unlikely to send readers or build trust, and Google's <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">spam policies</a> treat buying links to manipulate rankings as link spam.</p>
+
+      <p><em>Information was checked on November 8, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages and WordPress data. We will update this review if SparkPressFusion.com responds or changes.</em></p>
+    `
+  },
+  {
+    id: "journalword-com-review",
+    title: "JournalWord.com Review: Is Journalword Com a Journaling App or an SEO Blog?",
+    excerpt: "Is journalword com a journaling tool? No. We checked its 2010-2023 domain history, bylines, 115 posts and its bulk link pages. Here is what it really is.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-08T15:25:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Close-up of a fountain pen nib writing in cursive on lined paper, casting a sharp shadow",
+    isTrending: true,
+    views: 0,
+    tags: ["JournalWord", "Website Review", "Backlinks", "SEO", "Guest Posting"],
+    content: `
+      <p class="lead">JournalWord.com (often searched as "journalword com") is a WordPress blog whose posts are largely reviews and guides about other websites, plus general business, health and crypto articles. Some web pages describe it as a journaling app, but it is not one. We checked its domain history, authors, link pages and recent posts on November 8, 2026.</p>
+
+      <blockquote>
+        <p><strong>JournalWord.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a multi-topic WordPress blog, not a journaling or writing tool.</li>
+          <li><strong>Domain:</strong> the name was used from 2010, and the current registration dates from March 5, 2023.</li>
+          <li><strong>Posts:</strong> 115, the newest dated November 5, 2026. Most are by one byline, "Devin Haney".</li>
+          <li><strong>Links:</strong> it hosts pages listing hundreds of outbound links to other blogs.</li>
+          <li><strong>Verdict:</strong> an SEO-driven blog. Do not rely on it for health, crypto or financial decisions.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is JournalWord.com?</h2>
+      <p>The site's title is "Journalword | journalword.com - Where Content Comes Alive". It describes itself as "your go-to platform for insightful articles, fresh ideas, and useful knowledge across topics like technology, business, lifestyle, and more." It runs on WordPress and has only three pages: About Us, Contact Us, and Terms and Conditions.</p>
+      <p>Some other websites describe JournalWord.com as a digital journaling or productivity tool that turns messy notes into order. The live site has no such tool. It is a blog.</p>
+
+      <h2>Domain History: 2010 Splash Page, 2013 Indonesian Blog, 2023 Re-Registration</h2>
+      <ul>
+        <li><strong>2010 to 2016:</strong> the Wayback Machine shows a "Click here to enter" splash page in 2010. In 2013 the domain hosted an Indonesian-language business blog, "Journal Word – Inspirasi Untuk Usaha". By 2016 it showed a "Click here to proceed" page.</li>
+        <li><strong>2016 to 2023:</strong> there are no archive captures.</li>
+        <li><strong>2023:</strong> the official Verisign registry record shows the current registration began on March 5, 2023, through NameCheap. The first post on the current site is dated March 30, 2023.</li>
+      </ul>
+      <p>A new registration date on a domain with earlier history usually means the name lapsed and was registered again by a new owner. We found nothing linking the 2013 blog to the current site.</p>
+
+      <h2>Who Writes for JournalWord.com?</h2>
+      <p>The site's author sitemap lists four bylines. "Devin Haney" is credited with 87 of the 115 posts, "Shivi Hyde" with 11, and two others with one each. None has a biography. The contact page gives only a Gmail address and says it was made with a "Contact Us Page Generator". The site names no owner or editor.</p>
+
+      <h2>What Does JournalWord.com Publish?</h2>
+      <p>Many posts are about other websites and brands, such as SoSoActive, TheLifestyleEdge.com, Blookle and Yonopress.com. Others cover health, crypto exchanges, a prescription erectile dysfunction drug and a poker app. Recent headlines include:</p>
+      <ul>
+        <li>"BMI vs Waist-to-Height Ratio: Which Says More About Health?" (November 5, 2026)</li>
+        <li>"SoSoActive: Making Business, Finance, and Technology Easier to Understand" (September 9, 2026)</li>
+        <li>"SurgeU Reviews: What Students Say About the Program After Enrolling" (August 18, 2026)</li>
+        <li>"Wellhealth how to build muscle tag – journalword.com" (October 21, 2023)</li>
+      </ul>
+      <p>Publishing has slowed: there was a burst of 26 posts in January 2024, but only five in 2026.</p>
+
+      <h2>JournalWord.com's Link Pages</h2>
+      <p>Two pages stand out. A page at /backlinks/ is little more than about 317 links, each with the anchor text "Link", pointing to other blogs and none labelled nofollow. A page at /websites/ lists 470 more outbound links. Several sites that JournalWord.com writes "reviews" about also appear in its /backlinks/ list.</p>
+      <p>Pages that exist mainly to pass links between sites are what <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">Google's spam policies</a> describe as link schemes. Google decides how to treat any particular site.</p>
+
+      <h2>Does JournalWord.com Accept Guest Posts?</h2>
+      <p>There is no Write for Us, guest post or advertising page; those addresses return "page not found". The contact page invites emails about "advertising, or anything else". We found no published prices.</p>
+
+      <h2>Is JournalWord.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What a credible publication shows</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Named, qualified writers</td><td>Real names, bios, expertise</td><td>Bylines with no bios</td></tr>
+          <tr><td>Clear ownership</td><td>Company name and editor</td><td>Gmail contact only</td></tr>
+          <tr><td>Topic focus</td><td>Clear beat and audience</td><td>Website reviews, crypto, health, pharma</td></tr>
+          <tr><td>Outbound links</td><td>Editorial, labelled when paid</td><td>Pages of unlabelled bulk links</td></tr>
+          <tr><td>Accurate self-description elsewhere</td><td>Consistent</td><td>Other sites call it a journaling tool; it is a blog</td></tr>
+        </tbody>
+      </table>
+      <p>We found no scam reports, and the site does not ask readers for money. It is an SEO-focused blog, and its health, crypto and drug articles should not replace professional advice.</p>
+      <p>See also our reviews of <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a> and <a href="/articles/raonelide-com-review/">RaoneLide.com</a>.</p>
+
+      <h2>JournalWord.com FAQs</h2>
+      <h3>What is journalword com?</h3>
+      <p>A WordPress blog, re-registered in 2023, that publishes reviews of other websites alongside general business, health and crypto articles.</p>
+      <h3>Is JournalWord.com a journaling app?</h3>
+      <p>No. Despite descriptions on some other sites, it has no journaling or note-taking features.</p>
+      <h3>Who runs JournalWord.com?</h3>
+      <p>The site does not name an owner. Most posts are credited to "Devin Haney", who has no biography.</p>
+      <h3>Is it safe to use JournalWord.com?</h3>
+      <p>The site is a standard blog and did not ask us for personal information. Treat its health, crypto and financial content as unverified.</p>
+
+      <p><em>Information was checked on November 8, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages and WordPress data. We will update this review if JournalWord.com responds or changes.</em></p>
+    `
+  },
+  {
     id: "in-house-financing",
     title: "What Is In-House Financing? Meaning, Real Costs and How Businesses Offer It",
     excerpt: "In-house financing means the seller is also your lender. What it is, how buy here pay here works, what CFPB data shows on cost, and how to offer it.",
