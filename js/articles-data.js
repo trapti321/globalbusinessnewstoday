@@ -1,6 +1,213 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "airbnb-q3-2026-earnings",
+    title: "Airbnb Q3 2026 Earnings: Revenue Up 19%, Outlook Raised and $12 Billion Buyback",
+    excerpt: "Airbnb grew Q3 2026 revenue 19% to $4.9 billion, raised its full-year outlook and approved a $12 billion buyback. Here is what drove it and what is next.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T10:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Bright apartment living room with a red armchair, striped sofa, dining table and tall windows",
+    isTrending: true,
+    views: 0,
+    tags: ["Airbnb", "Earnings", "Travel", "Share Buyback", "Q3 2026"],
+    content: `
+      <p class="lead">Airbnb's revenue grew 19% to $4.9 billion in the third quarter of 2026, its fastest growth in more than three years, and the company raised its full-year outlook and approved up to $12 billion more in share buybacks. The results, released on November 5, 2026, show its push into services, hotels and AI support starting to add up.</p>
+
+      <blockquote>
+        <p><strong>Airbnb Q3 2026 at a glance:</strong></p>
+        <ul>
+          <li><strong>Revenue:</strong> $4.9 billion, up 19% year over year</li>
+          <li><strong>Gross booking value:</strong> $27.7 billion, up 21%</li>
+          <li><strong>Nights and seats booked:</strong> up 16%</li>
+          <li><strong>Net income:</strong> $1.9 billion</li>
+          <li><strong>Adjusted EBITDA:</strong> $2.5 billion, up 22%, a 52% margin</li>
+          <li><strong>New buyback:</strong> up to an additional $12 billion</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Airbnb Reported</h2>
+      <p>In its <a href="https://news.airbnb.com/airbnb-q3-2026-financial-results" target="_blank" rel="noopener">third-quarter results</a>, Airbnb said revenue rose 19% from a year earlier to $4.9 billion. Gross booking value, the total value of stays and services booked on the platform, rose 21% to $27.7 billion. Bookings grew faster than the number of nights and seats sold (up 16%), so the average value of each booking went up.</p>
+      <p>Profitability held up. Net income was $1.9 billion. Adjusted EBITDA (earnings before interest, taxes, depreciation and amortisation, excluding certain items) rose 22% to $2.5 billion, a 52% margin, reflecting the summer travel peak.</p>
+      <p>Earnings per share of $3.16 beat the $2.85 analysts expected, and the shares rose about 11% in after-hours trading, CNBC reported. That came during a volatile week for markets, covered in our <a href="/articles/nasdaq-rebounds-after-correction-jobs-report/">report on the Nasdaq's correction and rebound</a>.</p>
+
+      <h2>Airbnb Raises Its 2026 Outlook</h2>
+      <ul>
+        <li><strong>Full-year revenue growth:</strong> raised to the high teens.</li>
+        <li><strong>Full-year adjusted EBITDA margin:</strong> raised to about 36%.</li>
+        <li><strong>Fourth-quarter revenue:</strong> $3.22 billion to $3.28 billion, up 16% to 18%, including about two percentage points from favourable exchange rates.</li>
+        <li><strong>Fourth-quarter gross booking value:</strong> mid-teens growth.</li>
+        <li><strong>Fourth-quarter adjusted EBITDA:</strong> expected to grow, with a margin slightly below the fourth quarter of 2025.</li>
+      </ul>
+
+      <h2>Where the Growth Is Coming From</h2>
+      <h3>Services beyond stays</h3>
+      <p>Airbnb is selling more than places to sleep. On September 30 it added meal delivery, laundry, baby gear, ski gear and boat rentals to its services. Grocery delivery has expanded across the US and Canada and recently launched in Europe. Car rentals, launched over the summer, have become one of its most popular services, the company said.</p>
+      <h3>Hotels and partnerships</h3>
+      <p>Thousands of boutique and independent hotels are now listed in more than 60 top destinations. An exclusive partnership with American Express, announced on October 22, will bring more than one million Airbnb listings to Amex Travel.</p>
+      <h3>AI customer support</h3>
+      <p>Airbnb's AI support assistant now works in more than 50 languages. About 40% of customer support issues were resolved without a human agent in the third quarter, up from a third in the second quarter. An AI trip-planning agent is due to roll out to guests in the first half of 2027. For how other companies are using AI to cut costs, see our report on <a href="/articles/ai-enterprise-adoption-roi-surge/">enterprise AI adoption and ROI</a>.</p>
+
+      <h2>What It Means for Hosts and Small Businesses</h2>
+      <ul>
+        <li><strong>More demand, more competition:</strong> faster booking growth helps hosts, but more hotels on the platform means more competition for guests in big cities.</li>
+        <li><strong>New income streams:</strong> the services marketplace opens Airbnb to local businesses such as caterers, cleaners and equipment rental firms.</li>
+        <li><strong>Less human support:</strong> with more issues handled by AI, hosts with complex disputes may need to ask specifically for a human agent.</li>
+      </ul>
+      <p>Airbnb also said every stay now funds a $0.10 donation to Airbnb.org, aiming to provide $500 million over five years.</p>
+
+      <h2>Airbnb Q3 2026 FAQs</h2>
+      <h3>How much revenue did Airbnb make in Q3 2026?</h3>
+      <p>$4.9 billion, up 19% from a year earlier.</p>
+      <h3>Did Airbnb raise its guidance?</h3>
+      <p>Yes. It now expects full-year 2026 revenue growth in the high teens and an adjusted EBITDA margin of about 36%.</p>
+      <h3>How big is Airbnb's new buyback?</h3>
+      <p>Up to an additional $12 billion of Class A shares.</p>
+
+      <p><em>Figures were checked against Airbnb's third-quarter 2026 results release on November 9, 2026. Market reaction is as reported by CNBC. This article is for information only and is not investment advice.</em></p>
+    `
+  },
+  {
+    id: "lam-research-25-billion-buyback",
+    title: "Lam Research Approves $25 Billion Buyback as Chip Stocks Swing",
+    excerpt: "Lam Research approved a buyback of up to $25 billion and a $0.33 dividend on Nov 5, 2026, the day chip stocks plunged. What it means and how buybacks work.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T10:10:00Z",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Close-up of a dark green circuit board with microchips, capacitors and copper contacts",
+    isTrending: true,
+    views: 0,
+    tags: ["Lam Research", "Semiconductors", "Share Buyback", "Dividends", "Chip Stocks"],
+    content: `
+      <p class="lead">Lam Research has approved a new share buyback of up to $25 billion and declared a quarterly dividend of $0.33 a share. The chip equipment maker announced the plan on November 5, 2026, the day semiconductor stocks plunged, and its shares jumped about 11% before the market opened the next morning.</p>
+
+      <blockquote>
+        <p><strong>Key facts:</strong></p>
+        <ul>
+          <li><strong>Buyback:</strong> up to $25 billion, added to what remains of the previous authorization</li>
+          <li><strong>Time limit:</strong> none, and Lam is not required to buy any set amount</li>
+          <li><strong>Dividend:</strong> $0.33 a share, payable January 6, 2027, to shareholders on record on December 2, 2026</li>
+          <li><strong>Announced:</strong> November 5, 2026</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Lam Research Announced</h2>
+      <p>According to the company's <a href="https://www.sec.gov/Archives/edgar/data/0000707549/000070754926000057/lrcx_exx991xsharexrepurcha.htm" target="_blank" rel="noopener">press release filed with the US Securities and Exchange Commission</a>, Lam's board authorised the repurchase of up to $25 billion of common stock. The new authorization is in addition to the balance left on its previous program, which the release did not quantify.</p>
+      <p>Buybacks can be made in the open market or through private deals, and may use structured agreements. The program has no end date and can be suspended at any time.</p>
+      <p>Chief financial officer Doug Bettinger said the authorization "reinforces our capital allocation plan and commitment to return significant value to stockholders," pointing to the company's "robust cash generation".</p>
+
+      <h2>Why the Timing Matters</h2>
+      <p>The announcement came on a brutal day for chip stocks. On November 5 the PHLX Semiconductor Index fell about 12% and the Nasdaq Composite dropped 5.5% into correction. Investors feared that the Democratic midterm wins could slow the construction of the data centers that drive demand for chips and chipmaking tools.</p>
+      <p>A large buyback signals that management sees value in its own shares after a sell-off. Lam stock rose nearly 11% before the market opened on November 6 as chip stocks rebounded. For the wider picture, see our reports on <a href="/articles/nasdaq-rebounds-after-correction-jobs-report/">the Nasdaq's correction and rebound</a> and on <a href="/articles/meta-midterms-data-centers-harder/">why Meta says data centers will be harder to build</a>.</p>
+
+      <h2>What Lam Research Does</h2>
+      <p>Lam Research makes the equipment used to manufacture semiconductors, particularly machines for etching and depositing the ultra-thin layers that make up a chip. Its customers are chipmakers such as memory and logic producers. When AI spending lifts demand for advanced chips, those manufacturers buy more equipment. That makes Lam sensitive to any slowdown in data center investment.</p>
+
+      <h2>How Share Buybacks Work</h2>
+      <ul>
+        <li><strong>Fewer shares:</strong> when a company buys back its own stock, the number of shares in circulation falls, so each remaining share represents a bigger slice of profits.</li>
+        <li><strong>Not a promise:</strong> an authorization sets a maximum. Lam says it is not obliged to buy any particular amount.</li>
+        <li><strong>A use of cash:</strong> money spent on buybacks is not spent on research, factories or acquisitions, so investors weigh it against growth plans.</li>
+      </ul>
+
+      <h2>Lam Research Buyback FAQs</h2>
+      <h3>How big is Lam Research's new buyback?</h3>
+      <p>Up to $25 billion of common stock, on top of the remaining balance of its previous authorization.</p>
+      <h3>When is Lam's next dividend?</h3>
+      <p>$0.33 a share, payable on January 6, 2027, to shareholders of record on December 2, 2026.</p>
+      <h3>Why did Lam Research stock rise?</h3>
+      <p>The buyback announcement coincided with a rebound in chip stocks on November 6 after a steep sell-off the previous day.</p>
+
+      <p><em>Checked against Lam Research's November 5, 2026 release on November 9, 2026. Market moves are as reported by CNBC, Yahoo Finance and CBS News. This article is for information only and is not investment advice.</em></p>
+    `
+  },
+  {
+    id: "moderna-q3-2026-earnings-guidance",
+    title: "Moderna Raises 2026 Outlook to 15% to 25% Growth After Q3 Revenue Jumps 29%",
+    excerpt: "Moderna's Q3 2026 revenue rose 29% to $1.3 billion and it raised 2026 growth guidance to 15%-25%. Key numbers, pipeline updates and what comes next.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T10:20:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "3D illustration of spiky coronavirus particles in red and teal floating against a soft grey background",
+    isTrending: true,
+    views: 0,
+    tags: ["Moderna", "Earnings", "Vaccines", "Biotech", "Q3 2026"],
+    content: `
+      <p class="lead">Moderna raised its 2026 revenue growth forecast to 15% to 25%, up from its previous outlook of up to 10%, after third-quarter revenue rose 29% to $1.3 billion. The vaccine maker also returned to a quarterly profit, reporting net income of $162 million on November 6, 2026.</p>
+
+      <blockquote>
+        <p><strong>Moderna Q3 2026 at a glance:</strong></p>
+        <ul>
+          <li><strong>Revenue:</strong> $1.313 billion, up 29% from $1.016 billion</li>
+          <li><strong>Net income:</strong> $162 million, compared with a $200 million loss a year earlier</li>
+          <li><strong>Diluted earnings per share:</strong> $0.38</li>
+          <li><strong>Cash and investments:</strong> $8.0 billion at September 30</li>
+          <li><strong>2026 revenue growth outlook:</strong> 15% to 25%, raised from up to 10%</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Moderna Reported</h2>
+      <p>According to Moderna's <a href="https://www.sec.gov/Archives/edgar/data/0001682852/000168285226000194/exhibit9912026q3pressrelea.htm" target="_blank" rel="noopener">third-quarter 2026 results release</a>, revenue rose to $1.313 billion: $780 million from the US and $533 million internationally. The company said the increase came mainly from higher COVID vaccine sales in international markets.</p>
+      <p>Costs moved in different directions. Cost of sales rose 54% to $318 million. Research and development spending fell 27% to $583 million as Moderna continued to cut costs. Selling, general and administrative expenses rose 5% to $282 million.</p>
+      <p>"We delivered 29% revenue growth in the third quarter," chief executive Stéphane Bancel said in the release. Moderna shares rose nearly 10% before the market opened on November 6, according to CNBC.</p>
+
+      <h2>Moderna's Updated 2026 Guidance</h2>
+      <table>
+        <thead><tr><th>Item</th><th>New outlook</th><th>Previous outlook</th></tr></thead>
+        <tbody>
+          <tr><td>Revenue growth</td><td>15% to 25%</td><td>Up to 10%</td></tr>
+          <tr><td>Cost of sales</td><td>About $1.7 billion, including a $0.9 billion one-time litigation settlement charge</td><td>Not restated in the release</td></tr>
+          <tr><td>Research and development</td><td>About $2.7 billion</td><td>About $2.9 billion</td></tr>
+          <tr><td>Selling, general and administrative</td><td>About $1.0 billion</td><td>Unchanged</td></tr>
+          <tr><td>Year-end cash and investments</td><td>About $8.1 billion to $8.3 billion</td><td>$4.7 billion to $5.2 billion</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Pipeline Updates</h2>
+      <ul>
+        <li><strong>Flu vaccine approved:</strong> the US Food and Drug Administration approved mFLUSIVA in August for adults aged 50 to 64, with accelerated approval for adults 65 and older. It is Moderna's fifth approved product.</li>
+        <li><strong>Melanoma treatment:</strong> with Merck, Moderna reported positive late-stage (Phase 3) results for intismeran autogene. Combined with Merck's KEYTRUDA, it cut the risk of cancer returning or death by 42% compared with KEYTRUDA alone. Regulatory filings are under way.</li>
+        <li><strong>Norovirus setback:</strong> an interim analysis of its Phase 3 norovirus vaccine trial did not meet the criteria for early success. Moderna will consult regulators on next steps.</li>
+        <li><strong>Rare disease:</strong> a registrational study in propionic acidemia, a rare inherited metabolic disorder, is fully enrolled.</li>
+      </ul>
+
+      <h2>Why It Matters</h2>
+      <p>Moderna's revenue fell sharply after the pandemic, and investors have watched closely for signs that newer vaccines and cancer treatments can replace COVID sales. A higher revenue forecast, lower research spending and a larger cash balance give the company more room as it awaits regulatory decisions on its melanoma treatment. Its next update is an analyst day on November 12, 2026.</p>
+      <p>Healthcare companies were among the movers in a week dominated by the AI sell-off. See our <a href="/articles/global-stocks-ai-selloff-nikkei-ftse/">global markets report</a> for the wider backdrop.</p>
+
+      <h2>Moderna Q3 2026 FAQs</h2>
+      <h3>What was Moderna's revenue in Q3 2026?</h3>
+      <p>$1.313 billion, up 29% from $1.016 billion a year earlier.</p>
+      <h3>What is Moderna's 2026 guidance?</h3>
+      <p>Revenue growth of 15% to 25%, raised from up to 10%, with about $2.7 billion in R&amp;D spending.</p>
+      <h3>When is Moderna's analyst day?</h3>
+      <p>November 12, 2026.</p>
+
+      <p><em>Checked against Moderna's November 6, 2026 results release on November 9, 2026. This article is for information only and is not investment or medical advice.</em></p>
+    `
+  },
+  {
     id: "iykyk-meaning",
     title: "IYKYK Meaning: What \"If You Know, You Know\" Means and How to Use It",
     excerpt: "IYKYK means \"if you know, you know.\" Here is where the slang came from, how to use iykyk in texts and on TikTok, how to reply, and when to avoid it.",

@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/moderna-q3-2026-earnings-guidance/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T10:20:00Z</news:publication_date>
+      <news:title>Moderna Raises 2026 Outlook to 15% to 25% Growth After Q3 Revenue Jumps 29%</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/lam-research-25-billion-buyback/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T10:10:00Z</news:publication_date>
+      <news:title>Lam Research Approves $25 Billion Buyback as Chip Stocks Swing</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/airbnb-q3-2026-earnings/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T10:00:00Z</news:publication_date>
+      <news:title>Airbnb Q3 2026 Earnings: Revenue Up 19%, Outlook Raised and $12 Billion Buyback</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/fundfireinsight-com-review/</loc>
     <news:news>
       <news:publication>
@@ -207,17 +240,6 @@
       </news:publication>
       <news:publication_date>2026-11-06T21:00:00Z</news:publication_date>
       <news:title>USCIS Form I-485 in 2026: Fees, New Edition and Rules That Get Applications Rejected</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/global-stocks-ai-selloff-nikkei-ftse/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-06T18:00:00Z</news:publication_date>
-      <news:title>Global Stocks Slide as AI Sell-Off Spreads: Nikkei Hits Bear Market, FTSE Falls 2%</news:title>
     </news:news>
   </url>
 </urlset>
