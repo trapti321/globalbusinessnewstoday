@@ -21,6 +21,8 @@ const SITE = {
   name: "Global Business News Today",
   url: "https://globalbusinessnewstoday.com",
   email: "info@globalbusinessnewstoday.com",
+  legalName: "GBNT",
+  country: "US",
   tagline: "Global Markets • SME Intelligence • Corporate Wire • Industry Insights",
   description: "Business news and analysis on global markets, central banks, SMEs and startups, technology and AI, and commercial real estate.",
   gaId: "G-B1Y0P92M6Q",
@@ -324,7 +326,7 @@ function footer() {
       </div>
 
       <div class="footer-bottom">
-        <p>© ${year} ${esc(SITE.name)}. All rights reserved.</p>
+        <p>© ${year} ${esc(SITE.name)}, published by ${esc(SITE.legalName)} (USA). All rights reserved.</p>
         <p class="footer-legal"><a href="${ABOUT_URL}">About</a> · <a href="${PRIVACY_URL}">Privacy</a> · <a href="${TERMS_URL}">Terms</a> · <a href="${STANDARDS_URL}#corrections">Corrections</a></p>
         <p>Email: <a href="mailto:${SITE.email}">${SITE.email}</a></p>
       </div>
@@ -440,8 +442,11 @@ const ORGANIZATION = {
   "@type": "NewsMediaOrganization",
   "@id": `${SITE.url}/#organization`,
   name: SITE.name,
+  legalName: SITE.legalName,
   url: `${SITE.url}/`,
   email: SITE.email,
+  address: { "@type": "PostalAddress", addressCountry: SITE.country },
+  areaServed: "Worldwide",
   description: SITE.description,
   logo: { "@type": "ImageObject", url: abs(SITE.logo.url), width: SITE.logo.width, height: SITE.logo.height },
   image: abs(SITE.ogImage.url),
@@ -672,7 +677,7 @@ function buildArticle(a) {
             <span class="share-feedback" role="status" aria-live="polite"></span>
           </div>
 
-          ${a.categorySlug === "press-releases" ? `<p class="content-disclosure"><strong>Press release:</strong> this announcement was supplied by the organisation named in it and is published as submitted. It was not written or independently verified by ${esc(SITE.name)}. Read our <a href="${STANDARDS_URL}#sponsored">sponsored content and press release policy</a>.</p>` : ""}
+          ${a.categorySlug === "press-releases" ? `<p class="content-disclosure"><strong>${a.paid ? "Paid press release" : "Press release"}:</strong> ${a.paid ? `this announcement was published in exchange for payment from the organisation named in it.` : `this announcement was supplied by the organisation named in it.`} It is published as submitted and was not written or independently verified by ${esc(SITE.name)}. Read our <a href="${STANDARDS_URL}#sponsored">sponsored content and press release policy</a>.</p>` : ""}
           <div class="article-prose">
 ${a.content.replace(/^\n+|\s+$/g, "")}
           </div>
@@ -941,7 +946,7 @@ function buildStandards() {
 
         <section id="sponsored" aria-labelledby="sponsoredTitle">
           <h2 id="sponsoredTitle">Sponsored Content and Press Releases</h2>
-          <p>Our news and analysis are written by our editorial desk and are never paid for by the companies or websites we cover. Press releases appear only in our <a href="${categoryUrl("press-releases")}">Press Releases</a> section, carry a "Press release" label, and are published as supplied by the organisation named in them, without independent verification. We do not present promotional material as independent reporting. If we ever publish sponsored or affiliate content, it will be clearly labelled as such at the top of the page.</p>
+          <p>Our news and analysis are written by our editorial desk and are never paid for by the companies or websites we cover. Press releases appear only in our <a href="${categoryUrl("press-releases")}">Press Releases</a> section and are published as supplied by the organisation named in them, without independent verification. We accept both free and paid press releases. Paid releases are labelled "Paid press release" at the top of the page, and free submissions are labelled "Press release". Payment never affects our news coverage or reviews, and we do not present promotional material as independent reporting. Any other sponsored or affiliate content will be clearly labelled as such at the top of the page.</p>
         </section>
 
         <section aria-labelledby="adviceTitle">
@@ -1004,7 +1009,7 @@ ${body}
   });
 }
 
-const POLICY_UPDATED = "2026-11-08";
+const POLICY_UPDATED = "2026-11-09";
 
 function buildAbout() {
   const newsroom = Object.entries(AUTHORS)[0];
@@ -1018,7 +1023,7 @@ function buildAbout() {
     body: `
         <section aria-labelledby="whoTitle">
           <h2 id="whoTitle">Who We Are</h2>
-          <p>${esc(SITE.name)} is an independent, English-language business news publication at <a href="/">globalbusinessnewstoday.com</a>. We publish news, explainers and analysis for executives, founders, investors and small business owners, with a focus on facts readers can check for themselves.</p>
+          <p>${esc(SITE.name)} is an independent, English-language business news publication at <a href="/">globalbusinessnewstoday.com</a>, published by ${esc(SITE.legalName)} in the United States. We publish news, explainers and analysis for executives, founders, investors and small business owners, with a focus on facts readers can check for themselves.</p>
         </section>
 
         <section aria-labelledby="coverTitle">
@@ -1037,7 +1042,8 @@ function buildAbout() {
 
         <section id="ownership" aria-labelledby="ownershipTitle">
           <h2 id="ownershipTitle">Ownership and Funding</h2>
-          <p>${esc(SITE.name)} is independently owned and operated. It is not owned by, or affiliated with, any of the companies or websites it reports on. Companies cannot pay to change our news coverage or reviews. Press releases submitted by organisations are published separately in our <a href="${categoryUrl("press-releases")}">Press Releases</a> section and labelled as such.</p>
+          <p>${esc(SITE.name)} is published by ${esc(SITE.legalName)}, an independent publisher based in the United States. It is not owned by, or affiliated with, any of the companies or websites it reports on.</p>
+          <p>The site is funded by its owners and by press release publishing. Organisations can submit press releases free of charge or pay for publication. Paid releases are labelled "Paid press release", and all releases appear separately in our <a href="${categoryUrl("press-releases")}">Press Releases</a> section. Companies cannot pay to change our news coverage or reviews.</p>
         </section>
 
         <section aria-labelledby="contactTitle">
@@ -1057,7 +1063,7 @@ function buildPrivacy() {
     body: `
         <section aria-labelledby="p1">
           <h2 id="p1">Who We Are</h2>
-          <p>This policy explains how ${esc(SITE.name)} ("we", "us") handles personal information when you visit <a href="/">globalbusinessnewstoday.com</a> or contact us. Questions about this policy can be sent to <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
+          <p>This policy explains how ${esc(SITE.legalName)}, the US-based publisher of ${esc(SITE.name)} ("we", "us"), handles personal information when you visit <a href="/">globalbusinessnewstoday.com</a> or contact us. Questions about this policy can be sent to <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
         </section>
 
         <section aria-labelledby="p2">
@@ -1128,7 +1134,7 @@ function buildTerms() {
     body: `
         <section aria-labelledby="t1">
           <h2 id="t1">Using This Site</h2>
-          <p>By using <a href="/">globalbusinessnewstoday.com</a>, you agree to these terms. If you do not agree, please do not use the site.</p>
+          <p>${esc(SITE.name)} is operated by ${esc(SITE.legalName)} in the United States. By using <a href="/">globalbusinessnewstoday.com</a>, you agree to these terms. If you do not agree, please do not use the site.</p>
         </section>
 
         <section aria-labelledby="t2">
@@ -1138,12 +1144,12 @@ function buildTerms() {
 
         <section aria-labelledby="t3">
           <h2 id="t3">Our Content</h2>
-          <p>Articles, graphics and site design are owned by ${esc(SITE.name)} or used under licence. You may share links to our articles and quote short passages with a credit and a link to the original page. Please do not republish full articles without written permission. Photographs belong to their creators and are used under their licences.</p>
+          <p>Articles, graphics and site design are owned by ${esc(SITE.legalName)}, the publisher of ${esc(SITE.name)}, or used under licence. You may share links to our articles and quote short passages with a credit and a link to the original page. Please do not republish full articles without written permission. Photographs belong to their creators and are used under their licences.</p>
         </section>
 
         <section aria-labelledby="t4">
           <h2 id="t4">Submissions</h2>
-          <p>When you send us a press release, tip or other material, you confirm that you have the right to share it and that it is accurate. You allow us to edit, publish or decline it. Press releases are published as supplied and labelled as such, as explained in our <a href="${STANDARDS_URL}#sponsored">press release policy</a>.</p>
+          <p>When you send us a press release, tip or other material, you confirm that you have the right to share it and that it is accurate. You allow us to edit, publish or decline it. Press releases may be free or paid. They are published as supplied, and paid releases are labelled "Paid press release", as explained in our <a href="${STANDARDS_URL}#sponsored">press release policy</a>.</p>
         </section>
 
         <section aria-labelledby="t5">

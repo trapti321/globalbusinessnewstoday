@@ -28,8 +28,9 @@ A high-performance, modern business news and corporate wire publication platform
 2. `image` must be a large image (Unsplash URLs are resized automatically; self-hosted images also need `imageWidth` of at least 1200 and `imageHeight`) so the story is eligible for Google Discover.
 3. `imageAlt` must describe what the image shows. The build fails if it is missing or just repeats the headline.
 4. `categorySlug` decides the section (world, markets, tech, smes, property, press-releases); the label shown on the site comes from it automatically. The newest `publishedAt` becomes the homepage lead story.
-5. To give an author a bio and a dedicated `/author/<slug>/` page, add them to `AUTHORS` in `build/build.js` under the same `author.name` used in their articles.
-6. Run `node build/build.js` to regenerate every page, `sitemap.xml`, `news-sitemap.xml` (Google News, last 2 days), `feed.xml` and `llms.txt`, then commit and push. The deploy workflow also runs the build automatically.
+5. For press releases (`categorySlug: "press-releases"`), add `paid: true` when the company paid for publication. The page then shows a "Paid press release" disclosure; free releases show "Press release".
+6. To give an author a bio and a dedicated `/author/<slug>/` page, add them to `AUTHORS` in `build/build.js` under the same `author.name` used in their articles.
+7. Run `node build/build.js` to regenerate every page, `sitemap.xml`, `news-sitemap.xml` (Google News, last 2 days), `feed.xml` and `llms.txt`, then commit and push. The deploy workflow also runs the build automatically.
 
 Pages are generated from `build/build.js` (shared head, header and footer) and `build/pages/` (contact and press release forms). Do not edit the generated `index.html`, `articles/`, `category/`, `contact.html` or `submit-pr.html` by hand.
 
