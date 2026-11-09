@@ -1,6 +1,508 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "navy-quicklinks-mynavy-portal",
+    title: "Navy QuickLinks Explained: How to Find MyNavy Portal Quick Links Safely",
+    excerpt: "Navy Quick Links is the directory of Sailor tools inside MyNavy Portal at mn3p.navy.mil. How to access it with CAC, fix errors and avoid lookalike sites.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T17:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Laptop screen showing lines of colourful code in a dark room",
+    isTrending: true,
+    views: 0,
+    tags: ["Navy QuickLinks", "MyNavy Portal", "US Navy", "CAC Login", "Guide"],
+    content: `
+      <p class="lead">Navy Quick Links is the directory of links inside MyNavy Portal (MNP), the US Navy's self-service website for Sailors' personnel, training and education tools. It gathers hundreds of direct links to Navy systems in one place. Many of them need a Common Access Card (CAC) or a multi-factor login to open. Here is what Quick Links is, how to reach it safely and how it differs from similarly named military tools.</p>
+
+      <blockquote>
+        <p><strong>Navy Quick Links, quick answer:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a searchable list of links to Navy personnel, pay, training and career tools inside MyNavy Portal.</li>
+          <li><strong>Official address:</strong> MyNavy Portal is hosted at <strong>mn3p.navy.mil</strong>. Quick Links is at mn3p.navy.mil/quick-links, with a "Quick Links Classic" fallback.</li>
+          <li><strong>Login:</strong> links marked with a lock icon require CAC or a supported multi-factor login.</li>
+          <li><strong>Safety:</strong> only use addresses ending in <strong>.mil</strong>. The old my.navy.mil address no longer works.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is MyNavy Portal?</h2>
+      <p>MyNavy Portal (MNP) was created to bring Sailors' personnel, training and education websites together into one self-service site. In 2017 it ran at my.navy.mil and was managed by the Navy's Sea Warrior Program Office. A <a href="https://www.dvidshub.net/news/printable/257639" target="_blank" rel="noopener">Navy story on the 2017 redesign</a> noted that the "Quick Links" and "About MNP" pages had been redesigned to be more user-friendly.</p>
+      <p>The portal has since moved. The old my.navy.mil address returned a "not found" error when we checked on November 9, 2026, and MyNavy Portal now runs at mn3p.navy.mil.</p>
+
+      <h2>What Is in Navy Quick Links?</h2>
+      <p>Quick Links is a central directory of links to tools Sailors use regularly. Official descriptions call it a hub for "hundreds of direct links to tools and resources for Navy personnel". Depending on your role and access, it typically points to:</p>
+      <ul>
+        <li>Personnel and career records</li>
+        <li>Pay and leave tools</li>
+        <li>Training and education systems</li>
+        <li>Advancement and assignment resources</li>
+        <li>Forms, instructions and help desks</li>
+      </ul>
+      <p>Links are listed alphabetically and can be searched. A lock icon marks links that require you to log in.</p>
+
+      <h2>How to Access Navy Quick Links Safely</h2>
+      <ol>
+        <li><strong>Type the address yourself:</strong> go to mn3p.navy.mil rather than clicking links in emails or ads.</li>
+        <li><strong>Check the domain:</strong> official Navy sites end in .mil. Be wary of lookalike pages on .com or .net domains that copy portal guides.</li>
+        <li><strong>Open Quick Links:</strong> use the Quick Links page. If it is unavailable, try "Quick Links Classic", which MNP provides as a fallback.</li>
+        <li><strong>Log in when prompted:</strong> locked links require a CAC. MNP has also introduced options to sign in on mobile with multi-factor authentication instead of a CAC.</li>
+      </ol>
+      <p>If a link fails, check MNP's maintenance notices or contact the Navy help desk listed on the portal. Do not enter your CAC PIN or credentials on a site that is not a .mil address.</p>
+
+      <h2>MyNavy Portal vs MyNavy HR</h2>
+      <p>These are easy to confuse. <strong>MyNavy HR</strong> (mynavyhr.navy.mil) is Navy Personnel Command's public website, which <a href="https://www.dvidshub.net/news/389427/navy-personnel-commands-new-website-goes-live" target="_blank" rel="noopener">launched on February 15, 2021</a> to replace the old NPC website. It also has "quick links" on its homepage, mostly to policies and information. <strong>MyNavy Portal</strong> is the logged-in self-service site where Sailors manage their own records and tools.</p>
+
+      <h2>Navy Quick Links vs DLA ASSIST QuickSearch</h2>
+      <p>People searching for "quicklinks" sometimes land on a different military tool. The Defense Logistics Agency (DLA) runs <a href="https://quicksearch.dla.mil/qsSearch.aspx" target="_blank" rel="noopener">ASSIST-QuickSearch</a>, a public search engine for military specifications and standards. Its full database, <a href="https://assist.dla.mil/online/start/" target="_blank" rel="noopener">ASSIST</a>, describes itself as a "Database for Military Specifications and Military Standards" and requires an account or CAC login. These tools are for engineers and contractors working with specifications, not for Sailors' personnel records.</p>
+      <table>
+        <thead><tr><th>Tool</th><th>Run by</th><th>Used for</th><th>Login</th></tr></thead>
+        <tbody>
+          <tr><td>Navy Quick Links (MyNavy Portal)</td><td>US Navy</td><td>Links to Sailor personnel, pay, training and career tools</td><td>CAC or multi-factor for locked links</td></tr>
+          <tr><td>MyNavy HR</td><td>Navy Personnel Command</td><td>Public personnel policy and information</td><td>Mostly public</td></tr>
+          <tr><td>ASSIST-QuickSearch</td><td>Defense Logistics Agency</td><td>Searching military specifications and standards</td><td>None for basic search</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Common Navy Quick Links Problems</h2>
+      <ul>
+        <li><strong>"Page not found" at my.navy.mil:</strong> the portal moved. Use mn3p.navy.mil.</li>
+        <li><strong>CAC not recognised:</strong> check your card reader and certificates, and try a different supported browser.</li>
+        <li><strong>Quick Links page unavailable:</strong> use Quick Links Classic, or check the portal's notices for scheduled maintenance.</li>
+        <li><strong>Link opens but asks for a different login:</strong> some linked systems use their own logins, separate from MNP.</li>
+      </ul>
+      <p>For other guides to official portals and documents, see our explainer on <a href="/articles/temporary-identity-certificate/">temporary identity certificates</a> and our <a href="/articles/uscis-form-i-485-guide/">USCIS Form I-485 guide</a>.</p>
+
+      <h2>Navy Quick Links FAQs</h2>
+      <h3>What is the Navy Quick Links URL?</h3>
+      <p>Quick Links is inside MyNavy Portal at mn3p.navy.mil. Always check that the address ends in .mil.</p>
+      <h3>Do I need a CAC for Navy Quick Links?</h3>
+      <p>For links marked with a lock icon, yes, or a supported multi-factor login. Some links are public.</p>
+      <h3>Why doesn't my.navy.mil work?</h3>
+      <p>MyNavy Portal moved to mn3p.navy.mil, and the old address now returns an error.</p>
+      <h3>Is DLA QuickSearch the same as Navy Quick Links?</h3>
+      <p>No. DLA's ASSIST-QuickSearch searches military specifications. Navy Quick Links is a directory of Sailor tools.</p>
+
+      <p><em>Checked on November 9, 2026, against Navy stories on DVIDS and DLA's ASSIST sites. Some .mil pages could not be loaded from our location, so descriptions of mn3p.navy.mil pages rely on the portal's published wording. Global Business News Today is not affiliated with the US Navy. Follow official Navy guidance if it differs from this article.</em></p>
+    `
+  },
+  {
+    id: "viprow-us-com",
+    title: "Viprow.us.com: What the Site Is, Streaming Risks and Legal Ways to Watch Sports",
+    excerpt: "Viprow.us.com now shows sports news, not streams. What it is, why free VIPRow-style streams carry malware and legal risks, and legal ways to watch.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T17:05:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Football player's boot beside a white match ball on a green grass pitch",
+    isTrending: true,
+    views: 0,
+    tags: ["VIPRow", "Sports Streaming", "Piracy", "Cybersecurity", "Online Safety"],
+    content: `
+      <p class="lead">Viprow.us.com currently looks like a sports news and previews website using the well-known VIPRow name, not the free live-stream site many people expect. Unofficial "VIPRow"-style streaming sites carry real legal and security risks. US authorities seized more than 1,000 illegal sports streaming domains in 2026, and security researchers keep finding malware and scams on free stream pages. Here is what viprow.us.com is and how to watch sports legally.</p>
+
+      <blockquote>
+        <p><strong>Viprow.us.com at a glance (November 9, 2026):</strong></p>
+        <ul>
+          <li><strong>What it shows:</strong> NBA, NFL, MLB, soccer, F1 and MotoGP news and previews, with no live streams on its homepage when we checked.</li>
+          <li><strong>Domain:</strong> registered May 15, 2023, under us.com, a private domain service. It is not a US government or official ".us" site.</li>
+          <li><strong>Risks of free stream sites:</strong> malware, fake download prompts and stolen card details, according to the FTC and security researchers.</li>
+          <li><strong>Legal options:</strong> NFL Sunday Ticket, MLB.TV, ESPN+, Peacock and league apps.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Viprow.us.com?</h2>
+      <p>When we checked on November 9, 2026, viprow.us.com was titled "Viprow.us.com : NBA, NFL, MLB &amp; Football News, Scores &amp; Analysis", with the tagline "All the Sports, All the Angles." It runs on WordPress. Its homepage showed editorial previews and news posts credited to "Yvonne Carter", labelled as webmaster, with no live streams or stream schedule. We did not follow any links off the homepage.</p>
+      <p>We found nothing linking the site to the operators of the original VIPRow and VIPBox free-streaming sites. It appears to be a news site using the VIPRow name, which is widely searched.</p>
+
+      <h2>Is Viprow.us.com an Official US Site?</h2>
+      <p>No. The address ends in "us.com", but us.com is an ordinary .com domain run as a private registry by CentralNic, which sells names under it. According to CentralNic's registration records, viprow.us.com was registered on May 15, 2023, through NameCheap and runs to May 2027. It is not connected to the US government or the official ".us" country domain.</p>
+
+      <h2>Are VIPRow-Style Free Streaming Sites Legal?</h2>
+      <p>Free sites that rebroadcast live games without permission infringe broadcasters' copyright, and enforcement has stepped up. In July 2026 the US Department of Justice announced it had <a href="https://www.justice.gov/opa/pr/united-states-seizes-more-1000-internet-domains-used-illegally-stream-world-cup-2026-matches" target="_blank" rel="noopener">seized more than 1,000 internet domains used to illegally stream World Cup 2026 matches</a>. Earlier, the Premier League listed VIPBox, a related free-streaming brand, among sports piracy sites it reported to US trade officials, <a href="https://torrentfreak.com/major-pirate-iptv-free-sports-streaming-sites-labeled-most-notorious-231015/" target="_blank" rel="noopener">TorrentFreak reported</a>.</p>
+      <p>Enforcement usually targets operators rather than viewers, but rules vary by country. In the UK, anti-piracy groups have reportedly sent warning letters to users of illegal streaming services.</p>
+
+      <h2>The Security Risks of Free Sports Streams</h2>
+      <p>The bigger day-to-day risk for viewers is security.</p>
+      <ul>
+        <li>The US Federal Trade Commission warns: "If you want to avoid downloading malware when you stream video, don't watch pirated content. Period." Its <a href="https://consumer.ftc.gov/consumer-alerts/2019/05/malware-illegal-video-streaming-apps-what-know" target="_blank" rel="noopener">consumer alert</a> says malware can steal card numbers and logins and spread to other devices on your network.</li>
+        <li>In June 2026, <a href="https://www.malwarebytes.com/blog/threat-intel/2026/06/free-world-cup-stream-sites-are-serving-scams-not-football" target="_blank" rel="noopener">Malwarebytes researchers found</a> more than 40 near-identical "free World Cup stream" sites loading ad and tracking scripts from a network it flags as malicious. They found fake play buttons, fake virus warnings and crypto bait. Their advice: "Don't download anything, install anything, or enter any information."</li>
+        <li>A 2021 Webroot analysis of 20 illegal football streaming sites found that 92% contained malicious content, including fake close buttons and browser hijackers. The sample is small and dated, but the pattern matches newer findings.</li>
+      </ul>
+      <p>For more on spotting fake platforms, see our review of <a href="/articles/puzutask-com-review/">Puzutask.com and "pay to unlock" task scams</a>.</p>
+
+      <h2>Legal Ways to Watch Sports in the US</h2>
+      <table>
+        <thead><tr><th>Sport</th><th>Legal streaming options</th></tr></thead>
+        <tbody>
+          <tr><td>NFL</td><td><a href="https://tv.youtube.com/learn/nflsundayticket/" target="_blank" rel="noopener">NFL Sunday Ticket on YouTube</a> for out-of-market Sunday games, plus network TV and official NFL apps</td></tr>
+          <tr><td>MLB</td><td><a href="https://www.mlb.com/live-stream-games/subscribe" target="_blank" rel="noopener">MLB.TV</a> for out-of-market games</td></tr>
+          <tr><td>NBA</td><td>NBA League Pass and national broadcast partners</td></tr>
+          <tr><td>NHL</td><td>See the <a href="https://www.nhl.com/info/how-to-watch" target="_blank" rel="noopener">NHL's how-to-watch guide</a></td></tr>
+          <tr><td>College sports and more</td><td><a href="https://www.espn.com/espnplus/" target="_blank" rel="noopener">ESPN+</a></td></tr>
+          <tr><td>Premier League (US)</td><td>Peacock and NBC's channels</td></tr>
+        </tbody>
+      </table>
+      <p>Prices and blackout rules change each season, so check each service before subscribing. For stats from recent games, see our match reports on <a href="/articles/texans-vs-pittsburgh-steelers-match-player-stats/">Texans vs Steelers</a> and <a href="/articles/celtics-vs-cleveland-cavaliers-match-player-stats/">Celtics vs Cavaliers</a>.</p>
+
+      <h2>If You Already Used a Free Stream Site</h2>
+      <ul>
+        <li>Run a reputable malware scan on your device.</li>
+        <li>Remove browser extensions and notification permissions you did not intend to allow.</li>
+        <li>Change passwords for any accounts you entered on a stream page, and turn on two-factor authentication.</li>
+        <li>Check card statements if you entered payment details.</li>
+      </ul>
+
+      <h2>Viprow.us.com FAQs</h2>
+      <h3>Is viprow.us.com the official VIPRow site?</h3>
+      <p>We found no evidence that it is connected to the original VIPRow streaming site. It currently shows sports news, not streams.</p>
+      <h3>Is it safe to use free sports streaming sites?</h3>
+      <p>The FTC and security researchers warn that free stream sites often carry malware and scams. Use licensed services instead.</p>
+      <h3>Is viprow.us.com a US government site?</h3>
+      <p>No. "us.com" is a private domain service.</p>
+
+      <p><em>Checked on November 9, 2026, using CentralNic's registration records, a homepage check, the US Department of Justice, the FTC, Malwarebytes and TorrentFreak. We did not open any streams. This article is not legal advice.</em></p>
+    `
+  },
+  {
+    id: "ext-asp-intitle-cart",
+    title: "What Does \"ext:asp intitle:cart\" Mean? Google Dorks and Securing Online Stores",
+    excerpt: "\"ext:asp intitle:cart\" finds classic ASP shopping cart pages. What these Google operators do, why old carts are risky and how to protect your store.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T17:10:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Brass padlock resting on a laptop keyboard lit in red and green",
+    isTrending: true,
+    views: 0,
+    tags: ["Google Search Operators", "Cybersecurity", "E-commerce", "PCI DSS", "Google Dorks"],
+    content: `
+      <p class="lead">"ext:asp intitle:cart" is a Google search query that looks for pages built with classic ASP (Active Server Pages) that have "cart" in their title, typically old online shopping cart pages. Queries like this are known as "Google dorks". Security testers use them to find information that sites have exposed by accident. If you run an online store, the right response is to make sure your own legacy cart and admin pages are not exposed.</p>
+
+      <blockquote>
+        <p><strong>What "ext:asp intitle:cart" means:</strong></p>
+        <ul>
+          <li><strong>ext:asp</strong> limits results to URLs ending in .asp, the file extension of classic ASP pages. Google does not officially document <code>ext:</code>, but it is widely treated like <code>filetype:</code>.</li>
+          <li><strong>intitle:cart</strong> limits results to pages with the word "cart" in their HTML title.</li>
+          <li><strong>Together:</strong> they surface shopping cart pages running on classic ASP, a technology used by many older e-commerce sites.</li>
+          <li><strong>Why it matters:</strong> old, unpatched cart software has a history of exposing customer and payment data.</li>
+        </ul>
+      </blockquote>
+
+      <h2>How Google Search Operators Work</h2>
+      <p>Search operators are special commands that narrow Google results. Google's <a href="https://developers.google.com/search/docs/monitor-debug/search-operators" target="_blank" rel="noopener">Search Central documentation</a> covers operators such as <code>site:</code> and <code>filetype:</code>. It says <code>filetype:</code> "finds results in a specific file type, by content-type header or file extension." It also warns that search operators "are bound by indexing and retrieval limits", so results are not complete. Google's <a href="https://support.google.com/websearch/answer/2466433" target="_blank" rel="noopener">Refine web searches help page</a> adds that you should not put spaces between an operator and its search term.</p>
+      <p><code>intitle:</code> and <code>ext:</code> are not listed on those official pages, but they still work in practice and appear in security testing guides. <a href="https://www.google.com/advanced_search" target="_blank" rel="noopener">Google Advanced Search</a> offers the same filters as form fields: "terms appearing in the title of the page" and a file type selector.</p>
+
+      <h2>What Is a Google Dork?</h2>
+      <p>A "Google dork" is a search query designed to find sensitive information that websites have made public by mistake, such as login pages, configuration files or exposed databases. The <a href="https://www.exploit-db.com/google-hacking-database" target="_blank" rel="noopener">Google Hacking Database (GHDB)</a>, maintained by Exploit-DB, describes itself as "a categorized index of Internet search engine queries designed to uncover interesting, and usually sensitive, information." Its categories include "Sensitive Online Shopping Info" and "Pages Containing Login Portals."</p>
+      <p>The term reflects that the problem is the site's misconfiguration, not a flaw in Google. Google only indexes what a server makes publicly available.</p>
+      <p>The OWASP Web Security Testing Guide lists search engine reconnaissance, using operators like <code>intitle:</code> and <code>filetype:</code>, as a <a href="https://wstg.owasp.org/latest/4-Web_Application_Security_Testing/01-Information_Gathering/01-Conduct_Search_Engine_Reconnaissance_for_Information_Leakage" target="_blank" rel="noopener">standard first step in testing a website's security</a>. Testers use it to see what an attacker could find.</p>
+
+      <h2>Why Old ASP Shopping Carts Are a Risk</h2>
+      <p>Classic ASP was widely used for e-commerce sites in the late 1990s and 2000s. Many of those carts are no longer maintained. One historical GHDB entry concerns <a href="https://www.exploit-db.com/ghdb/546" target="_blank" rel="noopener">A-CART</a>, described as "an ASP shopping cart application written in VBScript". A flaw in it let remote attackers download its database, exposing customer contact details, card numbers and credentials.</p>
+      <p>The risk is not the search query itself. Old cart software, forgotten admin pages and backup files left on a server can be found by anyone, including attackers using the same search techniques.</p>
+
+      <h2>How to Protect Your Online Store</h2>
+      <ol>
+        <li><strong>Search your own site first.</strong> Run <code>site:yourdomain.com</code> searches with <code>filetype:</code> or <code>intitle:</code> filters to see what Google has indexed. Use Search Console's URL Inspection for more reliable checks, as Google recommends.</li>
+        <li><strong>Retire legacy cart software.</strong> Move off unsupported classic ASP carts to a maintained e-commerce platform, and delete old .asp scripts, test pages and backups from the server.</li>
+        <li><strong>Lock down admin and order pages.</strong> Put back-end pages behind authentication. Google states that <a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" target="_blank" rel="noopener">robots.txt "is not a mechanism for keeping a web page out of Google"</a>, and other crawlers may ignore it.</li>
+        <li><strong>Use noindex correctly.</strong> For pages that must stay public but out of search, use a <a href="https://developers.google.com/search/docs/crawling-indexing/block-indexing" target="_blank" rel="noopener">noindex rule</a>. Do not also block the page in robots.txt, or Google will never see the rule.</li>
+        <li><strong>Meet PCI DSS.</strong> If you take card payments, the <a href="https://www.pcisecuritystandards.org/standards/pci-dss/" target="_blank" rel="noopener">Payment Card Industry Data Security Standard</a> applies. Use hosted or embedded payment pages from your processor where possible. The PCI Security Standards Council says requirements 6.4.3 and 11.6.1 call for payment page scripts to be "properly authorized, checked for integrity, and monitored for tampering".</li>
+        <li><strong>Patch known exploited flaws first.</strong> CISA's <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">Known Exploited Vulnerabilities catalog</a> lists flaws attackers are actively using. Prioritise anything on it.</li>
+      </ol>
+      <p>For a wider look at security obligations for growing firms, see our report on <a href="/articles/cybersecurity-compliance-middle-market/">cybersecurity compliance for mid-sized companies</a>.</p>
+
+      <h2>Is It Legal to Use Google Dorks?</h2>
+      <p>Searching Google is legal. But using results to access systems or data without permission can break computer misuse laws. Security professionals test only systems they own or are authorised to test. If you find exposed data on someone else's site by accident, report it to the site owner rather than accessing it.</p>
+
+      <h2>ext:asp intitle:cart FAQs</h2>
+      <h3>What does ext:asp mean in Google?</h3>
+      <p>It restricts results to URLs with the .asp extension. Google does not officially document it, but it behaves like <code>filetype:asp</code>.</p>
+      <h3>What does intitle:cart mean?</h3>
+      <p>It shows only pages with "cart" in their HTML title.</p>
+      <h3>How do I stop my cart pages appearing in Google?</h3>
+      <p>Protect admin and order pages with authentication, use noindex for public pages you want out of search, and remove legacy files. Do not rely on robots.txt alone.</p>
+
+      <p><em>Checked on November 9, 2026, against Google Search Central, Google Search Help, OWASP, Exploit-DB, the PCI Security Standards Council and CISA. This article is for defensive and educational purposes and is not legal advice.</em></p>
+    `
+  },
+  {
+    id: "domikyo-com-review",
+    title: "Domikyo.com Review: Old Posts, a Recycled Omicron Story and Guest Post Banners",
+    excerpt: "What is domikyo.com? We checked its 2020 domain, 142 mostly 2021-22 posts, a recycled Omicron story, casino content and shared network contact email.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T17:15:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Two colleagues looking at a laptop together in a busy shared office with monitors showing code",
+    isTrending: true,
+    views: 0,
+    tags: ["Domikyo", "Website Review", "Guest Posting", "SEO", "Link Building"],
+    content: `
+      <p class="lead">Domikyo.com calls itself a site for "News and Articles Across Today's Key Issues", but most of its 142 posts were published in 2021 and 2022. Its recent articles include a recycled 2021 Omicron story and a post promoting a Bitcoin casino game. Its contact email and guest post marketplace banners match a network of blogs we have reviewed before. We checked the site on November 9, 2026.</p>
+
+      <blockquote>
+        <p><strong>Domikyo.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a WordPress blog with 142 posts on business, health, tech, finance and travel.</li>
+          <li><strong>Domain:</strong> registered December 5, 2020.</li>
+          <li><strong>Activity:</strong> 120 posts in 2021 and 2022, none in 2024 and 16 so far in 2026.</li>
+          <li><strong>Network links:</strong> same Gmail contact as SparkPressFusion.com and MagazinePanda.com, plus Adoovy guest post marketplace banners.</li>
+          <li><strong>Verdict:</strong> a guest post and advertising blog, not a news source.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Domikyo.com?</h2>
+      <p>The site describes itself as covering "the latest news, developments and researched stories across technology, finance, business, education, health, lifestyle, real estate and more." It has a full set of policy pages, including an <a href="https://www.domikyo.com/editorial-policy/" target="_blank" rel="nofollow noopener">Editorial Policy</a>, DMCA and Disclaimer.</p>
+      <p>Its history tells a different story. A <a href="https://web.archive.org/web/20210323070530/https://www.domikyo.com/" target="_blank" rel="noopener">March 2021 Wayback Machine snapshot</a> shows it as "Domikyo - Great Palace to share your Views", an open blog with posts by several contributors on topics such as impotence treatment and Botox.</p>
+
+      <h2>Domain and Publishing History</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows domikyo.com was registered on December 5, 2020, through Wild West Domains, and runs to 2032. You can check this with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>.</li>
+        <li><strong>Post dates:</strong> 1 post dated 2020, 43 in 2021, 77 in 2022, 2 in 2023, none in 2024, 3 in 2025 and 16 in 2026.</li>
+        <li><strong>Backdating:</strong> the oldest post is dated June 2020, before the domain was registered.</li>
+      </ul>
+
+      <h2>What Does Domikyo.com Publish Now?</h2>
+      <ul>
+        <li>"India aims to avoid 'pandemic roulette' : Omicron" (dated November 4, 2026). This is a 2021-era Omicron story with garbled wording such as "the unfold of the letter variant", and its "modified" date is earlier than its "published" date.</li>
+        <li>"Roobet's Mission Uncrossable advantage over other games" (June 30, 2026). It promotes a Bitcoin casino game with a followed link and no sponsored label or responsible-gambling notice.</li>
+        <li>"Mysterium VPN: What Should a No-Log VPN Actually Keep?" (August 25, 2026), with followed links to the VPN provider.</li>
+        <li>Health posts such as "7 Tips for Using Hearing Aids for the First Time" and "The Pros and Cons of Popular Anti-Aging Treatments", with no named medical reviewer.</li>
+      </ul>
+      <p>Republishing an old news story with a new date misleads readers about how current it is. <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites</a> to label paid links, and the commercial links we checked were not labelled.</p>
+
+      <h2>Does Domikyo.com Sell Advertising?</h2>
+      <p>Yes. Its <a href="https://www.domikyo.com/advertise-with-domikyo-com/" target="_blank" rel="nofollow noopener">Advertise page</a> says "sponsored content may be accepted following editorial review and will be identified where appropriate", and that pricing "may vary. Contact us for current options and applicable rates." No prices are published.</p>
+      <p>Every page also shows a "Guest Post Marketplace 2026" banner linking to Adoovy, the same marketplace advertised on <a href="/articles/themodeleats-com-review/">TheModelEats.com</a> and <a href="/articles/yonosamachar-com-review/">Yonosamachar.com</a>.</p>
+
+      <h2>Who Runs Domikyo.com?</h2>
+      <p>Recent posts are credited to "Kevin". The site's WordPress data lists two accounts, "Kevin" and "suman", neither with a biography. The contact email is the same Gmail address listed on <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a> and <a href="/articles/magazinepanda-com-review/">MagazinePanda.com</a>. That suggests a shared operator or network, although we could not confirm ownership.</p>
+
+      <h2>Is Domikyo.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Fresh reporting</td><td>Mostly 2021 to 2022 posts, plus a recycled 2021 news story with a 2026 date</td></tr>
+          <tr><td>Named, qualified writers</td><td>Bylines with no bios</td></tr>
+          <tr><td>Sponsored labels</td><td>None seen on casino and VPN posts</td></tr>
+          <tr><td>Network signals</td><td>Shared Gmail contact and marketplace banners</td></tr>
+          <tr><td>Scam reports</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>Domikyo.com does not ask readers for money, and we found no scam warnings. Do not rely on it for news, health or gambling information.</p>
+
+      <h2>Domikyo.com FAQs</h2>
+      <h3>What is domikyo.com?</h3>
+      <p>A WordPress blog registered in 2020 that publishes general articles and accepts sponsored content.</p>
+      <h3>Is Domikyo.com a news site?</h3>
+      <p>Not in a meaningful sense. Most posts are old, and at least one recent "news" post is a recycled 2021 story.</p>
+      <h3>Who owns Domikyo.com?</h3>
+      <p>The site does not name an owner. Its contact email is shared with other blogs we have reviewed.</p>
+
+      <p><em>Checked on November 9, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages and WordPress data. We will update this review if Domikyo.com responds or changes.</em></p>
+    `
+  },
+  {
+    id: "spiritualhubz-com-review",
+    title: "Spiritualhubz.com USA Review: Angel Numbers, Omens and Why \"USA\" Is in the Title",
+    excerpt: "Is spiritualhubz.com a US site? We checked the 2025 spiritual blog, its single byline, ear-ringing health claims and recent shift to commercial posts.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T17:20:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Silhouette of a person meditating cross-legged on a wooden deck facing the sunrise through palm trees",
+    isTrending: true,
+    views: 0,
+    tags: ["Spiritualhubz", "Spirituality", "Website Review", "Angel Numbers", "Wellness"],
+    content: `
+      <p class="lead">Spiritualhubz.com, often searched as "spiritualhubz.com usa", is a spiritual-meanings blog launched in March 2025 that covers angel numbers, animal omens, dream meanings and tattoo symbolism. It has no US-specific edition: "usa" is simply built into the site's title as a keyword. Some of its articles present spiritual explanations for symptoms such as ear ringing, and its newest posts have drifted into commercial topics.</p>
+
+      <blockquote>
+        <p><strong>Spiritualhubz.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a WordPress blog with 245 posts, mostly spiritual meanings and symbolism.</li>
+          <li><strong>Domain:</strong> registered March 5, 2025.</li>
+          <li><strong>Author:</strong> one byline, "Nathaniel", with no biography.</li>
+          <li><strong>"USA":</strong> appears only in the page title and description. There is no US address or US edition.</li>
+          <li><strong>Verdict:</strong> entertainment and reflection at best. Not a source for health advice.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Spiritualhubz.com?</h2>
+      <p>The site's title is "spiritualhubz.com usa - spiritualhubz.com Home", and its description calls it "your ultimate guide to spiritual awakening, mindfulness, and inner peace". Its <a href="https://spiritualhubz.com/about/" target="_blank" rel="nofollow noopener">About page</a> describes "spiritual meanings, dream interpretations, and tattoo symbolism" written by "our team of researchers, writers, and spiritual enthusiasts", but the site lists only one author.</p>
+      <p>A <a href="https://web.archive.org/web/20250922083655/https://spiritualhubz.com/" target="_blank" rel="noopener">September 2025 snapshot</a> shows typical posts: "222 Spiritual Meaning: Angel Number", "7 Spiritual Meanings of Waking Up at 3am (Biblical Insights)", "Right Ear Ringing Spiritual Meaning" and "Hawk Spiritual Meaning", alongside fashion and tattoo articles.</p>
+
+      <h2>Why "Spiritualhubz.com USA"?</h2>
+      <p>Building "usa" into a site title is a keyword tactic aimed at people who add a country to their search. We found no US address, no US-specific content and no separate US version. We have seen the same approach on <a href="/articles/tozymagazine-com-review/">Tozymagazine.com</a> and <a href="/articles/milomagazine-co-uk-review/">MiloMagazine.co.uk</a>.</p>
+
+      <h2>A Caution on Spiritual Explanations for Symptoms</h2>
+      <p>The site's <a href="https://spiritualhubz.com/right-ear-ringing-spiritual-meaning/" target="_blank" rel="nofollow noopener">"Right Ear Ringing Spiritual Meaning"</a> article, about 2,700 words long, says "spiritual hearing right ear ringing accounts for many ear ringing experiences that don't have identifiable medical causes" and that ear ringing during meditation "almost certainly indicates spiritual" activity. It does add that persistent, painful or concerning ear ringing "should always receive medical evaluation".</p>
+      <p>Ringing in the ears is tinnitus, a common symptom with many possible causes. The US National Institute on Deafness and Other Communication Disorders <a href="https://www.nidcd.nih.gov/health/tinnitus" target="_blank" rel="noopener">advises seeing a doctor</a> about tinnitus. Treat spiritual interpretations as personal reflection, not as explanations for physical symptoms.</p>
+      <p>The site also has a Health category with posts such as "How to Assist Someone Having a Stroke", written without stated medical credentials. Its disclaimer says the content "should not be considered professional, medical, legal, or financial advice". In a stroke emergency in the US, call 911.</p>
+
+      <h2>Recent Shift to Commercial Posts</h2>
+      <p>Since mid-2026, new posts have moved away from spirituality:</p>
+      <ul>
+        <li>"How Indian Plastic Extrusion Manufacturers Support Global B2B Supply" (October 5, 2026)</li>
+        <li>"Is Buying Google Reviews a Good Strategy for Building Trust?" (September 5, 2026)</li>
+        <li>"Replixi.com Platform: Complete Guide to Features" (September 14, 2026)</li>
+        <li>"Pedestrian Accident in Washington, DC: Settlement Tips" (June 6, 2026)</li>
+        <li>A post on a trading platform in its Crypto category (May 3, 2026)</li>
+      </ul>
+      <p>A spiritual blog publishing manufacturing, legal and trading content usually means it is selling placements. The phrase "write for us" appears in 30 of its posts.</p>
+
+      <h2>Is Spiritualhubz.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Age</td><td>Registered March 2025</td></tr>
+          <tr><td>Authors</td><td>One byline, no bio, despite a "team" described on the About page</td></tr>
+          <tr><td>US connection</td><td>None beyond the keyword in its title</td></tr>
+          <tr><td>Health claims</td><td>Spiritual explanations for symptoms, with a disclaimer</td></tr>
+          <tr><td>Topic focus</td><td>Shifting to commercial and B2B posts</td></tr>
+          <tr><td>Scam reports</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>For a similar site that moved from one topic to unrelated commercial posts, see our <a href="/articles/dreammeaniing-com-review/">Dreammeaniing.com review</a>.</p>
+
+      <h2>Spiritualhubz.com FAQs</h2>
+      <h3>What is spiritualhubz.com usa?</h3>
+      <p>A search phrase. Spiritualhubz.com is a spiritual-meanings blog with "usa" in its title, not a US edition.</p>
+      <h3>Who writes Spiritualhubz.com?</h3>
+      <p>Posts are credited to "Nathaniel", with no biography or credentials.</p>
+      <h3>Should I trust spiritual explanations for ear ringing?</h3>
+      <p>No. See a doctor about persistent ear ringing, and treat spiritual meanings as personal reflection.</p>
+
+      <p><em>Checked on November 9, 2026, using the Verisign registry record, the Wayback Machine, the site's own pages and WordPress data, and the NIDCD. This article is not medical advice. We will update it if Spiritualhubz.com responds or changes.</em></p>
+    `
+  },
+  {
+    id: "startup-booted-fundraising-strategy",
+    title: "Startup Booted Fundraising Strategy Explained, Plus What We Found on StartupBooted.com",
+    excerpt: "What is the Startup Booted fundraising strategy? We explain its 5 bootstrapping steps and check startupbooted.com's authors, $2k service and paid links.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T17:25:00Z",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Startup team meeting in a brick-walled office, with one person presenting at a whiteboard covered in sticky notes",
+    isTrending: true,
+    views: 0,
+    tags: ["Startup Booted", "Fundraising", "Bootstrapping", "Startups", "Website Review"],
+    content: `
+      <p class="lead">Startup Booted (startupbooted.com) is a Wix-built startup blog and consulting site that publishes funding news, "net worth" articles and guest posts, and sells pitch decks, financial models and fundraising strategy services. Its "Startup Booted fundraising strategy" means raising money while staying mostly bootstrapped. Its Write for Us page openly sells dofollow backlinks and says the operator runs "300 high-authority websites." We checked the site on November 9, 2026.</p>
+
+      <blockquote>
+        <p><strong>Startup Booted at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a startup blog with about 1,729 posts, plus a consulting service for pitch decks, financial modelling and fundraising.</li>
+          <li><strong>Domain:</strong> registered February 15, 2022, through Wix.</li>
+          <li><strong>Fundraising strategy:</strong> revenue-first growth with selective outside capital. The service page says pricing "starts at $2k".</li>
+          <li><strong>Guest posts:</strong> sold with "permanent dofollow backlinks", rates on request.</li>
+          <li><strong>Verdict:</strong> some useful general advice, but it is a commercial link-selling operation with no named experts.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is the Startup Booted Fundraising Strategy?</h2>
+      <p>Startup Booted's <a href="https://www.startupbooted.com/startup-booted-fundraising-strategy" target="_blank" rel="nofollow noopener">fundraising strategy article</a> explains that "booted" is a spelling variant that often appears in searches for "bootstrapped". Its <a href="https://www.startupbooted.com/fundraising-strategy" target="_blank" rel="nofollow noopener">service page</a> defines the approach as "a founder-led approach to raising capital while remaining bootstrapped, focusing on revenue-first growth, selective capital intake, and minimal equity dilution", sitting between traditional bootstrapping and venture capital.</p>
+      <p>The article sets out five steps:</p>
+      <ol>
+        <li><strong>Validate demand before building.</strong> Its line: "A waitlist isn't validation. A payment is."</li>
+        <li><strong>Launch a revenue-generating minimum viable product.</strong></li>
+        <li><strong>Reinvest revenue carefully.</strong></li>
+        <li><strong>Operate lean,</strong> with low fixed costs and contractors.</li>
+        <li><strong>Raise from a position of strength,</strong> once revenue gives you negotiating power.</li>
+      </ol>
+      <p>It suggests funding through personal savings, revenue and non-dilutive options such as revenue-based financing, grants, accelerators and customer prepayments. It names metrics to track: monthly recurring revenue growth, customer acquisition cost versus lifetime value, gross margin, net revenue retention above 100% and runway.</p>
+
+      <h2>Is the Advice Any Good?</h2>
+      <p>The core ideas are mainstream: prove customers will pay, keep costs low and raise outside money when you have leverage. They also fit the article's own warning that bootstrapping suits some businesses better than others. It notes that capital-intensive sectors such as hardware and biotech are a poor fit.</p>
+      <p>The weaknesses are in the sourcing. The article is credited to "Evelyn Carter" with no credentials. A key example about Ring's founder ends "according to." with the source missing, and a TechCrunch reference has no link. For startup funding, compare it with official resources such as the US Small Business Administration's guide to <a href="https://www.sba.gov/business-guide/plan-your-business/fund-your-business" target="_blank" rel="noopener">funding your business</a>.</p>
+      <p>For more on non-dilutive options, see our reports on <a href="/articles/venture-debt-startup-funding-shift/">the shift to venture debt</a> and <a href="/articles/sme-cash-flow-fintech-revolution/">fintech tools for SME cash flow</a>.</p>
+
+      <h2>What Else Does Startup Booted Publish?</h2>
+      <p>The site's sitemap lists about 1,729 blog posts since 2022. Recent topics include startup funding rounds, celebrity "net worth" articles and general guest posts, for example on how transactional lawyers help with business deals. It also publishes casino content, such as "best online casinos in Canada for 2026", with followed links to a casino and no responsible-gambling notice.</p>
+      <p>Author profiles on the site include "Evelyn Carter" (394 posts) and "Sydney Clarke" (526 posts), both created on March 10, 2026, plus accounts called "startupbooted94776" and "seodelhi2021". The About page claims "a dynamic team of seasoned professionals" but names nobody.</p>
+
+      <h2>Startup Booted Write for Us: Paid Backlinks</h2>
+      <p>The <a href="https://www.startupbooted.com/write-for-us" target="_blank" rel="nofollow noopener">Write for Us page</a> is explicit:</p>
+      <ul>
+        <li>"High-Quality Dofollow Backlinks: Boost your SEO with authority links (1-2 per article)"</li>
+        <li>"Permanent dofollow backlinks (links never removed)" and "Published in 24 Hours"</li>
+        <li>"Link Insertion: Add your link to existing high-traffic, indexed articles"</li>
+        <li>"We operate 300 high-authority websites across different niches"</li>
+        <li>"Standard Guest Post: Contact for current rates"</li>
+      </ul>
+      <p>The page also claims a newsletter "sent to 10,000+ subscribers" and sites with "DA 40-70+". We could not verify any of these claims, and the page ends with an unfilled "Email: [your-email]" placeholder. Google's <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">spam policies</a> treat buying or selling links to manipulate rankings as link spam.</p>
+
+      <h2>Domain History</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows startupbooted.com was registered on February 15, 2022, through Wix.com, and runs to 2027.</li>
+        <li><strong>2022:</strong> a <a href="https://web.archive.org/web/20220220060624/startupbooted.com" target="_blank" rel="noopener">February 2022 snapshot</a> shows "ONE STOP GUIDE FOR ENTREPRENEURS", described as "a unique blog for entrepreneurs to explore all about startups and growth marketing".</li>
+        <li><strong>Footer:</strong> the current site footer says "© 2010 - 2025", although the domain dates from 2022.</li>
+      </ul>
+
+      <h2>Is Startup Booted Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Named experts</td><td>None. Author profiles have no credentials</td></tr>
+          <tr><td>Consulting service</td><td>Offered from $2k. Clients and results unverified</td></tr>
+          <tr><td>Paid links</td><td>Openly sells dofollow guest posts and link insertions</td></tr>
+          <tr><td>Content mix</td><td>Startup news, net worth posts, casino content</td></tr>
+          <tr><td>Scam reports</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>Startup Booted's bootstrapping advice is reasonable as a starting point, but it is a commercial content and link-selling operation. Before paying for consulting, ask for named consultants and client references.</p>
+
+      <h2>Startup Booted FAQs</h2>
+      <h3>What does "startup booted" mean?</h3>
+      <p>It refers to startupbooted.com. The site says "booted" is a variant of "bootstrapped".</p>
+      <h3>What is the Startup Booted fundraising strategy?</h3>
+      <p>Grow from customer revenue first, keep costs lean and raise selectively once you have leverage, to limit equity dilution.</p>
+      <h3>Does Startup Booted sell guest posts?</h3>
+      <p>Yes. Its Write for Us page offers dofollow backlinks and link insertions, with rates on request.</p>
+
+      <p><em>Checked on November 9, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages, author profiles and sitemap. This article is not financial advice. We will update it if Startup Booted responds or changes.</em></p>
+    `
+  },
+  {
     id: "tozymagazine-com-review",
     title: "Tozymagazine.com USA Review: From Birthday Wishes to Paid-Style Business Posts",
     excerpt: "Is tozymagazine.com a US magazine? No. We checked its 2024 domain, 356 posts, \"usa\" page, bylines and unlabelled business links. Here is what it is.",
@@ -2177,7 +2679,7 @@ const ARTICLES = [
 
       <h2>Who Writes for SparkPressFusion.com?</h2>
       <p>The site's WordPress data lists two authors: "Suman" with 45 posts and "Sandy Walker" with 32. Neither has a biography or credentials, including on posts about law, health and finance. The site names no editor or owner. Its structured data lists an office in Sector 62, Noida, India, which we could not verify.</p>
-      <p>The site's contact Gmail address also appears on <a href="/articles/yonosamachar-com-review/">Yonosamachar.com</a> and as the guest post submission address on <a href="/articles/cnlawblog-review/">CNLawBlog</a>. That suggests the sites share an operator or manager, though we could not confirm ownership.</p>
+      <p>The site's contact Gmail address also appears on <a href="/articles/yonosamachar-com-review/">Yonosamachar.com</a>, <a href="/articles/magazinepanda-com-review/">MagazinePanda.com</a> and <a href="/articles/domikyo-com-review/">Domikyo.com</a>, and as the guest post submission address on <a href="/articles/cnlawblog-review/">CNLawBlog</a>. That suggests the sites share an operator or manager, though we could not confirm ownership.</p>
 
       <h2>What Does SparkPressFusion.com Publish?</h2>
       <p>The publishing pattern is uneven. The site has 77 posts, and 44 of them carry the same date, March 24, 2026. The newest is dated July 15, 2026. Recent headlines include:</p>
