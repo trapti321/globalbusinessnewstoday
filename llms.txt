@@ -16,6 +16,7 @@ Global Business News Today is an independent business news website. Articles cit
 - [Markets & Finance](https://globalbusinessnewstoday.com/category/markets/): Central bank decisions, interest rates, inflation and financial market analysis.
 - [Tech & AI](https://globalbusinessnewstoday.com/category/tech/): Enterprise AI adoption, cybersecurity and business technology news.
 - [SMEs & Startups](https://globalbusinessnewstoday.com/category/smes/): Small business finance, cash flow, venture capital and startup funding news.
+- [Health & Wellness](https://globalbusinessnewstoday.com/category/health/): Evidence-based health, fitness, sleep and wellness guides, including wearables and workplace wellbeing.
 - [Real Estate](https://globalbusinessnewstoday.com/category/property/): Office markets, commercial property, conversions and real estate finance.
 - [Press Releases](https://globalbusinessnewstoday.com/category/press-releases/): Corporate announcements and press releases distributed by Global Business News Today.
 
@@ -73,6 +74,11 @@ Global Business News Today is an independent business news website. Articles cit
 - [UploadBlog.com Review: What We Could Verify About Online Posting Before You Submit](https://globalbusinessnewstoday.com/articles/uploadblog-com-review-online-posting/): We checked UploadBlog.com's domain records, access and the reviews ranking for it. Here is what is verified, what is not, and how to vet any guest post site. (Published 2026-11-02)
 - [Late Payments Squeeze SME Cash Flow as Rates Rise: The New Rules and Tools Helping Firms Get Paid](https://globalbusinessnewstoday.com/articles/sme-cash-flow-fintech-revolution/): US small firms were paid 8.5 days late on average in mid-2026. New UK rules, instant payments and invoice tools aim to help as credit costs rise. (Published 2026-11-01, updated 2026-11-02)
 - [Venture Debt Hits Record $82 Billion in 2026, but Fewer Startups Are Getting Loans](https://globalbusinessnewstoday.com/articles/venture-debt-startup-funding-shift/): US venture debt reached a record $81.7B through September, yet deal count fell sharply as lenders favor large AI borrowers. What founders should know. (Published 2026-10-30, updated 2026-11-02)
+
+## Health & Wellness
+
+- [Best Smartwatches of 2026: Apple Watch Series 12 vs Pixel Watch 5, Galaxy Watch 9 and Garmin](https://globalbusinessnewstoday.com/articles/best-smartwatches-2026/): Compare the best smartwatches of 2026: Apple Watch Series 12, SE 3, Ultra 4, Pixel Watch 5, Galaxy Watch 9 and Garmin Venu 4 on price, battery and health. (Published 2026-11-09)
+- [Is It Good to Run Every Day? Benefits, Risks and How to Do It Safely](https://globalbusinessnewstoday.com/articles/running-every-day-benefits-risks/): Is running every day good for you? What studies of 55,000 and 232,000 people show about benefits, how injury risk rises, and a safe weekly plan. (Published 2026-11-09)
 
 ## Real Estate
 

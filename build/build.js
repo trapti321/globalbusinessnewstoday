@@ -36,6 +36,7 @@ const CATEGORIES = [
   { slug: "markets", name: "Markets & Finance", title: "Financial Markets, Rates & Currencies", description: "Central bank decisions, interest rates, inflation and financial market analysis." },
   { slug: "tech", name: "Tech & AI", title: "Technology, Enterprise Software & AI", description: "Enterprise AI adoption, cybersecurity and business technology news." },
   { slug: "smes", name: "SMEs & Startups", title: "SME Intelligence & Startup Growth", description: "Small business finance, cash flow, venture capital and startup funding news." },
+  { slug: "health", name: "Health & Wellness", title: "Health, Fitness & Wellness", description: "Evidence-based health, fitness, sleep and wellness guides, including wearables and workplace wellbeing." },
   { slug: "property", name: "Real Estate", title: "Commercial Real Estate & Property", description: "Office markets, commercial property, conversions and real estate finance." },
   { slug: "press-releases", name: "Press Releases", title: "Corporate Wire & Press Releases", description: "Corporate announcements and press releases distributed by Global Business News Today." }
 ];

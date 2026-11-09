@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/best-smartwatches-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T12:10:00Z</news:publication_date>
+      <news:title>Best Smartwatches of 2026: Apple Watch Series 12 vs Pixel Watch 5, Galaxy Watch 9 and Garmin</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/running-every-day-benefits-risks/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T12:00:00Z</news:publication_date>
+      <news:title>Is It Good to Run Every Day? Benefits, Risks and How to Do It Safely</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/moderna-q3-2026-earnings-guidance/</loc>
     <news:news>
       <news:publication>
@@ -229,17 +251,6 @@
       </news:publication>
       <news:publication_date>2026-11-08T11:00:00Z</news:publication_date>
       <news:title>What Is In-House Financing? Meaning, Real Costs and How Businesses Offer It</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/uscis-form-i-485-guide/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-06T21:00:00Z</news:publication_date>
-      <news:title>USCIS Form I-485 in 2026: Fees, New Edition and Rules That Get Applications Rejected</news:title>
     </news:news>
   </url>
 </urlset>

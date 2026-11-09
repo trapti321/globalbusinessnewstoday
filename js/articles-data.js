@@ -1,6 +1,231 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "running-every-day-benefits-risks",
+    title: "Is It Good to Run Every Day? Benefits, Risks and How to Do It Safely",
+    excerpt: "Is running every day good for you? What studies of 55,000 and 232,000 people show about benefits, how injury risk rises, and a safe weekly plan.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T12:00:00Z",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Runner's legs in blue running shoes mid-stride on an asphalt road",
+    isTrending: true,
+    views: 0,
+    tags: ["Running", "Fitness", "Exercise", "Heart Health", "Wellness"],
+    content: `
+      <p class="lead">Running every day can be good for your health, and even short daily runs are linked to a lower risk of early death. But daily running is not necessary to get those benefits, and doing too much too soon raises your injury risk. Most people do best with a plan that mixes easy runs, rest or cross-training days and strength work.</p>
+
+      <blockquote>
+        <p><strong>Is it good to run every day? Quick answer:</strong></p>
+        <ul>
+          <li><strong>Benefits:</strong> large studies link running, even 5 to 10 minutes a day, to a lower risk of death from all causes and from heart disease.</li>
+          <li><strong>You don't need to run daily:</strong> research found similar benefits across different amounts of running.</li>
+          <li><strong>Risks:</strong> running injuries are common, and sudden jumps in mileage or intensity are a key factor.</li>
+          <li><strong>Best approach:</strong> build up slowly, keep most runs easy, add strength training twice a week, and take a rest or low-impact day when your body needs it.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What the Research Says About Running Every Day</h2>
+      <h3>Even short runs are linked to longer life</h3>
+      <p>The best-known study followed 55,137 adults for an average of 15 years. Published in the <em>Journal of the American College of Cardiology</em> in 2014, it found that <a href="https://pubmed.ncbi.nlm.nih.gov/25082581/" target="_blank" rel="noopener">runners had a 30% lower risk of death from all causes and a 45% lower risk of death from cardiovascular disease</a> than non-runners. Runners lived about three years longer on average.</p>
+      <p>The striking finding was dose. Even people in the lowest running group, under 51 minutes a week or roughly 5 to 10 minutes a day, had significantly lower mortality. Lead author Duck-chul Lee of Iowa State University said running "produces similar, if not greater, mortality benefits in five to 10 minutes compared to the 15 to 20 minutes per day" of moderate-intensity activity, according to the <a href="https://www.acc.org/About-ACC/Press-Releases/2014/07/29/09/32/Leisure-Running-JACC-PR" target="_blank" rel="noopener">American College of Cardiology's announcement</a> of the study.</p>
+      <h3>More running is not always better</h3>
+      <p>A 2019 meta-analysis in the <em>British Journal of Sports Medicine</em> pooled data from 232,149 people and found that <a href="https://doi.org/10.1136/bjsports-2018-100493" target="_blank" rel="noopener">any amount of running was linked to a 27% lower risk of death from all causes</a>, 30% from cardiovascular disease and 23% from cancer. The researchers found no clear pattern that running more often, for longer or faster gave extra benefit.</p>
+      <p>Both studies are observational. They show running is associated with better outcomes, not that running alone causes them, since runners may differ from non-runners in other ways.</p>
+
+      <h2>Benefits of Running Every Day</h2>
+      <ul>
+        <li><strong>Heart health:</strong> regular aerobic exercise like running strengthens the heart and is linked to lower cardiovascular death in the studies above.</li>
+        <li><strong>Meeting activity guidelines:</strong> the US Centers for Disease Control and Prevention (CDC) recommends adults get <a href="https://www.cdc.gov/physical-activity-basics/guidelines/adults.html" target="_blank" rel="noopener">at least 150 minutes of moderate or 75 minutes of vigorous aerobic activity a week</a>. Running is vigorous, so 15 minutes a day for five days meets the 75-minute target.</li>
+        <li><strong>Consistency:</strong> a short daily habit can be easier to stick to than three long sessions.</li>
+        <li><strong>Mood and sleep:</strong> many runners report better mood and sleep, and regular physical activity is widely linked to both.</li>
+        <li><strong>Time efficiency:</strong> running needs little equipment and can fit into a busy work day, which matters for professionals juggling long hours.</li>
+      </ul>
+
+      <h2>Risks of Running Every Day</h2>
+      <h3>Running injuries are common</h3>
+      <p>A 2022 systematic review in the <em>Journal of Athletic Training</em> pooled data from more than 23,000 runners and found that <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9528699/" target="_blank" rel="noopener">26.2% sustained a running-related injury</a>. Common problems include shin splints, runner's knee, Achilles tendon pain, plantar fasciitis and stress fractures.</p>
+      <h3>Load changes matter more than the calendar</h3>
+      <p>The same review found that the evidence linking injuries to distance, frequency or intensity on their own is conflicting. Injuries tend to happen when runners exceed what their body is ready for. A recent increase in training days per week or distance per week was among the risk factors. Running every day is not automatically harmful. Jumping from three runs a week to seven, or doubling your mileage, is where the risk rises.</p>
+      <h3>Other warning signs</h3>
+      <ul>
+        <li>Pain that changes how you run, or gets worse during a run.</li>
+        <li>Persistent fatigue, poor sleep or a resting heart rate that stays higher than normal.</li>
+        <li>Loss of motivation, irritability or frequent minor illnesses, which can signal you are not recovering.</li>
+      </ul>
+
+      <h2>How to Run Every Day Safely</h2>
+      <ol>
+        <li><strong>Start where you are.</strong> If you are new, begin with run-walk intervals three or four days a week, then add days gradually over several weeks.</li>
+        <li><strong>Make most runs easy.</strong> You should be able to talk in full sentences. Save hard efforts for one or two days a week.</li>
+        <li><strong>Increase slowly.</strong> Change only one thing at a time: days, distance or speed.</li>
+        <li><strong>Strength train twice a week.</strong> The CDC also recommends muscle-strengthening activity on at least two days a week. Squats, lunges, calf raises and core work help support running.</li>
+        <li><strong>Use "active rest".</strong> On tired days, swap the run for walking, cycling, swimming or yoga, or take the day off.</li>
+        <li><strong>Get good shoes and sleep.</strong> Replace worn-out shoes, and treat sleep as part of training.</li>
+        <li><strong>Listen to pain.</strong> Stop and get advice if pain changes your stride or lasts more than a few days.</li>
+      </ol>
+
+      <h2>Sample Weekly Plans</h2>
+      <table>
+        <thead><tr><th>Day</th><th>Beginner</th><th>Experienced daily runner</th></tr></thead>
+        <tbody>
+          <tr><td>Monday</td><td>20 min run-walk</td><td>Easy 30 min</td></tr>
+          <tr><td>Tuesday</td><td>Strength training</td><td>Intervals or tempo run</td></tr>
+          <tr><td>Wednesday</td><td>20 min run-walk</td><td>Easy 20 to 30 min + strength</td></tr>
+          <tr><td>Thursday</td><td>Rest or walk</td><td>Easy 30 min</td></tr>
+          <tr><td>Friday</td><td>20 min run-walk</td><td>Easy 20 min + strength</td></tr>
+          <tr><td>Saturday</td><td>Cycling, swimming or yoga</td><td>Long easy run</td></tr>
+          <tr><td>Sunday</td><td>Rest</td><td>Very easy 15 to 20 min recovery run</td></tr>
+        </tbody>
+      </table>
+      <p>These are examples, not prescriptions. Adjust them to your fitness, schedule and how you feel.</p>
+      <p>A GPS watch or fitness tracker can help you keep easy runs easy and spot rising fatigue. See our guide to <a href="/articles/best-smartwatches-2026/">the best smartwatches for fitness in 2026</a>.</p>
+
+      <h2>Who Should Talk to a Doctor First?</h2>
+      <p>Check with a doctor before starting a new running routine if you have heart disease, high blood pressure, diabetes, joint problems, a past injury that still hurts, or symptoms such as chest pain, dizziness or shortness of breath during exercise. The same applies if you are pregnant or returning after a long break.</p>
+
+      <h2>Running Every Day FAQs</h2>
+      <h3>Is it OK to run every day?</h3>
+      <p>For many healthy people, yes, if most runs are easy and the routine was built up gradually. Rest or low-impact days are still wise for most runners.</p>
+      <h3>How many minutes should I run a day?</h3>
+      <p>Research links even 5 to 10 minutes a day with lower mortality. To meet CDC guidelines with running alone, aim for 75 minutes a week, or about 15 minutes on five days.</p>
+      <h3>Will running every day help me lose weight?</h3>
+      <p>Running burns energy, but weight loss also depends on diet, sleep and overall activity. Consistency over months matters more than any single week.</p>
+      <h3>Should I take rest days from running?</h3>
+      <p>Most runners benefit from at least one rest or cross-training day a week, especially beginners and people returning from injury.</p>
+
+      <p>Busy professionals often find running is the easiest exercise to fit into a work week. For more on productivity and work, see our <a href="/category/smes/">SMEs &amp; Startups coverage</a>.</p>
+
+      <p><em>Checked on November 9, 2026, against the CDC, the American College of Cardiology and peer-reviewed studies in the Journal of the American College of Cardiology, British Journal of Sports Medicine and Journal of Athletic Training. This article is for general information and is not medical advice.</em></p>
+    `
+  },
+  {
+    id: "best-smartwatches-2026",
+    title: "Best Smartwatches of 2026: Apple Watch Series 12 vs Pixel Watch 5, Galaxy Watch 9 and Garmin",
+    excerpt: "Compare the best smartwatches of 2026: Apple Watch Series 12, SE 3, Ultra 4, Pixel Watch 5, Galaxy Watch 9 and Garmin Venu 4 on price, battery and health.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T12:10:00Z",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Smartwatch with a dark woven strap showing colourful app icons, resting on a light grey surface",
+    isTrending: true,
+    views: 0,
+    tags: ["Smartwatches", "Apple Watch", "Pixel Watch", "Galaxy Watch", "Garmin"],
+    content: `
+      <p class="lead">The best smartwatch for you depends mostly on your phone. iPhone owners should look at the Apple Watch Series 12. Android users have two strong choices in the Google Pixel Watch 5 and Samsung Galaxy Watch 9. If battery life and fitness tracking matter more than apps, Garmin's Venu 4 lasts days instead of hours. This guide compares the main 2026 models on price, battery, health features and compatibility.</p>
+
+      <blockquote>
+        <p><strong>Best smartwatches of 2026 at a glance:</strong></p>
+        <ul>
+          <li><strong>Best for iPhone:</strong> Apple Watch Series 12, from $399</li>
+          <li><strong>Best value for iPhone:</strong> Apple Watch SE 3, from $249 at launch</li>
+          <li><strong>Best rugged and outdoor:</strong> Apple Watch Ultra 4, from $799</li>
+          <li><strong>Best for Android and Pixel phones:</strong> Google Pixel Watch 5, from $399</li>
+          <li><strong>Best for Samsung phones:</strong> Samsung Galaxy Watch 9, from $379.99</li>
+          <li><strong>Best battery life for fitness:</strong> Garmin Venu 4, from $549.99</li>
+        </ul>
+      </blockquote>
+      <p>How we chose: we compared each manufacturer's published specifications and prices, and checked launch details in independent coverage, on November 9, 2026. We did not test these watches ourselves. Prices are US starting prices and change often.</p>
+
+      <h2>Compare the Best Smartwatches of 2026</h2>
+      <table>
+        <thead><tr><th>Watch</th><th>Starting price</th><th>Battery (maker's claim)</th><th>Works with</th></tr></thead>
+        <tbody>
+          <tr><td>Apple Watch Series 12</td><td>$399</td><td>Up to 24 hours</td><td>iPhone</td></tr>
+          <tr><td>Apple Watch SE 3</td><td>$249 (launch price)</td><td>Up to 18 hours (32 in Low Power Mode)</td><td>iPhone</td></tr>
+          <tr><td>Apple Watch Ultra 4</td><td>$799</td><td>Up to 50 hours (84 in Low Power Mode)</td><td>iPhone</td></tr>
+          <tr><td>Google Pixel Watch 5</td><td>$399 (41mm)</td><td>About 30 hours (41mm) or 40 hours (45mm) with always-on display</td><td>Android</td></tr>
+          <tr><td>Samsung Galaxy Watch 9</td><td>$379.99 (40mm)</td><td>Larger batteries than Watch 8</td><td>Android (best with Samsung)</td></tr>
+          <tr><td>Garmin Venu 4</td><td>$549.99</td><td>Up to 12 days in smartwatch mode</td><td>iPhone and Android</td></tr>
+        </tbody>
+      </table>
+
+      <h2>1. Apple Watch Series 12: Best Smartwatch for iPhone</h2>
+      <p>Announced on September 9, 2026, the <a href="https://www.apple.com/newsroom/2026/09/introducing-apple-watch-series-12-with-the-all-new-health-sensing-system/" target="_blank" rel="noopener">Apple Watch Series 12</a> starts at $399 in 42mm and 46mm sizes. Its main upgrade is a new Health Sensing System with new optical and electrical heart sensors. Apple says it measures heart rate every five seconds all day and heart rate variability (HRV) up to 24 times more often. A new Readiness feature gives a daily 0 to 10 score with a recommendation for how hard to train.</p>
+      <ul>
+        <li><strong>Battery:</strong> up to 24 hours, and up to 10 hours of outdoor workout tracking, 25% more than before. A 15-minute charge adds up to 12 hours.</li>
+        <li><strong>Chip:</strong> Apple's S11.</li>
+        <li><strong>Best for:</strong> most iPhone owners who want the fullest mix of apps, payments, health and fitness tracking.</li>
+        <li><strong>Watch out for:</strong> you still need to charge it most nights.</li>
+      </ul>
+
+      <h2>2. Apple Watch SE 3: Best Value for iPhone</h2>
+      <p>The <a href="https://www.apple.com/apple-watch-se-3/" target="_blank" rel="noopener">Apple Watch SE 3</a> is Apple's lowest-priced current model, in 40mm and 44mm aluminium cases with an always-on display. It runs on the S10 chip and includes sleep score, sleep apnea notifications, irregular rhythm notifications and wrist temperature sensing. It lacks ECG, blood oxygen, Readiness and hypertension notifications, according to Apple.</p>
+      <ul>
+        <li><strong>Battery:</strong> up to 18 hours, or 32 hours in Low Power Mode.</li>
+        <li><strong>Best for:</strong> first-time smartwatch buyers, teenagers and anyone who mainly wants notifications and activity tracking.</li>
+      </ul>
+
+      <h2>3. Apple Watch Ultra 4: Best Rugged Smartwatch</h2>
+      <p>The <a href="https://www.apple.com/apple-watch-ultra-4/" target="_blank" rel="noopener">Apple Watch Ultra 4</a> has a 49mm titanium case, a sapphire display that reaches 3,000 nits, and military-standard (MIL-STD-810H) durability testing. It supports recreational scuba diving to 40 metres with a compatible app. It can also send emergency SOS, Find My and Messages over satellite when there is no mobile signal.</p>
+      <ul>
+        <li><strong>Battery:</strong> up to 50 hours, or 84 hours in Low Power Mode.</li>
+        <li><strong>Price:</strong> from $799, the same as the Ultra 3, according to launch coverage.</li>
+        <li><strong>Best for:</strong> hikers, divers, trail runners and anyone who wants the longest-lasting Apple Watch.</li>
+      </ul>
+
+      <h2>4. Google Pixel Watch 5: Best for Android and Pixel Phones</h2>
+      <p>Launched on August 12, 2026, the Pixel Watch 5 comes in 41mm ($399 Wi-Fi, $499 LTE) and 45mm ($429 Wi-Fi, $529 LTE) sizes, <a href="https://www.droid-life.com/2026/08/12/pixel-watch-5-official-at-399-with-huge-health-upgrades/" target="_blank" rel="noopener">Droid Life reported</a>. It runs Wear OS with Google's Gemini assistant, which can handle some voice commands offline. It also adds satellite SOS.</p>
+      <ul>
+        <li><strong>Health and safety:</strong> irregular rhythm, high and low heart rate, breathing emergency and loss-of-pulse alerts, plus a Readiness Score and improved sleep tracking.</li>
+        <li><strong>Battery:</strong> about 30 hours (41mm) or 40 hours (45mm) with the always-on display, and longer in battery saver mode.</li>
+        <li><strong>Best for:</strong> Pixel and other Android phone owners who want strong safety features and Fitbit-based fitness tracking.</li>
+      </ul>
+
+      <h2>5. Samsung Galaxy Watch 9: Best for Samsung Phones</h2>
+      <p>Samsung announced the <a href="https://www.samsung.com/us/watches/galaxy-watch9/" target="_blank" rel="noopener">Galaxy Watch 9</a> on July 22, 2026. It starts at $379.99 for the 40mm Bluetooth model, $30 more than last year. It uses Qualcomm's Snapdragon Wear Elite chip and runs One UI 9 Watch, and both sizes get bigger batteries than the Galaxy Watch 8: 390mAh (40mm) and 445mAh (45mm), according to <a href="https://www.sammobile.com/news/galaxy-watch-9-price-starts-at-379-with-hikes-across-the-lineup/" target="_blank" rel="noopener">SamMobile</a>.</p>
+      <ul>
+        <li><strong>Display:</strong> up to 3,000 nits peak brightness.</li>
+        <li><strong>Best for:</strong> Galaxy phone owners. Some health features work best, or only, with a Samsung phone.</li>
+        <li><strong>Watch out for:</strong> reviewers describe it as an incremental upgrade, so Galaxy Watch 8 owners may not need to switch.</li>
+      </ul>
+
+      <h2>6. Garmin Venu 4: Best Battery Life for Fitness</h2>
+      <p>The Garmin Venu 4, launched in September 2025 from $549.99, trades some smartwatch apps for battery life measured in days. <a href="https://www.garmin.com.sg/news/press-release/news-2026-feb-venu-4/" target="_blank" rel="noopener">Garmin says</a> it lasts up to 12 days in smartwatch mode. It includes an ECG app that can detect signs of atrial fibrillation, a Health Status feature that flags when overnight metrics move outside your normal range, lifestyle logging for habits such as caffeine and alcohol, and a built-in LED flashlight.</p>
+      <ul>
+        <li><strong>Sizes:</strong> 41mm and 45mm.</li>
+        <li><strong>Best for:</strong> runners and anyone who hates daily charging. It works with both iPhone and Android.</li>
+      </ul>
+
+      <h2>How to Choose the Right Smartwatch</h2>
+      <ol>
+        <li><strong>Start with your phone.</strong> Apple Watches only work with iPhone. Pixel and Galaxy watches need Android. Garmin works with both.</li>
+        <li><strong>Decide how often you will charge.</strong> Most smartwatches need charging every one to two days, while Garmin and the Apple Watch Ultra 4 last much longer.</li>
+        <li><strong>Pick the health features you will actually use.</strong> ECG, readiness scores and sleep tracking are useful, but not every model has every feature.</li>
+        <li><strong>Consider LTE.</strong> A cellular model lets you call and stream without your phone, but costs more upfront and usually needs a monthly plan.</li>
+        <li><strong>Check the fit.</strong> Smaller cases are lighter and often more comfortable for sleep tracking.</li>
+      </ol>
+      <p>If you are buying a watch to support a new exercise habit, read our evidence-based guide to <a href="/articles/running-every-day-benefits-risks/">the benefits and risks of running every day</a>.</p>
+
+      <h2>A Note on Health Features</h2>
+      <p>Smartwatch health alerts can prompt you to see a doctor, but they cannot diagnose conditions. Features such as ECG and irregular rhythm notifications have specific approvals and limitations that vary by country. If your watch flags a problem, or you feel unwell, contact a medical professional.</p>
+
+      <h2>Best Smartwatch FAQs</h2>
+      <h3>What is the best smartwatch in 2026?</h3>
+      <p>For iPhone users, the Apple Watch Series 12. For Android, the Google Pixel Watch 5 or Samsung Galaxy Watch 9, depending on your phone. For the longest battery life, the Garmin Venu 4.</p>
+      <h3>Which smartwatch has the best battery life?</h3>
+      <p>Of the watches here, the Garmin Venu 4, at up to 12 days in smartwatch mode. Among Apple models, the Ultra 4 lasts up to 50 hours.</p>
+      <h3>Can I use an Apple Watch with an Android phone?</h3>
+      <p>No. The Apple Watch requires an iPhone.</p>
+      <h3>Are smartwatches worth it?</h3>
+      <p>They are most useful if you will use the fitness, safety or notification features daily. If you only want step counts, a cheaper fitness tracker may be enough.</p>
+
+      <p><em>Specifications and prices were checked against Apple, Google, Samsung and Garmin information and independent launch coverage on November 9, 2026. We did not test these devices. Prices vary by retailer and region. This guide is not medical advice.</em></p>
+    `
+  },
+  {
     id: "airbnb-q3-2026-earnings",
     title: "Airbnb Q3 2026 Earnings: Revenue Up 19%, Outlook Raised and $12 Billion Buyback",
     excerpt: "Airbnb grew Q3 2026 revenue 19% to $4.9 billion, raised its full-year outlook and approved a $12 billion buyback. Here is what drove it and what is next.",

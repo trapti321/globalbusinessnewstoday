@@ -2087,3 +2087,19 @@ dialog.custom-modal::backdrop {
     grid-template-columns: 1fr;
   }
 }
+
+/* Nine top-level nav items: tighten spacing on laptop widths so the menu stays on one line. */
+@media (min-width: 769px) and (max-width: 1440px) {
+  .nav-link {
+    padding-inline: 0.55rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1180px) {
+  .nav-link {
+    padding-inline: 0.3rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0;
+  }
+}
