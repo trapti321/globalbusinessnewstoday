@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/nvidia-investigates-jensen-huang-affair-suspected-spy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T19:00:00Z</news:publication_date>
+      <news:title>Nvidia Opens Probe Into CEO Jensen Huang After Affair With Suspected Chinese Spy</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/startup-booted-fundraising-strategy/</loc>
     <news:news>
       <news:publication>

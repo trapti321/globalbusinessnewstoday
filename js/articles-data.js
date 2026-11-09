@@ -1,6 +1,86 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "nvidia-investigates-jensen-huang-affair-suspected-spy",
+    title: "Nvidia Opens Probe Into CEO Jensen Huang After Affair With Suspected Chinese Spy",
+    excerpt: "Nvidia's board is investigating reports CEO Jensen Huang was targeted by a foreign intelligence effort after he admitted an affair. What we know so far.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T19:00:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Two graphics cards with cooling fans lying on a dark reflective surface",
+    isTrending: true,
+    views: 0,
+    tags: ["Nvidia", "Jensen Huang", "China", "National Security", "AI Chips"],
+    content: `
+      <p class="lead">Nvidia's board has opened an independent investigation after reports that chief executive Jensen Huang was "the target of a foreign intelligence effort". On Sunday, November 8, 2026, Huang admitted to an affair with a woman whom US intelligence officials reportedly believe is a Chinese spy. Nvidia says it has no reason to believe national security or company secrets were compromised, and that Huang will stay on as CEO.</p>
+
+      <blockquote>
+        <p><strong>What we know so far (November 9, 2026):</strong></p>
+        <ul>
+          <li><strong>The probe:</strong> Nvidia's board is investigating reports that Huang was targeted by a foreign intelligence effort. Huang "fully supports the review", the board said.</li>
+          <li><strong>The admission:</strong> in an email to staff, Huang wrote: "I was unfaithful to my wife. My actions hurt her and our children. There is no excuse for what I did."</li>
+          <li><strong>The allegation:</strong> The New York Times reported last month that US intelligence officials believe Alice Huang, a former executive at Singapore data center firm Megaspeed, was passing information to Beijing. She is not related to Jensen Huang.</li>
+          <li><strong>China's response:</strong> Beijing calls the spy allegations "entirely groundless".</li>
+          <li><strong>Next dates:</strong> Nvidia reports quarterly earnings on November 17. House Republicans have asked Huang for a closed-door briefing on November 18.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Nvidia's Board Said</h2>
+      <p>In a statement, Nvidia's board said it would investigate "in light of recent reporting that founder and CEO Jensen Huang has been the target of a foreign intelligence effort", according to <a href="https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html" target="_blank" rel="noopener">CNBC</a> and the BBC. "While the Board has no reason to believe that either national security or NVIDIA secrets were compromised, the Board's inquiry will examine all available information," it said. It added that Huang "fully supports the review and has committed to cooperating with it."</p>
+      <p>A company spokesperson said Huang is committed to continuing as CEO without interruption. The investigation's findings and timeline have not been made public.</p>
+
+      <h2>What Jensen Huang Said</h2>
+      <p>In an email to Nvidia employees on Sunday, Huang admitted to the affair: "I was unfaithful to my wife. My actions hurt her and our children. There is no excuse for what I did," he wrote, adding, "I am deeply sorry." <a href="https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company" target="_blank" rel="noopener">Axios published the email</a>. In it, Huang also said he was "proud and grateful" to be an American and committed to America's national security. He moved to the US from Taiwan as a child.</p>
+      <p>No reporting has established that Jensen Huang knew of any alleged intelligence activity, and neither he nor Nvidia has been accused of wrongdoing by authorities.</p>
+
+      <h2>Who Is Alice Huang, and What Is Megaspeed?</h2>
+      <p>According to The New York Times, as reported by the BBC and CNBC, US intelligence agencies concluded that Alice Huang, a Chinese businesswoman with a close relationship to the Nvidia CEO, was acting on behalf of Beijing. Surveillance reportedly picked up her communications with a US citizen later identified as Jensen Huang through a process known as "unmasking". These are allegations attributed to unnamed sources, and Alice Huang had not responded publicly when the BBC reported.</p>
+      <p>Megaspeed is a Singapore-based data center company that buys Nvidia chips. US authorities previously investigated it over allegations that it helped Chinese firms get around export restrictions to obtain Nvidia chips. Nvidia has said those allegations were investigated and debunked. Nvidia also told the BBC it was not aware of US intelligence concerns about Megaspeed.</p>
+      <p>The BBC checked Singapore business registration records and found that a Chinese national named Huang Le, Alice Huang's Chinese name, was Megaspeed's managing director from March to November 2023. A different person has been listed as director since then, and there is no suggestion that the current director is involved in the allegations.</p>
+
+      <h2>Why It Matters: Nvidia, AI Chips and US Security</h2>
+      <p>Nvidia designs the advanced chips that power most of the world's AI systems. It supplies companies such as OpenAI and Meta, and the BBC puts its stock market value at about $4.5 trillion. Since 2022, the US has used export controls to restrict China's access to top AI chips, arguing they protect national security. That puts any suggestion that Nvidia's CEO was targeted by a foreign intelligence service at the centre of US-China tech tensions.</p>
+      <p>The timing is sensitive. President Donald Trump is due to travel to China next week for a summit with President Xi Jinping. AI chips have been a central issue in trade talks, and the AI sell-off has already rattled markets this month, as our report on <a href="/articles/nasdaq-rebounds-after-correction-jobs-report/">the Nasdaq's correction</a> shows.</p>
+
+      <h2>How Washington and Beijing Responded</h2>
+      <ul>
+        <li><strong>President Trump:</strong> "I just know he's a fine person, but you never know what's going on," Trump told reporters late on Sunday, adding that Huang had "done an amazing job for our country", the BBC reported.</li>
+        <li><strong>Secretary of State Marco Rubio:</strong> "I can't comment on any of that. I just can't comment because of the nature of it," he told reporters before flying to a G7 meeting in Paris.</li>
+        <li><strong>China:</strong> Foreign Ministry spokesperson Guo Jiakun said on Monday: "The allegations about Chinese spies are entirely groundless, speculative and intended to smear and malign China."</li>
+        <li><strong>Congress:</strong> three House Republican committee chairs wrote to Huang on November 5 asking for a closed-door briefing on November 18 about the reports and Nvidia's "security protocols against foreign adversary espionage". They asked him to accept or propose another date by November 11. The request is for a voluntary briefing, not a subpoena.</li>
+      </ul>
+
+      <h2>Market Reaction</h2>
+      <p>Overnight trading indicated Nvidia shares would open about 4% lower on Monday, November 9, the BBC reported. Nvidia is due to report third-quarter results on November 17. Investors will watch for any update on the board's investigation and on demand for its chips. For Nvidia's role in the wider AI build-out, see our report on <a href="/articles/meta-midterms-data-centers-harder/">why Meta says AI data centers will be harder to build</a>.</p>
+
+      <h2>What Happens Next</h2>
+      <ul>
+        <li><strong>November 11:</strong> deadline for Huang to respond to the House briefing request.</li>
+        <li><strong>November 17:</strong> Nvidia's third-quarter earnings report.</li>
+        <li><strong>November 18:</strong> requested date for the closed-door congressional briefing.</li>
+        <li><strong>Next week:</strong> Trump's planned summit with Xi Jinping in China.</li>
+        <li><strong>Unknown:</strong> when Nvidia's board investigation will conclude and whether its findings will be published.</li>
+      </ul>
+
+      <h2>FAQs</h2>
+      <h3>Why is Nvidia investigating Jensen Huang?</h3>
+      <p>Nvidia's board is examining reports that Huang was the target of a foreign intelligence effort, after he admitted to an affair with a woman US officials reportedly believe is a Chinese spy.</p>
+      <h3>Is Jensen Huang stepping down?</h3>
+      <p>No. Nvidia says he is committed to continuing as CEO without interruption.</p>
+      <h3>Were Nvidia's secrets compromised?</h3>
+      <p>The board says it has "no reason to believe" national security or Nvidia secrets were compromised, but its inquiry will examine all available information.</p>
+
+      <p><em>This is a developing story. Facts were checked on November 9, 2026, against the BBC's live coverage, CNBC, Axios and reporting on the House Republicans' letter. Allegations about Alice Huang are attributed to US intelligence officials as reported by The New York Times, and have not been tested in court. This article is not investment advice.</em></p>
+    `
+  },
+  {
     id: "navy-quicklinks-mynavy-portal",
     title: "Navy QuickLinks Explained: How to Find MyNavy Portal Quick Links Safely",
     excerpt: "Navy Quick Links is the directory of Sailor tools inside MyNavy Portal at mn3p.navy.mil. How to access it with CAC, fix errors and avoid lookalike sites.",
