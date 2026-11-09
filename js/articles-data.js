@@ -1,6 +1,106 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "what-is-a-riser-desk",
+    title: "What Is a Riser Desk? How Desk Risers Work, Setup Tips and What Research Shows",
+    excerpt: "A riser desk sits on your desk and lifts your screen and keyboard so you can stand. How risers work, types, OSHA setup tips and what studies show.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T14:00:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Laptop and smartphone on a wooden desk lit by a warm desk lamp in a dim home office",
+    isTrending: true,
+    views: 0,
+    tags: ["Riser Desk", "Standing Desk", "Ergonomics", "Workplace Wellbeing", "Home Office"],
+    content: `
+      <p class="lead">A riser desk, also called a desk riser or standing desk converter, is an adjustable platform that sits on top of your existing desk and lifts your monitor, laptop and keyboard so you can work standing up, then lowers again when you want to sit. It is a cheaper, easier alternative to replacing your whole desk with a full height-adjustable standing desk.</p>
+
+      <blockquote>
+        <p><strong>What is a riser desk? Quick answer:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a sit-stand platform that rests on a normal desk and raises your screen and keyboard to standing height.</li>
+          <li><strong>How it moves:</strong> gas springs, a manual lift or an electric motor.</li>
+          <li><strong>Why people use it:</strong> to sit less at work without buying a new desk.</li>
+          <li><strong>What the evidence says:</strong> sit-stand desks cut workplace sitting by roughly 84 to 116 minutes a day in a Cochrane review, but long-term health benefits are not yet proven.</li>
+        </ul>
+      </blockquote>
+
+      <h2>How a Riser Desk Works</h2>
+      <p>A riser desk has a base that sits on your desktop and a work surface that moves up and down. Most models lift straight up or in a slight arc, so check how much space you need behind the desk. Common lift mechanisms:</p>
+      <ul>
+        <li><strong>Gas spring:</strong> you squeeze a lever and the spring helps lift the platform. Quick and needs no power.</li>
+        <li><strong>Manual:</strong> you lift the platform yourself or turn a crank. Cheapest, but slower.</li>
+        <li><strong>Electric:</strong> a motor raises the platform at the press of a button, and some models save preset heights. Best for heavy setups or frequent changes.</li>
+      </ul>
+
+      <h2>Types of Riser Desks</h2>
+      <table>
+        <thead><tr><th>Type</th><th>Best for</th><th>Trade-off</th></tr></thead>
+        <tbody>
+          <tr><td>Single-tier</td><td>Laptops and small setups</td><td>Keyboard and screen move together, so one of them is often at the wrong height</td></tr>
+          <tr><td>Two-tier</td><td>Most desk workers</td><td>Separate keyboard tray and screen platform, but takes more depth</td></tr>
+          <tr><td>Compact</td><td>Small desks and home offices</td><td>Less room for a mouse and documents</td></tr>
+          <tr><td>Wide or dual-monitor</td><td>Two screens or larger setups</td><td>Heavier, more expensive and takes more desk space</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Riser Desk vs Standing Desk vs Monitor Riser</h2>
+      <ul>
+        <li><strong>Riser desk (standing desk converter):</strong> sits on your current desk and lets you switch between sitting and standing. Usually the lowest-cost way to stand at work.</li>
+        <li><strong>Full standing desk:</strong> the whole desk changes height. More stable and spacious, but costs more and replaces your existing desk.</li>
+        <li><strong>Monitor riser:</strong> a fixed stand that lifts only your screen to a better viewing height. It does not let you stand.</li>
+      </ul>
+
+      <h2>Do Riser Desks Actually Help?</h2>
+      <h3>They reduce sitting</h3>
+      <p>A <a href="https://www.cochrane.org/about-us/news/featured-review-workplace-interventions-reducing-time-spent-sitting-work" target="_blank" rel="noopener">Cochrane review of 34 studies with 3,397 participants</a> found that people using sit-stand desks sat about 84 to 116 minutes less during the working day than those at conventional desks. The evidence quality was rated very low. Standing more did not cause harmful effects in those studies, such as musculoskeletal pain or lower productivity.</p>
+      <p>A larger, well-designed trial backs this up. In the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6174726/" target="_blank" rel="noopener">SMArT Work trial published in the BMJ in 2018</a>, office workers given a height-adjustable workstation plus coaching and feedback sat 83 fewer minutes per workday after 12 months than a control group. They also reported improvements in job performance, work engagement, fatigue and quality of life.</p>
+      <h3>But they are not a health cure</h3>
+      <p>Cochrane concluded that the health effects of sit-stand desks are still unproven. Standing barely increases the calories you burn, so a riser desk should not be expected to help with weight loss. The real value is breaking up long periods of sitting, which works best combined with movement such as short walks.</p>
+
+      <h2>How to Set Up a Riser Desk Correctly</h2>
+      <ol>
+        <li><strong>Screen height:</strong> the top of the screen should be at or slightly below eye level, according to the US Occupational Safety and Health Administration's <a href="https://www.osha.gov/etools/computer-workstations/components/monitors" target="_blank" rel="noopener">computer workstation guidance</a>.</li>
+        <li><strong>Screen distance:</strong> at least 20 inches from your eyes. OSHA's preferred range is 20 to 40 inches.</li>
+        <li><strong>Keyboard height:</strong> elbows bent at about 90 degrees, with wrists straight and hands at or slightly below elbow height.</li>
+        <li><strong>Stand on a supportive surface:</strong> comfortable shoes or an anti-fatigue mat make standing easier.</li>
+        <li><strong>Alternate:</strong> switch between sitting and standing through the day, rather than standing for hours.</li>
+      </ol>
+      <p>If you wear bifocals, OSHA suggests lowering the screen and tilting it up, or using single-vision computer glasses, so you don't have to tilt your head back.</p>
+
+      <h2>How to Choose a Riser Desk</h2>
+      <ul>
+        <li><strong>Weight capacity:</strong> add up your monitors, laptop and accessories, and leave a margin.</li>
+        <li><strong>Height range:</strong> make sure it lifts high enough for your standing elbow height, especially if you are tall.</li>
+        <li><strong>Desk depth:</strong> measure your desk. Two-tier risers need more depth, and some move forward as they rise.</li>
+        <li><strong>Stability:</strong> check reviews for wobble at full height, especially when typing.</li>
+        <li><strong>Monitor arms:</strong> if you use a monitor arm, confirm the riser supports one.</li>
+        <li><strong>Cable length:</strong> leave slack so cables don't pull tight when the riser goes up.</li>
+      </ul>
+
+      <h2>Are Riser Desks Worth It for Businesses?</h2>
+      <p>For employers, riser desks are a relatively low-cost way to offer sit-stand options without refitting an office. The SMArT Work results suggest pairing desks with guidance and encouragement gets better results than handing out equipment alone. If you are reviewing workplace wellbeing, see our evidence-based guide to <a href="/articles/running-every-day-benefits-risks/">running every day</a> for another way staff can build activity into a busy week, and our <a href="/category/health/">Health &amp; Wellness section</a> for more.</p>
+
+      <h2>Riser Desk FAQs</h2>
+      <h3>What is a riser desk used for?</h3>
+      <p>To raise your screen and keyboard so you can work standing at an ordinary desk, then lower them to sit.</p>
+      <h3>Is a riser desk the same as a standing desk?</h3>
+      <p>No. A riser desk sits on top of an existing desk, while a standing desk is a full desk whose height adjusts.</p>
+      <h3>How long should I stand at a riser desk?</h3>
+      <p>There is no single proven number. Alternating between sitting and standing, and taking movement breaks, is more practical than standing all day.</p>
+      <h3>Can a riser desk hold two monitors?</h3>
+      <p>Wide models can. Check the platform width and weight capacity first.</p>
+
+      <p><em>Checked on November 9, 2026, against OSHA's computer workstation guidance, Cochrane and the BMJ SMArT Work trial. This article is general information, not medical advice. Speak to a health professional if you have back, joint or circulation problems.</em></p>
+    `
+  },
+  {
     id: "running-every-day-benefits-risks",
     title: "Is It Good to Run Every Day? Benefits, Risks and How to Do It Safely",
     excerpt: "Is running every day good for you? What studies of 55,000 and 232,000 people show about benefits, how injury risk rises, and a safe weekly plan.",
