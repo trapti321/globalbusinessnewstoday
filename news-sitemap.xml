@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/trump-dana-white-press-secretary-joke/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T20:10:00Z</news:publication_date>
+      <news:title>Trump Says Dana White Press Secretary Offer Was a Joke as Job Stays Vacant</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/trump-media-investors-lose-2-2-billion/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T20:05:00Z</news:publication_date>
+      <news:title>Trump Media Investors Have Lost $2.2 Billion as DJT Hits Record Low, Reuters Finds</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/khor-mor-gas-field-drone-attack/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-09T20:00:00Z</news:publication_date>
+      <news:title>Drone Attack Halts Iraq&#039;s Khor Mor Gas Field, Leaving 70% of Kurdistan Without Power</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/nvidia-investigates-jensen-huang-affair-suspected-spy/</loc>
     <news:news>
       <news:publication>

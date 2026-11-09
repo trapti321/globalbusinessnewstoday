@@ -1,6 +1,203 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "khor-mor-gas-field-drone-attack",
+    title: "Drone Attack Halts Iraq's Khor Mor Gas Field, Leaving 70% of Kurdistan Without Power",
+    excerpt: "A drone hit Iraq's Khor Mor gas field on Nov 8, halting output and knocking out about 2.8 GW of power in Kurdistan. What happened and what comes next.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T20:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Industrial processing plant with stainless steel pipes, tanks and a blue motor fan",
+    isTrending: true,
+    views: 0,
+    tags: ["Iraq", "Kurdistan", "Natural Gas", "Dana Gas", "Energy Security"],
+    content: `
+      <p class="lead">Gas production at Iraq's Khor Mor field was suspended after a drone struck the site on the night of Sunday, November 8, 2026. The strike set an LPG storage unit on fire and cut gas supplies to power plants across Iraq's Kurdistan region. More than 70% of the region lost electricity, according to the Kurdish electricity ministry, and about 2.8 gigawatts (GW) of generation was knocked out. No group has claimed responsibility.</p>
+
+      <blockquote>
+        <p><strong>Khor Mor attack: key facts</strong></p>
+        <ul>
+          <li><strong>When:</strong> Sunday night, November 8, 2026</li>
+          <li><strong>What was hit:</strong> the field's liquefied petroleum gas (LPG) storage and production unit, causing a fire that has been put out</li>
+          <li><strong>Casualties:</strong> none, according to an initial assessment cited by Iraq's prime minister</li>
+          <li><strong>Power impact:</strong> 2,500 to 2,800 megawatts lost; plants in Erbil, Sulaimaniyah, Bazian, Chamchamal and Duhok affected</li>
+          <li><strong>Operator:</strong> UAE-based Dana Gas, which says production remains suspended while it assesses the damage</li>
+          <li><strong>Responsibility:</strong> unclaimed. Kurdish officials have previously blamed Iranian-backed militias for attacks on the field.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Happened at Khor Mor</h2>
+      <p>Two electricity ministry sources told <a href="https://www.investing.com/news/commodities-news/production-suspended-at-iraqs-khor-mor-gas-field-after-drone-attack-sources-say-5010313" target="_blank" rel="noopener">Reuters</a> that a single drone hit the field's LPG storage tank, causing a fire. Dana Gas, the field's joint operator, said the fire had been extinguished, no staff were injured, and employees had been moved to shelters inside the facility. Production remains suspended pending a damage assessment.</p>
+      <p>Iraqi Prime Minister Ali al-Zaidi said there were no casualties based on an initial assessment, and ordered a joint investigative committee with the Kurdistan region's authorities, <a href="https://www.aljazeera.com/news/2026/11/9/drone-attack-suspends-production-at-iraqs-khor-mor-gasfield" target="_blank" rel="noopener">Al Jazeera reported</a>. The Kurdistan Regional Government's natural resources and electricity ministries called it a "terrorist attack".</p>
+
+      <h2>Power Cuts Across Kurdistan</h2>
+      <p>Khor Mor, in Sulaimaniyah governorate, supplies gas to the power plants that generate much of the Kurdistan region's electricity. The ministry's spokesperson, Omid Ahmed, said the strike took 2,500 to 2,800 megawatts off the grid. Gas supply was suspended to plants in Erbil, Sulaimaniyah, Bazian, Chamchamal and Duhok, leaving more than 70% of the region without power.</p>
+      <p>Ahmed said the ministry would keep critical services such as hospitals and water treatment plants running using hydroelectric and alternative-fuel plants.</p>
+
+      <h2>Who Runs the Khor Mor Gas Field?</h2>
+      <p>Khor Mor is operated by Dana Gas, a UAE-listed energy company, as part of the Pearl Petroleum consortium. It is the main source of gas for power generation in Iraqi Kurdistan, which makes any outage felt quickly by homes and businesses.</p>
+
+      <h2>A History of Attacks</h2>
+      <p>The field has been targeted repeatedly. A drone strike hit the same facility in November 2025, and no group claimed that attack either. In July 2026, Dana Gas shut its main production facilities, citing security threats and regional tension, before restarting later that month, according to Reuters. Kurdish officials have previously blamed Iranian-backed militias, but there has been no claim or official attribution for Sunday's attack.</p>
+      <p>Al Jazeera said it was unclear whether the strike was related to the wider conflict involving the United States, Israel and Iran.</p>
+
+      <h2>Why It Matters for Energy Markets and Business</h2>
+      <ul>
+        <li><strong>Local economy:</strong> extended blackouts hit factories, shops and services across the Kurdistan region, a major oil-producing area.</li>
+        <li><strong>Regional risk:</strong> attacks on energy infrastructure add to the risk premium in Middle East energy assets at a time when Brent crude was already trading near $98 to $99 a barrel last week, as we reported in our <a href="/articles/global-stocks-ai-selloff-nikkei-ftse/">global markets roundup</a>.</li>
+        <li><strong>Investors:</strong> Dana Gas and its partners face another production halt. The length of the outage will depend on the damage assessment.</li>
+      </ul>
+      <p>For more on how energy and geopolitics are shaping business, see our <a href="/category/world/">World Business coverage</a>.</p>
+
+      <h2>What Happens Next</h2>
+      <ul>
+        <li>Dana Gas's damage assessment, which will determine when production can restart.</li>
+        <li>The findings of the joint Iraqi and Kurdish investigative committee.</li>
+        <li>Whether power can be restored using alternative supplies while gas is offline.</li>
+      </ul>
+
+      <h2>FAQs</h2>
+      <h3>What is the Khor Mor gas field?</h3>
+      <p>A natural gas field in Iraq's Kurdistan region, operated by Dana Gas, that supplies fuel to the region's power plants.</p>
+      <h3>Who attacked Khor Mor?</h3>
+      <p>No group has claimed responsibility. Officials have blamed Iranian-backed militias for past attacks, but not formally for this one.</p>
+      <h3>How much power was lost?</h3>
+      <p>About 2.5 to 2.8 GW, leaving more than 70% of the Kurdistan region without electricity, according to the Kurdish electricity ministry.</p>
+
+      <p><em>This is a developing story. Checked on November 9, 2026, against Reuters and Al Jazeera reporting and official statements. We will update it as production and power supplies are restored.</em></p>
+    `
+  },
+  {
+    id: "trump-media-investors-lose-2-2-billion",
+    title: "Trump Media Investors Have Lost $2.2 Billion as DJT Hits Record Low, Reuters Finds",
+    excerpt: "Trump Media's outside investors have lost over $2.2 billion, Reuters estimates, as DJT closed at a record $4.02. Trump's stake, revenue and what's next.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T20:05:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Close-up of a trading screen showing a red and green candlestick chart with volume bars",
+    isTrending: true,
+    views: 0,
+    tags: ["Trump Media", "DJT", "Truth Social", "Stocks", "Retail Investors"],
+    content: `
+      <p class="lead">Outside investors in Trump Media &amp; Technology Group, the owner of Truth Social, have lost more than $2.2 billion, according to a Reuters analysis published on November 6, 2026. The company's shares closed at a record low of $4.02 on November 5, having fallen 32% since the midterm elections. The stock trades on Nasdaq under the ticker DJT.</p>
+
+      <blockquote>
+        <p><strong>Trump Media losses: key numbers</strong></p>
+        <ul>
+          <li><strong>Investor losses:</strong> more than $2.2 billion, per Reuters' estimate based on shares sold to investors since 2021</li>
+          <li><strong>Share price:</strong> $4.02 at the close on Thursday, November 5, a record low</li>
+          <li><strong>Since the midterms:</strong> down 32%</li>
+          <li><strong>Trump's stake:</strong> 114.75 million shares, worth about $460 million, down from a paper value of more than $6 billion at the peak</li>
+          <li><strong>Revenue:</strong> roughly $4 million a year for three years</li>
+        </ul>
+      </blockquote>
+
+      <h2>How Reuters Calculated the $2.2 Billion Loss</h2>
+      <p>The <a href="https://www.nbcnews.com/business/media/trump-media-investors-lost-22-billion-rcna607849" target="_blank" rel="noopener">Reuters analysis, republished by NBC News</a>, estimated how much money outside investors put into Trump Media shares since 2021, adjusted for buybacks, against what those shares are worth now. Three finance professors who reviewed the method called it the generally accepted way to measure investor gains and losses.</p>
+      <p>Trump Media disputes the methodology. It says it has a "strong balance sheet" and points to its proposed merger with TAE Technologies, a nuclear fusion company.</p>
+
+      <h2>Trump's Stake</h2>
+      <p>Donald Trump holds 114.75 million Trump Media shares. He received them in 2024, without paying cash, as part of the company's merger with the blank-check company Digital World Acquisition Corp. At the November 5 close, his stake was worth about $460 million, compared with more than $6 billion on paper at the stock's high. The Trump family invested little or none of its own money in the company, according to securities filings cited by Reuters.</p>
+
+      <h2>Trump Media's Business</h2>
+      <ul>
+        <li><strong>Revenue:</strong> flat at about $4 million a year for three years, according to Reuters.</li>
+        <li><strong>Truth Social:</strong> generated $630,000 in revenue from August 2024 through June 2026, after more than $200 million in spending, Reuters reported.</li>
+        <li><strong>Bitcoin:</strong> the company bought bitcoin near the crypto market's peak, before a steep fall in prices.</li>
+        <li><strong>Fusion merger:</strong> Trump Media has proposed a merger with TAE Technologies, a nuclear fusion company, which it points to as a source of future value.</li>
+      </ul>
+
+      <h2>Retail Investors' Losses</h2>
+      <p>Reuters spoke to individual investors who bought in heavily. An Austin, Texas, investor said he put 20% of his net worth into the stock and is down 88.5%. A California retiree bought shares at prices as high as $53.54. A Colorado nurse who bought at an average of $45.32 faces a loss of about $28,000.</p>
+      <p>Some retail investors have blamed "naked short selling", a practice where traders sell shares they have not borrowed. Reuters found no evidence of it, and analysts said short interest in the stock is below average for companies of its size.</p>
+
+      <h2>Why the Stock Fell After the Midterms</h2>
+      <p>Trump Media shares fell 32% after the November 3 midterm elections, in which Democrats won control of both chambers of Congress. The stock's value has often moved with Trump's political fortunes rather than its business results. The decline also came during a broad market sell-off, covered in our report on <a href="/articles/nasdaq-rebounds-after-correction-jobs-report/">the Nasdaq's correction</a>.</p>
+
+      <h2>The Wider Picture</h2>
+      <p>Investors in four Trump-backed crypto projects lost a combined $2.3 billion through April, according to an earlier Reuters report. A Reuters/Ipsos poll found that most Americans believe Trump's business interests have influenced his decisions, including almost half of Republicans and 69% of independents.</p>
+
+      <h2>FAQs</h2>
+      <h3>How much have Trump Media investors lost?</h3>
+      <p>More than $2.2 billion, according to a Reuters analysis. Trump Media disputes the methodology.</p>
+      <h3>What is Trump Media's stock price?</h3>
+      <p>It closed at a record low of $4.02 on November 5, 2026. Prices change daily, so check a live quote for DJT.</p>
+      <h3>How much is Trump's stake worth?</h3>
+      <p>About $460 million at the November 5 close, down from more than $6 billion on paper at the peak.</p>
+
+      <p><em>Checked on November 9, 2026, against Reuters' analysis as published by NBC News. Figures are Reuters estimates, and Trump Media disputes them. This article is for information only and is not investment advice.</em></p>
+    `
+  },
+  {
+    id: "trump-dana-white-press-secretary-joke",
+    title: "Trump Says Dana White Press Secretary Offer Was a Joke as Job Stays Vacant",
+    excerpt: "Trump offered UFC boss Dana White the press secretary job on Truth Social, then said he was \"only kidding\". What happened and why the post is vacant.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T20:10:00Z",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1501466044931-62695aada8e9?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Pennsylvania Avenue in Washington, DC, leading to the US Capitol dome under a blue sky",
+    isTrending: true,
+    views: 0,
+    tags: ["Donald Trump", "Dana White", "UFC", "White House", "Politics"],
+    content: `
+      <p class="lead">President Donald Trump says he was "only kidding" when he offered UFC chief executive Dana White the job of White House press secretary. Trump posted the offer on Truth Social on Saturday, November 7, 2026, and walked it back on Sunday after more than a day of speculation. The press secretary job remains vacant after two departures this year.</p>
+
+      <blockquote>
+        <p><strong>What happened:</strong></p>
+        <ul>
+          <li><strong>Saturday:</strong> Trump wrote on Truth Social: "Dana will be a Press Secretary like none other. Dana, please take the job!"</li>
+          <li><strong>Sunday:</strong> "I will tell you, I was only kidding, but Dana loves the idea, and there's only one Dana," Trump told reporters in Palm Beach, Florida.</li>
+          <li><strong>White's reaction:</strong> he posted an apparently AI-generated image of himself at the briefing-room lectern with the caption "On to the next chapter."</li>
+          <li><strong>The job:</strong> still vacant after Karoline Leavitt stepped down in August and her successor, Katie Zacharia, left after five days in October.</li>
+        </ul>
+      </blockquote>
+
+      <h2>The Truth Social Post and the Walk-Back</h2>
+      <p>Trump announced the offer on Truth Social, describing White as a "violent Fighter and Warrior", <a href="https://thehill.com/homenews/6207197-trump-dana-white-press-secretary-joke/" target="_blank" rel="noopener">The Hill reported</a>. On Sunday, asked about it in Palm Beach, Trump said he had been joking, according to <a href="https://www.nbcnews.com/politics/white-house/trump-offers-press-secretary-job-ufc-ceo-dana-white-rcna608039" target="_blank" rel="noopener">NBC News</a>. He added that White was still coming to Washington on Monday, "for other reasons".</p>
+      <p>White had played along. Besides the lectern image on Instagram, he shared Trump's post to his Instagram Story. Speaking at a boxing event in London, he said he had a meeting with Trump scheduled for Monday.</p>
+
+      <h2>Why the White House Has No Press Secretary</h2>
+      <p>The briefing-room job has been unusually unstable. Karoline Leavitt announced in August that she was stepping down to spend more time with her family. Her replacement, Katie Zacharia, left after five days in October, NBC News reported. <a href="https://www.npr.org/2026/11/08/nx-s1-6033900/ufc-dana-white-trump-white-house-press-secretary" target="_blank" rel="noopener">NPR</a> noted that Trump currently has no press secretary.</p>
+
+      <h2>Who Is Dana White?</h2>
+      <p>Dana White is the CEO and president of the UFC (Ultimate Fighting Championship), the mixed martial arts promotion. He and Trump have been friends for years, and Trump has attended many UFC events while in office. In July 2026, White organised a UFC fight on the White House South Lawn as part of events marking the nation's 250th birthday, NBC News reported.</p>
+
+      <h2>The Business Angle</h2>
+      <p>For the UFC, the episode was another round of free publicity at the highest level of politics. The company has built its brand on spectacle and personality, and White is its most recognisable executive. Running a major sports business is a full-time job, which is one reason few people took the offer literally. For more on how political events move business and markets, see our report on <a href="/articles/trump-media-investors-lose-2-2-billion/">Trump Media investors' losses</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Is Dana White the White House press secretary?</h3>
+      <p>No. Trump said on Sunday that he was "only kidding" about the offer.</p>
+      <h3>Who is the White House press secretary now?</h3>
+      <p>The job is vacant as of November 9, 2026, after Karoline Leavitt and Katie Zacharia both left this year.</p>
+      <h3>Why is Dana White meeting Trump?</h3>
+      <p>Trump said White was visiting on Monday "for other reasons" unrelated to the press secretary job. The purpose was not disclosed.</p>
+
+      <p><em>Checked on November 9, 2026, against NBC News, The Hill and NPR. We could not access the New York Times report directly.</em></p>
+    `
+  },
+  {
     id: "nvidia-investigates-jensen-huang-affair-suspected-spy",
     title: "Nvidia Opens Probe Into CEO Jensen Huang After Affair With Suspected Chinese Spy",
     excerpt: "Nvidia's board is investigating reports CEO Jensen Huang was targeted by a foreign intelligence effort after he admitted an affair. What we know so far.",
@@ -3158,6 +3355,7 @@ const ARTICLES = [
       avatar: "/assets/icon-192.png"
     },
     publishedAt: "2026-11-06T18:00:00Z",
+    updatedAt: "2026-11-09T20:15:00Z",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Tokyo skyline at dusk under heavy grey cloud, with the illuminated orange Tokyo Tower among dense high-rise buildings",
@@ -3209,7 +3407,7 @@ const ARTICLES = [
 
       <h2>What to watch next</h2>
       <ul>
-        <li><strong>Wall Street's direction:</strong> US tech shares bounced on Friday morning after the Nasdaq's correction. A sustained recovery could steady Asian markets on Monday.</li>
+        <li><strong>Wall Street's direction:</strong> US tech shares held their rebound into Friday's close, with the Nasdaq 100 up 1.1% and the S&amp;P 500 up 0.3%, according to NBC News. Whether that steadies Asian markets this week is the next test.</li>
         <li><strong>Data center policy:</strong> concrete proposals from the new Congress or state governments will matter more than campaign statements.</li>
         <li><strong>Central banks:</strong> the US Federal Reserve meets on December 8-9, and markets are pricing a high chance of a rate rise. Our earlier <a href="/articles/asian-shares-mixed-kospi-tech-selloff-oil/">Asian markets wrap</a> covers how the Kospi's tech weighting has amplified recent moves.</li>
       </ul>
@@ -3230,6 +3428,7 @@ const ARTICLES = [
       avatar: "/assets/icon-192.png"
     },
     publishedAt: "2026-11-06T16:30:00Z",
+    updatedAt: "2026-11-09T20:15:00Z",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Trading screen showing a red and green candlestick price chart with buy and sell panels on a dark background",
@@ -3261,6 +3460,7 @@ const ARTICLES = [
         <li>The <strong>PHLX Semiconductor Index</strong> was up about 4%.</li>
       </ul>
       <p>The Cboe Volatility Index (VIX), Wall Street's "fear gauge", fell about 15% to around 24.</p>
+      <p><strong>Update, Friday close:</strong> the rebound held into the close. The Nasdaq 100 ended Friday, November 6, up 1.1% and the S&amp;P 500 up 0.3%, <a href="https://www.nbcnews.com/business/markets/global-markets-tech-stocks-ai-midterms-democrats-asia-europe-rcna607794" target="_blank" rel="noopener">NBC News reported</a>. On Thursday the Nasdaq 100 had fallen 6.3%, its worst day since the Covid-19 pandemic.</p>
 
       <h2>October jobs report beats forecasts</h2>
       <p>The <a href="https://www.bls.gov/news.release/archives/empsit_11062026.htm" target="_blank" rel="noopener">Bureau of Labor Statistics said</a> nonfarm payrolls rose by 165,000 in October, against a Dow Jones consensus of 59,000. That was more than three times the 48,000 average monthly gain of the prior 12 months. The unemployment rate was 4.1%, below the 4.2% forecast.</p>
@@ -3295,7 +3495,7 @@ const ARTICLES = [
       </ul>
       <p>Corrections have often been followed by recoveries within months, but past performance does not guarantee future results.</p>
 
-      <p><em>Market figures are intraday as of mid-morning ET on November 6, 2026, and Thursday's are closing levels. Data was checked against the BLS release, CNBC, CBS News and Yahoo Finance. This article is for information only and is not investment advice.</em></p>
+      <p><em>Market figures are intraday as of mid-morning ET on November 6, 2026, unless marked as closing levels. Updated November 9 with Friday's close. Data was checked against the BLS release, CNBC, CBS News and Yahoo Finance. This article is for information only and is not investment advice.</em></p>
     `
   },
   {
