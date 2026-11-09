@@ -49,6 +49,7 @@ Global Business News Today is an independent business news website. Articles cit
 
 ## Tech & AI
 
+- [Image Search Techniques: How to Search by Image, Reverse Search and Verify Photos](https://globalbusinessnewstoday.com/articles/image-search-techniques/): Image search techniques explained: keyword filters, reverse image search, Google Lens, checking if a photo is real or AI, and finding images you can reuse. (Published 2026-11-09)
 - [Nvidia Opens Probe Into CEO Jensen Huang After Affair With Suspected Chinese Spy](https://globalbusinessnewstoday.com/articles/nvidia-investigates-jensen-huang-affair-suspected-spy/): Nvidia's board is investigating reports CEO Jensen Huang was targeted by a foreign intelligence effort after he admitted an affair. What we know so far. (Published 2026-11-09)
 - [What Does "ext:asp intitle:cart" Mean? Google Dorks and Securing Online Stores](https://globalbusinessnewstoday.com/articles/ext-asp-intitle-cart/): "ext:asp intitle:cart" finds classic ASP shopping cart pages. What these Google operators do, why old carts are risky and how to protect your store. (Published 2026-11-09)
 - [Viprow.us.com: What the Site Is, Streaming Risks and Legal Ways to Watch Sports](https://globalbusinessnewstoday.com/articles/viprow-us-com/): Viprow.us.com now shows sports news, not streams. What it is, why free VIPRow-style streams carry malware and legal risks, and legal ways to watch. (Published 2026-11-09)

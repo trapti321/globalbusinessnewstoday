@@ -1,6 +1,124 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "image-search-techniques",
+    title: "Image Search Techniques: How to Search by Image, Reverse Search and Verify Photos",
+    excerpt: "Image search techniques explained: keyword filters, reverse image search, Google Lens, checking if a photo is real or AI, and finding images you can reuse.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T21:00:00Z",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Black mirrorless camera body and three interchangeable lenses arranged on a dark wooden surface",
+    isTrending: true,
+    views: 0,
+    tags: ["Image Search", "Reverse Image Search", "Google Lens", "Fact-Checking", "Image SEO"],
+    content: `
+      <p class="lead">Image search techniques are the different ways to find information using pictures instead of, or as well as, words. That includes typing a description into Google Images, uploading a photo to find where it came from (reverse image search), pointing your phone camera at an object, and filtering results by licence, colour or size. Each technique answers a different question, and picking the right one saves time and helps you spot fake or misused images.</p>
+
+      <blockquote>
+        <p><strong>Image search techniques at a glance:</strong></p>
+        <ul>
+          <li><strong>Keyword search:</strong> describe what you want and filter by size, colour, type, date or usage rights.</li>
+          <li><strong>Reverse image search:</strong> upload an image or paste its URL to find matches, sources and similar images.</li>
+          <li><strong>Camera or visual search:</strong> point Google Lens or Bing Visual Search at a real object to identify it.</li>
+          <li><strong>Search inside a page:</strong> right-click any image in Chrome and choose "Search with Google Lens".</li>
+          <li><strong>Image verification:</strong> use "About this image" and image metadata to check where a picture first appeared and whether AI made it.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Which Image Search Technique Should You Use?</h2>
+      <table>
+        <thead><tr><th>Your goal</th><th>Best technique</th><th>Tool</th></tr></thead>
+        <tbody>
+          <tr><td>Find a photo of something</td><td>Keyword search with filters</td><td>Google Images, Bing Images</td></tr>
+          <tr><td>Find where an image came from</td><td>Reverse image search</td><td>Google Lens, TinEye, Bing Visual Search</td></tr>
+          <tr><td>Identify a product, plant, landmark or text</td><td>Camera (visual) search</td><td>Google Lens app, Bing Visual Search</td></tr>
+          <tr><td>Check if a viral image is old or fake</td><td>Image history and metadata</td><td>Google's "About this image"</td></tr>
+          <tr><td>Find an image you can legally reuse</td><td>Usage rights filter</td><td>Google Images Tools menu</td></tr>
+          <tr><td>See if your own photos are copied</td><td>Reverse image search on your originals</td><td>Google Lens, TinEye</td></tr>
+        </tbody>
+      </table>
+
+      <h2>1. Keyword Image Search (and the Filters Most People Miss)</h2>
+      <p>The basic technique is typing words into Google Images or Bing Images. Search engines match your words against image file names, alt text, captions and the text on the page around the image. Better results come from being specific: "red brick warehouse loft interior" beats "loft".</p>
+      <p>Then use the filters. On Google Images, click <strong>Tools</strong> to filter by size, colour, type (such as clip art or line drawing), time and usage rights. Filtering by colour helps designers. Filtering by time helps you find recent news photos rather than old ones.</p>
+
+      <h2>2. Reverse Image Search: Search With a Picture</h2>
+      <p>Reverse image search starts with an image rather than words. It finds the same or similar images online, the pages that use them, and information about what is shown. Google's <a href="https://support.google.com/websearch/answer/1325808" target="_blank" rel="noopener">help page on searching with an image</a> lists several ways to do it on a computer:</p>
+      <ul>
+        <li><strong>Upload a file:</strong> on google.com, click the search-by-image (Lens) icon and upload a picture.</li>
+        <li><strong>Drag and drop:</strong> drag an image file from your computer onto the search box.</li>
+        <li><strong>Paste an image URL:</strong> right-click an image online, copy its address and paste it into the "Paste image link" box.</li>
+        <li><strong>From any website in Chrome:</strong> right-click an image and choose "Search with Google Lens" to see results in a sidebar.</li>
+      </ul>
+      <p>Google says results can include AI Overviews, results for objects in the image, similar images, and websites that contain the image or a similar one. After uploading, you can type extra words into the "Add to your search" box, for example "in blue" or "price", to refine results.</p>
+      <p>Dedicated tools are useful too. TinEye is a long-running reverse image search engine popular with photographers and journalists for tracking where a specific image appears. <a href="https://www.bing.com/visualsearch" target="_blank" rel="noopener">Bing Visual Search</a> offers similar search-by-image features. Running the same image through two engines often finds matches the other misses.</p>
+
+      <h2>3. Camera Search: Point, Shoot, Identify</h2>
+      <p>Visual search apps let you use your phone camera as the search box. With <a href="https://lens.google/" target="_blank" rel="noopener">Google Lens</a>, you can point your camera at a plant, landmark, product, menu or street sign to identify it, translate text or find where to buy something. It is the fastest technique when the thing you want to know about is in front of you, not on a screen.</p>
+      <p>Tip: crop the image to the object you care about. Removing background clutter usually gives more accurate matches.</p>
+
+      <h2>4. Verify Images: Is This Photo Real, Old or AI-Generated?</h2>
+      <p>Misleading images often spread by reusing an old photo as if it were new, or by passing off an AI-generated picture as real. Google's <a href="https://blog.google/products-and-platforms/products/search/about-this-image-google-search/" target="_blank" rel="noopener">"About this image" tool</a> shows when Google first indexed an image and similar images, where it may have first appeared, and where else it has been seen, such as news and fact-checking sites. You can open it from the three-dot menu on an image in Google Images or by searching with Google Lens.</p>
+      <p>Metadata can help too. Google's <a href="https://developers.google.com/search/docs/appearance/structured-data/image-license-metadata" target="_blank" rel="noopener">image metadata documentation</a> says it supports IPTC labels that mark images as created by AI, such as "trainedAlgorithmicMedia". If an image carries signed C2PA "content credentials", Google may show how it was made or whether AI tools edited it in "About this image". Google also detects its own SynthID watermark in some AI-generated images.</p>
+      <p>Metadata is not proof either way. It can be stripped or altered when an image is edited, screenshotted or re-uploaded. Use it alongside reverse search and common sense.</p>
+      <h3>A quick image verification checklist</h3>
+      <ol>
+        <li>Run a reverse image search and look for the earliest appearance. Some tools, such as TinEye, can sort matches by date.</li>
+        <li>Open "About this image" to check first-seen dates and fact-check coverage.</li>
+        <li>Compare details such as weather, signs, clothing and landmarks with the claimed time and place.</li>
+        <li>Look for AI tell-tales: distorted text, odd hands and inconsistent lighting. These are hints, not proof.</li>
+        <li>Find the original photographer or publisher, and credit or contact them before reuse.</li>
+      </ol>
+
+      <h2>5. Find Images You Can Legally Use</h2>
+      <p>Not every image in search results is free to use. Google's <a href="https://support.google.com/websearch/answer/29508" target="_blank" rel="noopener">"Find images you can use and share" help page</a> explains the <strong>Usage rights</strong> filter: search Google Images, click <strong>Tools</strong>, then <strong>Usage rights</strong>, and choose Creative Commons licences or commercial and other licences. Click <strong>License details</strong> under an image to see the terms.</p>
+      <p>Always check the actual licence on the source page. Google filters based on information supplied by the site hosting the image. Creative Commons licences usually require credit, and some forbid commercial use or modification.</p>
+
+      <h2>Image Search Techniques for SEO and Business</h2>
+      <p>If you publish images, the same systems that power image search decide whether your pictures can be found. Google's <a href="https://developers.google.com/search/docs/appearance/google-images" target="_blank" rel="noopener">Google Images best practices</a> recommend:</p>
+      <ul>
+        <li><strong>Use real <code>&lt;img&gt;</code> elements.</strong> Google says it does not index CSS background images.</li>
+        <li><strong>Write descriptive file names:</strong> Google's example is that "my-new-black-kitten.jpg" is better than "IMG00023.JPG".</li>
+        <li><strong>Write useful alt text</strong> that describes the image in context, without keyword stuffing.</li>
+        <li><strong>Place images near relevant text</strong> on a page about the same subject.</li>
+        <li><strong>Use supported formats</strong> such as JPEG, PNG, WebP, AVIF and SVG, and keep images sharp but fast.</li>
+        <li><strong>Add an image sitemap</strong> for images Google might not otherwise find, and license metadata if you want a "Licensable" badge.</li>
+      </ul>
+      <p>For businesses, reverse image search is also a brand-protection tool: run your product photos and logo through it regularly to find copycat listings and unauthorised use. It is a simple check against the kind of fake or misleading sites we cover in our <a href="/articles/puzutask-com-review/">website reviews</a>. Google Discover also favours large, relevant images of at least 1,200 pixels wide, which is why every guide on our site, such as our <a href="/articles/best-smartwatches-2026/">smartwatch buying guide</a>, opens with one.</p>
+
+      <h2>Common Image Search Mistakes</h2>
+      <ul>
+        <li><strong>Using one engine only.</strong> Different engines index different images.</li>
+        <li><strong>Searching a cluttered screenshot.</strong> Crop to the subject first.</li>
+        <li><strong>Assuming search results are free to use.</strong> Check the licence.</li>
+        <li><strong>Trusting a single signal.</strong> Combine reverse search, image history and context before deciding an image is real.</li>
+        <li><strong>Uploading sensitive photos.</strong> Google notes it may store image URLs you search with, and other services may keep uploads, so avoid searching with private documents or photos of other people without good reason.</li>
+      </ul>
+
+      <h2>A Note on Face Searches and Privacy</h2>
+      <p>Some tools offer to search for a person's face across the web. Face searching raises serious privacy and consent issues, and laws on biometric data vary by country and US state. Only search for faces with a legitimate reason, such as checking whether your own photos are being misused, and never use results to identify, track or harass someone.</p>
+
+      <h2>Image Search FAQs</h2>
+      <h3>What are the main image search techniques?</h3>
+      <p>Keyword search with filters, reverse image search, camera (visual) search with apps like Google Lens, and image verification using tools like "About this image" and metadata.</p>
+      <h3>How do I do a reverse image search on Google?</h3>
+      <p>On google.com, click the Lens icon and upload an image, drag one into the search box, or paste an image URL. In Chrome, right-click any image and choose "Search with Google Lens".</p>
+      <h3>How can I tell if an image is AI-generated?</h3>
+      <p>Check "About this image", look for AI labels in metadata such as IPTC or C2PA content credentials, and run a reverse search to find the original. None of these is foolproof on its own.</p>
+      <h3>How do I find images I can use for free?</h3>
+      <p>Use Google Images' Tools, then Usage rights, choose Creative Commons licences, and confirm the licence on the source page.</p>
+
+      <p><em>Checked on November 9, 2026, against Google Search Help, Google Search Central and the Google blog. Features and menu names can vary by device, browser and country.</em></p>
+    `
+  },
+  {
     id: "khor-mor-gas-field-drone-attack",
     title: "Drone Attack Halts Iraq's Khor Mor Gas Field, Leaving 70% of Kurdistan Without Power",
     excerpt: "A drone hit Iraq's Khor Mor gas field on Nov 8, halting output and knocking out about 2.8 GW of power in Kurdistan. What happened and what comes next.",
