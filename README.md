@@ -32,6 +32,17 @@ A high-performance, modern business news and corporate wire publication platform
 6. To give an author a bio and a dedicated `/author/<slug>/` page, add them to `AUTHORS` in `build/build.js` under the same `author.name` used in their articles.
 7. Run `node build/build.js` to regenerate every page, `sitemap.xml`, `news-sitemap.xml` (Google News, last 2 days), `feed.xml` and `llms.txt`, then commit and push. The deploy workflow also runs the build automatically.
 
+### Search engine notifications (automatic)
+
+After every deploy, `.github/workflows/deploy.yml` runs `build/notify-indexers.js`, which:
+
+- compares `js/articles-data.js` with the previous commit and submits only **new or edited articles** (plus their category pages and the homepage) to **IndexNow** (`api.indexnow.org`, shared with Bing, Yandex, Naver, Seznam and other participating engines). The key file is the 32-character `.txt` file in the site root; do not delete it.
+- pings Google's **WebSub hub** for `feed.xml` when articles change (the feed declares the hub).
+
+Google has no general URL-submission API (its Indexing API is limited to job postings and livestreams, and the sitemap ping endpoint was retired in 2023). Google discovers updates from `sitemap.xml`, `news-sitemap.xml` and `feed.xml`; use Search Console's URL Inspection > Request indexing for priority pages.
+
+To resubmit manually: GitHub > Actions > Deploy to Hostinger > Run workflow, and set `submit` to `all` (every sitemap URL) or a space-separated list of URLs. Locally: `node build/notify-indexers.js --urls https://globalbusinessnewstoday.com/articles/<id>/`.
+
 Pages are generated from `build/build.js` (shared head, header and footer) and `build/pages/` (contact and press release forms). Do not edit the generated `index.html`, `articles/`, `category/`, `contact.html` or `submit-pr.html` by hand.
 
 Form submissions (newsletter, contact, press release) are handled by `api/submit.php`, which emails them to the site owner and keeps a private backup outside `public_html`.

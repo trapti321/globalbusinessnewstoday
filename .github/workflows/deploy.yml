@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      submit:
+        description: "Search engine submission after deploy: 'changed' (pages changed in the last commit), 'all' (every sitemap URL) or a space-separated list of URLs"
+        required: false
+        default: "changed"
 
 jobs:
   web-deploy:
@@ -13,7 +19,7 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: 🏗️ Build static pages
         run: node build/build.js
@@ -33,3 +39,20 @@ jobs:
             **/node_modules/**
             build/**
             README.md
+
+      # Tell IndexNow engines (Bing, Yandex, Naver, Seznam...) and the WebSub hub about
+      # new or updated pages. Google picks changes up from sitemap.xml, news-sitemap.xml
+      # and feed.xml. This step never fails the deploy.
+      - name: 📣 Notify search engines (IndexNow + WebSub)
+        continue-on-error: true
+        env:
+          SUBMIT: ${{ github.event.inputs.submit }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "$SUBMIT" = "all" ]; then
+            node build/notify-indexers.js --all
+          elif [ -n "$SUBMIT" ] && [ "$SUBMIT" != "changed" ]; then
+            node build/notify-indexers.js --urls $SUBMIT
+          else
+            node build/notify-indexers.js "$BEFORE" "$GITHUB_SHA"
+          fi

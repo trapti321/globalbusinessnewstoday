@@ -4,6 +4,7 @@
     <title>Global Business News Today</title>
     <link>https://globalbusinessnewstoday.com/</link>
     <atom:link href="https://globalbusinessnewstoday.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
     <description>Business news and analysis on global markets, central banks, SMEs and startups, technology and AI, and commercial real estate.</description>
     <language>en-us</language>
     <item>

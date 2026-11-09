@@ -1261,6 +1261,7 @@ function buildFeed() {
     <title>${esc(SITE.name)}</title>
     <link>${SITE.url}/</link>
     <atom:link href="${SITE.url}/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
     <description>${esc(SITE.description)}</description>
     <language>en-us</language>
 ${items.join("\n")}
