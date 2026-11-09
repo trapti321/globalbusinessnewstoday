@@ -1,6 +1,251 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "tozymagazine-com-review",
+    title: "Tozymagazine.com USA Review: From Birthday Wishes to Paid-Style Business Posts",
+    excerpt: "Is tozymagazine.com a US magazine? No. We checked its 2024 domain, 356 posts, \"usa\" page, bylines and unlabelled business links. Here is what it is.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T15:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Close-up of hands typing on a laptop keyboard in a softly lit room",
+    isTrending: true,
+    views: 0,
+    tags: ["Tozymagazine", "Website Review", "Guest Posting", "SEO", "Link Building"],
+    content: `
+      <p class="lead">Tozymagazine.com, often searched as "tozymagazine.com usa", is not a US magazine. It began in 2025 as a site for birthday and anniversary wishes and now mostly publishes commercial articles about electronics suppliers, law firms, home services and even ammunition retailers. We checked its domain record, archive history, authors and links on November 9, 2026.</p>
+
+      <blockquote>
+        <p><strong>Tozymagazine.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a WordPress blog with 356 posts, titled "Tozy Magazine - Crafting Sentiments for Every Occasion".</li>
+          <li><strong>Domain:</strong> registered December 26, 2024. The registration runs out on December 26, 2026 unless it is renewed.</li>
+          <li><strong>Content shift:</strong> wishes and quotes in 2025, then mainly B2B, legal and product posts by late 2026.</li>
+          <li><strong>"USA" page:</strong> a page created in September 2026 calls itself "the official online magazine platform" for US readers.</li>
+          <li><strong>Verdict:</strong> a content and link site, not a news publication.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Tozymagazine.com?</h2>
+      <p>The site's title and menu, with Marriage, Birthday, Anniversary and Thank You sections, describe a greeting-message site. Its <a href="https://tozymagazine.com/about-us/" target="_blank" rel="nofollow noopener">About page</a> calls it "a treasure trove of quotes, wishes, and messages". In 2025 that matched the content. A <a href="https://web.archive.org/web/20250615110226/tozymagazine.com" target="_blank" rel="noopener">June 2025 Wayback Machine snapshot</a> shows headlines such as "130 Best Heart Touching Birthday Quotes for Mom".</p>
+      <p>Even then, commercial posts appeared alongside the wishes, such as a solar installer in Yuba City and a guide to vehicle auctions.</p>
+
+      <h2>Is There a "Tozymagazine.com USA" Edition?</h2>
+      <p>No separate US edition exists. On September 8, 2026, the site published a roughly 2,500-word page at <a href="https://tozymagazine.com/tozymagazine-com-usa/" target="_blank" rel="nofollow noopener">/tozymagazine-com-usa/</a> titled "Tozymagazine.com usa Digital Publication for Lifestyle". It describes the site as "the official online magazine platform" for readers across the United States and lists "advertising opportunities" and "guest contribution inquiries" as reasons to get in touch.</p>
+      <p>Pages built around a search phrase like "[site name] usa" exist mainly to capture people searching that phrase. Lookalike sites, such as tozymagazine.it.com, publish similar pages. Our earlier reviews of <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a> and <a href="/articles/milomagazine-co-uk-review/">MiloMagazine.co.uk</a> found the same tactic.</p>
+
+      <h2>Domain History</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows tozymagazine.com was registered on December 26, 2024, through NameCheap. It is due to expire on December 26, 2026. You can check this with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>.</li>
+        <li><strong>Backdated post:</strong> the oldest post is dated December 11, 2024, two weeks before the domain existed. WordPress dates can be edited.</li>
+      </ul>
+
+      <h2>Who Writes for Tozymagazine.com?</h2>
+      <p>The site's WordPress data lists four bylines: "Devwiz" (271 posts, mostly the early wishes), "Muhammad Ijaz" (60), "Danny Welch" (23, all since October 23, 2026) and "Alex Alexander", whose account name is "active-linkers". None has a biography or listed expertise.</p>
+
+      <h2>What Does It Publish Now?</h2>
+      <p>Recent headlines have little to do with greetings:</p>
+      <ul>
+        <li>"Sourcing the STM32F405RGT6: Silicon Specifications and How to Audit an MCU Supplier" (November 7, 2026)</li>
+        <li>"What Is the Process of Trying an Eminent Domain Case in Texas, and Who Do Attorneys Work With?" (November 3, 2026)</li>
+        <li>"How SANVO Optimizes Automated Mixing Equipment for Consistent Color Matching in Sealants" (November 4, 2026)</li>
+        <li>"Responsible Ownership FAQs: Storage, Transport, and Local Laws" (October 29, 2026), which links to an ammunition retailer</li>
+        <li>Crypto posts such as a review of a trading platform and a Bitcoin ATM guide</li>
+      </ul>
+      <p>Links in these posts point to the businesses they describe, including an electronics supplier and a Texas law firm, with no <code>sponsored</code> or <code>nofollow</code> label. <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites</a> to label paid links.</p>
+
+      <h2>Is Tozymagazine.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Clear owner</td><td>No company or editor named</td></tr>
+          <tr><td>Authors</td><td>Four bylines, no bios</td></tr>
+          <tr><td>Focus</td><td>Shifted from wishes to commercial B2B, legal and product posts</td></tr>
+          <tr><td>Paid links labelled</td><td>No sponsored labels seen</td></tr>
+          <tr><td>Domain renewal</td><td>Expires December 26, 2026</td></tr>
+          <tr><td>Scam reports</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>The site does not ask readers for money, and we found no scam warnings. Its birthday messages are harmless, but do not rely on it for legal, financial or firearms information.</p>
+
+      <h2>Tozymagazine.com FAQs</h2>
+      <h3>What is tozymagazine.com usa?</h3>
+      <p>A search phrase, and a page on tozymagazine.com targeting it. There is no separate US magazine.</p>
+      <h3>Who owns Tozymagazine.com?</h3>
+      <p>The site does not say, and the domain registration is private.</p>
+      <h3>Does Tozymagazine.com accept guest posts?</h3>
+      <p>It has no Write for Us page, but its USA page invites guest contribution and advertising enquiries.</p>
+
+      <p><em>Checked on November 9, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages and WordPress data. We will update this review if Tozymagazine.com responds or changes.</em></p>
+    `
+  },
+  {
+    id: "magazinepanda-com-review",
+    title: "MagazinePanda.com Review: A Blog That Mostly Writes About Itself",
+    excerpt: "What is magazinepanda.com? We checked its 2021 domain, 91 posts, self-review headlines, template team bios and shared contact email with other blogs.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T15:05:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Overhead view of a person typing on a laptop at a white desk beside a desk phone, tablet and latte",
+    isTrending: true,
+    views: 0,
+    tags: ["MagazinePanda", "Website Review", "SEO", "Guest Posting", "Link Building"],
+    content: `
+      <p class="lead">MagazinePanda.com is a WordPress blog that now describes itself as a site about "digital life, technology &amp; culture". Most of its recent articles mention the site's own name in the headline or text, and its contact address is the same Gmail account we found on several other link-selling blogs. We checked its domain, archive history, team page and links on November 9, 2026.</p>
+
+      <blockquote>
+        <p><strong>MagazinePanda.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a 91-post WordPress blog, titled "Magazinepanda.com | Digital Life, Technology &amp; Culture".</li>
+          <li><strong>Domain:</strong> registered March 9, 2021.</li>
+          <li><strong>Self-promotion:</strong> 88 of 91 posts match a search for "magazinepanda", and recent headlines include two "MagazinePanda.com Review" posts.</li>
+          <li><strong>Team page:</strong> lists SEO job titles and bios that appear to be template text.</li>
+          <li><strong>Verdict:</strong> an SEO content site, not an independent magazine.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is MagazinePanda.com?</h2>
+      <p>The site's description says it "delivers clear insights on digital life, technology, AI, online culture, product reviews, and smarter choices." Its menu is mostly policy pages: About, News, Contact, Disclaimer, Terms, DMCA and Privacy. Its largest categories are Home Improvement, General, Technology and Travel, and many categories are empty.</p>
+      <p>A <a href="https://web.archive.org/web/20230201135057/magazinepanda.com" target="_blank" rel="noopener">2023 Wayback Machine snapshot</a> shows a different pitch: "Magazine Panda - Explore the infinity Knowledge", described as "a leading News Portal", with generic finance and insurance tips.</p>
+
+      <h2>Why So Many Posts Mention MagazinePanda.com</h2>
+      <p>Recent headlines often name the site itself:</p>
+      <ul>
+        <li>"Growing an Online Store: How magazinepanda.com Covers E-Commerce Strategies for New Entrepreneurs" (October 22, 2026)</li>
+        <li>"MagazinePanda.com Review: Features, Content, Categories &amp; User Guide" (August 26, 2026)</li>
+        <li>"MagazinePanda.com Review (2026): Features, Benefits &amp; Complete Content Guide" (August 3, 2026)</li>
+        <li>"AI Infrastructure Costs in 2026: What Founders Need to Know Before Scaling | magazinepanda.com" (September 11, 2026)</li>
+      </ul>
+      <p>A site reviewing itself is not independent evidence of quality. Repeating the brand name targets people who search for it, the same pattern we found on <a href="/articles/cnlawblog-review/">CNLawBlog</a> and <a href="/articles/puzutask-com-review/">Puzutask.com</a>.</p>
+      <p>Other posts profile other websites or link to businesses, such as a live-streaming app, a remote-work site and an e-commerce tool. The links carry no <code>sponsored</code> label. Older posts include slot machine and casino content.</p>
+
+      <h2>Who Runs MagazinePanda.com?</h2>
+      <p>Recent posts are credited to an account called "Magazinepanda.com". The <a href="https://www.magazinepanda.com/about-magazinepanda-com/" target="_blank" rel="nofollow noopener">About page</a> lists an "Editorial Team" with SEO job titles such as "On-Page Executive" and "Off-Page Executive". Some team bios appear to be leftover template text: one describes a person called "Lawrence" under a different name, and another describes a "forest-goer". We could not verify any team member.</p>
+      <p>The contact page's email address is the same Gmail account listed on <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a>, <a href="/articles/yonosamachar-com-review/">Yonosamachar.com</a> and as the guest post address on CNLawBlog. That suggests a shared operator or network, though we could not confirm ownership.</p>
+
+      <h2>Domain History</h2>
+      <ul>
+        <li><strong>Registration:</strong> the official Verisign registry record shows magazinepanda.com was registered on March 9, 2021, through Wild West Domains, and runs to 2030. You can check this with the <a href="https://lookup.icann.org/en/lookup" target="_blank" rel="noopener">ICANN registration lookup</a>.</li>
+        <li><strong>Backdated content:</strong> one post is dated March 2019, two years before the domain was registered, and several pages carry 2019 and 2020 dates.</li>
+      </ul>
+
+      <h2>Is MagazinePanda.com Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Independent content</td><td>Many posts promote the site's own name, including self-reviews</td></tr>
+          <tr><td>Verifiable team</td><td>SEO job titles and template-style bios</td></tr>
+          <tr><td>Contact</td><td>Gmail address shared with other link-selling blogs</td></tr>
+          <tr><td>Paid links labelled</td><td>No sponsored labels seen</td></tr>
+          <tr><td>Scam reports</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>MagazinePanda.com does not ask readers for money and we found no scam warnings. Treat it as an SEO content site rather than a trusted source.</p>
+
+      <h2>MagazinePanda.com FAQs</h2>
+      <h3>What is magazinepanda.com?</h3>
+      <p>A WordPress blog registered in 2021 that publishes general technology, home and lifestyle articles, many of which mention the site's own name.</p>
+      <h3>Is MagazinePanda.com a real magazine?</h3>
+      <p>It is a website, not a print or established digital magazine, and its editorial team could not be verified.</p>
+      <h3>Who owns MagazinePanda.com?</h3>
+      <p>The site does not name an owner. Its contact email is shared with several other blogs we have reviewed.</p>
+
+      <p><em>Checked on November 9, 2026, using the Verisign registry record, the Wayback Machine and the site's own pages and WordPress data. We will update this review if MagazinePanda.com responds or changes.</em></p>
+    `
+  },
+  {
+    id: "milomagazine-co-uk-review",
+    title: "MiloMagazine.co.uk Review: 979 Posts in 13 Months and Guest Posts for $75",
+    excerpt: "Is milomagazine.co.uk a real magazine? We checked its 2025 UK domain, one-byline output, $75 guest post listing and an FDA-flagged supplement post.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-09T15:10:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Person sitting on a wooden bench holding up an open newspaper in front of their face",
+    isTrending: true,
+    views: 0,
+    tags: ["MiloMagazine", "Website Review", "Guest Posting", "UK", "Link Building"],
+    content: `
+      <p class="lead">MiloMagazine.co.uk, often searched as "milomagazine.co.uk usa", is a UK-registered WordPress blog launched in October 2025 that has published almost 1,000 posts in about 13 months, nearly all under one byline. It started with celebrity "husband, age, net worth" articles and now publishes commercial posts that link to law firms, clothing sites and a supplement seller. Its guest posts are advertised for sale on a freelance marketplace.</p>
+
+      <blockquote>
+        <p><strong>MiloMagazine.co.uk at a glance:</strong></p>
+        <ul>
+          <li><strong>Domain:</strong> registered October 16, 2025, according to the UK's Nominet registry.</li>
+          <li><strong>Posts:</strong> 979, almost all credited to "Sandra Conway".</li>
+          <li><strong>Pages:</strong> only a Contact page. There is no About page.</li>
+          <li><strong>Guest posts:</strong> offered for $75 on PeoplePerHour by a third-party seller.</li>
+          <li><strong>Verdict:</strong> a high-volume link-selling blog. It is not a UK or US magazine.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is MiloMagazine.co.uk?</h2>
+      <p>The site describes itself as delivering "excellent information about your favorite celebrities". Its menu covers Business, Real Estate, Technology, Education, News, Sports, Entertainment, Fashion and Food. A <a href="https://web.archive.org/web/20251119152315/milomagazine.co.uk" target="_blank" rel="noopener">November 2025 snapshot</a> shows its early focus: posts such as "Where Does Rob Beckett Live? Children, Wife Illness".</p>
+      <p>The ".co.uk" ending means it is a UK domain. There is no separate US edition. The "usa" in searches likely comes from pages the site publishes about other domains with "USA" in the title, such as "USATop.co.uk USA: A Complete Guide".</p>
+
+      <h2>Who Writes MiloMagazine.co.uk?</h2>
+      <p>The site's WordPress data lists two authors: "Sandra Conway", credited with 978 of 979 posts, and "Leonardo Taylor", with one. Nearly 1,000 posts in 13 months from one byline, across celebrity gossip, law, health, crypto and home improvement, is not a pattern of genuine expert authorship.</p>
+      <p>The <a href="https://milomagazine.co.uk/contact-us/" target="_blank" rel="nofollow noopener">Contact page</a> lists an email on seolinkers.com, an SEO link-building domain. The same domain appears as the content contribution address on <a href="/articles/social-media-ranking-aelftech-com/">AelfTech.com</a>.</p>
+
+      <h2>What Does It Publish?</h2>
+      <p>Recent posts link to businesses with followed links and no sponsored label:</p>
+      <ul>
+        <li>"Arrested in Florida? What Happens Next and How to Protect Yourself", linking to a criminal defence firm</li>
+        <li>"How Does Raspberry Hills Clothing Fit Into Modern Streetwear", linking twice to a clothing site</li>
+        <li>"How Ostarine Supports Muscle Recovery: A Guide to Its Medical Potential" (November 6, 2026), linking to a seller with the anchor "Ostarine Australia"</li>
+        <li>Crypto and forex platform reviews, and a post on account safety for a gambling brand</li>
+      </ul>
+      <p>The ostarine post is a concern. Ostarine is a selective androgen receptor modulator (SARM). The US Food and Drug Administration <a href="https://www.fda.gov/consumers/consumer-updates/fda-warns-use-selective-androgen-receptor-modulators-sarms-among-teens-young-adults" target="_blank" rel="noopener">warns that SARMs are unapproved drugs</a> that cannot be legally marketed as supplements, and that they have been linked to liver injury, heart attack and stroke risks.</p>
+
+      <h2>MiloMagazine.co.uk Guest Posts for Sale</h2>
+      <p>A <a href="https://www.peopleperhour.com/hourlie/guest-post-on-milomagazine-co-uk/1126189" target="_blank" rel="nofollow noopener">PeoplePerHour listing</a> offers a "Guest Post On Milomagazine.co.uk" for $75, delivered in three days, with a "do-follow backlink" and "permanent backlink placement". The seller claims a Domain Authority of 41 and "44.8K+" monthly traffic. These are the seller's figures, which we could not verify. Google's <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">spam policies</a> treat buying links to manipulate rankings as link spam.</p>
+
+      <h2>Is MiloMagazine.co.uk Legit?</h2>
+      <table>
+        <thead><tr><th>Check</th><th>What we found</th></tr></thead>
+        <tbody>
+          <tr><td>Age</td><td>Registered October 2025</td></tr>
+          <tr><td>Volume</td><td>979 posts in about 13 months</td></tr>
+          <tr><td>Authors</td><td>One byline for almost every post</td></tr>
+          <tr><td>About page</td><td>None</td></tr>
+          <tr><td>Paid placement</td><td>Guest posts sold on a marketplace, links unlabelled</td></tr>
+          <tr><td>Health content</td><td>Promotes an FDA-flagged unapproved drug</td></tr>
+          <tr><td>Scam reports</td><td>None found</td></tr>
+        </tbody>
+      </table>
+      <p>The site does not ask readers for money. It is a link-selling blog, and its health, legal and finance content should not be trusted. For other sites in this network, see our reviews of <a href="/articles/tozymagazine-com-review/">Tozymagazine.com</a> and <a href="/articles/magazinepanda-com-review/">MagazinePanda.com</a>.</p>
+
+      <h2>MiloMagazine.co.uk FAQs</h2>
+      <h3>What is milomagazine.co.uk usa?</h3>
+      <p>There is no US edition. MiloMagazine.co.uk is a UK-registered blog, and "usa" appears in some of its page titles about other websites.</p>
+      <h3>Who runs MiloMagazine.co.uk?</h3>
+      <p>The site names no owner, the domain registration is private, and its contact email is on an SEO link-building domain.</p>
+      <h3>Can you buy a guest post on MiloMagazine.co.uk?</h3>
+      <p>A third-party seller lists one for $75. We do not recommend it.</p>
+
+      <p><em>Checked on November 9, 2026, using Nominet's registry record, the Wayback Machine, the site's own pages and WordPress data, and the PeoplePerHour listing. This article is not medical advice. We will update it if MiloMagazine.co.uk responds or changes.</em></p>
+    `
+  },
+  {
     id: "what-is-a-riser-desk",
     title: "What Is a Riser Desk? How Desk Risers Work, Setup Tips and What Research Shows",
     excerpt: "A riser desk sits on your desk and lifts your screen and keyboard so you can stand. How risers work, types, OSHA setup tips and what studies show.",
