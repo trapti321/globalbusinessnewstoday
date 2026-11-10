@@ -2182,8 +2182,8 @@ const ARTICLES = [
   },
   {
     id: "mygreenbucks-net-kenneth-jones",
-    title: "MyGreenBucks Net Jones: Who Is Kenneth Jones and Is MyGreenBucks.net Real?",
-    excerpt: "Who is Kenneth Jones of MyGreenBucks.net? We checked the byline, the site's conflicting claims, its 1,497 posts and domain history. Here is what is true.",
+    title: "MyGreenBucks.net Jones Review: Who Is Kenneth Jones, and Is MyGreenBucks Real?",
+    excerpt: "Kenneth Jones of MyGreenBucks.net is a byline, not a verified fintech founder. We checked 1,502 posts, the earnings claims and the latest news.",
     category: "SMEs & Startups",
     categorySlug: "smes",
     author: {
@@ -2192,81 +2192,127 @@ const ARTICLES = [
       avatar: "/assets/icon-192.png"
     },
     publishedAt: "2026-11-08T16:00:00Z",
-    readTime: "7 min read",
+    updatedAt: "2026-11-10T11:00:00Z",
+    readTime: "9 min read",
     image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Small green plant sprouting from a pile of copper and silver coins against a grey background",
     isTrending: true,
     views: 0,
-    tags: ["MyGreenBucks", "Kenneth Jones", "Website Review", "Personal Finance", "Scam Check"],
+    tags: ["MyGreenBucks", "Kenneth Jones", "MyGreenBucks.net", "Website Review", "Personal Finance", "Scam Check"],
     content: `
-      <p class="lead">People searching "mygreenbucks net jones" or "Kenneth MyGreenBucks .net" usually want to know who Kenneth Jones is and whether MyGreenBucks.net is a real finance platform. Here is what we found. MyGreenBucks.net is a WordPress content site, not an investment or rewards platform, and "Kenneth Jones" is a byline on that site with no verifiable real-world identity. We checked the domain record, its archive history and <a href="https://mygreenbucks.net/" target="_blank" rel="nofollow noopener">the site's own pages</a> on November 8, 2026. For how we review sites like this, see our <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com review</a>.</p>
+      <p class="lead">People searching "mygreenbucks net jones", "Kenneth MyGreenBucks .net" or "www mygreenbucks.net" usually want to know two things: who Kenneth Jones is, and whether MyGreenBucks.net is a real way to earn or invest money. The short answer: MyGreenBucks.net is a WordPress blog, not an investment, rewards or payroll platform, and "Kenneth Jones" is a byline on that blog with no verifiable real-world identity. We checked the domain record, its archive history, <a href="https://mygreenbucks.net/" target="_blank" rel="nofollow noopener">the site's own pages</a> and its public post data on November 8 and 10, 2026. For how we review sites like this, see our <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com review</a>.</p>
 
       <blockquote>
         <p><strong>MyGreenBucks.net and Kenneth Jones, at a glance:</strong></p>
         <ul>
-          <li><strong>What it is:</strong> a blog with about 1,497 posts on finance, crypto, business, casinos, betting and loans.</li>
-          <li><strong>Who Kenneth Jones is:</strong> the display name on one of six author accounts on the site. The site's own articles about him contradict each other.</li>
+          <li><strong>What it is:</strong> a blog with 1,502 posts (as of November 10, 2026) on finance, crypto, business, casinos, betting and loans.</li>
+          <li><strong>Who Kenneth Jones is:</strong> the display name on one of the site's author accounts. The site's own articles about him contradict each other.</li>
+          <li><strong>Earning money:</strong> posts promise surveys, cashback and payouts, but the site has no sign-up, login or payout system. Its login and register addresses redirect to the homepage.</li>
           <li><strong>Domain:</strong> the name was used as early as 2009. The current registration dates from August 19, 2021.</li>
-          <li><strong>Money:</strong> we found no sign-up, investment, rewards or payout feature. Do not send money to anyone claiming to represent it.</li>
-          <li><strong>Verdict:</strong> an SEO content site. Its finance, crypto and gambling articles should not guide money decisions.</li>
+          <li><strong>Verdict:</strong> an SEO content site. Do not send money to anyone claiming to represent it.</li>
         </ul>
       </blockquote>
 
       <h2>Who Is Kenneth Jones at MyGreenBucks.net?</h2>
       <p>On the site, "Kenneth Jones" is the name shown on posts from the <a href="https://mygreenbucks.net/author/james/" target="_blank" rel="nofollow noopener">author account whose web address ends in /author/james/</a>. That account's posts range from finance tips to gambling and adult content. Archived copies show the "By Kenneth Jones" byline in use by November 2022. In September 2021, the same site credited posts to "James Gussie".</p>
-      <p>MyGreenBucks.net has also published several articles <em>about</em> Kenneth Jones, mostly under other house bylines such as "Xanthira Marzavina". Their claims conflict:</p>
+      <p>MyGreenBucks.net has also published at least a dozen articles <em>about</em> Kenneth Jones, mostly under other house bylines such as "Xanthira Marzavina". Their claims conflict:</p>
       <ul>
         <li>A December 2024 post is titled "Mygreenbucks Kenneth Jones: How Kenneth Jones Built a $2.5B Fintech Empire".</li>
-        <li>A post on the same day is titled "Kenneth MyGreenBucks .net Review: Shocking Truth About This Investment Platform Exposed". It presents the site as a possible scam.</li>
-        <li>An August 2026 "profile" says he joined MyGreenBucks in 2019. The current domain registration began in August 2021. The same profile opens by describing a different author, Xanthira Marzavina.</li>
+        <li>Posts published the same day are titled "Kenneth MyGreenBucks .net Review: Shocking Truth About This Investment Platform Exposed" and "Kenneth MyGreenBucks Net: Shocking Truth About 35% Monthly Returns &amp; Legal Red Flags". The second opens by calling the founder "Kenneth Green", not Kenneth Jones, and says the platform "emerged in 2019".</li>
+        <li>An <a href="https://mygreenbucks.net/kenneth-jones-author-at-mygreenbucks/" target="_blank" rel="nofollow noopener">August 2026 "profile"</a> says he joined MyGreenBucks in 2019. The current domain registration began in August 2021. The same profile opens by describing a different author, Xanthira Marzavina.</li>
       </ul>
       <p>We found no independent record, professional profile or news coverage that confirms a real person behind the name, or any of the credentials attributed to him. A <a href="https://www.tycoonstory.com/mygreenbucks-net-jones/" target="_blank" rel="nofollow noopener">TycoonStory review</a> also flagged claims linked to the name, including Goldman Sachs and JPMorgan experience, "500,000+ users" and Forbes 30 Under 30, and marked them all unverified. The safest reading is that Kenneth Jones is a byline, not a verified finance expert.</p>
 
-      <h2>What Is MyGreenBucks.net?</h2>
-      <p>The homepage describes the site as a place to "Master your money with free finance tips, budgeting guides, and crypto insights". Its menu lists Finance For Life, Managing Money, Cryptocurrency, Business Time, About Us and Contact. The About page, published in August 2022, describes a site "dedicated to helping you make and manage your money" but names no owner, company or founder. The only contact is a form and a generic email address.</p>
-      <p>Some websites describe MyGreenBucks.net as a rewards app, gift-card earning platform or "eco finance" service. We found no such feature: no sign-up flow, wallet, payouts or investment product in the site's navigation.</p>
+      <h2>What Is MyGreenBucks.net? Six Different Answers From the Site Itself</h2>
+      <p>The homepage describes the site as a place to "Master your money with free finance tips, budgeting guides, and crypto insights". Its menu lists Finance For Life, Managing Money, Cryptocurrency, Business Time, About Us and Contact. The About page, published in August 2022, names no owner, company or founder.</p>
+      <p>The bigger problem is that MyGreenBucks.net describes itself in completely different ways depending on which keyword a post is targeting:</p>
+      <table>
+        <thead><tr><th>Post on MyGreenBucks.net</th><th>What it says MyGreenBucks is</th></tr></thead>
+        <tbody>
+          <tr><td>"Unlock Online Earnings With MyGreenBucks" (August 2026)</td><td>A rewards platform paying for surveys, cashback, offers and referrals</td></tr>
+          <tr><td>"Jones MyGreenBucks Net: Your Ultimate Guide to Digital Payroll Access" (December 2024)</td><td>An employee payroll portal for "Jones Restaurant" staff</td></tr>
+          <tr><td>"Latest News My Greenbucksnet 3.0 Launch Brings AI Trading" (December 2024)</td><td>A sustainable fintech and AI trading platform</td></tr>
+          <tr><td>"Kenneth MyGreenBucks Net: Shocking Truth About 35% Monthly Returns" (December 2024)</td><td>A digital entrepreneurship training platform run by "Kenneth Green"</td></tr>
+          <tr><td>"Mygreenbucks Kenneth Jones: How Kenneth Jones Built a $2.5B Fintech Empire" (December 2024)</td><td>A $2.5 billion fintech company</td></tr>
+          <tr><td>Homepage and About page</td><td>A free personal finance blog</td></tr>
+        </tbody>
+        </table>
+      <p>Only the last description matches what the site actually is. The others appear written to rank for search phrases such as "jones mygreenbucks net" and "kenneth mygreenbucks .net", which helps explain why so many people search those terms.</p>
+
+      <h2>Unlock Online Earnings With MyGreenBucks: Can You Really Earn Money?</h2>
+      <p>No. The post "<a href="https://mygreenbucks.net/unlock-online-earnings-mygreenbucks/" target="_blank" rel="nofollow noopener">Unlock Online Earnings With MyGreenBucks</a>" says users "create an account" and earn points for surveys, cashback and referrals that can be redeemed "for cash or gift cards". An older post, "Unlock Online Earnings with www MyGreenBucks.net", makes similar claims about surveys, videos and shopping rewards.</p>
+      <p>We tested what those posts describe on November 10, 2026:</p>
+      <ul>
+        <li>The addresses /login/, /sign-up/, /register/, /my-account/ and /dashboard/ all redirect to the homepage.</li>
+        <li>The homepage has no sign-up or login form.</li>
+        <li>The "Customer Cabinet" page in the menu shows only the words "Customer Dashboard". Its code is a block from LatePoint, a WordPress appointment-booking plugin, not a rewards or payout system.</li>
+      </ul>
+      <p>There is nowhere to create an account, earn points or withdraw money. If a website, app or message invites you to "earn with MyGreenBucks" and asks for a deposit or fee first, the <a href="https://consumer.ftc.gov/consumer-alerts/2025/08/how-spot-avoid-task-scams" target="_blank" rel="noopener">FTC's guidance on task scams</a> applies: legitimate jobs and rewards programs do not ask you to pay to get paid.</p>
+
+      <h2>Is www.MyGreenBucks.net the Official Site?</h2>
+      <p>Yes. www.mygreenbucks.net and http://mygreenbucks.net both redirect permanently to https://mygreenbucks.net/, so "www mygreenbucks.net", "my greenbucks.net" and "mygreenbucks net" all lead to the same blog. There is no separate MyGreenBucks app, wallet or members' area at any of those addresses.</p>
+      <p>Spellings such as "mygreenbucksnet", "my greenbucks.net" and "bucksmygrene" are also targets: the site publishes many posts built around misspellings of its own name.</p>
+
+      <h2>Latest MyGreenBucksNet News</h2>
+      <p>Posts titled "MyGreenBucksNet Latest News" (June 2026) and "Latest News My Greenbucksnet 3.0 Launch" (December 2024) describe a redesigned dashboard, one-click point redemption, push notifications, AI trading and a mobile app. None of those features exist on the site, and we found no app or press release from a company behind it.</p>
+      <p>What the site actually published most recently, according to its own post data on November 10, 2026:</p>
+      <ul>
+        <li>November 10: "Exploring Crypto Payment Solutions for the iGaming Industry"</li>
+        <li>November 9: "Qualities of the Best H-2A Recruitment Agencies"</li>
+        <li>November 8: "Why a Gold IRA Has a Place in the Retirement Conversation"</li>
+        <li>November 5: product and service reviews, including a custom office stamp and a telepsychiatry staffing firm</li>
+      </ul>
+      <p>That mix of iGaming, recruitment, retirement and product reviews is typical of a site that publishes contributed or sponsored posts rather than its own finance reporting.</p>
 
       <h2>What Does MyGreenBucks.net Publish?</h2>
-      <p>The site's sitemaps list about 1,497 posts, from September 2022 to November 6, 2026. In the post web addresses, "casino" appears 102 times, "slot" 79, "crypto" 70, "betting" 35 and "loan" 33. Examples include:</p>
+      <p>On November 8, 2026, the site's sitemaps listed about 1,497 posts, from September 2022 onwards. By November 10 its post count had reached 1,502. In the post web addresses, "casino" appears 102 times, "slot" 79, "crypto" 70, "betting" 35 and "loan" 33. Examples include:</p>
       <ul>
         <li>"Roobet Referral Code 2026: Rewards, Bonuses and How It Works"</li>
         <li>Posts about betting sites outside GamStop, the UK's gambling self-exclusion scheme</li>
         <li>Nonsense-titled posts such as "Bucksmygrene Neutrino Waffle IPO: What Investors Need To Know In 2026"</li>
-        <li>Many posts that target misspellings of the site's own name</li>
       </ul>
       <p>External links in the posts we checked, including links to a lender, a tax-relief firm and a betting-site list, carried no <code>sponsored</code> or <code>nofollow</code> label. <a href="https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links" target="_blank" rel="noopener">Google asks sites</a> to label paid links that way.</p>
+      <p>The homepage code also contains a block of about 5,600 characters of unrelated words inside a <code>noscript</code> tag, which most visitors never see. It includes fragments that look like login terms, bank and government portal names, and phone numbers. We do not know who added it. <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">Google's spam policies</a> treat hidden text and keyword stuffing as violations.</p>
 
-      <h2>Domain History</h2>
+      <h2>MyGreenBucks.net Domain History</h2>
       <ul>
         <li><strong>2009:</strong> the <a href="https://web.archive.org/web/20090330211712/http://mygreenbucks.net/" target="_blank" rel="noopener">Wayback Machine</a> shows mygreenbucks.net as a blog titled "Mygreenbucks.net| Autopilotincome101.com|Blogging 5.0", with movie and celebrity posts.</li>
         <li><strong>2021:</strong> the official Verisign registry record shows the current registration began on August 19, 2021, through GoDaddy. The first snapshot after that shows personal finance posts.</li>
-        <li><strong>2022 onwards:</strong> the "Kenneth Jones" byline appears, and publishing grows to well over a thousand posts.</li>
+        <li><strong>2022 onwards:</strong> the "Kenneth Jones" byline appears, and publishing grows to more than 1,500 posts.</li>
+        <li><strong>December 2024:</strong> a burst of posts about "Kenneth" and "Jones MyGreenBucks Net" appears on a single day, December 20.</li>
       </ul>
 
       <h2>Does MyGreenBucks.net Sell Guest Posts?</h2>
       <p>The site has no Write for Us page. However, a <a href="https://www.peopleperhour.com/hourlie/da57-dr60-finance-guest-post-backlink-on-mygreenbucks-net/1054357" target="_blank" rel="nofollow noopener">PeoplePerHour listing</a> offered a "Finance Guest Post Backlink on mygreenbucks.net" for $100, with a "dofollow" link. The listing is now marked inactive and had a buyer review dated May 2025. Its seller is a third party, and we could not confirm a link to the site's owner.</p>
 
       <h2>Is MyGreenBucks.net Legit or a Scam?</h2>
-      <p>We found no regulator warning or credible scam report. The site does not appear to take money from readers. It is not a legitimate source of financial guidance either:</p>
+      <p>We found no regulator warning or credible scam report, and the site does not appear to take money from readers. It is not a legitimate source of financial guidance or earnings either:</p>
       <ul>
         <li>No named owner or editor, and no verifiable author credentials.</li>
-        <li>Conflicting, unverifiable claims about its "founder".</li>
+        <li>Conflicting, unverifiable claims about its "founder" and about what the site is.</li>
+        <li>Earnings and payout features described in its posts that do not exist.</li>
         <li>Large volumes of casino, betting and loan content, with no labels on commercial links.</li>
       </ul>
       <p>If anyone contacts you claiming to be Kenneth Jones from MyGreenBucks and offers investment returns or payouts, treat it as a red flag. You can check investment firms through the <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener">FINRA BrokerCheck</a> tool in the US or the <a href="https://register.fca.org.uk/" target="_blank" rel="noopener">FCA register</a> in the UK.</p>
-      <p>For how we assess sites like this, see our reviews of <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a> and <a href="/articles/themodeleats-com-review/">TheModelEats.com</a>.</p>
+      <p>For how we assess sites like this, see our reviews of <a href="/articles/sparkpressfusion-com-review/">SparkPressFusion.com</a>, <a href="/articles/fundfireinsight-com-review/">FundFireInsight.com</a> and <a href="/articles/themodeleats-com-review/">TheModelEats.com</a>.</p>
 
       <h2>MyGreenBucks Net Jones FAQs</h2>
       <h3>Who is Kenneth Jones from MyGreenBucks.net?</h3>
-      <p>A byline on MyGreenBucks.net. The site publishes conflicting claims about him, and we found no independent evidence of his identity or credentials.</p>
-      <h3>Is MyGreenBucks.net an investment platform?</h3>
-      <p>No. It is a blog. We found no investment, rewards or payout features.</p>
+      <p>A byline on MyGreenBucks.net. The site publishes conflicting claims about him, including a $2.5 billion "fintech empire" and a founder called "Kenneth Green", and we found no independent evidence of his identity or credentials.</p>
+      <h3>Is Jones MyGreenBucks Net a payroll login?</h3>
+      <p>No. A MyGreenBucks.net post describes a payroll portal for restaurant staff, but the site has no login. If you need your payslips, use the portal link your employer gives you.</p>
+      <h3>Can you unlock online earnings with MyGreenBucks?</h3>
+      <p>No. There is no account, points or payout system on the site, despite posts that describe one.</p>
+      <h3>Is www.mygreenbucks.net the same as mygreenbucks.net?</h3>
+      <p>Yes. The www address redirects to mygreenbucks.net. Both are the same blog.</p>
+      <h3>What is the latest MyGreenBucksNet news?</h3>
+      <p>The site's "latest news" posts describe features that do not exist. Its real recent output is contributed articles on topics such as iGaming payments, recruitment and gold IRAs.</p>
       <h3>Is MyGreenBucks.net safe?</h3>
       <p>Reading it is low-risk, but do not act on its finance, crypto, gambling or loan content without independent advice, and never send money to anyone using its name.</p>
       <h3>When was MyGreenBucks.net created?</h3>
       <p>The name was in use by 2009. The current registration dates from August 19, 2021.</p>
 
-      <p><em>Information was checked on November 8, 2026, using the Verisign registry record, the Wayback Machine, the site's own pages and sitemaps, and the third-party listings linked above. We will update this review if MyGreenBucks.net responds or provides verifiable details.</em></p>
+      <p><em>Updated November 10, 2026: added the site's earnings, payroll and "latest news" claims, our login and account checks, and its current post count. Originally checked on November 8, 2026, using the Verisign registry record, the Wayback Machine, the site's own pages, sitemaps and public post data, and the third-party listings linked above. We will update this review if MyGreenBucks.net responds or provides verifiable details.</em></p>
     `
   },
   {
