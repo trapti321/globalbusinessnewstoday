@@ -1,6 +1,83 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "anthropic-ipo-69-billion-price-range-retracted",
+    title: "Anthropic Floats a $69.3 Billion IPO at $70 to $80 a Share, Then Calls the Pricing Inaccurate",
+    excerpt: "Anthropic sent bankers IPO terms of $70-$80 a share, up to $69.3 billion, then called them inaccurate. What the SEC filing shows and what comes next.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-10T09:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Laptop screen showing analytics dashboards with blue bar charts and line graphs beside a green plant",
+    isTrending: true,
+    views: 0,
+    tags: ["Anthropic", "IPO", "Nasdaq", "AI Stocks", "Claude"],
+    content: `
+      <p class="lead">Anthropic sent bankers initial public offering (IPO) terms on Monday, November 9, 2026: about 867 million shares at $70 to $80 each, a raise of up to $69.3 billion, according to emails seen by Reuters. A follow-up email then said the pricing details were "inaccurate" and that an updated filing would follow. The maker of the Claude AI models is still aiming to list on Nasdaq under the ticker ANT as soon as next week.</p>
+
+      <blockquote>
+        <p><strong>Anthropic IPO: what we know (November 10, 2026)</strong></p>
+        <ul>
+          <li><strong>Reported terms (since retracted):</strong> about 867 million Class A shares at $70 to $80, raising up to $69.3 billion.</li>
+          <li><strong>Private placement:</strong> the same draft described a $26 billion placement at the IPO price from chip and tech companies.</li>
+          <li><strong>Status:</strong> Anthropic told bankers the pricing was inaccurate. Its latest SEC filing, dated November 2, still leaves the price range blank.</li>
+          <li><strong>Listing:</strong> Nasdaq Global Select Market, ticker "ANT", possibly as soon as November 19 or 20.</li>
+          <li><strong>Lead banks:</strong> Goldman Sachs, Morgan Stanley and J.P. Morgan head a long underwriter list in the filing.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Anthropic Sent to Bankers</h2>
+      <p>According to emails seen by Reuters, the first version of an updated registration statement proposed selling about 867 million new Class A shares at $70 to $80 a share. At the top of the range, that would raise $69.3 billion. At the bottom, about $60.7 billion. The same draft described a concurrent $26 billion private placement at the IPO price from companies including Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC, according to <a href="https://dealroom.co/news/170996-anthropic-sets-ipo-terms-up-to-69-3b-at-70-to-80-a-share-plus-26b-from-s/" target="_blank" rel="noopener">Dealroom's summary of the Reuters report</a>. Together, the IPO and placement would have brought in roughly $87 billion to $95 billion.</p>
+      <p>A follow-up email said the pricing details were "inaccurate" and that an updated filing would be provided later. Anthropic declined to comment to Reuters. It is not clear which figures were wrong, or whether the private placement is affected.</p>
+
+      <h2>What the Official Filing Shows</h2>
+      <p>We checked the US Securities and Exchange Commission's EDGAR database on November 10. Anthropic's most recent filing is still <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm" target="_blank" rel="noopener">Amendment No. 1 to its Form S-1</a>, filed November 2, 2026. In that document:</p>
+      <ul>
+        <li>The price range is still blank: "between $ and $" per share.</li>
+        <li>Anthropic has applied to list its Class A common stock on the Nasdaq Global Select Market under the symbol "ANT".</li>
+        <li>The underwriters are led by Goldman Sachs, Morgan Stanley and J.P. Morgan, followed by Citigroup, Barclays, Wells Fargo Securities, BofA Securities and more than a dozen other banks.</li>
+        <li>The filing refers to contractual rights to private placements concurrent with the offering.</li>
+      </ul>
+      <p>Until Anthropic files a new amendment with a price range, the $70 to $80 figures remain unconfirmed.</p>
+
+      <h2>How Big Would This IPO Be?</h2>
+      <p>At up to $69.3 billion, the reported raise would be among the largest stock market debuts ever, several times the size of most landmark tech listings. Investors have discussed valuations of about $1.1 trillion to $1.3 trillion, according to reports citing Bloomberg. That is below the roughly $1.5 trillion some had expected before this month's AI stock sell-off, and compares with the $965 billion post-money valuation reported for Anthropic's $65 billion private funding round in May.</p>
+      <p>These valuation figures come from investor discussions and media reports, not from Anthropic's filings, and could change before pricing.</p>
+
+      <h2>The Numbers Behind the IPO</h2>
+      <p>Anthropic's November 2 filing showed revenue of $33.2 billion in the first nine months of 2026, including $17 billion in the third quarter. It also showed a nine-month net loss of $104 billion, mostly a non-cash charge tied to its rising valuation. We broke down those results in our earlier report: <a href="/articles/anthropic-ipo-filing-q3-2026-results/">Anthropic's IPO filing shows $33.2 billion in revenue and a $104 billion net loss</a>.</p>
+
+      <h2>Why the Timing Matters</h2>
+      <p>The IPO is heading to market after a volatile stretch for AI stocks. On November 5 the Nasdaq Composite fell 5.5% into correction on fears that the Democratic midterm wins could slow data center construction, before rebounding the next day. Our reports on <a href="/articles/nasdaq-rebounds-after-correction-jobs-report/">the Nasdaq's correction</a> and on <a href="/articles/meta-midterms-data-centers-harder/">why Meta says AI data centers will be harder to build</a> cover that backdrop. Nvidia, a reported participant in the private placement, is also under scrutiny after its board opened an investigation into its CEO, as covered in our <a href="/articles/nvidia-investigates-jensen-huang-affair-suspected-spy/">Nvidia report</a>.</p>
+
+      <h2>What Happens Next</h2>
+      <ul>
+        <li><strong>Updated S-1 filing:</strong> expected to set out a corrected price range and share count.</li>
+        <li><strong>Roadshow:</strong> marketing meetings with investors were expected to begin this week.</li>
+        <li><strong>Pricing and listing:</strong> as soon as November 19 or 20 on Nasdaq under ANT, according to reports.</li>
+        <li><strong>Private placement:</strong> confirmation of whether the reported $26 billion strategic investment goes ahead on the same terms.</li>
+      </ul>
+
+      <h2>Anthropic IPO FAQs</h2>
+      <h3>How much is Anthropic raising in its IPO?</h3>
+      <p>Draft terms seen by Reuters pointed to up to $69.3 billion, but Anthropic said that pricing was inaccurate. The official filing does not yet include a price range.</p>
+      <h3>What is Anthropic's IPO price range?</h3>
+      <p>A $70 to $80 range was reported and then retracted. Wait for the next SEC filing for confirmed figures.</p>
+      <h3>When is the Anthropic IPO date?</h3>
+      <p>Reports point to a Nasdaq listing as soon as November 19 or 20, 2026. The date is not confirmed.</p>
+      <h3>What is Anthropic's ticker symbol?</h3>
+      <p>ANT, on the Nasdaq Global Select Market, according to its S-1 filing.</p>
+
+      <p><em>This is a developing story. Checked on November 10, 2026, against Anthropic's SEC filings on EDGAR and reports summarising Reuters' coverage. Reported IPO terms are unconfirmed until filed with the SEC. This article is for information only and is not investment advice. Global Business News Today has no financial relationship with Anthropic.</em></p>
+    `
+  },
+  {
     id: "image-search-techniques",
     title: "Image Search Techniques: How to Search by Image, Reverse Search and Verify Photos",
     excerpt: "Image search techniques explained: keyword filters, reverse image search, Google Lens, checking if a photo is real or AI, and finding images you can reuse.",
@@ -4672,6 +4749,7 @@ const ARTICLES = [
       avatar: "/assets/icon-192.png"
     },
     publishedAt: "2026-11-02T17:30:00Z",
+    updatedAt: "2026-11-10T09:05:00Z",
     readTime: "5 min read",
     image: "https://images.unsplash.com/photo-1559445368-b8a993676d7a?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Nasdaq MarketSite tower in Times Square, New York, displaying the Nasdaq logo on its curved video screen",
@@ -4679,6 +4757,7 @@ const ARTICLES = [
     views: 0,
     tags: ["Anthropic", "IPO", "Nasdaq", "Artificial Intelligence", "Earnings"],
     content: `
+      <p><strong>Update, November 10, 2026:</strong> Anthropic sent bankers draft IPO terms of $70 to $80 a share, a raise of up to $69.3 billion, then said the pricing was inaccurate. Read our latest report: <a href="/articles/anthropic-ipo-69-billion-price-range-retracted/">Anthropic floats a $69.3 billion IPO, then calls the pricing inaccurate</a>.</p>
       <p class="lead">Anthropic generated $33.2 billion in revenue in the first nine months of 2026 but recorded a net loss of $104 billion, according to an amended IPO registration statement the AI company filed with the US Securities and Exchange Commission (SEC) on November 2, 2026. Most of that loss is a non-cash accounting charge linked to the company's soaring valuation, not cash spent running the business.</p>
 
       <p>The filing, <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm" target="_blank" rel="noopener">Amendment No. 1 to Anthropic's Form S-1</a>, adds results for the quarter ended September 30, 2026. It updates the original registration statement filed on October 26. The maker of the Claude AI models plans to list its Class A common stock on the Nasdaq Global Select Market under the ticker "ANT." The share price range and the number of shares on offer have not yet been disclosed.</p>
