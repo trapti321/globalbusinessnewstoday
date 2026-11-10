@@ -30,12 +30,13 @@ jobs:
           server: ${{ secrets.HOSTINGER_FTP_SERVER }}
           username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-          server-dir: public_html/
+          # The FTP account now opens directly in public_html, so upload to its root.
+          server-dir: ./
           protocol: ftps
           dangerous-clean-slate: false
           # Renamed after a failed partial upload left the old state out of sync with the
           # server; a new name forces one full re-upload, then diffs resume as normal.
-          state-name: .ftp-deploy-sync-state-v2.json
+          state-name: .ftp-deploy-sync-state-v3.json
           exclude: |
             **/.git*
             **/.git*/**

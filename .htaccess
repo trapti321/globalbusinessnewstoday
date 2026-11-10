@@ -42,3 +42,10 @@ RewriteRule ^ /%1/%2/ [R=301,L]
 
 # Never serve build tooling or source fragments.
 RewriteRule ^build(/|$) - [F,L]
+
+# Never serve repository files (a server-side Git checkout can leave them in the web root).
+RewriteRule ^(\.git|\.github)(/|$) - [F,L]
+RewriteRule ^(README\.md|\.gitignore)$ - [F,L]
+
+# A stray nested copy of the site once lived in /public_html/; send it to the real pages.
+RewriteRule ^public_html/(.*)$ /$1 [R=301,L,NE]
