@@ -1,6 +1,160 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "shopify-vs-woocommerce",
+    title: "Shopify vs WooCommerce in 2026: Real Costs, Fees and Which to Choose",
+    excerpt: "Shopify vs WooCommerce compared on 2026 pricing, card fees, security and control, with a worked cost example and a quick guide on which to choose.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-10T13:00:00Z",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Blue and cream OPEN sign hanging on the glass door of a shop, with the word SHOP printed beneath it",
+    isTrending: true,
+    views: 0,
+    tags: ["Shopify", "WooCommerce", "Ecommerce", "Small Business", "WordPress"],
+    content: `
+      <p class="lead">Shopify vs WooCommerce comes down to one trade-off: Shopify charges a monthly fee and runs the store for you, while WooCommerce is free software that you host, secure and maintain yourself. For most small businesses selling online, the platform fee is the smallest part of the bill. Card processing costs about the same on both, so the real decision is how much time, control and technical risk you want to take on. We compared both platforms' official pricing, fee schedules and security documentation on November 10, 2026.</p>
+
+      <blockquote>
+        <p><strong>Shopify vs WooCommerce, the short answer:</strong></p>
+        <ul>
+          <li><strong>Choose Shopify</strong> if you want a store running this week, sell in person as well as online, or have no one to manage hosting, updates and security.</li>
+          <li><strong>Choose WooCommerce</strong> if you already run a WordPress site, want full control of your data and code, or need custom features that Shopify's plans and apps do not cover.</li>
+          <li><strong>Costs:</strong> Shopify starts at $39 a month in the US ($29 billed yearly). WooCommerce is free, but WooCommerce.com estimates hosting at $25 to $350 a month for most stores.</li>
+          <li><strong>Card fees:</strong> both start at 2.9% + 30¢ per online card payment in the US on their built-in processors.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Shopify vs WooCommerce at a Glance</h2>
+      <table>
+        <thead><tr><th></th><th>Shopify</th><th>WooCommerce</th></tr></thead>
+        <tbody>
+          <tr><td>What it is</td><td>Hosted ecommerce platform (software as a service)</td><td>Free, open-source plugin for WordPress</td></tr>
+          <tr><td>Monthly platform fee (US)</td><td>$39 Basic, $105 Grow, $399 Advanced (billed monthly); Plus reported from about $2,300</td><td>$0; you pay for hosting, domain, themes and extensions</td></tr>
+          <tr><td>Built-in card processing</td><td>Shopify Payments, from 2.9% + 30¢ on Basic</td><td>WooPayments, 2.9% + 30¢ for US domestic cards</td></tr>
+          <tr><td>Extra fee for third-party payment providers</td><td>2% Basic, 1% Grow, 0.6% Advanced, 0.2% Plus</td><td>None</td></tr>
+          <tr><td>Hosting and security</td><td>Included; Shopify is PCI DSS Level 1 certified</td><td>Your responsibility, including PCI compliance</td></tr>
+          <tr><td>Who updates the software</td><td>Shopify</td><td>You (WordPress, WooCommerce, theme and every plugin)</td></tr>
+          <tr><td>Scale</td><td>5.3% of all websites (W3Techs)</td><td>7.7% of all websites (W3Techs); 7+ million active installs</td></tr>
+        </tbody>
+      </table>
+      <p>Usage figures are from <a href="https://w3techs.com/technologies/details/cm-woocommerce" target="_blank" rel="noopener">W3Techs</a> and <a href="https://w3techs.com/technologies/overview/content_management" target="_blank" rel="noopener">its CMS survey</a> on November 10, 2026, and the <a href="https://wordpress.org/plugins/woocommerce/" target="_blank" rel="noopener">WordPress.org plugin page</a>.</p>
+
+      <h2>What Is the Difference Between Shopify and WooCommerce?</h2>
+      <p><strong>Shopify</strong> is a Canadian company whose platform hosts your online store on its own servers. You pay a subscription, choose a theme, add products and start selling. Shopify handles hosting, the checkout, software updates and payment security.</p>
+      <p><strong>WooCommerce</strong> is a plugin that turns a WordPress website into a store. The software is free and open source, maintained by Woo, part of Automattic. You choose your own web host, install WordPress and WooCommerce, and you own every file and database row. That freedom comes with work: someone has to keep the site updated, backed up and secure.</p>
+      <p>A useful way to think about it: Shopify is like renting a fully serviced shop unit, and WooCommerce is like owning the building. Owning is often cheaper and more flexible, but repairs are your problem.</p>
+
+      <h2>Shopify vs WooCommerce Pricing: What You Will Really Pay</h2>
+      <h3>Shopify plans</h3>
+      <p>Shopify's US plans are Basic at $39 a month, Grow at $105 and Advanced at $399 when billed monthly. Billed yearly they work out to $29, $79 and $299 a month, as listed in <a href="https://www.websitebuilderexpert.com/ecommerce-website-builders/comparisons/woocommerce-vs-shopify/" target="_blank" rel="noopener">Website Builder Expert's March 2026 comparison</a>. Shopify Plus, for large merchants, is reported to start at about $2,300 a month on a three-year term. <a href="https://www.shopify.com/pricing" target="_blank" rel="noopener">Shopify's pricing page</a> shows prices in your local currency, so check it from your own country before you sign up.</p>
+      <p>On top of the plan, many Shopify stores pay for apps (reviews, subscriptions, upsells and so on), which are billed monthly by their developers. Premium themes are a one-off cost.</p>
+      <h3>WooCommerce costs</h3>
+      <p><a href="https://woocommerce.com/pricing/" target="_blank" rel="noopener">WooCommerce's own pricing page</a> describes the core plugin as "Free, with no monthly subscription" and puts the other costs at:</p>
+      <ul>
+        <li><strong>Hosting:</strong> "$25 – $350/month for most stores, but scales with traffic and performance needs."</li>
+        <li><strong>Extensions:</strong> "$29 – $299/year per extension."</li>
+        <li><strong>Revenue share:</strong> "0% revenue share."</li>
+      </ul>
+      <p>Add a domain name (usually $10 to $20 a year), an optional premium theme and, for many stores, a developer's time. The software is free; running it well is not.</p>
+
+      <h2>Transaction Fees: Where the Real Money Goes</h2>
+      <p>Card processing is the biggest ongoing cost on either platform, and on the built-in options the starting rate is the same.</p>
+      <ul>
+        <li><strong>Shopify Payments</strong> charges 2.9% + 30¢ per online card payment on the Basic plan in the US, falling to 2.7% + 30¢ on Grow. Higher plans get lower rates.</li>
+        <li><strong>WooPayments</strong> charges 2.9% + 30¢ for US domestic cards, plus 1.5% for international cards and 1% when currency conversion applies, according to <a href="https://woocommerce.com/document/woopayments/fees-and-debits/fees/" target="_blank" rel="noopener">WooCommerce's fee schedule</a>. In-person payments cost 2.7% + 10¢, plus $5 a month for each active card reader.</li>
+      </ul>
+      <p>The key difference is what happens if you use another payment provider. WooCommerce charges nothing extra. Shopify adds its own fee on every order when you use a third-party provider instead of Shopify Payments: 2% on Basic, 1% on Grow, 0.6% on Advanced and 0.2% on Plus, according to its pricing page. That fee is on top of whatever the other provider charges.</p>
+
+      <h3>Worked example: a store selling $10,000 a month</h3>
+      <p>Here is an illustrative calculation for a US store with 200 online orders a month at $50 each, using the rates above. Your own costs will depend on your hosting, apps, card mix and sales volume.</p>
+      <table>
+        <thead><tr><th>Monthly cost</th><th>Shopify Basic (yearly billing)</th><th>WooCommerce</th></tr></thead>
+        <tbody>
+          <tr><td>Platform or hosting</td><td>$29</td><td>$25 (low end of Woo's hosting estimate)</td></tr>
+          <tr><td>Card processing (2.9% + 30¢ x 200 orders)</td><td>$350</td><td>$350</td></tr>
+          <tr><td>Two paid extensions (about $79 a year each)</td><td>Varies by app</td><td>About $13</td></tr>
+          <tr><td><strong>Approximate total</strong></td><td><strong>$379 + apps</strong></td><td><strong>$388</strong></td></tr>
+          <tr><td>If you use a third-party payment provider</td><td>Add $200 (2% Shopify fee)</td><td>No extra platform fee</td></tr>
+        </tbody>
+      </table>
+      <p>At this size, card processing makes up more than 90% of the bill on either platform. The platform fee barely matters. What does matter is whether you will use Shopify Payments (if you do not, Shopify gets expensive quickly) and how much developer time a WooCommerce site will need.</p>
+
+      <h2>Ease of Use and Setup</h2>
+      <p>Shopify is faster to launch. You sign up, pick a theme and add products from one dashboard, and there is no software to install. Website Builder Expert's testing, based on more than 300 hours of research, rated Shopify ahead for setup, design, security and support.</p>
+      <p>WooCommerce takes more steps: buy hosting, install WordPress, install WooCommerce, choose and configure a theme, then add payment, shipping and tax extensions. Many hosts offer one-click WooCommerce installs, which helps. If you already know WordPress, the learning curve is much smaller.</p>
+
+      <h2>Customization and Control</h2>
+      <p>WooCommerce wins on control. Because it is open source and self-hosted, you can change any part of the store, move to any host, and export all of your data whenever you like. That makes it a good fit for unusual products, complex pricing rules, membership sites and businesses where content and commerce sit side by side.</p>
+      <p>Shopify is flexible through themes, its app store and its developer tools, but you work inside Shopify's rules. Some deeper changes, such as fully customizing the checkout, are reserved for Shopify Plus.</p>
+
+      <h2>Security and PCI Compliance</h2>
+      <p>This is the difference most small businesses underestimate. Any store that accepts card payments has to meet the Payment Card Industry Data Security Standard (PCI DSS).</p>
+      <ul>
+        <li><strong>Shopify</strong> says it is "certified Level 1 PCI DSS compliant" and that this "extends by default to all stores powered by Shopify" (<a href="https://www.shopify.com/security/pci-compliant" target="_blank" rel="noopener">Shopify security page</a>).</li>
+        <li><strong>WooCommerce</strong> says "PCI DSS compliance is ultimately the responsibility of the store owner" and that the core plugin "is not PCI certified" (<a href="https://woocommerce.com/document/pci-dss-compliance-and-woocommerce/" target="_blank" rel="noopener">WooCommerce PCI guide</a>). Using a hosted payment gateway reduces your exposure, but you still own the site's security.</li>
+      </ul>
+      <p>For a WooCommerce store, that means keeping WordPress, WooCommerce, your theme and every plugin up to date, using a reputable host, and taking regular backups. Badly maintained shopping carts are easy for attackers to find, as our guide to <a href="/articles/ext-asp-intitle-cart/">the "ext:asp intitle:cart" search</a> shows.</p>
+
+      <h2>Selling in Person, on Social and Internationally</h2>
+      <p>Shopify has its own point-of-sale (POS) system, so in-store and online stock, orders and customers live in one place. Its plans also include multichannel selling to marketplaces and social platforms, with sales tracked in the same dashboard.</p>
+      <p>WooCommerce supports in-person card payments through WooPayments card readers and third-party POS plugins, and it can sell through marketplaces and social channels using extensions. It works, but you assemble and maintain the pieces yourself.</p>
+      <p>For selling abroad, both handle multiple currencies and languages. On WooPayments, watch the 1.5% international card fee and 1% conversion fee. Shopify's international tools are most complete on its higher plans.</p>
+
+      <h2>The Business Picture: Shopify's Growth and WooCommerce's Reach</h2>
+      <p>Shopify is growing fast. In its <a href="https://www.sec.gov/Archives/edgar/data/0001594805/000159480526000067/exhibit991pressreleaseq320.htm" target="_blank" rel="noopener">third-quarter 2026 results</a>, filed with the SEC on November 3, 2026, the company reported:</p>
+      <ul>
+        <li>Gross merchandise volume (GMV, the total value of goods sold through its merchants' stores) of $119.1 billion, up 29% from a year earlier.</li>
+        <li>Revenue of $3.74 billion, up 32%.</li>
+        <li>Subscription revenue of $836 million, up 20%, and monthly recurring revenue of $230 million, up from $193 million.</li>
+        <li>Fourth-quarter guidance for revenue growth "at a low-thirties percentage rate".</li>
+      </ul>
+      <p>Shopify makes most of its money from merchant services such as payments, not subscriptions: merchant solutions brought in $2.9 billion of the quarter's revenue. That is why the platform charges the extra fee when stores use another payment provider.</p>
+      <p>WooCommerce, by contrast, is used on more websites. W3Techs found it on 7.7% of all websites in November 2026, against 5.3% for Shopify. Many of those are small stores and side projects, which fits WooCommerce's free, do-it-yourself model.</p>
+
+      <h2>Which Should You Choose? A Quick Decision Guide</h2>
+      <table>
+        <thead><tr><th>Your situation</th><th>Better fit</th></tr></thead>
+        <tbody>
+          <tr><td>First store, no developer, want to launch quickly</td><td>Shopify</td></tr>
+          <tr><td>Already have a WordPress site with traffic and content</td><td>WooCommerce</td></tr>
+          <tr><td>Sell in a physical shop as well as online</td><td>Shopify</td></tr>
+          <tr><td>Need a specific payment provider other than Shopify Payments</td><td>WooCommerce</td></tr>
+          <tr><td>Very custom products, pricing or membership features</td><td>WooCommerce</td></tr>
+          <tr><td>Want someone else to handle security and PCI compliance</td><td>Shopify</td></tr>
+          <tr><td>Tight monthly budget but technical skills in-house</td><td>WooCommerce</td></tr>
+          <tr><td>Fast-growing brand planning to scale into large volumes</td><td>Shopify (Advanced or Plus)</td></tr>
+        </tbody>
+      </table>
+      <p>Whichever you choose, plan your cash flow around card fees and stock, not the platform subscription. Our guide to <a href="/articles/sme-cash-flow-fintech-revolution/">how fintech is changing small-business cash flow</a> covers the payment and lending tools many online sellers now use, and our piece on <a href="/articles/in-house-financing/">in-house financing</a> explains how some retailers offer payment plans directly.</p>
+
+      <h2>Can You Switch From WooCommerce to Shopify, or Back?</h2>
+      <p>Yes. Both platforms let you export products, customers and orders as CSV files, and migration apps and agencies can move larger stores. Plan for some manual work: themes, custom features, URL structures and SEO redirects do not transfer automatically. Set up 301 redirects from old product URLs to new ones so you keep your search rankings.</p>
+
+      <h2>Shopify vs WooCommerce FAQs</h2>
+      <h3>Is WooCommerce really free?</h3>
+      <p>The plugin is free. You still pay for hosting (WooCommerce estimates $25 to $350 a month for most stores), a domain, card processing and any paid extensions or themes.</p>
+      <h3>Is Shopify better than WooCommerce for beginners?</h3>
+      <p>Usually yes. Shopify handles hosting, security and updates, and setup takes place in one dashboard. WooCommerce is easier only if you already know WordPress.</p>
+      <h3>Which is cheaper, Shopify or WooCommerce?</h3>
+      <p>For small stores using built-in payments, total costs are often similar because card fees dominate. WooCommerce becomes cheaper when you use a third-party payment provider, because Shopify adds 0.2% to 2% per order in that case.</p>
+      <h3>Does Shopify charge transaction fees?</h3>
+      <p>Not if you use Shopify Payments; you pay only the card rate. If you use another provider, Shopify charges 2% on Basic, 1% on Grow, 0.6% on Advanced and 0.2% on Plus.</p>
+      <h3>Is WooCommerce good for SEO?</h3>
+      <p>Both platforms can rank well. WooCommerce runs on WordPress, which gives you full control over URLs, content and technical SEO. Shopify covers the basics well but has some fixed URL structures, such as /products/ and /collections/.</p>
+      <h3>Which is more secure?</h3>
+      <p>Shopify, for most small businesses, because it is PCI DSS Level 1 certified and maintains the platform for you. A WooCommerce store can be just as secure, but only if it is kept updated and well hosted.</p>
+
+      <p><em>Prices and fees were checked on November 10, 2026, against Shopify's pricing and security pages, WooCommerce's pricing, fee and PCI documentation, Shopify's SEC filing, W3Techs and WordPress.org. US prices for Shopify plans are as listed by Website Builder Expert, because Shopify's pricing page displays local currency. Rates change often, so confirm them before you sign up. This article is for information only and is not financial advice. GBNT has no commercial relationship with Shopify or WooCommerce.</em></p>
+    `
+  },
+  {
     id: "anthropic-ipo-69-billion-price-range-retracted",
     title: "Anthropic Floats a $69.3 Billion IPO at $70 to $80 a Share, Then Calls the Pricing Inaccurate",
     excerpt: "Anthropic sent bankers IPO terms of $70-$80 a share, up to $69.3 billion, then called them inaccurate. What the SEC filing shows and what comes next.",
