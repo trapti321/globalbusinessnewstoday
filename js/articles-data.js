@@ -1,6 +1,134 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "is-titanium-apple-watch-worth-it",
+    title: "Is a Titanium Apple Watch Worth It? Series 12 Price, Weight and Sapphire Compared",
+    excerpt: "The titanium Apple Watch Series 12 costs $300 more than aluminum but adds no features. What the premium buys, weights, and how it compares with Ultra 4.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-10T16:00:00Z",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Person tapping the screen of a silver Apple Watch with a white band on their wrist, next to a window",
+    isTrending: true,
+    views: 0,
+    tags: ["Apple Watch", "Titanium", "Apple Watch Series 12", "Apple Watch Ultra 4", "Smartwatches"],
+    content: `
+      <p class="lead">Is a titanium Apple Watch worth it? For most buyers, no. The titanium Apple Watch Series 12 costs $300 more than the entry aluminum model, but it has the same chip, sensors, screen size and battery life. What the extra money buys is a polished titanium case, a sapphire front crystal and cellular as standard. If you were going to pay for cellular anyway, the real premium shrinks to $200. We compared Apple's official specs and US prices on November 10, 2026, to show exactly what you get.</p>
+
+      <blockquote>
+        <p><strong>Titanium Apple Watch, the short answer:</strong></p>
+        <ul>
+          <li><strong>Price:</strong> titanium Series 12 starts at $699 (42mm) and $749 (46mm). Aluminum starts at $399.</li>
+          <li><strong>What you get:</strong> polished titanium case, sapphire crystal, cellular built in, Natural or Radiant Gold finish.</li>
+          <li><strong>What you do not get:</strong> any extra features, health sensors or battery life.</li>
+          <li><strong>Weight:</strong> 44.9 grams (46mm), about 5 grams heavier than aluminum and lighter than ceramic.</li>
+          <li><strong>Buy titanium if</strong> you want a dressier watch, value the sapphire glass and planned to buy a cellular model.</li>
+          <li><strong>Skip it if</strong> you mainly want fitness and health tracking. Aluminum does the same job for less.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Apple Watch Series 12 Prices: Aluminum vs Titanium vs Ceramic</h2>
+      <p>Apple sells the Series 12 in three case materials. These are Apple's US prices on its online store:</p>
+      <table>
+        <thead><tr><th>Case</th><th>42mm</th><th>46mm</th><th>Cellular</th></tr></thead>
+        <tbody>
+          <tr><td>Aluminum (GPS)</td><td>$399</td><td>$449</td><td>No</td></tr>
+          <tr><td>Aluminum (GPS + Cellular)</td><td>$499</td><td>$549</td><td>Yes</td></tr>
+          <tr><td>Titanium</td><td>$699</td><td>$749</td><td>Included</td></tr>
+          <tr><td>Ceramic</td><td>$899</td><td>$949</td><td>Included</td></tr>
+          <tr><td>Apple Watch Ultra 4 (titanium)</td><td colspan="2">$799 (49mm only)</td><td>Included</td></tr>
+        </tbody>
+      </table>
+      <p>The key comparison is not titanium against the $399 model. Every titanium watch includes cellular, so the fair comparison is against aluminum with cellular. At both sizes, titanium costs <strong>$200 more</strong> than a cellular aluminum Series 12. If you would never use cellular, you are paying $300 for materials alone.</p>
+      <p>Note also that the 46mm titanium Series 12 is just $50 cheaper than the Apple Watch Ultra 4, which is also titanium. Prices are from <a href="https://www.apple.com/shop/buy-watch/apple-watch" target="_blank" rel="noopener">Apple's online store</a>, checked on November 10, 2026.</p>
+
+      <h2>What You Actually Get for the Extra Money</h2>
+      <h3>1. A sapphire front crystal</h3>
+      <p>According to <a href="https://www.apple.com/apple-watch-series-12/specs/" target="_blank" rel="noopener">Apple's Series 12 specs</a>, titanium and ceramic models have a "Sapphire front crystal", while aluminum models use "Ceramic Shield 2". Sapphire is one of the hardest materials used in watch glass, which is why traditional luxury watches use it. Apple has not published scratch-test comparisons between the two, but sapphire's reputation for resisting everyday scratches from keys, walls and desks is the main practical reason to choose titanium.</p>
+      <h3>2. A polished titanium case</h3>
+      <p>Aluminum Series 12 models have a matte finish in Dark Bronze, Light Gold, Black or Space Gray. Titanium comes in <strong>Natural</strong> or <strong>Radiant Gold</strong> with a polished, more traditional watch look. It pairs well with metal bands such as the Link Bracelet or Milanese Loop and looks less sporty at work or formal events. A polished surface also shows fine scuffs more readily than a matte one, so it can need more care to keep looking new.</p>
+      <h3>3. Cellular as standard</h3>
+      <p>Cellular lets the watch make calls, send messages and stream music without your iPhone nearby. It is useful for runners, swimmers and anyone who wants Emergency SOS and Fall Detection to work when the phone is at home. You still need to add the watch to your mobile plan, which usually costs a monthly fee from your carrier.</p>
+
+      <h2>What Titanium Does Not Change</h2>
+      <p>Apple lists one set of internals for every Series 12, whatever the case material:</p>
+      <ul>
+        <li>The same S11 chip and 64GB of storage.</li>
+        <li>The same Health Sensing System, with ECG, blood oxygen, temperature sensing, sleep apnea and hypertension notifications.</li>
+        <li>The same display: up to 2,000 nits peak brightness.</li>
+        <li>The same battery life: up to 24 hours, or 38 hours in Low Power Mode.</li>
+        <li>The same water resistance and depth gauge to 6 meters.</li>
+      </ul>
+      <p>In other words, a titanium Series 12 will not track your health better, last longer or run faster than an aluminum one. Anyone buying mainly for fitness or health features should put the $200 to $300 toward a better band or AppleCare instead.</p>
+
+      <h2>Weight: Is Titanium Heavier?</h2>
+      <p>Yes, slightly. Titanium sits between aluminum and ceramic. These are Apple's published weights:</p>
+      <table>
+        <thead><tr><th>Case</th><th>42mm</th><th>46mm</th></tr></thead>
+        <tbody>
+          <tr><td>Aluminum, GPS</td><td>32.2 g</td><td>39.5 g</td></tr>
+          <tr><td>Aluminum, GPS + Cellular</td><td>31.5 g</td><td>38.6 g</td></tr>
+          <tr><td>Titanium</td><td>36.5 g</td><td>44.9 g</td></tr>
+          <tr><td>Ceramic (Pearl White / Night Blue)</td><td>41.7 g / 42.8 g</td><td>51.3 g / 52.9 g</td></tr>
+          <tr><td>Apple Watch Ultra 4</td><td colspan="2">63.0 g (49mm)</td></tr>
+        </tbody>
+      </table>
+      <p>The 46mm titanium model is about 6 grams heavier than the cellular aluminum version, around 16% more. Most people will not notice that during the day, but it can matter for sleep tracking if you find watches uncomfortable in bed. Titanium and aluminum cases share the same dimensions (9.7mm thick). Ceramic cases are slightly larger, at 9.85mm thick.</p>
+
+      <h2>Titanium Series 12 vs Apple Watch Ultra 4</h2>
+      <p>At $749 for the 46mm titanium Series 12 and $799 for the Ultra 4, the two are close in price but built for different people. Figures are from Apple's <a href="https://www.apple.com/apple-watch-ultra-4/specs/" target="_blank" rel="noopener">Ultra 4 specs</a> and Series 12 specs.</p>
+      <table>
+        <thead><tr><th></th><th>Series 12 titanium (46mm)</th><th>Ultra 4</th></tr></thead>
+        <tbody>
+          <tr><td>Price</td><td>$749</td><td>$799</td></tr>
+          <tr><td>Case</td><td>Polished titanium, 46mm, 9.7mm thick</td><td>Grade 5 titanium, 49mm, 12mm thick</td></tr>
+          <tr><td>Weight</td><td>44.9 g</td><td>63.0 g</td></tr>
+          <tr><td>Battery life</td><td>Up to 24 hours</td><td>Up to 50 hours</td></tr>
+          <tr><td>Peak brightness</td><td>2,000 nits</td><td>3,000 nits</td></tr>
+          <tr><td>Extras</td><td>Dressier look, slimmer</td><td>Action button, siren, dual speakers, satellite connectivity, more workout modes</td></tr>
+        </tbody>
+      </table>
+      <p>If battery life, outdoor sports or ruggedness matter, the Ultra 4 gives you far more for $50 extra. If you want a slimmer, more traditional-looking watch for everyday and office wear, the titanium Series 12 makes more sense.</p>
+
+      <h2>Who Should Buy a Titanium Apple Watch?</h2>
+      <table>
+        <thead><tr><th>You are...</th><th>Best choice</th></tr></thead>
+        <tbody>
+          <tr><td>Buying mainly for fitness, health and notifications</td><td>Aluminum GPS ($399)</td></tr>
+          <tr><td>A runner or swimmer who wants to leave the phone behind</td><td>Aluminum GPS + Cellular ($499)</td></tr>
+          <tr><td>Wearing the watch to the office or formal events</td><td>Titanium ($699)</td></tr>
+          <tr><td>Hard on your watch screen and want the most scratch-resistant glass</td><td>Titanium or Ultra 4</td></tr>
+          <tr><td>Hiking, diving or need two-day battery life</td><td>Ultra 4 ($799)</td></tr>
+          <tr><td>Want the most premium look regardless of cost</td><td>Ceramic ($899)</td></tr>
+        </tbody>
+      </table>
+      <p>MacRumors' <a href="https://www.macrumors.com/guide/is-it-worth-buying-a-titanium-apple-watch/" target="_blank" rel="noopener">buyer's guide</a> reaches a similar conclusion: most customers "will struggle to justify the extra cost of titanium". It also suggests looking at discounted titanium Series 10 or Series 11 models, which offer the same materials for less if you can find them from a reputable retailer.</p>
+      <p>For how the Series 12 compares with the Pixel Watch 5, Galaxy Watch 9 and Garmin, see our guide to the <a href="/articles/best-smartwatches-2026/">best smartwatches of 2026</a>. If you already own an Apple Watch, install the latest watchOS update, which includes the fixes covered in our <a href="/articles/ios-27-2-1-security-fixes/">iOS 27.2.1 security report</a>.</p>
+
+      <h2>Titanium Apple Watch FAQs</h2>
+      <h3>Is titanium Apple Watch more durable than aluminum?</h3>
+      <p>The main durability difference is the screen. Titanium models have a sapphire crystal, while aluminum models use Ceramic Shield 2. Both cases are tough enough for daily wear, but a polished titanium case can show fine scuffs.</p>
+      <h3>Does titanium Apple Watch have better battery life?</h3>
+      <p>No. All Series 12 models have the same battery rating: up to 24 hours, or 38 hours in Low Power Mode.</p>
+      <h3>Do all titanium Apple Watches have cellular?</h3>
+      <p>Yes. Every titanium Series 12 includes cellular. You need to add it to your mobile plan to use it away from your iPhone.</p>
+      <h3>Is titanium Apple Watch heavier?</h3>
+      <p>Slightly. The 46mm titanium model weighs 44.9 grams, versus 38.6 grams for aluminum with cellular and 51.3 to 52.9 grams for ceramic.</p>
+      <h3>What colors does the titanium Apple Watch come in?</h3>
+      <p>Natural and Radiant Gold, both polished.</p>
+      <h3>Should I buy titanium Series 12 or Ultra 4?</h3>
+      <p>Choose Ultra 4 for battery life, brightness and outdoor features. Choose titanium Series 12 if you want a slimmer, lighter and dressier watch.</p>
+
+      <p><em>Prices and specifications were checked on November 10, 2026, against Apple's online store, Apple's Series 12 and Ultra 4 specification pages, and MacRumors' buyer's guide. Prices are US list prices before tax and may differ by region or retailer. GBNT has no commercial relationship with Apple.</em></p>
+    `
+  },
+  {
     id: "ios-27-2-1-security-fixes",
     title: "iOS 27.2.1 Fixes 9 Security Flaws, Including iMessage Group Chat Bugs: What to Know",
     excerpt: "Apple's iOS 27.2.1 fixes nine flaws, including two iMessage group chat bugs. Which fixes reach older iPhones, Macs and Apple Watch, and how to update.",
