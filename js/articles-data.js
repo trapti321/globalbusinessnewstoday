@@ -1,6 +1,155 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "top-mobile-app-development-companies-usa",
+    title: "Top 10 Mobile App Development Companies in the USA (2026): Verified US-Based Firms",
+    excerpt: "10 US-headquartered app developers compared on Clutch ratings, hourly rates, minimums and clients, with app costs and how to choose. No paid placements.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-10T17:00:00Z",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Hand holding a smartphone showing a weather app design, with app mockups on a laptop and monitor behind it",
+    isTrending: true,
+    views: 0,
+    tags: ["Mobile App Development", "App Developers", "USA", "Outsourcing", "Small Business"],
+    content: `
+      <p class="lead">Most "top mobile app development companies in the USA" lists are written by app development companies, and many rank themselves first. Several also include firms headquartered in India, Bangladesh or Poland. This list is different. It includes only companies headquartered in the United States, every fact is checked against the company's own website or its Clutch profile, and no company paid or asked to be included. We checked all ten on November 10, 2026.</p>
+
+      <blockquote>
+        <p><strong>Top 10 US mobile app development companies, at a glance:</strong></p>
+        <ul>
+          <li><strong>For startups on a budget:</strong> Zco Corporation ($10,000+ minimum, $25 to $49 an hour on Clutch) or thoughtbot ($10,000+ minimum).</li>
+          <li><strong>For long-running product partnerships:</strong> Atomic Object, an employee-owned firm founded in 2001.</li>
+          <li><strong>For consumer and media brands:</strong> Fueled or Utility.</li>
+          <li><strong>For enterprise and field apps:</strong> Lextech, Intellectsoft or Velvetech.</li>
+          <li><strong>For healthcare and nonprofit apps:</strong> Dom &amp; Tom or Blue Label Labs.</li>
+          <li><strong>Typical cost:</strong> Clutch puts the average app project at $90,780 and about 11 months.</li>
+        </ul>
+      </blockquote>
+
+      <h2>How We Chose These Companies</h2>
+      <p>Each company had to meet all of these tests:</p>
+      <ol>
+        <li><strong>US headquarters</strong>, confirmed on the company's own contact page, site footer or Clutch profile.</li>
+        <li><strong>Still independent or clearly owned</strong>: we checked for acquisitions and excluded firms that have been absorbed into larger groups.</li>
+        <li><strong>Mobile is a core service</strong>, with native iOS and Android or cross-platform (React Native, Flutter) work shown on the company's site.</li>
+        <li><strong>Named clients or case studies</strong> published on the company's own website.</li>
+        <li><strong>Independent reviews</strong>: a Clutch profile with at least 20 verified reviews, where one exists.</li>
+      </ol>
+      <p>We list the companies alphabetically. We have not hired them, so we do not rank one above another on quality. Ratings, review counts, hourly rates and minimum project sizes are taken from each company's <a href="https://clutch.co/directory/mobile-application-developers" target="_blank" rel="noopener">Clutch</a> profile on November 10, 2026, and change over time.</p>
+
+      <h2>US Mobile App Development Companies Compared</h2>
+      <table>
+        <thead><tr><th>Company</th><th>HQ</th><th>Founded</th><th>Clutch rating</th><th>Hourly rate</th><th>Minimum project</th></tr></thead>
+        <tbody>
+          <tr><td>Atomic Object</td><td>Grand Rapids, MI</td><td>2001</td><td>4.9 (53 reviews)</td><td>$150 to $199</td><td>$25,000+</td></tr>
+          <tr><td>Blue Label Labs</td><td>New York, NY</td><td>2009</td><td>4.7 (71)</td><td>$100 to $149</td><td>$75,000+</td></tr>
+          <tr><td>Dom &amp; Tom</td><td>New York, NY</td><td>2009</td><td>4.8 (25)</td><td>$150 to $199</td><td>$75,000+</td></tr>
+          <tr><td>Fueled</td><td>New York, NY</td><td>2007</td><td>4.9 (38)</td><td>$150 to $199</td><td>$75,000+</td></tr>
+          <tr><td>Intellectsoft</td><td>Miami, FL</td><td>2007</td><td>4.9 (46)</td><td>$50 to $99</td><td>$50,000+</td></tr>
+          <tr><td>Lextech</td><td>Naperville, IL</td><td>2001</td><td>Not on Clutch</td><td>Not published</td><td>Not published</td></tr>
+          <tr><td>thoughtbot</td><td>New York, NY (per Clutch)</td><td>2003</td><td>4.9 (39)</td><td>$150 to $199</td><td>$10,000+</td></tr>
+          <tr><td>Utility</td><td>New York, NY</td><td>2013</td><td>4.8 (26)</td><td>$100 to $149</td><td>$50,000+</td></tr>
+          <tr><td>Velvetech</td><td>Sunny Isles Beach (Miami area), FL</td><td>2004</td><td>5.0 (22)</td><td>$50 to $99</td><td>$25,000+</td></tr>
+          <tr><td>Zco Corporation</td><td>Nashua, NH</td><td>1989</td><td>4.8 (58)</td><td>$25 to $49</td><td>$10,000+</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The Top 10 Mobile App Development Companies in the USA</h2>
+
+      <h3>1. Atomic Object: best for long-term product partnerships</h3>
+      <p><a href="https://atomicobject.com/" target="_blank" rel="noopener">Atomic Object</a> is a Grand Rapids, Michigan, software consultancy founded in 2001, with offices in Ann Arbor, Chicago and Raleigh. Its homepage says "Atomic is an employee-owned company", which is unusual in this market. It builds iOS, Android and React Native apps, and its portfolio includes work for Cleveland Clinic, Biggby Coffee and the game studio Pixelberry.</p>
+      <p><strong>Consider it if</strong> you want a senior, US-based team for a product you will keep developing for years. At $150 to $199 an hour, it is one of the pricier options here.</p>
+
+      <h3>2. Blue Label Labs: best for funded startups with a clear brief</h3>
+      <p><a href="https://www.bluelabellabs.com/" target="_blank" rel="noopener">Blue Label Labs</a>, now styled BlueLabel, lists its headquarters at 18 West 18th Street in New York, with offices in Redmond, Washington, and San Francisco. It builds native iOS and Android and React Native apps. Its case studies include the luxury watch marketplace WatchBox. It has the most Clutch reviews on this list (71).</p>
+      <p><strong>Consider it if</strong> your budget starts at $75,000, its Clutch minimum.</p>
+
+      <h3>3. Dom &amp; Tom: best for healthcare and mission-driven apps</h3>
+      <p><a href="https://domandtom.com/" target="_blank" rel="noopener">Dom &amp; Tom</a> describes itself as a founder-led firm "based in New York, founded in 2009". It builds mobile, web and AI products. Its published work includes a mobile science hub app for the Alzheimer's Association and data visualization for Turner Broadcasting.</p>
+      <p><strong>Consider it if</strong> you need design-led apps in a sensitive sector and can meet a $75,000 minimum.</p>
+
+      <h3>4. Fueled: best for high-profile consumer apps</h3>
+      <p><a href="https://fueled.com/" target="_blank" rel="noopener">Fueled</a> was founded in 2007 and is listed in New York on Clutch, though its own site describes it as "Fully remote" across North America and Europe. In 2023 it merged with the WordPress agency <a href="https://10up.com/blog/2023/10up-joins-forces-with-fueled-digital-media/" target="_blank" rel="noopener">10up</a>. Its work page lists Apple, Google, The New York Times and The White House.</p>
+      <p><strong>Consider it if</strong> you are a well-funded brand that wants a polished, high-visibility iOS app and a combined web presence.</p>
+
+      <h3>5. Intellectsoft: best for enterprise apps at mid-range rates</h3>
+      <p><a href="https://www.intellectsoft.net/" target="_blank" rel="noopener">Intellectsoft</a> lists offices in Miami and Palo Alto and says it has worked "Since 2007". It builds native apps in Swift and Kotlin as well as React Native. Its case studies include Eurostar, EY, Harley-Davidson and Jaguar Land Rover.</p>
+      <p><strong>Consider it if</strong> you are an enterprise that wants large-company experience at $50 to $99 an hour.</p>
+
+      <h3>6. Lextech: best for field-sales and Apple-platform enterprise apps</h3>
+      <p><a href="https://www.lextech.com/" target="_blank" rel="noopener">Lextech</a> is based in Naperville, Illinois, and its site footer dates the company to 2001. It builds iOS, Android and React Native apps and also works on Apple Vision Pro. Its case studies include a field sales app for AstraZeneca, Southwest Airlines' CrewHub and an industrial inspection app for SKF.</p>
+      <p><strong>Consider it if</strong> your app is for employees in the field rather than consumers. Lextech has no Clutch profile, so ask for references directly.</p>
+
+      <h3>7. thoughtbot: best for smaller budgets and product coaching</h3>
+      <p><a href="https://thoughtbot.com/services/mobile-development" target="_blank" rel="noopener">thoughtbot</a>, founded in 2003, is a design and development consultancy that lists US and UK contact numbers on its site. It builds React Native, iOS and Android apps. Its published case studies include the Harvard Business Review app. Clutch lists its headquarters in New York and a minimum project of $10,000, the lowest of the premium-rate firms here.</p>
+      <p><strong>Consider it if</strong> you want to start with a small, well-defined engagement and learn good product practices along the way.</p>
+
+      <h3>8. Utility: best for consumer brands and media companies</h3>
+      <p><a href="https://utility.agency/" target="_blank" rel="noopener">Utility</a> is based at 135 Madison Avenue in New York, with a Los Angeles office, and was founded in 2013. It builds iOS, Android and React Native apps. Its case studies include Airbnb, BuzzFeed, Coca-Cola and Forbes.</p>
+      <p><strong>Consider it if</strong> you are a consumer brand that wants agency-style creative work alongside development.</p>
+
+      <h3>9. Velvetech: best for business and energy-sector apps</h3>
+      <p><a href="https://velvetech.com/" target="_blank" rel="noopener">Velvetech</a> lists its headquarters in Sunny Isles Beach, Florida, in the Miami area, with an office in Chicago, and was founded in 2004. It builds native apps as well as Flutter, React Native and Kotlin Multiplatform. Its case studies include Apache Corporation. It holds a 5.0 Clutch rating from 22 reviews.</p>
+      <p><strong>Consider it if</strong> you need a business-focused app with back-office integration at $50 to $99 an hour.</p>
+
+      <h3>10. Zco Corporation: best value among US-headquartered firms</h3>
+      <p><a href="https://www.zco.com/" target="_blank" rel="noopener">Zco Corporation</a> is the oldest firm on this list, founded in 1989 and headquartered in Nashua, New Hampshire, with offices in Boston and New York. It builds native, Flutter, React Native and Xamarin apps. Its case studies include the golf GPS app GolfLogix. It has the lowest Clutch rate band here ($25 to $49 an hour) and a $10,000 minimum.</p>
+      <p><strong>Consider it if</strong> you are a small business or startup that wants a US-headquartered partner on a tighter budget.</p>
+
+      <h2>Well-Known Names We Left Out, and Why</h2>
+      <ul>
+        <li><strong>WillowTree:</strong> acquired by Canada's TELUS International in January 2023 and now operates as <a href="https://www.telusdigital.com/willowtree-is-now-telus-digital" target="_blank" rel="noopener">TELUS Digital</a>.</li>
+        <li><strong>YML (Y Media Labs):</strong> says it has been part of the agency Code and Theory since June 2023.</li>
+        <li><strong>Big Nerd Ranch:</strong> acquired in 2020 and announced a wind-down of parts of its business in 2024.</li>
+        <li><strong>Dogtown Media and Sidebench:</strong> both are well reviewed on Clutch, but their websites blocked our checks, so we could not verify their details.</li>
+        <li><strong>Simform, Hidden Brains and similar firms:</strong> they have US offices, but their main engineering base is in India.</li>
+      </ul>
+
+      <h2>How Much Does It Cost to Hire a US App Development Company?</h2>
+      <p>According to Clutch's <a href="https://clutch.co/directory/mobile-application-developers/pricing" target="_blank" rel="noopener">app development pricing guide</a>, updated September 21, 2026, the average app project costs $90,780 and takes about 11 months, and most projects fall between $10,000 and $49,999. Clutch's overall average hourly rate is $25 to $49, but that average includes many small and offshore firms. Most of the US-headquartered companies above charge $100 to $199 an hour.</p>
+      <p>Why so much? The US Bureau of Labor Statistics <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm" target="_blank" rel="noopener">reports</a> that the median annual wage for software developers was $135,980 in May 2025. Agencies add design, project management, testing and overhead on top of salaries.</p>
+      <p>A rough guide based on the minimums above:</p>
+      <ul>
+        <li><strong>$10,000 to $25,000:</strong> a prototype or very simple app with a value-focused firm.</li>
+        <li><strong>$50,000 to $75,000:</strong> a first version of a typical business or consumer app with a mid-range US firm.</li>
+        <li><strong>$75,000 and up:</strong> premium New York agencies, complex apps, or apps in regulated sectors such as healthcare.</li>
+      </ul>
+      <p>If you are weighing offshore or remote teams instead, our guide to <a href="/articles/companies-to-hire-remote-developers/">companies to hire remote developers</a> compares those options, and our <a href="/articles/uk-outsourcing-examples/">UK outsourcing examples</a> show how established firms have used overseas teams.</p>
+
+      <h2>How to Choose a Mobile App Development Company</h2>
+      <ol>
+        <li><strong>Check the headquarters and delivery team.</strong> A US address does not always mean US developers. Ask where your engineers will be based.</li>
+        <li><strong>Read Clutch reviews from projects like yours.</strong> Look at budget and industry, not just the star rating.</li>
+        <li><strong>Ask for two references</strong> from clients whose apps are still live in the App Store and Google Play.</li>
+        <li><strong>Agree on who owns the code</strong>, design files and app store accounts before you sign.</li>
+        <li><strong>Ask about post-launch support.</strong> iOS and Android updates arrive every year, and apps need maintenance budgets.</li>
+        <li><strong>Be wary of rankings published by agencies themselves.</strong> If the list's author is ranked first, treat it as marketing.</li>
+      </ol>
+      <p>Founders raising money to build an app may also find our explainer on <a href="/articles/startup-booted-fundraising-strategy/">startup fundraising strategy</a> useful.</p>
+
+      <h2>FAQs</h2>
+      <h3>Which is the best mobile app development company in the USA?</h3>
+      <p>There is no single best one. It depends on budget and project type. Atomic Object, Fueled and thoughtbot have strong Clutch ratings (4.9) at premium rates. Zco Corporation offers the lowest rates among US-headquartered firms on this list.</p>
+      <h3>How much does it cost to build an app in the USA?</h3>
+      <p>Clutch's data puts the average app project at $90,780. Minimum projects at the firms above range from $10,000 to $75,000.</p>
+      <h3>How long does it take to build a mobile app?</h3>
+      <p>Clutch reports about 11 months on average. A simple first version can take a few months, depending on scope.</p>
+      <h3>Should I choose a US or offshore app developer?</h3>
+      <p>US firms usually charge more but offer time-zone overlap and US legal terms. Offshore firms cost less but need closer management. Many US firms also use offshore teams, so ask.</p>
+      <h3>Are Clutch ratings reliable?</h3>
+      <p>Clutch verifies that reviewers are real clients, but companies can choose which clients to invite. Use ratings as a starting point, then check references.</p>
+
+      <p><em>Company details were checked on November 10, 2026, against each company's own website and its Clutch profile, plus the US Bureau of Labor Statistics and Clutch's pricing guide. No company paid for inclusion or was contacted before publication. GBNT has no commercial relationship with any company listed. Companies that want to correct their details can <a href="/contact.html">contact us</a>.</em></p>
+    `
+  },
+  {
     id: "is-titanium-apple-watch-worth-it",
     title: "Is a Titanium Apple Watch Worth It? Series 12 Price, Weight and Sapphire Compared",
     excerpt: "The titanium Apple Watch Series 12 costs $300 more than aluminum but adds no features. What the premium buys, weights, and how it compares with Ultra 4.",
