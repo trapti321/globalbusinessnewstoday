@@ -1,6 +1,418 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "sfm-compile",
+    title: "SFM Compile Guide: How to Compile Models for Source Filmmaker With Studiomdl and Crowbar",
+    excerpt: "How to compile models for Source Filmmaker: QC files, studiomdl, Crowbar, output folders and common errors, plus why to avoid fake \"SFMCompile\" downloads.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T09:00:00Z",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1617791160505-6f00504e3519?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Abstract 3D render of curved purple and blue ribbons against a dark violet background",
+    isTrending: true,
+    views: 0,
+    tags: ["SFM Compile", "Source Filmmaker", "3D Modeling", "Crowbar", "Valve"],
+    content: `
+      <p class="lead">"SFM compile" means turning a 3D model's source files into the .mdl format that Valve's Source Filmmaker can load. You do it with Valve's own compiler, studiomdl.exe, which ships inside Source Filmmaker, usually through the free Crowbar tool. There is no official program called "SFM Compile" or "SFMCompile.exe", so be wary of sites offering one as a download. This guide covers the tools, the QC script, the steps and the most common errors, checked against Valve's developer documentation on November 11, 2026.</p>
+
+      <blockquote>
+        <p><strong>SFM compile, the short answer:</strong></p>
+        <ul>
+          <li><strong>What you need:</strong> source files (SMD or DMX), a QC script, Source Filmmaker's studiomdl.exe and, optionally, Crowbar.</li>
+          <li><strong>Where studiomdl is:</strong> in your SFM install, typically <code>...&#92;steamapps&#92;common&#92;SourceFilmmaker&#92;game&#92;bin&#92;studiomdl.exe</code>.</li>
+          <li><strong>Where models go:</strong> the <code>usermod</code> folder, under <code>models</code> and <code>materials</code>.</li>
+          <li><strong>Easiest route:</strong> Crowbar 0.74, a free compile and decompile tool.</li>
+          <li><strong>Safety:</strong> download tools only from Steam or Crowbar's official GitHub page.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Source Filmmaker?</h2>
+      <p>Source Filmmaker (SFM) is Valve's free animation tool, built on the Source engine and used to make movies with game assets. According to its <a href="https://store.steampowered.com/app/1840/Source_Filmmaker/" target="_blank" rel="noopener">Steam page</a>, it was released on July 10, 2012, and is "available for free as a public beta". Its last announced update on Steam was version 0.9.8.15, in January 2015. Valve's newer Source 2 Filmmaker is available only inside the workshop tools of games such as Counter-Strike 2 and Dota 2.</p>
+
+      <h2>What Does "Compiling" a Model Mean?</h2>
+      <p>Valve's developer wiki <a href="https://developer.valvesoftware.com/wiki/Compiling_a_model" target="_blank" rel="noopener">explains</a> that "Models need to be compiled before they can be used in a game" and that a compile has three parts:</p>
+      <ol>
+        <li><strong>Source files:</strong> the model's mesh, skeleton and animations, exported from Blender or another 3D program as SMD or DMX files (plus VTA files for flex animation).</li>
+        <li><strong>A QC file:</strong> a plain-text script that tells the compiler what to build.</li>
+        <li><strong>StudioMDL:</strong> Valve's command-line compiler, which reads the QC and writes the finished model.</li>
+      </ol>
+      <p>According to the <a href="https://developer.valvesoftware.com/wiki/StudioMDL_(Source)" target="_blank" rel="noopener">StudioMDL documentation</a>, the output is a set of files: the <strong>.mdl</strong> itself, <strong>.vvd</strong> vertex data, <strong>.vtx</strong> files for rendering, and a <strong>.phy</strong> file if the model has collision.</p>
+
+      <h2>Step 1: Write a QC File</h2>
+      <p>A minimal QC for a static prop, based on the example in Valve's wiki, looks like this:</p>
+      <pre><code>$modelname "props&#92;myfirstmodel.mdl"
+$body mybody "myfirstmodel-ref.smd"
+$surfaceprop combine_metal
+$cdmaterials "models/props"
+$sequence idle "myfirstmodel-ref"
+$collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
+      <table>
+        <thead><tr><th>Command</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>$modelname</td><td>Required. Output path, relative to the game's <code>models</code> folder.</td></tr>
+          <tr><td>$body</td><td>The reference mesh (SMD or DMX).</td></tr>
+          <tr><td>$cdmaterials</td><td>Folder the game searches for textures, relative to <code>materials</code>. Subfolders are not searched.</td></tr>
+          <tr><td>$sequence</td><td>An animation. Valve notes that "All models must have at least one $sequence, even if they aren't actually animated!"</td></tr>
+          <tr><td>$collisionmodel</td><td>A static collision mesh. Animated ragdolls use $collisionjoints instead.</td></tr>
+        </tbody>
+      </table>
+      <p>The full list is in Valve's <a href="https://developer.valvesoftware.com/wiki/Category:QC_Commands" target="_blank" rel="noopener">QC commands reference</a>.</p>
+
+      <h2>Step 2: Compile With Crowbar (Recommended)</h2>
+      <p><a href="https://github.com/ZeqMacaw/Crowbar/releases" target="_blank" rel="noopener">Crowbar</a>, by the developer ZeqMacaw, is a free tool that puts a graphical interface on studiomdl. It can "Compile and decompile models individually or from an entire folder", and it supports Source Filmmaker. The latest release is version 0.74, published on GitHub on February 20, 2023.</p>
+      <ol>
+        <li>Download Crowbar from its official GitHub releases page (or its Steam group) and unzip it.</li>
+        <li>In Crowbar's game setup, add <strong>Source Filmmaker</strong> and point it at your SFM install, so it finds studiomdl.exe and gameinfo.txt.</li>
+        <li>Open the <strong>Compile</strong> tab and select your QC file.</li>
+        <li>Choose the output folder (your SFM <code>usermod</code> folder is the usual choice) and click <strong>Compile</strong>.</li>
+        <li>Read the log. A successful compile ends with the list of written files.</li>
+      </ol>
+      <p>Crowbar also creates missing output folders automatically, which avoids a common studiomdl error (see below).</p>
+
+      <h2>Step 2 (Alternative): Compile From the Command Line</h2>
+      <p>Valve documents the usage as <code>studiomdl [options] &lt;path&#92;QC&gt;</code>. For SFM, a typical command is:</p>
+      <pre><code>"C:&#92;Program Files (x86)&#92;Steam&#92;steamapps&#92;common&#92;SourceFilmmaker&#92;game&#92;bin&#92;studiomdl.exe" -nop4 -game "C:&#92;Program Files (x86)&#92;Steam&#92;steamapps&#92;common&#92;SourceFilmmaker&#92;game&#92;usermod" "C:&#92;models&#92;myfirstmodel.qc"</code></pre>
+      <p>The <code>-game</code> option sets where compiled files are written, and <code>-nop4</code> disables Valve's internal Perforce integration, which Valve's wiki says "you should use". The SFM-specific folder paths come from community advice on the <a href="https://steamcommunity.com/app/1840/discussions/0/624076027463768753/" target="_blank" rel="noopener">Source Filmmaker Steam forums</a>; adjust them to your own Steam library location.</p>
+
+      <h2>Step 3: Add Textures (VMT and VTF)</h2>
+      <p>Source models use VTF files for images and VMT files to describe materials. Place them under <code>usermod&#92;materials&#92;</code>, in the folder named in your $cdmaterials line. <a href="https://developer.valvesoftware.com/wiki/VTFEdit" target="_blank" rel="noopener">VTFEdit</a> is the classic converter, though Valve's wiki marks it as abandoned and points to maintained forks such as VTFEdit Reloaded.</p>
+
+      <h2>Step 4: Load the Model in SFM</h2>
+      <p>Open Source Filmmaker, create or open a session, and add the model from the model browser. If you compiled to <code>usermod</code>, it appears under the path set in $modelname.</p>
+
+      <h2>Common SFM Compile Errors and Fixes</h2>
+      <table>
+        <thead><tr><th>Error</th><th>Fix</th></tr></thead>
+        <tbody>
+          <tr><td>"Error opening &lt;model&gt;! (Check for write enable)"</td><td>Studiomdl will not create folders that do not exist. Create them, or use Crowbar.</td></tr>
+          <tr><td>EXCEPTION_ACCESS_VIOLATION</td><td>Valve suggests compiling with the Half-Life Model Viewer (HLMV) running.</td></tr>
+          <tr><td>"Bad collision model, check your smoothing groups"</td><td>Fix the smoothing groups on your collision mesh.</td></tr>
+          <tr><td>"Model has 2-dimensional geometry"</td><td>Put all faces of the collision mesh in smoothing group 1.</td></tr>
+          <tr><td>"Bounding box out of range"</td><td>The collision model is larger than 16,384 units; split the model.</td></tr>
+          <tr><td>Purple and black checkerboard texture in SFM</td><td>Missing material: check $cdmaterials and the VMT/VTF location.</td></tr>
+        </tbody>
+      </table>
+
+      <p>The fixes above for the first five errors come from Valve's wiki; the last is a common community fix.</p>
+
+      <h2>A Warning About "SFM Compile" Websites</h2>
+      <p>Searches for "sfm compile" and "sfmcompile" return many content-farm pages and look-alike domains. Some describe "SFM Compile" as a tool you should download as a ZIP or EXE. No official tool by that name exists. At least one similarly named domain hosts adult content. Running executables from unknown sites is a common way to install malware, so stick to:</p>
+      <ul>
+        <li>Source Filmmaker itself, from Steam (studiomdl.exe is included).</li>
+        <li>Crowbar, from its GitHub releases page or Steam group.</li>
+        <li>Valve's developer wiki for documentation.</li>
+      </ul>
+      <p>For more on spotting risky download sites, see our <a href="/articles/viprow-us-com/">VIPRow.us.com safety guide</a> and our check of <a href="/articles/lightniteone-new-version-for-pc/">"LightNite One new version for PC" claims</a>.</p>
+
+      <h2>SFM Compile FAQs</h2>
+      <h3>What is SFM compile?</h3>
+      <p>Converting a model's source files and QC script into a .mdl model that Source Filmmaker can use, using Valve's studiomdl compiler.</p>
+      <h3>Is there an official "SFMCompile" tool?</h3>
+      <p>No. Use studiomdl.exe, which comes with SFM, or the free Crowbar interface.</p>
+      <h3>Where do compiled SFM models go?</h3>
+      <p>Usually in SFM's <code>game&#92;usermod&#92;models</code> folder, with textures in <code>game&#92;usermod&#92;materials</code>.</p>
+      <h3>Can Crowbar decompile SFM models?</h3>
+      <p>Yes. Crowbar can decompile .mdl files back into QC and SMD files, which is useful for editing. Respect the original creator's permissions.</p>
+      <h3>Is Source Filmmaker still free?</h3>
+      <p>Yes. It remains a free public beta on Steam.</p>
+
+      <p><em>Checked on November 11, 2026, against Valve's Developer Community wiki (read via archived copies, as the live wiki blocked automated access), the Source Filmmaker Steam page, Crowbar's GitHub releases and the SFM Steam forums.</em></p>
+    `
+  },
+  {
+    id: "python-bug-54axhg5",
+    title: "Python Bug 54axhg5: Is It Real? What Python's Issue Tracker and CVE Records Show",
+    excerpt: "\"Python bug 54axhg5\" is not in Python's issue tracker, the CVE database or PyPI. Where the term comes from and how to find real Python bugs.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T09:05:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Person holding up a yellow sticky note with the word PYTHON written on it in front of a computer screen",
+    isTrending: true,
+    views: 0,
+    tags: ["Python", "Python Bug", "Software Bugs", "CVE", "Programming"],
+    content: `
+      <p class="lead">"Python bug 54axhg5" is not a real Python bug. We searched Python's official issue tracker, the US National Vulnerability Database and the Python Package Index on November 11, 2026, and found no bug, security flaw or package with that name. The term appears only on a handful of SEO articles, which contradict each other about what it is. If your code is failing, the real error message in your traceback is what you need to search for.</p>
+
+      <blockquote>
+        <p><strong>Python bug 54axhg5, the short answer:</strong></p>
+        <ul>
+          <li><strong>CPython issue tracker:</strong> 0 results for "54axhg5".</li>
+          <li><strong>National Vulnerability Database:</strong> 0 results. CVE IDs follow the format CVE-YEAR-NUMBER, so "54axhg5" cannot be one.</li>
+          <li><strong>PyPI:</strong> no package called 54axhg5.</li>
+          <li><strong>Where the term comes from:</strong> SEO articles published in 2026, which even disagree with each other.</li>
+          <li><strong>What to do:</strong> read your actual traceback, update Python (latest: 3.15.2) and search Python's GitHub issues.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Is "54axhg5" a Real Python Bug?</h2>
+      <p>No. Here is what we checked:</p>
+      <table>
+        <thead><tr><th>Source</th><th>Result for "54axhg5"</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://github.com/python/cpython/issues" target="_blank" rel="noopener">CPython issues on GitHub</a> (Python's official bug tracker)</td><td>0 issues</td></tr>
+          <tr><td><a href="https://nvd.nist.gov/vuln/search" target="_blank" rel="noopener">National Vulnerability Database</a></td><td>0 vulnerabilities</td></tr>
+          <tr><td><a href="https://pypi.org/" target="_blank" rel="noopener">Python Package Index (PyPI)</a></td><td>No such package (404)</td></tr>
+        </tbody>
+      </table>
+      <p>Real Python bug numbers look nothing like "54axhg5". Since April 2022, Python's issues have been tracked on GitHub with numbers like <strong>gh-123456</strong>. Older issues from the retired bugs.python.org tracker have IDs like <strong>bpo-43191</strong>. Security flaws get CVE IDs like <strong>CVE-2025-12345</strong>. All of these are numeric.</p>
+
+      <h2>Where Does "Python 54axhg5" Come From?</h2>
+      <p>The phrase appears on SEO-style articles published from early 2026 onwards, often titled along the lines of "Python 54axhg5: bug fixing and troubleshooting tips". They do not agree on what it is:</p>
+      <ul>
+        <li>One calls it "a community-generated or placeholder identifier" and admits it is "not an official Python error code".</li>
+        <li>Another says it "is not a version, module, library, or command".</li>
+        <li>Others describe it as a build ID or commit hash.</li>
+      </ul>
+      <p>None of these articles cites a Python release note, issue number or official source. Strings like this are typical of "keyword invention": a made-up term spreads across content sites because people search for it after seeing it elsewhere. We have seen the same pattern with other invented terms, such as the fake software posts covered in our <a href="/articles/lightniteone-new-version-for-pc/">LightNite One check</a>.</p>
+
+      <h2>If Your Python Code Has a Bug: What to Do Instead</h2>
+      <ol>
+        <li><strong>Read the traceback.</strong> The last line names the exception, such as <code>TypeError</code>, <code>KeyError</code> or <code>ModuleNotFoundError</code>, and the lines above show where it happened.</li>
+        <li><strong>Search the exact error message</strong>, with your library's name, rather than a code like "54axhg5".</li>
+        <li><strong>Check your versions.</strong> Run <code>python --version</code> and <code>pip list</code>. The latest stable Python on <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">python.org</a> is 3.15.2 (October 25, 2026), and Python 3.10 reached end of life in October 2026.</li>
+        <li><strong>Use a clean virtual environment</strong> (<code>python -m venv .venv</code>) to rule out conflicting packages.</li>
+        <li><strong>Reproduce it in a small script.</strong> If you can't reproduce it without a third-party library, the bug probably belongs to that library.</li>
+      </ol>
+
+      <h2>How to Find or Report a Real Python Bug</h2>
+      <p>Python's <a href="https://devguide.python.org/triage/issue-tracker/" target="_blank" rel="noopener">developer guide</a> says "The issue tracker is hosted on GitHub". Before filing, it asks you to search existing issues, then to describe "what you expected to happen, what did happen, and how to replicate the problem", along with your Python version and operating system.</p>
+      <p>Security vulnerabilities should not be posted publicly. Python's <a href="https://www.python.org/dev/security/" target="_blank" rel="noopener">security page</a> asks reporters to email the Python Security Response Team. Confirmed issues are published as security advisories and CVEs, because the Python Software Foundation is a CVE Numbering Authority.</p>
+
+      <h2>Why This Matters for Businesses</h2>
+      <p>Development teams sometimes waste hours chasing invented errors found through search. Before assigning time to a "known bug", ask for a link to an official issue, release note or CVE. If none exists, treat the claim as unverified. The same applies to vendor sales pitches that cite scary-sounding bug codes.</p>
+
+      <h2>Python 54axhg5 FAQs</h2>
+      <h3>What is Python bug 54axhg5?</h3>
+      <p>It is not a real Python bug. It does not appear in Python's issue tracker, the vulnerability database or PyPI.</p>
+      <h3>How do I fix Python 54axhg5?</h3>
+      <p>There is nothing to fix under that name. Fix the actual error shown in your traceback.</p>
+      <h3>Is 54axhg5 a Python version?</h3>
+      <p>No. Python versions are numbered like 3.15.2.</p>
+      <h3>Is 54axhg5 a virus or security threat?</h3>
+      <p>We found no security advisory with that name. Be cautious of sites offering "54axhg5 fix" downloads.</p>
+
+      <p><em>Checked on November 11, 2026, using GitHub's search of the python/cpython repository, the NVD API, PyPI, python.org and Python's developer guide.</em></p>
+    `
+  },
+  {
+    id: "best-tarta-de-brocoli-near-me",
+    title: "Best Tarta de Brócoli Near Me: Where to Find It and an Easy Recipe",
+    excerpt: "Where to find tarta de brócoli near you, from Argentine and Uruguayan bakeries to an easy home recipe, plus what makes a good broccoli tart.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T09:10:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Bowl of fresh broccoli florets on a wooden cutting board beside a knife and chopped garlic",
+    isTrending: false,
+    views: 0,
+    tags: ["Tarta de Brócoli", "Argentine Food", "Recipes", "Broccoli", "Near Me"],
+    content: `
+      <p class="lead">Looking for the best tarta de brócoli near you? Tarta de brócoli is a savory broccoli, egg and cheese tart, a home-cooking classic in Argentina and Uruguay. Outside those countries it is not on most menus, so the best places to find it are Argentine and Uruguayan bakeries and markets, or your own oven: it takes about an hour to make. Here is how to find a good one, what to look for, and a simple recipe.</p>
+
+      <blockquote>
+        <p><strong>Tarta de brócoli near me, the short answer:</strong></p>
+        <ul>
+          <li><strong>Search terms:</strong> "Argentine bakery", "panadería argentina", "Uruguayan bakery" or "empanadas" plus your city.</li>
+          <li><strong>Call ahead:</strong> tartas are often sold whole or by the slice and can sell out. Many shops take orders.</li>
+          <li><strong>What makes a good one:</strong> a crisp base, plenty of broccoli, a custardy egg-and-cheese filling and a golden top.</li>
+          <li><strong>Can't find one?</strong> Make it at home with store-bought tart dough, broccoli, eggs and cheese.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Tarta de Brócoli?</h2>
+      <p>A tarta is the Argentine and Uruguayan version of a savory pie or quiche: a thin pastry base (masa or tapa de tarta) filled with vegetables, eggs and cheese, then baked. Tarta de brócoli is one of the most popular fillings, alongside spinach (tarta de espinaca), zucchini and onion. It is eaten warm or at room temperature for lunch or dinner, often with a salad.</p>
+      <p>The popular Argentine recipe site Paulina Cocina's <a href="https://www.paulinacocina.net/receta-facil-tarta-brocoli/11257" target="_blank" rel="noopener">version</a> uses broccoli, three eggs, garlic, cream cheese, a soft melting cheese (queso cremoso), grated cheese, breadcrumbs, nutmeg and lemon zest, on a ready-made or homemade crust. Some cooks add a white sauce or cream for a softer filling.</p>
+
+      <h2>How to Find the Best Tarta de Brócoli Near You</h2>
+      <ol>
+        <li><strong>Search for Argentine or Uruguayan bakeries and markets</strong> in Google Maps or Apple Maps, rather than "tarta de brocoli" alone. Many sell tartas but do not list them online.</li>
+        <li><strong>Check photos and recent reviews</strong> for mentions of "tartas", "quiche" or "tarta de verdura".</li>
+        <li><strong>Call or message the shop.</strong> Ask which tartas they have today and whether you can order a whole one.</li>
+        <li><strong>Try Spanish-speaking delis and cafés</strong> that sell empanadas: they often sell tartas too.</li>
+        <li><strong>Look at Latin American grocery stores</strong> for frozen tartas or ready-made "tapas de tarta" (pastry rounds) to bake at home.</li>
+      </ol>
+
+      <h3>Argentine bakeries to start with in New York and Miami</h3>
+      <p>These are well-reviewed Argentine bakeries and markets listed by the restaurant guide The Infatuation. We have not confirmed that each one sells tarta de brócoli on a given day, so call first.</p>
+      <ul>
+        <li><strong>New York:</strong> La Nueva Bakery (Jackson Heights, Queens) and Rio de la Plata Bakery (Queens), from <a href="https://www.theinfatuation.com/new-york/cuisines/argentinian" target="_blank" rel="noopener">The Infatuation's Argentinian guide</a>.</li>
+        <li><strong>Miami:</strong> Graziano's Market (Coral Gables) and Charlotte Bakery (Miami Beach), from <a href="https://www.theinfatuation.com/miami/cuisines/argentinian" target="_blank" rel="noopener">The Infatuation's Miami guide</a>.</li>
+      </ul>
+
+      <h2>What Makes a Good Tarta de Brócoli?</h2>
+      <table>
+        <thead><tr><th>Look for</th><th>Avoid</th></tr></thead>
+        <tbody>
+          <tr><td>A crisp, browned base</td><td>A pale, soggy bottom</td></tr>
+          <tr><td>Bright green broccoli pieces throughout</td><td>Mostly egg with little broccoli</td></tr>
+          <tr><td>A set but creamy filling</td><td>A rubbery or watery texture</td></tr>
+          <tr><td>Golden cheese on top</td><td>Burnt edges or a dry top</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Easy Tarta de Brócoli Recipe</h2>
+      <p>Adapted from the method used by Argentine home cooks, for a 26 cm (10-inch) pan:</p>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 ready-made tart crust (tapa de tarta) or shortcrust pastry</li>
+        <li>1 large head of broccoli, cut into small florets</li>
+        <li>3 eggs</li>
+        <li>1 garlic clove, minced</li>
+        <li>2 tablespoons cream cheese</li>
+        <li>100 g (3.5 oz) soft melting cheese, diced (mozzarella or Monterey Jack works)</li>
+        <li>A handful of grated Parmesan-style cheese</li>
+        <li>1 tablespoon breadcrumbs, salt, pepper, a pinch of nutmeg and a little lemon zest</li>
+      </ul>
+      <h3>Method</h3>
+      <ol>
+        <li>Heat the oven to about 180°C (350°F).</li>
+        <li>Blanch the broccoli for 2 to 3 minutes, drain well and chop.</li>
+        <li>Beat the eggs with the cream cheese, garlic, grated cheese, nutmeg, lemon zest, salt and pepper. Stir in the broccoli and diced cheese.</li>
+        <li>Line the pan with the pastry, sprinkle breadcrumbs on the base (it absorbs moisture), and pour in the filling.</li>
+        <li>Bake for 30 to 40 minutes, until set and golden. Rest for 10 minutes before slicing.</li>
+      </ol>
+      <p>For more on healthy everyday eating, see our <a href="/category/health/">Health &amp; Wellness section</a>.</p>
+
+      <h2>Tarta de Brócoli FAQs</h2>
+      <h3>What is tarta de brócoli in English?</h3>
+      <p>Broccoli tart or broccoli quiche: a savory pastry filled with broccoli, eggs and cheese.</p>
+      <h3>Is tarta de brócoli Argentine?</h3>
+      <p>It is a staple of home cooking in Argentina and Uruguay, where savory tartas are an everyday meal.</p>
+      <h3>Can I freeze tarta de brócoli?</h3>
+      <p>Yes. Cool it fully, wrap slices well and reheat in the oven for the best texture.</p>
+      <h3>Where can I buy tapas de tarta in the US?</h3>
+      <p>Latin American grocery stores and some Argentine bakeries sell ready-made pastry rounds. Refrigerated pie crust is a good substitute.</p>
+
+      <p><em>Checked on November 11, 2026. Restaurant listings come from The Infatuation; menus change, so contact businesses before visiting.</em></p>
+    `
+  },
+  {
+    id: "best-vitel-tone-near-me",
+    title: "Best Vitel Toné Near Me: Where to Find It, Prices, Food Safety and a Recipe",
+    excerpt: "Where to find vitel toné near you, why it is Argentina's Christmas dish, what it costs, how to keep it safe and an easy recipe.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T09:15:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Thick slices of roasted beef fanned out on a wooden board",
+    isTrending: false,
+    views: 0,
+    tags: ["Vitel Toné", "Vitello Tonnato", "Argentine Food", "Christmas Recipes", "Near Me"],
+    content: `
+      <p class="lead">Looking for the best vitel toné near you? Vitel toné is cold sliced veal in a creamy tuna sauce, an Italian dish from Piedmont (vitello tonnato) that became Argentina's and Uruguay's Christmas classic. Outside those countries it is hard to find on regular menus, but Argentine bakeries, Italian delis and caterers often make it to order in December. Here is how to find a good one, what it costs, how to keep it safe and how to make it.</p>
+
+      <blockquote>
+        <p><strong>Vitel toné near me, the short answer:</strong></p>
+        <ul>
+          <li><strong>Where to look:</strong> Argentine and Uruguayan bakeries and markets, Italian delis (ask for vitello tonnato) and Latin American caterers.</li>
+          <li><strong>When:</strong> mostly in December, for Christmas and New Year. Order early, as many shops take pre-orders only.</li>
+          <li><strong>A good one has:</strong> thin, tender slices and a smooth sauce with a balance of tuna, capers and lemon.</li>
+          <li><strong>Food safety:</strong> the sauce is mayonnaise-based, so keep it refrigerated and do not leave it out in the heat.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Vitel Toné?</h2>
+      <p>Vitel toné is the Argentine name for <strong>vitello tonnato</strong> (in Piedmontese, "vitel tonnà"), meaning "veal with tuna", <a href="https://www.cronista.com/clase/gourmet/la-verdadera-historia-del-vitel-tone-el-plato-despreciado-en-su-tierra-que-aman-los-argentinos-en-navidad" target="_blank" rel="noopener">El Cronista explains</a>. The <a href="https://it.wikipedia.org/wiki/Vitello_tonnato" target="_blank" rel="noopener">Italian Wikipedia entry</a> describes it as "un piatto tipico del Piemonte", a typical dish of Piedmont in northwest Italy, and notes that Pellegrino Artusi published a version in his 1891 cookbook.</p>
+      <p>Italian immigrants brought it to Argentina and Uruguay, where it became a fixture of Christmas Eve dinner. Because it is served cold, El Cronista notes, it is ideal for the hot holidays of the Southern Hemisphere summer.</p>
+      <p>The classic Argentine version uses <strong>peceto</strong> (eye of round), poached with vegetables, chilled and thinly sliced, then covered in a sauce of mayonnaise, canned tuna, anchovies, capers and a little of the cooking broth.</p>
+
+      <h2>How to Find the Best Vitel Toné Near You</h2>
+      <ol>
+        <li><strong>Search "Argentine bakery" or "Uruguayan bakery"</strong> plus your city, then call to ask about vitel toné or holiday platters.</li>
+        <li><strong>Ask Italian delis for "vitello tonnato".</strong> Many make it for Christmas and summer parties.</li>
+        <li><strong>Check Argentine restaurants' holiday menus</strong> in late November and December. It is often offered as a Christmas takeaway platter.</li>
+        <li><strong>Look for Latin American caterers</strong> who sell "picadas" and holiday platters.</li>
+        <li><strong>Order early.</strong> Popular places stop taking orders days before December 24.</li>
+      </ol>
+
+      <h3>Places to start in New York and Miami</h3>
+      <p>The restaurant guide The Infatuation lists these Argentine bakeries and markets. We have not confirmed that each sells vitel toné, which is usually seasonal, so contact them first.</p>
+      <ul>
+        <li><strong>New York:</strong> La Nueva Bakery (Jackson Heights) and Rio de la Plata Bakery (Queens), from <a href="https://www.theinfatuation.com/new-york/cuisines/argentinian" target="_blank" rel="noopener">The Infatuation's Argentinian guide</a>.</li>
+        <li><strong>Miami:</strong> Graziano's Market (Coral Gables) and Charlotte Bakery (Miami Beach), from <a href="https://www.theinfatuation.com/miami/cuisines/argentinian" target="_blank" rel="noopener">The Infatuation's Miami guide</a>.</li>
+      </ul>
+
+      <h2>How Much Does Vitel Toné Cost?</h2>
+      <p>In Argentina, the newspaper BAE Negocios <a href="https://www.baenegocios.com/negocios/cuanto-sale-hacer-vitel-tone-precios-ingredientes-y-receta-facil-20251219-0004.html" target="_blank" rel="noopener">estimated in December 2025</a> that making vitel toné at home cost between 20,000 and more than 30,000 Argentine pesos. Its ingredient prices included:</p>
+      <table>
+        <thead><tr><th>Ingredient</th><th>Price (December 2025)</th></tr></thead>
+        <tbody>
+          <tr><td>Peceto (eye of round), per kg</td><td>ARS 17,000 to 19,000</td></tr>
+          <tr><td>Anchovy fillets, jar</td><td>ARS 5,200</td></tr>
+          <tr><td>Capers</td><td>ARS 4,000 to 5,000</td></tr>
+          <tr><td>Mayonnaise, small</td><td>From ARS 2,400</td></tr>
+          <tr><td>Cream</td><td>From ARS 1,500</td></tr>
+          <tr><td>Canned tuna</td><td>About ARS 1,200</td></tr>
+        </tbody>
+      </table>
+      <p>The beef is the biggest cost. The article did not say how many servings its estimate covered.</p>
+
+      <h2>Food Safety: Keep It Cold</h2>
+      <p>Vitel toné combines cooked meat and a mayonnaise sauce, and it is often served on hot summer nights in Argentina. Argentina's health ministry <a href="https://www.argentina.gob.ar/enfermedades-transmitidas-por-alimentos" target="_blank" rel="noopener">food safety guidance</a> advises preferring commercial mayonnaise over homemade, keeping cream- and mayonnaise-based foods refrigerated, and on hot days not leaving food out of the fridge for more than one hour. Its general rule is not to leave cooked food at room temperature for more than two hours.</p>
+      <p>In practice: keep the sauce and meat refrigerated until shortly before serving, and put leftovers back in the fridge promptly.</p>
+
+      <h2>Easy Vitel Toné Recipe</h2>
+      <h3>Ingredients (serves 6 to 8)</h3>
+      <ul>
+        <li>1 to 1.2 kg (about 2.5 lb) eye of round (peceto), trimmed</li>
+        <li>1 onion, 1 carrot, 1 celery stalk, bay leaf, salt and peppercorns</li>
+        <li>About 1 cup (250 g) commercial mayonnaise</li>
+        <li>1 can of tuna in oil or water, drained</li>
+        <li>3 to 4 anchovy fillets</li>
+        <li>1 to 2 tablespoons capers, plus extra to garnish</li>
+        <li>A splash of cream (optional), lemon juice and some of the cooking broth</li>
+      </ul>
+      <h3>Method</h3>
+      <ol>
+        <li>Simmer the meat with the vegetables and seasonings in water to cover until tender, about 1 to 1.5 hours.</li>
+        <li>Cool the meat in its broth, then refrigerate it until firm, ideally overnight.</li>
+        <li>Blend the mayonnaise, tuna, anchovies, capers, lemon juice and a little broth (or cream) until smooth. Taste and adjust.</li>
+        <li>Slice the meat very thinly across the grain.</li>
+        <li>Layer the slices on a platter, cover with sauce, garnish with capers and refrigerate until serving.</li>
+      </ol>
+      <p>Making Argentine dishes at home? See our guide to finding <a href="/articles/best-tarta-de-brocoli-near-me/">tarta de brócoli near you</a>.</p>
+
+      <h2>Vitel Toné FAQs</h2>
+      <h3>What is vitel toné in English?</h3>
+      <p>Veal or beef in tuna sauce, known in Italy as vitello tonnato.</p>
+      <h3>Why do Argentines eat vitel toné at Christmas?</h3>
+      <p>Italian immigrants brought the dish, and because it is served cold it suits Christmas in the Southern Hemisphere summer.</p>
+      <h3>What cut of meat is used for vitel toné?</h3>
+      <p>In Argentina, peceto (eye of round). In Italy, traditionally veal round.</p>
+      <h3>How long does vitel toné last in the fridge?</h3>
+      <p>Keep it refrigerated and eat it within a day or two. Do not leave it out for long on hot days.</p>
+      <h3>Can I make vitel toné ahead?</h3>
+      <p>Yes. It is usually better made a day ahead so the meat absorbs the sauce.</p>
+
+      <p><em>Checked on November 11, 2026, against El Cronista, BAE Negocios, Argentina's health ministry and The Infatuation. Menus and prices change; contact businesses before visiting.</em></p>
+    `
+  },
+  {
     id: "brasssmile-com-review",
     title: "BrassSmile.com Review: A Dental Care Site or a Multi-Topic Blog? What We Verified",
     excerpt: "BrassSmile.com brands itself as dental care, but it is a 237-post blog on business, Diwali, gold and casinos. What we verified about the site.",
