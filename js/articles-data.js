@@ -1,6 +1,391 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "fda-glp1-naion-eye-warning-ozempic-wegovy",
+    title: "FDA Orders NAION Eye Warning on Ozempic, Wegovy, Mounjaro and All GLP-1 Drugs",
+    excerpt: "The FDA is adding a warning about NAION, a rare eye condition that can cause vision loss, to all GLP-1 drugs. The risk figures and what patients should do.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T10:00:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Blister packs of white tablets and capsules scattered on a blue surface",
+    isTrending: true,
+    views: 0,
+    tags: ["GLP-1", "Ozempic", "Wegovy", "FDA", "NAION"],
+    content: `
+      <p class="lead">The US Food and Drug Administration (FDA) is requiring every GLP-1 drug, including Ozempic, Wegovy, Mounjaro and Zepbound, to carry a new warning about NAION, a rare eye condition that can cause sudden, permanent vision loss in one eye. In a Drug Safety Communication issued on November 9, 2026, the agency said it found "a potential increased risk of rare NAION events" but did not conclude that the drugs cause it. Patients should not stop their medication without talking to a doctor.</p>
+
+      <blockquote>
+        <p><strong>FDA GLP-1 eye warning, the key facts:</strong></p>
+        <ul>
+          <li><strong>What changed:</strong> NAION is being added to the Warnings and Precautions section of all GLP-1 drug labels.</li>
+          <li><strong>Drugs covered:</strong> semaglutide (Ozempic, Wegovy, Rybelsus), tirzepatide (Mounjaro, Zepbound), liraglutide (Victoza, Saxenda), dulaglutide (Trulicity) and others in the class.</li>
+          <li><strong>The risk:</strong> about 6.4 NAION cases per 100,000 patient-years on GLP-1 drugs, versus 3.8 on comparison treatments, in an FDA review of 126 trials.</li>
+          <li><strong>Symptoms:</strong> sudden, painless vision loss or blurring in one eye.</li>
+          <li><strong>What to do:</strong> keep taking your medicine unless your doctor says otherwise, and seek care promptly if symptoms appear.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is NAION?</h2>
+      <p>Nonarteritic anterior ischemic optic neuropathy (NAION) happens when blood flow to the optic nerve, which carries signals from the eye to the brain, is reduced. The FDA describes it as a rare condition that can cause sudden, painless, decreased vision in one eye, which can be permanent. The American Academy of Ophthalmology told the BBC there is no known treatment to reverse the vision loss, and that NAION is the most common cause of acute optic nerve injury in people over 50.</p>
+      <p>According to the FDA, NAION occurs in 2.3 to 10.2 people per 100,000 adults over 50 each year in the general population.</p>
+
+      <h2>What the FDA Found</h2>
+      <p>The agency's <a href="https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential" target="_blank" rel="noopener">Drug Safety Communication</a> is based on several lines of evidence:</p>
+      <ul>
+        <li><strong>A meta-analysis of 126 clinical trials:</strong> NAION occurred at 6.4 events per 100,000 person-years among GLP-1 users versus 3.8 among patients on placebo or other glucose-lowering drugs. Only 15 probable NAION events were identified.</li>
+        <li><strong>Real-world data</strong> from the FDA's Sentinel system in adults with type 2 diabetes: GLP-1 users had a higher risk than users of DPP-4 inhibitors (hazard ratio 1.43), but the comparison with SGLT-2 inhibitors was not statistically significant.</li>
+        <li><strong>Reports and published studies</strong>, which the FDA said were hard to interpret because many GLP-1 patients already have NAION risk factors such as diabetes.</li>
+      </ul>
+      <p>The FDA said the cause of NAION is not fully understood and that animal studies did not reveal how GLP-1 drugs might trigger it. That is why the label speaks of a "potential" risk.</p>
+
+      <h2>Which GLP-1 Drugs Get the New Warning?</h2>
+      <table>
+        <thead><tr><th>Active ingredient</th><th>Brand names</th></tr></thead>
+        <tbody>
+          <tr><td>Semaglutide</td><td>Ozempic, Wegovy, Rybelsus</td></tr>
+          <tr><td>Tirzepatide</td><td>Mounjaro, Zepbound</td></tr>
+          <tr><td>Liraglutide</td><td>Victoza, Saxenda</td></tr>
+          <tr><td>Dulaglutide</td><td>Trulicity</td></tr>
+          <tr><td>Orforglipron</td><td>Foundayo</td></tr>
+          <tr><td>Combinations and others</td><td>Xultophy, Soliqua, generic exenatide</td></tr>
+        </tbody>
+      </table>
+      <p>The list follows the FDA's communication as reported by <a href="https://www.pharmacytimes.com/view/fda-requires-class-wide-glp-1-ra-labeling-changes-for-potential-naion-risk" target="_blank" rel="noopener">Pharmacy Times</a>.</p>
+
+      <h2>What Drugmakers and Doctors Say</h2>
+      <p>Novo Nordisk, which makes Ozempic and Wegovy, told the <a href="https://www.bbc.com/news/articles/crwydyde0lp3o" target="_blank" rel="noopener">BBC</a> it believes the data "do not establish a cause-and-effect relationship", adding that patient safety "is a top priority". The American Academy of Ophthalmology said "any added risk appears small, and it has not been established that these medications cause NAION", and urged patients: "Don't stop your medication without talking to your doctor."</p>
+      <p>Regulators elsewhere moved earlier. In 2025, the European Medicines Agency's safety committee concluded that NAION is a very rare side effect of semaglutide, estimating it may affect up to 1 in 10,000 people taking it. A US study of about 17,000 patients published two years ago found semaglutide users were four times more likely to be diagnosed with NAION, though one of its authors, Harvard ophthalmologist Dr Joseph Rizzo, called the findings "significant but tentative".</p>
+
+      <h2>What Patients Should Do</h2>
+      <ul>
+        <li><strong>Do not stop treatment on your own.</strong> GLP-1 drugs treat diabetes, obesity and heart risk, and stopping suddenly has its own risks.</li>
+        <li><strong>Know the warning signs:</strong> sudden, painless vision loss in one eye, a blurred or missing area of vision, colour distortion, or reduced sharpness.</li>
+        <li><strong>Act quickly.</strong> The FDA says to contact a health care professional right away, and doctors are told to refer suspected cases promptly to an ophthalmologist.</li>
+        <li><strong>If you have had NAION before,</strong> talk to your doctor about whether to continue, as the risk of recurrence is higher.</li>
+        <li><strong>Report side effects</strong> to the FDA's MedWatch program online or at 1-800-332-1088.</li>
+      </ul>
+
+      <h2>Why It Matters for the GLP-1 Market</h2>
+      <p>GLP-1 drugs are among the world's best-selling medicines, and a class-wide label change touches every company in the market, from Novo Nordisk and Eli Lilly to makers of newer oral drugs. Label warnings rarely stop prescribing on their own, but they shape how doctors screen patients and what insurers and employers weigh when deciding coverage. Expect the warning to feature in prescribing discussions for patients with existing eye disease or a past NAION diagnosis.</p>
+      <p>For more health coverage, see our guide to <a href="/articles/running-every-day-benefits-risks/">the benefits and risks of running every day</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Does Ozempic cause blindness?</h3>
+      <p>The FDA found a potential increased risk of NAION, a rare condition that can cause vision loss in one eye. It did not conclude that GLP-1 drugs cause it, and the absolute risk is small.</p>
+      <h3>Should I stop taking Wegovy or Mounjaro?</h3>
+      <p>No, not without speaking to your doctor. Seek urgent care if you notice sudden vision changes.</p>
+      <h3>How common is NAION on GLP-1 drugs?</h3>
+      <p>In the FDA's trial analysis, about 6.4 cases per 100,000 patient-years, compared with 3.8 on other treatments.</p>
+
+      <p><em>This article is for information only and is not medical advice. Checked on November 11, 2026, against the FDA's Drug Safety Communication, BBC News and Pharmacy Times.</em></p>
+    `
+  },
+  {
+    id: "russian-fintech-a7-india-payments-sanctions",
+    title: "Sanctioned Russian Payments Firm A7 Pitches India Rupee and Stablecoin Services",
+    excerpt: "Russia's A7 pitched India payment services in Mumbai. The US calls the A7 Network a transnational criminal organization. What Indian firms should know.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T10:05:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Hand entering a PIN on the metal keypad of a cash machine",
+    isTrending: true,
+    views: 0,
+    tags: ["A7", "Russia", "India", "Sanctions", "Cross-Border Payments"],
+    content: `
+      <p class="lead">A7, a Russian cross-border payments company backed by state-owned PSB Bank, used a crypto conference in Mumbai last week to pitch India-Russia payment services, including a tool that lets buyers settle overseas invoices in the USDT stablecoin. The announcement appeared across Indian media as a sponsored "impact feature". What those stories leave out: the US Treasury designated the A7 Network a transnational criminal organization on October 1, 2026, and A7 is already under US, UK and EU sanctions. For Indian businesses, that changes the risk calculation entirely.</p>
+
+      <blockquote>
+        <p><strong>A7's India payments push, the key facts:</strong></p>
+        <ul>
+          <li><strong>Who:</strong> A7, set up in 2024 with the participation of Russia's state-owned PSB Bank. It calls itself Russia's largest payment agent.</li>
+          <li><strong>What:</strong> at the Unchained Summit India in Mumbai (November 5 to 6, 2026), A7 presented an invoice service paid in USDT and a proposed rupee-rouble transfer system for individuals.</li>
+          <li><strong>Company claim:</strong> its payments to India in January to August 2026 were 60% higher than in all of 2025.</li>
+          <li><strong>Sanctions:</strong> the US Treasury calls the A7 Network "a shadow banking network with ties to Russia used by the Iranian regime to evade sanctions".</li>
+          <li><strong>Risk:</strong> dealing with designated entities can expose companies and banks to US secondary sanctions.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What A7 Announced in Mumbai</h2>
+      <p>According to the announcement published by <a href="https://www.businesstoday.in/impact-feature/story/russian-fintech-a7-announces-plans-to-expand-cross-border-payment-options-for-india-at-mumbai-summit-566244-2026-11-06" target="_blank" rel="noopener">BusinessToday</a> under its "Impact Feature" label, and syndicated by other outlets, A7's delegation presented two services at the Unchained Summit India, where its A7 International unit was a sponsor:</p>
+      <ul>
+        <li><strong>A7 International invoice payments</strong>, launched in October 2026, which let businesses and individuals pay overseas invoices in USDT. Suppliers receive US dollars, euros, Chinese yuan or UAE dirhams in their bank accounts, without needing a crypto wallet.</li>
+        <li><strong>A proposed national-currency transfer system</strong> for individuals moving money between India and Russia through local partner banks, to be tested first by Indian students and workers in Russia.</li>
+      </ul>
+      <p>A7 says it processed more than $110 billion in payments in 2025, handled about 19% of Russian businesses' foreign trade settlements, and serves about 15,000 corporate clients in more than 100 countries. These are company figures and could not be independently verified. The announcement also said PSB chairman Petr Fradkov had presented the national-currency proposal to Prime Minister Narendra Modi at INNOPROM India in September.</p>
+
+      <h2>The Sanctions Context the Announcement Leaves Out</h2>
+      <p>None of the syndicated announcements mention that A7 is one of the most heavily sanctioned payment networks in the world:</p>
+      <ul>
+        <li><strong>August 14, 2025:</strong> the US Office of Foreign Assets Control (OFAC) designated A7 LLC and Old Vector LLC, the issuer of the rouble-backed A7A5 token.</li>
+        <li><strong>October 1, 2026:</strong> the <a href="https://home.treasury.gov/news/press-releases/sb0644" target="_blank" rel="noopener">US Treasury</a> designated the A7 Network a "significant transnational criminal organization". It said the network "is led by Ilan Mironovich Shor", a sanctioned and convicted fraudster, and served the Central Bank of Iran, the Islamic Revolutionary Guard Corps and Iran-backed groups.</li>
+        <li><strong>Same day:</strong> the Financial Crimes Enforcement Network (FinCEN) proposed barring US financial institutions from processing transfers involving A7's sub-agents. It found those sub-agents processed more than $17 billion between January 2025 and June 2026.</li>
+      </ul>
+      <p>The UK sanctioned A7 in May 2025 and the European Union in July 2025, and both have since added related entities. Treasury's release does not mention India.</p>
+
+      <h2>Why Indian Businesses Should Be Careful</h2>
+      <p>India does not enforce US or EU sanctions as domestic law, and India-Russia trade in national currencies is legal. But Indian companies and banks with US dollar exposure, US customers or international correspondent banks can face serious consequences for dealing with US-designated entities, including loss of access to the dollar system.</p>
+      <p>Paying invoices through a sanctioned network via a stablecoin also raises compliance questions at home. The Reserve Bank of India has been cautious about private stablecoins, and banks screening incoming funds may flag transfers linked to A7.</p>
+      <p>Practical steps for exporters and importers:</p>
+      <ol>
+        <li><strong>Screen counterparties</strong> against the US OFAC, UK and EU sanctions lists before agreeing payment routes.</li>
+        <li><strong>Ask your bank</strong> whether it will accept funds routed through a given payment agent.</li>
+        <li><strong>Use established rupee-rouble channels</strong> such as banks operating special rupee vostro accounts approved by the Reserve Bank of India, rather than intermediaries that are under sanctions.</li>
+        <li><strong>Get legal advice</strong> before accepting stablecoin-based settlement.</li>
+      </ol>
+
+      <h2>The Bigger Picture: Russia's Search for Payment Routes</h2>
+      <p>Since Western sanctions cut several major Russian banks off from the SWIFT messaging system in 2022, Russian companies have relied on payment agents, third-country intermediaries and, increasingly, crypto tokens to settle trade. India has become one of Russia's biggest trading partners through oil purchases, which makes it an important market for any Russian payment provider. A7's Mumbai pitch is part of that push, and Western regulators are pushing back just as hard.</p>
+      <p>For related coverage, see our reports on <a href="/articles/binance-hack-6-3-billion-losses-covered/">crypto security at Binance</a> and on <a href="/articles/middle-east-fintech-boom-financial-inclusion-blind-spot/">the Middle East's fintech boom</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>What is A7 in Russia?</h3>
+      <p>A Russian cross-border payments company set up in 2024 with the participation of state-owned PSB Bank. The US Treasury has designated the A7 Network a transnational criminal organization.</p>
+      <h3>Is A7 sanctioned?</h3>
+      <p>Yes. The US designated A7 LLC in August 2025 and the wider A7 Network in October 2026. The UK and EU have also imposed sanctions.</p>
+      <h3>Can Indian companies use A7?</h3>
+      <p>It is not illegal under Indian law as such, but dealing with a US-designated network creates significant secondary-sanctions and banking risks. Take legal advice first.</p>
+
+      <p><em>Checked on November 11, 2026, against the A7 announcement as published by BusinessToday, the US Treasury and FinCEN. This article is for information only and is not legal advice.</em></p>
+    `
+  },
+  {
+    id: "middle-east-fintech-boom-financial-inclusion-blind-spot",
+    title: "Middle East Fintech Boom Leaves the Unbanked Behind, Industry Leaders Warn",
+    excerpt: "Gulf fintech is booming, but account ownership in Egypt, Jordan and Lebanon is below half. Why leaders from Botim and Emirates NBD call it a blind spot.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T10:10:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Dubai skyline at sunset with the Burj Khalifa and a busy highway interchange",
+    isTrending: true,
+    views: 0,
+    tags: ["Fintech", "Middle East", "UAE", "Financial Inclusion", "Banking"],
+    content: `
+      <p class="lead">The Middle East's fintech boom is real, but it is mostly serving people who already have bank accounts. That is the blind spot industry leaders highlighted to Fast Company Middle East this week: while the UAE and Gulf states pour money into AI-driven banking and digital wallets, account ownership in Egypt, Jordan and Lebanon remains below half of adults. Closing that gap, they argue, will depend less on disrupting banks and more on partnering with them, and on regulators agreeing common rules.</p>
+
+      <blockquote>
+        <p><strong>The Middle East fintech blind spot, in brief:</strong></p>
+        <ul>
+          <li><strong>The gap:</strong> 43% of adults in Egypt, 46% in Jordan and 23% in Lebanon had an account in 2024, according to the World Bank's Global Findex, compared with about 86% in the UAE in 2021.</li>
+          <li><strong>The criticism:</strong> Botim CEO Tariq Bin Hendi says "people that are overbanked are becoming even more overbanked".</li>
+          <li><strong>The AI push:</strong> Emirates NBD has more than 2,000 people embedding AI across the bank.</li>
+          <li><strong>The policy response:</strong> the UAE central bank's National Financial Inclusion Strategy 2026 to 2030.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is the Blind Spot?</h2>
+      <p>In a <a href="https://fastcompanyme.com/impact/does-the-middle-easts-fintech-boom-have-a-blind-spot/" target="_blank" rel="noopener">report by Fast Company Middle East</a>, executives from Botim, Emirates NBD and Ripple described a fintech industry that is growing quickly but concentrating on customers who are already well served.</p>
+      <p>Dr Tariq Bin Hendi, CEO of the UAE super-app Botim, put it bluntly: "people that are overbanked are becoming even more overbanked". New apps compete for the same salaried, smartphone-using customers in Dubai and Riyadh, while migrant workers, informal workers and people in lower-income countries in the region remain outside the formal financial system.</p>
+
+      <h2>The Numbers Behind the Gap</h2>
+      <table>
+        <thead><tr><th>Country</th><th>Adults with an account</th><th>Year</th></tr></thead>
+        <tbody>
+          <tr><td>United Arab Emirates</td><td>About 86%</td><td>2021 (latest comparable)</td></tr>
+          <tr><td>Jordan</td><td>46%</td><td>2024</td></tr>
+          <tr><td>Egypt</td><td>43%</td><td>2024</td></tr>
+          <tr><td>Lebanon</td><td>23%</td><td>2024</td></tr>
+        </tbody>
+      </table>
+      <p>Figures are from the World Bank's <a href="https://www.worldbank.org/en/publication/globalfindex" target="_blank" rel="noopener">Global Findex Database 2025</a>, as cited by Fast Company Middle East. Lebanon's figure reflects years of banking crisis, when depositors lost access to their savings.</p>
+
+      <h2>AI Efficiency Is Not the Same as Access</h2>
+      <p>Much of the region's fintech investment is going into artificial intelligence. Botim says AI now handles more than 70% of its customer service. At Emirates NBD, which operates in 13 countries, Group Chief Digital and Information Officer Miguel Rio-Tinto said more than 2,000 people are working on embedding AI across the bank, and predicted: "Banking is going to change more in the next five years because of AI than what it changed in the last 30 years."</p>
+      <p>AI can cut costs and speed up service, which in theory makes it cheaper to serve low-income customers. But cheaper service does not by itself bring unbanked people in. Many lack the documents, credit history or smartphones that digital onboarding assumes.</p>
+
+      <h2>Partnership, Not Disruption</h2>
+      <p>Bin Hendi was critical of fintechs that announce "I'm going to displace the incumbents". His argument is that banks already hold the licences, balance sheets and trust that fintechs lack, so the fastest route to scale is to partner with them. That view reflects a wider shift in the industry, as funding has become harder to raise and regulators have tightened rules for non-bank lenders and payment firms.</p>
+
+      <h2>Fragmented Rules Hold Back Regional Growth</h2>
+      <p>Reece Merrick, Ripple's managing director for the Middle East and Africa, pointed to inconsistent regulation across the region as a barrier, according to the report. In practice, a fintech licensed in one country can face a largely separate approval process to operate in another, such as Saudi Arabia, Bahrain or Egypt. He also pointed to stablecoins as one way to make cross-border payments cheaper, though rules for them also differ widely between countries.</p>
+      <p>Remittances illustrate the stakes. The Gulf hosts millions of migrant workers who send money home, and lower fees on those transfers would leave more money with families in South Asia and Africa.</p>
+
+      <h2>What Governments Are Doing</h2>
+      <p>The Central Bank of the UAE launched its National Financial Inclusion Strategy 2026 to 2030 in November 2025, with 12 initiatives developed alongside the World Bank, the OECD, the Arab Monetary Fund and more than 70 national stakeholders, according to Fast Company Middle East. Measures like digital ID, simplified accounts and low-cost wallets for migrant workers are the kind of steps that reach people the market has missed.</p>
+
+      <h2>Why It Matters for Investors and Businesses</h2>
+      <ul>
+        <li><strong>The next growth market is the underserved.</strong> Gulf fintechs competing for the same banked customers face shrinking returns.</li>
+        <li><strong>Partnerships are the business model.</strong> Bank-fintech tie-ups are likely to outpace standalone challengers.</li>
+        <li><strong>Regulatory harmony is a catalyst.</strong> Any move toward common licensing in the Gulf would favour firms already operating in several markets.</li>
+      </ul>
+      <p>Cross-border payments in the region are also drawing scrutiny for other reasons, as our report on <a href="/articles/russian-fintech-a7-india-payments-sanctions/">Russian payments company A7's push into India</a> shows. For small businesses, see how <a href="/articles/sme-cash-flow-fintech-revolution/">fintech is changing cash flow management</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>What is the Middle East fintech blind spot?</h3>
+      <p>Fintech growth is concentrated on customers who already have bank accounts, while large shares of adults in countries such as Egypt, Jordan and Lebanon remain unbanked.</p>
+      <h3>How many adults in Egypt have a bank account?</h3>
+      <p>About 43% in 2024, according to the World Bank's Global Findex.</p>
+      <h3>What is the UAE National Financial Inclusion Strategy?</h3>
+      <p>A 2026 to 2030 plan from the Central Bank of the UAE with 12 initiatives to widen access to financial services.</p>
+
+      <p><em>Checked on November 11, 2026, against Fast Company Middle East and the World Bank's Global Findex.</em></p>
+    `
+  },
+  {
+    id: "ibm-microsoft-imagine-enterprise-ai-agent-platform",
+    title: "IBM and Microsoft Launch Imagine Enterprise, an AI Agent Platform for Regulated Industries",
+    excerpt: "IBM and Microsoft's Imagine Enterprise combines 6,000+ IBM Consulting AI agents with Microsoft's cloud for banks, insurers and retailers. What we know.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T10:15:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Network of glowing connected cubes against a dark background",
+    isTrending: true,
+    views: 0,
+    tags: ["IBM", "Microsoft", "AI Agents", "Enterprise AI", "Imagine Enterprise"],
+    content: `
+      <p class="lead">IBM and Microsoft have launched Imagine Enterprise, a joint platform for building, running and governing AI agents that handle industry-specific work in regulated sectors. Announced on November 10, 2026, it combines more than 6,000 AI agents and assets from IBM Consulting with Microsoft's AI, data and security cloud, starting with financial services, insurance and retail. It is sold as a consulting-led service rather than an off-the-shelf product, and pricing was not disclosed.</p>
+
+      <blockquote>
+        <p><strong>IBM and Microsoft's Imagine Enterprise, the key facts:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> an "agentic" platform to build, run and govern AI agents across business processes.</li>
+          <li><strong>Who it is for:</strong> large companies in regulated industries.</li>
+          <li><strong>First industries:</strong> financial services, insurance and retail, with manufacturing, energy, public sector and mobility planned.</li>
+          <li><strong>What is inside:</strong> IBM Consulting Advantage plus Microsoft Foundry, Copilot Studio, GitHub Copilot, Fabric, Entra, Purview, Defender and Azure.</li>
+          <li><strong>How to buy:</strong> through IBM Consulting, either fully managed or co-built. No price or general availability date was given.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Imagine Enterprise?</h2>
+      <p>According to the <a href="https://news.microsoft.com/source/2026/11/10/ibm-and-microsoft-announce-a-new-ai-agent-platform-designed-for-industry-specific-transformation/" target="_blank" rel="noopener">joint announcement</a>, Imagine Enterprise is designed to connect AI agents (software that can carry out multi-step tasks on its own) to a company's data, systems and daily workflows, with controls for security, observability and AI compliance built in.</p>
+      <p>The companies highlight three selling points:</p>
+      <ul>
+        <li><strong>Prebuilt industry expertise:</strong> more than 6,000 AI agents and assets from IBM Consulting.</li>
+        <li><strong>Fit with existing systems:</strong> it connects to a company's current data and processes, with enterprise security, identity and governance.</li>
+        <li><strong>Shared enterprise knowledge:</strong> it links business knowledge, data and context across people and agents.</li>
+      </ul>
+
+      <h2>What Each Company Brings</h2>
+      <table>
+        <thead><tr><th>IBM</th><th>Microsoft</th></tr></thead>
+        <tbody>
+          <tr><td>IBM Consulting Advantage, its AI delivery platform, including Process Studio, Context Studio and Advantage Core</td><td>Microsoft Foundry, Copilot Studio and GitHub Copilot to build and orchestrate agents</td></tr>
+          <tr><td>Industry frameworks and more than 6,000 agents and assets</td><td>Microsoft Fabric for data and Microsoft 365 infrastructure</td></tr>
+          <tr><td>Consultants and forward-deployed engineers for qualifying projects</td><td>Entra (identity), Purview (data governance), Defender (security) and Azure cloud</td></tr>
+        </tbody>
+      </table>
+      <p>Notably, the release does not mention IBM's own watsonx AI platform. The technical foundation is Microsoft's cloud, while IBM provides the consulting, industry content and delivery tools.</p>
+
+      <h2>What the Executives Said</h2>
+      <p>Mohamad Ali, senior vice president and head of IBM Consulting, said: "Clients are no longer looking for AI that simply helps people do the same work a little faster." Rodrigo Kede Lima, president of Microsoft's Frontier Company, said: "Enterprise AI will be won by organizations that can turn their data, industry expertise and AI into action."</p>
+      <p>The only customer named is SEI, a financial technology, operations and asset management provider, which is exploring agentic technology with the two companies. Sneha Shah, SEI's chief AI strategist, said: "AI is evolving quickly, and our focus at SEI is on applying it with intention in ways that strengthen trust."</p>
+
+      <h2>Why It Matters</h2>
+      <p>Most large companies have run AI pilots, but turning them into reliable, audited processes is harder, especially in banking and insurance, where every automated decision may face regulators. Imagine Enterprise is a bet that buyers want a packaged combination of consulting, prebuilt industry agents and governance, rather than building everything themselves.</p>
+      <p>For Microsoft, the deal pushes more enterprise AI workloads onto Azure and its Copilot tools. For IBM, it strengthens a consulting business that increasingly sells AI transformation projects. It also shows rivals in cloud and consulting increasingly partnering, rather than competing, on enterprise AI.</p>
+      <p>Questions remain. The companies did not give prices, timelines or measurable results, and only one prospective customer was named. Businesses evaluating it should ask for evidence from live deployments, clear data ownership terms and an exit plan before committing.</p>
+      <p>For more on enterprise AI adoption, see our report on <a href="/articles/ai-enterprise-adoption-roi-surge/">AI returns in the enterprise</a> and our coverage of <a href="/articles/cybersecurity-compliance-middle-market/">cybersecurity compliance for mid-sized firms</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>What is IBM and Microsoft's Imagine Enterprise?</h3>
+      <p>A joint platform to build, run and govern AI agents for industry-specific processes, using IBM Consulting's assets and Microsoft's cloud, AI and security tools.</p>
+      <h3>Which industries does Imagine Enterprise support?</h3>
+      <p>Financial services, insurance and retail first, with manufacturing, energy, the public sector and mobility planned.</p>
+      <h3>How much does Imagine Enterprise cost?</h3>
+      <p>Pricing was not disclosed. It is delivered through IBM Consulting engagements.</p>
+
+      <p><em>Checked on November 11, 2026, against the joint IBM and Microsoft announcement.</em></p>
+    `
+  },
+  {
+    id: "cma-akzonobel-axalta-merger-competition-concerns",
+    title: "UK CMA Flags Competition Concerns Over AkzoNobel's $25 Billion Axalta Merger",
+    excerpt: "The UK CMA says AkzoNobel's merger with Axalta could hurt competition in vehicle refinish paint, threatening a Phase 2 probe unless remedies are offered.",
+    category: "Markets & Finance",
+    categorySlug: "markets",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T10:20:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Paint roller spreading pale blue paint across a white wall",
+    isTrending: true,
+    views: 0,
+    tags: ["AkzoNobel", "Axalta", "CMA", "Mergers", "Coatings"],
+    content: `
+      <p class="lead">The UK's Competition and Markets Authority (CMA) has found that AkzoNobel's planned $25 billion merger with Axalta could reduce competition in the UK, and will send the deal to an in-depth Phase 2 investigation unless the companies offer an acceptable fix. The CMA's Phase 1 decision, published on November 11, 2026, centres on vehicle refinish coatings, the paints body shops use to repair cars. The companies say they plan to offer the same remedy that won EU approval and still expect to complete the deal by early 2027.</p>
+
+      <blockquote>
+        <p><strong>CMA and AkzoNobel-Axalta, the key facts:</strong></p>
+        <ul>
+          <li><strong>Decision:</strong> the deal "may be expected to result in a substantial lessening of competition" in the UK, the CMA said.</li>
+          <li><strong>Market concerned:</strong> vehicle refinish coatings, where the combined company would supply an estimated 40% to 50% of the UK market, according to Investing.com's report of the CMA findings.</li>
+          <li><strong>Next step:</strong> the companies have until November 18 to offer remedies, or face Phase 2.</li>
+          <li><strong>Likely fix:</strong> selling AkzoNobel's vehicle refinish business in Europe and the UK, as agreed with the EU.</li>
+          <li><strong>Deal:</strong> an all-stock merger of equals announced in November 2025, valued at about $25 billion including debt.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What the CMA Decided</h2>
+      <p>On its <a href="https://www.gov.uk/cma-cases/akzonobel-slash-axalta-merger-inquiry" target="_blank" rel="noopener">case page</a>, the CMA said it "has decided, on the evidence currently available to it, that it is or may be the case that this merger" may be expected to result in "a substantial lessening of competition within a market or markets in the United Kingdom". It added: "This merger will be referred for an in-depth, phase 2 investigation unless the parties offer an acceptable undertaking to address these competition concerns."</p>
+      <p>According to <a href="https://in.investing.com/news/stock-market-news/uk-watchdog-flags-competition-concerns-in-akzonobelaxalta-deal-93CH-5696291" target="_blank" rel="noopener">Investing.com's report</a>, the CMA found that AkzoNobel and Axalta compete closely in vehicle refinish, with similar products, technical support and approvals from carmakers and insurers. It warned that removing this competition "could result in higher prices or reduced quality and support for customers", meaning UK body shops and, indirectly, drivers and insurers.</p>
+
+      <h2>What Happens Next</h2>
+      <ol>
+        <li><strong>By November 18, 2026:</strong> AkzoNobel and Axalta must offer undertakings (formal commitments) to address the concerns.</li>
+        <li><strong>CMA review:</strong> if the CMA believes the offer may be acceptable, it can consult on it instead of opening Phase 2.</li>
+        <li><strong>Otherwise:</strong> the deal goes to an in-depth Phase 2 investigation, which can take months and could delay completion.</li>
+      </ol>
+      <p>The companies said they plan to offer the same remedy accepted by the European Commission, which cleared the merger the previous week after AkzoNobel agreed to sell its vehicle refinish coatings business in Europe and the UK. They said they "remain confident of completing the merger by early 2027".</p>
+
+      <h2>About the AkzoNobel-Axalta Deal</h2>
+      <p>AkzoNobel, the Dutch maker of Dulux paints, and Axalta, a US coatings company based in Philadelphia, <a href="https://ir.axalta.com/news/press-releases/detail/671/" target="_blank" rel="noopener">announced</a> an all-stock "merger of equals" on November 18, 2025. Key terms:</p>
+      <ul>
+        <li><strong>Value:</strong> combined enterprise value of about $25 billion, with about $17 billion in revenue.</li>
+        <li><strong>Ownership:</strong> AkzoNobel shareholders about 55%, Axalta shareholders about 45%. Axalta holders receive 0.6539 AkzoNobel shares for each Axalta share.</li>
+        <li><strong>Base:</strong> dual headquarters in Amsterdam and Philadelphia, domiciled in the Netherlands, eventually listed only on the New York Stock Exchange.</li>
+        <li><strong>Leadership:</strong> AkzoNobel CEO Greg Poux-Guillaume to lead the combined company, with Axalta CEO Chris Villavarayan as deputy CEO.</li>
+        <li><strong>Synergies:</strong> about $600 million a year in pre-tax cost savings targeted.</li>
+      </ul>
+
+      <h2>Why Vehicle Refinish Matters</h2>
+      <p>Vehicle refinish coatings are a specialist, high-margin business. Body shops need paints that exactly match carmakers' colours and are approved by insurers, which makes it hard for new suppliers to break in. With both companies among the leading suppliers, regulators in Brussels and London focused on this overlap. Selling AkzoNobel's European and UK refinish business is designed to keep a strong independent competitor in the market.</p>
+      <p>The case is a test of the CMA's post-Brexit approach: having aligned with the EU's remedy, a quick acceptance would suggest the UK regulator is willing to follow EU solutions where they address UK concerns.</p>
+      <p>For more on global markets and dealmaking, see our <a href="/category/markets/">Markets &amp; Finance coverage</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Has the UK blocked the AkzoNobel-Axalta merger?</h3>
+      <p>No. The CMA has raised concerns and will open an in-depth investigation unless the companies offer an acceptable remedy by November 18.</p>
+      <h3>What remedy will AkzoNobel and Axalta offer?</h3>
+      <p>They plan to offer the same remedy agreed with the EU: selling AkzoNobel's vehicle refinish coatings business in Europe and the UK.</p>
+      <h3>When will the AkzoNobel-Axalta merger close?</h3>
+      <p>The companies say they expect to complete it by early 2027.</p>
+
+      <p><em>Checked on November 11, 2026, against the CMA case page, Investing.com and the companies' November 2025 announcement. This article is not investment advice.</em></p>
+    `
+  },
+  {
     id: "sfm-compile",
     title: "SFM Compile Guide: How to Compile Models for Source Filmmaker With Studiomdl and Crowbar",
     excerpt: "How to compile models for Source Filmmaker: QC files, studiomdl, Crowbar, output folders and common errors, plus why to avoid fake \"SFMCompile\" downloads.",

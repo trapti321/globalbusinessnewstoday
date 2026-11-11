@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/cma-akzonobel-axalta-merger-competition-concerns/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-11T10:20:00Z</news:publication_date>
+      <news:title>UK CMA Flags Competition Concerns Over AkzoNobel&#039;s $25 Billion Axalta Merger</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/ibm-microsoft-imagine-enterprise-ai-agent-platform/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-11T10:15:00Z</news:publication_date>
+      <news:title>IBM and Microsoft Launch Imagine Enterprise, an AI Agent Platform for Regulated Industries</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/middle-east-fintech-boom-financial-inclusion-blind-spot/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-11T10:10:00Z</news:publication_date>
+      <news:title>Middle East Fintech Boom Leaves the Unbanked Behind, Industry Leaders Warn</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/russian-fintech-a7-india-payments-sanctions/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-11T10:05:00Z</news:publication_date>
+      <news:title>Sanctioned Russian Payments Firm A7 Pitches India Rupee and Stablecoin Services</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/articles/fda-glp1-naion-eye-warning-ozempic-wegovy/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-11T10:00:00Z</news:publication_date>
+      <news:title>FDA Orders NAION Eye Warning on Ozempic, Wegovy, Mounjaro and All GLP-1 Drugs</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/best-vitel-tone-near-me/</loc>
     <news:news>
       <news:publication>
@@ -394,17 +449,6 @@
       </news:publication>
       <news:publication_date>2026-11-09T10:10:00Z</news:publication_date>
       <news:title>Lam Research Approves $25 Billion Buyback as Chip Stocks Swing</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/airbnb-q3-2026-earnings/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T10:00:00Z</news:publication_date>
-      <news:title>Airbnb Q3 2026 Earnings: Revenue Up 19%, Outlook Raised and $12 Billion Buyback</news:title>
     </news:news>
   </url>
 </urlset>
