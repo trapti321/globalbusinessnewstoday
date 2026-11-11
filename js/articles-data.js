@@ -1,6 +1,106 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "chatgpt-business-hub-claim-business-analytics",
+    title: "ChatGPT Business Hub: OpenAI Lets Businesses Claim Profiles and See Mentions and Clicks",
+    excerpt: "OpenAI's Businesses in ChatGPT beta lets companies claim a profile, track mentions and website clicks, and launch Business Agents. How it works.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-11T15:00:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1679083216051-aa510a1a2c0e?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "The ChatGPT logo on a green glass app icon against a pale teal background",
+    isTrending: true,
+    views: 0,
+    tags: ["ChatGPT", "OpenAI", "Business Hub", "GEO", "AI Search"],
+    content: `
+      <p class="lead">OpenAI has launched Businesses in ChatGPT, a beta that lets companies claim their business inside ChatGPT, keep their details and products up to date, and see how often ChatGPT mentions them and sends clicks to their website. Announced on November 10, 2026, the tool works through a new Business Hub at chatgpt.com/business-hub. It gives marketers their first first-party data on ChatGPT visibility, which search professionals are already comparing to Google Search Console and Google Business Profile.</p>
+
+      <blockquote>
+        <p><strong>ChatGPT Business Hub, the key facts:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> a free beta where businesses claim a ChatGPT profile, edit their information and add product feeds with prices and availability.</li>
+          <li><strong>Analytics:</strong> mentions, website clicks and "discovery topics", shown as aggregated data over 28 days.</li>
+          <li><strong>Who can claim:</strong> eligible businesses located where ChatGPT is available.</li>
+          <li><strong>Business Agents:</strong> branded AI agents that answer customer questions, available first to eligible US ecommerce and online service businesses.</li>
+          <li><strong>Privacy:</strong> OpenAI says it does not share users' conversations with businesses.</li>
+          <li><strong>No ranking boost:</strong> OpenAI says claiming a profile does not guarantee better placement.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What OpenAI Announced</h2>
+      <p>In its <a href="https://openai.com/index/introducing-businesses-chatgpt/" target="_blank" rel="noopener">announcement</a>, OpenAI said it is "introducing Businesses in ChatGPT in beta, giving businesses a new way to connect with the 1.2 billion people who use ChatGPT each week." The launch has three parts:</p>
+      <ol>
+        <li><strong>Claim your business.</strong> Once verified, a company can update key details and add self-service product feeds with pricing and availability.</li>
+        <li><strong>See insights.</strong> Business Hub reports how often the business is mentioned and how many clicks its website receives from ChatGPT.</li>
+        <li><strong>Launch a Business Agent.</strong> Eligible companies can build, test and publish an agent that answers questions about their products and services.</li>
+      </ol>
+      <p>The feature was first spotted before launch. Juozas Kaziukėnas posted on LinkedIn that ChatGPT was building a tool to "track how often your business is mentioned in ChatGPT conversations", as <a href="https://www.seroundtable.com/chatgpt-tools-for-business-42476.html" target="_blank" rel="noopener">Search Engine Roundtable</a> reported on November 6. OpenAI made it official four days later.</p>
+
+      <h2>What the Analytics Show, and What They Don't</h2>
+      <p>For marketers, the analytics are the biggest news. Until now, businesses could only estimate their visibility in ChatGPT using third-party tools that run sample prompts. Business Hub provides OpenAI's own counts.</p>
+      <table>
+        <thead><tr><th>Metric</th><th>What it measures</th></tr></thead>
+        <tbody>
+          <tr><td>Mentions</td><td>How often the business appears in ChatGPT responses. For online businesses, a mention counts only when ChatGPT references the business's website; for local businesses, showing the location is enough, according to <a href="https://venturebeat.com/technology/openai-lets-you-claim-your-business-in-chatgpt-and-set-up-a-custom-agentic-ai-customer-sales-rep" target="_blank" rel="noopener">VentureBeat</a>.</td></tr>
+          <tr><td>Website clicks</td><td>Recorded clicks on links to the business's website in ChatGPT</td></tr>
+          <tr><td>Discovery topics</td><td>"Common themes across conversations where their website is cited", in OpenAI's words</td></tr>
+        </tbody>
+      </table>
+      <p>There are important limits:</p>
+      <ul>
+        <li><strong>No prompts or chats.</strong> OpenAI says: "We don't share users' conversations or Business Agent chats with businesses." Businesses cannot see the exact questions that led to a mention.</li>
+        <li><strong>Minimum thresholds.</strong> Insights "are only available when there are enough conversations or interactions to meet certain thresholds", so smaller businesses may see blank data at first.</li>
+        <li><strong>Clicks are not visits.</strong> According to Search Engine Roundtable, the tooltip in Business Hub says: "Clicks don't confirm website visits or conversions." Businesses still need their own analytics to measure sales.</li>
+        <li><strong>No competitor benchmarks.</strong> Kaziukėnas noted that the tool does not show rankings or competitor comparisons.</li>
+      </ul>
+
+      <h2>How to Claim Your Business in ChatGPT</h2>
+      <ol>
+        <li><strong>Go to Business Hub</strong> at chatgpt.com/business-hub and search for your business.</li>
+        <li><strong>Verify ownership.</strong> Depending on the business, OpenAI verifies a claim by business phone number (call or text), email, website domain (DNS) or a connected Shopify store, according to Search Engine Roundtable and VentureBeat.</li>
+        <li><strong>Pass the identity check.</strong> VentureBeat reports that the person managing the listing must also complete an identity check through Persona before publishing changes, connecting a product feed, viewing analytics or creating an agent. A blue check appears once approved.</li>
+        <li><strong>Update your details</strong> and, for retailers, add a product feed with prices and stock.</li>
+      </ol>
+      <p>Shopify merchants can connect their store from Business Hub or the Shopify admin to speed up verification. Existing ChatGPT Enterprise customers and advertisers can claim their business through their OpenAI representative. VentureBeat reports that local stores and restaurants can claim only an existing US listing at launch.</p>
+
+      <h2>What Are Business Agents?</h2>
+      <p>When a business appears in a ChatGPT answer, users can click through to its ChatGPT profile. If the business has published a Business Agent, the user can start a conversation with it, for example to compare two products or check which features fit their needs.</p>
+      <p>OpenAI says the agent conversation is "clearly labeled, separate from the customer's original ChatGPT conversation, and distinct from ChatGPT's independent answers." Businesses can also sponsor their agent and use it as the destination for ChatGPT Ads, with sponsored placements labeled. VentureBeat reports that sponsored agents are in a limited test with selected advertisers.</p>
+      <p>Business Agents are available first to eligible ecommerce and online service businesses in the United States. OpenAI says it plans to expand to more markets and business categories.</p>
+
+      <h2>Does It Cost Anything?</h2>
+      <p>Not at launch. VentureBeat, citing Digiday's briefing with OpenAI, reports that claiming a business, managing the profile and publishing a Business Agent are free, and that OpenAI's vice president of monetization, Benji Shomair, did not rule out charging later.</p>
+
+      <h2>Why It Matters for SEO and Marketing Teams</h2>
+      <p>The launch is OpenAI's clearest move yet into territory long held by Google. Business Hub combines ideas from Google Business Profile (claimed listings with verified details) and Google Search Console (data on visibility and clicks). For brands investing in generative engine optimization (GEO), it offers a way to check whether that work is reaching ChatGPT users.</p>
+      <ul>
+        <li><strong>Claim early.</strong> Search Engine Roundtable's Barry Schwartz said he was "nervous about people hijacking businesses", which makes it sensible for legitimate owners to claim their listing first.</li>
+        <li><strong>Treat it as one signal.</strong> Combine Business Hub data with your web analytics and prompt-tracking tools, since it does not explain why mentions rise or fall.</li>
+        <li><strong>Keep information accurate.</strong> OpenAI says up-to-date details and product feeds help ChatGPT give people accurate information, but claiming brings no guaranteed ranking or sales benefit.</li>
+        <li><strong>Watch the ads link.</strong> The option to send ChatGPT Ads to a Business Agent suggests where OpenAI's commercial model is heading.</li>
+      </ul>
+      <p>Retailers deciding where to build their store should note that Shopify merchants get the smoothest setup; see our <a href="/articles/shopify-vs-woocommerce/">Shopify vs WooCommerce comparison</a>. For the wider enterprise AI picture, see our report on <a href="/articles/ibm-microsoft-imagine-enterprise-ai-agent-platform/">IBM and Microsoft's Imagine Enterprise agent platform</a> and on <a href="/articles/ai-enterprise-adoption-roi-surge/">AI returns in the enterprise</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>What is ChatGPT Business Hub?</h3>
+      <p>OpenAI's portal, launched in beta on November 10, 2026, where businesses can claim their ChatGPT profile, update information and product feeds, see mentions and clicks, and build a Business Agent.</p>
+      <h3>Can I see how many clicks ChatGPT sends to my website?</h3>
+      <p>Yes. Business Hub shows recorded website clicks from ChatGPT, along with mentions and discovery topics, once your business meets OpenAI's data thresholds. Clicks do not confirm visits or conversions.</p>
+      <h3>Does claiming my business improve my ranking in ChatGPT?</h3>
+      <p>No. OpenAI says ChatGPT continues to make independent recommendations and claiming a profile does not guarantee better placement or more sales.</p>
+      <h3>Is ChatGPT Business Hub available outside the US?</h3>
+      <p>Claiming is open to eligible businesses located where ChatGPT is available. Business Agents are limited to eligible US ecommerce and online service businesses at launch.</p>
+
+      <p><em>Checked on November 11, 2026, against OpenAI's announcement, Search Engine Roundtable and VentureBeat. The feature is in beta and details may change.</em></p>
+    `
+  },
+  {
     id: "fda-glp1-naion-eye-warning-ozempic-wegovy",
     title: "FDA Orders NAION Eye Warning on Ozempic, Wegovy, Mounjaro and All GLP-1 Drugs",
     excerpt: "The FDA is adding a warning about NAION, a rare eye condition that can cause vision loss, to all GLP-1 drugs. The risk figures and what patients should do.",

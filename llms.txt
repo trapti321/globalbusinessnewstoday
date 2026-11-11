@@ -53,6 +53,7 @@ Global Business News Today is an independent business news website. Articles cit
 
 ## Tech & AI
 
+- [ChatGPT Business Hub: OpenAI Lets Businesses Claim Profiles and See Mentions and Clicks](https://globalbusinessnewstoday.com/articles/chatgpt-business-hub-claim-business-analytics/): OpenAI's Businesses in ChatGPT beta lets companies claim a profile, track mentions and website clicks, and launch Business Agents. How it works. (Published 2026-11-11)
 - [IBM and Microsoft Launch Imagine Enterprise, an AI Agent Platform for Regulated Industries](https://globalbusinessnewstoday.com/articles/ibm-microsoft-imagine-enterprise-ai-agent-platform/): IBM and Microsoft's Imagine Enterprise combines 6,000+ IBM Consulting AI agents with Microsoft's cloud for banks, insurers and retailers. What we know. (Published 2026-11-11)
 - [Python Bug 54axhg5: Is It Real? What Python's Issue Tracker and CVE Records Show](https://globalbusinessnewstoday.com/articles/python-bug-54axhg5/): "Python bug 54axhg5" is not in Python's issue tracker, the CVE database or PyPI. Where the term comes from and how to find real Python bugs. (Published 2026-11-11)
 - [SFM Compile Guide: How to Compile Models for Source Filmmaker With Studiomdl and Crowbar](https://globalbusinessnewstoday.com/articles/sfm-compile/): How to compile models for Source Filmmaker: QC files, studiomdl, Crowbar, output folders and common errors, plus why to avoid fake "SFMCompile" downloads. (Published 2026-11-11)

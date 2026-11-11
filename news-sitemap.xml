@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/chatgpt-business-hub-claim-business-analytics/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-11T15:00:00Z</news:publication_date>
+      <news:title>ChatGPT Business Hub: OpenAI Lets Businesses Claim Profiles and See Mentions and Clicks</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/cma-akzonobel-axalta-merger-competition-concerns/</loc>
     <news:news>
       <news:publication>
@@ -361,94 +372,6 @@
       </news:publication>
       <news:publication_date>2026-11-09T17:00:00Z</news:publication_date>
       <news:title>Navy QuickLinks Explained: How to Find MyNavy Portal Quick Links Safely</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/milomagazine-co-uk-review/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T15:10:00Z</news:publication_date>
-      <news:title>MiloMagazine.co.uk Review: 979 Posts in 13 Months and Guest Posts for $75</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/magazinepanda-com-review/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T15:05:00Z</news:publication_date>
-      <news:title>MagazinePanda.com Review: A Blog That Mostly Writes About Itself</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/tozymagazine-com-review/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T15:00:00Z</news:publication_date>
-      <news:title>Tozymagazine.com USA Review: From Birthday Wishes to Paid-Style Business Posts</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/what-is-a-riser-desk/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T14:00:00Z</news:publication_date>
-      <news:title>What Is a Riser Desk? How Desk Risers Work, Setup Tips and What Research Shows</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/best-smartwatches-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T12:10:00Z</news:publication_date>
-      <news:title>Best Smartwatches of 2026: Apple Watch Series 12 vs Pixel Watch 5, Galaxy Watch 9 and Garmin</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/running-every-day-benefits-risks/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T12:00:00Z</news:publication_date>
-      <news:title>Is It Good to Run Every Day? Benefits, Risks and How to Do It Safely</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/moderna-q3-2026-earnings-guidance/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T10:20:00Z</news:publication_date>
-      <news:title>Moderna Raises 2026 Outlook to 15% to 25% Growth After Q3 Revenue Jumps 29%</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/lam-research-25-billion-buyback/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-09T10:10:00Z</news:publication_date>
-      <news:title>Lam Research Approves $25 Billion Buyback as Chip Stocks Swing</news:title>
     </news:news>
   </url>
 </urlset>
