@@ -1,6 +1,106 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "adobe-max-2026-firefly-creative-agent",
+    title: "Adobe MAX 2026: Firefly Becomes an AI Creative Studio as Creative Agent Comes to Photoshop and Premiere",
+    excerpt: "Adobe MAX 2026 made Firefly an AI creative studio and brought Creative Agent to Photoshop and Premiere. What is live, what is beta and what it means.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-12T08:00:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Tablet showing Adobe Premiere, After Effects, Photoshop and Illustrator app icons on a desk beside a keyboard",
+    isTrending: true,
+    views: 0,
+    tags: ["Adobe MAX 2026", "Adobe Firefly", "Creative Cloud", "AI Agents", "Generative AI"],
+    content: `
+      <p class="lead">At Adobe MAX 2026 in Miami Beach on November 10, Adobe turned Firefly into what it calls an "AI creative studio" and put its Adobe Creative Agent at the centre of its apps. The agent takes on multi-step editing tasks in Firefly and across Creative Cloud apps such as Photoshop and Premiere. Adobe also previewed local MCP integrations that let outside AI agents edit native project files, and it widened partnerships with Google and Microsoft. Most of the new agent features are in beta or preview, so businesses should plan pilots before roll-outs.</p>
+
+      <blockquote>
+        <p><strong>Adobe MAX 2026, the key facts:</strong></p>
+        <ul>
+          <li><strong>Firefly:</strong> now an AI creative studio combining video, image, design and audio tools with models from Adobe and partners.</li>
+          <li><strong>Adobe Creative Agent:</strong> hands off multi-step tasks in Firefly, Photoshop, Premiere, Illustrator, InDesign, After Effects and Frame.io.</li>
+          <li><strong>Available now:</strong> Edit Text, Retouch, Relight and Quick Actions in Firefly.</li>
+          <li><strong>Still in testing:</strong> Firefly AI Assistant, Firefly Graph and Firefly Design (beta), Firefly Builder (private beta), always-on agents (preview).</li>
+          <li><strong>Local MCP integrations:</strong> planned for private beta in early 2027.</li>
+          <li><strong>Pricing:</strong> Adobe's announcement included no pricing details.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Did Adobe Announce at Adobe MAX 2026?</h2>
+      <p>Adobe announced new AI agents and tools across three product lines: Adobe Firefly for creators, Creative Cloud for professionals, and Adobe GenStudio for marketing teams. The common thread is agentic AI, software that carries out a sequence of steps toward a goal instead of answering a single prompt.</p>
+      <p>The main announcement, in <a href="https://news.adobe.com/news/2026/11/adobe-firefly-expands" target="_blank" rel="noopener">Adobe's Firefly press release</a>, expands Firefly into a single workspace for video, image, design and audio work. Forest Key, Adobe's vice president for Firefly and agentic AI, said the company wants "to offer every creator an agent that supports the creative process". As reported by <a href="https://indianexpress.com/article/technology/artificial-intelligence/adobe-max-2026-firefly-ai-creative-studio-adobe-creative-agent-updates-10958662/" target="_blank" rel="noopener">The Indian Express</a>, Adobe framed the change as a fix for creators who juggle several apps, AI models and subscriptions.</p>
+
+      <h2>What Is Adobe Firefly's AI Creative Studio?</h2>
+      <p>Adobe Firefly's AI creative studio is a workspace that combines Adobe's editing tools, AI models from Adobe and third parties, and the Adobe Creative Agent in one place. Partner models come from Topaz Labs, ByteDance, Google, Kling, OpenAI and ElevenLabs, and Adobe named recent additions including Kling 4.0, Dreamina Seedance 2.5 and Nano Banana 2.1.</p>
+      <table>
+        <thead><tr><th>Firefly tool</th><th>What it does</th><th>Status (November 2026)</th></tr></thead>
+        <tbody>
+          <tr><td>Adobe Creative Agent and Firefly AI Assistant</td><td>Plans and runs multi-step edits, with a Plan Mode to review steps first</td><td>Beta</td></tr>
+          <tr><td>Firefly Image</td><td>Edit Object, Edit Text, Relight and Retouch</td><td>Edit Text, Relight and Retouch generally available</td></tr>
+          <tr><td>Quick Actions</td><td>Ready-made workflows such as Remove Object and Thumbnail Generator</td><td>Generally available</td></tr>
+          <tr><td>Firefly Video</td><td>Timeline editing, captions, transitions and b-roll generation</td><td>Not specified by Adobe</td></tr>
+          <tr><td>Firefly Design</td><td>Illustration, animation, 3D and print layouts</td><td>Beta</td></tr>
+          <tr><td>Firefly Graph</td><td>Builds repeatable custom workflows</td><td>Beta</td></tr>
+          <tr><td>Firefly Builder</td><td>Turns plain-language ideas into website, presentation and app prototypes</td><td>Private beta (waitlist)</td></tr>
+          <tr><td>Always-on agents</td><td>Run recurring work in the background</td><td>Preview</td></tr>
+        </tbody>
+      </table>
+      <p>The agent can store preferences such as brand colours, formats, characters and products, so they do not need to be re-entered in every session. A Model Selector lets users choose a model for each session or leave the choice on Auto-Select.</p>
+
+      <h2>What Changes in Photoshop, Premiere and Creative Cloud?</h2>
+      <p>Creative Cloud gets the Adobe Creative Agent plus new editing tools, according to <a href="https://www.digitaltrends.com/computing/adobe-max-2026-firefly-creative-cloud-ai/" target="_blank" rel="noopener">Digital Trends</a>. Photoshop adds Relight for adjusting lighting and Generative Restyle, which turns prompt-based edits into adjustable controls. Premiere adds Color Mode for colour grading, a Generative Media Tool that creates video, sound effects and music in the timeline, and Generative Remove for footage.</p>
+      <p>Lightroom's Glow, Blemish Removal and Open Eyes tools, and real-time co-editing in InDesign, are in beta.</p>
+
+      <h2>How Do Adobe's Local MCP Integrations Work?</h2>
+      <p>Adobe's local MCP integrations will let third-party AI agents edit native project files on a user's own computer in Photoshop, Illustrator, Premiere and After Effects. MCP, the Model Context Protocol, is an open standard that lets AI assistants connect to outside software. Layers, vectors and sequences stay editable after an outside agent works on them, and Adobe plans a private beta in early 2027.</p>
+      <p>For agencies and in-house teams that already use assistants such as ChatGPT or Claude, this matters more than any single feature. It points to Adobe positioning Creative Cloud as the place where files live, even when the AI doing the work comes from another company.</p>
+
+      <h2>What Do the Google and Microsoft Partnerships Include?</h2>
+      <p>Adobe is putting its tools into more Google and Microsoft products while adding outside AI models to its own apps.</p>
+      <ul>
+        <li><strong>Google:</strong> Acrobat is coming to Google Drive and Gmail, Adobe tools are expanding in Gemini and Google Search's AI Mode, Google's image and video models are coming to Adobe apps, and Adobe and Google DeepMind are exploring new AI editing features for Photoshop.</li>
+        <li><strong>Microsoft:</strong> optimised versions of Photoshop, Premiere, After Effects and Substance 3D Painter (beta) are coming to high-performance Arm-based Windows PCs, and Adobe Express tools such as object removal and design templates are coming to Microsoft Photos.</li>
+      </ul>
+      <p>These deals build on Adobe's existing work with Anthropic and OpenAI. On November 4, Adobe said its CX Enterprise Coworker marketing agent would work inside AI platforms from Anthropic, Google, Microsoft and OpenAI.</p>
+
+      <h2>What Does Adobe GenStudio Add for Marketing Teams?</h2>
+      <p>Adobe GenStudio brings the CX Enterprise Coworker agent into campaign production, helping marketing teams plan campaigns, create personalised content variations and keep them on brand. Brand Intelligence adapts designs to different formats while keeping brand guidelines, and Adobe Workfront gets an AI Ideation Space that turns campaign ideas and performance data into structured briefs.</p>
+      <p>For enterprises, the selling point is governance: content made at volume still passes brand and approval checks. That is the same problem other enterprise AI vendors are targeting, as in <a href="/articles/ibm-microsoft-imagine-enterprise-ai-agent-platform/">IBM and Microsoft's Imagine Enterprise agent platform</a>.</p>
+
+      <h2>What Does Adobe MAX 2026 Mean for Businesses?</h2>
+      <p>The announcements show Adobe betting that creative work will shift from hands-on editing to directing AI agents, while Adobe keeps control of the files, brand rules and approval steps. Adobe cited its Creators' Toolkit Report, which found that 78% of creators say creative AI has accelerated the growth of their business or following.</p>
+      <p>There are clear limits. Many agent features are still in beta or preview, Adobe's announcement included no pricing, and generative features in Adobe apps typically use generative credits, which vary by plan. Businesses that already rely on outside assistants should also watch how AI platforms send traffic and customers, as in OpenAI's new <a href="/articles/chatgpt-business-hub-claim-business-analytics/">ChatGPT Business Hub</a>.</p>
+
+      <h2>How Should Creative and Marketing Teams Prepare?</h2>
+      <ol>
+        <li>Test the generally available Firefly tools (Edit Text, Retouch, Relight and Quick Actions) on a real project before relying on beta agents.</li>
+        <li>Check how many generative credits your Adobe plan includes, and track usage during the pilot.</li>
+        <li>Set up brand preferences in the Creative Agent so repeated work follows your guidelines.</li>
+        <li>Agree internal rules on which AI models may be used for client and commercial work.</li>
+        <li>Join the waitlists for Firefly Builder and the local MCP private beta if outside agents are part of your workflow.</li>
+      </ol>
+
+      <h2>FAQs</h2>
+      <h3>What is Adobe Creative Agent?</h3>
+      <p>Adobe Creative Agent is an AI agent that plans and carries out multi-step creative tasks in Firefly and Creative Cloud apps. Users can review its plan in Plan Mode before it runs.</p>
+      <h3>Is Adobe Firefly AI Assistant free?</h3>
+      <p>Adobe did not announce new pricing at MAX 2026. The Firefly AI Assistant is in beta, and generative features in Adobe apps generally draw on the generative credits included in each plan.</p>
+      <h3>When will Adobe's MCP integrations be available?</h3>
+      <p>Adobe plans a private beta of local MCP integrations for Photoshop, Illustrator, Premiere and After Effects in early 2027.</p>
+      <h3>Which AI models are in Adobe Firefly?</h3>
+      <p>Firefly offers Adobe's own models plus models from partners including Google, OpenAI, ByteDance, Kling, Topaz Labs and ElevenLabs.</p>
+
+      <p><em>Checked on November 12, 2026, against Adobe's November 10 press release, Digital Trends and The Indian Express. Features and availability may change during beta.</em></p>
+    `
+  },
+  {
     id: "harouxinn-meaning",
     title: "What Is Harouxinn? The Made-Up Keyword and the Casino Blog Behind Harouxinn.com",
     excerpt: "Harouxinn has no verified meaning or creator. We checked harouxinn.com: registered April 2026, it now runs mostly casino posts and contradicts itself.",
