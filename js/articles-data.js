@@ -1,6 +1,89 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "nvidia-cancels-rtx-5080-24gb",
+    title: "Nvidia Reportedly Cancels RTX 5080 24GB as AI Demand Drives Up GDDR7 Memory Costs",
+    excerpt: "Nvidia has reportedly cancelled the January 2027 launch of a 24GB RTX 5080 over 3GB GDDR7 costs. The 16GB model stays. What we know and what is unconfirmed.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-12T16:30:00Z",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Inside a gaming PC with RGB-lit liquid cooling fans and memory modules",
+    isTrending: true,
+    views: 0,
+    tags: ["Nvidia", "RTX 5080", "GPUs", "GDDR7", "Memory Shortage", "AI Chips"],
+    content: `
+      <p class="lead">Nvidia has reportedly cancelled the planned January 2027 launch of a GeForce RTX 5080 with 24GB of video memory, according to Chinese board-channel sources first reported by VideoCardz on November 11, 2026. The reports say the card was dropped because the 3GB GDDR7 memory chips it needs are too scarce and too costly while AI data centres absorb supply. Nvidia has not announced the card or commented on the reports, and the existing 16GB RTX 5080 stays in production.</p>
+
+      <blockquote>
+        <p><strong>RTX 5080 24GB cancellation, the key facts:</strong></p>
+        <ul>
+          <li><strong>What was reported:</strong> Nvidia told its add-in card (AIC) partners to cancel the January 2027 launch plan for an RTX 5080 24GB.</li>
+          <li><strong>Source:</strong> anonymous Chinese board-channel sources, via VideoCardz. Nvidia has not confirmed the card or the cancellation.</li>
+          <li><strong>Reported reason:</strong> cost and supply of 3GB GDDR7 chips, which reports put at roughly three times the price of 2GB chips.</li>
+          <li><strong>What stays:</strong> the RTX 5080 16GB, which Nvidia is reportedly still supplying to partners with 2GB GDDR7 chips.</li>
+          <li><strong>Wider backdrop:</strong> TrendForce expects graphics memory prices to keep rising as AI chips take priority for GDDR7.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Did Nvidia Reportedly Cancel?</h2>
+      <p>The cancelled product is a higher-memory version of the GeForce RTX 5080 desktop graphics card, often called the RTX 5080 24GB or RTX 5080 Super in coverage. According to the board-channel notice quoted by <a href="https://www.thefpsreview.com/2026/11/11/nvidia-has-reportedly-cancelled-its-geforce-rtx-5080-24gb-due-to-a-lack-of-3gb-vram-modules/" target="_blank" rel="noopener">The FPS Review</a>, "NVIDIA has internally notified its aic (add-in card) partners to officially cancel the january 2027 launch plan for this model." The same reporting also describes the move as a "temporary cancellation", so it is unclear whether the card is dead or postponed.</p>
+      <p>No new launch date was given. <a href="https://www.thegamer.com/nvidia-canceling-rtx-5080-24gb-graphics-card/" target="_blank" rel="noopener">TheGamer</a> reports that Nvidia will "continue supplying GPUs paired with 2GB GDDR7 memory chips", which lets partners keep building the 16GB model.</p>
+      <p>The report was first carried in English by VideoCardz and then picked up by outlets including TheGamer, The FPS Review and Ukraine's <a href="https://mezha.ua/en/news/nvidia-skasovuye-geforce-rtx-5080-z-24-gb-317116/" target="_blank" rel="noopener">Mezha</a>.</p>
+
+      <h2>Why Would Nvidia Drop a 24GB RTX 5080?</h2>
+      <p>The short answer is memory. The current RTX 5080 has 16GB of GDDR7 on a 256-bit memory bus, according to <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5080/" target="_blank" rel="noopener">Nvidia's specifications</a>. That bus holds eight memory chips. Using eight 2GB chips gives 16GB; swapping to eight 3GB chips would give 24GB, a 50% increase, without redesigning the GPU.</p>
+      <p>The catch is price and supply. TheGamer reports that 3GB GDDR7 chips cost roughly three times as much as 2GB chips, though it does not name the source of that figure. On November 2, The FPS Review, citing Benchlife, reported that partners still had not received the GPU and memory kits Nvidia supplies for custom boards, and that kit-to-market time had stretched from about six weeks to about eight because of AI-focused manufacturing demand.</p>
+      <table>
+        <thead><tr><th>Item</th><th>RTX 5080 (on sale)</th><th>RTX 5080 24GB (reported, cancelled)</th></tr></thead>
+        <tbody>
+          <tr><td>Memory</td><td>16GB GDDR7</td><td>24GB GDDR7</td></tr>
+          <tr><td>Memory chips</td><td>8 x 2GB</td><td>8 x 3GB</td></tr>
+          <tr><td>Memory bus</td><td>256-bit</td><td>256-bit (expected)</td></tr>
+          <tr><td>CUDA cores</td><td>10,752</td><td>Not announced</td></tr>
+          <tr><td>Launch price</td><td>$999 (January 30, 2025)</td><td>Not announced</td></tr>
+          <tr><td>Status</td><td>In production</td><td>January 2027 launch reportedly cancelled</td></tr>
+        </tbody>
+      </table>
+      <p>The $999 price and January 30, 2025, availability date come from <a href="https://nvidianews.nvidia.com/news/nvidia-blackwell-geforce-rtx-50-series-opens-new-world-of-ai-computer-graphics" target="_blank" rel="noopener">Nvidia's CES 2025 announcement</a>.</p>
+
+      <h2>How the AI Memory Squeeze Hits Gaming GPUs</h2>
+      <p>Graphics memory has become a contested resource. In its <a href="https://www.trendforce.com/presscenter/news/20260930-13258.html" target="_blank" rel="noopener">September 30, 2026 outlook</a>, market researcher TrendForce said GDDR7 demand is "driven primarily by AI chips, with procurement momentum outperforming the PC market." It added that GDDR7 supply stays limited as advanced production capacity shifts to server memory, and that these constraints should keep graphics DRAM prices rising into the fourth quarter.</p>
+      <p>TrendForce also said some PC brands are reconsidering "GDDR6 as a means of reducing overall BOM costs", meaning bill-of-materials costs. In plain terms, consumer hardware makers are looking for cheaper memory, not more of the expensive kind.</p>
+      <p>Nvidia's own results show where its priorities lie. For the quarter ended July 26, 2026, <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027" target="_blank" rel="noopener">Nvidia reported</a> revenue of $96.2 billion, of which $89.0 billion came from Data Center, up 117% from a year earlier. Edge Computing, the segment that now includes gaming, PCs and robotics, brought in $7.2 billion. When a scarce memory chip can go into an AI accelerator or a gaming card, the financial case favours the data centre.</p>
+
+      <h2>What It Means for Buyers and PC Builders</h2>
+      <ul>
+        <li><strong>No 24GB upgrade soon:</strong> buyers waiting for a higher-memory RTX 5080 in early 2027 should not plan around one. No replacement date has been reported.</li>
+        <li><strong>The 16GB model remains:</strong> the RTX 5080 16GB is still being supplied, so it is the realistic option in this tier.</li>
+        <li><strong>Memory-heavy work:</strong> local AI models and 4K texture-heavy games benefit most from extra video memory. Users who need more than 16GB currently have to move up a tier, at a higher price.</li>
+        <li><strong>Prices:</strong> with TrendForce forecasting further graphics memory increases, GPU prices are unlikely to ease while AI demand stays strong.</li>
+      </ul>
+      <p>For board partners such as ASUS, MSI and Gigabyte, the cancellation removes a planned product refresh in a quarter when consumer demand is already under pressure from memory-driven price increases across PCs and consoles. For the wider AI hardware race, see our report on <a href="/articles/ibm-microsoft-imagine-enterprise-ai-agent-platform/">IBM and Microsoft's Imagine Enterprise agent platform</a>.</p>
+
+      <h2>What Is Still Unconfirmed?</h2>
+      <p>Several points remain open. Nvidia has never publicly announced an RTX 5080 24GB, so the cancellation concerns an unannounced product. The reports rely on anonymous partner sources, and their own wording ("officially cancel" and "temporary cancellation") is inconsistent. The threefold price gap between 3GB and 2GB GDDR7 chips is also unsourced in public reporting. Some outlets linked the card to a China-first launch and a possible CES 2027 reveal; neither was confirmed.</p>
+
+      <h2>FAQs</h2>
+      <h3>Did Nvidia cancel the RTX 5080 24GB?</h3>
+      <p>According to Chinese board-channel sources reported by VideoCardz on November 11, 2026, Nvidia told partners to cancel the card's January 2027 launch. Nvidia has not confirmed this publicly.</p>
+      <h3>Is the RTX 5080 Super the same as the RTX 5080 24GB?</h3>
+      <p>Coverage uses both names for the same reported 24GB card. Nvidia has not announced either name.</p>
+      <h3>Why does the RTX 5080 24GB need different memory?</h3>
+      <p>The RTX 5080 has a 256-bit bus with eight memory chips. Reaching 24GB requires 3GB GDDR7 chips instead of 2GB chips, and the 3GB chips are reportedly about three times as expensive and in short supply.</p>
+      <h3>Is the RTX 5080 16GB discontinued?</h3>
+      <p>No. Reports say Nvidia continues to supply partners with GPUs paired with 2GB GDDR7 chips for the 16GB model.</p>
+
+      <p><em>Checked on November 12, 2026, against reporting by The FPS Review, TheGamer and Mezha, Nvidia's product page and financial results, and TrendForce. This story is based on unconfirmed reports and will be updated if Nvidia comments.</em></p>
+    `
+  },
+  {
     id: "do-cold-showers-make-you-lose-weight",
     title: "Do Cold Showers Make You Lose Weight? What the Research Actually Shows",
     excerpt: "Do cold showers make you lose weight? Studies show only a few extra calories and no proven fat loss. What the research says, plus safety tips.",
