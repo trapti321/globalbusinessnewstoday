@@ -475,6 +475,41 @@ const latest = (list) => list.map(a => a.updatedAt || a.publishedAt).sort().pop(
 /* --------------------------------------------------------------------------
    Pages
    -------------------------------------------------------------------------- */
+// One homepage section: a large lead story, two image cards and a headline list, linking to the full category page.
+function sectionBlock(c) {
+  const [main, ...rest] = c.items;
+  const minis = rest.slice(0, 2);
+  const list = rest.slice(2);
+  const id = `sec-${c.slug}`;
+  return `    <section class="cat-block" aria-labelledby="${id}">
+      <div class="section-header-banner cat-block-head">
+        <h2 id="${id}"><a href="${categoryUrl(c.slug)}">${esc(c.name)}</a></h2>
+        <a href="${categoryUrl(c.slug)}" class="section-link">More ${esc(c.name)} ➔</a>
+      </div>
+      <div class="cat-block-grid${minis.length ? "" : " cat-block-solo"}">
+        <article class="cat-main">
+          <a href="${articleUrl(main)}" class="cat-main-thumb" tabindex="-1" aria-hidden="true">
+            ${img(main, { widths: [400, 800, 1200], ratio: 9 / 16, sizes: "(max-width: 992px) calc(100vw - 2.5rem), 520px" })}
+          </a>
+          <h3 class="cat-main-title"><a href="${articleUrl(main)}">${esc(main.title)}</a></h3>
+          <p class="cat-main-excerpt">${esc(main.excerpt)}</p>
+          <time class="side-date" datetime="${main.publishedAt}">${formatDate(main.publishedAt)}</time>
+        </article>
+        ${minis.length ? `<div class="cat-minis">
+          ${minis.map(a => `<article class="cat-mini">
+            <a href="${articleUrl(a)}" class="cat-mini-thumb" tabindex="-1" aria-hidden="true">
+              ${img(a, { widths: [400, 800], ratio: 9 / 16, sizes: "(max-width: 992px) calc(50vw - 2rem), 260px" })}
+            </a>
+            <h3 class="cat-mini-title"><a href="${articleUrl(a)}">${esc(a.title)}</a></h3>
+          </article>`).join("\n          ")}
+        </div>` : ""}
+        ${list.length ? `<ul class="cat-headlines">
+          ${list.map(a => `<li><a href="${articleUrl(a)}">${esc(a.title)}</a><time datetime="${a.publishedAt}">${formatDate(a.publishedAt)}</time></li>`).join("\n          ")}
+        </ul>` : ""}
+      </div>
+    </section>`;
+}
+
 function buildHome() {
   // An article marked isFeatured stays in the lead slot; otherwise the newest article leads.
   const lead = ARTICLES.find(a => a.isFeatured) || ARTICLES[0];
@@ -484,7 +519,18 @@ function buildHome() {
   const calendar = CALENDAR.filter(e => e.date >= today);
 
   const updated = latest(ARTICLES);
-  const sections = CATEGORIES.map(c => ({ ...c, top: ARTICLES.find(a => a.categorySlug === c.slug) })).filter(c => c.top);
+  // The homepage shows a curated slice, not the whole archive: the 6 newest stories after the lead
+  // and Editor's Picks, then up to 7 stories per section. Full lists live on the category pages.
+  const shown = new Set([lead, ...side]);
+  const latestStories = ARTICLES.filter(a => !shown.has(a)).slice(0, 6);
+  latestStories.forEach(a => shown.add(a));
+  const PER_SECTION = 7;
+  const sectionBlocks = CATEGORIES.map(c => {
+    const all = ARTICLES.filter(a => a.categorySlug === c.slug);
+    const fresh = all.filter(a => !shown.has(a));
+    const items = (fresh.length ? fresh : all).slice(0, PER_SECTION);
+    return { ...c, items, total: all.length };
+  }).filter(c => c.items.length);
 
   const main = `
     <section class="home-intro" aria-labelledby="homeIntroTitle">
@@ -493,10 +539,10 @@ function buildHome() {
     </section>
 
     <div class="category-filter-bar">
-      <div class="filter-pills" role="toolbar" aria-label="Filter latest stories by section">
-        <button type="button" class="filter-pill active" data-category="all" aria-pressed="true">All News</button>
-        ${CATEGORIES.filter(c => ARTICLES.some(a => a.categorySlug === c.slug)).map(c => `<button type="button" class="filter-pill" data-category="${c.slug}" aria-pressed="false">${esc(c.name)}</button>`).join("\n        ")}
-      </div>
+      <nav class="filter-pills" aria-label="Browse news by section">
+        <a class="filter-pill active" href="/category/all/">All News</a>
+        ${sectionBlocks.map(c => `<a class="filter-pill" href="${categoryUrl(c.slug)}">${esc(c.name)}</a>`).join("\n        ")}
+      </nav>
     </div>
 
     <section class="main-news-section" aria-label="Top stories">
@@ -547,10 +593,9 @@ function buildHome() {
             <h2>Latest Global Business News</h2>
             <a href="/category/all/" class="section-link">View All ➔</a>
           </div>
-          <div class="articles-grid" id="mainArticlesGrid">
-          ${ARTICLES.map(newsCard).join("\n          ")}
+          <div class="articles-grid">
+          ${latestStories.map(newsCard).join("\n          ")}
           </div>
-          <p class="empty-state" id="gridEmptyState" hidden>No stories in this section yet.</p>
         </div>
 
         <aside aria-label="Newsletter and calendar">
@@ -565,18 +610,7 @@ function buildHome() {
       </div>
     </section>
 
-    <section class="home-sections" aria-labelledby="homeSectionsTitle">
-      <div class="section-header-banner">
-        <h2 id="homeSectionsTitle">Business News by Section</h2>
-      </div>
-      <div class="home-sections-grid">
-        ${sections.map(c => `<div class="home-section-card">
-          <h3><a href="${categoryUrl(c.slug)}">${esc(c.name)}</a></h3>
-          <p>${esc(c.description)}</p>
-          <p class="home-section-latest">Latest: <a href="${articleUrl(c.top)}">${esc(c.top.title)}</a></p>
-        </div>`).join("\n        ")}
-      </div>
-    </section>
+    ${sectionBlocks.map(c => sectionBlock(c)).join("\n")}
 
     <section class="home-about" aria-labelledby="homeAboutTitle">
       <h2 id="homeAboutTitle">About Global Business News Today</h2>

@@ -374,26 +374,4 @@
       <news:title>Is a Titanium Apple Watch Worth It? Series 12 Price, Weight and Sapphire Compared</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/ios-27-2-1-security-fixes/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T15:00:00Z</news:publication_date>
-      <news:title>iOS 27.2.1 Fixes 9 Security Flaws, Including iMessage Group Chat Bugs: What to Know</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/shopify-vs-woocommerce/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T13:00:00Z</news:publication_date>
-      <news:title>Shopify vs WooCommerce in 2026: Real Costs, Fees and Which to Choose</news:title>
-    </news:news>
-  </url>
 </urlset>
