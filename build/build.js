@@ -476,8 +476,9 @@ const latest = (list) => list.map(a => a.updatedAt || a.publishedAt).sort().pop(
    Pages
    -------------------------------------------------------------------------- */
 function buildHome() {
-  const lead = ARTICLES[0]; // newest published article
-  const side = ARTICLES.slice(1, 4);
+  // An article marked isFeatured stays in the lead slot; otherwise the newest article leads.
+  const lead = ARTICLES.find(a => a.isFeatured) || ARTICLES[0];
+  const side = ARTICLES.filter(a => a !== lead).slice(0, 3);
   const trending = [...ARTICLES].sort((a, b) => (b.isTrending ? 1 : 0) - (a.isTrending ? 1 : 0)).slice(0, 4);
   const today = new Date().toISOString().slice(0, 10);
   const calendar = CALENDAR.filter(e => e.date >= today);

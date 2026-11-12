@@ -1,6 +1,465 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "do-cold-showers-make-you-lose-weight",
+    title: "Do Cold Showers Make You Lose Weight? What the Research Actually Shows",
+    excerpt: "Do cold showers make you lose weight? Studies show only a few extra calories and no proven fat loss. What the research says, plus safety tips.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-12T11:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Modern bathroom with a ceiling rainfall shower head above a white bathtub and wall tiles",
+    isTrending: false,
+    views: 0,
+    tags: ["Cold Showers", "Weight Loss", "Brown Fat", "Metabolism", "Health and Wellness"],
+    content: `
+      <p class="lead">Cold showers do not make you lose weight in any meaningful way. A few minutes of cold water burns only a small number of extra calories, and no trial has shown that cold showers on their own reduce body fat. The studies that found fat loss used hours of cold exposure, not a quick rinse.</p>
+
+      <blockquote>
+        <p><strong>Cold showers and weight loss, the key facts:</strong></p>
+        <ul>
+          <li><strong>Calorie burn:</strong> real but small. In one study, 2 hours in a 66°F room raised energy use by about 20 calories in men with active brown fat (our calculation from the published daily rate).</li>
+          <li><strong>Fat loss:</strong> the best-known trial found 0.7 kg (about 1.5 lb) less body fat after 6 weeks of 2 hours of cold air every day. Body weight did not change significantly.</li>
+          <li><strong>Appetite:</strong> cold water can make you hungrier. Men ate 44% more after exercising in cold water than in neutral water.</li>
+          <li><strong>Safety:</strong> cold water can spike heart rate and blood pressure. People with heart rhythm problems or Raynaud's should ask a doctor first.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Do Cold Showers Make You Lose Weight?</h2>
+      <p>No, not on their own. The idea comes from brown adipose tissue, or brown fat, a type of fat that burns energy to make heat when you are cold. A 2009 <a href="https://doi.org/10.1056/NEJMoa0808718" target="_blank" rel="noopener">New England Journal of Medicine study</a> found active brown fat in 23 of 24 men during mild cold at 61°F, but not at room temperature.</p>
+      <p>Brown fat activity was lower in men who were overweight or obese, so those most keen to lose weight may get the smallest effect.</p>
+
+      <h2>Does a Cold Shower Burn Calories?</h2>
+      <p>Yes, but only a few. Your body works harder to stay warm, so energy use rises while you are cold.</p>
+      <p>In a 2013 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3726164/" target="_blank" rel="noopener">Journal of Clinical Investigation study</a>, 51 young men sat in a 66°F (19°C) room for 2 hours. Men with active brown fat raised their energy use at a rate of about 252 calories per day. Spread over the 2-hour session, that works out to roughly 20 extra calories.</p>
+      <p>Claims that a short cold shower burns 50 to 100 calories are not backed by any published measurement we could find.</p>
+
+      <table>
+        <thead><tr><th>Cold exposure studied</th><th>What it did</th></tr></thead>
+        <tbody>
+          <tr><td>2 hours in a 66°F room (51 men)</td><td>About 20 extra calories in men with active brown fat</td></tr>
+          <tr><td>2 hours a day at 63°F for 6 weeks (12 men)</td><td>Body fat down 0.7 kg versus control; weight unchanged</td></tr>
+          <tr><td>1 hour immersed to the neck in 57°F water (young men)</td><td>Metabolic rate up 350% during immersion</td></tr>
+          <tr><td>30 to 90 second cold showers for 30 days (3,018 adults)</td><td>Fewer sick days off work; weight not measured</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Is There Evidence for Cold Shower Fat Loss?</h2>
+      <p>Not for showers. In the same 2013 study, 12 men with low brown fat activity sat in 63°F (17°C) air for 2 hours daily for 6 weeks. Body fat fell 0.7 kg versus a control group, but body weight did not change significantly.</p>
+      <p>That is 84 hours of cold over 6 weeks for about 1.5 lb of fat. A daily 2-minute shower adds up to less than 1.5 hours over the same period.</p>
+      <p>Full immersion is a bigger stimulus. A <a href="https://pubmed.ncbi.nlm.nih.gov/10751106/" target="_blank" rel="noopener">2000 European Journal of Applied Physiology study</a> found 1 hour in 57°F (14°C) water raised metabolic rate by 350%. That is not a home routine.</p>
+      <p>A <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9518606/" target="_blank" rel="noopener">2022 review of 104 studies</a> said cold water immersion seems to reduce or transform body fat. But most studies were small, often single sex and used different temperatures, so firm conclusions were not possible.</p>
+
+      <h2>Do Taking Cold Showers Help You Lose Weight Indirectly?</h2>
+      <p>Probably not much, and cold may push the other way through appetite. In a <a href="https://pubmed.ncbi.nlm.nih.gov/15902988/" target="_blank" rel="noopener">2005 University of Florida study</a>, 11 men cycled for 45 minutes in 68°F or 91°F water. Calories burned were similar, but they ate 44% more afterward in the cold condition.</p>
+      <p>The biggest cold shower trial, with <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0161749" target="_blank" rel="noopener">3,018 Dutch adults</a>, linked 30 to 90 seconds of cold water to 29% less sickness absence. It did not report any weight outcome.</p>
+
+      <h2>Are Cold Showers Safe?</h2>
+      <p>For most healthy adults, a short cold shower is low risk, but not risk free. <a href="https://www.harvardhealth.org/staying-healthy/can-ice-baths-improve-your-health" target="_blank" rel="noopener">Harvard Health</a> warns that sudden cold can cause gasping, rapid breathing and spikes in heart rate and blood pressure. It also notes that people with heart rhythm disorders should be cautious with cold water.</p>
+      <p>The <a href="https://www.niams.nih.gov/health-topics/raynauds-phenomenon" target="_blank" rel="noopener">National Institutes of Health</a> says cold is the most common trigger of Raynaud's, which narrows blood vessels in the fingers and toes. Ask a doctor first if you have heart disease, high blood pressure or Raynaud's, or are pregnant.</p>
+
+      <h2>What to Do If You Want to Lose Weight</h2>
+      <ol>
+        <li><strong>Treat cold showers as optional.</strong> Enjoy them if you like, but do not count them as fat loss.</li>
+        <li><strong>Start gently.</strong> Finish a warm shower with 15 to 30 seconds of cool water and build up slowly.</li>
+        <li><strong>Watch your appetite.</strong> If cold leaves you hungry, plan a protein-rich meal.</li>
+        <li><strong>Focus on what works.</strong> A modest calorie deficit, regular activity such as <a href="/articles/running-every-day-benefits-risks/">running or brisk walking</a>, and strength training move the needle far more.</li>
+        <li><strong>Protect your sleep.</strong> Short sleep raises hunger. See our guide to <a href="/articles/how-to-lose-weight-while-sleeping/">how sleep affects weight loss</a>.</li>
+      </ol>
+
+      <h2>FAQs</h2>
+      <h3>How many calories does a cold shower burn?</h3>
+      <p>No study has measured it for a standard shower. Expect a few extra calories at most, since 2 hours of mild cold added only about 20.</p>
+      <h3>Do cold showers burn belly fat?</h3>
+      <p>No. There is no evidence that cold showers target belly fat or any other specific area.</p>
+      <h3>Is a cold plunge better than a cold shower for weight loss?</h3>
+      <p>A plunge is a stronger stimulus, but there is still no good evidence it causes meaningful weight loss. It carries more risk, so never plunge alone.</p>
+      <h3>How long should a cold shower be?</h3>
+      <p>In the Dutch trial, 30, 60 and 90 seconds gave similar results for sick days. There is no proven duration for weight loss.</p>
+
+      <p><em>This article is for general information and is not medical advice. Checked on November 12, 2026, against studies in the NEJM, Journal of Clinical Investigation, PLOS One and European Journal of Applied Physiology, and guidance from Harvard Health and the NIH.</em></p>
+    `
+  },
+  {
+    id: "how-to-lose-weight-while-sleeping",
+    title: "How Do We Lose Weight While Sleeping? Water, Fat and What Sleep Really Does",
+    excerpt: "How do we lose weight while sleeping? Mostly water lost through breath and sweat, not fat. Here is what studies show about sleep, hunger and weight.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-12T11:15:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1515894203077-9cd36032142f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Person asleep under white bedding in a black and white photo",
+    isTrending: false,
+    views: 0,
+    tags: ["Sleep", "Weight Loss", "Metabolism", "Appetite", "Health and Wellness"],
+    content: `
+      <p class="lead">We lose weight while sleeping mainly through water: moisture in every breath, sweat through the skin, and urine passed when we wake. A small amount of stored fuel, including some fat, is also burned to keep the body running, but that is a few hundred calories at most. Sleep matters for real fat loss because of what it does to hunger and eating the next day.</p>
+
+      <blockquote>
+        <p><strong>Losing weight while sleeping, the key facts:</strong></p>
+        <ul>
+          <li><strong>The overnight scale drop</strong> is mostly water lost through breathing and sweat, not fat.</li>
+          <li><strong>Your body still burns calories asleep,</strong> but sleeping metabolic rate is lower than when you are awake and resting.</li>
+          <li><strong>Fat leaves mostly through your lungs:</strong> about 84% of the mass of burned fat is breathed out as carbon dioxide.</li>
+          <li><strong>Sleeping more can cut eating:</strong> in a 2022 trial, adults who slept about 1.2 hours longer ate about 270 fewer calories a day.</li>
+          <li><strong>Short sleep can undermine a diet:</strong> dieters given 5.5 hours in bed lost less fat and more lean mass than with 8.5 hours.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Do You Lose Weight When You Sleep?</h2>
+      <p>Yes, most people weigh a little less in the morning, but most of that loss is water. Every breath carries out water vapor, and the skin loses moisture through sweat. You also do not eat or drink for 7 to 9 hours.</p>
+      <p>Breathing losses alone are large enough to measure. In a <a href="https://pubmed.ncbi.nlm.nih.gov/11995907/" target="_blank" rel="noopener">1995 study</a>, 10 adults slept in tents below freezing. Wearing a mask that trapped breath moisture cut their overnight weight loss by an average of 0.13 kg, or about a quarter pound.</p>
+      <p>That water comes back as soon as you drink, so one night's drop says little about fat.</p>
+
+      <h2>How Do We Lose Weight While Sleeping, Exactly?</h2>
+      <p>Through three routes: water lost from breath and skin, urine, and carbon dioxide from burning fuel. Your heart, lungs, brain and cells keep working all night, and that energy comes from glucose and fat.</p>
+      <p>When fat is burned, it does not turn into heat or muscle. A widely cited <a href="https://doi.org/10.1136/bmj.g7257" target="_blank" rel="noopener">2014 BMJ analysis</a> worked out that about 84% of the mass of burned fat leaves as carbon dioxide through the lungs. The other 16% becomes water.</p>
+
+      <table>
+        <thead><tr><th>Overnight route</th><th>What is lost</th><th>Is it fat loss?</th></tr></thead>
+        <tbody>
+          <tr><td>Breathing</td><td>Water vapor and carbon dioxide</td><td>Mostly water; a small share is from burned fuel</td></tr>
+          <tr><td>Skin</td><td>Sweat and moisture</td><td>No</td></tr>
+          <tr><td>Morning urine</td><td>Water</td><td>No</td></tr>
+          <tr><td>Metabolism</td><td>Stored glucose and fat used for energy</td><td>Partly, but only a few hundred calories</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How Many Calories Do You Burn While Sleeping?</h2>
+      <p>Fewer than when you are awake and resting. In a <a href="https://pubmed.ncbi.nlm.nih.gov/2706222/" target="_blank" rel="noopener">Cambridge study</a> of six adults, sleeping metabolic rate was about 12% below basal metabolic rate. Their sleeping rate worked out to roughly 50 calories an hour, or about 400 over 8 hours (our calculation).</p>
+      <p>The <a href="https://www.sleepfoundation.org/physical-health/weight-loss-and-sleep" target="_blank" rel="noopener">Sleep Foundation</a> gives a similar picture, saying metabolism slows about 15% during sleep. Larger, more muscular people burn more. Either way, sleep is not a fat burning shortcut.</p>
+
+      <h2>Can Sleep Help You Lose Weight?</h2>
+      <p>Yes, mostly by changing how much you eat. In a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8822469/" target="_blank" rel="noopener">2022 JAMA Internal Medicine trial</a>, 80 adults with overweight who usually slept under 6.5 hours got one sleep coaching session. They slept about 1.2 hours more a night and ate about 270 fewer calories a day than the control group, with no diet prescribed.</p>
+      <p>Sleep also shapes what you lose. In a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2951287/" target="_blank" rel="noopener">2010 Annals of Internal Medicine study</a>, 10 overweight adults dieted for 14 days twice, once with 8.5 hours in bed and once with 5.5 hours. With short sleep they lost 0.6 kg of fat instead of 1.4 kg, and more lean mass, and they felt hungrier.</p>
+      <p>Hunger hormones help explain it. In a <a href="https://pubmed.ncbi.nlm.nih.gov/15583226/" target="_blank" rel="noopener">2004 study</a> of 12 young men, two nights of short sleep cut the fullness hormone leptin by 18% and raised the hunger hormone ghrelin by 28%.</p>
+
+      <h2>Does Sleeping in a Cold Room Burn Fat?</h2>
+      <p>Not in a way that shows on the scale. In a <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4207391/" target="_blank" rel="noopener">2014 NIH study</a>, five men slept at 66°F (19°C) for a month. Their brown fat increased and insulin sensitivity improved, but body composition did not change. For more on cold and calories, read <a href="/articles/do-cold-showers-make-you-lose-weight/">whether cold showers make you lose weight</a>.</p>
+
+      <h2>What to Do Tonight</h2>
+      <ol>
+        <li><strong>Aim for 7 or more hours.</strong> The <a href="https://www.cdc.gov/sleep/about/index.html" target="_blank" rel="noopener">CDC</a> recommends at least 7 hours for adults aged 18 to 60.</li>
+        <li><strong>Keep a steady schedule.</strong> Go to bed and wake at similar times, including weekends.</li>
+        <li><strong>Plan for next-day hunger.</strong> After a short night, have protein-rich meals ready so cravings do not decide for you.</li>
+        <li><strong>Weigh yourself the same way each time.</strong> Morning, after using the bathroom, before eating, and judge the weekly trend.</li>
+        <li><strong>Pair sleep with the basics.</strong> A modest calorie deficit and regular activity, such as <a href="/articles/running-every-day-benefits-risks/">running or walking</a>, still do the heavy lifting.</li>
+        <li><strong>See a doctor about loud snoring or daytime sleepiness.</strong> They can be signs of sleep apnea, which is treatable.</li>
+      </ol>
+
+      <h2>FAQs</h2>
+      <h3>Why do I weigh less in the morning?</h3>
+      <p>Mainly because you lost water through breathing and sweat overnight and have not eaten or drunk anything yet. It is not a sign of fat loss.</p>
+      <h3>Can you lose fat while you sleep?</h3>
+      <p>Your body does burn some fat overnight, but only as part of a few hundred calories of normal energy use. Fat loss over weeks depends on your total calorie balance.</p>
+      <h3>Does lack of sleep cause weight gain?</h3>
+      <p>Short sleep raises hunger and can increase eating, which makes weight gain more likely. Trials show sleeping longer can reduce daily calorie intake.</p>
+      <h3>How many hours of sleep do I need to lose weight?</h3>
+      <p>There is no magic number, but the CDC advises at least 7 hours for adults. The 2022 trial cut calorie intake by extending short sleep by about an hour.</p>
+
+      <p><em>This article is for general information and is not medical advice. Checked on November 12, 2026, against studies in JAMA Internal Medicine, Annals of Internal Medicine, the BMJ and Diabetes, and guidance from the CDC and Sleep Foundation.</em></p>
+    `
+  },
+  {
+    id: "weight-loss-on-a-budget",
+    title: "Weight Loss on a Budget: A Cheap, Evidence-Based Plan Using USDA Price Data",
+    excerpt: "Weight loss on a budget works with beans, potatoes, frozen produce and free walking. USDA price data, CDC targets and a 7-step plan.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-12T11:30:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Supermarket produce shelves stocked with fresh vegetables and fruit",
+    isTrending: false,
+    views: 0,
+    tags: ["Weight Loss on a Budget", "Eating Healthy on a Budget", "Cheap Healthy Foods", "Food Prices", "Healthy Weight"],
+    content: `
+      <p class="lead">Weight loss on a budget is realistic because the cheapest whole foods are also some of the most filling. Dried beans, potatoes, carrots, cabbage, bananas and frozen vegetables cost about a dollar or less per cup in USDA price data. Pair them with a modest calorie cut and free walking. Aim for about 1 to 2 pounds a week, the pace the CDC links to keeping weight off.</p>
+
+      <blockquote>
+        <p><strong>Weight loss on a budget, the key facts:</strong></p>
+        <ul>
+          <li><strong>Grocery inflation:</strong> food at home prices rose 1.8 percent in the year to September 2026 (BLS).</li>
+          <li><strong>Cheapest produce:</strong> dried pinto beans averaged about $0.23 per cup equivalent and potatoes about $0.30 in USDA's 2023 price data.</li>
+          <li><strong>Safe pace:</strong> about 1 to 2 pounds a week, according to the CDC.</li>
+          <li><strong>Free exercise:</strong> adults need 150 minutes of moderate activity a week plus 2 days of muscle strengthening.</li>
+          <li><strong>Biggest easy saving:</strong> swap sugary drinks for water. Cutting two regular sodas a day removes about 2,100 calories a week.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Is It Possible to Lose Weight on a Tight Budget?</h2>
+      <p>Yes. Weight loss depends on eating fewer calories than you burn, which needs no special products. Smaller portions of plain staples also shrink the grocery bill.</p>
+      <p>Prices still matter. The <a href="https://www.bls.gov/news.release/cpi.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a> reported that the food at home index rose 0.4 percent in October 2026 alone. No 12-month figure exists for October, because October 2025 data were never collected. In September, food at home was up 1.8 percent on the year and restaurant food 3.5 percent. Cooking at home stays cheaper.</p>
+
+      <h2>What Are the Cheapest Healthy Foods for Weight Loss?</h2>
+      <p>The cheapest healthy foods are dried beans and lentils, root vegetables, cabbage, bananas, apples and frozen vegetables. The table below uses the USDA Economic Research Service's <a href="https://www.ers.usda.gov/data-products/fruit-and-vegetable-prices" target="_blank" rel="noopener">Fruit and Vegetable Prices</a> data. Figures are 2023 national averages per edible cup, the latest published. Shelf prices today are likely higher.</p>
+      <table>
+        <thead><tr><th>Food</th><th>Form</th><th>Average price per cup equivalent (2023)</th></tr></thead>
+        <tbody>
+          <tr><td>Pinto beans</td><td>Dried</td><td>$0.23</td></tr>
+          <tr><td>Potatoes</td><td>Fresh</td><td>$0.30</td></tr>
+          <tr><td>Lentils</td><td>Dried</td><td>$0.31</td></tr>
+          <tr><td>Carrots, whole</td><td>Fresh</td><td>$0.31</td></tr>
+          <tr><td>Bananas</td><td>Fresh</td><td>$0.31</td></tr>
+          <tr><td>Green cabbage</td><td>Fresh</td><td>$0.35</td></tr>
+          <tr><td>Onions</td><td>Fresh</td><td>$0.42</td></tr>
+          <tr><td>Apples</td><td>Fresh</td><td>$0.50</td></tr>
+          <tr><td>Mixed vegetables (carrots, peas, corn, green beans)</td><td>Frozen</td><td>$0.66</td></tr>
+          <tr><td>Black beans</td><td>Canned</td><td>$0.78</td></tr>
+          <tr><td>Broccoli</td><td>Frozen</td><td>$1.00</td></tr>
+        </tbody>
+      </table>
+      <p>Dried beans cost about a third as much per cup as canned, so they suit anyone with time to soak and cook. Frozen broccoli ($1.00) and frozen blueberries ($1.39) were cheaper per cup than fresh ($1.05 and $1.73), with no waste from spoilage.</p>
+      <p>The USDA dataset covers produce only. For protein, eggs, canned tuna, chicken thighs and plain yogurt usually beat steak, deli meat or protein bars. Check unit prices on the shelf tag.</p>
+
+      <h2>How Much Weight Can You Lose on a Budget Diet?</h2>
+      <p>A realistic target is about 1 to 2 pounds a week. The CDC's guide to <a href="https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html" target="_blank" rel="noopener">steps for losing weight</a> says people who lose weight at that gradual pace are more likely to keep it off. It adds that even modest loss can improve blood pressure, cholesterol and blood sugar.</p>
+      <p>Start with 5 percent of your weight. For a 200-pound person, that is 10 pounds. Crash diets often backfire, because extreme hunger leads to costly takeout.</p>
+
+      <h2>What Should a Cheap, Healthy Plate Look Like?</h2>
+      <p>Build each meal around protein, vegetables and a fiber-rich carbohydrate. The <a href="https://realfood.gov/" target="_blank" rel="noopener">Dietary Guidelines for Americans, 2025-2030</a> recommend 3 servings of vegetables and 2 servings of fruit a day. They also call for 2 to 4 servings of whole grains and 1.2 to 1.6 grams of protein per kilogram of body weight.</p>
+      <ul>
+        <li><strong>Half the plate:</strong> cabbage, carrots, onions or frozen mixed vegetables.</li>
+        <li><strong>A quarter:</strong> beans, lentils, eggs, tuna or chicken thighs.</li>
+        <li><strong>A quarter:</strong> potatoes, oats or brown rice.</li>
+        <li><strong>Drink:</strong> tap water. The new guidelines tell Americans to avoid highly processed foods and sugar-sweetened beverages.</li>
+      </ul>
+      <p>The <a href="https://www.cdc.gov/healthy-weight-growth/rethink-your-drink/index.html" target="_blank" rel="noopener">CDC</a> notes that a 12-ounce regular soda has more than 10 teaspoons of added sugar. Dropping two a day cuts about 2,100 calories a week and saves money at the same time.</p>
+
+      <h2>How Can You Exercise for Free?</h2>
+      <p>Walking is the cheapest effective exercise. CDC physical activity guidance says adults need 150 minutes of moderate-intensity activity a week, such as brisk walking, plus 2 days of muscle-strengthening activity. That works out to about 30 minutes, 5 days a week.</p>
+      <p>Bodyweight moves cost nothing: squats, wall push-ups, lunges and stair step-ups. If you want to build up to jogging, read our guide to <a href="/articles/running-every-day-benefits-risks/">the benefits and risks of running every day</a>.</p>
+
+      <h2>What Is a Simple Budget Weight Loss Plan?</h2>
+      <p>Plan meals, shop with a list, cook in batches and walk daily. Here are the seven steps:</p>
+      <ol>
+        <li><strong>Set a weekly food budget</strong> and track receipts for two weeks to see where money goes.</li>
+        <li><strong>Plan 3 to 5 base meals</strong>, such as bean chili, lentil soup, egg and vegetable scramble, and chicken thigh tray bake.</li>
+        <li><strong>Shop with a list</strong> and compare unit prices, not package prices.</li>
+        <li><strong>Buy frozen</strong> fruit and vegetables for anything you will not eat within a few days.</li>
+        <li><strong>Batch cook</strong> dried beans and grains once a week, then portion and freeze.</li>
+        <li><strong>Swap drinks</strong>: water instead of soda, juice drinks and coffee shop drinks.</li>
+        <li><strong>Walk daily</strong> and add two short strength sessions at home each week.</li>
+      </ol>
+      <p>Tempted by a liquid diet? Read our <a href="/articles/21-day-smoothie-challenge/">21 day smoothie challenge</a> review first, and our check on <a href="/articles/do-cold-showers-make-you-lose-weight/">whether cold showers make you lose weight</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>How can I lose weight with no money?</h3>
+      <p>Eat smaller portions of cheap staples, drink tap water and walk. Beans, potatoes, cabbage and bananas cost about $0.23 to $0.35 per cup in USDA's 2023 data.</p>
+      <h3>Is it more expensive to eat healthy?</h3>
+      <p>Not if you choose whole staples. Takeout and specialty "health" products push the bill up. Beans, frozen vegetables and eggs keep it down.</p>
+      <h3>Are frozen vegetables as good as fresh for weight loss?</h3>
+      <p>Yes. Plain frozen vegetables are low in calories and keep for months. Frozen broccoli was also cheaper per cup than fresh in USDA's latest data.</p>
+      <h3>What is the cheapest high-protein food?</h3>
+      <p>Dried beans and lentils are among the cheapest, at about $0.23 to $0.31 per cup equivalent. Eggs, canned tuna and chicken thighs are also low-cost animal proteins.</p>
+
+      <p><em>This article is for general information and is not medical advice. Talk to your doctor before starting a weight loss plan if you have a health condition. Checked on November 12, 2026, against BLS CPI releases, USDA ERS Fruit and Vegetable Prices, the Dietary Guidelines for Americans 2025-2030 and CDC guidance.</em></p>
+    `
+  },
+  {
+    id: "21-day-smoothie-challenge",
+    title: "21 Day Smoothie Challenge: What the Evidence Says and a Safer Plan",
+    excerpt: "21 day smoothie challenge: what The Smoothie Diet claims, what research says on detox and meal replacements, and a safer formula.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-12T12:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Two glasses of berry smoothie topped with blueberries and strawberries, with straws",
+    isTrending: false,
+    views: 0,
+    tags: ["21 Day Smoothie Challenge", "Smoothie Diet", "Detox", "Meal Replacement", "Weight Loss"],
+    content: `
+      <p class="lead">A 21 day smoothie challenge can help you lose some weight, but only because it cuts calories, not because smoothies "detox" your body. The best-known version, The Smoothie Diet by health coach Drew Sgoutas, replaces two meals a day with smoothies and has no published research behind it. A safer approach is one protein-rich smoothie a day, with balanced meals around it.</p>
+
+      <blockquote>
+        <p><strong>21 day smoothie challenge, the key facts:</strong></p>
+        <ul>
+          <li><strong>The product:</strong> The Smoothie Diet, a 21-day e-book plan that swaps two meals a day for smoothies.</li>
+          <li><strong>The evidence:</strong> Healthline's dietitian review found "no research to back it up".</li>
+          <li><strong>Detox claims:</strong> the NIH's NCCIH says a 2015 review found "no compelling research" for detox diets for weight management.</li>
+          <li><strong>What does work:</strong> structured meal replacements beat comparison diets by 1.44 kg (about 3 pounds) at one year in a 23-trial review.</li>
+          <li><strong>Who should skip it:</strong> people with diabetes, kidney stones, pregnancy or an eating disorder history, unless their doctor agrees.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is the 21-Day Smoothie Diet?</h2>
+      <p>It is The Smoothie Diet, a digital recipe plan by Drew Sgoutas, who is described as a health coach. According to a <a href="https://www.healthline.com/nutrition/smoothie-diet" target="_blank" rel="noopener">Healthline review</a> by a registered dietitian, the plan works like this:</p>
+      <ul>
+        <li>Two meals a day are replaced with smoothies from 36 recipes.</li>
+        <li>You eat one solid meal and two snacks of about 150 to 200 calories each.</li>
+        <li>One "cheat day" a week has no smoothies.</li>
+        <li>An optional 3-day "detox" replaces all three meals with smoothies.</li>
+      </ul>
+      <p>The creator estimates about 1,500 calories a day. Healthline reported a $47 price in 2022.</p>
+
+      <h2>What Does the Smoothie Diet Claim?</h2>
+      <p>It claims faster weight loss, better immunity, more energy, better skin and gut health, and detoxification. Website testimonials described losing up to 9 pounds in 3 days, Healthline noted. These are anecdotes, not trial results.</p>
+      <p>The <a href="https://consumer.ftc.gov/articles/truth-behind-weight-loss-ads" target="_blank" rel="noopener">Federal Trade Commission</a> warns: "Any promise of miraculous weight loss is simply untrue." It also lists "You can lose 30 pounds in 30 days" as a claim to distrust.</p>
+
+      <h2>Do Smoothie Detoxes Remove Toxins?</h2>
+      <p>No. Your body already removes waste through the liver, kidneys, digestive tract and skin, as Cleveland Clinic dietitians explain. No smoothie speeds that up.</p>
+      <p>The NIH's <a href="https://www.nccih.nih.gov/health/detoxes-and-cleanses-what-you-need-to-know" target="_blank" rel="noopener">National Center for Complementary and Integrative Health</a> says a 2015 review found "no compelling research" supporting detox diets for weight management. A 2017 review found juicing and detox diets cause initial weight loss "because of low intake of calories", which tends to be regained. NCCIH also says people prone to kidney stones should limit high-oxalate foods. Spinach, a common smoothie green, is high in oxalate.</p>
+
+      <h2>Do Meal Replacement Shakes Work for Weight Loss?</h2>
+      <p>Structured meal replacements can help, but they are not the same as fruit smoothies. A 2019 <a href="https://doi.org/10.1111/obr.12816" target="_blank" rel="noopener">systematic review in Obesity Reviews</a> pooled 23 trials with 7,884 adults. Diets including meal replacements produced 1.44 kg more weight loss at one year than other diets.</p>
+      <p>Those trials used formulated products with set calories, protein and nutrients. A homemade fruit smoothie can be very different. Healthline found many Smoothie Diet recipes low in protein and calories, which can leave you hungry and tired.</p>
+
+      <h2>How Much Sugar Is in a Fruit Smoothie?</h2>
+      <p>It depends on the fruit, and it adds up fast. A medium banana has about 14 grams of natural sugar, based on USDA FoodData Central values. Recipes that stack banana, mango and juice climb quickly.</p>
+      <p>Juice is the bigger issue. The <a href="https://www.cdc.gov/healthy-weight-growth/rethink-your-drink/index.html" target="_blank" rel="noopener">CDC</a> lists fruit juice concentrates and nectars as forms of added sugar. It advises no more than 10 grams of added sugar in a single meal. Skip juice, honey and sweetened yogurt, and use one serving of whole fruit.</p>
+
+      <h2>How Much Protein Should a Smoothie Meal Have?</h2>
+      <p>Aim for about 20 to 30 grams. The Dietary Guidelines for Americans, 2025-2030 suggest 1.2 to 1.6 grams of protein per kilogram of body weight a day. For a 150-pound (68 kg) adult, that is about 82 to 109 grams. Plain low-fat Greek yogurt has about 10 grams of protein per 100 grams in USDA data.</p>
+
+      <h2>How Can You Do a 21-Day Smoothie Challenge Safely?</h2>
+      <p>Replace one meal a day, not two, and build each smoothie like a real meal. Follow these seven steps:</p>
+      <ol>
+        <li><strong>Replace one meal only</strong>, usually breakfast or lunch. Eat two balanced solid meals.</li>
+        <li><strong>Use the formula below</strong> for protein, fiber, vegetables and some fat.</li>
+        <li><strong>Keep fruit to one serving</strong> and skip juice, honey and sweetened yogurt.</li>
+        <li><strong>Rotate greens</strong>, such as spinach, kale and frozen cauliflower, to limit oxalate load.</li>
+        <li><strong>Walk most days.</strong> Adults need 150 minutes of moderate activity a week.</li>
+        <li><strong>Weigh in weekly</strong> and aim for 1 to 2 pounds a week, the CDC's suggested pace.</li>
+        <li><strong>Plan your exit.</strong> On day 22, keep the habits that worked.</li>
+      </ol>
+
+      <h2>What Is a Balanced Smoothie Formula?</h2>
+      <table>
+        <thead><tr><th>Part</th><th>Amount</th><th>Options</th></tr></thead>
+        <tbody>
+          <tr><td>Protein</td><td>20 to 30 g</td><td>3/4 cup plain Greek yogurt, cottage cheese, soy milk, or unsweetened protein powder</td></tr>
+          <tr><td>Vegetables</td><td>1 to 2 handfuls</td><td>Spinach, kale, frozen cauliflower, cucumber</td></tr>
+          <tr><td>Fruit</td><td>1 serving</td><td>1/2 banana or 3/4 cup frozen berries</td></tr>
+          <tr><td>Fiber</td><td>1 to 2 tbsp</td><td>Rolled oats, chia seeds or ground flaxseed</td></tr>
+          <tr><td>Fat</td><td>1 tbsp</td><td>Peanut butter, almond butter or a quarter avocado</td></tr>
+          <tr><td>Liquid</td><td>1 cup</td><td>Water, unsweetened milk or soy milk</td></tr>
+        </tbody>
+      </table>
+      <p>For cheap ingredients, see our guide to <a href="/articles/weight-loss-on-a-budget/">weight loss on a budget</a> for USDA price data. If you are considering prescription weight-loss drugs instead, read about the <a href="/articles/fda-glp1-naion-eye-warning-ozempic-wegovy/">FDA's new GLP-1 eye warning</a>.</p>
+      <p>Talk to a doctor first if you have diabetes, kidney disease or kidney stones, are pregnant or breastfeeding, or have a history of eating disorders. NIDDK also notes that losing weight very quickly may raise the risk of gallstones.</p>
+
+      <h2>FAQs</h2>
+      <h3>How much weight can you lose on a 21 day smoothie diet?</h3>
+      <p>There is no research on this specific plan. At the CDC's suggested pace of 1 to 2 pounds a week, about 3 to 6 pounds over 21 days is a realistic range.</p>
+      <h3>Is the 21 day smoothie diet safe?</h3>
+      <p>It is not suitable for everyone. Healthline's dietitian review flagged low protein, hunger, fatigue and possible weight regain as the main concerns.</p>
+      <h3>Do detox smoothies really work?</h3>
+      <p>Not as detoxes. Your liver and kidneys handle that. Any weight lost comes from eating fewer calories.</p>
+      <h3>Can I replace two meals a day with smoothies?</h3>
+      <p>You can, but one replacement is easier to sustain and protects protein intake. Check with your doctor first if you take diabetes medicine.</p>
+
+      <p><em>This article is for general information and is not medical advice. Checked on November 12, 2026, against NIH NCCIH, the FTC, the CDC, Healthline, a 2019 Obesity Reviews meta-analysis and USDA FoodData Central.</em></p>
+    `
+  },
+  {
+    id: "jelly-bean-brains-content-creator",
+    title: "Jelly Bean Brains: Who the Jellybean Content Creator Is, and What Is Really Confirmed",
+    excerpt: "Jelly Bean Brains is an Instagram and TikTok creator known for car-smashing videos. Her real name and age are not confirmed. Here is what we could verify.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-12T12:15:00Z",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Instagram app logo icon on a pink and orange gradient background",
+    isTrending: false,
+    views: 0,
+    tags: ["Jelly Bean Brains", "Content Creators", "Creator Economy", "Social Media", "Online Misinformation"],
+    content: `
+      <p class="lead">Most people searching for a "Jellybean content creator" mean Jelly Bean Brains, a social media personality known on Instagram and TikTok for dance clips, lip-syncs and videos of her damaging cars. Her real name and exact age have not been confirmed by her or by any reputable outlet we could find. A second, unrelated creator called JellyBean makes Minecraft videos, and bio sites regularly mix the two up.</p>
+
+      <blockquote>
+        <p><strong>Jelly Bean Brains at a glance:</strong></p>
+        <ul>
+          <li><strong>Known for:</strong> short dance, lip-sync, rage-bait and car-smashing videos.</li>
+          <li><strong>Main platforms:</strong> Instagram and TikTok, not YouTube.</li>
+          <li><strong>Real name and age:</strong> not publicly confirmed by the creator.</li>
+          <li><strong>Follower counts:</strong> published figures range from about 343,000 to more than 7 million, none tied to a dated, live profile check.</li>
+          <li><strong>Net worth:</strong> any figure you see is an unsourced estimate.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Who Is Jelly Bean Brains?</h2>
+      <p>Jelly Bean Brains is a short-video creator whose clips mix dancing, provocative "rage-bait" stunts and destroyed cars. Her Instagram handle is widely reported as <a href="https://www.instagram.com/jellybeanbrainss/" target="_blank" rel="noopener">@jellybeanbrainss</a>, the same spelling used in the title of her best-known interview.</p>
+      <p>That interview, "<a href="https://www.youtube.com/watch?v=FIUojv0ZiPk" target="_blank" rel="noopener">She DESTROYS Cars For a Living - Jellybeanbrainss Interview</a>", was posted on July 19, 2024, by Daniel Mac, whose Itsdanielmac channel interviews owners of expensive cars. Its chapter list shows she discussed rage-baiting videos, threats and police, car talk, finance, gambling and the future of content creation.</p>
+      <p>Legit.ng, citing the same interview, reports that she traded a Tesla for a BMW M4 and that jumping on a car for a video led to her car-smashing format. We could not view a transcript to confirm the wording.</p>
+
+      <h2>What Is Jelly Bean Brains' Real Name?</h2>
+      <p>It is not publicly confirmed. Several bio sites print a full legal name, but none cites the creator saying it herself, an official record or a named source. Spanish-language outlet tunota.com noted in April 2024 that an Instagram display name was the only identity clue and treated it as unconfirmed.</p>
+      <p>We are not repeating the name. A wrong name can attach a stranger's identity to a creator, and a correct one shared without consent defeats the purpose of a stage name.</p>
+
+      <h2>How Old Is Jelly Bean Brains?</h2>
+      <p>Her exact age is not publicly confirmed. Her interview topics, which include gambling, indicate an adult creator, but she has not shared a birth date we could verify.</p>
+      <p>One detail shows how unreliable bio sites are. Legit.ng lists a specific birth date for Jelly Bean Brains. Sportskeeda lists the exact same day, month and year for JellyBean, the separate Minecraft streamer. Two different people sharing one copied birth date is a sign the figure was recycled, not researched.</p>
+
+      <h2>Is She the Same as JellyBean the Minecraft YouTuber?</h2>
+      <p>No. The Minecraft JellyBean is a streamer who uses a cartoon avatar and posts on Twitch and the YouTube channel JellyBean69420. According to <a href="https://knowyourmeme.com/memes/jellybean" target="_blank" rel="noopener">Know Your Meme</a>, that creator started on Twitch on March 28, 2020, and on YouTube on October 8, 2020, and was a minor as of March 2022. We are not publishing that creator's name or age.</p>
+
+      <h2>Verified Facts We Could Check</h2>
+      <table>
+        <thead><tr><th>Item</th><th>What we found (November 12, 2026)</th></tr></thead>
+        <tbody>
+          <tr><td>Itsdanielmac interview</td><td>Posted July 19, 2024; 21 minutes long; 70,228 views</td></tr>
+          <tr><td>Interviewer's channel size</td><td>3.33 million subscribers</td></tr>
+          <tr><td>YouTube channel named "Jelly Bean Brains"</td><td>252 subscribers and 9 Shorts; we found no link from her known accounts, so we cannot confirm she runs it</td></tr>
+          <tr><td>Instagram and TikTok counts</td><td>Not checked; both platforms blocked our automated access</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How Does Jelly Bean Brains Make Money?</h2>
+      <p>She has not published a breakdown, so any income figure is a guess. Creators with her profile usually earn from a mix of sources:</p>
+      <ul>
+        <li><strong>Platform payouts:</strong> TikTok and Instagram run creator reward programs, though eligibility and rates vary.</li>
+        <li><strong>Brand deals and paid posts:</strong> a common income source for short-video creators.</li>
+        <li><strong>YouTube ads:</strong> under <a href="https://support.google.com/youtube/answer/72902" target="_blank" rel="noopener">YouTube's terms</a>, partners get 55% of net ad revenue on long-form videos and 45% of their allocated share on Shorts. Joining requires <a href="https://support.google.com/youtube/answer/72851" target="_blank" rel="noopener">1,000 subscribers plus 4,000 watch hours in 12 months or 10 million Shorts views in 90 days</a>. Her audience sits mainly off YouTube.</li>
+      </ul>
+      <p>Legit.ng repeats a $1.2 million net worth from another celebrity site, with no date or method. Treat it as an estimate.</p>
+
+      <h2>Why Do Sites Publish Unverified Details?</h2>
+      <p>"Real name and age" searches have steady demand and little competition from official sources, because creators rarely publish a bio. Low-cost sites fill the gap by copying one another, so a single guess can appear on dozens of pages within weeks.</p>
+      <p>Searches for this creator also surface "leaked video" pages hosted on unrelated university and nonprofit subdomains. These are spam pages, often built to push ads or malware. Do not click them.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who is the Jellybean content creator?</h3>
+      <p>Usually Jelly Bean Brains, an Instagram and TikTok creator known for dance and car-smashing videos. JellyBean the Minecraft streamer is a different person.</p>
+      <h3>What is Jelly Bean Brains' real name?</h3>
+      <p>She has not publicly confirmed it. Names on bio sites are unsourced.</p>
+      <h3>How many followers does Jelly Bean Brains have?</h3>
+      <p>Published figures conflict widely. Check her profiles directly for a current count.</p>
+      <h3>What is Jelly Bean Brains' net worth?</h3>
+      <p>Unknown. Figures online are estimates with no disclosed method.</p>
+
+      <p><em>Checked on November 12, 2026, against the Itsdanielmac interview page, YouTube channel pages, YouTube Help Center articles, Know Your Meme, and reporting by Legit.ng, Sportskeeda and tunota.com.</em></p>
+    `
+  },
+  {
     id: "adobe-max-2026-firefly-creative-agent",
     title: "Adobe MAX 2026: Firefly Becomes an AI Creative Studio as Creative Agent Comes to Photoshop and Premiere",
     excerpt: "Adobe MAX 2026 made Firefly an AI creative studio and brought Creative Agent to Photoshop and Premiere. What is live, what is beta and what it means.",
@@ -15,6 +474,7 @@ const ARTICLES = [
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Tablet showing Adobe Premiere, After Effects, Photoshop and Illustrator app icons on a desk beside a keyboard",
+    isFeatured: true,
     isTrending: true,
     views: 0,
     tags: ["Adobe MAX 2026", "Adobe Firefly", "Creative Cloud", "AI Agents", "Generative AI"],
