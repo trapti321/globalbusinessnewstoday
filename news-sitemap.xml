@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/democrats-ai-agenda-2028-tomorrow-together/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T15:00:00Z</news:publication_date>
+      <news:title>Democratic Group Tomorrow Together Launches $1.1 Million Push to Shape AI Agenda for 2028</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/microsoft-outage-outlook-teams-down-worldwide/</loc>
     <news:news>
       <news:publication>

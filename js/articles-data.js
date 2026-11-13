@@ -1,6 +1,92 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "democrats-ai-agenda-2028-tomorrow-together",
+    title: "Democratic Group Tomorrow Together Launches $1.1 Million Push to Shape AI Agenda for 2028",
+    excerpt: "Tomorrow Together, which spent $6.5M on pro-regulation midterm candidates, launches a $1.1M AI research push for 2028. What it means for tech.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-13T15:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Silhouette of a hand dropping a ballot into a ballot box against a white background",
+    isTrending: true,
+    views: 0,
+    tags: ["AI Regulation", "2028 Election", "Democrats", "Super PACs", "AI Policy", "Data Centers"],
+    content: `
+      <p class="lead">Tomorrow Together, a Democratic political organization that spent $6.5 million backing pro-regulation candidates in the 2026 midterms, has launched a $1.1 million research initiative to shape how Democrats talk to voters about artificial intelligence ahead of the 2028 presidential election, The Associated Press reported on November 13, 2026. The group says AI regulation is now a winning issue for Democrats, setting up a sharper political fight with an AI industry that has spent tens of millions of dollars on elections.</p>
+
+      <blockquote>
+        <p><strong>Democrats' AI push, the key facts:</strong></p>
+        <ul>
+          <li><strong>Who:</strong> Tomorrow Together, co-founded by Karthik Ganapathy and Rob Flaherty. Maddie Kriger is chief program officer.</li>
+          <li><strong>What:</strong> a research initiative starting at $1.1 million on how Democrats should discuss AI with voters.</li>
+          <li><strong>Midterm record:</strong> $6.5 million spent supporting candidates who called for more AI regulation and new limits on data centers.</li>
+          <li><strong>Where announced:</strong> the What's Next conference in Denver, where Democrats met after the midterms to plan for 2028.</li>
+          <li><strong>The divide:</strong> President Trump opposes regulating powerful AI; Democrats argue that stance is unpopular.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Tomorrow Together Launching?</h2>
+      <p>Tomorrow Together is starting a research effort, initially funded at $1.1 million, to work out how Democrats should talk about AI with voters before the 2028 race, according to the <a href="https://www.ksat.com/news/politics/2026/11/13/democratic-political-group-launches-new-push-to-shape-ai-agenda-ahead-of-2028/" target="_blank" rel="noopener">AP report by Nicholas Riccardi</a>, also published by <a href="https://www.usnews.com/news/politics/articles/2026-11-13/democratic-political-group-launches-new-push-to-shape-ai-agenda-ahead-of-2028" target="_blank" rel="noopener">US News</a>. The group announced it as Democrats gathered in Denver for What's Next, a two-day conference marking their midterm gains and looking toward the next presidential campaign.</p>
+      <p>"We expect getting this right is going to be critical to winning people's votes," Kriger told the AP. She added: "It's also not out of the realm of possibility we will see more and worse AI incidents in the next year."</p>
+      <p>The AP did not describe the group's legal structure or say who funds the new initiative. Some early versions of the wire story misnamed the group "Together Tomorrow"; the AP corrected it to Tomorrow Together.</p>
+
+      <h2>Why Democrats See AI as a Winning Issue</h2>
+      <p>The group's founders argue that voters have moved toward regulation. "At the beginning of the cycle, this was a jump ball. Voters didn't know who to trust," Flaherty said. "Regulating technology is where the voters are." Ganapathy, speaking about Republicans and AI, said: "I'd rather be us than them."</p>
+      <p>Democratic data analyst David Shor told the AP: "I really think we're watching the birth of a new political issue before our eyes."</p>
+      <p>Public opinion data supports the idea that AI worries cross party lines. A <a href="https://www.pewresearch.org/short-reads/2025/11/06/republicans-democrats-now-equally-concerned-about-ai-in-daily-life-but-views-on-regulation-differ/" target="_blank" rel="noopener">Pew Research Center survey</a> of 5,023 US adults in June 2025 found 50% were more concerned than excited about AI in daily life, up from 37% in 2021. Republicans (50%) and Democrats (51%) were almost identical. Trust in Washington to regulate AI differs by party: in a March 2025 Pew survey, 54% of Republicans trusted the US to regulate AI effectively, against 36% of Democrats.</p>
+      <table>
+        <thead><tr><th>Pew finding</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>More concerned than excited about AI (all adults, June 2025)</td><td>50%, up from 37% in 2021</td></tr>
+          <tr><td>More concerned than excited: Republicans / Democrats</td><td>50% / 51%</td></tr>
+          <tr><td>Trust the US to regulate AI effectively (March 2025)</td><td>44% overall</td></tr>
+          <tr><td>Trust the US to regulate AI: Republicans / Democrats</td><td>54% / 36%</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How Much Is the AI Industry Spending on Elections?</h2>
+      <p>Tomorrow Together's $6.5 million was a fraction of what AI-aligned super PACs spent in the midterm cycle. According to an October 29 analysis by <a href="https://theintercept.com/2026/10/29/midterms-election-money-ai-super-pac/" target="_blank" rel="noopener">The Intercept</a>:</p>
+      <ul>
+        <li><strong>Leading the Future</strong>, an industry-backed network launched in August 2025, counts OpenAI president Greg Brockman and his wife, Anna Brockman, among its donors, with a $25 million gift. It had about $34 million in cash across its network at its latest report.</li>
+        <li><strong>Public First</strong>, a rival network formed to push for tighter AI rules, received $1 million from Anthropic CEO Dario Amodei.</li>
+        <li>The two networks spent <strong>$50.7 million in primaries</strong>, including $21.3 million for and against New York Democrat Alex Bores, a state lawmaker who sponsored AI safety legislation, in a single congressional primary.</li>
+      </ul>
+      <p>The Intercept found only about 5% of AI super PAC direct spending went to contested general-election races, with most money spent in primaries.</p>
+
+      <h2>Where Republicans and the Trump Administration Stand</h2>
+      <p>The AP reports that President Donald Trump opposes regulating powerful AI, a position Democrats argue is unpopular with voters and see as an opening to lead on AI guardrails. Not every Republican agrees with the White House. Florida Gov. Ron DeSantis, widely expected to consider another presidential run, has distanced himself from Trump's pro-industry stance, according to the AP.</p>
+      <p>Democrats are not fully united either: some party leaders have courted AI investment and data center projects in their states, while others want tougher limits. How the party balances jobs and investment against regulation will shape its 2028 platform.</p>
+
+      <h2>What It Means for Business</h2>
+      <p>For technology companies and investors, the push signals that AI regulation is likely to be a central 2028 campaign issue rather than a niche policy debate. Areas most exposed include:</p>
+      <ul>
+        <li><strong>Data centers:</strong> Tomorrow Together's midterm candidates sought new limits on data centers, which have drawn protests, including an anti-data center demonstration at the Pennsylvania state Capitol on October 6, 2026, pictured in AP coverage.</li>
+        <li><strong>AI safety rules:</strong> requirements for testing and disclosure of the most powerful models, especially as companies develop AI that can help build newer versions of itself, a risk the AP said prompted the new initiative.</li>
+        <li><strong>Campaign finance:</strong> industry spending through super PACs may itself become a campaign issue. A Data for Progress poll commissioned by Guardrails Alliance found about three-quarters of likely voters in Iowa, Michigan and Ohio were less likely to back a candidate supported by an AI super PAC, The Intercept reported.</li>
+      </ul>
+      <p>Businesses deploying AI should watch state legislatures, where most AI rules are currently being written, and the policy platforms that emerge from 2028 primary candidates. For how enterprises are adopting AI agents, see our report on <a href="/articles/ibm-microsoft-imagine-enterprise-ai-agent-platform/">IBM and Microsoft's Imagine Enterprise platform</a>, and for AI's growing role in search and marketing, our coverage of the <a href="/articles/chatgpt-business-hub-claim-business-analytics/">ChatGPT Business Hub</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>What is Tomorrow Together?</h3>
+      <p>A Democratic political organization co-founded by Karthik Ganapathy and Rob Flaherty. It spent $6.5 million in the 2026 midterms supporting candidates who called for more AI regulation.</p>
+      <h3>How much is the new Democratic AI initiative worth?</h3>
+      <p>It starts at $1.1 million, according to the AP. The funding source was not disclosed.</p>
+      <h3>What is Leading the Future?</h3>
+      <p>An AI industry-backed super PAC network launched in August 2025, with donors including OpenAI president Greg Brockman. It has spent heavily in congressional primaries.</p>
+      <h3>Do Americans want more AI regulation?</h3>
+      <p>Pew found in 2025 that half of US adults are more concerned than excited about AI, with almost no gap between Republicans and Democrats. Views differ by party on trusting the federal government to regulate it.</p>
+
+      <p><em>Checked on November 13, 2026, against The Associated Press, The Intercept and Pew Research Center. This article reports political claims as made by those quoted and is not an endorsement of any party or candidate.</em></p>
+    `
+  },
+  {
     id: "microsoft-outage-outlook-teams-down-worldwide",
     title: "Microsoft Outage Hits Outlook and Teams for Companies and Governments Worldwide",
     excerpt: "A Microsoft 365 outage took down Outlook, Teams and Copilot for firms and governments worldwide. The cause, who was hit, the timeline and what to do now.",

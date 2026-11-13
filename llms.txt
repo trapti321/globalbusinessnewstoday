@@ -53,6 +53,7 @@ Global Business News Today is an independent business news website. Articles cit
 
 ## Tech & AI
 
+- [Democratic Group Tomorrow Together Launches $1.1 Million Push to Shape AI Agenda for 2028](https://globalbusinessnewstoday.com/articles/democrats-ai-agenda-2028-tomorrow-together/): Tomorrow Together, which spent $6.5M on pro-regulation midterm candidates, launches a $1.1M AI research push for 2028. What it means for tech. (Published 2026-11-13)
 - [Microsoft Outage Hits Outlook and Teams for Companies and Governments Worldwide](https://globalbusinessnewstoday.com/articles/microsoft-outage-outlook-teams-down-worldwide/): A Microsoft 365 outage took down Outlook, Teams and Copilot for firms and governments worldwide. The cause, who was hit, the timeline and what to do now. (Published 2026-11-13)
 - [Nvidia Reportedly Cancels RTX 5080 24GB as AI Demand Drives Up GDDR7 Memory Costs](https://globalbusinessnewstoday.com/articles/nvidia-cancels-rtx-5080-24gb/): Nvidia has reportedly cancelled the January 2027 launch of a 24GB RTX 5080 over 3GB GDDR7 costs. The 16GB model stays. What we know and what is unconfirmed. (Published 2026-11-12)
 - [Adobe MAX 2026: Firefly Becomes an AI Creative Studio as Creative Agent Comes to Photoshop and Premiere](https://globalbusinessnewstoday.com/articles/adobe-max-2026-firefly-creative-agent/): Adobe MAX 2026 made Firefly an AI creative studio and brought Creative Agent to Photoshop and Premiere. What is live, what is beta and what it means. (Published 2026-11-12)
