@@ -1,6 +1,104 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "microsoft-outage-outlook-teams-down-worldwide",
+    title: "Microsoft Outage Hits Outlook and Teams for Companies and Governments Worldwide",
+    excerpt: "A Microsoft 365 outage took down Outlook, Teams and Copilot for firms and governments worldwide. The cause, who was hit, the timeline and what to do now.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-13T13:30:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Network patch panel with blue and grey Ethernet cables plugged into numbered ports",
+    isTrending: true,
+    views: 0,
+    tags: ["Microsoft", "Microsoft 365", "Outlook", "Teams", "Cloud Outage", "Cybersecurity"],
+    content: `
+      <p class="lead">A Microsoft 365 outage that began on Thursday, November 12, 2026, knocked out Outlook email, Teams and other Microsoft cloud services for companies and government agencies across the US, Europe and Asia-Pacific, and recovery was still incomplete on Friday, November 13. Microsoft says servers handling secure connections became overwhelmed and that it has no indication of malicious activity. By Friday morning US Eastern time, the company reported gradual recovery and improving email delivery, but it had not declared the incident fully resolved.</p>
+
+      <blockquote>
+        <p><strong>Microsoft outage, the key facts:</strong></p>
+        <ul>
+          <li><strong>Started:</strong> 1:26 p.m. ET on Thursday, November 12, according to Microsoft's incident record, as reported by BleepingComputer.</li>
+          <li><strong>Services hit:</strong> Exchange Online (Outlook email), Teams, SharePoint Online, Microsoft 365 Copilot and Defender XDR, with Planner, To Do and Intune later added to Microsoft's list.</li>
+          <li><strong>Stated cause:</strong> a process that establishes secure connections on affected servers became overwhelmed, so the servers stopped processing requests.</li>
+          <li><strong>Not a cyberattack:</strong> Microsoft says it has no indication of malicious activity.</li>
+          <li><strong>Who was hit:</strong> UK police and NHS email, government email in Singapore and Japan, the Philippines Supreme Court, airlines and banks.</li>
+          <li><strong>Status (Friday morning ET):</strong> gradual recovery, with some users still seeing intermittent problems.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Happened to Microsoft 365?</h2>
+      <p>The outage centred on Exchange Online, Microsoft's cloud email service, and the Microsoft 365 apps that depend on it. Microsoft first saw mailbox connection problems in the Americas on Thursday, then confirmed users in any region could be affected, according to <a href="https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/" target="_blank" rel="noopener">BleepingComputer</a>, which tracked the incident under Microsoft's advisory ID MO1550821.</p>
+      <p>Microsoft initially blamed elevated infrastructure load and said the load "isn't driven by an increase in traffic". It later said the problem came from "a number of servers being unexpectedly unavailable". On Thursday night it gave a fuller explanation, quoted by <a href="https://abc7news.com/live-updates/microsoft-outage-live-updates-what-know-outlook-365-other-apps-remain-down/20036817/" target="_blank" rel="noopener">ABC7</a>: "a process on the affected servers responsible for establishing secure connections becomes overwhelmed, causing the servers to stop processing requests."</p>
+      <p>A separate, shorter Teams incident earlier on Thursday, from 9:45 a.m. to 10:53 a.m. ET, was attributed to "resource contention". Microsoft has not said whether the two are linked.</p>
+
+      <h2>Who Was Affected by the Microsoft Outage?</h2>
+      <p>The disruption reached public services and businesses in several countries, according to <a href="https://wtop.com/world/2026/11/microsoft-outage-hits-companies-and-governments-worldwide-as-it-struggles-to-restore-services" target="_blank" rel="noopener">The Associated Press</a>.</p>
+      <table>
+        <thead><tr><th>Country or sector</th><th>Reported impact</th></tr></thead>
+        <tbody>
+          <tr><td>United Kingdom</td><td>The government said it was "working closely" with Microsoft and had "robust contingency plans". Police forces could not take online crime reports. The National Pharmacy Association warned of possible prescription delays because NHS email was affected.</td></tr>
+          <tr><td>Australia</td><td>Home Affairs Minister Tony Burke spoke with Microsoft's top executive in Australia and the national cybersecurity coordinator.</td></tr>
+          <tr><td>Singapore</td><td>The Government Technology Agency said government emails were down.</td></tr>
+          <tr><td>Japan</td><td>Deputy Chief Cabinet Secretary Masanao Ozaki said government IT was affected and officials switched to alternatives such as telephones.</td></tr>
+          <tr><td>Philippines</td><td>The Supreme Court said some operations, including email responses, were affected.</td></tr>
+          <tr><td>United States</td><td>City governments reported email disruptions. Workhorse Group delayed its quarterly earnings call.</td></tr>
+          <tr><td>Airlines</td><td>Air India and IndiGo said flights were unaffected but email customer support was disrupted.</td></tr>
+          <tr><td>Banks and trade</td><td>Some Hong Kong banks reported disrupted operations, and exporters could not receive customer emails.</td></tr>
+          <tr><td>AI companies</td><td>OpenAI and Anthropic reported problems connecting with Microsoft 365 tools.</td></tr>
+        </tbody>
+      </table>
+      <p>The full scale is not known. Microsoft said in January that it had more than 450 million paid Microsoft 365 commercial subscriptions, the AP noted.</p>
+
+      <h2>Is It a Cyberattack?</h2>
+      <p>No, according to Microsoft and the Australian government. Microsoft said it had no indication of malicious activity. Burke said: "They (Microsoft) don't believe they are dealing with a cyberattack." He described it as similar to a faulty update, "where there is an update that has gone awry", and said Microsoft had likened the disruption to the 2024 CrowdStrike outage, when a faulty security update crashed Windows computers and grounded flights.</p>
+      <p>The final root cause has not been published. On Thursday evening Microsoft said it was checking whether reverting "a small number of recent configuration updates" could speed recovery, according to BleepingComputer.</p>
+
+      <h2>Microsoft Outage Timeline</h2>
+      <ul>
+        <li><strong>Thursday, 9:45 to 10:53 a.m. ET:</strong> a separate Teams incident affects North and South America and is resolved.</li>
+        <li><strong>Thursday, 1:26 p.m. ET:</strong> the main Microsoft 365 incident begins, starting with Exchange Online mailbox access.</li>
+        <li><strong>Thursday:</strong> Microsoft pauses all deployments, redistributes traffic and restarts affected servers.</li>
+        <li><strong>Thursday, 6:57 p.m. ET:</strong> limited recovery. Microsoft says returned servers "remain stable so far".</li>
+        <li><strong>Thursday night (US):</strong> Microsoft reports partial recovery that is "not sustained" and explains the secure-connection overload.</li>
+        <li><strong>Friday, early hours:</strong> "early stabilization and capacity improvements", though capacity "has not yet fully returned to baseline", Microsoft said.</li>
+        <li><strong>Friday, 7:09 a.m. ET:</strong> Microsoft reports "encouraging recovery progress", with email delivery improving and some users still seeing intermittent issues.</li>
+      </ul>
+      <p>Microsoft has extended its email timeout window to 48 hours so that delayed messages are held and delivered instead of bouncing, BleepingComputer reported.</p>
+
+      <h2>What Should Businesses Do Now?</h2>
+      <ol>
+        <li><strong>Check the official status:</strong> the Microsoft 365 admin centre's Service health page, under incident MO1550821, and Microsoft's @MSFT365Status account on X.</li>
+        <li><strong>Do not resend mail in bulk:</strong> with the 48-hour timeout, delayed messages should still arrive. Resending adds load and creates duplicates.</li>
+        <li><strong>Use backup channels:</strong> phone, SMS or a secondary messaging tool for urgent customer and supplier contact.</li>
+        <li><strong>Watch for scams:</strong> outages attract phishing emails posing as Microsoft "fixes" or password resets. Treat any message asking you to reset a password or install a fix with suspicion, and check it against the official status page.</li>
+        <li><strong>Log the impact:</strong> record downtime and lost work for any service-level credit claim under your Microsoft agreement.</li>
+      </ol>
+
+      <h2>Why the Outage Matters for Business</h2>
+      <p>The incident shows how much daily operations now depend on a single cloud provider. Email, chat, document sharing, device management and AI assistants such as Copilot all sit on the same Microsoft 365 platform, so one failure stopped several tools at once. For governments, it interrupted crime reporting and prescription workflows. For companies, it delayed an earnings call and international orders.</p>
+      <p>Large customers and public bodies are likely to scrutinise Microsoft's post-incident review for what failed and how a repeat will be prevented. For more on how enterprises are building on Microsoft's cloud, see our report on <a href="/articles/ibm-microsoft-imagine-enterprise-ai-agent-platform/">IBM and Microsoft's Imagine Enterprise agent platform</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Is Microsoft Outlook still down?</h3>
+      <p>Microsoft reported gradual recovery and improving email delivery on Friday morning, November 13, but some users still had intermittent problems and the incident had not been declared fully resolved.</p>
+      <h3>What caused the Microsoft 365 outage?</h3>
+      <p>Microsoft said a process on affected servers that establishes secure connections became overwhelmed, causing the servers to stop processing requests. A full root cause has not been published.</p>
+      <h3>Was the Microsoft outage a cyberattack?</h3>
+      <p>Microsoft says it has no indication of malicious activity, and Australia's Home Affairs Minister said Microsoft does not believe it is a cyberattack.</p>
+      <h3>Will I lose emails sent during the outage?</h3>
+      <p>Microsoft extended its email timeout window to 48 hours to preserve delayed messages, so most mail should be delivered as service recovers.</p>
+
+      <p><em>Checked on November 13, 2026, against reporting by The Associated Press, BleepingComputer and ABC7, which quote Microsoft's service updates. This is a developing story and will be updated.</em></p>
+    `
+  },
+  {
     id: "nvidia-cancels-rtx-5080-24gb",
     title: "Nvidia Reportedly Cancels RTX 5080 24GB as AI Demand Drives Up GDDR7 Memory Costs",
     excerpt: "Nvidia has reportedly cancelled the January 2027 launch of a 24GB RTX 5080 over 3GB GDDR7 costs. The 16GB model stays. What we know and what is unconfirmed.",

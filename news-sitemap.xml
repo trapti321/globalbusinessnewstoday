@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/articles/microsoft-outage-outlook-teams-down-worldwide/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-13T13:30:00Z</news:publication_date>
+      <news:title>Microsoft Outage Hits Outlook and Teams for Companies and Governments Worldwide</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/articles/nvidia-cancels-rtx-5080-24gb/</loc>
     <news:news>
       <news:publication>
@@ -174,204 +185,6 @@
       </news:publication>
       <news:publication_date>2026-11-11T15:00:00Z</news:publication_date>
       <news:title>ChatGPT Business Hub: OpenAI Lets Businesses Claim Profiles and See Mentions and Clicks</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/cma-akzonobel-axalta-merger-competition-concerns/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T10:20:00Z</news:publication_date>
-      <news:title>UK CMA Flags Competition Concerns Over AkzoNobel&#039;s $25 Billion Axalta Merger</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/ibm-microsoft-imagine-enterprise-ai-agent-platform/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T10:15:00Z</news:publication_date>
-      <news:title>IBM and Microsoft Launch Imagine Enterprise, an AI Agent Platform for Regulated Industries</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/middle-east-fintech-boom-financial-inclusion-blind-spot/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T10:10:00Z</news:publication_date>
-      <news:title>Middle East Fintech Boom Leaves the Unbanked Behind, Industry Leaders Warn</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/russian-fintech-a7-india-payments-sanctions/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T10:05:00Z</news:publication_date>
-      <news:title>Sanctioned Russian Payments Firm A7 Pitches India Rupee and Stablecoin Services</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/fda-glp1-naion-eye-warning-ozempic-wegovy/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T10:00:00Z</news:publication_date>
-      <news:title>FDA Orders NAION Eye Warning on Ozempic, Wegovy, Mounjaro and All GLP-1 Drugs</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/best-vitel-tone-near-me/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T09:15:00Z</news:publication_date>
-      <news:title>Best Vitel Toné Near Me: Where to Find It, Prices, Food Safety and a Recipe</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/best-tarta-de-brocoli-near-me/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T09:10:00Z</news:publication_date>
-      <news:title>Best Tarta de Brócoli Near Me: Where to Find It and an Easy Recipe</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/python-bug-54axhg5/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T09:05:00Z</news:publication_date>
-      <news:title>Python Bug 54axhg5: Is It Real? What Python&#039;s Issue Tracker and CVE Records Show</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/sfm-compile/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T09:00:00Z</news:publication_date>
-      <news:title>SFM Compile Guide: How to Compile Models for Source Filmmaker With Studiomdl and Crowbar</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/pressvibepulse-com-review/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T08:15:00Z</news:publication_date>
-      <news:title>PressVibePulse.com Review: Site Down, and Not a Press Release Service</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/quikconsole-com-review/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T08:10:00Z</news:publication_date>
-      <news:title>QuikConsole.com Review: Not a Console or Dev Tool, by Its Own Admission</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/snapjotz-com-review/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T08:05:00Z</news:publication_date>
-      <news:title>SnapJotz.com Review: Is It a Notes App or a Blog? What We Found</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/brasssmile-com-review/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T08:00:00Z</news:publication_date>
-      <news:title>BrassSmile.com Review: A Dental Care Site or a Multi-Topic Blog? What We Verified</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/bta-meaning/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T18:15:00Z</news:publication_date>
-      <news:title>BTA Meaning: What BTA Stands For in Texting and in Business</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/what-is-a-yn/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T18:10:00Z</news:publication_date>
-      <news:title>What Is a YN? YN Meaning in Slang, TikTok, Fan Fiction and Texts</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/lightniteone-new-version-for-pc/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T18:05:00Z</news:publication_date>
-      <news:title>LightNite One New Version for PC: What Lightniteone.com Claims vs the Real Game</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/adstotally-com-review/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T18:00:00Z</news:publication_date>
-      <news:title>Adstotally.com Review: Is It an Ad Network or Just a Blog? What We Verified</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/top-mobile-app-development-companies-usa/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T17:00:00Z</news:publication_date>
-      <news:title>Top 10 Mobile App Development Companies in the USA (2026): Verified US-Based Firms</news:title>
     </news:news>
   </url>
 </urlset>
