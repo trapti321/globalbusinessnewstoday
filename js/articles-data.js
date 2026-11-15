@@ -218,8 +218,8 @@ const ARTICLES = [
     id: "safetrode-com-review",
     title: "Safetrode.com Review: What the Site Is, Who Runs It and Whether It Is Legit",
     excerpt: "Safetrode.com is a multi-topic WordPress blog, not a safety brand. We checked its domain records, archive history and sponsored links.",
-    category: "Tech & AI",
-    categorySlug: "tech",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -308,6 +308,7 @@ const ARTICLES = [
   },
   {
     id: "babeltee-meaning",
+    hidden: true,
     title: "Babeltee Explained: Tea Trend, Tech Term or Website? What We Verified",
     excerpt: "Babeltee is not a brand or store we could verify. We checked babeltee.com, its domain record and reviews to explain what the term really means.",
     category: "Tech & AI",
@@ -395,8 +396,8 @@ const ARTICLES = [
     id: "camocrypt-com-review",
     title: "Camocrypt.com Review: Who Runs This Crypto Blog and Is It Safe?",
     excerpt: "Camocrypt.com is a WordPress crypto and NFT blog registered in December 2025. We checked its posts, guest post policy, ownership and safety.",
-    category: "Tech & AI",
-    categorySlug: "tech",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -1125,6 +1126,7 @@ const ARTICLES = [
   },
   {
     id: "jelly-bean-brains-content-creator",
+    hidden: true,
     title: "Jelly Bean Brains: Who the Jellybean Content Creator Is, and What Is Really Confirmed",
     excerpt: "Jelly Bean Brains is an Instagram and TikTok creator known for car-smashing videos. Her real name and age are not confirmed. Here is what we could verify.",
     category: "SMEs & Startups",
@@ -1310,6 +1312,7 @@ const ARTICLES = [
   },
   {
     id: "harouxinn-meaning",
+    hidden: true,
     title: "What Is Harouxinn? The Made-Up Keyword and the Casino Blog Behind Harouxinn.com",
     excerpt: "Harouxinn has no verified meaning or creator. We checked harouxinn.com: registered April 2026, it now runs mostly casino posts and contradicts itself.",
     category: "Tech & AI",
@@ -1386,8 +1389,8 @@ const ARTICLES = [
     id: "allysplay-com-review",
     title: "Allysplay.com Review: What the Gaming Blog Really Is, Who Runs It and Is It Safe",
     excerpt: "Allysplay.com is a gaming blog, not a game platform or app. We checked its domain records and archive history, bylines, off-topic posts and safety.",
-    category: "Tech & AI",
-    categorySlug: "tech",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -1465,8 +1468,8 @@ const ARTICLES = [
     id: "uploadwords-com-review",
     title: "UploadWords.com USA Review: Free Word Counter, Guest Posts and Who Is Behind It",
     excerpt: "UploadWords.com is a free word counter and keyword tool, not file storage or a US company. We checked its owner clues, guest posts and November 2025 domain.",
-    category: "Tech & AI",
-    categorySlug: "tech",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -1548,8 +1551,8 @@ const ARTICLES = [
     id: "quotebless-com-review",
     title: "QuoteBless.com USA Review: From Free Blessings to Unlabelled Paid-Style Posts",
     excerpt: "QuoteBless.com began as a free blessings and quotes site. Since February 2026, most of its posts are unlabelled outside articles. Here is what we verified.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -1630,8 +1633,8 @@ const ARTICLES = [
     id: "fortmyerswa-com-review",
     title: "FortMyersWA.com: Not a Fort Myers Utility or Travel Site, but a Parked Former Car Dealer Domain",
     excerpt: "FortMyersWA.com is not a Fort Myers utility or travel site. It was a used car dealer's website and is now a parked domain. Here is what we found.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -1711,8 +1714,8 @@ const ARTICLES = [
     id: "helioscheck-com-review",
     title: "Helioscheck.com Review: A $40 Guest Post Blog, Not a Solar Checker",
     excerpt: "Helioscheck.com is a 42-post WordPress blog, not a solar tool. It sells $40 guest posts and shares a Gmail contact with a known blog network.",
-    category: "Tech & AI",
-    categorySlug: "tech",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -1797,8 +1800,8 @@ const ARTICLES = [
     id: "incabizgrowth-com-review",
     title: "IncaBizGrowth.com Review: A Rebranded 2017 Blog, Not a Business Growth Service",
     excerpt: "IncaBizGrowth.com is a rebranded 2017 blog with 110 posts, mostly old health content, not a growth service. A separate .site domain recruits paid reviewers.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -1875,6 +1878,7 @@ const ARTICLES = [
   },
   {
     id: "portar-leisa-meaning",
+    hidden: true,
     title: "Portar Leisa Meaning: Why This Search Term Has No Agreed Definition",
     excerpt: "Portar leisa has no established meaning. Portar means to carry, but leisa is not a real word, and ranking pages invent conflicting definitions. We checked.",
     category: "Tech & AI",
@@ -2450,6 +2454,7 @@ const ARTICLES = [
   },
   {
     id: "sfm-compile",
+    hidden: true,
     title: "SFM Compile Guide: How to Compile Models for Source Filmmaker With Studiomdl and Crowbar",
     excerpt: "How to compile models for Source Filmmaker: QC files, studiomdl, Crowbar, output folders and common errors, plus why to avoid fake \"SFMCompile\" downloads.",
     category: "Tech & AI",
@@ -2575,6 +2580,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "python-bug-54axhg5",
+    hidden: true,
     title: "Python Bug 54axhg5: Is It Real? What Python's Issue Tracker and CVE Records Show",
     excerpt: "\"Python bug 54axhg5\" is not in Python's issue tracker, the CVE database or PyPI. Where the term comes from and how to find real Python bugs.",
     category: "Tech & AI",
@@ -2657,6 +2663,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "best-tarta-de-brocoli-near-me",
+    hidden: true,
     title: "Best Tarta de Brócoli Near Me: Where to Find It and an Easy Recipe",
     excerpt: "Where to find tarta de brócoli near you, from Argentine and Uruguayan bakeries to an easy home recipe, plus what makes a good broccoli tart.",
     category: "Health & Wellness",
@@ -2755,6 +2762,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "best-vitel-tone-near-me",
+    hidden: true,
     title: "Best Vitel Toné Near Me: Where to Find It, Prices, Food Safety and a Recipe",
     excerpt: "Where to find vitel toné near you, why it is Argentina's Christmas dish, what it costs, how to keep it safe and an easy recipe.",
     category: "Health & Wellness",
@@ -2864,8 +2872,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "brasssmile-com-review",
     title: "BrassSmile.com Review: A Dental Care Site or a Multi-Topic Blog? What We Verified",
     excerpt: "BrassSmile.com brands itself as dental care, but it is a 237-post blog on business, Diwali, gold and casinos. What we verified about the site.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -2958,8 +2966,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "snapjotz-com-review",
     title: "SnapJotz.com Review: Is It a Notes App or a Blog? What We Found",
     excerpt: "SnapJotz.com is not a notes app. It is a 610-post blog with casino and loan content, conflicting self-descriptions and a network Gmail contact.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -3040,8 +3048,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "quikconsole-com-review",
     title: "QuikConsole.com Review: Not a Console or Dev Tool, by Its Own Admission",
     excerpt: "QuikConsole.com is a 55-post blog, not a console or AI tool. Its own homepage says it has no app or login and earns from sponsored guest posts.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -3124,8 +3132,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "pressvibepulse-com-review",
     title: "PressVibePulse.com Review: Site Down, and Not a Press Release Service",
     excerpt: "PressVibePulse.com is offline with a WordPress critical error. Archives show a multi-topic blog, not a press release wire. What to use instead.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -3194,8 +3202,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "adstotally-com-review",
     title: "Adstotally.com Review: Is It an Ad Network or Just a Blog? What We Verified",
     excerpt: "Adstotally.com is a blog, not an ad network. We checked its 86 posts, conflicting founding dates, contact links to other blogs and domain history.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -3292,6 +3300,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "lightniteone-new-version-for-pc",
+    hidden: true,
     title: "LightNite One New Version for PC: What Lightniteone.com Claims vs the Real Game",
     excerpt: "Is there a LightNite One new version for PC? What Lightniteone.com claims, what the real LIGHT NITE game is, its Steam status and safe download advice.",
     category: "Tech & AI",
@@ -3381,6 +3390,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "what-is-a-yn",
+    hidden: true,
     title: "What Is a YN? YN Meaning in Slang, TikTok, Fan Fiction and Texts",
     excerpt: "What is a YN? The slang meaning on TikTok, why many find it offensive, what Y/N means in fan fiction and y/n in texts, with examples.",
     category: "Tech & AI",
@@ -3468,6 +3478,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "bta-meaning",
+    hidden: true,
     title: "BTA Meaning: What BTA Stands For in Texting and in Business",
     excerpt: "BTA means \"but then again\" in texts and chats, and \"bilateral trade agreement\" in business news. Examples, how to reply and similar abbreviations.",
     category: "Tech & AI",
@@ -4576,6 +4587,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "navy-quicklinks-mynavy-portal",
+    hidden: true,
     title: "Navy QuickLinks Explained: How to Find MyNavy Portal Quick Links Safely",
     excerpt: "Navy Quick Links is the directory of Sailor tools inside MyNavy Portal at mn3p.navy.mil. How to access it with CAC, fix errors and avoid lookalike sites.",
     category: "World Business",
@@ -4667,6 +4679,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "viprow-us-com",
+    hidden: true,
     title: "Viprow.us.com: What the Site Is, Streaming Risks and Legal Ways to Watch Sports",
     excerpt: "Viprow.us.com now shows sports news, not streams. What it is, why free VIPRow-style streams carry malware and legal risks, and legal ways to watch.",
     category: "Tech & AI",
@@ -4751,6 +4764,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "ext-asp-intitle-cart",
+    hidden: true,
     title: "What Does \"ext:asp intitle:cart\" Mean? Google Dorks and Securing Online Stores",
     excerpt: "\"ext:asp intitle:cart\" finds classic ASP shopping cart pages. What these Google operators do, why old carts are risky and how to protect your store.",
     category: "Tech & AI",
@@ -4822,8 +4836,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "domikyo-com-review",
     title: "Domikyo.com Review: Old Posts, a Recycled Omicron Story and Guest Post Banners",
     excerpt: "What is domikyo.com? We checked its 2020 domain, 142 mostly 2021-22 posts, a recycled Omicron story, casino content and shared network contact email.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -4905,8 +4919,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "spiritualhubz-com-review",
     title: "Spiritualhubz.com USA Review: Angel Numbers, Omens and Why \"USA\" Is in the Title",
     excerpt: "Is spiritualhubz.com a US site? We checked the 2025 spiritual blog, its single byline, ear-ringing health claims and recent shift to commercial posts.",
-    category: "Health & Wellness",
-    categorySlug: "health",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -5080,8 +5094,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "tozymagazine-com-review",
     title: "Tozymagazine.com USA Review: From Birthday Wishes to Paid-Style Business Posts",
     excerpt: "Is tozymagazine.com a US magazine? No. We checked its 2024 domain, 356 posts, \"usa\" page, bylines and unlabelled business links. Here is what it is.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -5165,8 +5179,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "magazinepanda-com-review",
     title: "MagazinePanda.com Review: A Blog That Mostly Writes About Itself",
     excerpt: "What is magazinepanda.com? We checked its 2021 domain, 91 posts, self-review headlines, template team bios and shared contact email with other blogs.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -5246,8 +5260,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "milomagazine-co-uk-review",
     title: "MiloMagazine.co.uk Review: 979 Posts in 13 Months and Guest Posts for $75",
     excerpt: "Is milomagazine.co.uk a real magazine? We checked its 2025 UK domain, one-byline output, $75 guest post listing and an FDA-flagged supplement post.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -5855,6 +5869,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "iykyk-meaning",
+    hidden: true,
     title: "IYKYK Meaning: What \"If You Know, You Know\" Means and How to Use It",
     excerpt: "IYKYK means \"if you know, you know.\" Here is where the slang came from, how to use iykyk in texts and on TikTok, how to reply, and when to avoid it.",
     category: "Tech & AI",
@@ -5937,6 +5952,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "what-does-wtv-mean",
+    hidden: true,
     title: "What Does WTV Mean? The Text Slang Explained, With Examples",
     excerpt: "WTV means \"whatever\" in texts. See the three ways people use it, when it sounds friendly or rude, how to reply, and other meanings of WTV.",
     category: "Tech & AI",
@@ -6016,6 +6032,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "temporary-identity-certificate",
+    hidden: true,
     title: "Temporary Identity Certificate (TIC): How to Get One in South Africa and India",
     excerpt: "What a temporary identity certificate is, how to get a TIC from Home Affairs in South Africa (R70) and how India's ESIC TIC became the e-Pehchan card.",
     category: "World Business",
@@ -6116,8 +6133,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "fundfireinsight-com-review",
     title: "FundFireInsight.com Review: Who Runs It and Can You Trust Its Finance Content?",
     excerpt: "What is fundfireinsight.com? We checked its 2023 domain, 2026 relaunch, Adoosylinks byline and sponsored-post offer. Here is what the site really is.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -6286,8 +6303,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "mygreenbucks-net-kenneth-jones",
     title: "MyGreenBucks.net Jones Review: Who Is Kenneth Jones, and Is MyGreenBucks Real?",
     excerpt: "Kenneth Jones of MyGreenBucks.net is a byline, not a verified fintech founder. We checked 1,502 posts, the earnings claims and the latest news.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -6421,8 +6438,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "webitbgroup-com",
     title: "Webitbgroup.com: Why the Site Is Offline and What Web ITB Group Was",
     excerpt: "Webitbgroup.com is offline as of Nov 8, 2026. We traced it from a 2011 Indian SEO agency to a guest-post site and checked what its DNS failure means.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -6496,8 +6513,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "yonosamachar-com-review",
     title: "Yonosamachar.com Review: What Yono Samachar Is and Why It Isn't SBI YONO",
     excerpt: "Is yonosamachar com linked to SBI YONO or Yono games? No. We checked its 2023 domain, 86 posts, loan and betting content and missing policy pages.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -6580,8 +6597,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "dreammeaniing-com-review",
     title: "Dreammeaniing.com Review: The Dream Meaning Site Behind the Double-I Spelling",
     excerpt: "What is dreammeaniing com? We checked the 2025 dream site, how it differs from dreammeaning.com, its authors and its shift to unrelated commercial posts.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -6663,8 +6680,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "cnlawblog-review",
     title: "CNLawBlog Review: Is Cnlawblog.com a Real Law Blog or a Guest Post Site?",
     excerpt: "Is cnlawblog a real law blog? We checked cnlawblog.com's empty law sections, dofollow guest post offer, authors, history and its China Law Blog confusion.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -6735,8 +6752,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "puzutask-com-review",
     title: "Puzutask.com Review: It Is Not a Task or Earning Platform. Here Is What It Is",
     excerpt: "Can you earn money on puzutask.com? No. We checked the site: a 2021 WordPress blog with casino posts, disabled sign-ups and no tasks or payouts.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -6823,6 +6840,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "texans-vs-pittsburgh-steelers-match-player-stats",
+    hidden: true,
     title: "Texans vs Pittsburgh Steelers Match Player Stats: Full Box Score From Houston's 30-6 Wild Card Win",
     excerpt: "Texans vs Steelers match player stats from the 30-6 AFC Wild Card on Jan 12, 2026: Stroud, Rodgers, Kirk, Marks, sacks, scoring plays and team totals.",
     category: "World Business",
@@ -6953,6 +6971,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "celtics-vs-cleveland-cavaliers-match-player-stats",
+    hidden: true,
     title: "Celtics vs Cleveland Cavaliers Match Player Stats: Box Score From Boston's 109-98 Win",
     excerpt: "Celtics vs Cavaliers match player stats from Boston's 109-98 win on March 8, 2026: Mitchell 30, Mobley 24, Brown 23, Tatum 20, plus every recent result.",
     category: "World Business",
@@ -7055,6 +7074,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "detroit-pistons-vs-orlando-magic-match-player-stats",
+    hidden: true,
     title: "Detroit Pistons vs Orlando Magic Match Player Stats: Game 7 Box Score and Full Series",
     excerpt: "Pistons vs Magic match player stats from Detroit's 116-94 Game 7 win on May 3, 2026: Banchero 38, Cunningham 32 and 12 assists, Harris 30, all 7 results.",
     category: "World Business",
@@ -7162,6 +7182,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "washington-nationals-vs-chicago-cubs-match-player-stats",
+    hidden: true,
     title: "Washington Nationals vs Chicago Cubs Match Player Stats: Cavalli's One-Hitter in a 7-0 Win",
     excerpt: "Nationals vs Cubs match player stats from Washington's 7-0 win on Aug 13, 2026: Cavalli's 8 one-hit innings, Ortiz's 3-run homer and the 2026 series.",
     category: "World Business",
@@ -7258,8 +7279,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "sparkpressfusion-com-review",
     title: "SparkPressFusion.com Review: What Sparkpressfusion Com Is and Why Every Guest Post Is Paid",
     excerpt: "What is sparkpressfusion com? We checked its 2023 domain record, two bylines, 77 posts and paid-only guest post policy. Here is what the site really is.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -7349,8 +7370,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "journalword-com-review",
     title: "JournalWord.com Review: Is Journalword Com a Journaling App or an SEO Blog?",
     excerpt: "Is journalword com a journaling tool? No. We checked its 2010-2023 domain history, bylines, 115 posts and its bulk link pages. Here is what it really is.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -8226,8 +8247,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "raonelide-com-review",
     title: "RaoneLide.com Review: Celebrity Bios, Smart Ring Posts and $23 Guest Posts. What We Found",
     excerpt: "We checked RaoneLide.com's domain record, its 57 posts and a $23 guest post listing. Here is what the site is and whether you can trust or pitch it.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -8301,8 +8322,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "themodeleats-com-review",
     title: "TheModelEats.com Review: Is It Legit? What the Site Is and Who Runs It",
     excerpt: "Is TheModelEats.com legit? We checked its domain history, single byline, guest post links and publishing activity. Here is what the site is today.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -8397,8 +8418,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "newsgiga-com-review",
     title: "NewsGiga.com Review: Gambling Links, a Gmail Inbox and No Named Editors. What We Found",
     excerpt: "We checked NewsGiga.com's domain record, contact pages and outbound links. Here is what we verified before you trust the site or pitch it a guest post.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -8553,6 +8574,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "snapchat-planets-order-meaning",
+    hidden: true,
     title: "Snapchat Planets Order and Meaning: Full Snapchat Planets List for 2026",
     excerpt: "The Snapchat planets order from Mercury (1st) to Neptune (8th), what each planet means on a friend's Best Friends (BSF) list, and how to turn it on.",
     category: "Tech & AI",
@@ -8658,8 +8680,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "social-media-ranking-aelftech-com",
     title: "Social Media Ranking AelfTech.com: Social Media Marketing Services, SEO Claims and What We Verified",
     excerpt: "What \"social media ranking aelftech com\" really means, what AelfTech.com's social media marketing and SEO services claim, and what we could verify.",
-    category: "Tech & AI",
-    categorySlug: "tech",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -8769,8 +8791,8 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
     id: "uploadblog-com-review-online-posting",
     title: "UploadBlog.com Review: How Online Posting Works, Dofollow Link Rules and What We Verified",
     excerpt: "UploadBlog.com is a guest-post blog offering one do-follow link per article. We checked its 195 posts, submission rules, link labelling and domain history.",
-    category: "SMEs & Startups",
-    categorySlug: "smes",
+    category: "Website Reviews",
+    categorySlug: "reviews",
     author: {
       name: "GBNT Newsroom",
       type: "Organization",
@@ -9296,30 +9318,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
         <li><strong>Rates are the swing factor.</strong> If the Fed and other central banks hike again, refinancing gaps widen and more office loans could slip into delinquency.</li>
       </ul>
       <p>The next national data points to watch are fourth-quarter vacancy reports in January and the Fed's December 8 to 9 meeting, which will shape borrowing costs for owners heading into 2027.</p>
-    `
-  },
-  {
-    id: "pr-nexura-global-logistics-expansion",
-    title: "Press Release: Nexura Global Logistics Announces $45M Automated Fulfillment Center Expansion",
-    excerpt: "Nexura Global Logistics breaks ground on a multi-modal distribution facility designed to streamline trans-Pacific cargo freight.",
-    category: "Press Releases",
-    categorySlug: "press-releases",
-    author: {
-      name: "Corporate Wire",
-      role: "Press Distribution",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80"
-    },
-    publishedAt: "2026-10-31T09:00:00Z",
-    readTime: "3 min read",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Warehouse interior with tall shelving, cardboard boxes and yellow crates",
-    isTrending: false,
-    views: 6100,
-    tags: ["Press Release", "Logistics", "Supply Chain", "Corporate Expansion"],
-    content: `
-      <p class="lead"><strong>SYDNEY / NEW YORK — Corporate Wire</strong> — Nexura Global Logistics, a premier provider of international supply chain management solutions, has formally announced the groundbreaking of its new flagship automated distribution hub.</p>
-      <p>The 350,000 sq ft facility incorporates state-of-the-art robotic sorting racks, electric fleet charging bays, and automated customs clearance documentation pipelines.</p>
-      <p><em>To distribute your company's corporate announcements across Global Business News Today and affiliate networks, visit our Submit PR portal.</em></p>
     `
   },
   {

@@ -177,12 +177,12 @@ function initSearch() {
     }
     if (searchInput.value.trim().toLowerCase() !== q) return;
 
-    const matches = articles.filter(a =>
+    const matches = articles.filter(a => !a.hidden && (
       a.title.toLowerCase().includes(q) ||
       a.excerpt.toLowerCase().includes(q) ||
       a.category.toLowerCase().includes(q) ||
       (a.tags || []).some(t => t.toLowerCase().includes(q))
-    );
+    ));
 
     if (matches.length === 0) {
       searchResults.innerHTML = `<p class="search-hint">No stories found matching "<strong>${escapeHtml(q)}</strong>".</p>`;

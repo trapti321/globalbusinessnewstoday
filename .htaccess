@@ -31,6 +31,9 @@ RewriteCond %{QUERY_STRING} ^id=([A-Za-z0-9-]+)$
 RewriteRule ^article\.html$ /articles/%1/ [R=301,L,NE,QSD]
 RewriteRule ^article\.html$ / [R=301,L,QSD]
 
+# Removed articles: send old URLs to their section.
+RewriteRule ^articles/pr-nexura-global-logistics-expansion/?$ /category/press-releases/ [R=301,L]
+
 # Permanently redirect legacy category URLs to the clean category path.
 RewriteCond %{QUERY_STRING} ^cat=([A-Za-z0-9-]+)$
 RewriteRule ^category\.html$ /category/%1/ [R=301,L,NE,QSD]

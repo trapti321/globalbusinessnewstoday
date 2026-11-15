@@ -37,6 +37,7 @@ const CATEGORIES = [
   { slug: "tech", name: "Tech & AI", title: "Technology, Enterprise Software & AI", description: "Enterprise AI adoption, cybersecurity and business technology news." },
   { slug: "smes", name: "SMEs & Startups", title: "SME Intelligence & Startup Growth", description: "Small business finance, cash flow, venture capital and startup funding news." },
   { slug: "health", name: "Health & Wellness", title: "Health, Fitness & Wellness", description: "Evidence-based health, fitness, sleep and wellness guides, including wearables and workplace wellbeing." },
+  { slug: "reviews", name: "Website Reviews", title: "Website Reviews: Is It Legit?", description: "Independent checks of websites people search for by name: who runs them, domain history, sponsored posts and safety." },
   { slug: "property", name: "Real Estate", title: "Commercial Real Estate & Property", description: "Office markets, commercial property, conversions and real estate finance." },
   { slug: "press-releases", name: "Press Releases", title: "Corporate Wire & Press Releases", description: "Corporate announcements and press releases distributed by Global Business News Today." }
 ];
@@ -168,9 +169,14 @@ function validate(articles) {
 
 validate(RAW_ARTICLES);
 // Newest first, and the visible category label always matches the section the article is filed under.
-const ARTICLES = RAW_ARTICLES
+const ALL_ARTICLES = RAW_ARTICLES
   .map(a => ({ ...a, category: categoryFor(a.categorySlug).name }))
   .sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+// Articles flagged hidden keep their page (noindex) but are left out of the homepage, sections, ticker,
+// related links, sitemaps, feed and llms.txt.
+const ARTICLES = ALL_ARTICLES.filter(a => !a.hidden);
+// Sections with at least one visible article; empty sections are kept out of the navigation.
+const ACTIVE_CATEGORIES = CATEGORIES.filter(c => ARTICLES.some(a => a.categorySlug === c.slug));
 
 /* --------------------------------------------------------------------------
    Asset versioning (cache busting by content hash)
@@ -287,7 +293,7 @@ function header({ active, isHome }) {
       <div class="container">
         <ul class="nav-list" id="mainNavList">
           ${navItem("/", "Home", "home")}
-          ${CATEGORIES.map(c => navItem(categoryUrl(c.slug), c.name, c.slug)).join("\n          ")}
+          ${ACTIVE_CATEGORIES.map(c => navItem(categoryUrl(c.slug), c.name, c.slug)).join("\n          ")}
           ${navItem("/contact.html", "Contact Us", "contact")}
         </ul>
       </div>
@@ -321,7 +327,7 @@ function footer() {
         <nav class="footer-col" aria-label="Sections">
           <p class="footer-heading">Sections</p>
           <ul class="footer-links">
-            ${CATEGORIES.map(c => `<li><a href="${categoryUrl(c.slug)}">${esc(c.name)}</a></li>`).join("\n            ")}
+            ${ACTIVE_CATEGORIES.map(c => `<li><a href="${categoryUrl(c.slug)}">${esc(c.name)}</a></li>`).join("\n            ")}
           </ul>
         </nav>
 
@@ -766,7 +772,7 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
     title: `${a.title} | ${SITE.name}`.length <= 70 ? `${a.title} | ${SITE.name}` : a.title,
     description: a.excerpt,
     canonical: url,
-    robots: ROBOTS_INDEX,
+    robots: a.hidden ? ROBOTS_NOINDEX : ROBOTS_INDEX,
     og: { type: "article", title: a.title, image: { ...heroImage, alt: a.imageAlt } },
     articleMeta: [
       `<meta property="article:published_time" content="${a.publishedAt}">`,
@@ -1383,9 +1389,9 @@ const sitemapPages = [{ path: "/", lastmod: latest(ARTICLES) }];
 
 write("index.html", buildHome());
 
-for (const a of ARTICLES) {
+for (const a of ALL_ARTICLES) {
   write(`${articleUrl(a).slice(1)}index.html`, buildArticle(a));
-  sitemapPages.push({ path: articleUrl(a), lastmod: a.updatedAt || a.publishedAt });
+  if (!a.hidden) sitemapPages.push({ path: articleUrl(a), lastmod: a.updatedAt || a.publishedAt });
 }
 
 write("category/all/index.html", buildCategory("all"));
@@ -1430,4 +1436,4 @@ write("news-sitemap.xml", buildNewsSitemap());
 write("feed.xml", buildFeed());
 write("llms.txt", buildLlmsTxt());
 
-console.log(`Built ${ARTICLES.length} articles, ${CATEGORIES.length + 1} category pages, ${Object.keys(AUTHORS).length} author pages, home, contact, submit-pr, 404, sitemap.xml, feed.xml and llms.txt (assets v=${VERSION}).`);
+console.log(`Built ${ALL_ARTICLES.length} articles (${ALL_ARTICLES.length - ARTICLES.length} hidden), ${CATEGORIES.length + 1} category pages, ${Object.keys(AUTHORS).length} author pages, home, contact, submit-pr, 404, sitemap.xml, feed.xml and llms.txt (assets v=${VERSION}).`);
