@@ -1,10 +1,11 @@
-import json, sys
+import json, os, sys
 p = '/Users/fitbudd/globalbusinessnewstoday/js/articles-data.js'
 spec = json.load(open(sys.argv[1]))
 s = open(p).read()
 blocks = []
 for a in spec:
-    content = open(a['file']).read().rstrip('\n')
+    # Draft files are resolved relative to the spec JSON, so the script can run from any directory.
+    content = open(os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), a['file'])).read().rstrip('\n')
     for bad in ['`', '${', '—']:
         assert bad not in content, (a['file'], bad)
         assert bad not in a['title'] + a['excerpt'] + a['alt'], (a['id'], bad)

@@ -1,6 +1,97 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "iran-strikes-bahrain-riffa-base-us-forces",
+    title: "Iran Strikes Bahrain Base Hosting US Forces for Second Time in Three Days",
+    excerpt: "Iran's IRGC says it fired six drones at Bahrain's Riffa base hosting US forces; Bahrain says it intercepted them. What happened and what it means for oil.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T12:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Container ship loaded with stacked cargo containers sailing at sea",
+    isTrending: true,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Iran", "Bahrain", "Middle East Crisis", "Strait of Hormuz", "Oil Prices", "Gulf Security"],
+    content: `
+      <p class="lead">Iran's Islamic Revolutionary Guard Corps (IRGC) said it launched six drones at a helicopter base hosting US forces in Bahrain early on Sunday, November 15, 2026, the second attack on the Gulf kingdom in three days. Bahrain said its air defences intercepted and destroyed the Iranian attacks, and no casualties or damage had been reported. The strikes break a lull that began in September and test hopes of an easing in the US-Iran war, with the Strait of Hormuz and Gulf oil flows again in focus.</p>
+
+      <blockquote>
+        <p><strong>Iran's strikes on Bahrain, the key facts:</strong></p>
+        <ul>
+          <li><strong>What happened:</strong> explosions were heard in Bahrain at about 4 a.m. and again at about 6:30 a.m. local time on Sunday, AFP reported.</li>
+          <li><strong>Iran's claim:</strong> the IRGC said six drones targeted a US air defence radar at the Al-Riffa (Riffa) helicopter base.</li>
+          <li><strong>Bahrain's account:</strong> its military said it "confronted, intercepted and destroyed a number of Iranian aerial attacks".</li>
+          <li><strong>Damage:</strong> no casualties or damage reported; Iran's claim of a hit is unconfirmed.</li>
+          <li><strong>Pattern:</strong> Bahrain, home to the US Navy's Fifth Fleet, has been targeted twice in three days after a lull since September.</li>
+          <li><strong>Diplomacy:</strong> President Trump has said he may hold off on further attacks on Iran if there are no new provocations.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Happened in Bahrain?</h2>
+      <p>Sirens sounded across Bahrain before dawn on Sunday and the Interior Ministry twice told citizens and residents to "remain calm" and move to the nearest safe location, according to <a href="https://www.thenationalnews.com/news/gulf/2026/11/15/bahrain-issues-first-nationwide-alert-in-months-as-iran-claims-attack-on-base-hosting-us-helicopters/" target="_blank" rel="noopener">The National</a>. They were Bahrain's first nationwide public safety alerts since September.</p>
+      <p>An AFP journalist heard explosions at around 4 a.m. local time, and residents reported a second series of blasts at around 6:30 a.m., <a href="https://www.thejournal.ie/iran-attack-bahrain-7226841-Nov2026/" target="_blank" rel="noopener">TheJournal.ie reported</a>, citing AFP.</p>
+      <p>The Bahrain Defence Force said its air defences "confronted, intercepted and destroyed a number of Iranian aerial attacks today", according to the state-run Bahrain News Agency. Bahrain's foreign ministry said the kingdom "rejects turning its territory into an arena for settling scores" and held Iran fully responsible.</p>
+
+      <h2>What Did Iran Say It Targeted?</h2>
+      <p>In a statement carried by Iranian state media, the IRGC said: "The US air defence radar system at the Al-Riffa helicopter base in Bahrain was targeted by six drones." It described the strike as retaliation for "hostile US actions" and a second phase of its response.</p>
+      <p>The IRGC also claimed that two oil tankers struck naval mines south of the Strait of Hormuz late on Saturday, November 14, and said the ships had switched off their navigation and identification systems. No vessel names, flags or owners were given, and maritime authorities had not confirmed the claim, The National reported.</p>
+      <p>There was no immediate confirmation from US or Bahraini authorities that the base was hit.</p>
+
+      <h2>Is This the First Attack on Bahrain This Month?</h2>
+      <p>No. On Friday, November 13, the IRGC said it targeted a US early warning radar system in Bahrain. US Central Command (CENTCOM) said it shot down two Iranian drones aimed at the island, with no casualties or damage. That was the first Iranian strike on a Gulf country since early September.</p>
+      <p>Also on Friday, Gulf Arab states demanded that Iran pay full compensation for thousands of missile and drone attacks since February, according to The National.</p>
+
+      <h2>How Did Saudi Arabia Respond?</h2>
+      <p>Saudi Arabia condemned what it called "blatant Iranian attacks", expressed solidarity with Bahrain and said the strikes violated international law. The Saudi-led coalition also said its air defences intercepted two ballistic missiles fired at Riyadh by Yemen's Iran-backed Houthi movement, and Saudi Arabia reported intercepting drones over its Eastern Province, The National reported. Reports differed on the number of drones.</p>
+
+      <h2>How Did the US-Iran War Start?</h2>
+      <p>The conflict began on February 28, 2026, with US and Israeli strikes on Iran that killed Supreme Leader Ayatollah Ali Khamenei, according to AFP. Since then Iran has restricted shipping through the Strait of Hormuz and struck airports, seaports, energy facilities and US assets across the region. Direct fighting between Washington and Tehran has eased in recent months, but Iran has continued sporadic drone and missile attacks on US bases in Gulf states.</p>
+      <table>
+        <thead><tr><th>Date (2026)</th><th>Event</th></tr></thead>
+        <tbody>
+          <tr><td>February 28</td><td>US and Israeli strikes on Iran begin the war</td></tr>
+          <tr><td>Early September</td><td>Last Iranian strike on a Gulf country before this week, on a US base in the UAE</td></tr>
+          <tr><td>November 9</td><td>Brent crude falls 4.65% to $93.75 as Trump signals restraint, Reuters reported</td></tr>
+          <tr><td>November 13</td><td>CENTCOM shoots down two Iranian drones aimed at Bahrain</td></tr>
+          <tr><td>November 14</td><td>IRGC claims two tankers hit mines south of Hormuz (unconfirmed)</td></tr>
+          <tr><td>November 15</td><td>IRGC drone attack on Riffa base; Bahrain says attacks intercepted</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What Does It Mean for Oil Prices and Shipping?</h2>
+      <p>Oil markets had been pricing in de-escalation. On November 9, Brent crude fell $4.57, or 4.65%, to $93.75 a barrel after Trump said he was unlikely to order fresh attacks on Iran while talks progressed, <a href="https://www.khaleejtimes.com/business/oil-falls-almost-5-as-trump-signals-restraint-on-iran" target="_blank" rel="noopener">Reuters reported via Khaleej Times</a>. US crude (WTI) fell 3.51% to $87.64. Brent had dropped 16% the week before.</p>
+      <p>The weekend attacks came while oil markets were closed, so their first price test comes when trading reopens on Monday, November 16. The risks for business are clear:</p>
+      <ul>
+        <li><strong>Shipping:</strong> unconfirmed mine claims near Hormuz could push up war-risk insurance costs and slow tanker traffic, even if flows continue.</li>
+        <li><strong>Energy prices:</strong> CENTCOM said last month it had helped Gulf countries export 1.5 billion barrels of oil through Hormuz since the summer. Any disruption to that route would hit fuel costs worldwide.</li>
+        <li><strong>Gulf operations:</strong> companies with staff in Bahrain should follow Interior Ministry alerts and keep contingency plans current.</li>
+      </ul>
+
+      <h2>What Happens Next?</h2>
+      <p>Trump has said he may halt further attacks on Iran if Washington faces no new provocations from Tehran or the Houthis, while keeping the US naval blockade in place, The National reported. A US official said on Friday that Trump plans to discuss the conflict at a meeting with the Chinese and Russian leaders this week, according to AFP. According to Bloomberg, Iran repeated after the Bahrain strike that a path to a deal with the US remains open.</p>
+      <p>Whether Washington treats Sunday's strike as a new provocation is the key question for markets and the region. For more on how the conflict is affecting Gulf business, see our report on <a href="/articles/middle-east-fintech-boom-financial-inclusion-blind-spot/">fintech in the Middle East</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Did Iran attack Bahrain?</h3>
+      <p>Iran's Revolutionary Guard said it launched six drones at the Riffa helicopter base hosting US forces on November 15, 2026. Bahrain said it intercepted the attacks, and no casualties were reported.</p>
+      <h3>Why does Iran target Bahrain?</h3>
+      <p>Bahrain hosts the US Navy's Fifth Fleet headquarters and US military assets. Iran says its strikes are retaliation for US military actions.</p>
+      <h3>Is the Strait of Hormuz closed?</h3>
+      <p>The IRGC said "The Strait of Hormuz is closed", but analysts told Reuters last week that oil volumes were still moving through the strait, and the claim had not been independently confirmed.</p>
+      <h3>How will the Bahrain strikes affect oil prices?</h3>
+      <p>Markets were closed over the weekend. Brent settled at $93.75 a barrel on November 9 after a sharp fall; traders will react to the Bahrain strikes when markets reopen on Monday.</p>
+
+      <p><em>Checked on November 15, 2026, against reporting by AFP via TheJournal.ie, The National, Reuters via Khaleej Times and Bloomberg. This is a developing story and will be updated.</em></p>
+    `
+  },
+  {
     id: "safetrode-com-review",
     title: "Safetrode.com Review: What the Site Is, Who Runs It and Whether It Is Legit",
     excerpt: "Safetrode.com is a multi-topic WordPress blog, not a safety brand. We checked its domain records, archive history and sponsored links.",
