@@ -1,6 +1,95 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "korea-tax-accountant-exam-ai-cheating",
+    title: "Korea's Top Tax Accountant Exam Scorer Admits Cheating With AI and a Hidden Camera",
+    excerpt: "South Korea's top tax accountant exam scorer admits AI cheating with a hidden camera. His pass faces revocation as Korea tightens rules before the CSAT.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T18:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Hand filling in bubbles on a multiple-choice exam answer sheet with a pencil",
+    isTrending: true,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["South Korea", "Exam Cheating", "Generative AI", "Tax Accountant Exam", "CSAT", "Professional Licensing"],
+    content: `
+      <p class="lead">The top scorer in South Korea's 2026 certified tax accountant exam, 34-year-old Han Won-seok, has admitted cheating with a miniature camera, a smartphone and generative AI, and has turned himself in to police. The Human Resources Development Service of Korea (HRDK), which runs the exam, said on November 15, 2026, that it is moving to revoke his pass and will file a criminal complaint. The case lands four days before Korea's college entrance exam and has triggered a government review of AI cheating across all national licensing tests.</p>
+
+      <blockquote>
+        <p><strong>Korea's AI exam cheating case, the key facts:</strong></p>
+        <ul>
+          <li><strong>Who:</strong> Han Won-seok, top scorer on the 63rd certified tax accountant licensing exam.</li>
+          <li><strong>How:</strong> he says he photographed questions with a miniature camera, sent them to a generative AI tool and checked answers on a smartphone. He said he did not use AI glasses.</li>
+          <li><strong>Scores:</strong> 397.5 out of 400 in the first round (159 of 160 questions correct) and 663 out of 800 in the second.</li>
+          <li><strong>Also admitted:</strong> using the same method in the first round of the certified public accountant (CPA) exam.</li>
+          <li><strong>Consequences:</strong> HRDK is moving to revoke his pass and filing a complaint for obstruction of business; police have opened an investigation.</li>
+          <li><strong>Policy response:</strong> a review of suspected AI cheating across all national licensing exams, days before the November 19 college entrance exam.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Did the Top Scorer Admit?</h2>
+      <p>Han confessed in a video posted on Sunday, November 15, on the YouTube channel of his lawyer, Lee Don-ho. "I cheated in both the first and second rounds of the tax account exam by using electronic devices and generative AI," he said, as <a href="https://www.bbc.com/news/articles/ckvg2ezvpe08o" target="_blank" rel="noopener">reported by the BBC</a>. "I used a microcamera to photograph the test questions and sent them to an AI then checked my answers on my smartphone to commit the cheating."</p>
+      <p>He had earlier denied wrongdoing. He said he changed his mind after thinking about the candidate who finished second, and apologised to other successful candidates who had come under suspicion because of him. Han also said he used the same method in the first round of the recent CPA exam, according to <a href="https://www.koreatimes.co.kr/southkorea/law-crime/20261115/top-tax-accountant-exam-scorer-admits-to-cheating-using-ai" target="_blank" rel="noopener">The Korea Times</a>.</p>
+
+      <h2>Why Did His Scores Raise Suspicion?</h2>
+      <p>Han answered 159 of 160 questions correctly in the April first-round exam, scoring 397.5 out of 400. He scored a perfect mark in the introduction to tax law section, where the average was 30.18 points, <a href="https://en.sedaily.com/society/2026/11/15/tax-accountant-exam-topper-admits-ai-cheating-faces" target="_blank" rel="noopener">Seoul Economic Daily</a> reported. About three months later he scored 663 out of 800 in the second-stage written exam and was named overall top scorer.</p>
+      <p>The results sparked online speculation. The runner-up, Yoon Jeong-hu, posted a video on November 12 showing his worn study books and denying claims that he had worn AI glasses, saying, "I have never worn glasses in my life." The video had about 940,000 views by November 15, according to Seoul Economic Daily.</p>
+      <table>
+        <thead><tr><th>Date (2026)</th><th>Event</th></tr></thead>
+        <tbody>
+          <tr><td>April</td><td>First-round exam: Han scores 397.5 of 400</td></tr>
+          <tr><td>July</td><td>Second-round written exam: 663 of 800, overall top score</td></tr>
+          <tr><td>November 12</td><td>Runner-up posts video rejecting AI-glasses rumours</td></tr>
+          <tr><td>November 13</td><td>HRDK says it found nothing unusual in Han's computerized scoring data</td></tr>
+          <tr><td>November 15</td><td>Han confesses; HRDK moves to revoke his pass; police open investigation</td></tr>
+          <tr><td>November 19</td><td>College Scholastic Ability Test (CSAT, or Suneung)</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How Did Officials Respond?</h2>
+      <p>HRDK, which had initially said it found no concrete evidence and that four proctors saw nothing suspicious, apologised "for failing to prevent the cheating as the exam's administering body," Seoul Economic Daily reported. It said it would revoke Han's final pass in consultation with the Ministry of Economy and Finance and the National Tax Service, file a criminal complaint for obstruction of business, and review its other national licensing exams. HRDK noted that 2,290,491 people sat national technical qualification exams last year.</p>
+      <p>The Seoul Metropolitan Police Agency said it had received a written confession through Han's lawyer and assigned the case to investigators, the BBC reported, citing Yonhap. According to the BBC, the government said anyone found to have used AI to cheat on the tax accountancy exam will lose the qualification and be barred from retaking it for five years.</p>
+      <p>At the presidential office, chief of staff Lim Kwang-hyun said the matter was being viewed "very seriously." A response meeting chaired by policy chief Ha Joon-kyung (romanised as Ha Jun-kyung by the BBC) ordered a full review of suspected AI cheating across national licensing exams and closer inspection of supervision for the college entrance exam. The Korea Times reported that Ha urged agencies to consider tools such as thermal imaging cameras.</p>
+
+      <h2>How Is Korea Tightening Rules Before the CSAT?</h2>
+      <p>The case arrives days before the November 19 College Scholastic Ability Test, the national college entrance exam that shapes university admissions. Under guidelines published on October 15 by the Korea Institute for Curriculum and Evaluation, smart glasses are banned from test rooms, <a href="https://www.koreajoongangdaily.com/korea/ai-glasses-could-cost-students-two-csats/12922933" target="_blank" rel="noopener">Korea JoongAng Daily</a> reported:</p>
+      <ul>
+        <li><strong>Wearing</strong> a smart device during the exam voids the result and bars the student from the following year's CSAT.</li>
+        <li><strong>Carrying</strong> one in the test room, even unworn, voids that year's exam.</li>
+        <li><strong>Refusing</strong> a proctor's request to inspect glasses can be treated as serious misconduct.</li>
+      </ul>
+      <p>Earlier cases fed the crackdown: a TOEIC test-taker caught with smart glasses in May, and students caught at University of Seoul and Yonsei University essay exams in October. The BBC reported that education ministry data shows four cases of cheating with AI glasses at middle and high schools in the past 12 months.</p>
+
+      <h2>What Does It Mean for Professional Exams and Employers?</h2>
+      <p>Licensing exams are a gatekeeper for regulated professions such as tax and audit. A top score obtained with AI help undermines trust in the credential itself, which is why regulators are reviewing past results rather than treating this as a single case. For businesses, three practical points stand out:</p>
+      <ul>
+        <li><strong>Credential checks:</strong> firms hiring licensed tax or accounting staff may face questions about verifying qualifications if more cases emerge from the review.</li>
+        <li><strong>Exam security costs:</strong> testing bodies worldwide face pressure to add device detection, signal checks and closer proctoring as camera-equipped devices shrink.</li>
+        <li><strong>AI policy at work:</strong> the case is a reminder that generative AI tools can answer professional exam questions quickly, raising the stakes for in-house training and certification integrity.</li>
+      </ul>
+      <p>For more on how AI is reshaping work and regulation, see our reports on <a href="/articles/democrats-ai-agenda-2028-tomorrow-together/">the political push to regulate AI</a> and <a href="/tech/electronic-learning-e-learning/">electronic learning and online assessment</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who cheated on South Korea's tax accountant exam?</h3>
+      <p>Han Won-seok, 34, the top scorer on the 63rd certified tax accountant exam, admitted on November 15, 2026, that he cheated using a miniature camera, a smartphone and generative AI.</p>
+      <h3>Did he use AI glasses?</h3>
+      <p>No. He said he used a miniature camera to photograph questions and a smartphone to read AI-generated answers, and said he did not use AI glasses.</p>
+      <h3>What penalty does he face?</h3>
+      <p>HRDK is moving to revoke his pass and has said it will file a criminal complaint for obstruction of business. Police are investigating. The government said AI cheaters on the exam will lose the qualification and be barred from retaking it for five years, according to the BBC.</p>
+      <h3>When is Korea's college entrance exam?</h3>
+      <p>The College Scholastic Ability Test is on November 19, 2026. Wearing smart glasses during the exam voids the result and bars the student from the next year's test.</p>
+
+      <p><em>Checked on November 15, 2026, against reporting by the BBC, The Korea Times, Seoul Economic Daily and Korea JoongAng Daily. This is a developing story; the police investigation and the review of other exams are ongoing.</em></p>
+    `
+  },
+  {
     id: "electronic-learning-e-learning",
     title: "Electronic Learning (E-Learning): Types, Evidence, LMS Choice and Accessibility Rules",
     excerpt: "Electronic learning explained: types of e-learning, what the evidence says, how firms choose an LMS, and WCAG, Section 508 and ADA rules.",
