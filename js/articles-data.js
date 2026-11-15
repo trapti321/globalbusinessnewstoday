@@ -1,6 +1,129 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "top-us-startups-2026",
+    title: "Top US Startups to Watch in 2026: 17 Companies Ranked by Valuation",
+    excerpt: "Top US startups in 2026, from OpenAI and Databricks to Ramp, Kalshi and Harvey, ranked by verified valuation, plus Anthropic's IPO and SpaceX's buys.",
+    category: "SMEs & Startups",
+    categorySlug: "smes",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T15:00:00Z",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Golden Gate Bridge over blue water with the San Francisco skyline in the distance",
+    isTrending: true,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["US Startups", "Startups 2026", "Venture Capital", "AI Startups", "Unicorns", "Startup Valuations"],
+    content: `
+      <p class="lead">The top startups in the United States in 2026 are led by AI companies. OpenAI ($852 billion), Databricks ($190 billion), Stripe ($159 billion), Anduril ($61 billion) and Ramp ($60 billion) top our list of 17 private US startups ranked by their latest confirmed valuation. Anthropic is about to leave the list through a stock market listing, and two former leaders, xAI and Cursor maker Anysphere, were bought by SpaceX this year. Every figure below was checked against company announcements, regulatory filings or major outlets as of November 15, 2026.</p>
+
+      <blockquote>
+        <p><strong>US startups in 2026, the key facts:</strong></p>
+        <ul>
+          <li><strong>Most valuable private startup:</strong> OpenAI, at $852 billion after a $122 billion round announced in March 2026.</li>
+          <li><strong>Biggest IPO in progress:</strong> Anthropic, with pricing expected on November 18 and trading on Nasdaq under ANT.</li>
+          <li><strong>Record funding:</strong> US startups raised $515.8 billion in the first nine months of 2026, according to the PitchBook-NVCA Venture Monitor.</li>
+          <li><strong>AI dominance:</strong> AI companies took 82.7% of US venture deal value through September.</li>
+          <li><strong>Fastest climbers:</strong> Ramp, Kalshi, Cognition and Mercor all raised at sharply higher valuations in 2026.</li>
+        </ul>
+      </blockquote>
+
+      <h2>How We Ranked the Top US Startups</h2>
+      <p>We ranked privately held, venture-backed companies headquartered in the United States by their latest valuation that has been confirmed by the company or reported by a major outlet. Where a newer round has been reported but not confirmed, we show the confirmed figure and note the report. Companies that were acquired or are in the final stage of an IPO are listed separately. Valuations are a snapshot of what investors paid, not a measure of profit, and private valuations can fall as well as rise.</p>
+
+      <h2>Top 17 US Startups to Watch in 2026</h2>
+      <table>
+        <thead><tr><th>#</th><th>Startup</th><th>What it does</th><th>HQ</th><th>Latest valuation</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>OpenAI</td><td>ChatGPT and GPT models</td><td>San Francisco</td><td>$852B (Mar 2026)</td></tr>
+          <tr><td>2</td><td>Databricks</td><td>Data and AI platform</td><td>San Francisco</td><td>$190B (Aug 2026)</td></tr>
+          <tr><td>3</td><td>Stripe</td><td>Online payments infrastructure</td><td>South San Francisco and Dublin</td><td>$159B (Feb 2026 tender)</td></tr>
+          <tr><td>4</td><td>Anduril Industries</td><td>Defense technology and autonomous systems</td><td>Costa Mesa, CA</td><td>$61B (May 2026)</td></tr>
+          <tr><td>5</td><td>Ramp</td><td>Corporate cards and finance software</td><td>New York</td><td>$60B (Oct 2026)</td></tr>
+          <tr><td>6</td><td>Cognition</td><td>Devin AI software engineer</td><td>San Francisco</td><td>$48B (Sep 2026)</td></tr>
+          <tr><td>7</td><td>Kalshi</td><td>Regulated prediction market</td><td>New York</td><td>$40B (Oct 2026)</td></tr>
+          <tr><td>8</td><td>Figure AI</td><td>Humanoid robots</td><td>San Jose, CA</td><td>$39B (Sep 2025)</td></tr>
+          <tr><td>9</td><td>Safe Superintelligence</td><td>AI research lab</td><td>Palo Alto, CA</td><td>$32B (Apr 2025, reported)</td></tr>
+          <tr><td>10</td><td>Mercor</td><td>Experts who train and test AI models</td><td>San Francisco</td><td>$20B (Nov 2026)</td></tr>
+          <tr><td>11</td><td>Perplexity</td><td>AI answer engine</td><td>San Francisco</td><td>$20B (Sep 2025, reported)</td></tr>
+          <tr><td>12</td><td>Sierra</td><td>AI customer service agents</td><td>San Francisco</td><td>$15.8B (May 2026)</td></tr>
+          <tr><td>13</td><td>Harvey</td><td>AI for lawyers</td><td>San Francisco</td><td>$15.5B (Sep 2026)</td></tr>
+          <tr><td>14</td><td>Thinking Machines Lab</td><td>AI research lab</td><td>San Francisco</td><td>$12B (Jul 2025)</td></tr>
+          <tr><td>15</td><td>Glean</td><td>Enterprise AI search</td><td>Palo Alto, CA</td><td>$7.2B (Jun 2025)</td></tr>
+          <tr><td>16</td><td>Polymarket</td><td>Prediction market</td><td>New York</td><td>$21B reported, not confirmed closed</td></tr>
+          <tr><td>17</td><td>Commonwealth Fusion Systems</td><td>Fusion energy</td><td>Devens, MA</td><td>Not disclosed ($4B raised)</td></tr>
+          <tr><td>IPO</td><td>Anthropic</td><td>Claude AI models</td><td>San Francisco</td><td>$965B private (May 2026); IPO pending</td></tr>
+        </tbody>
+      </table>
+
+      <h2>AI Model Makers</h2>
+      <h3>1. OpenAI</h3>
+      <p>OpenAI raised $122 billion at an $852 billion post-money valuation in a round announced at the end of March 2026, anchored by Amazon, Nvidia and SoftBank. At the time it reported about $2 billion of revenue a month and more than 900 million weekly ChatGPT users. CNBC reported in November that OpenAI is raising about $15 billion more at a $1.25 trillion valuation; the company has not announced it. OpenAI submitted a confidential draft IPO filing in June and has said a listing would come in 2027.</p>
+      <h3>Anthropic (IPO pending)</h3>
+      <p>Anthropic, maker of Claude, raised $65 billion at a $965 billion valuation in May 2026, <a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html" target="_blank" rel="noopener">CNBC reported</a>. Its public IPO filing shows $33.2 billion of revenue in the first nine months of 2026, and it plans to sell shares at $70 to $78 each, with pricing expected on November 18. Read our coverage of the <a href="/articles/anthropic-ipo-filing-q3-2026-results/">Anthropic IPO filing</a>.</p>
+      <h3>9. Safe Superintelligence and 14. Thinking Machines Lab</h3>
+      <p>Two research labs founded by former OpenAI leaders have no mass-market product yet but command large valuations. Ilya Sutskever's Safe Superintelligence was last valued at a reported $32 billion in April 2025, and Reuters reported in July 2026 that Nvidia would invest $5 billion. Mira Murati's Thinking Machines Lab raised about $2 billion at $12 billion in 2025 and was reported in November 2026 to be near a round at a $40 billion pre-money valuation led by Accel, which it has not confirmed.</p>
+
+      <h2>AI Applications and Developer Tools</h2>
+      <h3>2. Databricks</h3>
+      <p>Databricks raised $5 billion at a $190 billion valuation in August 2026 and said its revenue run-rate passed $7 billion, growing more than 80% a year, according to its <a href="https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales" target="_blank" rel="noopener">press release</a>.</p>
+      <h3>6. Cognition</h3>
+      <p>Cognition, maker of the Devin coding agent and owner of Windsurf, raised more than $2 billion at a $48 billion valuation in September 2026, led by a16z and Accel. It said run-rate revenue rose from $492 million in May to almost $900 million in September, according to its <a href="https://cognition.com/blog/series-e" target="_blank" rel="noopener">announcement</a>.</p>
+      <h3>10. Mercor, 12. Sierra, 13. Harvey and 15. Glean</h3>
+      <ul>
+        <li><strong>Mercor</strong> raised $750 million at $20 billion on November 10, 2026, with Nvidia, Salesforce and Benchmark among investors, <a href="https://siliconangle.com/2026/11/10/mercor-raises-750m-at-20b-valuation-to-take-ai-agent-evaluation-to-enterprises/" target="_blank" rel="noopener">SiliconANGLE reported</a>. It disclosed a security incident earlier in the year.</li>
+        <li><strong>Sierra</strong>, co-founded by former Salesforce co-CEO Bret Taylor, raised a $950 million Series E at $15.8 billion in May 2026, led by Tiger Global and GV.</li>
+        <li><strong>Harvey</strong> raised $550 million at $15.5 billion in September 2026 and says 80% of the Am Law 100 law firms use it.</li>
+        <li><strong>Glean</strong> passed $300 million in annual recurring revenue in May 2026; its last confirmed valuation is $7.2 billion from June 2025.</li>
+      </ul>
+      <h3>11. Perplexity</h3>
+      <p>Perplexity's last widely reported valuation was $20 billion in September 2025. The Information reported in August 2026 that Nvidia was in talks to invest at more than $30 billion, but no close has been confirmed.</p>
+
+      <h2>Fintech and Prediction Markets</h2>
+      <h3>3. Stripe</h3>
+      <p>Stripe was valued at $159 billion in an employee share sale in February 2026 and processed $1.9 trillion of total volume in 2025, up 34%, according to its <a href="https://stripe.com/newsroom/news/stripe-2025-update" target="_blank" rel="noopener">annual letter</a>. In August it agreed to buy AI model marketplace OpenRouter.</p>
+      <h3>5. Ramp</h3>
+      <p>Ramp raised $1.85 billion at a $60 billion valuation in October 2026, led by Dragoneer, up from $44 billion in June. It reported more than $2 billion of annualized revenue and 85,000 customers, <a href="https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai" target="_blank" rel="noopener">TechCrunch reported</a>.</p>
+      <h3>7. Kalshi and 16. Polymarket</h3>
+      <p>Prediction markets were one of 2026's breakout sectors. Kalshi, a CFTC-regulated exchange, raised $1 billion at $40 billion on October 29, co-led by Sequoia and Wellington Management, almost double its May valuation. Polymarket reported annualized revenue above $1.8 billion in November; a round at $21 billion led by 1789 Capital was reported in August but had not been confirmed as closed. Both face legal challenges from states over sports contracts.</p>
+
+      <h2>Defense, Robotics and Energy</h2>
+      <ul>
+        <li><strong>4. Anduril</strong> raised a $5 billion Series H at $61 billion in May 2026, led by Thrive Capital and a16z, after 2025 revenue of $2.2 billion. In October it announced a $6.6 billion submarine shipyard package with the US Navy.</li>
+        <li><strong>8. Figure AI</strong> was valued at $39 billion in its September 2025 Series C and said in April 2026 that it had delivered more than 350 Figure 03 humanoid robots.</li>
+        <li><strong>17. Commonwealth Fusion Systems</strong> raised about $1 billion in July 2026, with Google and Eni among investors, bringing total funding to $4 billion. It aims to switch on its SPARC fusion machine in 2027.</li>
+      </ul>
+
+      <h2>Which Big Startups Exited in 2026?</h2>
+      <p>Two of the most valuable US startups were absorbed by SpaceX, which itself listed on Nasdaq in June 2026.</p>
+      <ul>
+        <li><strong>xAI:</strong> Elon Musk's AI company raised $20 billion in January, then was acquired by SpaceX in an all-stock deal in February that valued xAI at $250 billion, <a href="https://www.cnbc.com/2026/02/03/musk-xai-spacex-biggest-merger-ever.html" target="_blank" rel="noopener">CNBC reported</a>.</li>
+        <li><strong>Anysphere (Cursor):</strong> SpaceX completed its purchase of the AI coding company on August 14, 2026, at an implied equity value of $60 billion, according to SpaceX's <a href="https://www.sec.gov/Archives/edgar/data/0001181412/000162828026066482/spaceexplorationtechnologi.htm" target="_blank" rel="noopener">SEC filing</a>.</li>
+      </ul>
+
+      <h2>What the 2026 Startup Market Looks Like</h2>
+      <p>US venture investment hit a record $515.8 billion in the first three quarters of 2026, about 44% above the previous full-year record set in 2021, according to the <a href="https://nvca.org/pitchbook-nvca-venture-monitor/" target="_blank" rel="noopener">PitchBook-NVCA Venture Monitor</a>. AI companies took 82.7% of that money. Third-quarter investment was $98.4 billion across an estimated 5,012 deals, and 18 venture-backed companies went public in the quarter.</p>
+      <p>The concentration is striking: a handful of AI model makers absorb most of the capital, while smaller startups compete for the rest. For founders, that means investors are paying up for AI growth but scrutinising everyone else. See our guides on <a href="/articles/venture-debt-startup-funding-shift/">venture debt</a> and <a href="/articles/startup-booted-fundraising-strategy/">startup fundraising strategy</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>What is the most valuable startup in the United States?</h3>
+      <p>OpenAI, valued at $852 billion after a round announced in March 2026. A newer round at $1.25 trillion has been reported but not announced by the company.</p>
+      <h3>Which US startups are planning IPOs?</h3>
+      <p>Anthropic is set to price its IPO on November 18, 2026. OpenAI has filed confidentially and expects to list in 2027, and Kalshi's CEO has said an IPO would come no earlier than 2027.</p>
+      <h3>How much did US startups raise in 2026?</h3>
+      <p>$515.8 billion through September 2026, a record, according to PitchBook and the NVCA, with 82.7% going to AI companies.</p>
+      <h3>Is Cursor still a startup?</h3>
+      <p>No. Cursor's maker, Anysphere, became part of SpaceX when the acquisition closed on August 14, 2026.</p>
+
+      <p><em>Checked on November 15, 2026, against company announcements, SEC filings, the PitchBook-NVCA Venture Monitor and reporting by CNBC, TechCrunch, SiliconANGLE and Reuters. Valuations change quickly; we will update this list as rounds close.</em></p>
+    `
+  },
+  {
     id: "iran-strikes-bahrain-riffa-base-us-forces",
     title: "Iran Strikes Bahrain Base Hosting US Forces for Second Time in Three Days",
     excerpt: "Iran's IRGC says it fired six drones at Bahrain's Riffa base hosting US forces; Bahrain says it intercepted them. What happened and what it means for oil.",
