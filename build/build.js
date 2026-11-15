@@ -683,6 +683,13 @@ function buildArticle(a) {
   const modified = a.updatedAt || a.publishedAt;
   const sameCat = ARTICLES.filter(o => o.id !== a.id && o.categorySlug === a.categorySlug);
   const related = [...sameCat, ...ARTICLES.filter(o => o.id !== a.id && o.categorySlug !== a.categorySlug)].slice(0, 3);
+  // Bottom-of-article discovery (news-portal style): Top Stories (trending first, then newest), Just In
+  // (newest), and More in this section. Each story appears in only one block.
+  const used = new Set([a.id, ...related.map(r => r.id)]);
+  const take = (list, n) => { const out = list.filter(o => !used.has(o.id)).slice(0, n); out.forEach(o => used.add(o.id)); return out; };
+  const topStories = take([...ARTICLES].sort((x, y) => (y.isTrending ? 1 : 0) - (x.isTrending ? 1 : 0) || Date.parse(y.publishedAt) - Date.parse(x.publishedAt)), 5);
+  const justIn = take(ARTICLES, 6);
+  const moreInSection = take(sameCat, 3);
   const heroImage = isUnsplash(a.image)
     ? { url: imageUrl(a, 1200, 675), width: 1200, height: 675 }
     : { url: abs(a.image), width: a.imageWidth, height: a.imageHeight };
@@ -765,6 +772,41 @@ ${a.content.replace(/^\n+|\s+$/g, "")}
           </div>
         </aside>
       </div>
+
+      ${topStories.length ? `<section class="story-discovery" aria-label="More stories">
+        <div class="top-stories-card">
+          <h2 class="discovery-title">Top Stories</h2>
+          <ol class="top-stories-grid">
+            ${topStories.map((t, i) => `<li class="top-story${i === 0 ? " top-story-lead" : ""}">
+              ${i === 0 ? `<a href="${articleUrl(t)}" class="top-story-thumb" tabindex="-1" aria-hidden="true">${img(t, { widths: [400, 800, 1200], ratio: 9 / 16, sizes: "(max-width: 992px) calc(100vw - 2.5rem), 520px" })}</a>` : ""}
+              <span class="top-story-cat">${esc(t.category)}</span>
+              <div class="top-story-row">
+                <span class="top-story-num" aria-hidden="true">${i + 1}</span>
+                <h3 class="top-story-title"><a href="${articleUrl(t)}">${esc(t.title)}</a></h3>
+              </div>
+            </li>`).join("\n            ")}
+          </ol>
+        </div>
+        ${justIn.length ? `<div class="just-in">
+          <h2 class="discovery-title">Just In</h2>
+          <ol class="just-in-list">
+            ${justIn.map(j => `<li>
+              <div class="just-in-meta"><span class="top-story-cat">${esc(j.category)}</span><time class="js-timeago" datetime="${j.publishedAt}">${formatDate(j.publishedAt)}</time></div>
+              <h3 class="just-in-title"><a href="${articleUrl(j)}">${esc(j.title)}</a></h3>
+            </li>`).join("\n            ")}
+          </ol>
+        </div>` : ""}
+      </section>` : ""}
+
+      ${moreInSection.length ? `<section class="more-in-section" aria-labelledby="moreInTitle">
+        <div class="section-header-banner">
+          <h2 id="moreInTitle">More in ${esc(cat.name)}</h2>
+          <a href="${categoryUrl(cat.slug)}" class="section-link">View all ➔</a>
+        </div>
+        <div class="articles-grid articles-grid-3">
+          ${moreInSection.map(newsCard).join("\n          ")}
+        </div>
+      </section>` : ""}
     </article>`;
 
   return render({

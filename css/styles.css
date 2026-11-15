@@ -9,6 +9,8 @@
   --bg-secondary: #f8fafc;
   --bg-tertiary: #f1f5f9;
   --bg-card: #ffffff;
+  --bg-highlight: #fbf5e6;
+  --chip-bg: #f6e9c4;
   --border-color: #e2e8f0;
   --border-dark: #cbd5e1;
 
@@ -54,6 +56,8 @@
   --bg-secondary: #111827;
   --bg-tertiary: #1f2937;
   --bg-card: #151d2f;
+  --bg-highlight: #1a2236;
+  --chip-bg: #2b3550;
   --border-color: #243048;
   --border-dark: #374151;
 
@@ -2339,5 +2343,192 @@ dialog.custom-modal::backdrop {
   }
   .news-ticker-list li::after {
     margin-inline: 1rem;
+  }
+}
+
+/* ==========================================================================
+   Article Bottom: Top Stories, Just In and More in Section
+   ========================================================================== */
+.story-discovery {
+  display: grid;
+  grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  margin-block: 3rem 1rem;
+  padding-block-start: 2.5rem;
+  border-block-start: 1px solid var(--border-color);
+}
+
+.discovery-title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-block-end: 1.5rem;
+  color: var(--text-primary);
+}
+
+.top-stories-card {
+  background-color: var(--bg-highlight);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.top-stories-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  grid-template-rows: repeat(4, auto);
+  column-gap: 2.25rem;
+  row-gap: 1.75rem;
+}
+
+.top-story-lead {
+  grid-row: 1 / span 4;
+}
+
+.top-story-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-block-end: 1rem;
+  background-color: var(--bg-tertiary);
+}
+
+.top-story-thumb img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.top-story-lead:hover .top-story-thumb img {
+  transform: scale(1.03);
+}
+
+.top-story-cat {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-block-end: 0.375rem;
+}
+
+.top-story-row {
+  display: flex;
+  gap: 0.875rem;
+  align-items: flex-start;
+}
+
+.top-story-num {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  min-inline-size: 1.25rem;
+}
+
+.top-story-title {
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+.top-story-lead .top-story-title {
+  font-size: 1.375rem;
+}
+
+.top-story-title a:hover,
+.just-in-title a:hover {
+  color: var(--brand-accent);
+}
+
+.just-in-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-inline-start: 1px solid var(--border-dark);
+}
+
+.just-in-list li {
+  position: relative;
+  padding-inline-start: 1.5rem;
+  padding-block-end: 1.5rem;
+}
+
+.just-in-list li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: -0.25rem;
+  inset-block-start: 0.4rem;
+  inline-size: 0.5rem;
+  block-size: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--text-primary);
+}
+
+.just-in-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block-end: 0.375rem;
+}
+
+.just-in-meta .top-story-cat {
+  margin: 0;
+}
+
+.just-in-meta time {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.just-in-title {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
+
+.more-in-section {
+  margin-block: 2.5rem 1rem;
+}
+
+@media (max-width: 992px) {
+  .story-discovery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .top-stories-card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+  .top-stories-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    row-gap: 1.25rem;
+  }
+  .top-story-lead {
+    grid-row: auto;
+  }
+  .discovery-title {
+    font-size: 1.5rem;
+    margin-block-end: 1rem;
+  }
+  .top-story-num {
+    font-size: 1.625rem;
+  }
+  .top-story-title,
+  .top-story-lead .top-story-title {
+    font-size: 1.0625rem;
   }
 }

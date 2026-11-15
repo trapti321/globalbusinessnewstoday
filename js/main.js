@@ -16,7 +16,22 @@ document.addEventListener("DOMContentLoaded", () => {
   initForms();
   initShare();
   initReadingProgress();
+  initTimeAgo();
 });
+
+/* --------------------------------------------------------------------------
+   Relative times ("2h ago") for the Just In list; older items keep their date.
+   -------------------------------------------------------------------------- */
+function initTimeAgo() {
+  const now = Date.now();
+  document.querySelectorAll("time.js-timeago").forEach(el => {
+    const mins = Math.floor((now - Date.parse(el.getAttribute("datetime"))) / 60000);
+    if (!(mins >= 0)) return;
+    if (mins < 60) el.textContent = `${Math.max(mins, 1)}m ago`;
+    else if (mins < 1440) el.textContent = `${Math.floor(mins / 60)}h ago`;
+    else if (mins < 10080) el.textContent = `${Math.floor(mins / 1440)}d ago`;
+  });
+}
 
 /* --------------------------------------------------------------------------
    Theme Management (Dark / Light Mode)
