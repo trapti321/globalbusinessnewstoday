@@ -1,6 +1,201 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "electronic-learning-e-learning",
+    title: "Electronic Learning (E-Learning): Types, Evidence, LMS Choice and Accessibility Rules",
+    excerpt: "Electronic learning explained: types of e-learning, what the evidence says, how firms choose an LMS, and WCAG, Section 508 and ADA rules.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T17:20:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Laptop, open notebook, pen and coffee mug on a desk by a window",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Electronic Learning", "E-Learning", "Electronic Education", "Online Learning", "LMS", "Corporate Training"],
+    content: `
+      <p class="lead">Electronic learning, usually shortened to e-learning and also called electronic education, means teaching and training delivered through digital devices and networks, from live video classes to self-paced courses inside a company learning platform. It is now mainstream: in fall 2021, 61% of US undergraduates took at least one distance education course. The research says it can work as well as classroom teaching, and that it works best when it is blended with face-to-face instruction.</p>
+
+      <blockquote>
+        <p><strong>Electronic learning, the key facts:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> education or training delivered online or through software, live or self-paced.</li>
+          <li><strong>US college reach:</strong> 9.4 million undergraduates (61%) took at least one distance course in fall 2021, and 4.4 million (28%) studied fully online (NCES).</li>
+          <li><strong>Evidence:</strong> a US Department of Education meta-analysis found online learners did "modestly better" on average than face-to-face learners, with the biggest gains in blended setups.</li>
+          <li><strong>Business scale:</strong> Coursera reported 197 million registered learners at the end of 2025 and completed its all-stock combination with Udemy on May 11, 2026.</li>
+          <li><strong>Accessibility:</strong> Section 508 applies WCAG 2.0 Level AA to federal electronic content. The ADA Title II rule requires WCAG 2.1 AA for public schools, colleges and universities, with first deadlines in April 2027.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Electronic Learning?</h2>
+      <p>Electronic learning is any structured learning where the content, the teaching or the assessment reaches the learner through a computer, phone or network. "Electronic education" and "online learning" are generally used to mean the same thing, while "distance education" is the term US federal statistics use.</p>
+
+      <h2>What Are the Main Types of E-Learning?</h2>
+      <table>
+        <thead><tr><th>Type</th><th>How it works</th><th>Typical use</th></tr></thead>
+        <tbody>
+          <tr><td>Synchronous</td><td>Learners and instructor meet live (video class, webinar, virtual lab).</td><td>Seminars, coaching, live onboarding</td></tr>
+          <tr><td>Asynchronous</td><td>Self-paced: recorded video, readings, quizzes, discussion boards.</td><td>Working adults, different time zones</td></tr>
+          <tr><td>Blended (hybrid)</td><td>Online work combined with in-person sessions.</td><td>Schools, universities, hands-on skills</td></tr>
+          <tr><td>MOOCs</td><td>Massive open online courses on platforms such as Coursera, open to large numbers of learners.</td><td>Upskilling, career changers</td></tr>
+          <tr><td>Corporate LMS training</td><td>Courses assigned and tracked in a company learning management system (LMS).</td><td>Compliance, product training, leadership</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Does Electronic Learning Actually Work?</h2>
+      <p>The most cited evidence is <a href="https://www.sri.com/publication/education-learning-pubs/digital-learning-pubs/evaluation-of-evidence-based-practices-in-online-learning-a-meta-analysis-and-review-of-online-learning-studies/" target="_blank" rel="noopener">a meta-analysis by SRI International for the US Department of Education</a> (revised September 2010). Researchers screened more than a thousand studies published from 1996 to July 2008 and kept 50 effects that met strict criteria. The findings:</p>
+      <ul>
+        <li>Students in online conditions performed modestly better on average, with an average effect size of +0.20.</li>
+        <li>Blended instruction showed the larger advantage over face-to-face teaching (+0.35). Purely online versus purely face-to-face was +0.05, which was not statistically significant.</li>
+        <li>The authors warned that blended groups often got extra learning time and materials, so the gains "should not be attributed to the media, per se."</li>
+        <li>Few rigorous K-12 studies existed, so the results come mostly from higher education and professional training such as medicine.</li>
+      </ul>
+
+      <h2>How Big Is Online Learning in the US?</h2>
+      <p>According to the <a href="https://nces.ed.gov/fastfacts/display.asp?id=80" target="_blank" rel="noopener">National Center for Education Statistics</a>, the share of undergraduates taking at least one distance course went from 36% in 2019 to 75% in 2020 (the pandemic year) and settled at 61% in 2021. Among postbaccalaureate students, 56% took at least one distance course in 2021 and 40% studied exclusively at a distance.</p>
+      <p>Access remains a global limit. <a href="https://www.unesco.org/en/digital-education" target="_blank" rel="noopener">UNESCO</a> says only 40% of primary schools and 50% of lower secondary schools worldwide are connected to the internet.</p>
+
+      <h2>What Are the Benefits and Limits?</h2>
+      <p><strong>Benefits:</strong> flexible timing, reach across locations, consistent content for every learner, and data on completion and quiz results. <strong>Limits:</strong> it depends on devices and connectivity, self-paced courses need learner discipline, and hands-on or social skills often still need in-person practice.</p>
+
+      <h2>Why Does E-Learning Matter for Business?</h2>
+      <p>Corporate training is a major user. The US Bureau of Labor Statistics <a href="https://www.bls.gov/ooh/business-and-financial/training-and-development-specialists.htm" target="_blank" rel="noopener">counts about 472,500 training and development specialist jobs</a> (median pay $69,280 in May 2025), projects 11% growth from 2025 to 2035, and notes that these specialists build online learning modules.</p>
+      <p>LinkedIn's <a href="https://business.linkedin.com/learn/resources/workplace-learning-report" target="_blank" rel="noopener">2025 Workplace Learning Report</a> (937 L&amp;D and HR professionals and 679 learners surveyed) found that 49% say their executives worry employees lack the skills to carry out business strategy, and 88% of organizations are concerned about retention.</p>
+      <p>On the platform side, <a href="https://investor.coursera.com/news/news-details/2026/Coursera-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx" target="_blank" rel="noopener">Coursera reported</a> 2025 revenue of $757.5 million (up 9%), enterprise revenue of $255.3 million and 1,730 paid enterprise customers. Its <a href="https://www.sec.gov/Archives/edgar/data/0001651562/000165156226000072/cour-20260930.htm" target="_blank" rel="noopener">quarterly SEC filing</a> confirms that the combination with Udemy closed on May 11, 2026. We did not find a market-size estimate for e-learning from a source we could check, so we have left out the headline "market worth" figures that often circulate.</p>
+
+      <h2>How Should a Company or SME Choose an LMS?</h2>
+      <ul>
+        <li><strong>Start with the use case:</strong> compliance tracking, onboarding, customer training or skills development each need different features.</li>
+        <li><strong>Check standards support:</strong> ask which course package formats the LMS imports and exports, so your content is not locked to one vendor.</li>
+        <li><strong>Reporting:</strong> make sure managers can see completions, overdue training and audit records.</li>
+        <li><strong>Accessibility:</strong> ask for a conformance report against WCAG.</li>
+        <li><strong>Total cost:</strong> compare per-user pricing, content libraries, setup fees and contract length, and run a pilot before you sign.</li>
+      </ul>
+
+      <h2>What Accessibility Rules Apply to E-Learning?</h2>
+      <p>The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">Web Content Accessibility Guidelines</a> (WCAG) are the reference standard. W3C recommends the latest version, WCAG 2.2 (published October 5, 2023), and content that meets 2.2 also meets 2.1 and 2.0. In the US:</p>
+      <ul>
+        <li><strong>Section 508</strong> applies <a href="https://www.section508.gov/develop/applicability-conformance/" target="_blank" rel="noopener">WCAG 2.0 Level AA</a> to federal agencies' web and non-web electronic content.</li>
+        <li><strong>ADA Title II:</strong> the Justice Department's <a href="https://www.ada.gov/resources/2024-03-08-web-rule/" target="_blank" rel="noopener">web rule</a> requires state and local governments, including public schools, community colleges and public universities, to meet WCAG 2.1 AA. After an April 2026 extension, deadlines are April 26, 2027 for entities serving 50,000 or more people and April 26, 2028 for smaller ones.</li>
+      </ul>
+      <p>In practice: captions, keyboard navigation, good color contrast and screen-reader-friendly quizzes.</p>
+
+      <h2>FAQs</h2>
+      <h3>Is electronic learning the same as electronic education?</h3>
+      <p>Yes, in everyday use. Both mean learning delivered through digital technology. US government statistics generally say "distance education."</p>
+      <h3>Is online learning as effective as classroom learning?</h3>
+      <p>The Department of Education meta-analysis found online learners did modestly better on average, but the clearest gains came from blended courses, and the authors linked those gains to extra time and materials rather than the technology itself.</p>
+      <h3>Do e-learning courses have to be accessible?</h3>
+      <p>For US federal agencies (Section 508) and public schools and universities (ADA Title II), yes. Private companies should treat WCAG 2.1 or 2.2 Level AA as the practical benchmark.</p>
+
+      <p><em>Checked on November 15, 2026, against NCES, the US Department of Education/SRI online learning meta-analysis, UNESCO, the Bureau of Labor Statistics, LinkedIn Learning, Coursera investor relations and SEC filings, W3C, Section508.gov and ADA.gov.</em></p>
+    `
+  },
+  {
+    id: "sample-game-mechanics",
+    title: "Sample Game Mechanics: Real Examples From Tetris, Mario, Minecraft, Chess and Magic",
+    excerpt: "Sample game mechanics explained with real examples, a table of common mechanics, the MDA framework, design docs and loot box rules.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T17:30:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Strategy board game with hexagonal tiles, dice and small pieces on a table",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Sample Game Mechanics", "Game Mechanics", "Game Design", "MDA Framework", "Loot Boxes", "Gamification"],
+    content: `
+      <p class="lead">Game mechanics are the rules and systems a player acts through: jumping, drawing a card, clearing a line, crafting an item or opening a loot box. Good sample game mechanics come straight from real games, such as Tetris line clears, chess castling and the Magic: The Gathering draw step. Designers write them up in a game design document, and regulators now watch one in particular: paid random rewards.</p>
+
+      <blockquote>
+        <p><strong>Sample game mechanics, the key facts:</strong></p>
+        <ul>
+          <li><strong>Definition (MDA framework):</strong> mechanics are "the particular components of the game, at the level of data representation and algorithms."</li>
+          <li><strong>Classic examples:</strong> Tetris line clears (1984), Mario's jump (Super Mario Bros., 1985), chess castling and en passant, the Magic: The Gathering draw step.</li>
+          <li><strong>Regulation:</strong> the FTC's $20 million Genshin Impact settlement (January 2025) targeted loot box odds and sales to under-16s. Belgium's regulator found loot boxes in three games broke its gambling law in 2018.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Are Game Mechanics?</h2>
+      <p>The most widely taught definition comes from the MDA paper by Robin Hunicke, Marc LeBlanc and Robert Zubek, <a href="https://aaai.org/papers/ws04-04-001-mda-a-formal-approach-to-game-design-and-game-research/" target="_blank" rel="noopener">published in the 2004 AAAI workshop proceedings</a> and developed in the Game Design and Tuning Workshop at the Game Developers Conference (2001 to 2004). <a href="https://users.cs.northwestern.edu/~hunicke/MDA.pdf" target="_blank" rel="noopener">The paper</a> splits a game into three layers:</p>
+      <ul>
+        <li><strong>Mechanics:</strong> the components of the game "at the level of data representation and algorithms" (the rules).</li>
+        <li><strong>Dynamics:</strong> "the run-time behavior of the mechanics acting on player inputs and each others outputs over time."</li>
+        <li><strong>Aesthetics:</strong> "the desirable emotional responses evoked in the player."</li>
+      </ul>
+      <p>The authors list eight kinds of aesthetic: Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression and Submission. They note that designers work from mechanics up, while players experience aesthetics first and reach the mechanics last.</p>
+
+      <h2>What Are Some Sample Game Mechanics?</h2>
+      <h3>Tetris: line clears</h3>
+      <p>Tetris was created by programmer Alexey Pajitnov in 1984, according to <a href="https://tetris.com/about" target="_blank" rel="noopener">The Tetris Company</a>. The core mechanic: complete a horizontal row of blocks with no empty space and the row clears. Pieces fall faster as you progress, and the game ends when the stack goes past the top.</p>
+      <h3>Super Mario Bros.: jumping</h3>
+      <p><a href="https://www.nintendo.com/us/explore/characters/mario/history/" target="_blank" rel="noopener">Nintendo lists Super Mario Bros.</a> as released on September 13, 1985, for the Nintendo Entertainment System. Jumping is the main action in the game: it is how you get over gaps, reach platforms and defeat enemies by landing on them.</p>
+      <h3>Minecraft: crafting</h3>
+      <p>In Minecraft, items combine into new items using recipes. <a href="https://www.minecraft.net/en-us/article/how-craft" target="_blank" rel="noopener">Minecraft's official guide</a> explains that a crafting table takes four planks, that the table unlocks all crafting recipes, and that the recipe book can be opened from your inventory or at a crafting table.</p>
+      <h3>Chess: special moves</h3>
+      <p>The <a href="https://handbook.fide.com/chapter/E012023" target="_blank" rel="noopener">FIDE Laws of Chess</a> (in force since January 1, 2023) say White moves first and players alternate turns. The aim is checkmate. Castling moves the king and a rook in one turn, and the en passant capture is legal only on the move right after an opposing pawn advances two squares. The 50-move rule lets a player claim a draw after 50 moves by each side with no pawn move or capture.</p>
+      <h3>Magic: The Gathering: card draw</h3>
+      <p>Under the <a href="https://magic.wizards.com/en/rules" target="_blank" rel="noopener">Comprehensive Rules</a> (effective November 6, 2026), each player starts with 20 life and a seven-card hand, can take a mulligan, and "first, the active player draws a card" each turn. A player who has to draw from an empty library loses.</p>
+
+      <h2>Table: Common Game Mechanics With Examples</h2>
+      <table>
+        <thead><tr><th>Mechanic</th><th>What the rule does</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Pattern completion</td><td>Completing a pattern removes it and scores</td><td>Tetris line clears</td></tr>
+          <tr><td>Movement and jumping</td><td>Player controls position and timing</td><td>Super Mario Bros.</td></tr>
+          <tr><td>Crafting</td><td>Combining resources makes new items</td><td>Minecraft crafting table</td></tr>
+          <tr><td>Turn order</td><td>Players act one at a time</td><td>Chess (White moves first)</td></tr>
+          <tr><td>Card draw</td><td>Random new options each turn</td><td>Magic: The Gathering draw step</td></tr>
+          <tr><td>Resource and life totals</td><td>A number you protect or spend</td><td>Magic's 20 starting life</td></tr>
+          <tr><td>Random rewards (loot)</td><td>Paid or earned chance at items</td><td>Genshin Impact loot boxes (per the FTC)</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How Do Designers Document Game Mechanics?</h2>
+      <p>Studios usually record mechanics in a game design document (GDD), a living reference the whole team works from. A useful entry for each mechanic includes:</p>
+      <ul>
+        <li><strong>The rule in plain words</strong> and the player input that triggers it.</li>
+        <li><strong>Numbers:</strong> costs, timers, drop chances, damage or score values.</li>
+        <li><strong>Edge cases:</strong> ties, empty decks, timing windows (the equivalent of chess's en passant).</li>
+        <li><strong>The intended dynamic and aesthetic</strong> (MDA terms).</li>
+        <li><strong>A worked example</strong> showing the start state, the action and the result step by step.</li>
+      </ul>
+      <p>That last point is also the main advice in <a href="https://electroniclearning.org/explaining-game-mechanics-with-examples-that-players-can-actually-follow/" target="_blank" rel="nofollow noopener">a widely shared explainer on game mechanic examples</a>: show the starting state, every legal option and the calculations, and mark which outcomes depend on chance.</p>
+
+      <h2>What Is the Business Side: Gamification and Loot Box Rules?</h2>
+      <p><strong>Gamification</strong> means using game mechanics such as points, levels, badges, leaderboards and progress bars in work, training or apps. As MDA suggests, copying a mechanic does not guarantee the intended experience, so test it.</p>
+      <p><strong>Loot boxes</strong> are the mechanic facing the most legal scrutiny:</p>
+      <ul>
+        <li><strong>US (FTC):</strong> in <a href="https://www.ftc.gov/news-events/news/press-releases/2025/01/genshin-impact-game-developer-will-be-banned-selling-lootboxes-teens-under-16-without-parental" target="_blank" rel="noopener">January 2025</a>, Genshin Impact publisher HoYoverse (Cognosphere) agreed to a $20 million penalty over allegations that it misled players about prize odds and costs. The proposed order bans loot box sales to under-16s without parental consent and requires odds disclosure. Separately, Epic Games agreed in 2022 to <a href="https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations" target="_blank" rel="noopener">$520 million in total</a> over alleged COPPA violations and confusing purchase design in Fortnite.</li>
+        <li><strong>Ratings (ESRB):</strong> since April 2020, the <a href="https://www.esrb.org/blog/in-game-purchases-includes-random-items/" target="_blank" rel="noopener">"In-Game Purchases (Includes Random Items)"</a> notice flags loot boxes, gacha, card packs, prize wheels and similar purchases.</li>
+        <li><strong>Belgium:</strong> in April 2018, the Belgian Gaming Commission found that loot boxes in Overwatch, FIFA 18 and Counter-Strike: Global Offensive violated gambling law, <a href="https://gameinformer.com/b/news/archive/2018/04/25/belgium-classifies-loot-boxes-as-illegal.aspx" target="_blank" rel="noopener">Game Informer reported</a>.</li>
+        <li><strong>UK:</strong> the government's <a href="https://www.gov.uk/government/consultations/loot-boxes-in-video-games-call-for-evidence/outcome/government-response-to-the-call-for-evidence-on-loot-boxes-in-video-games" target="_blank" rel="noopener">July 2022 response</a> chose not to bring loot boxes under the Gambling Act 2005. It said they should be unavailable to children unless a parent or guardian enables them, and that industry should improve age checks and spending controls.</li>
+      </ul>
+
+      <h2>FAQs</h2>
+      <h3>What is a simple example of a game mechanic?</h3>
+      <p>The Tetris line clear: fill a horizontal row completely and it disappears.</p>
+      <h3>What is the difference between mechanics and dynamics?</h3>
+      <p>In the MDA framework, mechanics are the rules, while dynamics are what happens when those rules meet player choices over time, such as the tension of a stack rising in Tetris.</p>
+      <h3>Are loot boxes gambling?</h3>
+      <p>It depends on the country. Belgium's regulator found some loot boxes broke its gambling law in 2018. The UK chose not to classify them as gambling, and US action so far has come through FTC consumer protection cases.</p>
+
+      <p><em>Checked on November 15, 2026, against the MDA paper (Hunicke, LeBlanc and Zubek, AAAI 2004), The Tetris Company, Nintendo, Minecraft.net, the FIDE Laws of Chess, the Magic: The Gathering Comprehensive Rules, the FTC, the ESRB, GOV.UK and Game Informer.</em></p>
+    `
+  },
+  {
     id: "boldenone-equipoise",
     title: "Boldenone (Equipoise): What the Veterinary Steroid Is, Its Legal Status and Health Risks",
     excerpt: "Boldenone (Equipoise) is an FDA-approved horse steroid, Schedule III in the US and banned by WADA. What the law says and the health risks of misuse.",

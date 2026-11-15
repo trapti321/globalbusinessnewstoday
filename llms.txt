@@ -51,6 +51,8 @@ Global Business News Today is an independent business news website. Articles cit
 
 ## Tech & AI
 
+- [Sample Game Mechanics: Real Examples From Tetris, Mario, Minecraft, Chess and Magic](https://globalbusinessnewstoday.com/tech/sample-game-mechanics/): Sample game mechanics explained with real examples, a table of common mechanics, the MDA framework, design docs and loot box rules. (Published 2026-11-15)
+- [Electronic Learning (E-Learning): Types, Evidence, LMS Choice and Accessibility Rules](https://globalbusinessnewstoday.com/tech/electronic-learning-e-learning/): Electronic learning explained: types of e-learning, what the evidence says, how firms choose an LMS, and WCAG, Section 508 and ADA rules. (Published 2026-11-15)
 - [Connectivity HSSGamepad: Is It a Real Brand? Plus Fixes for Controller Connection Problems](https://globalbusinessnewstoday.com/tech/connectivity-hssgamepad/): Connectivity HSSGamepad problems explained: we found no real HSSGamepad brand. Official Bluetooth, USB and dongle fixes from Microsoft, Sony and Nintendo. (Published 2026-11-15)
 - [GenBoostermark Software: Is It Real, and How to Run It Safely? Our Check](https://globalbusinessnewstoday.com/tech/genboostermark-software/): GenBoostermark software has no official vendor or download. We checked GitHub, PyPI and app stores, and explain how to vet any file claiming to be it. (Published 2026-11-15)
 - [New Software dh58goh9.7: Is It Real? What We Found Before You Download It](https://globalbusinessnewstoday.com/tech/new-software-dh58goh9-7/): New software dh58goh9.7 has no known developer, store listing or official download. Here's what we checked and how to stay safe from fake installers. (Published 2026-11-15)
