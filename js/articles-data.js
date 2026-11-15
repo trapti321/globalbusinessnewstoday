@@ -1100,7 +1100,6 @@ const ARTICLES = [
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Tablet showing Adobe Premiere, After Effects, Photoshop and Illustrator app icons on a desk beside a keyboard",
-    isFeatured: true,
     isTrending: true,
     views: 0,
     tags: ["Adobe MAX 2026", "Adobe Firefly", "Creative Cloud", "AI Agents", "Generative AI"],
