@@ -234,7 +234,12 @@ function head({ title, description, canonical, robots, og, articleMeta, schema }
 }
 
 function header({ active, isHome }) {
-  const lead = ARTICLES[0]; // newest published article
+  // Breaking News ticker: the newest headlines, scrolled continuously. The list is rendered twice so the
+  // CSS loop is seamless; the copy is hidden from screen readers and keyboard focus.
+  const tickerItems = ARTICLES.slice(0, 10);
+  const tickerList = (copy) => `<ul class="news-ticker-list"${copy ? ` aria-hidden="true"` : ""}>
+            ${tickerItems.map(a => `<li><a href="${articleUrl(a)}"${copy ? ` tabindex="-1"` : ""}>${esc(a.title)}</a></li>`).join("\n            ")}
+          </ul>`;
   const navItem = (href, label, key) => `<li><a href="${href}" class="nav-link${active === key ? " active" : ""}"${active === key ? ` aria-current="page"` : ""}>${esc(label)}</a></li>`;
   const brandTag = isHome ? "h1" : "div";
   return `<a class="skip-link" href="#main">Skip to content</a>
@@ -243,10 +248,6 @@ function header({ active, isHome }) {
       <div class="container">
         <div class="top-bar-left">
           <span class="live-date" id="liveDate"></span>
-          ${lead ? `<a class="breaking-ticker-wrap" href="${articleUrl(lead)}">
-            <span class="breaking-badge">Latest</span>
-            <span class="ticker-content">${esc(lead.title)}</span>
-          </a>` : ""}
         </div>
         <div class="top-bar-right">
           <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark mode">
@@ -291,6 +292,18 @@ function header({ active, isHome }) {
         </ul>
       </div>
     </nav>
+
+    ${tickerItems.length ? `<div class="news-ticker" role="region" aria-label="Breaking news">
+      <div class="container news-ticker-inner">
+        <span class="news-ticker-label">Breaking News</span>
+        <div class="news-ticker-viewport">
+          <div class="news-ticker-track" style="--ticker-duration: ${tickerItems.length * 9}s">
+          ${tickerList(false)}
+          ${tickerList(true)}
+          </div>
+        </div>
+      </div>
+    </div>` : ""}
   </header>`;
 }
 
