@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Real Estate | Global Business News Today</title>
+    <link>https://globalbusinessnewstoday.com/category/property/</link>
+    <atom:link href="https://globalbusinessnewstoday.com/category/property/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+    <description>Office markets, commercial property, conversions and real estate finance.</description>
+    <language>en-us</language>
+    <item>
+      <title>Office Vacancy Starts to Ease at 19.8% as Conversions Hit Record 90,300 Units</title>
+      <link>https://globalbusinessnewstoday.com/articles/commercial-property-hybrid-workspace/</link>
+      <guid isPermaLink="true">https://globalbusinessnewstoday.com/articles/commercial-property-hybrid-workspace/</guid>
+      <pubDate>Sat, 31 Oct 2026 17:00:00 GMT</pubDate>
+      <category>Real Estate</category>
+      <description>US office vacancy fell to 19.8% in Q3 2026 as office-to-apartment conversions hit a record. Higher rates and maturing loans still pressure owners.</description>
+      <media:content url="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=1200&amp;h=675&amp;q=80" medium="image" width="1200" height="675"/>
+    </item>
+  </channel>
+</rss>

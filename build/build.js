@@ -1283,9 +1283,12 @@ function buildTerms() {
 }
 
 // Google News sitemap: only articles from the last two days are eligible.
+// Sections that are not news (site reviews, press releases) stay in the regular sitemap but out of Google News.
+const NON_NEWS_SECTIONS = new Set(["reviews", "press-releases"]);
+
 function buildNewsSitemap() {
   const cutoff = Date.now() - 2 * 24 * 60 * 60 * 1000;
-  const urls = ARTICLES.filter(a => Date.parse(a.publishedAt) >= cutoff).map(a => `  <url>
+  const urls = ARTICLES.filter(a => Date.parse(a.publishedAt) >= cutoff && !NON_NEWS_SECTIONS.has(a.categorySlug)).map(a => `  <url>
     <loc>${SITE.url}${articleUrl(a)}</loc>
     <news:news>
       <news:publication>
@@ -1357,8 +1360,11 @@ ${urls.join("\n")}
 `;
 }
 
-function buildFeed() {
-  const items = ARTICLES.map(a => `    <item>
+// RSS feed for the whole site, or for one section (used for Google Publisher Center sections).
+function buildFeed(cat) {
+  const list = cat ? ARTICLES.filter(a => a.categorySlug === cat.slug) : ARTICLES;
+  const feedPath = cat ? `/category/${cat.slug}/feed.xml` : "/feed.xml";
+  const items = list.slice(0, 50).map(a => `    <item>
       <title>${esc(a.title)}</title>
       <link>${SITE.url}${articleUrl(a)}</link>
       <guid isPermaLink="true">${SITE.url}${articleUrl(a)}</guid>
@@ -1370,11 +1376,11 @@ function buildFeed() {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${esc(SITE.name)}</title>
-    <link>${SITE.url}/</link>
-    <atom:link href="${SITE.url}/feed.xml" rel="self" type="application/rss+xml"/>
+    <title>${esc(cat ? `${cat.name} | ${SITE.name}` : SITE.name)}</title>
+    <link>${SITE.url}${cat ? categoryUrl(cat.slug) : "/"}</link>
+    <atom:link href="${SITE.url}${feedPath}" rel="self" type="application/rss+xml"/>
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
-    <description>${esc(SITE.description)}</description>
+    <description>${esc(cat ? cat.description : SITE.description)}</description>
     <language>en-us</language>
 ${items.join("\n")}
   </channel>
@@ -1476,6 +1482,7 @@ write("404.html", build404());
 write("sitemap.xml", buildSitemap(sitemapPages));
 write("news-sitemap.xml", buildNewsSitemap());
 write("feed.xml", buildFeed());
+for (const c of ACTIVE_CATEGORIES) write(`category/${c.slug}/feed.xml`, buildFeed(c));
 write("llms.txt", buildLlmsTxt());
 
 console.log(`Built ${ALL_ARTICLES.length} articles (${ALL_ARTICLES.length - ARTICLES.length} hidden), ${CATEGORIES.length + 1} category pages, ${Object.keys(AUTHORS).length} author pages, home, contact, submit-pr, 404, sitemap.xml, feed.xml and llms.txt (assets v=${VERSION}).`);
