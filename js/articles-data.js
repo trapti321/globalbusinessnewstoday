@@ -1,6 +1,274 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "safetrode-com-review",
+    title: "Safetrode.com Review: What the Site Is, Who Runs It and Whether It Is Legit",
+    excerpt: "Safetrode.com is a multi-topic WordPress blog, not a safety brand. We checked its domain records, archive history and sponsored links.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T10:00:00Z",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "People talking at a wooden table with laptops, a notebook and a phone",
+    isTrending: false,
+    views: 0,
+    tags: ["Safetrode.com", "Website Review", "Is It Legit", "Online Safety", "Sponsored Content"],
+    content: `
+      <p class="lead">Safetrode.com is a general-interest WordPress blog that posts articles on business, finance, technology, law, lifestyle and home improvement. It does not sell products, offer trading, or provide medical or electrical safety services. Our checks found no sign of a scam, but the site gives little detail about who runs it, and some of its articles carry commercial links without a visible sponsored label.</p>
+
+      <blockquote>
+        <p><strong>Safetrode.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> A multi-topic blog that calls itself a "modern digital publication."</li>
+          <li><strong>Platform:</strong> WordPress, behind Cloudflare.</li>
+          <li><strong>Domain age:</strong> Registered February 13, 2019.</li>
+          <li><strong>Ownership:</strong> Not named on the site; contact is a free Gmail address.</li>
+          <li><strong>Verdict:</strong> Fine to read for general information, but not a source to rely on for money, legal or health decisions.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Safetrode.com?</h2>
+      <p>The homepage title reads "Safetrode.com | Trusted News, Insights &amp; Expert Editorials," and the site header shows the name as "Safe Trode." Its menu lists seven sections: Business, Education, Finance, Home Improvement, Law, Lifestyle and Technology.</p>
+      <p>Some other websites describe it as a safety or electrode brand. The live site publishes general explainers, not product pages.</p>
+
+      <h2>Who Runs Safetrode.com?</h2>
+      <p>The site does not say. Its About page describes a mission and coverage areas but names no company, editor or address. The Contact page lists a single Gmail address. Posts on the homepage appear under one author account.</p>
+      <p>Public domain records do not fill the gap. The Verisign RDAP record shows the domain was registered on February 13, 2019, through Wild West Domains, LLC, and is set to expire on February 13, 2032. Registrant details are not shown.</p>
+
+      <h2>Has the Domain Changed Hands?</h2>
+      <p>Archived copies suggest so. The earliest Wayback Machine snapshot, from December 23, 2021, shows safetrode.com as the website of a Chennai, India, supplier of chemical earthing systems and lightning arresters. By April 2022, the same address showed a general blog titled "Safetrode, Daily Enjoyment with Daily News."</p>
+      <p>The current design came later. Its About, Contact, Disclaimer and Editorial Policy pages are all dated June 17, 2026. We found no evidence that the current blog is linked to the earthing business that once used the domain.</p>
+
+      <h2>What Does It Publish?</h2>
+      <p>The WordPress API reports 83 posts. Technology is the largest category with 27 posts, followed by Finance with 16. Recent headlines include a guide to multi-account futures trading, a South Carolina apostille explainer, an online casino safety checklist and a post on hiring Java developers.</p>
+
+      <h2>Is Safetrode.com Legit and Safe?</h2>
+      <p>It is a real, working blog. It asks for no payments, logins or personal data, so it looks low risk to browse.</p>
+      <p>Trust in what it publishes is a different question. The authors are not identified in any meaningful way, and the site's own Disclaimer says it "makes no guarantees" about accuracy. Treat its finance, legal and health posts as starting points, not advice.</p>
+
+      <h2>Guest Posts and Sponsored Content</h2>
+      <p>The sidebar shows a banner advertising a "Guest Post Marketplace," and the header shows another ad banner. Both route through link-shortening services. The Editorial Policy says sponsored content "will be clearly identified when applicable."</p>
+      <p>In two posts we opened, we found keyword links to a trade copier product and a casino free-spins page. Neither page showed a "sponsored" label that we could find. The FTC's <a href="https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking" target="_blank" rel="noopener">Endorsement Guides FAQ</a> says paid connections should be disclosed "clearly and conspicuously."</p>
+
+      <table>
+        <thead><tr><th>Item</th><th>What we found (November 15, 2026)</th></tr></thead>
+        <tbody>
+          <tr><td>Platform</td><td>WordPress 7.1.4, All in One SEO plugin, Cloudflare</td></tr>
+          <tr><td>Domain registered</td><td>February 13, 2019 (expires February 13, 2032)</td></tr>
+          <tr><td>Registrar</td><td>Wild West Domains, LLC</td></tr>
+          <tr><td>Published posts</td><td>83</td></tr>
+          <tr><td>Oldest current post</td><td>January 7, 2025</td></tr>
+          <tr><td>Earliest archive</td><td>December 2021, an earthing equipment supplier's site</td></tr>
+          <tr><td>Owner disclosed</td><td>No</td></tr>
+          <tr><td>Contact</td><td>Free Gmail address only</td></tr>
+          <tr><td>Sponsored labels seen</td><td>None on the two posts checked</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How Can You Check a Site Like This?</h2>
+      <ul>
+        <li>Look up the domain age and registrar with <a href="https://lookup.icann.org/en" target="_blank" rel="noopener">ICANN Lookup</a>.</li>
+        <li>Check the About and Contact pages for a named company and physical address.</li>
+        <li>Search the Wayback Machine to see what the domain used to be.</li>
+        <li>Be wary of links that push you to trading, casino or download pages.</li>
+        <li>Never enter passwords or payment details from a blog link. The FTC's guide on <a href="https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams" target="_blank" rel="noopener">recognizing phishing scams</a> explains the warning signs.</li>
+      </ul>
+
+      <h2>FAQs</h2>
+      <h3>Is Safetrode.com a scam?</h3>
+      <p>We found no evidence of a scam. It is an information blog that does not sell anything or ask for personal data.</p>
+      <h3>Is Safetrode.com a medical or electrical safety company?</h3>
+      <p>No. The live site is a general blog. The domain once belonged to an earthing equipment supplier in India, according to a 2021 archive, but the current content is unrelated.</p>
+      <h3>Who owns Safetrode.com?</h3>
+      <p>The site does not disclose an owner, and public domain records do not show registrant details.</p>
+      <h3>Does Safetrode.com accept guest posts?</h3>
+      <p>The site has no "write for us" page, but its Contact page invites advertising and partnership requests, and its sidebar advertises a guest post marketplace.</p>
+
+      <p><em>Checked on November 15, 2026, against the live <a href="https://www.safetrode.com/" target="_blank" rel="nofollow noopener">safetrode.com</a> site and its WordPress API, the Verisign RDAP record, Wayback Machine snapshots from 2021 to 2026, and a competing review on <a href="https://buzzsport.co.uk/safetrode-com/" target="_blank" rel="nofollow noopener">Buzz Sport</a>.</em></p>
+    `
+  },
+  {
+    id: "babeltee-meaning",
+    title: "Babeltee Explained: Tea Trend, Tech Term or Website? What We Verified",
+    excerpt: "Babeltee is not a brand or store we could verify. We checked babeltee.com, its domain record and reviews to explain what the term really means.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T10:10:00Z",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Cup of tea next to a small clay teapot on a wooden tray",
+    isTrending: false,
+    views: 0,
+    tags: ["Babeltee", "Babeltee.com", "Website Review", "Online Trends", "Consumer Safety"],
+    content: `
+      <p class="lead">Babeltee is not a brand, product or shop that we could verify. Online articles use the word to mean very different things, from a do-it-yourself fruit tea trend to a software localization method. The babeltee.com domain itself hosts a small WordPress blog of "what time was it X hours ago" calculator posts, not a tea or T-shirt store.</p>
+
+      <blockquote>
+        <p><strong>Babeltee at a glance:</strong></p>
+        <ul>
+          <li><strong>Official brand:</strong> None found. No company, product label or store sells anything under the name.</li>
+          <li><strong>babeltee.com:</strong> A WordPress blog with 76 time calculator posts. It has no shop, cart, About, Contact or privacy page.</li>
+          <li><strong>Domain:</strong> Registered on January 1, 2026, through NameCheap, Inc.</li>
+          <li><strong>Reviews:</strong> No Trustpilot profile exists for babeltee.com.</li>
+            </ul>
+      </blockquote>
+
+      <h2>What Is Babeltee?</h2>
+      <p>People searching "babeltee" mostly want to know whether it is a real drink, a real brand or a website they can trust. The pages that rank for the word do not agree.</p>
+      <p>A <a href="https://buzzsport.co.uk/babeltee/" target="_blank" rel="nofollow noopener">Buzz Sport article</a> dated September 10, 2026, calls Babeltee "a flexible tea idea" built from a tea base, fruit, herbs and natural sweeteners. It also says Babeltee "is not an official drink brand." A Daily Briefing post from February 22, 2026, gives a similar description with no sources.</p>
+      <p>A Perplexity AI Magazine article from April 27, 2026, describes Babeltee as something else entirely: automated localization and internationalization testing for software. It quotes experts without links a reader could check.</p>
+      <p>None of these pages links to an official Babeltee company, product or source for the name.</p>
+
+      <h2>What Is on Babeltee.com?</h2>
+      <p>The babeltee.com homepage loads a WordPress site (version 6.9.11) using the free Nucleare theme. Its only visible category is "Time Calculations." The site's public WordPress API lists 76 posts dated between December 20, 2025, and January 9, 2026. Each post answers a question such as "What time was it 15 hours ago" with a clock widget.</p>
+      <p>We found no products, prices, checkout, shipping policy or refund policy. The About, Contact, privacy policy, shop and cart addresses all returned "page not found." No business name, address or legal entity appears anywhere on the site.</p>
+
+      <h2>Who Runs It?</h2>
+      <p>We could not identify the owner. The domain record at Verisign shows NameCheap, Inc. as registrar, a registration date of January 1, 2026, and an expiry date of January 1, 2027. Some blog posts carry December 2025 dates, earlier than that registration date. WordPress lets publishers set post dates by hand, so the dates alone do not show when the content was written.</p>
+      <p>The Internet Archive holds five monthly snapshots of babeltee.com, from March 13, 2026, to July 16, 2026.</p>
+
+      <h2>Is Babeltee Legit?</h2>
+      <p>There is nothing to buy, so there is no purchase risk to assess on babeltee.com itself. We saw no ads, payment forms or requests for personal data on the pages we checked.</p>
+      <p>The bigger issue is accuracy. No one owns the term, so pages contradict each other. Treat health claims, expert quotes or "official" recipes tied to the name with caution unless a source you can check backs them up.</p>
+
+      <h2>Customer Reviews</h2>
+      <p>Trustpilot's address for babeltee.com returned "not found," meaning no review profile exists. ScamAdviser and Reddit blocked our checks, so we could not confirm entries there. We found no Better Business Bureau listing.</p>
+
+      <h2>Verified Facts</h2>
+      <table>
+        <thead><tr><th>Item</th><th>What we found (November 15, 2026)</th></tr></thead>
+        <tbody>
+          <tr><td>Official Babeltee brand</td><td>None found</td></tr>
+          <tr><td>babeltee.com content</td><td>WordPress blog, 76 time calculator posts</td></tr>
+          <tr><td>Store, prices, shipping</td><td>None; shop and cart pages return 404</td></tr>
+          <tr><td>About, contact, privacy pages</td><td>None; all return 404</td></tr>
+          <tr><td>Domain registered</td><td>January 1, 2026, via NameCheap, Inc.</td></tr>
+          <tr><td>Trustpilot profile</td><td>None</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Tips Before You Try or Buy</h2>
+      <ul>
+        <li>Be wary of anyone selling a "Babeltee" product, since we found no official source. The FTC's guide on <a href="https://consumer.ftc.gov/articles/how-avoid-scam" target="_blank" rel="noopener">how to avoid a scam</a> advises resisting pressure to pay quickly.</li>
+        <li>If you make a home tea drink, caffeine depends on the tea you pick. The FDA says 400 milligrams a day is not generally linked to negative effects for most adults (<a href="https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much" target="_blank" rel="noopener">FDA caffeine guide</a>).</li>
+        <li>Health claims about tea should come from research bodies. The NIH's <a href="https://www.nccih.nih.gov/health/green-tea" target="_blank" rel="noopener">green tea fact sheet</a> notes rare liver injury, mostly tied to extract pills, not brewed tea.</li>
+      </ul>
+
+      <h2>FAQs</h2>
+      <h3>Is Babeltee a real tea brand?</h3>
+      <p>We found no company or product sold under that name. Even pages promoting the tea idea say it is not an official brand.</p>
+      <h3>Is Babeltee the same as bubble tea?</h3>
+      <p>No single definition exists. Some blogs call it a looser, fruit-based cousin of bubble tea.</p>
+      <h3>Does babeltee.com sell anything?</h3>
+      <p>No. On November 15, 2026, it hosted only time calculator blog posts, with no shop or checkout.</p>
+      <h3>Is babeltee.com safe to visit?</h3>
+      <p>We saw no payment forms, ads or data requests on the pages we checked. It names no owner.</p>
+
+      <p><em>Checked on November 15, 2026, against babeltee.com and its WordPress API, Verisign RDAP domain records, the Internet Archive, Trustpilot, and the Buzz Sport, Daily Briefing and Perplexity AI Magazine articles cited above.</em></p>
+    `
+  },
+  {
+    id: "camocrypt-com-review",
+    title: "Camocrypt.com Review: Who Runs This Crypto Blog and Is It Safe?",
+    excerpt: "Camocrypt.com is a WordPress crypto and NFT blog registered in December 2025. We checked its posts, guest post policy, ownership and safety.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T10:20:00Z",
+    readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Gold Bitcoin coin standing in front of a blurred trading chart screen",
+    isTrending: false,
+    views: 0,
+    tags: ["Camocrypt.com", "Crypto Blogs", "NFT Guides", "Website Safety", "Guest Posts"],
+    content: `
+      <p class="lead">Camocrypt.com is a WordPress blog that publishes beginner guides and news-style posts about cryptocurrency, NFTs, blockchain and Web3. It does not sell a token or ask visitors to connect a wallet on its homepage, but it accepts guest posts, gives little information about who runs it, and also carries some casino and app download content.</p>
+
+      <blockquote>
+        <p><strong>Camocrypt.com at a glance:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> A crypto and blockchain blog built on WordPress.</li>
+          <li><strong>Size:</strong> 359 published posts as of November 15, 2026.</li>
+          <li><strong>Domain registered:</strong> December 21, 2025, according to Verisign records.</li>
+          <li><strong>Ownership:</strong> Not disclosed. There is no About page.</li>
+          <li><strong>Guest posts:</strong> Yes. The homepage invites guest post requests.</li>
+          <li><strong>Investment offers:</strong> None seen on the homepage. No token sale or wallet connect prompt.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Camocrypt.com?</h2>
+      <p>Camocrypt.com describes itself in its footer as a source for the latest crypto news, blockchain updates, price analysis and insights on Bitcoin, altcoins, NFTs and DeFi. The homepage title reads "Home News - CamoCrypt.com."</p>
+      <p>Interest in the name has grown after other blogs began publishing articles that mention it. One such page on <a href="https://buzzsport.co.uk/camocrypt-com/" target="_blank" rel="nofollow noopener">Buzzsport</a>, dated October 16, 2026, is a hot wallet versus cold wallet explainer presented as a guide "from camocrypt.com."</p>
+
+      <h2>What It Publishes</h2>
+      <p>The site's public WordPress data lists 359 posts. Recent posts appear roughly once a day and are mostly beginner explainers, such as guides to NFT minting, NFT gas fees, NFT marketplaces, Web3 and decentralized finance. The largest categories are Cryptocurrency, Crypto, Bitcoin and Cryptocurrency Trading.</p>
+      <p>Not everything is about crypto. A search of the site's posts returned six results for "casino," including no deposit bonus and slot bonus articles, and one guide to downloading a Malaysian casino app as an APK file that links to an outside download site.</p>
+      <p>The oldest post is dated March 18, 2022. That is earlier than the current domain registration, and we could not confirm whether older posts were moved from somewhere else. Of the 359 posts, 335 are dated after December 21, 2025.</p>
+
+      <h2>Who Runs It?</h2>
+      <p>The site does not say. The /about/ and /about-us/ addresses return "page not found," and we found no privacy policy at /privacy-policy/. The footer shows the default credit of its WordPress news theme rather than a company name.</p>
+      <p>The site's author list includes a general "admin" account, which wrote the recent daily posts, plus several accounts whose names refer to SEO, backlink and press release services. The contact page lists social media links, and the guest post contact address on the homepage uses a different domain from camocrypt.com.</p>
+      <p>Domain records list Hostinger as the registrar. Owner details are not public in the registry data we checked.</p>
+
+      <h2>Guest Posts and Sponsored Content</h2>
+      <p>The homepage carries a "Contact For Guest Posts" notice. Readers should treat any post that names a specific exchange, app, casino or coin as possibly promotional unless the site states otherwise.</p>
+
+      <h2>Is Camocrypt.com Safe?</h2>
+      <p>We found no token sale, investment plan, wallet connect button or crypto payment request on the homepage. A web search on November 15, 2026, also turned up no public scam warnings that name the site. That does not make it an authority.</p>
+      <p>The main risks are about trust, not malware. Ownership is not disclosed, the domain is under a year old in its current registration, the site accepts guest posts, and some posts cover gambling and side-loaded app downloads. Use it for background reading at most, and check any financial claim against an official or established source.</p>
+
+      <table>
+        <thead><tr><th>Item</th><th>What we found (November 15, 2026)</th></tr></thead>
+        <tbody>
+          <tr><td>Platform</td><td>WordPress 7.1.4 with Elementor and a news theme</td></tr>
+          <tr><td>Published posts</td><td>359</td></tr>
+          <tr><td>Oldest post date</td><td>March 18, 2022</td></tr>
+          <tr><td>Domain created</td><td>December 21, 2025 (Verisign RDAP)</td></tr>
+          <tr><td>Registrar</td><td>Hostinger operations, UAB</td></tr>
+          <tr><td>Earliest archive snapshot</td><td>January 2011, a free parked domain page</td></tr>
+          <tr><td>About page</td><td>Not found</td></tr>
+          <tr><td>Guest posts</td><td>Accepted, per homepage notice</td></tr>
+          <tr><td>Token sale or wallet prompt</td><td>None seen on homepage</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How to Check Gaming and Crypto Sites</h2>
+      <ul>
+        <li>Look for an About page, a named publisher and a real contact method.</li>
+        <li>Check the domain's age with <a href="https://lookup.icann.org/en" target="_blank" rel="noopener">ICANN Lookup</a>.</li>
+        <li>Never send crypto to anyone who promises guaranteed returns. The FTC's guide <a href="https://consumer.ftc.gov/articles/what-know-about-cryptocurrency-and-scams" target="_blank" rel="noopener">What To Know About Cryptocurrency and Scams</a> explains common warning signs.</li>
+        <li>Read the CFTC's alert on <a href="https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/watch_out_for_digital_fraud.html" target="_blank" rel="noopener">fraudulent digital asset trading websites</a> before using any trading platform.</li>
+        <li>Report suspected fraud at <a href="https://reportfraud.ftc.gov/" target="_blank" rel="noopener">ReportFraud.ftc.gov</a> or the FBI's <a href="https://www.ic3.gov/" target="_blank" rel="noopener">IC3</a>.</li>
+      </ul>
+
+      <h2>FAQs</h2>
+      <h3>Is camocrypt.com a crypto exchange?</h3>
+      <p>No. It is a blog. We saw no trading, deposit or wallet features on its homepage.</p>
+      <h3>Who owns camocrypt.com?</h3>
+      <p>The site does not name an owner, and registry records do not show one publicly.</p>
+      <h3>How old is camocrypt.com?</h3>
+      <p>The current registration dates from December 21, 2025, though some posts carry dates back to 2022.</p>
+      <h3>Can I trust its investment content?</h3>
+      <p>Treat it as general reading only. The site is not a licensed adviser, and guest posts may be promotional.</p>
+
+      <p><em>Checked on November 15, 2026, against camocrypt.com and its public WordPress data, Verisign RDAP records, the Internet Archive Wayback Machine, and guidance from the FTC and CFTC.</em></p>
+    `
+  },
+  {
     id: "democrats-ai-agenda-2028-tomorrow-together",
     title: "Democratic Group Tomorrow Together Launches $1.1 Million Push to Shape AI Agenda for 2028",
     excerpt: "Tomorrow Together, which spent $6.5M on pro-regulation midterm candidates, launches a $1.1M AI research push for 2028. What it means for tech.",
