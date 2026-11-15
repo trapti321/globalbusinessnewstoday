@@ -732,6 +732,9 @@ function buildArticle(a) {
 ${a.content.replace(/^\n+|\s+$/g, "")}
           </div>
 
+          ${a.categorySlug === "health" ? `<p class="content-disclosure"><strong>Health disclaimer:</strong> this article is for general information only and is not medical advice. Talk to a doctor or qualified health professional before changing your diet, exercise, medication or treatment.</p>` : ""}
+          ${a.categorySlug === "markets" ? `<p class="content-disclosure"><strong>Financial disclaimer:</strong> this article is for information only and is not investment, financial or tax advice. Markets move quickly and past performance does not guarantee future results. Consider your own circumstances and speak to a licensed adviser before making investment decisions.</p>` : ""}
+
           ${a.tags && a.tags.length ? `<ul class="tag-list" aria-label="Topics">${a.tags.map(t => `<li>#${esc(t)}</li>`).join("")}</ul>` : ""}
 
           <div class="author-box">
@@ -1059,7 +1062,7 @@ ${body}
   });
 }
 
-const POLICY_UPDATED = "2026-11-09";
+const POLICY_UPDATED = "2026-11-15";
 
 function buildAbout() {
   const newsroom = Object.entries(AUTHORS)[0];
@@ -1141,6 +1144,18 @@ function buildPrivacy() {
           <h2 id="p4">Analytics and Cookies</h2>
           <p>We use Google Analytics to understand how many people visit the site and which pages they read. Google Analytics uses cookies and collects information such as your device, browser, approximate location and the pages you view. Google explains how it uses this data at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites that use its services</a>. You can opt out with the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out browser add-on</a> or by blocking cookies in your browser.</p>
           <p>We also save your light or dark theme choice in your browser's local storage. It stays on your device and is not sent to us.</p>
+        </section>
+
+        <section aria-labelledby="pads">
+          <h2 id="pads">Advertising</h2>
+          <p>${esc(SITE.name)} may display advertising served by Google AdSense and other third-party ad vendors to fund our reporting. Advertising never influences our news coverage or reviews.</p>
+          <ul class="author-standards">
+            <li>Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites.</li>
+            <li>Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this site and/or other sites on the internet.</li>
+            <li>You can opt out of personalised advertising from Google by visiting <a href="https://myadcenter.google.com/" target="_blank" rel="noopener">Google My Ad Center</a> (Ads Settings). You can also opt out of some third-party vendors' use of cookies for personalised advertising at <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">www.aboutads.info</a> or <a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener">www.youronlinechoices.eu</a>.</li>
+            <li>Google explains how it uses advertising data in <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">How Google uses cookies in advertising</a>.</li>
+          </ul>
+          <p>If you visit from the European Economic Area, the United Kingdom or Switzerland, we will ask for your consent before ads that use cookies or personal data are shown, and you can change your choice at any time. Visitors in US states with privacy laws can opt out of the sale or sharing of personal information for targeted advertising by using Google's ad settings above or by emailing <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
         </section>
 
         <section aria-labelledby="p5">

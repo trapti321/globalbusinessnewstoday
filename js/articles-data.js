@@ -6544,7 +6544,7 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
       <ul>
         <li><strong>Loan apps:</strong> "RBI Approved Loan Apps: Your Ultimate List" and posts on credit (CIBIL) scores.</li>
         <li><strong>Movie download sites:</strong> "Netninja: A Movie Downloader for Android – Your Gateway to Free Entertainment" and FzTvSeries.</li>
-        <li><strong>Sports betting:</strong> guides to betting platforms in Zambia, such as <a href="https://www.yonosamachar.com/sports-betting-in-zambia-a-comprehensive-guide-to-online-football-betting-with-castlebet/" target="_blank" rel="nofollow noopener">a Castlebet guide</a> titled "Sports Betting in Zambia: A Comprehensive Guide to Online Football Betting with Castlebet".</li>
+        <li><strong>Sports betting:</strong> guides to betting platforms in Zambia, such as a Castlebet guide titled "Sports Betting in Zambia: A Comprehensive Guide to Online Football Betting with Castlebet".</li>
         <li><strong>Trading:</strong> "What's New in MT5? Top Features and Updates", which links to a forex broker without a sponsored label.</li>
       </ul>
       <p>Only one betting post carries a responsible-gambling disclaimer. The site has no age warning or privacy policy, and its loan-app posts have no financial disclaimers. Sites that promote free movie downloads may also point readers to pirated content, which can carry legal and malware risks.</p>
