@@ -27,6 +27,7 @@ for a in spec:
     image: "https://images.unsplash.com/{a['img']}?auto=format&fit=crop&w=1200&q=80",
     imageAlt: {j(a['alt'])},
     isTrending: {'true' if a.get('trending') else 'false'},
+    categoryInUrl: true,
     views: 0,
     tags: {j(a['tags'])},
     content: `

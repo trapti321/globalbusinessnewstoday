@@ -129,7 +129,8 @@ function avatar(article, size) {
 }
 
 const categoryFor = (slug) => CATEGORIES.find(c => c.slug === slug);
-const articleUrl = (a) => `/articles/${a.id}/`;
+// Articles flagged categoryInUrl live under their section (/tech/slug/); older articles keep /articles/slug/.
+const articleUrl = (a) => a.categoryInUrl ? `/${a.categorySlug}/${a.id}/` : `/articles/${a.id}/`;
 const categoryUrl = (slug) => `/category/${slug}/`;
 
 /* --------------------------------------------------------------------------
@@ -1348,14 +1349,14 @@ function write(rel, content) {
 }
 
 // Remove generated directories so deleted articles/categories disappear.
-for (const dir of ["articles", "category", "author"]) fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
+for (const dir of ["articles", "category", "author", ...CATEGORIES.map(c => c.slug)]) fs.rmSync(path.join(ROOT, dir), { recursive: true, force: true });
 
 const sitemapPages = [{ path: "/", lastmod: latest(ARTICLES) }];
 
 write("index.html", buildHome());
 
 for (const a of ARTICLES) {
-  write(`articles/${a.id}/index.html`, buildArticle(a));
+  write(`${articleUrl(a).slice(1)}index.html`, buildArticle(a));
   sitemapPages.push({ path: articleUrl(a), lastmod: a.updatedAt || a.publishedAt });
 }
 

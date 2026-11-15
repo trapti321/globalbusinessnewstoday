@@ -192,7 +192,7 @@ function initSearch() {
     searchResults.innerHTML = matches.map(m => `
       <div class="search-result">
         <span class="side-category">${escapeHtml(m.category)}</span>
-        <h3 class="search-result-title"><a href="/articles/${encodeURIComponent(m.id)}/">${escapeHtml(m.title)}</a></h3>
+        <h3 class="search-result-title"><a href="/${m.categoryInUrl ? encodeURIComponent(m.categorySlug) : "articles"}/${encodeURIComponent(m.id)}/">${escapeHtml(m.title)}</a></h3>
         <span class="side-date">${formatDate(m.publishedAt)} • ${escapeHtml(m.readTime)}</span>
       </div>
     `).join("");

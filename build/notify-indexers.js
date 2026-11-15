@@ -45,7 +45,7 @@ function changedUrls(base, head) {
   const old = new Map(before.map(a => [a.id, JSON.stringify(a)]));
   const changed = after.filter(a => old.get(a.id) !== JSON.stringify(a));
   if (!changed.length) return [];
-  const urls = changed.map(a => `${SITE}/articles/${a.id}/`);
+  const urls = changed.map(a => `${SITE}/${a.categoryInUrl ? a.categorySlug : "articles"}/${a.id}/`);
   const cats = [...new Set(changed.map(a => a.categorySlug))].map(c => `${SITE}/category/${c}/`);
   return [...urls, `${SITE}/`, ...cats, `${SITE}/category/all/`];
 }
@@ -111,5 +111,6 @@ async function pingWebSub() {
   if (!(await waitLive(urls[0]))) console.log(`Warning: ${urls[0]} did not return 200 yet; submitting anyway.`);
 
   await submitIndexNow(urls);
-  if (urls.some(u => u.includes("/articles/"))) await pingWebSub();
+  // Article pages are two levels deep (/articles/slug/ or /tech/slug/); category and author pages are excluded.
+  if (urls.some(u => /^\/(?!category\/|author\/)[^/]+\/[^/]+\/$/.test(u.replace(SITE, "")))) await pingWebSub();
 })().catch(e => console.log(`notify-indexers: ${e.message}`));
