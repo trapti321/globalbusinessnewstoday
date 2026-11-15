@@ -37,6 +37,7 @@ const CATEGORIES = [
   { slug: "tech", name: "Tech & AI", title: "Technology, Enterprise Software & AI", description: "Enterprise AI adoption, cybersecurity and business technology news." },
   { slug: "smes", name: "SMEs & Startups", title: "SME Intelligence & Startup Growth", description: "Small business finance, cash flow, venture capital and startup funding news." },
   { slug: "health", name: "Health & Wellness", title: "Health, Fitness & Wellness", description: "Evidence-based health, fitness, sleep and wellness guides, including wearables and workplace wellbeing." },
+  { slug: "sports", name: "Sports", title: "Sports Scores, Player Stats and Business of Sport", description: "Match reports, box-score player stats and the business of sport, checked against official league data." },
   { slug: "reviews", name: "Website Reviews", title: "Website Reviews: Is It Legit?", description: "Independent checks of websites people search for by name: who runs them, domain history, sponsored posts and safety." },
   { slug: "property", name: "Real Estate", title: "Commercial Real Estate & Property", description: "Office markets, commercial property, conversions and real estate finance." },
   { slug: "press-releases", name: "Press Releases", title: "Corporate Wire & Press Releases", description: "Corporate announcements and press releases distributed by Global Business News Today." }
