@@ -308,7 +308,6 @@ const ARTICLES = [
   },
   {
     id: "babeltee-meaning",
-    hidden: true,
     title: "Babeltee Explained: Tea Trend, Tech Term or Website? What We Verified",
     excerpt: "Babeltee is not a brand or store we could verify. We checked babeltee.com, its domain record and reviews to explain what the term really means.",
     category: "Tech & AI",
@@ -1126,7 +1125,6 @@ const ARTICLES = [
   },
   {
     id: "jelly-bean-brains-content-creator",
-    hidden: true,
     title: "Jelly Bean Brains: Who the Jellybean Content Creator Is, and What Is Really Confirmed",
     excerpt: "Jelly Bean Brains is an Instagram and TikTok creator known for car-smashing videos. Her real name and age are not confirmed. Here is what we could verify.",
     category: "SMEs & Startups",
@@ -1312,7 +1310,6 @@ const ARTICLES = [
   },
   {
     id: "harouxinn-meaning",
-    hidden: true,
     title: "What Is Harouxinn? The Made-Up Keyword and the Casino Blog Behind Harouxinn.com",
     excerpt: "Harouxinn has no verified meaning or creator. We checked harouxinn.com: registered April 2026, it now runs mostly casino posts and contradicts itself.",
     category: "Tech & AI",
@@ -1878,7 +1875,6 @@ const ARTICLES = [
   },
   {
     id: "portar-leisa-meaning",
-    hidden: true,
     title: "Portar Leisa Meaning: Why This Search Term Has No Agreed Definition",
     excerpt: "Portar leisa has no established meaning. Portar means to carry, but leisa is not a real word, and ranking pages invent conflicting definitions. We checked.",
     category: "Tech & AI",
@@ -2454,7 +2450,6 @@ const ARTICLES = [
   },
   {
     id: "sfm-compile",
-    hidden: true,
     title: "SFM Compile Guide: How to Compile Models for Source Filmmaker With Studiomdl and Crowbar",
     excerpt: "How to compile models for Source Filmmaker: QC files, studiomdl, Crowbar, output folders and common errors, plus why to avoid fake \"SFMCompile\" downloads.",
     category: "Tech & AI",
@@ -2580,7 +2575,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "python-bug-54axhg5",
-    hidden: true,
     title: "Python Bug 54axhg5: Is It Real? What Python's Issue Tracker and CVE Records Show",
     excerpt: "\"Python bug 54axhg5\" is not in Python's issue tracker, the CVE database or PyPI. Where the term comes from and how to find real Python bugs.",
     category: "Tech & AI",
@@ -2663,7 +2657,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "best-tarta-de-brocoli-near-me",
-    hidden: true,
     title: "Best Tarta de Brócoli Near Me: Where to Find It and an Easy Recipe",
     excerpt: "Where to find tarta de brócoli near you, from Argentine and Uruguayan bakeries to an easy home recipe, plus what makes a good broccoli tart.",
     category: "Health & Wellness",
@@ -2762,7 +2755,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "best-vitel-tone-near-me",
-    hidden: true,
     title: "Best Vitel Toné Near Me: Where to Find It, Prices, Food Safety and a Recipe",
     excerpt: "Where to find vitel toné near you, why it is Argentina's Christmas dish, what it costs, how to keep it safe and an easy recipe.",
     category: "Health & Wellness",
@@ -3300,7 +3292,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "lightniteone-new-version-for-pc",
-    hidden: true,
     title: "LightNite One New Version for PC: What Lightniteone.com Claims vs the Real Game",
     excerpt: "Is there a LightNite One new version for PC? What Lightniteone.com claims, what the real LIGHT NITE game is, its Steam status and safe download advice.",
     category: "Tech & AI",
@@ -3390,7 +3381,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "what-is-a-yn",
-    hidden: true,
     title: "What Is a YN? YN Meaning in Slang, TikTok, Fan Fiction and Texts",
     excerpt: "What is a YN? The slang meaning on TikTok, why many find it offensive, what Y/N means in fan fiction and y/n in texts, with examples.",
     category: "Tech & AI",
@@ -3478,7 +3468,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "bta-meaning",
-    hidden: true,
     title: "BTA Meaning: What BTA Stands For in Texting and in Business",
     excerpt: "BTA means \"but then again\" in texts and chats, and \"bilateral trade agreement\" in business news. Examples, how to reply and similar abbreviations.",
     category: "Tech & AI",
@@ -4587,7 +4576,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "navy-quicklinks-mynavy-portal",
-    hidden: true,
     title: "Navy QuickLinks Explained: How to Find MyNavy Portal Quick Links Safely",
     excerpt: "Navy Quick Links is the directory of Sailor tools inside MyNavy Portal at mn3p.navy.mil. How to access it with CAC, fix errors and avoid lookalike sites.",
     category: "World Business",
@@ -4679,7 +4667,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "viprow-us-com",
-    hidden: true,
     title: "Viprow.us.com: What the Site Is, Streaming Risks and Legal Ways to Watch Sports",
     excerpt: "Viprow.us.com now shows sports news, not streams. What it is, why free VIPRow-style streams carry malware and legal risks, and legal ways to watch.",
     category: "Tech & AI",
@@ -4764,7 +4751,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "ext-asp-intitle-cart",
-    hidden: true,
     title: "What Does \"ext:asp intitle:cart\" Mean? Google Dorks and Securing Online Stores",
     excerpt: "\"ext:asp intitle:cart\" finds classic ASP shopping cart pages. What these Google operators do, why old carts are risky and how to protect your store.",
     category: "Tech & AI",
@@ -5869,7 +5855,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "iykyk-meaning",
-    hidden: true,
     title: "IYKYK Meaning: What \"If You Know, You Know\" Means and How to Use It",
     excerpt: "IYKYK means \"if you know, you know.\" Here is where the slang came from, how to use iykyk in texts and on TikTok, how to reply, and when to avoid it.",
     category: "Tech & AI",
@@ -5952,7 +5937,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "what-does-wtv-mean",
-    hidden: true,
     title: "What Does WTV Mean? The Text Slang Explained, With Examples",
     excerpt: "WTV means \"whatever\" in texts. See the three ways people use it, when it sounds friendly or rude, how to reply, and other meanings of WTV.",
     category: "Tech & AI",
@@ -6032,7 +6016,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "temporary-identity-certificate",
-    hidden: true,
     title: "Temporary Identity Certificate (TIC): How to Get One in South Africa and India",
     excerpt: "What a temporary identity certificate is, how to get a TIC from Home Affairs in South Africa (R70) and how India's ESIC TIC became the e-Pehchan card.",
     category: "World Business",
@@ -6840,7 +6823,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "texans-vs-pittsburgh-steelers-match-player-stats",
-    hidden: true,
     title: "Texans vs Pittsburgh Steelers Match Player Stats: Full Box Score From Houston's 30-6 Wild Card Win",
     excerpt: "Texans vs Steelers match player stats from the 30-6 AFC Wild Card on Jan 12, 2026: Stroud, Rodgers, Kirk, Marks, sacks, scoring plays and team totals.",
     category: "World Business",
@@ -6971,7 +6953,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "celtics-vs-cleveland-cavaliers-match-player-stats",
-    hidden: true,
     title: "Celtics vs Cleveland Cavaliers Match Player Stats: Box Score From Boston's 109-98 Win",
     excerpt: "Celtics vs Cavaliers match player stats from Boston's 109-98 win on March 8, 2026: Mitchell 30, Mobley 24, Brown 23, Tatum 20, plus every recent result.",
     category: "World Business",
@@ -7074,7 +7055,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "detroit-pistons-vs-orlando-magic-match-player-stats",
-    hidden: true,
     title: "Detroit Pistons vs Orlando Magic Match Player Stats: Game 7 Box Score and Full Series",
     excerpt: "Pistons vs Magic match player stats from Detroit's 116-94 Game 7 win on May 3, 2026: Banchero 38, Cunningham 32 and 12 assists, Harris 30, all 7 results.",
     category: "World Business",
@@ -7182,7 +7162,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "washington-nationals-vs-chicago-cubs-match-player-stats",
-    hidden: true,
     title: "Washington Nationals vs Chicago Cubs Match Player Stats: Cavalli's One-Hitter in a 7-0 Win",
     excerpt: "Nationals vs Cubs match player stats from Washington's 7-0 win on Aug 13, 2026: Cavalli's 8 one-hit innings, Ortiz's 3-run homer and the 2026 series.",
     category: "World Business",
@@ -8574,7 +8553,6 @@ $collisionmodel "myfirstmodel-phys" { $concave }</code></pre>
   },
   {
     id: "snapchat-planets-order-meaning",
-    hidden: true,
     title: "Snapchat Planets Order and Meaning: Full Snapchat Planets List for 2026",
     excerpt: "The Snapchat planets order from Mercury (1st) to Neptune (8th), what each planet means on a friend's Best Friends (BSF) list, and how to turn it on.",
     category: "Tech & AI",
