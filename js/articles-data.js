@@ -1,6 +1,186 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "boldenone-equipoise",
+    title: "Boldenone (Equipoise): What the Veterinary Steroid Is, Its Legal Status and Health Risks",
+    excerpt: "Boldenone (Equipoise) is an FDA-approved horse steroid, Schedule III in the US and banned by WADA. What the law says and the health risks of misuse.",
+    category: "Health & Wellness",
+    categorySlug: "health",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T17:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "White horse galloping across a grassy field at the edge of a forest",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Boldenone", "Equipoise", "Anabolic Steroids", "DEA Schedule III", "WADA", "Health"],
+    content: `
+      <p class="lead">Boldenone undecylenate, sold under the brand name Equipoise, is an anabolic steroid approved by the US Food and Drug Administration (FDA) only for use in horses, on a veterinarian's order. In the United States boldenone is a Schedule III controlled substance, it is banned at all times in sport under the World Anti-Doping Agency (WADA) rules, and federal health agencies link anabolic steroid misuse to heart, liver, hormonal and mental health harm.</p>
+
+      <blockquote>
+        <p><strong>Boldenone (Equipoise), the key facts:</strong></p>
+        <ul>
+          <li><strong>What it is:</strong> an injectable anabolic steroid, a chemical relative of testosterone, marketed for veterinary use as Equipoise.</li>
+          <li><strong>Approved use:</strong> horses only, "as an aid for treating debilitated horses," under FDA approval NADA 34-705.</li>
+          <li><strong>US law:</strong> listed by name as a Schedule III anabolic steroid in federal drug law and DEA regulations.</li>
+          <li><strong>Sport:</strong> prohibited in and out of competition as an S1.1 anabolic androgenic steroid.</li>
+          <li><strong>Health:</strong> NIDA links anabolic steroid misuse to heart attacks, strokes, liver damage, infertility and depression.</li>
+          <li><strong>Help:</strong> the SAMHSA National Helpline is 1-800-662-HELP (4357).</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Is Boldenone Undecylenate?</h2>
+      <p>Boldenone is an anabolic androgenic steroid. US federal law names it in the legal definition of an "anabolic steroid," a drug or hormonal substance chemically and pharmacologically related to testosterone. The undecylenate part of the name is an ester attached to the molecule, and the product that carries it in the US is Equipoise injection.</p>
+      <p>A 2023 review in the Journal of Veterinary Pharmacology and Therapeutics notes that anabolic steroids "have been illegally used for many years as performance-enhancing drugs in human, equine, and canine sports and as growth promoters in livestock." The FDA approval on record for Equipoise covers horses, not people.</p>
+
+      <h2>What Is Equipoise Approved For?</h2>
+      <p>Equipoise is an FDA-approved new animal drug under NADA 34-705. A <a href="https://www.govinfo.gov/content/pkg/FR-2005-11-25/html/05-23295.htm" target="_blank" rel="noopener">Federal Register final rule</a> published on November 25, 2005, records that FDA approved a supplemental application from Fort Dodge Animal Health on October 7, 2005, giving the product "a revised indication and food safety warning on labeling."</p>
+      <p>Under that approval, the drug is indicated "as an aid for treating debilitated horses when an improvement in weight, hair coat, or general physical condition is desired." The label limitations read: "Do not administer to horses intended for human consumption. Federal law restricts this drug to use by or on the order of a licensed veterinarian."</p>
+      <p>A <a href="https://www.govinfo.gov/content/pkg/FR-2014-03-25/html/2014-06131.htm" target="_blank" rel="noopener">March 2014 Federal Register rule</a> later moved Equipoise, along with more than 100 other animal drug approvals, from Pfizer to Zoetis, Inc.</p>
+
+      <h2>Is Boldenone Legal in the United States?</h2>
+      <p>Boldenone is a controlled substance. It is named in the definition of anabolic steroid in the Controlled Substances Act at <a href="https://www.law.cornell.edu/uscode/text/21/802" target="_blank" rel="noopener">21 U.S.C. 802(41)</a>, and it appears in the DEA's Schedule III list at <a href="https://www.law.cornell.edu/cfr/text/21/1308.13" target="_blank" rel="noopener">21 CFR 1308.13(f)</a>, which covers anabolic steroids "including its salts, esters and ethers" under drug code 4000.</p>
+      <p>In practice, its only lawful US use is by or on the order of a veterinarian treating a horse. Buying, selling or possessing it outside that system can bring federal and state criminal liability.</p>
+
+      <h2>Is Boldenone Banned in Sport?</h2>
+      <p>Yes. The International Testing Agency explains that boldenone is in class S1.1 Anabolic Androgenic Steroids on the WADA Prohibited List, is prohibited at all times (in and out of competition) and is "classified as a non-specified substance."</p>
+      <p>Two documented cases show how this plays out:</p>
+      <table>
+        <thead>
+          <tr><th>Case</th><th>Finding</th><th>Outcome</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Robert Farah, tennis (ITF)</td><td>Boldenone and a metabolite in an out-of-competition sample taken October 17, 2019</td><td>His account of how it entered his system was accepted; No Fault or Negligence, no ban (decision reported July 2021)</td></tr>
+          <tr><td>Angel Eduardo Villegas Rodriguez, baseball (ITA)</td><td>Positive in-competition test at the WBSC U-23 Baseball World Cup, September 2024</td><td>Four-year ban, November 21, 2024 to November 20, 2028</td></tr>
+        </tbody>
+      </table>
+      <p>Sources: the <a href="https://www.infobae.com/aroundtherings/anoc-noc/2021/07/12/itf-decision-in-the-case-of-robert-farah" target="_blank" rel="noopener">ITF decision as published by Around the Rings</a> and the <a href="https://ita.sport/news/the-ita-reports-baseball-player-angel-eduardo-villegas-rodriguez-is-sanctioned-with-4-year-period-of-ineligibility/" target="_blank" rel="noopener">International Testing Agency</a>. The 2023 veterinary review adds that horse racing and equestrian bodies (ARCI, IFHA and FEI) also prohibit anabolic steroids.</p>
+
+      <h2>What Are the Health Risks of Anabolic Steroid Misuse?</h2>
+      <p>There are no human clinical trials of boldenone to draw on, so the evidence comes from research on anabolic steroids as a class. The <a href="https://nida.nih.gov/research-topics/anabolic-steroids" target="_blank" rel="noopener">National Institute on Drug Abuse (NIDA)</a> says anabolic steroids "can cause severe, long-lasting, and in some cases, irreversible damage." Effects it lists include:</p>
+      <ul>
+        <li><strong>Heart and blood vessels:</strong> heart attacks, artery damage and strokes, "even in athletes younger than 30," plus a higher risk of blood clots.</li>
+        <li><strong>Liver:</strong> liver damage, tumors and peliosis hepatis, in which blood-filled cysts form in the liver and can rupture.</li>
+        <li><strong>Hormones:</strong> reduced sperm production, testicular shrinkage and breast growth in men; masculinizing changes in women; bones that stop growing too early in teens.</li>
+        <li><strong>Mental health:</strong> irritability, aggression, anxiety, and links to mania and major depression.</li>
+        <li><strong>Dependence:</strong> NIDA reports that about 32 percent of people who misuse anabolic steroids become dependent, and that depression during withdrawal "sometimes leads to suicide attempts."</li>
+      </ul>
+      <p>In October 2016 the FDA added a class-wide warning to testosterone labels, saying abuse of testosterone and other anabolic androgenic steroids is associated with "serious safety risks affecting the heart, brain, liver, mental health, and endocrine system," including heart attack, heart failure, stroke, liver toxicity and male infertility, as <a href="https://www.raps.org/resource/fda-adopts-new-warning-on-abuse-and-dependence-to.html" target="_blank" rel="noopener">reported by RAPS</a>.</p>
+      <p>A 2014 <a href="https://pubmed.ncbi.nlm.nih.gov/24423981/" target="_blank" rel="noopener">Endocrine Society scientific statement</a> in Endocrine Reviews found that performance-enhancing drug use "has been linked to an increased risk of death and a wide variety of cardiovascular, psychiatric, metabolic, endocrine, neurologic, infectious, hepatic, renal, and musculoskeletal disorders," and that most users are "not athletes but rather nonathlete weightlifters."</p>
+
+      <h2>Is Boldenone a Food Safety Concern?</h2>
+      <p>The FDA label itself bars use in horses intended for human consumption. A 2024 review in Analytical Methods says boldenone "has been frequently detected in doping and food safety over the past few decades," and that detection is complicated by low levels of naturally occurring related compounds.</p>
+
+      <h2>Where Can Someone Get Help?</h2>
+      <p>Anyone worried about their own or someone else's steroid use can call the SAMHSA National Helpline at 1-800-662-HELP (4357) or visit FindTreatment.gov, both listed by NIDA. In a crisis, call or text 988. NIDA notes that treatment often addresses the reasons behind steroid use, and can include therapy and hormone care from a doctor.</p>
+
+      <h2>FAQs</h2>
+      <h3>Is Equipoise approved for humans?</h3>
+      <p>No. FDA approval covers prescription veterinary use in horses only.</p>
+      <h3>What schedule is boldenone?</h3>
+      <p>Schedule III, as an anabolic steroid named in 21 U.S.C. 802(41) and 21 CFR 1308.13(f).</p>
+      <h3>Can athletes use boldenone out of competition?</h3>
+      <p>No. WADA rules prohibit it at all times, and positive tests have led to four-year bans.</p>
+
+      <p><em>This article is for information only and is not medical or legal advice. Checked on November 15, 2026, against the Federal Register, the US Code, the CFR, NIDA, the International Testing Agency, RAPS and PubMed.</em></p>
+    `
+  },
+  {
+    id: "etextworld-review",
+    title: "eTextWorld (etextworld.com) Review: What It Was, Who Ran It and Why It Was Seized",
+    excerpt: "eTextWorld sold cheap textbook PDFs in 2019 and now shows a court-order seizure notice. What it was, who ran it, and free legal e-text alternatives.",
+    category: "Website Reviews",
+    categorySlug: "reviews",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-15T17:10:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Long library aisle lined with wooden bookshelves and hanging light bulbs",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["eTextWorld", "Website Reviews", "eTextbooks", "Copyright", "Online Safety", "Free eBooks"],
+    content: `
+      <p class="lead">eTextWorld (etextworld.com) was an online store that sold cheap digital copies of college textbooks and other books, mostly as converted PDF and Kindle-format files, around 2019. Today the domain shows a "Domain Seizure Notice" stating the site "has been shut down and its domain name turned over to educational publishers by court order." There is nothing to download there, and readers looking for free e-texts are better served by legal libraries such as Project Gutenberg, Open Library and OpenStax.</p>
+
+      <blockquote>
+        <p><strong>eTextWorld, the key facts:</strong></p>
+        <ul>
+          <li><strong>What it was:</strong> a WordPress online shop selling "eTextbook" downloads and e-reader cases.</li>
+          <li><strong>Who ran it:</strong> its About page named EBOOK OCEAN LTD, with a London address.</li>
+          <li><strong>Current domain record:</strong> registered September 13, 2018, through GoDaddy, renewed to November 2027.</li>
+          <li><strong>Status now:</strong> a court-order seizure notice, first archived in November 2021.</li>
+          <li><strong>Verdict:</strong> defunct; do not pay or enter details on any site using the name.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What Was eTextWorld?</h2>
+      <p>Archived copies of the site in the <a href="https://web.archive.org/web/2019*/etextworld.com*" target="_blank" rel="noopener">Internet Archive's Wayback Machine</a> show a shop titled "eTextWorld." Its product pages listed textbooks with the author, edition and ISBN, sold as files with the format given as "Converted-PDF, AZW." One captured listing, a medical title from publisher Jones &amp; Bartlett Learning, was marked down from $14.99 to $6.99 with a "48-hour flash sale" banner.</p>
+      <p>The catalog was large: the archive holds captures of shop pages numbered up to 250. Alongside books, the store sold Kindle, Fire and iPad cases. Its FAQ said buyers created an account at checkout, paid through PayPal and then downloaded the file from a "Downloads" area. It pointed readers to free software such as Calibre and Adobe Reader to open the files.</p>
+      <p>Product pages carried warnings that "the page numbers in this ebook edition are not the same as those in the hard copy" and that online access or supplementary material "is not included." The refund policy excluded anyone who had already downloaded a file, and the site warned customers "we can see how many times a customer has downloaded an eTextbook from our record so please don't try to fool us."</p>
+
+      <h2>Who Was Behind It?</h2>
+      <p>The archived About page described the business as "a leading supplier in educational etextbook" and listed EBOOK OCEAN LTD at 27 Old Gloucester Street, London, as the company behind it. We could not confirm anything further about that company, or whether any publisher had authorized the store to sell these titles.</p>
+      <p>Homepage testimonials, such as one credited to "John Carrier / Professor at UCLA," could not be verified, and the archive shows the same reviewers' listed cities changing between captures (New York in August 2019, Ashburn in October 2019). Treat them as marketing copy, not evidence.</p>
+
+      <h2>What Happened to the Site?</h2>
+      <table>
+        <thead>
+          <tr><th>Date</th><th>What the record shows</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>January 2005</td><td>Earliest Wayback capture of the domain (a robots.txt file)</td></tr>
+          <tr><td>March 2016</td><td>Domain shows a GoDaddy parking page</td></tr>
+          <tr><td>September 13, 2018</td><td>Current registration created, per Verisign's RDAP record</td></tr>
+          <tr><td>August to October 2019</td><td>Store live, with a banner reading "We are updating our database"</td></tr>
+          <tr><td>December 2019</td><td>Banner changes to "We are closing down next week. Please download the eBook to your computer/device"</td></tr>
+          <tr><td>November 29, 2021</td><td>First archived capture of the "Domain Seizure Notice"</td></tr>
+          <tr><td>November 15, 2026</td><td>Same seizure notice still live; domain renewed to November 4, 2027</td></tr>
+        </tbody>
+      </table>
+      <p>The live notice warns that unauthorized copying of textbooks "constitutes copyright infringement under the U. S. Copyright Act" and that civil statutory damages "can be as high as $150,000 per work infringed." It does not name the court, the case or the publishers, and we could not find the court filing. The notice page loads its stylesheet from besttestbank.com, which suggests the same template is used on other seized domains, but we could not confirm the details.</p>
+      <p>Textbook publishers do pursue sites like this. In November 2020, <a href="https://www.publishersweekly.com/pw/by-topic/digital/copyright/article/84986-court-shuts-down-pirate-sites-for-educational-materials.html" target="_blank" rel="noopener">Publishers Weekly reported</a> that a federal judge in the Southern District of New York had issued a preliminary injunction blocking some 231 websites, in a suit brought by the Educational Publishers Enforcement Group (Pearson, Cengage, Elsevier, Macmillan Learning and McGraw Hill). The article said it was the group's fourth such injunction in a year. We could not confirm whether etextworld.com was one of the domains covered by that or any other order.</p>
+
+      <h2>Is eTextWorld Safe or Legit?</h2>
+      <p>There is no working store at etextworld.com today, so there is nothing to buy or download. Anyone who finds a site using the eTextWorld name should be cautious: the original seller sold copies of copyrighted textbooks at a fraction of list price, had a restrictive refund policy and ended up under a court-ordered seizure. We found no evidence that it was an authorized seller for any publisher.</p>
+      <p>A competing page that ranks for the term, electroniclearning.org/hello-world/, contains only WordPress's default "Hello world!" placeholder post and says nothing about eTextWorld. For more on checking where an online file or image really comes from, see our guide to <a href="/articles/image-search-techniques/">image search techniques</a>.</p>
+
+      <h2>What Are Legitimate Free Alternatives?</h2>
+      <table>
+        <thead>
+          <tr><th>Library</th><th>What it offers</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><a href="https://www.gutenberg.org/" target="_blank" rel="noopener">Project Gutenberg</a></td><td>A library of 79,819 free eBooks, focused on older works whose US copyright has expired, digitized and proofread by volunteers</td></tr>
+          <tr><td><a href="https://openlibrary.org/about" target="_blank" rel="noopener">Open Library</a></td><td>A project of the non-profit Internet Archive that lets you read, borrow and discover more than 3 million books for free</td></tr>
+          <tr><td><a href="https://openstax.org/" target="_blank" rel="noopener">OpenStax</a></td><td>Free college textbooks across a range of subjects</td></tr>
+        </tbody>
+      </table>
+      <p>For current textbooks still under copyright, a campus library, an instructor's course reserves or the publisher's own rental program are the legal routes.</p>
+
+      <h2>FAQs</h2>
+      <h3>Is etextworld.com still working?</h3>
+      <p>No. It shows only a court-order domain seizure notice, and has done since at least November 2021.</p>
+      <h3>Who owned eTextWorld?</h3>
+      <p>Its archived About page named EBOOK OCEAN LTD of London. We could not verify more.</p>
+      <h3>Was eTextWorld legal?</h3>
+      <p>The seizure notice says the domain was turned over to educational publishers by court order over copyright infringement. We found no evidence it was an authorized seller.</p>
+      <h3>Where can I get free e-texts legally?</h3>
+      <p>Project Gutenberg, Open Library and OpenStax all offer free, legal books and textbooks.</p>
+
+      <p><em>Checked on November 15, 2026, against the live etextworld.com page, Verisign's RDAP record, Wayback Machine captures from 2005 to 2024, Project Gutenberg, Open Library, OpenStax and Publishers Weekly.</em></p>
+    `
+  },
+  {
     id: "bills-vs-rams-match-player-stats",
     title: "Bills vs Rams Match Player Stats: Allen, Nacua Lead Wild 37-34 Overtime Finish (2026)",
     excerpt: "Bills vs Rams match player stats from Buffalo's 37-34 OT win on Oct 12, 2026: Allen's 121 rush yards, Nacua's 17 catches, Stafford's 383 yards.",
