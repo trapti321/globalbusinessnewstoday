@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/tech/nvidia-kress-interim-ceo-huang-resigns/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T06:00:00Z</news:publication_date>
+      <news:title>Nvidia Names CFO Colette Kress Interim CEO After Jensen Huang Resigns; Board Starts Search</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/markets/binance-restore-withdrawals-after-hack/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T05:50:00Z</news:publication_date>
+      <news:title>Binance Aims to Restore All Crypto Withdrawals Next Week After Record $6.3 Billion Hack</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/tech/nonprofits-sue-ai-labs-freeze-frontier-ai/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T05:40:00Z</news:publication_date>
+      <news:title>Nonprofits Sue OpenAI, Anthropic, Google, Meta and SpaceX AI Unit to Freeze Frontier AI Work</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/world/trump-50-billion-air-traffic-control-request/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T05:30:00Z</news:publication_date>
+      <news:title>Trump Administration Seeks $50 Billion for Air Traffic Control After Nationwide Ground Stop</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/world/astrazeneca-cuts-600-us-sales-jobs/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T05:20:00Z</news:publication_date>
+      <news:title>AstraZeneca Cuts About 600 US Respiratory and Immunology Sales Jobs in $1.5 Billion Savings Plan</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/tech/meta-tests-takes-prediction-market-app/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T05:10:00Z</news:publication_date>
+      <news:title>Meta Tests Takes, a Prediction Market App That Uses Points Instead of Cash, With Employees</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/smes/ai-tools-for-gyms/</loc>
     <news:news>
       <news:publication>
@@ -152,17 +218,6 @@
       </news:publication>
       <news:publication_date>2026-11-15T10:10:00Z</news:publication_date>
       <news:title>Babeltee Explained: Tea Trend, Tech Term or Website? What We Verified</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://globalbusinessnewstoday.com/articles/democrats-ai-agenda-2028-tomorrow-together/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Global Business News Today</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T15:00:00Z</news:publication_date>
-      <news:title>Democratic Group Tomorrow Together Launches $1.1 Million Push to Shape AI Agenda for 2028</news:title>
     </news:news>
   </url>
 </urlset>
