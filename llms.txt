@@ -17,6 +17,7 @@ Global Business News Today is an independent business news website. Articles cit
 - [Tech & AI](https://globalbusinessnewstoday.com/category/tech/): Enterprise AI adoption, cybersecurity and business technology news.
 - [SMEs & Startups](https://globalbusinessnewstoday.com/category/smes/): Small business finance, cash flow, venture capital and startup funding news.
 - [Health & Wellness](https://globalbusinessnewstoday.com/category/health/): Evidence-based health, fitness, sleep and wellness guides, including wearables and workplace wellbeing.
+- [Entertainment](https://globalbusinessnewstoday.com/category/entertainment/): Film, TV, gaming and celebrity news with the business story behind it: studios, streaming, box office and deals.
 - [Sports](https://globalbusinessnewstoday.com/category/sports/): Match reports, box-score player stats and the business of sport, checked against official league data.
 - [Website Reviews](https://globalbusinessnewstoday.com/category/reviews/): Independent checks of websites people search for by name: who runs them, domain history, sponsored posts and safety.
 - [Real Estate](https://globalbusinessnewstoday.com/category/property/): Office markets, commercial property, conversions and real estate finance.
@@ -118,6 +119,10 @@ Global Business News Today is an independent business news website. Articles cit
 - [What Is a Riser Desk? How Desk Risers Work, Setup Tips and What Research Shows](https://globalbusinessnewstoday.com/articles/what-is-a-riser-desk/): A riser desk sits on your desk and lifts your screen and keyboard so you can stand. How risers work, types, OSHA setup tips and what studies show. (Published 2026-11-09)
 - [Best Smartwatches of 2026: Apple Watch Series 12 vs Pixel Watch 5, Galaxy Watch 9 and Garmin](https://globalbusinessnewstoday.com/articles/best-smartwatches-2026/): Compare the best smartwatches of 2026: Apple Watch Series 12, SE 3, Ultra 4, Pixel Watch 5, Galaxy Watch 9 and Garmin Venu 4 on price, battery and health. (Published 2026-11-09)
 - [Is It Good to Run Every Day? Benefits, Risks and How to Do It Safely](https://globalbusinessnewstoday.com/articles/running-every-day-benefits-risks/): Is running every day good for you? What studies of 55,000 and 232,000 people show about benefits, how injury risk rises, and a safe weekly plan. (Published 2026-11-09)
+
+## Entertainment
+
+- [James Bond News: Robert Pattinson Named the New 007, Denis Villeneuve to Direct](https://globalbusinessnewstoday.com/entertainment/james-bond-news-robert-pattinson-007/): James Bond news: Amazon MGM Studios named Robert Pattinson as 007 on Nov 16, 2026. What we know, what is unconfirmed, and the business stakes. (Published 2026-11-16)
 
 ## Sports
 

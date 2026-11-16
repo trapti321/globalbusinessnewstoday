@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Entertainment | Global Business News Today</title>
+    <link>https://globalbusinessnewstoday.com/category/entertainment/</link>
+    <atom:link href="https://globalbusinessnewstoday.com/category/entertainment/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+    <description>Film, TV, gaming and celebrity news with the business story behind it: studios, streaming, box office and deals.</description>
+    <language>en-us</language>
+    <item>
+      <title>James Bond News: Robert Pattinson Named the New 007, Denis Villeneuve to Direct</title>
+      <link>https://globalbusinessnewstoday.com/entertainment/james-bond-news-robert-pattinson-007/</link>
+      <guid isPermaLink="true">https://globalbusinessnewstoday.com/entertainment/james-bond-news-robert-pattinson-007/</guid>
+      <pubDate>Mon, 16 Nov 2026 16:30:00 GMT</pubDate>
+      <category>Entertainment</category>
+      <description>James Bond news: Amazon MGM Studios named Robert Pattinson as 007 on Nov 16, 2026. What we know, what is unconfirmed, and the business stakes.</description>
+      <media:content url="https://images.unsplash.com/photo-1561722798-9a732d141027?auto=format&amp;fit=crop&amp;w=1200&amp;h=675&amp;q=80" medium="image" width="1200" height="675"/>
+    </item>
+  </channel>
+</rss>

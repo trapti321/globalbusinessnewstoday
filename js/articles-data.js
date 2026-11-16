@@ -1,6 +1,100 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "james-bond-news-robert-pattinson-007",
+    title: "James Bond News: Robert Pattinson Named the New 007, Denis Villeneuve to Direct",
+    excerpt: "James Bond news: Amazon MGM Studios named Robert Pattinson as 007 on Nov 16, 2026. What we know, what is unconfirmed, and the business stakes.",
+    category: "Entertainment",
+    categorySlug: "entertainment",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-16T16:30:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1561722798-9a732d141027?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Empty cinema auditorium facing a large lit movie screen",
+    isTrending: true,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["James Bond", "Robert Pattinson", "Amazon MGM Studios", "Denis Villeneuve", "Prime Video", "Box Office"],
+    content: `
+      <p class="lead">The biggest James Bond news in years landed on Monday, November 16, 2026: Amazon MGM Studios named Robert Pattinson as the next 007. Denis Villeneuve will direct from a script by Steven Knight, with Amy Pascal and David Heyman producing. Amazon has not announced a title, release date, supporting cast or filming schedule.</p>
+
+      <blockquote>
+        <p><strong>James Bond news, the key facts:</strong></p>
+        <ul>
+          <li><strong>Announcement:</strong> Amazon MGM Studios confirmed Robert Pattinson as James Bond on November 16, 2026.</li>
+          <li><strong>Director:</strong> Denis Villeneuve (Dune trilogy, Blade Runner 2049).</li>
+          <li><strong>Writer:</strong> Steven Knight, creator of Peaky Blinders.</li>
+          <li><strong>Producers:</strong> Amy Pascal (Pascal Pictures) and David Heyman (Heyday Films); Tanya Lapointe is executive producer.</li>
+          <li><strong>Not yet announced:</strong> title, release date, other cast, filming start.</li>
+          <li><strong>Ownership:</strong> Amazon bought MGM for $8.45 billion in 2022 and took creative control of Bond through a joint venture with Barbara Broccoli and Michael G. Wilson that closed in March 2025.</li>
+        </ul>
+      </blockquote>
+
+      <h2>What did Amazon MGM Studios announce?</h2>
+      <p>In a post on its corporate news site, published on the morning of November 16 (US time), Amazon MGM Studios said Pattinson "will take on the iconic role of James Bond" in its upcoming film. The company named the full creative team: Villeneuve directing, Knight writing, Pascal and Heyman producing and Lapointe executive producing.</p>
+      <p>Pattinson said in the statement: "To say this role is a dream come true is an understatement." He called being trusted with 007 "the honour of a lifetime."</p>
+      <p>Villeneuve thanked the other actors who had been in the running, adding, "there can only be one 007." Pascal and Heyman described Pattinson as "the perfect Bond for our times."</p>
+      <p>Mike Hopkins, head of Prime Video and Amazon MGM Studios, called the day "a defining moment for our studio." Courtenay Valenti, the studio's head of film, said the team was "thrilled to officially welcome Robert Pattinson as our 007."</p>
+
+      <h2>Why is "james bond news" trending right now?</h2>
+      <p>Searches spiked because the casting was confirmed on November 16, after weeks of reports. In early November 2026, outlets including Khaleej Times (November 9), citing The Hollywood Reporter, said Pattinson had screen-tested for the part in London. Callum Turner, Jack Lowden and Josh O'Connor were named in the same reports. Monday's announcement settled the question and made Pattinson the first Bond actor since Daniel Craig, whose final film was No Time to Die (2021).</p>
+
+      <h2>Who is making the new Bond film?</h2>
+      <p>The creative team was assembled in stages. Amazon named Villeneuve as director on June 25, 2025, and in that announcement he called himself "a die-hard Bond fan." Knight was confirmed as screenwriter on July 31, 2025. Lapointe produced the Dune films with Villeneuve.</p>
+      <p>Amazon points out that the producers have a long record in franchises. Pascal produced the Tom Holland Spider-Man films, and Heyman produced all eight Harry Potter films. Heyman also produced Harry Potter and the Goblet of Fire, which brought Pattinson to wide attention at 19.</p>
+      <p>Pattinson has a crowded schedule. Amazon says he appears in Villeneuve's Dune: Part Three later this year and is currently filming Matt Reeves's The Batman Part II. Gulf News, citing Variety, reported in July 2026 that Warner Bros. had moved The Batman Part II to February 18, 2028. Amazon has not said how the two productions will fit together.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1762541693135-fb989de961e1?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Projector light beams shining over the seats of a dark cinema" loading="lazy" decoding="async">
+        <figcaption>Illustrative image: a cinema auditorium. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>What is still unknown?</h2>
+      <p>Amazon has not confirmed most of the details fans and investors want:</p>
+      <ul>
+        <li><strong>Title:</strong> Amazon has not announced one. The film is widely called "Bond 26" informally.</li>
+        <li><strong>Release date:</strong> None announced. In June 2025, Variety reported (according to fan site The James Bond Dossier) that the studio was aiming for a 2028 release. That date is <strong>unconfirmed</strong>.</li>
+        <li><strong>Supporting cast:</strong> No M, Q, Moneypenny or villain has been named.</li>
+        <li><strong>Filming:</strong> No start date or locations have been announced.</li>
+      </ul>
+
+      <h2>Why does this matter for Amazon's business?</h2>
+      <p>Bond is the best-known franchise Amazon owns. It closed its $8.45 billion MGM purchase in March 2022, which brought in a library that Amazon says includes more than 4,000 films and 17,000 TV shows. Under the original arrangement, Broccoli and Wilson's family company kept creative control of Bond. That changed with a deal announced on February 20, 2025. NBC News reported that the Bond rights would move into a new entity, with Broccoli and Wilson staying on as co-owners. The financial terms were not disclosed. The deal closed in March 2025, and Pattinson's casting is the first big creative decision Amazon has made under it.</p>
+      <p>The release strategy is also a business story. All 25 official Bond films are now streaming on Prime Video worldwide, but Amazon has not said whether the new film will open in cinemas first. Speaking about the studio's film slate in April 2026, Hopkins said its theatrical push "isn't a test or an experiment" (as reported by Dark Horizons, citing Variety). Amazon has not confirmed release windows for the Bond film itself.</p>
+
+      <h2>How much have recent Bond films earned?</h2>
+      <p>The box-office record helps explain the stakes. The four most recent Craig films, worldwide gross per Box Office Mojo:</p>
+      <table>
+        <thead>
+          <tr><th>Film</th><th>Year</th><th>Worldwide gross</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Casino Royale</td><td>2006</td><td>$606.5 million</td></tr>
+          <tr><td>Skyfall</td><td>2012</td><td>$1.11 billion</td></tr>
+          <tr><td>Spectre</td><td>2015</td><td>$905.8 million</td></tr>
+          <tr><td>No Time to Die</td><td>2021</td><td>$906.8 million</td></tr>
+        </tbody>
+      </table>
+      <p>No Time to Die made about 82% of its gross outside the US ($745.9 million of $906.8 million). That shows how much Bond depends on audiences worldwide. Each of the last three Craig films earned close to $1 billion or more. Amazon will be measured against that.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who is the new James Bond?</h3>
+      <p>Robert Pattinson. Amazon MGM Studios confirmed him on November 16, 2026.</p>
+      <h3>When will the new James Bond film be released?</h3>
+      <p>No date has been announced. Reports of a 2028 release are unconfirmed.</p>
+      <h3>Who is directing and writing the film?</h3>
+      <p>Denis Villeneuve is directing from a screenplay by Steven Knight. Amy Pascal and David Heyman are producing.</p>
+      <h3>Will the film be on Prime Video or in cinemas?</h3>
+      <p>Amazon has not said. Earlier Bond films are on Prime Video, but no release plan for the new film has been announced.</p>
+
+      <p><em>Checked on November 16, 2026, against <a href="https://www.aboutamazon.com/news/entertainment/james-bond-robert-pattinson-cast-amazon-mgm-film" target="_blank" rel="noopener">Amazon's casting announcement</a>, <a href="https://www.aboutamazon.com/news/entertainment/next-james-bond-movie-latest-updates" target="_blank" rel="noopener">Amazon's Bond explainer</a>, <a href="https://www.aboutamazon.com/news/entertainment/amazon-mgm-studios-james-bond-director-denis-villeneuve" target="_blank" rel="noopener">Amazon's Villeneuve announcement</a>, <a href="https://www.aboutamazon.com/news/entertainment/amazon-mgm-studios-james-bond-screenwriter-steven-knight" target="_blank" rel="noopener">Amazon's Knight announcement</a>, <a href="https://www.nbcnews.com/news/amp/rcna192967" target="_blank" rel="noopener">NBC News</a>, <a href="https://www.fox13news.com/news/amazon-closes-8-45b-mgm-studio-acquisition" target="_blank" rel="noopener">FOX 13</a>, <a href="https://www.boxofficemojo.com/title/tt2382320/" target="_blank" rel="noopener">Box Office Mojo</a>, <a href="https://www.khaleejtimes.com/entertainment/robert-pattinson-james-bond-screen-test" target="_blank" rel="noopener">Khaleej Times</a>, <a href="https://gulfnews.com/entertainment/the-batman-part-ii-delayed-again-why-robert-pattinsons-batman-wont-answer-the-bat-signal-until-2028-1.500609559" target="_blank" rel="noopener">Gulf News</a>, <a href="https://www.darkhorizons.com/?p=191285" target="_blank" rel="noopener">Dark Horizons</a> and <a href="https://www.thejamesbonddossier.com/news/bond-26-reportedly-moves-towards-2028-as-amazon-plans-the-next-chapter.htm" target="_blank" rel="noopener">The James Bond Dossier</a>.</em></p>
+    `
+  },
+  {
     id: "meta-tests-takes-prediction-market-app",
     title: "Meta Tests Takes, a Prediction Market App That Uses Points Instead of Cash, With Employees",
     excerpt: "Meta is testing Takes, a prediction market app that uses \"cred\" points instead of money, with employees, WSJ reported. No public launch date is set.",
