@@ -1,6 +1,191 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "prince-harry-news-ukraine-invictus-royal-family",
+    title: "Prince Harry News: Surprise Ukraine Visit, Invictus 2027 Trials and Royal Updates",
+    excerpt: "Prince Harry news: a surprise Lviv visit to meet wounded veterans and Invictus 2027 hopefuls, plus his Brussels online safety speech and Mail appeal.",
+    category: "World Business",
+    categorySlug: "world",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-16T17:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1775120061140-f48517f21196?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Buckingham Palace and the Victoria Memorial behind red flower beds on a sunny day",
+    isTrending: true,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Prince Harry", "Royal Family", "Invictus Games", "Ukraine", "Invictus Games Birmingham 2027", "Online Safety"],
+    content: `
+      <p class="lead">The biggest Prince Harry news this week is his unannounced two-day visit to Lviv, Ukraine, on November 14 and 15, 2026, where he met wounded veterans and medics and watched trials for Ukraine's team at the Invictus Games Birmingham 2027. Royal family news searches also picked up his November 10 child online safety speech at the European Parliament and his appeal against the Daily Mail privacy ruling.</p>
+
+      <blockquote><p><strong>Prince Harry news, the key facts:</strong></p><ul>
+        <li><strong>What happened:</strong> Harry made a surprise weekend visit to Lviv, western Ukraine, on November 14 and 15, 2026.</li>
+        <li><strong>Why it matters:</strong> It was his fourth visit to Ukraine since Russia's full-scale invasion in February 2022, and his second to Lviv.</li>
+        <li><strong>Invictus link:</strong> He watched wheelchair rugby and pickleball players competing for places on Ukraine's team for Birmingham 2027.</li>
+        <li><strong>Team size:</strong> Ukraine plans to send 60 competitors, and about 500 people registered for the national trials.</li>
+        <li><strong>Games dates:</strong> The Invictus Games Birmingham 2027 run from July 10 to 17, 2027, mainly at the NEC.</li>
+        <li><strong>Other news:</strong> A child online safety speech in Brussels (November 10) and a Court of Appeal application in his case against the Daily Mail publisher (filed November 6).</li>
+      </ul></blockquote>
+
+      <h2>Why is Prince Harry trending now?</h2>
+      <p>Searches for "prince harry news" rose after reports of the Ukraine trip were published on November 15 and 16, 2026. Reuters reported that details of the two-day trip, and his remarks, were released only after he had left the country, for security reasons. Al Jazeera described it as a surprise visit and said Harry acknowledged he had "taken a risk to come here."</p>
+      <p>The trip followed a busy week. On November 10 he spoke at the European Parliament in Brussels about children's safety online, and on November 6 he and five other claimants filed for permission to appeal a High Court ruling against them in their privacy case against Associated Newspapers.</p>
+
+      <h2>What did Prince Harry do in Ukraine?</h2>
+      <p>According to Reuters, Associated Press and Al Jazeera reports, Harry spent the weekend in Lviv. His schedule included:</p>
+      <ul>
+        <li>Speaking at a conference for medics organised by Superhumans, a Lviv clinic that rehabilitates people wounded in the war.</li>
+        <li>Meeting patients and staff at the Superhumans Center, which AP describes as an orthopedic clinic treating wounded military personnel and civilians.</li>
+        <li>Watching Ukraine's national Invictus trials, including wheelchair rugby. AP reported that he also joined a pickleball match, partnering a player with an amputated arm.</li>
+        <li>Meeting Ukraine's Veterans Affairs Minister, Natalia Kalmykova, to discuss sport's role in veterans' rehabilitation, according to the Kyiv Post.</li>
+      </ul>
+      <p>Kyiv Post reported that an Invictus Games Foundation delegation travelled with him, including four veterans who have lived with life-changing injuries.</p>
+      <p>AP reported that Harry met Kostiantyn Vlasenko, a soldier who was the first Ukrainian airlifted by drone from the front lines in the Kharkiv region after holding his position for 232 days. President Volodymyr Zelenskyy awarded him the Hero of Ukraine title.</p>
+
+      <h2>What did Harry say?</h2>
+      <p>Several outlets carried the same core remarks. Reuters and Al Jazeera quoted him telling the conference: "You're going to win the war and then you're going to be set up for success." Both also reported that he told veterans: "When the war is over and when Ukraine wins, we will be ready to support you in holding an Invictus Games."</p>
+      <p>AP quoted him on support for veterans: "We've invested in them before they put the uniform on and we must invest with them once the uniform comes off."</p>
+      <p>Reuters noted that the royal family usually avoids political comment, though King Charles and other senior royals have voiced support for Ukraine. Harry is no longer a working member of the royal family.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1572940252238-edf9d51925ba?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Pedestrians crossing a cobblestone street with tram tracks in Lviv's historic centre" loading="lazy" decoding="async">
+        <figcaption>Illustrative image: the historic centre of Lviv, Ukraine. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>When are the Invictus Games Birmingham 2027?</h2>
+      <p>The Invictus Games Foundation, which Harry founded in 2014, has confirmed the dates and venues:</p>
+      <table>
+        <thead><tr><th>Detail</th><th>Information</th></tr></thead>
+        <tbody>
+          <tr><td>Dates</td><td>July 10 to 17, 2027</td></tr>
+          <tr><td>Opening ceremony</td><td>Saturday, July 10, 2027</td></tr>
+          <tr><td>Main venue</td><td>National Exhibition Centre (NEC), Birmingham: sports, ceremonies and accommodation</td></tr>
+          <tr><td>Swimming venue</td><td>Sandwell Aquatics Centre (hosted the 2022 Commonwealth Games swimming)</td></tr>
+          <tr><td>Edition</td><td>Eighth international Games, per Kyiv Post</td></tr>
+          <tr><td>Ukraine's planned team</td><td>60 competitors, from about 500 registered for trials</td></tr>
+        </tbody>
+      </table>
+      <p>Kyiv Post reported that Ukraine first competed at the Games in Toronto in 2017. Al Jazeera reported that the 60-member squad would be Ukraine's largest ever.</p>
+
+      <h2>What other royal family news is driving searches?</h2>
+      <h3>Child online safety speech in Brussels (November 10)</h3>
+      <p>AP reported that Harry spoke at the European Parliament at the opening of the "Lost Screen Memorial," a display of oversized smartphone replicas showing photos of children who died after harm linked to social media. He urged tech companies to be more transparent about issues involving children and more helpful to bereaved parents. "Because of the company's privacy policies, the parents were blocked from finding out how their child died," he said. Meghan, Duchess of Sussex, attended but did not speak as planned. AP cited a person familiar with her reasoning as saying she did not feel "strong enough emotionally."</p>
+
+      <h3>Appeal in the Daily Mail privacy case (November 6)</h3>
+      <p>The Guardian reported that Harry, Doreen Lawrence, Elton John, David Furnish, Elizabeth Hurley and Sadie Frost filed applications with the Court of Appeal for permission to appeal. They are challenging Mr Justice Nicklin's July 2026 dismissal of their claims against Associated Newspapers, publisher of the Daily Mail, and his indemnity costs order. A spokesperson said the claimants consider the decisions "legally and factually flawed." In August the judge ordered them to pay £9,544,355 as an initial contribution to the publisher's costs. No hearing date has been reported.</p>
+
+      <h3>Reported UK government response on online safety (unconfirmed)</h3>
+      <p>On November 16, an Oxford Mail report republished by Yahoo News UK said Harry and Meghan had offered to help with planned UK restrictions on social media for under-16s and had received no reply from ministers. The report relies on unnamed sources, and no government statement was included. GBNT has not been able to confirm the claim.</p>
+
+      <h2>FAQs</h2>
+      <h3>When did Prince Harry visit Ukraine?</h3>
+      <p>He was in Lviv on Saturday and Sunday, November 14 and 15, 2026.</p>
+      <h3>How many times has Prince Harry visited Ukraine?</h3>
+      <p>This was his fourth visit since February 2022 and his second to Lviv, according to AP and Kyiv Post.</p>
+      <h3>Where and when are the 2027 Invictus Games?</h3>
+      <p>Birmingham, England, from July 10 to 17, 2027, at the NEC, with swimming at Sandwell Aquatics Centre.</p>
+      <h3>Has Prince Harry's appeal against the Daily Mail publisher been heard?</h3>
+      <p>Not yet. An application for permission to appeal was filed on November 6, 2026, and no hearing date has been reported.</p>
+
+      <p><em>Checked on November 16, 2026, against <a href="https://www.aljazeera.com/news/2026/11/15/prince-harry-in-ukraine-meeting-invictus-2027-hopefuls" target="_blank" rel="noopener">Al Jazeera</a>, <a href="https://www.yahoo.com/news/world/articles/britains-prince-harry-visits-war-220410098.html" target="_blank" rel="noopener">Reuters (via Yahoo News)</a>, <a href="https://www.military.com/prince-harry-salutes-wounded-ukrainian-veterans-as-role-models-on-surprise-ukraine-visit" target="_blank" rel="noopener">Associated Press (via Military.com)</a>, <a href="https://www.kyivpost.com/post/90217" target="_blank" rel="noopener">Kyiv Post</a>, <a href="https://www.invictusgamesfoundation.org/news/invictus-games-birmingham-2027-dates-confirmed" target="_blank" rel="noopener">Invictus Games Foundation</a>, <a href="https://ny1.com/nyc/all-boroughs/ap-top-news/2026/11/10/prince-harrys-wife-meghan-makes-first-public-appearance-since-fathers-arrest" target="_blank" rel="noopener">Associated Press (via NY1)</a>, <a href="https://www.aol.co.uk/articles/prince-harry-others-launch-appeal-185904000.html" target="_blank" rel="noopener">The Guardian (via AOL)</a> and <a href="https://uk.news.yahoo.com/prince-harry-meghan-markle-ignored-123000543.html" target="_blank" rel="noopener">Oxford Mail (via Yahoo News UK)</a>.</em></p>
+    `
+  },
+  {
+    id: "gta-6-news-launch-take-two",
+    title: "GTA 6 News: Grand Theft Auto VI Launches Nov 19 as Take-Two Says Development Is Complete",
+    excerpt: "GTA 6 news: Grand Theft Auto VI arrives Nov 19 on PS5 and Xbox Series X|S at $79.99, with 212GB pre-loads live and Take-Two keeping an $8B forecast.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-16T17:15:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1530686577637-0ccce382b327?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Miami skyline lit up at night and reflected in the water",
+    isTrending: true,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["GTA 6", "Grand Theft Auto VI", "Take-Two Interactive", "Rockstar Games", "Video Games", "Earnings"],
+    content: `
+      <p class="lead">The biggest GTA 6 news is that Grand Theft Auto VI launches on Thursday, November 19, 2026, on PlayStation 5 and Xbox Series X|S. Take-Two Interactive says development is finished, pre-loading opened on November 9 and 10, and the company has kept its full-year forecast of $8 billion to $8.2 billion in net bookings, a figure that depends largely on this one game.</p>
+
+      <blockquote><p><strong>GTA 6 news, the key facts:</strong></p><ul>
+        <li><strong>Release date:</strong> November 19, 2026, on PS5 and Xbox Series X|S (Take-Two, November 9, 2026).</li>
+        <li><strong>Price:</strong> $79.99 Standard Edition, $99.99 Ultimate Edition (announced June 2026).</li>
+        <li><strong>Pre-load:</strong> Live since November 9 (Xbox) and November 10 (PS5); the download is up to 212GB.</li>
+        <li><strong>PC:</strong> No PC version has been announced by Rockstar.</li>
+        <li><strong>Development:</strong> Take-Two CEO Strauss Zelnick said on November 9 that Rockstar "has completed the development" of the game.</li>
+        <li><strong>Guidance:</strong> Fiscal 2027 net bookings outlook of $8.0 billion to $8.2 billion, reiterated.</li>
+        <li><strong>Stock:</strong> Take-Two shares were up 7.5% at 1:32 p.m. ET on November 10, 2026, after earnings.</li>
+      </ul></blockquote>
+
+      <h2>Why is GTA 6 news trending right now?</h2>
+      <p>Three things landed within a week. On November 9, 2026, Take-Two Interactive (Nasdaq: TTWO), Rockstar Games' parent company, reported its fiscal second-quarter results and confirmed the November 19 date. On that day's earnings call, Zelnick said development was complete, which gaming sites reported as the game "going gold" (the industry term for a finished build ready for release). Pre-loading opened the same night. Then on November 14, CNBC reported that preorders had passed 12 million, citing Sensor Tower data. With launch days away, searches for release times, prices and file sizes have jumped.</p>
+
+      <h2>Has GTA 6 really gone gold?</h2>
+      <p>The phrase comes from the media rather than from Take-Two. According to <a href="https://beebom.com/gta-6-has-officially-gone-gold/" target="_blank" rel="noopener">Beebom's report on the November 9 earnings call</a>, Zelnick said: "Right now, Rockstar has completed the development of GTA 6." He added, "That may not come as a surprise to you since we're 10 days away from the release." Neither Take-Two nor Rockstar used the word "gold" in an announcement we could find. He also said Rockstar's developers "have done their very best work, and it's going to come to consumers soon." In practice, a finished build and live pre-loads mean another delay is very unlikely.</p>
+
+      <h2>What did Take-Two say in its earnings release?</h2>
+      <p>Take-Two's <a href="https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm" target="_blank" rel="noopener">fiscal second-quarter 2027 release</a>, filed with the SEC on November 9, 2026, covers the quarter that ended September 30. Zelnick said: "The launch of Grand Theft Auto VI is ten days away and, with pre-orders continuing to reach unprecedented levels, we expect to deliver an historic year for our company."</p>
+      <p>The quarter itself came before the launch, so the numbers were weak:</p>
+      <table>
+        <thead><tr><th>Metric</th><th>Q2 FY2027</th><th>Q2 FY2026</th></tr></thead>
+        <tbody>
+          <tr><td>Net bookings</td><td>$1.60 billion (down 18%)</td><td>$1.96 billion</td></tr>
+          <tr><td>GAAP net revenue</td><td>$1.50 billion</td><td>$1.77 billion</td></tr>
+          <tr><td>Net loss</td><td>$54.0 million ($0.29 per share)</td><td>n/a</td></tr>
+          <tr><td>Recurrent consumer spending share of net bookings</td><td>81%</td><td>n/a</td></tr>
+        </tbody>
+      </table>
+      <p>Looking ahead, Take-Two forecast third-quarter net bookings (October to December, which covers the launch) of $3.35 billion to $3.5 billion. For the full fiscal year ending March 2027, it reiterated net bookings of $8.0 billion to $8.2 billion, GAAP net revenue of $7.98 billion to $8.18 billion and GAAP diluted earnings of $0.57 to $0.75 per share.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="White PlayStation 5 console with a wireless controller resting on top" loading="lazy" decoding="async">
+        <figcaption>Illustrative image: a PlayStation 5 console. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>How did Take-Two stock react?</h2>
+      <p>Investors looked past the weak quarter. The <a href="https://www.fool.com/investing/2026/11/10/why-take-two-stock-s-got-game-today/" target="_blank" rel="noopener">Motley Fool reported</a> that on November 10, 2026, Take-Two shares rose as much as 10.6% and were up 7.5% at 1:32 p.m. ET. The quarterly loss of $0.29 per share was smaller than the $0.86 loss analysts had expected, but revenue missed the $1.62 billion consensus. <a href="https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html" target="_blank" rel="noopener">CNBC</a> noted that the stock has more than doubled since the start of 2023. This article reports market moves only and is not investment advice.</p>
+
+      <h2>How big is the launch expected to be?</h2>
+      <p>CNBC's November 14 report puts the business stakes plainly. Sensor Tower estimated more than 12 million preorders through November 13. Morgan Stanley forecasts about 40 million copies sold by March 2027. Roth analyst Eric Handler estimated that Rockstar spent more than $1 billion developing the game. Speaking on CNBC's "Squawk Box," Zelnick said that "our expectations were high and they are being vastly exceeded so far."</p>
+      <p>The benchmark is Grand Theft Auto V. According to Take-Two's fiscal first-quarter 2027 results, as <a href="https://respawn.outlookindia.com/gaming/gaming-news/gta-v-crosses-230m-sales-as-gta-vi-nears-release" target="_blank" rel="noopener">reported by Outlook Respawn</a> in August 2026, GTA V has sold in more than 230 million units worldwide since its 2013 debut. CNBC notes it is still one of the five most-watched games on Twitch, 13 years after launch.</p>
+
+      <h2>How much does GTA 6 cost, and when can you play?</h2>
+      <p>Rockstar opened preorders on June 25, 2026. <a href="https://gameinformer.com/2026/06/24/grand-theft-auto-vi-price-and-ultimate-edition-revealed-physical-version-will-not" target="_blank" rel="noopener">Game Informer reported</a> that the Standard Edition costs $79.99, $10 more than the usual $69.99 for a new console game, and the Ultimate Edition costs $99.99 with extra vehicles, weapons, businesses and other in-game items. The physical version is a code in a box, not a disc.</p>
+      <p><a href="https://www.engadget.com/2311841/gta-6-now-available-for-preload/" target="_blank" rel="noopener">Engadget reported</a> that Xbox pre-loading began at 7 p.m. EST on November 9 and PS5 pre-loading at midnight local time on November 10. The download is 212GB, so check your storage. Physical copies began shipping on November 12, and their codes also allow pre-loading. According to <a href="https://comicbook.com/gaming/news/gta-6-ps5-xbox-pre-load-download-gold/" target="_blank" rel="noopener">ComicBook.com</a>, the game unlocks at midnight local time on November 19, so players in some regions get it earlier.</p>
+      <p>PC players will have to wait. Rockstar has not announced a PC version. Reports that it could arrive in early 2027 have not been confirmed.</p>
+
+      <h2>How many times was GTA 6 delayed?</h2>
+      <p>The game was delayed twice:</p>
+      <ul>
+        <li><strong>Original target:</strong> fall 2025.</li>
+        <li><strong>First delay (May 2, 2025):</strong> moved to May 26, 2026, as <a href="https://www.businesstoday.in/technology/news/story/gta-6-delayed-once-again-rockstar-games-announces-new-launch-date-in-2026-474537-2025-05-02" target="_blank" rel="noopener">reported by Business Today</a>.</li>
+        <li><strong>Second delay (November 6, 2025):</strong> moved to November 19, 2026. <a href="https://www.engadget.com/gaming/grand-theft-auto-vi-is-delayed-to-november-19-2026-211848530.html" target="_blank" rel="noopener">Engadget</a> quoted Rockstar: "We are sorry for adding additional time to what we realize has been a long wait."</li>
+      </ul>
+      <p>For more on how games are put together, see our guide to <a href="/tech/sample-game-mechanics/">sample game mechanics</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>When does GTA 6 come out?</h3>
+      <p>November 19, 2026, on PlayStation 5 and Xbox Series X|S. It unlocks at midnight local time.</p>
+      <h3>Is GTA 6 coming to PC?</h3>
+      <p>Not at launch. Rockstar has not announced a PC version or a date for one.</p>
+      <h3>How big is the GTA 6 download?</h3>
+      <p>Up to 212GB. Pre-loading has been open since November 9 on Xbox and November 10 on PS5.</p>
+      <h3>Could GTA 6 be delayed again?</h3>
+      <p>That looks very unlikely. Take-Two says development is complete and pre-loads are already live.</p>
+
+      <p><em>Checked on November 16, 2026, against Take-Two's SEC-filed Q2 FY2027 earnings release, CNBC, The Motley Fool, Game Informer, Engadget, ComicBook.com, Beebom, Business Today and Outlook Respawn.</em></p>
+    `
+  },
+  {
     id: "james-bond-news-robert-pattinson-007",
     title: "James Bond News: Robert Pattinson Named the New 007, Denis Villeneuve to Direct",
     excerpt: "James Bond news: Amazon MGM Studios named Robert Pattinson as 007 on Nov 16, 2026. What we know, what is unconfirmed, and the business stakes.",

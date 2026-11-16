@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/tech/gta-6-news-launch-take-two/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T17:15:00Z</news:publication_date>
+      <news:title>GTA 6 News: Grand Theft Auto VI Launches Nov 19 as Take-Two Says Development Is Complete</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/world/prince-harry-news-ukraine-invictus-royal-family/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T17:00:00Z</news:publication_date>
+      <news:title>Prince Harry News: Surprise Ukraine Visit, Invictus 2027 Trials and Royal Updates</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/entertainment/james-bond-news-robert-pattinson-007/</loc>
     <news:news>
       <news:publication>
