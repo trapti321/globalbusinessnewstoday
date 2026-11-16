@@ -1,6 +1,522 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "vikings-vs-giants-match-player-stats",
+    title: "Vikings vs Giants Match Player Stats: Reichard Kicks Minnesota Past New York, 16-13",
+    excerpt: "Vikings vs Giants match player stats from the 16-13 Minnesota win on Dec 21, 2025: McCarthy, Jefferson, Reichard and the full box score.",
+    category: "Sports",
+    categorySlug: "sports",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T17:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1728188498233-da994f8cb53a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Football players lining up during a professional game in a packed stadium",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Minnesota Vikings", "New York Giants", "NFL", "Match Player Stats", "Justin Jefferson", "Jaxson Dart"],
+    content: `
+      <p class="lead">The Minnesota Vikings beat the New York Giants 16-13 on Sunday, December 21, 2025, at MetLife Stadium in East Rutherford, New Jersey. Will Reichard kicked three field goals, including the 30-yard winner with 4:15 left, after backup Max Brosmer replaced an injured J.J. McCarthy. Below are the full Vikings vs Giants match player stats, checked against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772911" target="_blank" rel="noopener">ESPN box score</a> and the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20251221_MIN@NYG/" target="_blank" rel="noopener">CBS Sports box score</a>.</p>
+
+      <blockquote>
+        <p><strong>Vikings vs Giants, the key facts:</strong></p>
+        <ul>
+          <li><strong>Final score:</strong> Vikings 16, Giants 13</li>
+          <li><strong>Date and venue:</strong> Sunday, December 21, 2025 (Week 16), MetLife Stadium, East Rutherford, N.J. Attendance 76,515.</li>
+          <li><strong>Top passer:</strong> J.J. McCarthy (MIN), 9 of 14 for 108 yards, 0 TD, 1 INT before leaving with a right hand injury</li>
+          <li><strong>Top rusher:</strong> Aaron Jones Sr. (MIN), 21 carries for 85 yards</li>
+          <li><strong>Top receiver:</strong> Justin Jefferson (MIN), 6 catches for 85 yards</li>
+          <li><strong>Defense:</strong> Minnesota sacked Jaxson Dart five times and held New York to 141 total yards</li>
+          <li><strong>Records after the game:</strong> Vikings 7-8, Giants 2-13</li>
+        </ul>
+      </blockquote>
+
+      <p>Which game is this? It is the most recent regular-season Vikings vs Giants game, and the same game the Buzzsport page for this search covers. The teams also met in the 2026 preseason opener on August 15, 2026, a 13-10 Vikings win in which Kyler Murray made his first appearance as Minnesota's starting quarterback, according to the AP recap on ESPN. They are not scheduled to meet in the 2026 regular season. Both clubs are in the race this fall: as of November 17, 2026, Minnesota is 7-2 after a 30-10 win at Green Bay on November 15, and New York is 5-3-1 and first in the NFC East, per ESPN.</p>
+
+      <h2>What was the Vikings vs Giants score by quarter?</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>Minnesota Vikings</td><td>3</td><td>10</td><td>0</td><td>3</td><td>16</td></tr>
+          <tr><td>New York Giants</td><td>0</td><td>10</td><td>0</td><td>3</td><td>13</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scoring plays</h3>
+      <ul>
+        <li><strong>Q1, 10:49:</strong> Will Reichard 43-yard field goal (MIN 3-0)</li>
+        <li><strong>Q2, 11:04:</strong> Ben Sauls 27-yard field goal (3-3)</li>
+        <li><strong>Q2, 4:50:</strong> Reichard 31-yard field goal (MIN 6-3)</li>
+        <li><strong>Q2, 2:01:</strong> J.J. McCarthy 12-yard run, Reichard kick (MIN 13-3)</li>
+        <li><strong>Q2, 0:17:</strong> Tyler Nubin 27-yard fumble return after a Brian Burns strip sack, Sauls kick (MIN 13-10)</li>
+        <li><strong>Q4, 11:06:</strong> Sauls 39-yard field goal (13-13)</li>
+        <li><strong>Q4, 4:15:</strong> Reichard 30-yard field goal (MIN 16-13)</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1731046498945-33316f26e5ca?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Football player making a catch near the sideline in front of a crowd" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Who led in passing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>C/ATT</th><th>Yards</th><th>TD</th><th>INT</th><th>Sacked</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>J.J. McCarthy (MIN)</td><td>9/14</td><td>108</td><td>0</td><td>1</td><td>3 for 25 yds</td><td>58.0</td></tr>
+          <tr><td>Max Brosmer (MIN)</td><td>7/9</td><td>52</td><td>0</td><td>0</td><td>1 for 9 yds</td><td>90.7</td></tr>
+          <tr><td>Jaxson Dart (NYG)</td><td>7/13</td><td>33</td><td>0</td><td>1</td><td>5 for 20 yds</td><td>27.4</td></tr>
+        </tbody>
+      </table>
+      <p>Dart did not attempt a pass until 1:44 remained in the second quarter, the AP reported. After sack yardage, the Giants finished with 13 net passing yards.</p>
+
+      <h2>Who led in rushing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Carries</th><th>Yards</th><th>TD</th><th>Long</th></tr></thead>
+        <tbody>
+          <tr><td>Aaron Jones Sr. (MIN)</td><td>21</td><td>85</td><td>0</td><td>15</td></tr>
+          <tr><td>J.J. McCarthy (MIN)</td><td>2</td><td>20</td><td>1</td><td>12</td></tr>
+          <tr><td>Tyrone Tracy Jr. (NYG)</td><td>16</td><td>71</td><td>0</td><td>18</td></tr>
+          <tr><td>Devin Singletary (NYG)</td><td>11</td><td>47</td><td>0</td><td>8</td></tr>
+          <tr><td>Jaxson Dart (NYG)</td><td>2</td><td>7</td><td>0</td><td>4</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Who led in receiving?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Receptions</th><th>Targets</th><th>Yards</th><th>Long</th></tr></thead>
+        <tbody>
+          <tr><td>Justin Jefferson (MIN)</td><td>6</td><td>8</td><td>85</td><td>21</td></tr>
+          <tr><td>Jordan Addison (MIN)</td><td>2</td><td>3</td><td>26</td><td>20</td></tr>
+          <tr><td>Josh Oliver (MIN)</td><td>2</td><td>3</td><td>19</td><td>12</td></tr>
+          <tr><td>Wan'Dale Robinson (NYG)</td><td>3</td><td>6</td><td>19</td><td>14</td></tr>
+          <tr><td>Darius Slayton (NYG)</td><td>1</td><td>2</td><td>8</td><td>8</td></tr>
+          <tr><td>Tyrone Tracy Jr. (NYG)</td><td>2</td><td>2</td><td>7</td><td>4</td></tr>
+        </tbody>
+      </table>
+      <p>No player on either team caught a touchdown pass.</p>
+
+      <h2>What were the notable defensive stats?</h2>
+      <ul>
+        <li><strong>Vikings tackle leaders:</strong> Blake Cashman 16, Jonathan Allen 8, Jay Ward 6.</li>
+        <li><strong>Vikings sacks:</strong> Jonathan Allen, Levi Drake Rodriguez, Andrew Van Ginkel, Eric Wilson and Jalen Redmond, 1 each. Van Ginkel's came on fourth-and-3 with two minutes left.</li>
+        <li><strong>Vikings interception:</strong> Byron Murphy Jr., returned 15 yards, after Dart's throw bounced off Theo Johnson's hands.</li>
+        <li><strong>Giants tackle leaders:</strong> Bobby Okereke 13, Jevon Holland 7, three players with 6.</li>
+        <li><strong>Giants sacks:</strong> Brian Burns 2, Chauncey Golston 1, Abdul Carter 1. Carter also had 4 quarterback hits.</li>
+        <li><strong>Giants interception:</strong> Paulson Adebo.</li>
+        <li><strong>Kicking:</strong> Reichard 3 of 3 (long 43) and 1 of 1 on extra points; Sauls 2 of 2 (long 39).</li>
+      </ul>
+
+      <h2>How did the team stats compare?</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Vikings</th><th>Giants</th></tr></thead>
+        <tbody>
+          <tr><td>Total yards</td><td>240</td><td>141</td></tr>
+          <tr><td>Net passing yards</td><td>126</td><td>13</td></tr>
+          <tr><td>Rushing yards</td><td>114 (31 carries)</td><td>128 (30 carries)</td></tr>
+          <tr><td>First downs</td><td>17</td><td>12</td></tr>
+          <tr><td>Third-down conversions</td><td>7 of 12</td><td>2 of 10</td></tr>
+          <tr><td>Red zone (TD/trips)</td><td>1 of 3</td><td>0 of 3</td></tr>
+          <tr><td>Turnovers</td><td>2</td><td>1</td></tr>
+          <tr><td>Penalties</td><td>11 for 90</td><td>11 for 74</td></tr>
+          <tr><td>Time of possession</td><td>31:01</td><td>28:59</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How was the game decided?</h2>
+      <p>Minnesota led 13-3 late in the first half after McCarthy's 12-yard touchdown run. The AP reported he had already hurt his right throwing hand by then. In the final minute of the half, Burns hit McCarthy and forced a fumble, and Nubin returned it 27 yards for New York's only touchdown. McCarthy did not return; coach Kevin O'Connell said X-rays were negative.</p>
+      <p>The Giants tied it on a Sauls field goal early in the fourth quarter. Brosmer, a rookie making his fourth NFL appearance, then led the drive that ended with Reichard's 30-yarder. Minnesota's defense, coordinated by Brian Flores, closed it out: the Giants' longest play was 18 yards and they failed to score a touchdown on three red zone trips.</p>
+      <p>"I'm just glad that this whole, entire team has continued to stay with it," Jefferson said after the game.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1566579090262-51cde5ebe92e?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Brown leather football resting on a white yard line" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>What did it mean, and where do both teams stand now?</h2>
+      <p>The win was Minnesota's third straight, although both teams had already been eliminated from playoff contention. The Giants lost their ninth game in a row, their fifth under interim coach Mike Kafka after Brian Daboll was fired on November 10, 2025, the AP reported.</p>
+      <p>The 2026 picture is very different. As of ESPN's team pages on November 17, 2026, the Vikings are 7-2 (fifth in the NFC) and the Giants are 5-3-1 (first in the NFC East). New York lost 24-21 to Washington on November 12.</p>
+      <ul>
+        <li><strong>Vikings:</strong> face San Francisco at Estadio Banorte in Mexico City on Sunday night, November 22, 2026, then host Atlanta on November 29.</li>
+        <li><strong>Giants:</strong> host Jacksonville on November 22, 2026, then visit Indianapolis on November 29.</li>
+      </ul>
+
+      <h2>Recent Vikings vs Giants games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Type</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>August 15, 2026</td><td>Vikings 13, Giants 10</td><td>Preseason Week 1</td><td>MetLife Stadium</td></tr>
+          <tr><td>December 21, 2025</td><td>Vikings 16, Giants 13</td><td>Regular season, Week 16</td><td>MetLife Stadium</td></tr>
+          <tr><td>September 8, 2024</td><td>Vikings 28, Giants 6</td><td>Regular season, Week 1</td><td>MetLife Stadium</td></tr>
+          <tr><td>January 15, 2023</td><td>Giants 31, Vikings 24</td><td>Wild Card playoff</td><td>U.S. Bank Stadium</td></tr>
+          <tr><td>December 24, 2022</td><td>Vikings 27, Giants 24</td><td>Regular season, Week 16</td><td>U.S. Bank Stadium</td></tr>
+        </tbody>
+      </table>
+      <p>In the 2026 preseason game, Carson Wentz threw a 1-yard touchdown to Myles Price for the go-ahead score and Dart hit rookie Malachi Fields for 15 yards, per the <a href="https://www.espn.com/nfl/game/_/gameId/401873280" target="_blank" rel="noopener">ESPN game page</a>.</p>
+      <p>For more NFL box scores, see our <a href="/sports/texans-vs-seahawks-match-player-stats/">Texans vs Seahawks match player stats</a>, <a href="/sports/rams-vs-seahawks-match-player-stats/">Rams vs Seahawks player stats</a>, or the <a href="/category/sports/">GBNT Sports section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who won the last Vikings vs Giants game?</h3>
+      <p>The Vikings won the last regular-season game 16-13 on December 21, 2025. They also won the most recent meeting of any kind, a 13-10 preseason game on August 15, 2026.</p>
+      <h3>Who was the best player in Vikings vs Giants?</h3>
+      <p>Will Reichard scored 10 points on three field goals and an extra point. Justin Jefferson led all receivers with 85 yards, and Blake Cashman had 16 tackles.</p>
+      <h3>Why did J.J. McCarthy leave the game?</h3>
+      <p>He injured his right throwing hand and left just before halftime. His last play was the strip sack returned for a Giants touchdown. Max Brosmer finished the game.</p>
+      <h3>How many sacks did the Vikings have against the Giants?</h3>
+      <p>Five, from Jonathan Allen, Levi Drake Rodriguez, Andrew Van Ginkel, Eric Wilson and Jalen Redmond.</p>
+
+      <p><em>Checked on November 17, 2026, against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772911" target="_blank" rel="noopener">ESPN box score and AP recap</a>, the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20251221_MIN@NYG/" target="_blank" rel="noopener">CBS Sports box score</a> and ESPN's 2026 team schedules. Team passing yards are net of sack yardage. The <a href="https://buzzsport.co.uk/minnesota-vikings-vs-new-york-giants-match-player-stats/" target="_blank" rel="nofollow noopener">Buzzsport page</a> for this search covers the same 2025 game.</em></p>
+    `
+  },
+  {
+    id: "eagles-vs-chiefs-match-player-stats",
+    title: "Eagles vs Chiefs Match Player Stats: Mukuba Pick Seals 20-17 Philadelphia Win at Arrowhead",
+    excerpt: "Eagles vs Chiefs match player stats from Philadelphia's 20-17 win on Sept 14, 2025: Hurts, Barkley, Mahomes, Kelce and the full box score.",
+    category: "Sports",
+    categorySlug: "sports",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T17:10:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1763573676663-be6a2f4712d0?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Quarterback throwing a football during a night game",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Philadelphia Eagles", "Kansas City Chiefs", "NFL", "Match Player Stats", "Patrick Mahomes", "Saquon Barkley"],
+    content: `
+      <p class="lead">The Philadelphia Eagles beat the Kansas City Chiefs 20-17 on Sunday, September 14, 2025, at Arrowhead Stadium in Kansas City, in the first meeting since Super Bowl LIX. Saquon Barkley and Jalen Hurts ran for touchdowns, and rookie safety Andrew Mukuba intercepted Patrick Mahomes in the fourth quarter. Below are the full Eagles vs Chiefs match player stats, checked against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772837" target="_blank" rel="noopener">ESPN box score</a> and the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20250914_PHI@KC/" target="_blank" rel="noopener">CBS Sports box score</a>.</p>
+
+      <blockquote>
+        <p><strong>Eagles vs Chiefs, the key facts:</strong></p>
+        <ul>
+          <li><strong>Final score:</strong> Eagles 20, Chiefs 17</li>
+          <li><strong>Date and venue:</strong> Sunday, September 14, 2025 (Week 2), Arrowhead Stadium, Kansas City, Mo. Attendance 73,558.</li>
+          <li><strong>Top passer:</strong> Patrick Mahomes (KC), 16 of 29 for 187 yards, 1 TD, 1 INT</li>
+          <li><strong>Top rusher:</strong> Saquon Barkley (PHI), 22 carries for 88 yards and 1 TD</li>
+          <li><strong>Top receiver:</strong> Travis Kelce (KC), 4 catches for 61 yards</li>
+          <li><strong>Turnovers:</strong> Philadelphia 0, Kansas City 1 (Mukuba's interception)</li>
+          <li><strong>Records after the game:</strong> Eagles 2-0, Chiefs 0-2</li>
+        </ul>
+      </blockquote>
+
+      <p>Which game is this? It is the most recent Eagles vs Chiefs game of any kind. The teams are not scheduled to meet in the 2026 season, per ESPN's Eagles schedule. The Buzzsport page for this search covers both this game and Super Bowl LIX (Eagles 40-22 on February 9, 2025); the Super Bowl result is in the recent meetings table below. The teams' 2026 seasons have gone in opposite directions: as of November 17, 2026, Kansas City is 7-2 and first in the AFC West after a 35-13 win at Atlanta on November 15, while Philadelphia is 2-7 after a 19-11 home loss to the Giants on November 8, according to ESPN.</p>
+
+      <h2>What was the Eagles vs Chiefs score by quarter?</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>Philadelphia Eagles</td><td>7</td><td>3</td><td>3</td><td>7</td><td>20</td></tr>
+          <tr><td>Kansas City Chiefs</td><td>0</td><td>10</td><td>0</td><td>7</td><td>17</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scoring plays</h3>
+      <ul>
+        <li><strong>Q1, 0:46:</strong> Saquon Barkley 13-yard run, Jake Elliott kick (PHI 7-0)</li>
+        <li><strong>Q2, 11:42:</strong> Harrison Butker 56-yard field goal (PHI 7-3)</li>
+        <li><strong>Q2, 2:44:</strong> Patrick Mahomes 13-yard run, Butker kick (KC 10-7)</li>
+        <li><strong>Q2, 0:00:</strong> Elliott 58-yard field goal (10-10)</li>
+        <li><strong>Q3, 11:28:</strong> Elliott 51-yard field goal (PHI 13-10)</li>
+        <li><strong>Q4, 7:48:</strong> Jalen Hurts 1-yard run, Elliott kick (PHI 20-10)</li>
+        <li><strong>Q4, 3:00:</strong> Tyquan Thornton 49-yard pass from Mahomes, Butker kick (PHI 20-17)</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1760046994492-039d6663abaa?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Football player leaping to catch a pass during a game" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Who led in passing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>C/ATT</th><th>Yards</th><th>TD</th><th>INT</th><th>Sacked</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>Jalen Hurts (PHI)</td><td>15/22</td><td>101</td><td>0</td><td>0</td><td>2 for 7 yds</td><td>78.0</td></tr>
+          <tr><td>Patrick Mahomes (KC)</td><td>16/29</td><td>187</td><td>1</td><td>1</td><td>2 for 14 yds</td><td>72.1</td></tr>
+        </tbody>
+      </table>
+      <p>Mahomes was without suspended receiver Rashee Rice and injured receiver Xavier Worthy, the AP noted.</p>
+
+      <h2>Who led in rushing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Carries</th><th>Yards</th><th>TD</th><th>Long</th></tr></thead>
+        <tbody>
+          <tr><td>Saquon Barkley (PHI)</td><td>22</td><td>88</td><td>1</td><td>13</td></tr>
+          <tr><td>AJ Dillon (PHI)</td><td>3</td><td>19</td><td>0</td><td>8</td></tr>
+          <tr><td>Jalen Hurts (PHI)</td><td>9</td><td>15</td><td>1</td><td>11</td></tr>
+          <tr><td>Patrick Mahomes (KC)</td><td>7</td><td>66</td><td>1</td><td>22</td></tr>
+          <tr><td>Kareem Hunt (KC)</td><td>8</td><td>31</td><td>0</td><td>11</td></tr>
+          <tr><td>Isiah Pacheco (KC)</td><td>10</td><td>22</td><td>0</td><td>7</td></tr>
+        </tbody>
+      </table>
+      <p>Mahomes finished as Kansas City's leading rusher, and the two teams were almost level on the ground: 122 yards for Philadelphia, 121 for Kansas City.</p>
+
+      <h2>Who led in receiving?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Receptions</th><th>Targets</th><th>Yards</th><th>TD</th></tr></thead>
+        <tbody>
+          <tr><td>DeVonta Smith (PHI)</td><td>4</td><td>6</td><td>53</td><td>0</td></tr>
+          <tr><td>A.J. Brown (PHI)</td><td>5</td><td>8</td><td>27</td><td>0</td></tr>
+          <tr><td>Grant Calcaterra (PHI)</td><td>1</td><td>2</td><td>6</td><td>0</td></tr>
+          <tr><td>Saquon Barkley (PHI)</td><td>2</td><td>2</td><td>6</td><td>0</td></tr>
+          <tr><td>Travis Kelce (KC)</td><td>4</td><td>6</td><td>61</td><td>0</td></tr>
+          <tr><td>Tyquan Thornton (KC)</td><td>2</td><td>5</td><td>59</td><td>1</td></tr>
+          <tr><td>Hollywood Brown (KC)</td><td>5</td><td>5</td><td>30</td><td>0</td></tr>
+          <tr><td>Nikko Remigio (KC)</td><td>1</td><td>1</td><td>21</td><td>0</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What were the notable defensive stats?</h2>
+      <ul>
+        <li><strong>Eagles tackle leaders:</strong> Cooper DeJean 8, Jihaad Campbell 7, Zack Baun and Andrew Mukuba 6 each.</li>
+        <li><strong>Eagles sacks:</strong> Moro Ojomo 1, Mukuba and Za'Darius Smith 0.5 each. Jalen Carter had 3 quarterback hits.</li>
+        <li><strong>Eagles interception:</strong> Mukuba, returned 41 yards, after a pass bounced off Kelce's hands at the goal line.</li>
+        <li><strong>Chiefs tackle leaders:</strong> Chamarri Conner and Jaylen Watson 9 each, Drue Tranquill and Nick Bolton 6 each.</li>
+        <li><strong>Chiefs sacks:</strong> Omarr Norman-Lott 1. Philadelphia was sacked twice in total.</li>
+        <li><strong>Kicking:</strong> Elliott 2 of 2 (long 58) and 2 of 2 on extra points; Butker 1 of 2 (long 56).</li>
+      </ul>
+
+      <h2>How did the team stats compare?</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Eagles</th><th>Chiefs</th></tr></thead>
+        <tbody>
+          <tr><td>Total yards</td><td>216</td><td>294</td></tr>
+          <tr><td>Net passing yards</td><td>94</td><td>173</td></tr>
+          <tr><td>Rushing yards</td><td>122 (34 carries)</td><td>121 (26 carries)</td></tr>
+          <tr><td>First downs</td><td>16</td><td>17</td></tr>
+          <tr><td>Third-down conversions</td><td>5 of 14</td><td>4 of 12</td></tr>
+          <tr><td>Fourth-down conversions</td><td>1 of 1</td><td>2 of 3</td></tr>
+          <tr><td>Red zone (TD/trips)</td><td>2 of 2</td><td>1 of 2</td></tr>
+          <tr><td>Turnovers</td><td>0</td><td>1</td></tr>
+          <tr><td>Penalties</td><td>6 for 48</td><td>6 for 45</td></tr>
+          <tr><td>Time of possession</td><td>32:34</td><td>27:26</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How was the game decided?</h2>
+      <p>Philadelphia was outgained by 78 yards but did not turn the ball over and scored touchdowns on both red zone trips. Elliott's 58-yard field goal on the last play of the first half tied it 10-10, and his 51-yarder early in the third quarter came after Kansas City handed the ball to Hunt on fourth-and-1 and he was stopped, the AP reported.</p>
+      <p>The key play came in the fourth quarter. With the Chiefs trailing 13-10, Hunt converted a fourth-and-1 at the Philadelphia 13 to keep a drive alive. Later on that drive, Mahomes's pass at the goal line deflected off Kelce into Mukuba's hands. "I threw it a tad too early," Mahomes said. The Eagles then went 59 yards in 10 plays, and Hurts scored on a fourth-and-goal tush push for a 20-10 lead.</p>
+      <p>Mahomes found Thornton for a 49-yard touchdown with three minutes left, but Kansas City did not recover the onside kick and Philadelphia ran out the clock.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1557174949-3b1f5b2e8fac?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Aerial view of an empty football field inside a stadium" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>What did it mean, and where do both teams stand now?</h2>
+      <p>The win was Philadelphia's seventh straight and its third in a row over Kansas City, the AP reported. The Chiefs fell to 0-2 for the first time since 2014 and lost at home for the first time since December 25, 2023. It was the 11th regular-season Super Bowl rematch, and the reigning champion has now won eight of them.</p>
+      <p>As of ESPN's team pages on November 17, 2026, the Chiefs are 7-2 (first in the AFC West) and the Eagles are 2-7 (fourth in the NFC East).</p>
+      <ul>
+        <li><strong>Eagles:</strong> host Pittsburgh on November 22, 2026, then play at Dallas on Thanksgiving, November 26.</li>
+        <li><strong>Chiefs:</strong> host Arizona on November 22, 2026, then visit Buffalo on Thanksgiving night, November 26.</li>
+      </ul>
+
+      <h2>Recent Eagles vs Chiefs games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Type</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>September 14, 2025</td><td>Eagles 20, Chiefs 17</td><td>Regular season, Week 2</td><td>Arrowhead Stadium</td></tr>
+          <tr><td>February 9, 2025</td><td>Eagles 40, Chiefs 22</td><td>Super Bowl LIX</td><td>Caesars Superdome, New Orleans</td></tr>
+          <tr><td>November 20, 2023</td><td>Eagles 21, Chiefs 17</td><td>Regular season, Week 11</td><td>Arrowhead Stadium</td></tr>
+          <tr><td>February 12, 2023</td><td>Chiefs 38, Eagles 35</td><td>Super Bowl LVII</td><td>State Farm Stadium, Glendale, Ariz.</td></tr>
+        </tbody>
+      </table>
+      <p>For more NFL box scores, see our <a href="/sports/chiefs-vs-broncos-match-player-stats/">Chiefs vs Broncos match player stats</a>, <a href="/sports/bills-vs-rams-match-player-stats/">Bills vs Rams player stats</a>, or the <a href="/category/sports/">GBNT Sports section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who won the last Eagles vs Chiefs game?</h3>
+      <p>The Eagles won 20-17 at Arrowhead Stadium on September 14, 2025. Philadelphia has won the last three meetings, including Super Bowl LIX.</p>
+      <h3>Who was the best player in Eagles vs Chiefs?</h3>
+      <p>Andrew Mukuba had six tackles, half a sack and the game's only interception. Saquon Barkley ran for 88 yards and a touchdown, and Jake Elliott made field goals from 58 and 51 yards.</p>
+      <h3>How many yards did Patrick Mahomes have against the Eagles?</h3>
+      <p>Mahomes threw for 187 yards with one touchdown and one interception, and ran for 66 yards and a touchdown on seven carries.</p>
+      <h3>Do the Eagles and Chiefs play in 2026?</h3>
+      <p>No. Philadelphia's 2026 regular-season schedule on ESPN does not include Kansas City.</p>
+
+      <p><em>Checked on November 17, 2026, against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772837" target="_blank" rel="noopener">ESPN box score and AP recap</a>, the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20250914_PHI@KC/" target="_blank" rel="noopener">CBS Sports box score</a> and ESPN's 2026 team schedules. Team passing yards are net of sack yardage. The <a href="https://buzzsport.co.uk/kansas-city-chiefs-vs-philadelphia-eagles-match-player-stats/" target="_blank" rel="nofollow noopener">Buzzsport page</a> for this search covers this game and Super Bowl LIX.</em></p>
+    `
+  },
+  {
+    id: "patriots-vs-bengals-match-player-stats",
+    title: "Patriots vs Bengals Match Player Stats: New England Rallies Past Cincinnati 26-20",
+    excerpt: "Patriots vs Bengals match player stats from New England's 26-20 win on Nov 23, 2025: Maye, Henry, Borregales, two pick-sixes and the box score.",
+    category: "Sports",
+    categorySlug: "sports",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T17:20:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1659092375775-4e72014d7818?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Empty football stadium with orange seats and the end zone in the foreground",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["New England Patriots", "Cincinnati Bengals", "NFL", "Match Player Stats", "Drake Maye", "Hunter Henry"],
+    content: `
+      <p class="lead">The New England Patriots beat the Cincinnati Bengals 26-20 on Sunday, November 23, 2025, at Paycor Stadium in Cincinnati, rallying from a 10-0 deficit for their ninth straight win. Drake Maye threw for 294 yards, Hunter Henry had a career-high 115 receiving yards, and Andy Borregales kicked four field goals. Below are the full Patriots vs Bengals match player stats, checked against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772781" target="_blank" rel="noopener">ESPN box score</a> and the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20251123_NE@CIN/" target="_blank" rel="noopener">CBS Sports box score</a>.</p>
+
+      <blockquote>
+        <p><strong>Patriots vs Bengals, the key facts:</strong></p>
+        <ul>
+          <li><strong>Final score:</strong> Patriots 26, Bengals 20</li>
+          <li><strong>Date and venue:</strong> Sunday, November 23, 2025 (Week 12), Paycor Stadium, Cincinnati. Attendance 65,659.</li>
+          <li><strong>Top passer:</strong> Drake Maye (NE), 22 of 35 for 294 yards, 1 TD, 1 INT</li>
+          <li><strong>Top rusher:</strong> Chase Brown (CIN), 19 carries for 107 yards</li>
+          <li><strong>Top receiver:</strong> Hunter Henry (NE), 7 catches for 115 yards and 1 TD</li>
+          <li><strong>Defensive scores:</strong> one pick-six each, by Geno Stone (CIN) and Marcus Jones (NE)</li>
+          <li><strong>Records after the game:</strong> Patriots 10-2, Bengals 3-8</li>
+        </ul>
+      </blockquote>
+
+      <p>Which game is this? It is the most recent Patriots vs Bengals game, and the same game the Buzzsport page for this search covers. The teams are not scheduled to meet in the 2026 season, per ESPN's Patriots schedule. Both are in the news this month for different reasons: as of November 17, 2026, Cincinnati is 7-2 and second in the AFC after a 38-18 win over Pittsburgh on November 15, while New England is 5-5 after a 35-10 loss to Detroit in Munich the same day, according to ESPN.</p>
+
+      <h2>What was the Patriots vs Bengals score by quarter?</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>New England Patriots</td><td>0</td><td>17</td><td>3</td><td>6</td><td>26</td></tr>
+          <tr><td>Cincinnati Bengals</td><td>3</td><td>10</td><td>0</td><td>7</td><td>20</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scoring plays</h3>
+      <ul>
+        <li><strong>Q1, 6:36:</strong> Evan McPherson 54-yard field goal (CIN 3-0)</li>
+        <li><strong>Q2, 14:19:</strong> Geno Stone 32-yard interception return, McPherson kick (CIN 10-0)</li>
+        <li><strong>Q2, 9:36:</strong> Hunter Henry 28-yard pass from Drake Maye, Andy Borregales kick (CIN 10-7)</li>
+        <li><strong>Q2, 7:42:</strong> Marcus Jones 33-yard interception return, Borregales kick (NE 14-10)</li>
+        <li><strong>Q2, 0:28:</strong> Borregales 41-yard field goal (NE 17-10)</li>
+        <li><strong>Q2, 0:00:</strong> McPherson 63-yard field goal (NE 17-13)</li>
+        <li><strong>Q3, 1:04:</strong> Borregales 45-yard field goal (NE 20-13)</li>
+        <li><strong>Q4, 5:55:</strong> Borregales 19-yard field goal (NE 23-13)</li>
+        <li><strong>Q4, 4:40:</strong> Mitchell Tinsley 17-yard pass from Joe Flacco, McPherson kick (NE 23-20)</li>
+        <li><strong>Q4, 1:51:</strong> Borregales 52-yard field goal (NE 26-20)</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1544765773-a8dce1f272f6?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Football player running with the ball on a grass field" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Who led in passing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>C/ATT</th><th>Yards</th><th>TD</th><th>INT</th><th>Sacked</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>Drake Maye (NE)</td><td>22/35</td><td>294</td><td>1</td><td>1</td><td>1 for 9 yds</td><td>87.1</td></tr>
+          <tr><td>Joe Flacco (CIN)</td><td>19/37</td><td>183</td><td>1</td><td>1</td><td>1 for 10 yds</td><td>63.2</td></tr>
+          <tr><td>Jake Browning (CIN)</td><td>1/1</td><td>14</td><td>0</td><td>0</td><td>0</td><td>118.8</td></tr>
+        </tbody>
+      </table>
+      <p>Flacco started while Joe Burrow was still out with a turf toe injury from Week 2, the AP noted.</p>
+
+      <h2>Who led in rushing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Carries</th><th>Yards</th><th>TD</th><th>Long</th></tr></thead>
+        <tbody>
+          <tr><td>Chase Brown (CIN)</td><td>19</td><td>107</td><td>0</td><td>21</td></tr>
+          <tr><td>TreVeyon Henderson (NE)</td><td>18</td><td>66</td><td>0</td><td>9</td></tr>
+          <tr><td>Drake Maye (NE)</td><td>5</td><td>22</td><td>0</td><td>12</td></tr>
+          <tr><td>DeMario Douglas (NE)</td><td>1</td><td>14</td><td>0</td><td>14</td></tr>
+          <tr><td>Rhamondre Stevenson (NE)</td><td>6</td><td>5</td><td>0</td><td>3</td></tr>
+        </tbody>
+      </table>
+      <p>Brown's 19 carries were a season high, according to the AP.</p>
+
+      <h2>Who led in receiving?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Receptions</th><th>Targets</th><th>Yards</th><th>TD</th></tr></thead>
+        <tbody>
+          <tr><td>Hunter Henry (NE)</td><td>7</td><td>10</td><td>115</td><td>1</td></tr>
+          <tr><td>Austin Hooper (NE)</td><td>3</td><td>4</td><td>39</td><td>0</td></tr>
+          <tr><td>DeMario Douglas (NE)</td><td>1</td><td>1</td><td>37</td><td>0</td></tr>
+          <tr><td>Mack Hollins (NE)</td><td>2</td><td>6</td><td>30</td><td>0</td></tr>
+          <tr><td>Andrei Iosivas (CIN)</td><td>4</td><td>7</td><td>61</td><td>0</td></tr>
+          <tr><td>Mike Gesicki (CIN)</td><td>4</td><td>6</td><td>35</td><td>0</td></tr>
+          <tr><td>Tee Higgins (CIN)</td><td>5</td><td>6</td><td>31</td><td>0</td></tr>
+          <tr><td>Mitchell Tinsley (CIN)</td><td>2</td><td>6</td><td>29</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <p>Ja'Marr Chase did not play. He was serving a one-game suspension for spitting on Pittsburgh's Jalen Ramsey the previous week, and Tinsley started in his place, the AP reported.</p>
+
+      <h2>What were the notable defensive stats?</h2>
+      <ul>
+        <li><strong>Patriots tackle leaders:</strong> Carlton Davis III 8 (with 3 passes defended), Craig Woodson 6, three players with 5.</li>
+        <li><strong>Patriots sack:</strong> Harold Landry III 1.</li>
+        <li><strong>Patriots interception:</strong> Marcus Jones, returned 33 yards for a touchdown. It was the second pick-six of his career, and both have come against Cincinnati.</li>
+        <li><strong>Bengals tackle leaders:</strong> Barrett Carter 16, Geno Stone 13, Demetrius Knight Jr. 8.</li>
+        <li><strong>Bengals sack:</strong> Jalen Davis 1.</li>
+        <li><strong>Bengals interception:</strong> Geno Stone, returned for a touchdown (32 yards in the ESPN and CBS box scores).</li>
+        <li><strong>Kicking:</strong> Borregales 4 of 4 (long 52) for 14 points; McPherson 2 of 2 (long 63).</li>
+      </ul>
+
+      <h2>How did the team stats compare?</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Patriots</th><th>Bengals</th></tr></thead>
+        <tbody>
+          <tr><td>Total yards</td><td>392</td><td>307</td></tr>
+          <tr><td>Net passing yards</td><td>285</td><td>187</td></tr>
+          <tr><td>Rushing yards</td><td>107 (31 carries)</td><td>120 (23 carries)</td></tr>
+          <tr><td>First downs</td><td>21</td><td>20</td></tr>
+          <tr><td>Third-down conversions</td><td>5 of 13</td><td>3 of 13</td></tr>
+          <tr><td>Red zone (TD/trips)</td><td>0 of 2</td><td>1 of 1</td></tr>
+          <tr><td>Turnovers</td><td>1</td><td>1</td></tr>
+          <tr><td>Penalties</td><td>4 for 52</td><td>6 for 65</td></tr>
+          <tr><td>Time of possession</td><td>33:14</td><td>26:46</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How was the game decided?</h2>
+      <p>Cincinnati led 10-0 just 41 seconds into the second quarter after Stone intercepted Maye and scored. Maye answered on the next drive with a 28-yard touchdown to a wide-open Henry, and Jones then jumped a Flacco pass in the flat on the Bengals' following series for a 14-10 Patriots lead. "I was just watching the quarterback's eyes," Jones said.</p>
+      <p>New England did not score an offensive touchdown after that, going 0 of 2 in the red zone, but Borregales kept adding field goals. McPherson's 63-yarder at the end of the first half was the first field goal of 60 yards or more in Bengals history, the AP reported.</p>
+      <p>Tinsley's 17-yard touchdown with 4:40 left cut the lead to 23-20. Borregales answered with a 52-yarder with 1:51 remaining, and Flacco's fourth-down pass for Gesicki from the New England 26 fell incomplete with 18 seconds left. The Patriots won despite losing left guard Jared Wilson and left tackle Will Campbell to injuries during the game.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1761258771974-d4b673e424ab?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Football player kneeling on the field in black and white" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>What did it mean, and where do both teams stand now?</h2>
+      <p>New England became the first NFL team to reach 10 wins in 2025 and improved to 6-0 on the road. The Bengals dropped to 3-8, with eight losses in nine games since Burrow was hurt, according to the AP.</p>
+      <p>As of ESPN's team pages on November 17, 2026, the Bengals are 7-2 and the Patriots are 5-5 (second in the AFC East).</p>
+      <ul>
+        <li><strong>Patriots:</strong> have a bye in Week 11, then play at the Los Angeles Chargers on Sunday night, November 29, 2026, and host Buffalo on December 6.</li>
+        <li><strong>Bengals:</strong> at Washington on Monday, November 23, 2026, then host New Orleans on November 29.</li>
+      </ul>
+
+      <h2>Recent Patriots vs Bengals games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Type</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>November 23, 2025</td><td>Patriots 26, Bengals 20</td><td>Regular season, Week 12</td><td>Paycor Stadium</td></tr>
+          <tr><td>September 8, 2024</td><td>Patriots 16, Bengals 10</td><td>Regular season, Week 1</td><td>Paycor Stadium</td></tr>
+          <tr><td>December 24, 2022</td><td>Bengals 22, Patriots 18</td><td>Regular season, Week 16</td><td>Gillette Stadium</td></tr>
+        </tbody>
+      </table>
+      <p>For more Bengals coverage, see our <a href="/sports/lions-vs-bengals-match-player-stats/">Lions vs Bengals match player stats</a>. Other recent box scores include <a href="/sports/bills-vs-rams-match-player-stats/">Bills vs Rams player stats</a>, and there are more in the <a href="/category/sports/">GBNT Sports section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who won the last Patriots vs Bengals game?</h3>
+      <p>The Patriots won 26-20 at Paycor Stadium on November 23, 2025. New England has won the last two meetings, both in Cincinnati.</p>
+      <h3>Who was the best player in Patriots vs Bengals?</h3>
+      <p>Hunter Henry had 7 catches for a career-high 115 yards and a touchdown. Andy Borregales made all four field goal tries, and Marcus Jones scored on an interception return.</p>
+      <h3>Did Joe Burrow or Ja'Marr Chase play?</h3>
+      <p>No. Burrow was still out with turf toe, and Chase was suspended for one game. Joe Flacco started at quarterback.</p>
+      <h3>How long was Evan McPherson's field goal against the Patriots?</h3>
+      <p>63 yards, on the final play of the first half. It was a Bengals team record.</p>
+
+      <p><em>Checked on November 17, 2026, against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772781" target="_blank" rel="noopener">ESPN box score and AP recap</a>, the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20251123_NE@CIN/" target="_blank" rel="noopener">CBS Sports box score</a> and ESPN's 2026 team schedules. Team passing yards are net of sack yardage. The AP recap gives Stone's return as 33 yards; the box score figure is used here. The <a href="https://buzzsport.co.uk/new-england-patriots-vs-bengals-match-player-stats/" target="_blank" rel="nofollow noopener">Buzzsport page</a> for this search covers the same 2025 game.</em></p>
+    `
+  },
+  {
     id: "giants-vs-dodgers-match-player-stats",
     title: "Giants vs Dodgers Match Player Stats: Pages' 10th-Inning HR Seals 5-1 Dodgers Win",
     excerpt: "Giants vs Dodgers match player stats from Sept. 27, 2026: Andy Pages' 3-run HR in the 10th gave LA a 5-1 win and its 100th victory. Full box score.",
