@@ -1,6 +1,104 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "voozon-com-review",
+    title: "Voozon.com Review: What the Site Is, Who Runs It and Whether It Is Safe or Legit in 2026",
+    excerpt: "Voozon.com is a multi-topic WordPress blog that sells guest posts and backlinks. Here is what we verified about its history, safety and legitimacy.",
+    category: "Website Reviews",
+    categorySlug: "reviews",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T12:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Person browsing a website on a laptop while holding a smartphone",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Voozon.com", "Website Reviews", "Guest Posting", "Is It Legit", "Online Safety", "SEO"],
+    content: `
+      <p class="lead">Voozon.com is a multi-topic WordPress blog that publishes short articles on business, finance, technology, health and lifestyle, and openly sells guest posts and sponsored articles to businesses that want backlinks. We found no malware warnings or scam reports against it. It is best treated as a commercial content site, not a news source.</p>
+
+      <blockquote><p><strong>Voozon.com, the key facts:</strong></p><ul>
+        <li><strong>What it is:</strong> A general-interest blog that calls itself a "Digital Media &amp; Editorial Publication" and offers guest posting and backlinks.</li>
+        <li><strong>Size:</strong> 1,722 published posts, according to its public WordPress API on November 17, 2026.</li>
+        <li><strong>Domain age:</strong> Registered on January 16, 2008, through NameCheap, Inc., and paid up until 2034.</li>
+        <li><strong>Downloads or payments:</strong> The site offers no app, no software download, no streaming and no checkout. Sponsored posts are sold by enquiry.</li>
+        <li><strong>Safety scans:</strong> Gridinsoft gives it a trust score of 79/100 ("Trusted but Verify"), with no malware or phishing detections.</li>
+      </ul></blockquote>
+
+      <h2>What is voozon.com?</h2>
+      <p>The homepage at <a href="https://www.voozon.com/" target="_blank" rel="nofollow noopener">voozon.com</a> redirects to the www version and has the title "Voozon.com | Digital Media &amp; Editorial Publication." Its meta description says it produces "original articles and editorial coverage across business, technology, finance, education, lifestyle, and other subjects." The menu covers Finance, Business, General, Technology, Health, Law, Automotive, Education and Travel.</p>
+      <p>The site's <a href="https://www.voozon.com/about-voozon/" target="_blank" rel="nofollow noopener">About Us page</a> is more open about what it is for. It calls Voozon a platform for "businesses aiming to strengthen your SEO through backlinks," and lists "Guest posting opportunities" and "High-quality backlinks to improve SEO performance" among its services. A separate <a href="https://www.voozon.com/voozon-com-guest-post-opportunities/" target="_blank" rel="nofollow noopener">guest post page</a> invites businesses, agencies and writers to ask about "available formats, and commercial terms" for sponsored content.</p>
+      <p>Recent posts are typical of this kind of site. Examples include "How to Manage Quote Expiry When Buying from China" (November 16, 2026), "Ulip Fund Switching Explained" and a guide to cannabis products. The archive also holds older piracy-related pieces. One example is a "SkymoviesHD" post, dated January 2024, that describes a movie download site and also calls it illegal.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Colourful lines of website code blurred on a dark screen" loading="lazy" decoding="async">
+        <figcaption>Illustrative image: website code. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Verified facts about voozon.com</h2>
+      <table>
+        <thead><tr><th>Check</th><th>Finding</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>CMS</td><td>WordPress 7.1.4 with Elementor, behind Cloudflare</td><td>Homepage source code</td></tr>
+          <tr><td>Published posts</td><td>1,722 (X-WP-Total header)</td><td>WordPress REST API</td></tr>
+          <tr><td>Biggest categories</td><td>General 252, Finance 219, Technology 215, Business 207, Health 198</td><td>WordPress REST API</td></tr>
+          <tr><td>Oldest dated post</td><td>March 28, 2019 ("Your Simple Guide to Cryptocurrency Digital Marketing")</td><td>WordPress REST API</td></tr>
+          <tr><td>Domain registered</td><td>January 16, 2008; expires January 16, 2034</td><td><a href="https://rdap.verisign.com/com/v1/domain/voozon.com" target="_blank" rel="noopener">Verisign RDAP</a></td></tr>
+          <tr><td>Registrar</td><td>NameCheap, Inc. (Cloudflare name servers)</td><td>Verisign RDAP</td></tr>
+          <tr><td>Display ads</td><td>No ad network code found on the homepage; Google Analytics tag present</td><td>Homepage source code</td></tr>
+          <tr><td>Trust score</td><td>79/100, no malware or phishing flags, AI-style text noted</td><td><a href="https://gridinsoft.com/online-virus-scanner/url/voozon-com" target="_blank" rel="noopener">Gridinsoft</a></td></tr>
+        </tbody>
+      </table>
+
+      <h2>How long has Voozon been around?</h2>
+      <p>The domain is old, but the current site is not. Wayback Machine captures from 2011 and 2014 show only a placeholder page titled "voozon.com." In 2017 and 2018 it was an untouched WordPress install with a "Hello world!" post. By August 2020 it had become a content site with the slogan "Its Time to Boost Business Online." A February 2023 capture shows "Trending Now" links to movie download pieces such as "Tamilrockers 2020 HD Movies Download."</p>
+      <p>Some dates in the archive deserve caution. One post is dated April 2019, yet its title talks about pupils not logging onto online lessons "during lockdown." That suggests some posts were backdated or carried over from another site.</p>
+
+      <h2>Why do so many people search for "voozon.com"?</h2>
+      <p>The searches appear to be navigational, meaning people type the domain to reach or check the site. A <a href="https://www.ranktracker.com/nb/blog/voozon-com/" target="_blank" rel="noopener">Ranktracker analysis dated October 7, 2026</a> estimated about 855,400 organic visits a month. It attributed nearly all of them to the exact term "voozon.com" and valued that traffic at just $0.16. Ranktracker suggests the searchers include contributors checking a published guest post and businesses weighing whether to buy a placement. These are third-party estimates, not audited figures.</p>
+      <p>We found no single news event behind the interest. What we did find was a cluster of "is voozon.com legit" pages in early October 2026. <a href="https://buzzsport.co.uk/voozon-com/" target="_blank" rel="nofollow noopener">Buzz Sport</a> published one on October 3, Voozon posted <a href="https://www.voozon.com/is-voozon-com-legit/" target="_blank" rel="nofollow noopener">its own "Is Voozon.com Legit?" guide</a> on October 5, and Ranktracker followed on October 7. Searches for the domain name drive that coverage, and it adds to them in turn.</p>
+
+      <h2>Is voozon.com safe and legit?</h2>
+      <p>In a technical sense, it looks safe to browse. Gridinsoft's scan, last updated November 5, 2026, reported "no major malware or phishing detections" and zero warnings from outside providers. It also noted that the text shows patterns of AI-generated content. The site asks readers for nothing beyond a contact form: no logins, no payments, no downloads. We could not check Trustpilot, which blocked our request and returned no profile, or ScamAdviser, which also blocked access. We found no consumer complaints.</p>
+      <p>"Legit" means something different for readers and for buyers:</p>
+      <ul>
+        <li><strong>For readers:</strong> Many posts are commercial or contributed content, and we saw no bylines from named experts. We sampled a November 16 post that carried an unlabeled, followed link to a commercial website. Check health, legal and money advice against primary sources.</li>
+        <li><strong>For businesses:</strong> Google's <a href="https://developers.google.com/search/docs/essentials/spam-policies" target="_blank" rel="noopener">spam policies</a> list "Buying or selling links for ranking purposes," including paid guest posts with links that pass ranking credit, as link spam. So a paid backlink here may bring no SEO value, or it may cause harm.</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Green characters streaming down a black screen" loading="lazy" decoding="async">
+        <figcaption>Illustrative image: streams of digital code. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Practical safety tips</h2>
+      <ul>
+        <li>Do not follow links in old movie-download articles. Piracy sites often carry malware and aggressive ads.</li>
+        <li>If someone emails you offering a "Voozon placement," confirm it through the site's own contact page. The FTC's <a href="https://consumer.ftc.gov/articles/how-avoid-scam" target="_blank" rel="noopener">scam-avoidance guide</a> warns against paying anyone who insists on gift cards, wire transfers, payment apps or crypto.</li>
+        <li>Be suspicious of urgent messages and lookalike addresses. Watch for the warning signs CISA lists on its <a href="https://www.cisa.gov/secure-our-world/recognize-and-report-phishing" target="_blank" rel="noopener">phishing page</a>, and remember that perfect grammar no longer rules out a scam.</li>
+        <li>Report anything suspicious through the FTC's <a href="https://consumer.ftc.gov/articles/how-recognize-avoid-phishing-scams" target="_blank" rel="noopener">phishing guidance</a>.</li>
+      </ul>
+      <p>For more website checks, see our <a href="/articles/tozymagazine-com-review/">Tozymagazine.com review</a>, our <a href="/articles/safetrode-com-review/">Safetrode.com review</a>, our <a href="/reviews/etextworld-review/">eTextWorld review</a>, or the full <a href="/category/reviews/">Reviews section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Is voozon.com a news website?</h3>
+      <p>No. It is a general blog with evergreen guides and contributed or sponsored articles. It does not report news.</p>
+      <h3>Does voozon.com sell guest posts?</h3>
+      <p>Yes. Its About and guest post pages promote guest posting, sponsored content and backlinks, with commercial terms available on request.</p>
+      <h3>Is voozon.com a scam?</h3>
+      <p>We found no scam reports, malware flags or payment requests to readers. Its main weakness is content quality, not fraud.</p>
+      <h3>Who owns voozon.com?</h3>
+      <p>The owner is not publicly listed. The registration record shows only the registrar, NameCheap, and Gridinsoft notes that the owner uses privacy protection.</p>
+
+      <p><em>Checked on November 17, 2026, against the voozon.com homepage, its WordPress REST API, About and guest post pages, Verisign RDAP, Wayback Machine captures, Gridinsoft, Ranktracker, Google Search Central, the FTC and CISA.</em></p>
+    `
+  },
+  {
     id: "technology-trends-2027",
     title: "Top Technology Trends for 2027: 10 Tech Trends Ranked by Hard Evidence",
     excerpt: "The top technology trends for 2027, ranked by hard data: agentic AI, data-center power, AI fraud, robots, AI medical devices, smart glasses and quantum.",
