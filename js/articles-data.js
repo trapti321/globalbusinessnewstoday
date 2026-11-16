@@ -1,6 +1,508 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "texans-vs-seahawks-match-player-stats",
+    title: "Texans vs Seahawks Match Player Stats: Seattle Wins 27-19 on Monday Night Football",
+    excerpt: "Texans vs Seahawks match player stats: Smith-Njigba's 123 yards, Stroud's 23-of-49 night and the full box score from Seattle's 27-19 win.",
+    category: "Sports",
+    categorySlug: "sports",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T14:00:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1768879045902-6412996b9d51?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Fans raising their arms as an American football game is played in a large stadium",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Houston Texans", "Seattle Seahawks", "NFL", "Jaxon Smith-Njigba", "C.J. Stroud", "Match Player Stats"],
+    content: `
+      <p class="lead">The Seattle Seahawks beat the Houston Texans 27-19 on Monday Night Football on October 20, 2025, at Lumen Field in Seattle. Jaxon Smith-Njigba caught 8 passes for 123 yards and a touchdown, Zach Charbonnet ran for two scores, and Seattle's defense held C.J. Stroud to 23 of 49 passing. Below are the full Texans vs Seahawks match player stats, checked against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772826" target="_blank" rel="noopener">ESPN box score</a> and the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20251020_HOU@SEA/" target="_blank" rel="noopener">CBS Sports box score</a>.</p>
+
+      <blockquote>
+        <p><strong>Texans vs Seahawks, the key facts:</strong></p>
+        <ul>
+          <li><strong>Final score:</strong> Seahawks 27, Texans 19</li>
+          <li><strong>Date and venue:</strong> Monday, October 20, 2025 (Week 7), Lumen Field, Seattle. Attendance 68,632.</li>
+          <li><strong>Top passer:</strong> C.J. Stroud (HOU), 23 of 49 for 229 yards, 1 TD, 1 INT</li>
+          <li><strong>Top rusher:</strong> Kenneth Walker III (SEA), 17 carries for 66 yards</li>
+          <li><strong>Top receiver:</strong> Jaxon Smith-Njigba (SEA), 8 catches for 123 yards and 1 TD</li>
+          <li><strong>Defensive star:</strong> Ernest Jones IV (SEA), game-high 11 tackles and an interception</li>
+          <li><strong>Records after the game:</strong> Seahawks 5-2, Texans 2-4</li>
+        </ul>
+      </blockquote>
+
+      <p>Which game is this? This is the most recent Texans vs Seahawks game. The two teams are not scheduled to meet in 2026: neither team's 2026 schedule on ESPN includes the other, preseason included. Searches for this matchup have stayed steady because Seattle went on to beat New England 29-13 in Super Bowl LX in February 2026, and this Monday night win was part of that title run. Older meetings are listed further down.</p>
+
+      <h2>What was the Texans vs Seahawks score by quarter?</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>Houston Texans</td><td>0</td><td>6</td><td>6</td><td>7</td><td>19</td></tr>
+          <tr><td>Seattle Seahawks</td><td>14</td><td>0</td><td>13</td><td>0</td><td>27</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scoring plays</h3>
+      <ul>
+        <li><strong>Q1, 7:28:</strong> Zach Charbonnet 1-yard run, Jason Myers kick (SEA 7-0)</li>
+        <li><strong>Q1, 0:00:</strong> Jaxon Smith-Njigba 11-yard pass from Sam Darnold, Myers kick (SEA 14-0)</li>
+        <li><strong>Q2, 2:18:</strong> Ka'imi Fairbairn 36-yard field goal (SEA 14-3)</li>
+        <li><strong>Q2, 0:00:</strong> Fairbairn 46-yard field goal (SEA 14-6)</li>
+        <li><strong>Q3, 10:34:</strong> Myers 26-yard field goal (SEA 17-6)</li>
+        <li><strong>Q3, 7:24:</strong> Will Anderson Jr. fumble recovery in the end zone, two-point pass failed (SEA 17-12)</li>
+        <li><strong>Q3, 5:15:</strong> Myers 47-yard field goal (SEA 20-12)</li>
+        <li><strong>Q3, 0:54:</strong> Charbonnet 2-yard run, Myers kick (SEA 27-12)</li>
+        <li><strong>Q4, 2:04:</strong> Woody Marks 4-yard pass from C.J. Stroud, Fairbairn kick (SEA 27-19)</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1631490238089-0e2ca174a876?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Football players in white and red uniforms lining up on the field" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Who led in passing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>C/ATT</th><th>Yards</th><th>TD</th><th>INT</th><th>Sacked</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>C.J. Stroud (HOU)</td><td>23/49</td><td>229</td><td>1</td><td>1</td><td>3 for 31 yds</td><td>59.0</td></tr>
+          <tr><td>Sam Darnold (SEA)</td><td>17/31</td><td>213</td><td>1</td><td>1</td><td>2 for 15 yds</td><td>73.7</td></tr>
+          <tr><td>Cooper Kupp (SEA)</td><td>0/1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0.0</td></tr>
+        </tbody>
+      </table>
+      <p>Kupp's only pass attempt, on a trick play, was intercepted. Stroud was sacked three times and, per the Associated Press recap on ESPN, hit seven more times.</p>
+
+      <h2>Who led in rushing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Carries</th><th>Yards</th><th>TD</th><th>Long</th></tr></thead>
+        <tbody>
+          <tr><td>Kenneth Walker III (SEA)</td><td>17</td><td>66</td><td>0</td><td>16</td></tr>
+          <tr><td>Zach Charbonnet (SEA)</td><td>12</td><td>49</td><td>2</td><td>15</td></tr>
+          <tr><td>Sam Darnold (SEA)</td><td>3</td><td>1</td><td>0</td><td>3</td></tr>
+          <tr><td>C.J. Stroud (HOU)</td><td>2</td><td>25</td><td>0</td><td>15</td></tr>
+          <tr><td>Nick Chubb (HOU)</td><td>5</td><td>16</td><td>0</td><td>5</td></tr>
+          <tr><td>Woody Marks (HOU)</td><td>10</td><td>15</td><td>0</td><td>11</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Who led in receiving?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Receptions</th><th>Targets</th><th>Yards</th><th>TD</th></tr></thead>
+        <tbody>
+          <tr><td>Jaxon Smith-Njigba (SEA)</td><td>8</td><td>14</td><td>123</td><td>1</td></tr>
+          <tr><td>Elijah Arroyo (SEA)</td><td>4</td><td>5</td><td>42</td><td>0</td></tr>
+          <tr><td>Cooper Kupp (SEA)</td><td>1</td><td>1</td><td>32</td><td>0</td></tr>
+          <tr><td>Dalton Schultz (HOU)</td><td>9</td><td>10</td><td>98</td><td>0</td></tr>
+          <tr><td>Jaylin Noel (HOU)</td><td>4</td><td>7</td><td>77</td><td>0</td></tr>
+          <tr><td>Nico Collins (HOU)</td><td>4</td><td>10</td><td>27</td><td>0</td></tr>
+          <tr><td>Woody Marks (HOU)</td><td>3</td><td>5</td><td>20</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <p>It was Smith-Njigba's NFL-leading fifth 100-yard game of the 2025 season and his third in a row, the AP reported.</p>
+
+      <h2>What were the notable defensive stats?</h2>
+      <ul>
+        <li><strong>Seahawks tackle leaders:</strong> Ernest Jones IV 11, Ty Okada 9, Byron Murphy II 6.</li>
+        <li><strong>Seahawks sacks:</strong> Uchenna Nwosu, DeMarcus Lawrence and Ty Okada, 1 each. Nwosu's sack lost 18 yards and pinned Houston at its own 1.</li>
+        <li><strong>Seahawks interception:</strong> Jones picked off Stroud on Houston's first drive of the third quarter.</li>
+        <li><strong>Texans tackle leaders:</strong> Kamari Lassiter 10, Jalen Pitre 9, E.J. Speed 7.</li>
+        <li><strong>Texans sacks:</strong> Will Anderson Jr. and Denico Autry, 1 each. Anderson also recovered the fumble for Houston's touchdown.</li>
+        <li><strong>Texans interceptions:</strong> Derek Stingley Jr. and Calen Bullock, 1 each.</li>
+      </ul>
+
+      <h2>How did the team stats compare?</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Texans</th><th>Seahawks</th></tr></thead>
+        <tbody>
+          <tr><td>Total yards</td><td>254</td><td>316</td></tr>
+          <tr><td>Net passing yards</td><td>198</td><td>198</td></tr>
+          <tr><td>Rushing yards</td><td>56 (17 carries)</td><td>118 (33 carries)</td></tr>
+          <tr><td>First downs</td><td>18</td><td>19</td></tr>
+          <tr><td>Third-down conversions</td><td>2 of 15</td><td>2 of 14</td></tr>
+          <tr><td>Red zone (TD/trips)</td><td>1 of 3</td><td>3 of 4</td></tr>
+          <tr><td>Turnovers</td><td>1</td><td>4</td></tr>
+          <tr><td>Penalties</td><td>10 for 105</td><td>12 for 93</td></tr>
+          <tr><td>Time of possession</td><td>27:43</td><td>32:17</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How was the game decided?</h2>
+      <p>Seattle committed four turnovers and still won, because Houston could not finish drives. The Texans converted 2 of 15 third downs and scored one touchdown in three red zone trips. Seattle went 3 for 4 in the red zone.</p>
+      <p>The Seahawks built a 14-0 first-quarter lead. Houston clawed back to 17-12 when Darnold was strip-sacked in his own end zone and Anderson recovered, but the two-point try failed. Myers then kicked a 47-yard field goal and Charbonnet scored from 2 yards out late in the third quarter to make it 27-12. Stroud's 4-yard touchdown to Marks came with only 2:04 left.</p>
+      <p>"Our defense kept us in the whole game," Stroud said, according to the AP. "Got to help those guys out and score some points somehow, some way." Darnold said of the strip-sack: "At the end of the day, I got to get the ball out of my hands."</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1560354765-02010876efff?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Packed football stadium at dusk with the field lit below" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>What did it mean, and where do both teams stand now?</h2>
+      <p>The win moved Seattle to 5-2 and into a tie atop the NFC West entering its bye, the AP reported. Houston's two-game winning streak ended and it fell to 2-4. Seattle finished that season as champion, beating New England 29-13 in Super Bowl LX, according to <a href="https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/super-bowl-lx-seahawks-dominate-patriots-in-29-13-win" target="_blank" rel="noopener">NBC Sports' ProFootballTalk</a>.</p>
+      <p>In 2026, as of ESPN's team pages on November 17, 2026, the Seahawks are 6-4 after a 21-13 win at Las Vegas, and the Texans are 3-6 after a 27-24 loss at Cleveland.</p>
+      <ul>
+        <li><strong>Texans:</strong> host Indianapolis on Thursday, November 19, 2026, then Baltimore on November 29.</li>
+        <li><strong>Seahawks:</strong> bye in Week 11, then at San Francisco on November 29 and Dallas at home on Monday, December 7.</li>
+      </ul>
+
+      <h2>Recent Texans vs Seahawks games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>October 20, 2025</td><td>Seahawks 27, Texans 19</td><td>Lumen Field, Seattle</td></tr>
+          <tr><td>December 12, 2021</td><td>Seahawks 33, Texans 13</td><td>NRG Stadium, Houston</td></tr>
+        </tbody>
+      </table>
+      <p>For more box scores, see our <a href="/articles/texans-vs-pittsburgh-steelers-match-player-stats/">Texans vs Steelers match player stats</a>, the <a href="/sports/rams-vs-seahawks-match-player-stats/">Rams vs Seahawks player stats</a>, or browse the <a href="/category/sports/">GBNT Sports section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who won the Texans vs Seahawks game?</h3>
+      <p>The Seahawks won 27-19 on Monday, October 20, 2025, at Lumen Field. It is the most recent meeting; the teams do not play each other in 2026.</p>
+      <h3>Who was the best player in Texans vs Seahawks?</h3>
+      <p>Jaxon Smith-Njigba had 8 catches for 123 yards and a touchdown. Ernest Jones IV had 11 tackles and an interception. For Houston, Dalton Schultz caught 9 passes for 98 yards.</p>
+      <h3>How did C.J. Stroud play against the Seahawks?</h3>
+      <p>Stroud completed 23 of 49 passes for 229 yards with one touchdown and one interception, and was sacked three times for 31 yards.</p>
+      <h3>How did the Texans score a touchdown on defense?</h3>
+      <p>Sam Darnold was strip-sacked in his own end zone in the third quarter, and Will Anderson Jr. recovered the ball for a touchdown.</p>
+
+      <p><em>Checked on November 17, 2026, against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772826" target="_blank" rel="noopener">ESPN box score and AP recap</a>, the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20251020_HOU@SEA/" target="_blank" rel="noopener">CBS Sports box score</a> and ESPN's 2026 team schedules. Team passing yards are net of sack yardage. Some pages ranking for this search, including <a href="https://buzzsport.co.uk/texans-vs-seahawks-match-player-stats/" target="_blank" rel="nofollow noopener">Buzzsport</a>, cover the same game without a date.</em></p>
+    `
+  },
+  {
+    id: "lions-vs-bengals-match-player-stats",
+    title: "Lions vs Bengals Match Player Stats: Goff's 3 TDs Power Detroit Past Cincinnati 37-24",
+    excerpt: "Lions vs Bengals match player stats: Goff went 19 of 23, Montgomery scored twice and Chase had 110 yards in Detroit's 37-24 win in Cincinnati.",
+    category: "Sports",
+    categorySlug: "sports",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T14:10:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1781650104690-a5309d91a26b?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Crowded football stadium at night under bright floodlights",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Detroit Lions", "Cincinnati Bengals", "NFL", "Jared Goff", "Ja'Marr Chase", "Match Player Stats"],
+    content: `
+      <p class="lead">The Detroit Lions beat the Cincinnati Bengals 37-24 on Sunday, October 5, 2025, at Paycor Stadium in Cincinnati. Jared Goff completed 19 of 23 passes for 258 yards and three touchdowns, and David Montgomery ran for a score and threw for another in his hometown. Below are the full Lions vs Bengals match player stats, checked against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772854" target="_blank" rel="noopener">ESPN box score</a> and the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20251005_DET@CIN/" target="_blank" rel="noopener">CBS Sports box score</a>.</p>
+
+      <blockquote>
+        <p><strong>Lions vs Bengals, the key facts:</strong></p>
+        <ul>
+          <li><strong>Final score:</strong> Lions 37, Bengals 24</li>
+          <li><strong>Date and venue:</strong> Sunday, October 5, 2025 (Week 5), Paycor Stadium, Cincinnati. Attendance 66,115.</li>
+          <li><strong>Top passer:</strong> Jared Goff (DET), 19 of 23 for 258 yards, 3 TD, 0 INT, 153.0 rating</li>
+          <li><strong>Top rusher:</strong> David Montgomery (DET), 18 carries for 65 yards and 1 TD, plus a 3-yard TD pass</li>
+          <li><strong>Top receiver:</strong> Ja'Marr Chase (CIN), 6 catches for 110 yards and 2 TD</li>
+          <li><strong>Turnovers:</strong> Lions defense intercepted Jake Browning three times</li>
+          <li><strong>Records after the game:</strong> Lions 4-1, Bengals 2-3</li>
+        </ul>
+      </blockquote>
+
+      <p>Which game is this? This is the most recent regular-season Lions vs Bengals game, and the one most pages for this search describe. The teams met again on August 13, 2026, in a preseason opener at Paycor Stadium that Cincinnati won 16-14. That preseason game, plus both teams sitting at 7-2 entering Week 11 of the 2026 season, has brought fresh searches for this matchup. The preseason result is in the recent meetings table below.</p>
+
+      <h2>What was the Lions vs Bengals score by quarter?</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>Detroit Lions</td><td>7</td><td>7</td><td>14</td><td>9</td><td>37</td></tr>
+          <tr><td>Cincinnati Bengals</td><td>0</td><td>3</td><td>0</td><td>21</td><td>24</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scoring plays</h3>
+      <ul>
+        <li><strong>Q1, 10:50:</strong> Sam LaPorta 10-yard pass from Jared Goff, Jake Bates kick (DET 7-0)</li>
+        <li><strong>Q2, 12:16:</strong> Brock Wright 3-yard pass from David Montgomery, Bates kick (DET 14-0)</li>
+        <li><strong>Q2, 0:00:</strong> Evan McPherson 50-yard field goal (DET 14-3)</li>
+        <li><strong>Q3, 11:25:</strong> Jahmyr Gibbs 20-yard pass from Goff, Bates kick (DET 21-3)</li>
+        <li><strong>Q3, 5:43:</strong> Montgomery 8-yard run, Bates kick (DET 28-3)</li>
+        <li><strong>Q4, 14:51:</strong> Ja'Marr Chase 15-yard pass from Jake Browning, McPherson kick (DET 28-10)</li>
+        <li><strong>Q4, 10:22:</strong> Chase 64-yard pass from Browning, McPherson kick (DET 28-17)</li>
+        <li><strong>Q4, 5:14:</strong> Isaac TeSlaa 12-yard pass from Goff, Bates kick (DET 35-17)</li>
+        <li><strong>Q4, 3:01:</strong> Tee Higgins 2-yard pass from Browning, McPherson kick (DET 35-24)</li>
+        <li><strong>Q4, 1:49:</strong> Derrick Barnes sacks Browning in the end zone for a safety (DET 37-24)</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1758118473790-e626fa4c7c7c?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Football players running onto the field between rows of cheering people" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Who led in passing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>C/ATT</th><th>Yards</th><th>TD</th><th>INT</th><th>Sacked</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>Jared Goff (DET)</td><td>19/23</td><td>258</td><td>3</td><td>0</td><td>4 for 14 yds</td><td>153.0</td></tr>
+          <tr><td>David Montgomery (DET)</td><td>1/1</td><td>3</td><td>1</td><td>0</td><td>0</td><td>118.8</td></tr>
+          <tr><td>Jake Browning (CIN)</td><td>26/40</td><td>251</td><td>3</td><td>3</td><td>2 for 14 yds</td><td>76.1</td></tr>
+        </tbody>
+      </table>
+      <p>Browning started in place of Joe Burrow, who injured his toe on September 14 against Jacksonville, the Associated Press noted.</p>
+
+      <h2>Who led in rushing?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Carries</th><th>Yards</th><th>TD</th><th>Long</th></tr></thead>
+        <tbody>
+          <tr><td>David Montgomery (DET)</td><td>18</td><td>65</td><td>1</td><td>19</td></tr>
+          <tr><td>Jahmyr Gibbs (DET)</td><td>12</td><td>54</td><td>0</td><td>9</td></tr>
+          <tr><td>Jake Browning (CIN)</td><td>4</td><td>31</td><td>0</td><td>13</td></tr>
+          <tr><td>Samaje Perine (CIN)</td><td>4</td><td>27</td><td>0</td><td>10</td></tr>
+          <tr><td>Chase Brown (CIN)</td><td>8</td><td>27</td><td>0</td><td>6</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Who led in receiving?</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Receptions</th><th>Targets</th><th>Yards</th><th>TD</th></tr></thead>
+        <tbody>
+          <tr><td>Amon-Ra St. Brown (DET)</td><td>8</td><td>9</td><td>100</td><td>0</td></tr>
+          <tr><td>Sam LaPorta (DET)</td><td>5</td><td>6</td><td>92</td><td>1</td></tr>
+          <tr><td>Jahmyr Gibbs (DET)</td><td>2</td><td>2</td><td>33</td><td>1</td></tr>
+          <tr><td>Isaac TeSlaa (DET)</td><td>1</td><td>1</td><td>12</td><td>1</td></tr>
+          <tr><td>Brock Wright (DET)</td><td>2</td><td>3</td><td>9</td><td>1</td></tr>
+          <tr><td>Ja'Marr Chase (CIN)</td><td>6</td><td>10</td><td>110</td><td>2</td></tr>
+          <tr><td>Andrei Iosivas (CIN)</td><td>5</td><td>7</td><td>82</td><td>0</td></tr>
+          <tr><td>Tee Higgins (CIN)</td><td>3</td><td>7</td><td>22</td><td>1</td></tr>
+          <tr><td>Chase Brown (CIN)</td><td>7</td><td>8</td><td>21</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <p>Chase's 15-yard touchdown had a completion probability of 12.5% per NFL Next Gen Stats, the most improbable touchdown pass of the season at that point, the AP reported. It was also Cincinnati's first touchdown in 20 possessions.</p>
+
+      <h2>What were the notable defensive stats?</h2>
+      <ul>
+        <li><strong>Lions tackle leaders:</strong> Jack Campbell 11, Derrick Barnes 8, Amik Robertson 6.</li>
+        <li><strong>Lions sacks:</strong> Derrick Barnes (for a safety) and Aidan Hutchinson, 1 each. Hutchinson also had 5 quarterback hits.</li>
+        <li><strong>Lions interceptions:</strong> Alex Anzalone, Amik Robertson and Kerby Joseph, 1 each.</li>
+        <li><strong>Bengals tackle leaders:</strong> Demetrius Knight Jr., Logan Wilson and T.J. Slaton Jr., 8 each.</li>
+        <li><strong>Bengals sacks:</strong> Trey Hendrickson 2, Joseph Ossai 1, Myles Murphy 1.</li>
+      </ul>
+
+      <h2>How did the team stats compare?</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Lions</th><th>Bengals</th></tr></thead>
+        <tbody>
+          <tr><td>Total yards</td><td>365</td><td>322</td></tr>
+          <tr><td>Net passing yards</td><td>247</td><td>237</td></tr>
+          <tr><td>Rushing yards</td><td>118 (33 carries)</td><td>85 (16 carries)</td></tr>
+          <tr><td>First downs</td><td>23</td><td>21</td></tr>
+          <tr><td>Third-down conversions</td><td>2 of 8</td><td>4 of 11</td></tr>
+          <tr><td>Red zone (TD/trips)</td><td>5 of 6</td><td>2 of 2</td></tr>
+          <tr><td>Turnovers</td><td>1</td><td>3</td></tr>
+          <tr><td>Penalties</td><td>8 for 56</td><td>6 for 30</td></tr>
+          <tr><td>Time of possession</td><td>34:21</td><td>25:39</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How was the game decided?</h2>
+      <p>Detroit settled it in the first three quarters. Goff missed on only four throws, the Lions scored touchdowns on 5 of 6 red zone trips, and the defense picked off Browning three times. Detroit led 28-3 after Montgomery's 8-yard run with 5:43 left in the third quarter.</p>
+      <p>The key trick play came in the second quarter. On second-and-goal at the Cincinnati 3, Montgomery lined up at quarterback in a wildcat look and threw to a wide-open Brock Wright. Montgomery played quarterback at Mt. Healthy High School in Cincinnati, the AP noted.</p>
+      <p>Cincinnati scored 21 points in the fourth quarter, including Chase's two touchdowns, but Goff's 12-yard pass to TeSlaa and Barnes's late safety closed it out. "It's super meaningful to come back home where it all started for me and being able to show my arm," Montgomery said.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1730657882933-688f3e843a52?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="American football resting on the grass near a yard line" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>What did it mean, and where do both teams stand now?</h2>
+      <p>The win was Detroit's fourth straight and moved it to 4-1. It was also the Lions' first win over the Bengals since 1992, ending a seven-game Cincinnati winning streak in the series, according to the AP. The Bengals fell to 2-3 with their third straight loss after Burrow's injury.</p>
+      <p>In 2026, both teams are 7-2 as of ESPN's team pages on November 17, 2026. Detroit beat New England 35-10 on November 15, and Cincinnati beat Pittsburgh 38-18 that evening.</p>
+      <ul>
+        <li><strong>Lions:</strong> host Tampa Bay on November 22, 2026, then Chicago on Thanksgiving, November 26.</li>
+        <li><strong>Bengals:</strong> at Washington on Monday, November 23, 2026, then New Orleans at home on November 29.</li>
+      </ul>
+
+      <h2>Recent Lions vs Bengals games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Type</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>August 13, 2026</td><td>Bengals 16, Lions 14</td><td>Preseason Week 1</td><td>Paycor Stadium, Cincinnati</td></tr>
+          <tr><td>October 5, 2025</td><td>Lions 37, Bengals 24</td><td>Regular season</td><td>Paycor Stadium, Cincinnati</td></tr>
+          <tr><td>October 17, 2021</td><td>Bengals 34, Lions 11</td><td>Regular season</td><td>Ford Field, Detroit</td></tr>
+        </tbody>
+      </table>
+      <p>In the 2026 preseason game, Joe Flacco threw a 4-yard touchdown to Jack Endries and Evan McPherson kicked three field goals, including a 56-yarder, per the <a href="https://www.espn.com/nfl/game/_/gameId/401873272/lions-bengals" target="_blank" rel="noopener">ESPN game page</a>.</p>
+      <p>For more NFL box scores, see our <a href="/sports/bills-vs-rams-match-player-stats/">Bills vs Rams match player stats</a>, <a href="/sports/chiefs-vs-broncos-match-player-stats/">Chiefs vs Broncos player stats</a>, or the <a href="/category/sports/">GBNT Sports section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who won the last Lions vs Bengals game?</h3>
+      <p>In the regular season, the Lions won 37-24 on October 5, 2025. The most recent meeting of any kind was a 2026 preseason game on August 13, which the Bengals won 16-14.</p>
+      <h3>Who was the best player in Lions vs Bengals?</h3>
+      <p>Jared Goff went 19 of 23 for 258 yards and three touchdowns. David Montgomery added a rushing and a passing touchdown. For Cincinnati, Ja'Marr Chase had 110 yards and two scores.</p>
+      <h3>Did Joe Burrow play in the Lions vs Bengals game?</h3>
+      <p>No. Jake Browning started while Burrow was out with a toe injury. Browning threw for 251 yards with three touchdowns and three interceptions.</p>
+      <h3>How many interceptions did the Lions have?</h3>
+      <p>Three: Alex Anzalone, Amik Robertson and Kerby Joseph each picked off Browning.</p>
+
+      <p><em>Checked on November 17, 2026, against the <a href="https://www.espn.com/nfl/boxscore/_/gameId/401772854" target="_blank" rel="noopener">ESPN box score and AP recap</a>, the <a href="https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20251005_DET@CIN/" target="_blank" rel="noopener">CBS Sports box score</a> and ESPN's 2026 team schedules. Team passing yards are net of sack yardage. Box score figures are used where the AP recap differs by a yard. The <a href="https://buzzsport.co.uk/detroit-lions-vs-bengals-match-player-stats/" target="_blank" rel="nofollow noopener">Buzzsport page</a> for this search covers the same 2025 game.</em></p>
+    `
+  },
+  {
+    id: "yankees-vs-astros-match-player-stats",
+    title: "Yankees vs Astros Match Player Stats: Walker, Pena Homer as Houston Beats Cole 5-1",
+    excerpt: "Yankees vs Astros match player stats from Houston's 5-1 win on Aug. 27, 2026: batting, pitching, line score and how the season series ended 3-3.",
+    category: "Sports",
+    categorySlug: "sports",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T14:20:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1475440197469-e367ec8eeb19?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Elevated view of a baseball stadium full of fans with the city skyline behind",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["New York Yankees", "Houston Astros", "MLB", "Gerrit Cole", "Christian Walker", "Match Player Stats"],
+    content: `
+      <p class="lead">The Houston Astros beat the New York Yankees 5-1 on Thursday, August 27, 2026, at Yankee Stadium, in the most recent game between the two teams. Christian Walker went 3 for 4 with a two-run homer off Gerrit Cole, Jeremy Pena added a solo shot, and four Houston pitchers held New York to five hits. Below are the full Yankees vs Astros match player stats, checked against the <a href="https://www.espn.com/mlb/boxscore/_/gameId/401816696" target="_blank" rel="noopener">ESPN box score</a> and the official <a href="https://www.mlb.com/gameday/823503" target="_blank" rel="noopener">MLB.com game data</a>.</p>
+
+      <blockquote>
+        <p><strong>Yankees vs Astros, the key facts:</strong></p>
+        <ul>
+          <li><strong>Final score:</strong> Astros 5, Yankees 1</li>
+          <li><strong>Date and venue:</strong> Thursday, August 27, 2026, Yankee Stadium, Bronx, New York. Attendance 41,203. Time of game 2:37.</li>
+          <li><strong>Winning pitcher:</strong> Hayden Wesneski (HOU), now 4-1</li>
+          <li><strong>Losing pitcher:</strong> Gerrit Cole (NYY), now 7-7</li>
+          <li><strong>Home runs:</strong> Christian Walker (2-run, 6th) and Jeremy Pena (solo, 7th), both Houston</li>
+          <li><strong>Hits and errors:</strong> Astros 9 hits, 0 errors. Yankees 5 hits, 2 errors.</li>
+          <li><strong>Result:</strong> Houston won the three-game series 2-1. The 2026 season series finished 3-3.</li>
+        </ul>
+      </blockquote>
+
+      <p>Which game is this? Some pages ranking for this search, such as <a href="https://buzzsport.co.uk/new-york-yankees-vs-houston-astros-match-player-stats/" target="_blank" rel="nofollow noopener">Buzzsport</a>, cover the April 24 to 26 series in Houston. This article covers the newer August game, the last time the teams met in 2026. They did not meet in the postseason: Houston was knocked out in the Wild Card round and New York in the Division Series (details below). Those October exits, and a 3-3 season split, are why fans are looking back at this matchup now. All six 2026 results are in the table near the end.</p>
+
+      <h2>What was the Yankees vs Astros line score?</h2>
+      <table>
+        <thead><tr><th>Team</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>R</th><th>H</th><th>E</th></tr></thead>
+        <tbody>
+          <tr><td>Houston Astros</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>2</td><td>1</td><td>1</td><td>0</td><td>5</td><td>9</td><td>0</td></tr>
+          <tr><td>New York Yankees</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>5</td><td>2</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scoring plays</h3>
+      <ul>
+        <li><strong>3rd inning:</strong> Isaac Paredes singled to right, Jeremy Pena scored (HOU 1-0)</li>
+        <li><strong>6th inning:</strong> Christian Walker homered to right center (369 feet), Daulton Varsho scored (HOU 3-0)</li>
+        <li><strong>6th inning:</strong> Cody Bellinger sacrifice fly to center, Ben Rice scored (HOU 3-1)</li>
+        <li><strong>7th inning:</strong> Pena homered to left (382 feet) (HOU 4-1)</li>
+        <li><strong>8th inning:</strong> Walker scored on a throwing error by third baseman Jose Caballero, after a fielding error by shortstop George Lombard Jr. (HOU 5-1)</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1529768167801-9173d94c2a42?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Batter swinging at a pitch as the catcher and umpire crouch behind home plate" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Astros batting stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>AB</th><th>R</th><th>H</th><th>RBI</th><th>HR</th><th>BB</th><th>SO</th><th>AVG</th></tr></thead>
+        <tbody>
+          <tr><td>Jeremy Pena, SS</td><td>4</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td><td>.282</td></tr>
+          <tr><td>Yordan Alvarez, DH</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>.319</td></tr>
+          <tr><td>Isaac Paredes, 3B</td><td>4</td><td>0</td><td>2</td><td>1</td><td>0</td><td>1</td><td>1</td><td>.261</td></tr>
+          <tr><td>Jose Altuve, 2B</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.245</td></tr>
+          <tr><td>Nick Allen, 2B</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.264</td></tr>
+          <tr><td>Daulton Varsho, CF</td><td>4</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>2</td><td>.234</td></tr>
+          <tr><td>Christian Walker, 1B</td><td>4</td><td>2</td><td>3</td><td>2</td><td>1</td><td>0</td><td>0</td><td>.233</td></tr>
+          <tr><td>Yainer Diaz, C</td><td>4</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.261</td></tr>
+          <tr><td>Taylor Trammell, LF</td><td>4</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.209</td></tr>
+          <tr><td>Cam Smith, RF</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.214</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Yankees batting stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>AB</th><th>R</th><th>H</th><th>RBI</th><th>HR</th><th>BB</th><th>SO</th><th>AVG</th></tr></thead>
+        <tbody>
+          <tr><td>Trent Grisham, CF</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>.217</td></tr>
+          <tr><td>Ben Rice, DH</td><td>4</td><td>1</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.253</td></tr>
+          <tr><td>Luis Garcia Jr., 1B</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>.284</td></tr>
+          <tr><td>Cody Bellinger, LF</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>.256</td></tr>
+          <tr><td>George Lombard Jr., SS</td><td>4</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2</td><td>.264</td></tr>
+          <tr><td>Spencer Jones, RF</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>.229</td></tr>
+          <tr><td>Heliot Ramos, PH</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>.240</td></tr>
+          <tr><td>Jazz Chisholm Jr., 2B</td><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>.227</td></tr>
+          <tr><td>Amed Rosario, PH</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.225</td></tr>
+          <tr><td>Austin Wells, C</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>.180</td></tr>
+          <tr><td>Jose Caballero, 3B</td><td>3</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.234</td></tr>
+        </tbody>
+      </table>
+      <p>AVG is the season average after this game, per ESPN.</p>
+
+      <h2>Who pitched, and how did they do?</h2>
+      <table>
+        <thead><tr><th>Pitcher</th><th>IP</th><th>H</th><th>R</th><th>ER</th><th>BB</th><th>SO</th><th>Pitches-strikes</th></tr></thead>
+        <tbody>
+          <tr><td>Hayden Wesneski (HOU), W 4-1</td><td>5.0</td><td>3</td><td>1</td><td>1</td><td>2</td><td>6</td><td>91-55</td></tr>
+          <tr><td>Steven Okert (HOU), Hold</td><td>1.0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>12-8</td></tr>
+          <tr><td>AJ Blubaugh (HOU), Hold</td><td>2.0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>3</td><td>32-21</td></tr>
+          <tr><td>Josh Hader (HOU)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>8-7</td></tr>
+          <tr><td>Gerrit Cole (NYY), L 7-7</td><td>6.0</td><td>6</td><td>3</td><td>3</td><td>1</td><td>5</td><td>79-59</td></tr>
+          <tr><td>Yerry De los Santos (NYY)</td><td>1.0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>14-8</td></tr>
+          <tr><td>Justin Topa (NYY)</td><td>2.0</td><td>2</td><td>1</td><td>0</td><td>1</td><td>2</td><td>34-23</td></tr>
+        </tbody>
+      </table>
+      <p>Wesneski left after a runner reached in the sixth, and that runner (Rice) scored off Okert, so the run was charged to Wesneski. Houston's staff struck out 11 Yankees. Topa's run was unearned because of the two errors in the eighth.</p>
+
+      <h2>How was the game decided?</h2>
+      <p>Cole kept it close for five innings, allowing only Paredes' RBI single in the third. In the sixth he walked Varsho, his only walk of the night, and Walker hit a 1-0 curveball for a two-run homer and a 3-0 lead, the Associated Press reported in its recap on ESPN.</p>
+      <p>New York answered only with Bellinger's sacrifice fly. Pena homered off De los Santos in the seventh, and the Yankees' defense gave away the fifth run in the eighth when Diaz's grounder deflected off Lombard's glove and Caballero threw wildly to first. The AP noted Lombard became the first Yankees shortstop since Roger Peckinpaugh in 1915 to make an error in six straight games.</p>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1582650448629-3c854f356544?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="White baseball with red stitching lying on green grass" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>What did it mean for the standings and the postseason?</h2>
+      <p>After the game Houston was 67-67 and led the AL West by one game over Texas, while the Yankees were 75-58, four games behind first-place Tampa Bay in the AL East, the AP reported.</p>
+      <p>Both teams made the playoffs. According to <a href="https://statsapi.mlb.com/api/v1/standings?leagueId=103&amp;season=2026&amp;standingsTypes=regularSeason" target="_blank" rel="noopener">MLB's official 2026 standings</a>, the Astros won the AL West at 81-81 and the Yankees finished 93-68, second in the AL East. MLB's postseason schedule shows:</p>
+      <table>
+        <thead><tr><th>Team</th><th>Round</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>Astros</td><td>AL Wild Card Series</td><td>Lost 2-0 to the Chicago White Sox (6-3 on September 29, 7-3 on September 30, both in Houston)</td></tr>
+          <tr><td>Yankees</td><td>AL Wild Card Series</td><td>Beat the Boston Red Sox 2-0 (9-0 and 9-2 at Yankee Stadium)</td></tr>
+          <tr><td>Yankees</td><td>AL Division Series</td><td>Lost 3-0 to the Tampa Bay Rays (1-0, 5-2 and 4-3, ending October 7)</td></tr>
+        </tbody>
+      </table>
+      <p>Both seasons are over, so the next Yankees vs Astros game will come in 2027. We have not yet verified the 2027 dates.</p>
+
+      <h2>All 2026 Yankees vs Astros games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>April 24, 2026</td><td>Yankees 12, Astros 4</td><td>Daikin Park, Houston</td></tr>
+          <tr><td>April 25, 2026</td><td>Yankees 8, Astros 3</td><td>Daikin Park, Houston</td></tr>
+          <tr><td>April 26, 2026</td><td>Astros 7, Yankees 4</td><td>Daikin Park, Houston</td></tr>
+          <tr><td>August 25, 2026</td><td>Astros 9, Yankees 7</td><td>Yankee Stadium, New York</td></tr>
+          <tr><td>August 26, 2026</td><td>Yankees 9, Astros 3</td><td>Yankee Stadium, New York</td></tr>
+          <tr><td>August 27, 2026</td><td>Astros 5, Yankees 1</td><td>Yankee Stadium, New York</td></tr>
+        </tbody>
+      </table>
+      <p>Note that the April 26 game was a 7-4 Houston win in MLB's and ESPN's records, not a Yankees win as some pages state. For another MLB box score, see our <a href="/articles/washington-nationals-vs-chicago-cubs-match-player-stats/">Nationals vs Cubs match player stats</a>, read about <a href="/articles/viprow-us-com/">legal ways to watch sports online</a>, or visit the <a href="/category/sports/">GBNT Sports section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who won the last Yankees vs Astros game?</h3>
+      <p>The Astros won 5-1 on August 27, 2026, at Yankee Stadium. It was the final regular-season meeting, and the teams did not face each other in the 2026 postseason.</p>
+      <h3>Who won the 2026 Yankees vs Astros season series?</h3>
+      <p>Neither. Each team won three of the six games. New York took two of three in Houston in April, and Houston took two of three in New York in August.</p>
+      <h3>How did Gerrit Cole pitch against the Astros?</h3>
+      <p>Cole threw six innings and allowed three runs on six hits with one walk and five strikeouts, on 79 pitches. He took the loss, falling to 7-7.</p>
+      <h3>Who hit home runs in the game?</h3>
+      <p>Christian Walker hit a two-run homer in the sixth and Jeremy Pena a solo homer in the seventh, both for Houston. The Yankees did not homer.</p>
+
+      <p><em>Checked on November 17, 2026, against the <a href="https://www.espn.com/mlb/boxscore/_/gameId/401816696" target="_blank" rel="noopener">ESPN box score and AP recap</a>, official MLB Stats API data behind <a href="https://www.mlb.com/gameday/823503" target="_blank" rel="noopener">MLB.com Gameday</a> (box score, line score, 2026 schedule, standings and postseason results) and ESPN's 2026 Yankees schedule. Where the AP recap and the box score differ on an inning, the official box score is used.</em></p>
+    `
+  },
+  {
     id: "voozon-com-review",
     title: "Voozon.com Review: What the Site Is, Who Runs It and Whether It Is Safe or Legit in 2026",
     excerpt: "Voozon.com is a multi-topic WordPress blog that sells guest posts and backlinks. Here is what we verified about its history, safety and legitimacy.",
