@@ -1,6 +1,341 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "giants-vs-dodgers-match-player-stats",
+    title: "Giants vs Dodgers Match Player Stats: Pages' 10th-Inning HR Seals 5-1 Dodgers Win",
+    excerpt: "Giants vs Dodgers match player stats from Sept. 27, 2026: Andy Pages' 3-run HR in the 10th gave LA a 5-1 win and its 100th victory. Full box score.",
+    category: "Sports",
+    categorySlug: "sports",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T16:00:00Z",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1784550806155-01d8e2aba97a?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Baseball game in a crowded stadium under bright lights",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["San Francisco Giants", "Los Angeles Dodgers", "MLB", "Andy Pages", "Box Score", "Match Player Stats"],
+    content: `
+      <p class="lead">The Los Angeles Dodgers beat the San Francisco Giants 5-1 in 10 innings on Sunday, September 27, 2026, at Oracle Park, in the last game between the rivals this year. Alex Call doubled home the go-ahead run and Andy Pages hit a three-run homer in the 10th, giving Los Angeles its 100th win and a sweep of the final series. Below are the full Giants vs Dodgers match player stats, checked against the <a href="https://www.espn.com/mlb/boxscore/_/gameId/401817116" target="_blank" rel="noopener">ESPN box score</a> and the official <a href="https://www.mlb.com/gameday/823164" target="_blank" rel="noopener">MLB.com game data</a>.</p>
+
+      <blockquote>
+        <p><strong>Giants vs Dodgers, the key facts:</strong></p>
+        <ul>
+          <li><strong>Final score:</strong> Dodgers 5, Giants 1 (10 innings)</li>
+          <li><strong>Date and venue:</strong> Sunday, September 27, 2026, Oracle Park, San Francisco. Attendance 40,145. Time of game 2:48.</li>
+          <li><strong>Winning pitcher:</strong> Alex Vesia (LAD), now 3-1</li>
+          <li><strong>Losing pitcher:</strong> Duncan Davitt (SF), now 0-1</li>
+          <li><strong>Home run:</strong> Andy Pages (LAD), three-run shot in the 10th, his 23rd of the season</li>
+          <li><strong>Hits and errors:</strong> Dodgers 8 hits, 0 errors. Giants 5 hits, 1 error.</li>
+          <li><strong>Season series:</strong> Dodgers won 9 of the 13 regular-season games, including the last eight.</li>
+        </ul>
+      </blockquote>
+
+      <p>Which game is this? Some pages ranking for this search, such as <a href="https://buzzsport.co.uk/san-francisco-giants-vs-dodgers-match-player-stats/" target="_blank" rel="nofollow noopener">Buzzsport</a>, cover an earlier meeting. This article covers the regular-season finale, the most recent Giants vs Dodgers game. Interest in the matchup has stayed high since the season ended: the Dodgers finished 100-62 and then went out of the playoffs in the National League Championship Series on October 15, while the Giants finished 65-97 in Tony Vitello's first year as manager. All 13 results from 2026 are listed further down.</p>
+
+      <h2>What was the Giants vs Dodgers line score?</h2>
+      <table>
+        <thead><tr><th>Team</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>R</th><th>H</th><th>E</th></tr></thead>
+        <tbody>
+          <tr><td>Los Angeles Dodgers</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>4</td><td>5</td><td>8</td><td>0</td></tr>
+          <tr><td>San Francisco Giants</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>5</td><td>1</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Scoring plays</h3>
+      <ul>
+        <li><strong>2nd inning:</strong> Scott Bandura singled to center, Shay Whitcomb scored (SF 1-0). It was Bandura's first major-league RBI.</li>
+        <li><strong>4th inning:</strong> Andy Pages sacrifice fly to right, Kyle Tucker scored (1-1)</li>
+        <li><strong>10th inning:</strong> Alex Call doubled to left, placed runner Miguel Rojas scored (LAD 2-1)</li>
+        <li><strong>10th inning:</strong> Pages homered to left after an intentional walk to Max Muncy, Call and Muncy scored (LAD 5-1)</li>
+      </ul>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1776184046370-1b38b855040c?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Baseball pitcher in a red jersey winding up to throw from the mound" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Dodgers batting stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>AB</th><th>R</th><th>H</th><th>RBI</th><th>HR</th><th>BB</th><th>SO</th><th>AVG</th></tr></thead>
+        <tbody>
+          <tr><td>Shohei Ohtani, DH</td><td>3</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.275</td></tr>
+          <tr><td>Dalton Rushing, PH-DH</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.246</td></tr>
+          <tr><td>Mookie Betts, SS</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>.257</td></tr>
+          <tr><td>Miguel Rojas, SS</td><td>2</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>.267</td></tr>
+          <tr><td>Freddie Freeman, 1B</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>.288</td></tr>
+          <tr><td>Enrique Hernandez, 1B</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.222</td></tr>
+          <tr><td>Kyle Tucker, RF</td><td>5</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.233</td></tr>
+          <tr><td>Teoscar Hernandez, LF</td><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.267</td></tr>
+          <tr><td>Alex Call, LF</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>.233</td></tr>
+          <tr><td>Max Muncy, 3B</td><td>3</td><td>1</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>.252</td></tr>
+          <tr><td>Andy Pages, CF</td><td>3</td><td>1</td><td>1</td><td>4</td><td>1</td><td>1</td><td>1</td><td>.274</td></tr>
+          <tr><td>Hunter Feduccia, C</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>.221</td></tr>
+          <tr><td>Tommy Edman, 2B</td><td>3</td><td>0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td><td>.247</td></tr>
+        </tbody>
+      </table>
+      <p>Doubles: Muncy, Edman and Call. Edman stole second. The Dodgers went 2 for 13 with runners in scoring position and left 10 on base.</p>
+
+      <h2>Giants batting stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>AB</th><th>R</th><th>H</th><th>RBI</th><th>HR</th><th>BB</th><th>SO</th><th>AVG</th></tr></thead>
+        <tbody>
+          <tr><td>Jonah Cox, 2B</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>.252</td></tr>
+          <tr><td>Bo Davidson, RF</td><td>4</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>2</td><td>.350</td></tr>
+          <tr><td>Victor Bericoto, DH</td><td>2</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>.241</td></tr>
+          <tr><td>Grant McCray, PR-DH</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>.143</td></tr>
+          <tr><td>Marcelo Mayer, 3B</td><td>4</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>.209</td></tr>
+          <tr><td>Shay Whitcomb, 1B</td><td>2</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.207</td></tr>
+          <tr><td>Turner Hill, PH-LF</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>.219</td></tr>
+          <tr><td>Drew Cavanaugh, C</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>.229</td></tr>
+          <tr><td>Scott Bandura, LF</td><td>3</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>.207</td></tr>
+          <tr><td>Brett Harris, 1B</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>.136</td></tr>
+          <tr><td>Christian Koss, SS</td><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>.217</td></tr>
+          <tr><td>Drew Gilbert, CF</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>.238</td></tr>
+        </tbody>
+      </table>
+      <p>AVG is the season average after this game, per the official box score. San Francisco struck out 16 times and went 1 for 10 with runners in scoring position.</p>
+
+      <h2>Who pitched, and how did they do?</h2>
+      <p>Both teams treated the finale as a bullpen game. The Dodgers used seven pitchers and the Giants used ten, none for more than two innings.</p>
+      <table>
+        <thead><tr><th>Pitcher</th><th>IP</th><th>H</th><th>R</th><th>ER</th><th>BB</th><th>SO</th><th>Pitches-strikes</th></tr></thead>
+        <tbody>
+          <tr><td>Jack Dreyer (LAD)</td><td>2.0</td><td>2</td><td>1</td><td>1</td><td>0</td><td>2</td><td>32-22</td></tr>
+          <tr><td>Justin Wrobleski (LAD)</td><td>2.0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>3</td><td>27-18</td></tr>
+          <tr><td>Roki Sasaki (LAD)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>14-9</td></tr>
+          <tr><td>Edwin Diaz (LAD)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>11-8</td></tr>
+          <tr><td>Bobby Miller (LAD)</td><td>2.0</td><td>1</td><td>0</td><td>0</td><td>2</td><td>5</td><td>42-25</td></tr>
+          <tr><td>Alex Vesia (LAD), W 3-1</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>9-7</td></tr>
+          <tr><td>Evan Phillips (LAD)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>14-10</td></tr>
+          <tr><td>Carson Seymour (SF)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>10-6</td></tr>
+          <tr><td>Joel Kuhnel (SF)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>12-7</td></tr>
+          <tr><td>Seth Lonsway (SF), Hold</td><td>0.1</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>7-4</td></tr>
+          <tr><td>Sam Hentges (SF), Hold</td><td>1.0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>21-14</td></tr>
+          <tr><td>Braxton Roxby (SF), Blown save</td><td>1.2</td><td>0</td><td>0</td><td>0</td><td>2</td><td>0</td><td>28-13</td></tr>
+          <tr><td>Dylan Smith (SF)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>13-8</td></tr>
+          <tr><td>Jason Foley (SF)</td><td>1.0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>15-11</td></tr>
+          <tr><td>Trent Harris (SF)</td><td>1.0</td><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>13-11</td></tr>
+          <tr><td>Camilo Doval (SF)</td><td>1.0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>15-9</td></tr>
+          <tr><td>Duncan Davitt (SF), L 0-1</td><td>1.0</td><td>2</td><td>4</td><td>3</td><td>1</td><td>0</td><td>10-7</td></tr>
+        </tbody>
+      </table>
+      <p>Davitt was charged with four runs, three earned, because the 10th inning began with an automatic runner on second. The Dodgers' staff combined for 16 strikeouts, with Miller striking out five in two innings.</p>
+
+      <h2>How was the game decided?</h2>
+      <p>After the teams traded single runs in the second and fourth innings, the score stayed 1-1 until extra innings. Giants manager Tony Vitello was ejected in the third inning by plate umpire Ryan Blakney for arguing a checked-swing call on Mookie Betts, his major-league-high seventh ejection of the season, according to the Associated Press recap on ESPN.</p>
+      <p>In the 10th, Call lined a two-out double off Davitt to score Rojas. San Francisco walked Muncy intentionally, and Pages then homered to left for his 23rd of the season. Vesia had pitched a scoreless ninth for the win, and Phillips closed out the 10th.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1489460427746-b6296f4bc3f5?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Pitcher following through after throwing a fastball" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>What did it mean for the standings and the postseason?</h2>
+      <p>The game was the last of the regular season. According to <a href="https://statsapi.mlb.com/api/v1/standings?leagueId=104&amp;season=2026&amp;standingsTypes=regularSeason" target="_blank" rel="noopener">MLB's official 2026 standings</a>, the Dodgers won the NL West at 100-62, nine games ahead of San Diego, while the Giants finished fourth at 65-97, 35 games back. The AP noted the Dodgers' 49-32 road record was the best in the majors.</p>
+      <p>The Giants did not make the playoffs, so the rivals did not meet in October. MLB's postseason results show the Dodgers' run (Dodgers' score listed first):</p>
+      <table>
+        <thead><tr><th>Round</th><th>Opponent</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>NL Division Series</td><td>Atlanta Braves</td><td>Won 3-1 (5-3, 2-3, 3-1, 4-1), ending October 7</td></tr>
+          <tr><td>NL Championship Series</td><td>Milwaukee Brewers</td><td>Lost 4-0 (1-2, 4-7, 2-6, 4-6), ending October 15</td></tr>
+        </tbody>
+      </table>
+
+      <h2>All 2026 Giants vs Dodgers games</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>April 21, 2026</td><td>Giants 3, Dodgers 1</td><td>Oracle Park, San Francisco</td></tr>
+          <tr><td>April 22, 2026</td><td>Giants 3, Dodgers 0</td><td>Oracle Park, San Francisco</td></tr>
+          <tr><td>April 23, 2026</td><td>Dodgers 3, Giants 0</td><td>Oracle Park, San Francisco</td></tr>
+          <tr><td>May 11, 2026</td><td>Giants 9, Dodgers 3</td><td>Dodger Stadium, Los Angeles</td></tr>
+          <tr><td>May 12, 2026</td><td>Giants 6, Dodgers 2</td><td>Dodger Stadium, Los Angeles</td></tr>
+          <tr><td>May 13, 2026</td><td>Dodgers 4, Giants 0</td><td>Dodger Stadium, Los Angeles</td></tr>
+          <tr><td>May 14, 2026</td><td>Dodgers 5, Giants 2</td><td>Dodger Stadium, Los Angeles</td></tr>
+          <tr><td>September 18, 2026</td><td>Dodgers 8, Giants 2</td><td>Dodger Stadium, Los Angeles</td></tr>
+          <tr><td>September 19, 2026</td><td>Dodgers 10, Giants 4</td><td>Dodger Stadium, Los Angeles</td></tr>
+          <tr><td>September 20, 2026</td><td>Dodgers 3, Giants 1</td><td>Dodger Stadium, Los Angeles</td></tr>
+          <tr><td>September 25, 2026</td><td>Dodgers 2, Giants 0</td><td>Oracle Park, San Francisco</td></tr>
+          <tr><td>September 26, 2026</td><td>Dodgers 4, Giants 3</td><td>Oracle Park, San Francisco</td></tr>
+          <tr><td>September 27, 2026</td><td>Dodgers 5, Giants 1 (10 inn.)</td><td>Oracle Park, San Francisco</td></tr>
+        </tbody>
+      </table>
+      <p>San Francisco won four of the first five meetings, then lost the last eight.</p>
+
+      <h2>When do the Giants and Dodgers play next?</h2>
+      <p>MLB's 2027 schedule lists a spring training game on February 25, 2027, and the first regular-season meeting on May 6, 2027, at Dodger Stadium, the opener of a series there. Schedules can change, so check the clubs' sites closer to the date. For more MLB box scores, see our <a href="/sports/yankees-vs-astros-match-player-stats/">Yankees vs Astros match player stats</a> and <a href="/articles/washington-nationals-vs-chicago-cubs-match-player-stats/">Nationals vs Cubs player stats</a>, read about <a href="/articles/viprow-us-com/">legal ways to watch sports online</a>, or visit the <a href="/category/sports/">GBNT Sports section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who won the last Giants vs Dodgers game?</h3>
+      <p>The Dodgers won 5-1 in 10 innings on September 27, 2026, at Oracle Park. It was the final day of the regular season and completed a three-game sweep.</p>
+      <h3>Who won the 2026 Giants vs Dodgers season series?</h3>
+      <p>The Dodgers, 9-4. The Giants won four of the first five games in April and May, and Los Angeles won the remaining eight.</p>
+      <h3>Who hit the home run in the game?</h3>
+      <p>Andy Pages, a three-run homer off Duncan Davitt in the 10th inning. He finished with one hit and four RBIs, including a sacrifice fly in the fourth.</p>
+      <h3>How did Shohei Ohtani do?</h3>
+      <p>Ohtani went 1 for 3 as the designated hitter before Dalton Rushing replaced him. The AP reported he had come off the injured list (right biceps discomfort) that Wednesday.</p>
+
+      <p><em>Checked on November 17, 2026, against the <a href="https://www.espn.com/mlb/boxscore/_/gameId/401817116" target="_blank" rel="noopener">ESPN box score and AP recap</a> and official MLB Stats API data behind <a href="https://www.mlb.com/gameday/823164" target="_blank" rel="noopener">MLB.com Gameday</a> (box score, line score, 2026 and 2027 schedules, standings and postseason results).</em></p>
+    `
+  },
+  {
+    id: "lakers-vs-orlando-magic-match-player-stats",
+    title: "Lakers vs Orlando Magic Match Player Stats: Kennard's Late 3 Wins It 105-104",
+    excerpt: "Lakers vs Orlando Magic match player stats: Luka Doncic scored 33 and Luke Kennard hit the winning 3 in a 105-104 win on March 21, 2026. Full box score.",
+    category: "Sports",
+    categorySlug: "sports",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T16:10:00Z",
+    readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1765924705648-9a0731ac5202?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Basketball game under arena lights with a large crowd in the stands",
+    isTrending: false,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Los Angeles Lakers", "Orlando Magic", "NBA", "Luka Doncic", "LeBron James", "Match Player Stats"],
+    content: `
+      <p class="lead">The Los Angeles Lakers beat the Orlando Magic 105-104 on Saturday, March 21, 2026, at Kia Center in Orlando, in the most recent game between the two teams. Luke Kennard hit a 3-pointer with 0.6 seconds left, Luka Doncic scored 33 points, and LeBron James set the NBA record for regular-season games played. Below are the full Lakers vs Orlando Magic match player stats, checked against the <a href="https://www.espn.com/nba/boxscore/_/gameId/401810879" target="_blank" rel="noopener">ESPN box score</a> and the <a href="https://www.foxsports.com/nba/los-angeles-lakers-vs-orlando-magic-mar-21-2026-game-boxscore-44501" target="_blank" rel="noopener">FOX Sports box score</a>.</p>
+
+      <blockquote>
+        <p><strong>Lakers vs Magic, the key facts:</strong></p>
+        <ul>
+          <li><strong>Final score:</strong> Lakers 105, Magic 104</li>
+          <li><strong>Date and venue:</strong> Saturday, March 21, 2026, Kia Center, Orlando, Florida. Attendance 19,597.</li>
+          <li><strong>Game-winner:</strong> Luke Kennard 3-pointer with 0.6 seconds left, from a Marcus Smart inbounds pass</li>
+          <li><strong>Top scorers:</strong> Luka Doncic 33 and Austin Reaves 26 (LAL); Paolo Banchero 16 (ORL)</li>
+          <li><strong>Milestone:</strong> LeBron James played his 1,612th regular-season game, passing Robert Parish's record</li>
+          <li><strong>Records after the game:</strong> Lakers 46-25 (nine straight wins), Magic 38-32 (four straight losses)</li>
+          <li><strong>2025-26 season series:</strong> split 1-1</li>
+        </ul>
+      </blockquote>
+
+      <p>Which game is this? The teams have not met yet in the 2026-27 season, so the March 21 game is still the latest meeting. Searches have picked up because the Lakers have opened the new season 12-2, and because pages such as <a href="https://buzzsport.co.uk/lakers-vs-orlando-magic-match-player-stats/" target="_blank" rel="nofollow noopener">Buzzsport</a> rank for the matchup. The next game is on January 14, 2027 (details below).</p>
+
+      <h2>What were the Lakers vs Magic quarter scores?</h2>
+      <table>
+        <thead><tr><th>Team</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>Final</th></tr></thead>
+        <tbody>
+          <tr><td>Los Angeles Lakers</td><td>37</td><td>25</td><td>20</td><td>23</td><td>105</td></tr>
+          <tr><td>Orlando Magic</td><td>30</td><td>35</td><td>22</td><td>17</td><td>104</td></tr>
+        </tbody>
+      </table>
+      <p>The Lakers led by seven after one quarter, Orlando won the second 35-25 to lead 65-62 at halftime, and the Magic still led 87-82 going into the fourth. The lead changed hands 10 times.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1767016697775-001518392206?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Basketball game in a packed arena with fans cheering courtside" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Lakers player stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th><th>STL</th><th>BLK</th><th>FG</th><th>3PT</th><th>FT</th><th>+/-</th></tr></thead>
+        <tbody>
+          <tr><td>Luka Doncic</td><td>38</td><td>33</td><td>5</td><td>8</td><td>4</td><td>1</td><td>12-30</td><td>3-13</td><td>6-9</td><td>+10</td></tr>
+          <tr><td>Austin Reaves</td><td>40</td><td>26</td><td>7</td><td>5</td><td>2</td><td>1</td><td>10-20</td><td>2-8</td><td>4-4</td><td>+8</td></tr>
+          <tr><td>Luke Kennard</td><td>20</td><td>13</td><td>3</td><td>0</td><td>0</td><td>0</td><td>5-7</td><td>3-4</td><td>0-0</td><td>-6</td></tr>
+          <tr><td>LeBron James</td><td>34</td><td>12</td><td>6</td><td>4</td><td>3</td><td>0</td><td>5-13</td><td>0-2</td><td>2-2</td><td>+4</td></tr>
+          <tr><td>Deandre Ayton</td><td>29</td><td>9</td><td>12</td><td>1</td><td>0</td><td>0</td><td>3-4</td><td>0-0</td><td>3-6</td><td>+2</td></tr>
+          <tr><td>Jaxson Hayes</td><td>19</td><td>8</td><td>7</td><td>0</td><td>0</td><td>3</td><td>3-3</td><td>0-0</td><td>2-6</td><td>-2</td></tr>
+          <tr><td>Marcus Smart</td><td>31</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0-3</td><td>0-2</td><td>2-2</td><td>+1</td></tr>
+          <tr><td>Rui Hachimura</td><td>15</td><td>2</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1-2</td><td>0-0</td><td>0-0</td><td>-3</td></tr>
+          <tr><td>Jake LaRavia</td><td>14</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0-5</td><td>0-3</td><td>0-0</td><td>-9</td></tr>
+        </tbody>
+      </table>
+      <p>Starters: James, Ayton, Smart, Doncic and Reaves. Jarred Vanderbilt, Drew Timme, Dalton Knecht and Bronny James did not play (coach's decision).</p>
+
+      <h2>Magic player stats</h2>
+      <table>
+        <thead><tr><th>Player</th><th>MIN</th><th>PTS</th><th>REB</th><th>AST</th><th>STL</th><th>BLK</th><th>FG</th><th>3PT</th><th>FT</th><th>+/-</th></tr></thead>
+        <tbody>
+          <tr><td>Paolo Banchero</td><td>36</td><td>16</td><td>5</td><td>6</td><td>3</td><td>1</td><td>4-14</td><td>0-3</td><td>8-8</td><td>-18</td></tr>
+          <tr><td>Jalen Suggs</td><td>34</td><td>14</td><td>3</td><td>6</td><td>1</td><td>0</td><td>5-9</td><td>2-6</td><td>2-2</td><td>-20</td></tr>
+          <tr><td>Wendell Carter Jr.</td><td>29</td><td>13</td><td>9</td><td>2</td><td>1</td><td>0</td><td>5-8</td><td>1-1</td><td>2-2</td><td>-11</td></tr>
+          <tr><td>Jevon Carter</td><td>21</td><td>13</td><td>2</td><td>1</td><td>1</td><td>0</td><td>5-13</td><td>3-11</td><td>0-0</td><td>+18</td></tr>
+          <tr><td>Desmond Bane</td><td>38</td><td>12</td><td>4</td><td>5</td><td>3</td><td>1</td><td>4-14</td><td>1-6</td><td>3-3</td><td>-10</td></tr>
+          <tr><td>Tristan da Silva</td><td>21</td><td>12</td><td>2</td><td>0</td><td>0</td><td>0</td><td>4-6</td><td>2-3</td><td>2-2</td><td>-9</td></tr>
+          <tr><td>Jamal Cain</td><td>23</td><td>10</td><td>5</td><td>1</td><td>0</td><td>0</td><td>4-10</td><td>1-6</td><td>1-2</td><td>+11</td></tr>
+          <tr><td>Goga Bitadze</td><td>18</td><td>9</td><td>7</td><td>5</td><td>0</td><td>0</td><td>3-3</td><td>0-0</td><td>3-4</td><td>+9</td></tr>
+          <tr><td>Jett Howard</td><td>7</td><td>3</td><td>2</td><td>1</td><td>0</td><td>0</td><td>1-3</td><td>1-1</td><td>0-0</td><td>+7</td></tr>
+          <tr><td>Noah Penda</td><td>13</td><td>2</td><td>3</td><td>0</td><td>0</td><td>0</td><td>1-3</td><td>0-0</td><td>0-0</td><td>+18</td></tr>
+        </tbody>
+      </table>
+      <p>Starters: Banchero, da Silva, Carter Jr., Bane and Suggs. Moritz Wagner and Jase Richardson did not play.</p>
+
+      <h2>How did the team stats compare?</h2>
+      <table>
+        <thead><tr><th>Stat</th><th>Lakers</th><th>Magic</th></tr></thead>
+        <tbody>
+          <tr><td>Field goals</td><td>39-87 (45%)</td><td>36-83 (43%)</td></tr>
+          <tr><td>3-pointers</td><td>8-32 (25%)</td><td>11-37 (30%)</td></tr>
+          <tr><td>Free throws</td><td>19-29 (66%)</td><td>21-23 (91%)</td></tr>
+          <tr><td>Rebounds (offensive)</td><td>43 (14)</td><td>42 (12)</td></tr>
+          <tr><td>Assists</td><td>19</td><td>27</td></tr>
+          <tr><td>Steals</td><td>11</td><td>9</td></tr>
+          <tr><td>Blocks</td><td>6</td><td>2</td></tr>
+          <tr><td>Turnovers (total)</td><td>12</td><td>18</td></tr>
+          <tr><td>Points in the paint</td><td>52</td><td>36</td></tr>
+          <tr><td>Fast-break points</td><td>19</td><td>11</td></tr>
+          <tr><td>Largest lead</td><td>14</td><td>7</td></tr>
+        </tbody>
+      </table>
+      <p>Orlando shot better from deep and at the line, but the Lakers won the paint by 16 points and forced 18 Orlando turnovers. ESPN lists the Magic as conceding 22 points off turnovers, against 18 for the Lakers.</p>
+
+      <h2>How was the game decided?</h2>
+      <p>James scored six straight points midway through the third quarter to put the Lakers up eight, but Orlando led by five going into the final minute, according to the Associated Press recap on ESPN. With 4.7 seconds left, Banchero blocked a James shot out of bounds. A replay review found the ball had not gone off James' foot, so the Lakers kept possession.</p>
+      <p>Trailing by two, Smart inbounded to an open Kennard, whose third 3-pointer of the night gave Los Angeles the lead with 0.6 seconds to go. It was the Lakers' ninth straight win and Orlando's fourth straight loss. The AP also reported that Doncic was called for his 16th technical foul, which carries an automatic one-game suspension unless rescinded. We have not verified whether it was later rescinded.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1533923156502-be31530547c4?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Crowded basketball arena with a large American flag hanging above the court" loading="lazy" decoding="async">
+        <figcaption>Illustrative image, not from this game. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>Where do the Lakers and Magic stand now?</h2>
+      <p>The Lakers finished 2025-26 at 53-29, fourth in the West, beat the Houston Rockets 4-2 in the first round and were swept 4-0 by the Oklahoma City Thunder in the second round. The Magic finished 45-37, came through the play-in as the East's eighth seed and lost their first-round series 4-3 to the Detroit Pistons (see our <a href="/articles/detroit-pistons-vs-orlando-magic-match-player-stats/">Pistons vs Magic match player stats</a>).</p>
+      <p>As of November 17, 2026, <a href="https://www.espn.com/nba/standings" target="_blank" rel="noopener">ESPN's NBA standings</a> show:</p>
+      <table>
+        <thead><tr><th>Team</th><th>2026-27 record</th><th>Conference place</th></tr></thead>
+        <tbody>
+          <tr><td>Los Angeles Lakers</td><td>12-2</td><td>2nd in the West (first in the Pacific Division)</td></tr>
+          <tr><td>Orlando Magic</td><td>5-7</td><td>8th in the East</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Recent Lakers vs Magic results</h2>
+      <table>
+        <thead><tr><th>Date</th><th>Result</th><th>Venue</th></tr></thead>
+        <tbody>
+          <tr><td>February 24, 2026</td><td>Magic 110, Lakers 109</td><td>Crypto.com Arena, Los Angeles</td></tr>
+          <tr><td>March 21, 2026</td><td>Lakers 105, Magic 104</td><td>Kia Center, Orlando</td></tr>
+        </tbody>
+      </table>
+      <p>Both 2025-26 games were decided by one point. In February, Wendell Carter Jr. scored a putback with 6.7 seconds left, Banchero had 36 points, and the AP noted it was Orlando's fourth straight win over the Lakers. The March win ended that run.</p>
+
+      <h2>When do the Lakers and Magic play next?</h2>
+      <p>ESPN's Lakers schedule lists two 2026-27 meetings: Thursday, January 14, 2027, at Crypto.com Arena (10:00 p.m. ET), and Tuesday, March 2, 2027, at Kia Center (7:00 p.m. ET). For more NBA box scores, see our <a href="/articles/celtics-vs-cleveland-cavaliers-match-player-stats/">Celtics vs Cavaliers match player stats</a>, read about <a href="/articles/viprow-us-com/">legal ways to watch sports online</a>, or visit the <a href="/category/sports/">GBNT Sports section</a>.</p>
+
+      <h2>FAQs</h2>
+      <h3>Who won the last Lakers vs Magic game?</h3>
+      <p>The Lakers won 105-104 on March 21, 2026, in Orlando, on Luke Kennard's 3-pointer with 0.6 seconds left. The teams have not played yet in 2026-27.</p>
+      <h3>Who scored the most points in Lakers vs Magic?</h3>
+      <p>Luka Doncic, with 33 points on 12-of-30 shooting plus eight assists. Austin Reaves added 26 and Paolo Banchero led Orlando with 16.</p>
+      <h3>What record did LeBron James set against the Magic?</h3>
+      <p>He played his 1,612th regular-season game, the most in NBA history, passing Robert Parish. He had 12 points, six rebounds, four assists and three steals.</p>
+      <h3>Who won the 2025-26 season series?</h3>
+      <p>Neither team. Orlando won 110-109 in Los Angeles in February, and the Lakers won 105-104 in Orlando in March.</p>
+
+      <p><em>Checked on November 17, 2026, against the <a href="https://www.espn.com/nba/boxscore/_/gameId/401810879" target="_blank" rel="noopener">ESPN box score and AP recap</a>, the <a href="https://www.foxsports.com/nba/los-angeles-lakers-vs-orlando-magic-mar-21-2026-game-boxscore-44501" target="_blank" rel="noopener">FOX Sports box score</a> (final and quarter scores), ESPN's February 24, 2026 box score and recap, and ESPN's schedules and standings for 2025-26 and 2026-27.</em></p>
+    `
+  },
+  {
     id: "texans-vs-seahawks-match-player-stats",
     title: "Texans vs Seahawks Match Player Stats: Seattle Wins 27-19 on Monday Night Football",
     excerpt: "Texans vs Seahawks match player stats: Smith-Njigba's 123 yards, Stroud's 23-of-49 night and the full box score from Seattle's 27-19 win.",

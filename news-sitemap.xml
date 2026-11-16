@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://globalbusinessnewstoday.com/sports/lakers-vs-orlando-magic-match-player-stats/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T16:10:00Z</news:publication_date>
+      <news:title>Lakers vs Orlando Magic Match Player Stats: Kennard&#039;s Late 3 Wins It 105-104</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://globalbusinessnewstoday.com/sports/giants-vs-dodgers-match-player-stats/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Global Business News Today</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-17T16:00:00Z</news:publication_date>
+      <news:title>Giants vs Dodgers Match Player Stats: Pages&#039; 10th-Inning HR Seals 5-1 Dodgers Win</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://globalbusinessnewstoday.com/sports/yankees-vs-astros-match-player-stats/</loc>
     <news:news>
       <news:publication>
