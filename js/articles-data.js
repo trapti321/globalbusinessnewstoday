@@ -1,6 +1,142 @@
 // Sample Business News Data for Global Business News Today
 const ARTICLES = [
   {
+    id: "technology-trends-2027",
+    title: "Top Technology Trends for 2027: 10 Tech Trends Ranked by Hard Evidence",
+    excerpt: "The top technology trends for 2027, ranked by hard data: agentic AI, data-center power, AI fraud, robots, AI medical devices, smart glasses and quantum.",
+    category: "Tech & AI",
+    categorySlug: "tech",
+    author: {
+      name: "GBNT Newsroom",
+      type: "Organization",
+      avatar: "/assets/icon-192.png"
+    },
+    publishedAt: "2026-11-17T10:00:00Z",
+    readTime: "9 min read",
+    image: "https://images.unsplash.com/photo-1592659762303-90081d34b277?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Close-up of a dark blue circuit board with gold contact pads",
+    isTrending: true,
+    categoryInUrl: true,
+    views: 0,
+    tags: ["Technology Trends", "Tech Trends 2027", "Emerging Technology Trends", "Artificial Intelligence", "Gartner", "Quantum Computing"],
+    content: `
+      <p class="lead">The top technology trends for 2027 are led by agentic AI, the power-hungry data centers that run it, and the AI-driven fraud that follows it, with clean energy, industrial robots, AI medical devices, connected IoT, smart glasses, wearables and quantum computing completing the list. We ranked each trend by the strength of the evidence behind it, using primary data from regulators, agencies and industry trackers rather than predictions alone. For each one you get the key number, what it means for business, and the main risk.</p>
+
+      <blockquote>
+        <p><strong>Technology trends for 2027, the key facts:</strong></p>
+        <ul>
+          <li><strong>AI is everywhere:</strong> organizational AI adoption reached 88%, according to Stanford HAI's 2026 AI Index.</li>
+          <li><strong>Money follows AI:</strong> US venture deal value hit $515.8 billion through Q3 2026, with 82.7% going to AI companies (PitchBook-NVCA).</li>
+          <li><strong>Power is the bottleneck:</strong> US data centers used 4.4% of the nation's electricity in 2023 and could use 6.7% to 12% by 2028 (US Department of Energy).</li>
+          <li><strong>Fraud is rising:</strong> the FBI logged $20.877 billion in reported cybercrime losses in 2025, including about $893 million tied to AI.</li>
+          <li><strong>Gartner's view:</strong> its 2027 list, released October 20, 2026, centers on AI agents, AI security and sovereign technology.</li>
+        </ul>
+      </blockquote>
+
+      <h2>Why Are 2027 Tech Trends in the News Now?</h2>
+      <p>Two releases put tech trends 2027 back in the headlines. On October 20, 2026, Gartner published its Top Strategic Technology Trends for 2027 at its IT Symposium/Xpo, a list that, <a href="https://www.networkworld.com/article/4238030/gartners-top-tech-trends-for-2027-expand-and-accelerate.html" target="_blank" rel="noopener">as reported by Network World</a>, includes large quantitative models, AI context platforms, AI agent identity, sovereign tech and biological computing. Weeks earlier, the third-quarter <a href="https://nvca.org/pitchbook-nvca-venture-monitor/" target="_blank" rel="noopener">PitchBook-NVCA Venture Monitor</a> showed US venture deal value of $515.8 billion through Q3 2026, roughly 44% above the previous full-year record set in 2021, with AI companies taking 82.7% of it. With 2027 budgets being set now, leaders want trends backed by data.</p>
+
+      <h2>How Did We Choose These Trends?</h2>
+      <p>We started with the trends most often named in public forecasts, including Gartner's list, and kept only those we could support with at least one hard data point from a primary or authoritative source we opened ourselves: government agencies (FDA, FBI, Department of Energy), international bodies (IEA, IFR), and established trackers (IDC, BloombergNEF, IoT Analytics, Stanford HAI). Trends backed by measured, past-tense data rank higher than trends that rely mainly on roadmaps or forecasts. Predictions are labeled as such, and unverifiable figures were left out.</p>
+
+      <h2>1. Agentic AI and Enterprise AI Adoption</h2>
+      <p><strong>What it is:</strong> AI systems that do not just answer questions but plan and complete multi-step tasks, such as filing tickets, writing code or updating records.</p>
+      <p><strong>The data:</strong> <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report" target="_blank" rel="noopener">Stanford HAI's 2026 AI Index</a> reports organizational AI adoption of 88% and says AI agents jumped from 12% to about 66% task success on the OSWorld benchmark. Gartner predicts that by late 2026, autonomous coding agents will generate 20% of all public code commits.</p>
+      <p><strong>What it means for business:</strong> the question is no longer whether to use AI but which workflows to hand to agents first. Our earlier look at <a href="/articles/ai-enterprise-adoption-roi-surge/">enterprise AI adoption and ROI</a> covers how companies are measuring payback.</p>
+      <p><strong>Risk or limit:</strong> the same Stanford report notes agents still fail roughly one in three attempts on structured benchmarks, so human review remains essential.</p>
+
+      <h2>2. AI Infrastructure and Data-Center Power Demand</h2>
+      <p><strong>What it is:</strong> the build-out of data centers, chips, power plants and grid connections needed to train and run AI models.</p>
+      <p><strong>The data:</strong> a <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" target="_blank" rel="noopener">US Department of Energy report</a> found data center electricity use climbed from 58 TWh in 2014 to 176 TWh in 2023, or about 4.4% of US electricity, and could reach 325 to 580 TWh (6.7% to 12%) by 2028. Globally, the IEA projects data center demand will more than double by 2030 to around 945 TWh, with the US accounting for almost half of electricity demand growth, <a href="https://www.publicpower.org/periodical/article/electricity-demand-data-centers-worldwide-set-more-double-2030-iea" target="_blank" rel="noopener">according to the American Public Power Association</a>.</p>
+      <p><strong>What it means for business:</strong> expect higher cloud and power costs in some regions and longer waits for grid connections. Ask providers about capacity and pricing commitments before 2027 projects start.</p>
+      <p><strong>Risk or limit:</strong> the DOE range is wide (6.7% to 12%), a sign of how uncertain AI demand is.</p>
+
+      <h2>3. Cybersecurity and AI-Driven Fraud</h2>
+      <p><strong>What it is:</strong> criminals using AI for voice cloning, deepfakes and convincing phishing, while defenders use AI to detect and fix threats faster.</p>
+      <p><strong>The data:</strong> the <a href="https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf" target="_blank" rel="noopener">FBI's 2025 IC3 Internet Crime Report</a> recorded 1,008,597 complaints and $20.877 billion in reported losses, a 26% rise in losses from 2024. Its first AI section counted 22,364 AI-related complaints with losses of about $893 million. Gartner predicts that by 2028, 25% of enterprise security breaches will trace back to AI agent abuse.</p>
+      <p><strong>What it means for business:</strong> add call-back verification for payment changes and train staff to treat urgent voice or video requests with suspicion. Mid-sized firms can see our guide to <a href="/articles/cybersecurity-compliance-middle-market/">cybersecurity compliance for the middle market</a>.</p>
+      <p><strong>Risk or limit:</strong> IC3 figures cover only reported losses, so the real total is likely higher.</p>
+
+      <h2>4. Clean Energy Technology Investment</h2>
+      <p><strong>What it is:</strong> spending on renewables, grids, storage, electric vehicles and other low-carbon technology.</p>
+      <p><strong>The data:</strong> <a href="https://about.bnef.com/insights/clean-energy/bloombergnef-finds-global-energy-transition-investment-reached-record-2-3-trillion-in-2025-up-8-from-2024" target="_blank" rel="noopener">BloombergNEF</a> reported a record $2.3 trillion in global energy transition investment in 2025, up 8%, with the US rising 3.5% to $378 billion. The IEA's <a href="https://iea.blob.core.windows.net/assets/de35b632-c4ae-476b-a167-97ef3b40f0fd/WorldEnergyInvestment2026_LaunchPresentation.pdf" target="_blank" rel="noopener">World Energy Investment 2026</a> presentation puts total global energy investment at an estimated $3.4 trillion in 2026, with electricity supply and infrastructure reaching $1.6 trillion.</p>
+      <p><strong>What it means for business:</strong> grid equipment, storage and on-site power are growth markets, partly because AI data centers need them. Manufacturers should review <a href="/articles/green-energy-manufacturing-incentives/">green energy manufacturing incentives</a> before committing capital.</p>
+      <p><strong>Risk or limit:</strong> growth is slowing from earlier double-digit rates, and US policy changes can shift incentives quickly.</p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1647427060118-4911c9821b82?auto=format&fit=crop&w=1200&h=675&q=80" width="1200" height="675" alt="Rows of orange industrial robot arms working on a factory assembly line" loading="lazy" decoding="async">
+        <figcaption>Illustrative image: industrial robots on a factory line. Photo: Unsplash.</figcaption>
+      </figure>
+
+      <h2>5. Industrial Robots and Automation</h2>
+      <p><strong>What it is:</strong> programmable robots in factories and warehouses, increasingly paired with AI vision and planning.</p>
+      <p><strong>The data:</strong> the <a href="https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally" target="_blank" rel="noopener">International Federation of Robotics</a> said on September 24, 2026, that the global operational stock of industrial robots rose 9% to a record 5 million units in 2025, with more than 600,000 new installations. China accounted for 59% of deployments. IFR forecasts 655,000 installations in 2026 and 806,000 in 2029.</p>
+      <p><strong>What it means for business:</strong> automation is spreading beyond car plants into food, logistics and smaller factories.</p>
+      <p><strong>Risk or limit:</strong> humanoid robots attract headlines, but the IFR release we reviewed gives no humanoid deployment figures, so treat bold humanoid forecasts with caution.</p>
+
+      <h2>6. AI in Healthcare Devices</h2>
+      <p><strong>What it is:</strong> medical devices that use AI to read scans, flag heart rhythms or support clinical decisions.</p>
+      <p><strong>The data:</strong> the <a href="https://www.fda.gov/medical-devices/digital-health-center-excellence/artificial-intelligence-enabled-medical-devices" target="_blank" rel="noopener">US Food and Drug Administration</a> says it has authorized over 1,600 AI-enabled medical devices for marketing in the United States as of September 2026. Its public <a href="https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices" target="_blank" rel="noopener">device list</a> includes final decisions as recent as June 29, 2026.</p>
+      <p><strong>What it means for business:</strong> hospitals and clinics can buy cleared tools rather than build their own.</p>
+      <p><strong>Risk or limit:</strong> the FDA itself says its list is not a comprehensive resource, and clearance does not guarantee a tool improves patient outcomes in every setting.</p>
+
+      <h2>7. IoT and Edge Computing</h2>
+      <p><strong>What it is:</strong> connected sensors and machines that collect data, with more processing done on the device or nearby instead of in a distant cloud.</p>
+      <p><strong>The data:</strong> <a href="https://iot-analytics.com/state-of-enterprise-iot-from-iot-autonomous-connected-operations/" target="_blank" rel="noopener">IoT Analytics</a> reported that connected IoT devices grew 13% to 21.1 billion by the end of 2025, 45% of them enterprise connections, and that the enterprise IoT market grew 13% to $324 billion. It projects 14% growth in 2026.</p>
+      <p><strong>What it means for business:</strong> sensor data from equipment, fleets and buildings is becoming the raw material for AI agents.</p>
+      <p><strong>Risk or limit:</strong> the same research found less than 1% of IoT connections had a true edge AI component, so "AI at the edge" is still early.</p>
+
+      <h2>8. Smart Glasses and XR</h2>
+      <p><strong>What it is:</strong> glasses with cameras, speakers, AI assistants and sometimes displays, alongside virtual and mixed reality headsets.</p>
+      <p><strong>The data:</strong> <a href="https://www.idc.com/resource-center/press-releases/xr-market-grew-44-4-in-2025-as-smart-glasses-redefine-the-category/" target="_blank" rel="noopener">IDC</a> said XR device shipments grew 44.4% in 2025, with Meta holding 72.2% share. In <a href="https://www.idc.com/resource-center/blog/smart-glasses-growth-cools-to-35-as-meta-doubles-down-on-distribution/" target="_blank" rel="noopener">Q2 2026</a>, shipments rose 35.3%, audio glasses without displays took 70.3% of the market, and IDC forecasts 26.3% growth in 2026 accelerating to 40.5% in 2027.</p>
+      <p><strong>What it means for business:</strong> hands-free AI assistants could suit field service, warehouses and retail.</p>
+      <p><strong>Risk or limit:</strong> one vendor dominates, and cameras on faces raise privacy and workplace policy questions.</p>
+
+      <h2>9. Wearables</h2>
+      <p><strong>What it is:</strong> smartwatches, fitness bands, rings and earbuds that track health and activity.</p>
+      <p><strong>The data:</strong> <a href="https://www.idc.com/promo/wearablevendor/vendor" target="_blank" rel="noopener">IDC</a> counted about 148 million wearable shipments in Q2 2026, up 2.7%, and expects roughly 625 million units for 2026, up just 1.7%. Apple led with 15.5% share.</p>
+      <p><strong>What it means for business:</strong> this is a mature, replacement-driven market, so growth comes from software, health features and services rather than new buyers. Our <a href="/articles/best-smartwatches-2026/">best smartwatches of 2026</a> guide shows where features are heading.</p>
+      <p><strong>Risk or limit:</strong> slow unit growth and price competition squeeze hardware margins.</p>
+
+      <h2>10. Quantum Computing</h2>
+      <p><strong>What it is:</strong> computers that use quantum bits to tackle certain chemistry, materials and optimization problems beyond classical machines.</p>
+      <p><strong>The data:</strong> <a href="https://www.ibm.com/roadmaps/quantum/2026" target="_blank" rel="noopener">IBM's 2026 roadmap</a> says it expects the first examples of quantum advantage using a quantum computer with high-performance computing, a Nighthawk processor running circuits of 7,500 gates on up to three 120-qubit modules, and large-scale, fault-tolerant quantum computing by 2029.</p>
+      <p><strong>What it means for business:</strong> most firms do not need quantum hardware in 2027; banks and insurers should plan for post-quantum encryption now.</p>
+      <p><strong>Risk or limit:</strong> this trend ranks last because its evidence is mostly roadmaps, not measured commercial results.</p>
+
+      <h2>Top Technology Trends for 2027 at a Glance</h2>
+      <table>
+        <thead>
+          <tr><th>Trend</th><th>Key data point</th><th>Source</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1. Agentic AI</td><td>88% organizational AI adoption</td><td>Stanford HAI AI Index 2026</td></tr>
+          <tr><td>2. AI infrastructure and power</td><td>US data centers: 4.4% of electricity (2023), 6.7% to 12% by 2028</td><td>US Department of Energy</td></tr>
+          <tr><td>3. AI-driven fraud</td><td>$20.877 billion reported losses in 2025; about $893 million AI-related</td><td>FBI IC3</td></tr>
+          <tr><td>4. Clean energy tech</td><td>$2.3 trillion transition investment in 2025, up 8%</td><td>BloombergNEF</td></tr>
+          <tr><td>5. Industrial robots</td><td>5 million robots in operation; 655,000 installs forecast for 2026</td><td>IFR</td></tr>
+          <tr><td>6. AI medical devices</td><td>Over 1,600 AI-enabled devices authorized</td><td>FDA</td></tr>
+          <tr><td>7. IoT and edge</td><td>21.1 billion connected devices at end of 2025</td><td>IoT Analytics</td></tr>
+          <tr><td>8. Smart glasses and XR</td><td>Q2 2026 shipments up 35.3%</td><td>IDC</td></tr>
+          <tr><td>9. Wearables</td><td>About 625 million units expected in 2026</td><td>IDC</td></tr>
+          <tr><td>10. Quantum computing</td><td>Fault-tolerant system targeted by 2029</td><td>IBM</td></tr>
+        </tbody>
+      </table>
+
+      <h2>FAQs</h2>
+      <h3>What is the biggest technology trend for 2027?</h3>
+      <p>Agentic AI. Adoption is already near-universal, with 88% of organizations using AI per Stanford HAI, and 82.7% of US venture deal value through Q3 2026 went to AI companies.</p>
+      <h3>What are Gartner's top technology trends for 2027?</h3>
+      <p>Gartner's list, released October 20, 2026, includes large quantitative models, speech reasoning models, world models, AI context platforms, AI coding agent harnesses, AI agent identity, autonomous exposure remediation, sovereign tech, disposable applications and biological computing.</p>
+      <h3>Which emerging technology trends matter most for small businesses?</h3>
+      <p>AI tools, fraud prevention and energy costs have the most direct impact. Smaller firms can start with low-cost AI assistants, call-back checks on payment requests and a review of their power and cloud contracts.</p>
+      <h3>Is quantum computing ready for business use?</h3>
+      <p>Not broadly. IBM targets large-scale, fault-tolerant quantum computing by 2029, so 2027 is a year for planning, especially for post-quantum security.</p>
+
+      <p><em>Checked on November 17, 2026, against Stanford HAI, PitchBook-NVCA, the US Department of Energy, the American Public Power Association's report on IEA findings, the FBI's IC3, BloombergNEF, the IEA, the International Federation of Robotics, the FDA, IoT Analytics, IDC, IBM and Network World's coverage of Gartner. Forecasts may change.</em></p>
+    `
+  },
+  {
     id: "prince-harry-news-ukraine-invictus-royal-family",
     title: "Prince Harry News: Surprise Ukraine Visit, Invictus 2027 Trials and Royal Updates",
     excerpt: "Prince Harry news: a surprise Lviv visit to meet wounded veterans and Invictus 2027 hopefuls, plus his Brussels online safety speech and Mail appeal.",
